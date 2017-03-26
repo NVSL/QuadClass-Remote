@@ -12677,9 +12677,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="70.4666" y="43.675" size="1.27" layer="25" font="vector" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="68.7004" y="44.1966" size="1.27" layer="27" font="vector" ratio="10"/>
 </element>
-<element name="J3" library="RemotePartsB" package="WIRE-HARNESS-SPARKFUN-9915" value="WIRE-HARNESS-SPARKFUN-9915" x="-65.5" y="19.5" rot="MR180">
-<attribute name="DISTPN" value="9915" x="-65.5" y="19.5" size="1.778" layer="28" rot="MR180" display="off"/>
-<attribute name="DIST" value="Sparkfun" x="-65.5" y="19.5" size="1.778" layer="28" rot="MR180" display="off"/>
+<element name="J3" library="RemotePartsB" package="WIRE-HARNESS-SPARKFUN-9915" value="WIRE-HARNESS-SPARKFUN-9915" x="-65" y="20.5" rot="MR0">
+<attribute name="DISTPN" value="9915" x="-65" y="20.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DIST" value="Sparkfun" x="-65" y="20.5" size="1.778" layer="28" rot="MR0" display="off"/>
 </element>
 <element name="U$3" library="Components" package="PROTO-AREA-10X10" value="PROTO-AREA-10X10" x="-12" y="17">
 <attribute name="ROUGH_HEIGHT" value="15" x="-12" y="17" size="1.778" layer="27" display="off"/>
@@ -12728,13 +12728,13 @@ design rules under a new name.</description>
 <attribute name="NAME" x="15.96" y="44.19" size="1.778" layer="51" font="vector" ratio="10" rot="R270" align="center"/>
 <attribute name="NAME" x="15.96" y="43.69" size="1.016" layer="25" font="vector" ratio="10" rot="R270" align="center"/>
 </element>
-<element name="D2" library="Components" package="LED3MM" value="" x="-26.5" y="0.5" rot="MR270">
-<attribute name="DISTPN" value="780" x="-26.5" y="0.5" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIST" value="Adafruit" x="-26.5" y="0.5" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="D2" library="Components" package="LED3MM" value="" x="-45" y="19" rot="MR270">
+<attribute name="DISTPN" value="780" x="-45" y="19" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DIST" value="Adafruit" x="-45" y="19" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
-<element name="D1" library="Components" package="LED3MM" value="" x="26.5" y="0" rot="MR270">
-<attribute name="DISTPN" value="780" x="26.5" y="0" size="1.778" layer="28" rot="MR270" display="off"/>
-<attribute name="DIST" value="Adafruit" x="26.5" y="0" size="1.778" layer="28" rot="MR270" display="off"/>
+<element name="D1" library="Components" package="LED3MM" value="" x="45" y="18.5" rot="MR270">
+<attribute name="DISTPN" value="780" x="45" y="18.5" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="DIST" value="Adafruit" x="45" y="18.5" size="1.778" layer="28" rot="MR270" display="off"/>
 </element>
 <element name="B2" library="Controller" package="BUTTON-TACTILE-SQUARE-ADAFRUIT1010" value="BUTTON-TACTILE-SQUARE" x="54" y="-47">
 <attribute name="DISTPN" value="1010" x="54" y="-47" size="1.778" layer="27" display="off"/>
@@ -13129,7 +13129,7 @@ design rules under a new name.</description>
 <signal name="TX1">
 <contactref element="J3" pad="BLUE"/>
 <contactref element="U$4" pad="TX1"/>
-<wire x1="20.22" y1="30.814" x2="-67.5" y2="19.5" width="0" layer="19" extent="1-1"/>
+<wire x1="20.22" y1="30.814" x2="-63" y2="20.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1" class="1">
 <contactref element="BATT1" pad="N2"/>
@@ -13180,8 +13180,8 @@ design rules under a new name.</description>
 <wire x1="6.54" y1="54.5" x2="9.08" y2="54.5" width="0" layer="19" extent="1-1"/>
 <wire x1="4" y1="54.5" x2="6.54" y2="54.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-22.96" y1="24.21" x2="4" y2="49.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-26.5" y1="1.77" x2="-22.96" y2="24.21" width="0" layer="19" extent="1-1"/>
-<wire x1="-65.5" y1="19.5" x2="-22.96" y2="24.21" width="0" layer="19" extent="1-1"/>
+<wire x1="-45" y1="20.27" x2="-22.96" y2="24.21" width="0" layer="19" extent="1-1"/>
+<wire x1="-65" y1="20.5" x2="-22.96" y2="24.21" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RESET">
 <contactref element="RESET" pad="P"/>
@@ -13238,7 +13238,7 @@ design rules under a new name.</description>
 <signal name="N$13">
 <contactref element="D2" pad="K"/>
 <contactref element="D1" pad="A"/>
-<wire x1="26.5" y1="1.27" x2="-26.5" y2="-0.77" width="0" layer="19" extent="1-1"/>
+<wire x1="45" y1="19.77" x2="-45" y2="17.73" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BTN2">
 <contactref element="B2" pad="S"/>
@@ -13316,11 +13316,11 @@ design rules under a new name.</description>
 <wire x1="14.5" y1="49.5" x2="17.04" y2="49.5" width="0" layer="19" extent="1-1"/>
 <wire x1="19.58" y1="54.5" x2="19.58" y2="49.5" width="0" layer="19" extent="1-1"/>
 <wire x1="14.5" y1="54.5" x2="14.5" y2="49.5" width="0" layer="19" extent="1-1"/>
-<wire x1="26.5" y1="-1.27" x2="63.75" y2="27.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-53" y1="-5.265" x2="26.5" y2="-1.27" width="0" layer="19" extent="1-1"/>
+<wire x1="45" y1="17.23" x2="63.75" y2="27.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-53" y1="-5.265" x2="45" y2="17.23" width="0" layer="19" extent="1-1"/>
 <wire x1="-53" y1="-12.885" x2="-53" y2="-5.265" width="0" layer="19" extent="1-1"/>
 <wire x1="-52" y1="-17" x2="-53" y2="-12.885" width="0" layer="19" extent="1-1"/>
-<wire x1="-63.5" y1="19.5" x2="-53" y2="-5.265" width="0" layer="19" extent="1-1"/>
+<wire x1="-67" y1="20.5" x2="-53" y2="-5.265" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$4">
 <contactref element="D4" pad="K"/>
