@@ -189,8 +189,9 @@
 <text x="-57.5" y="-34.5" size="1.27" layer="21" font="vector" align="bottom-right">YAW</text>
 <text x="-57.5" y="-24.5" size="1.27" layer="21" font="vector" align="bottom-right">THR</text>
 <text x="-122.5" y="69" size="1.778" layer="49">Todo
-* check that this orientation for mirrored gimbal headers ok.
-* Consider moving redboard down a bit -- the parts ftdi and power jack protrude.</text>
+
+* Consider moving redboard down a bit -- the parts ftdi and power jack protrude.
+* What's up with the double line on the left hand side protrusion near the button?  It's in tdocu.</text>
 </plain>
 <libraries>
 <library name="Controller">
