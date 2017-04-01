@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
@@ -215,9 +215,9 @@ The size of the faceplate opening is 0.5mm larger than it "should" be to allow f
 <pad name="P2" x="6" y="2.5" drill="1.3"/>
 <pad name="S" x="-6" y="-2.5" drill="1.3"/>
 <pad name="S2" x="6" y="-2.5" drill="1.3"/>
+<text x="0" y="-6.35" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
 <hole x="0" y="4.5" drill="1.4"/>
 <hole x="0" y="-4.5" drill="1.4"/>
-<text x="0" y="-6.35" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
 </package>
 <package name="CONNECTOR_BOARD_OUTLINE">
 <wire x1="217" y1="22" x2="217" y2="44" width="0.01" layer="21"/>
@@ -12324,7 +12324,6 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <text x="41.402" y="49.276" size="0.889" layer="21" font="vector" rot="R270">4</text>
 <text x="43.942" y="49.276" size="0.889" layer="21" font="vector" rot="R270">3</text>
 <text x="46.482" y="49.276" size="0.889" layer="21" font="vector" rot="R270">2</text>
-<text x="19.558" y="4.4243" size="0.889" layer="21" font="vector" rot="R90">IOREF</text>
 <text x="7.366" y="49.411" size="0.889" layer="21" font="vector" rot="R270" align="center-left">SCL</text>
 <text x="9.906" y="49.411" size="0.889" layer="21" font="vector" rot="R270" align="center-left">SDA</text>
 <text x="12.446" y="49.411" size="0.889" layer="21" font="vector" rot="R270" align="center-left">AREF</text>
@@ -12601,6 +12600,7 @@ design rules under a new name.</description>
 <element name="B1" library="Controller" package="BUTTON-TACTILE-SQUARE-ADAFRUIT1010" value="BUTTON-TACTILE-SQUARE" x="-54" y="-47">
 <attribute name="DISTPN" value="1010" x="-54" y="-47" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="ADAFRUIT" x="-54" y="-47" size="1.778" layer="27" display="off"/>
+<attribute name="MISC" value="temp" x="-54" y="-47" size="1.778" layer="27" display="off"/>
 </element>
 <element name="OUTLINE" library="RemotePartsA" package="CONTROLLER_OUTLINE" value="" x="0" y="0" locked="yes"/>
 <element name="LCD" library="RemotePartsA" package="SPARKFUN_LCD_33" value="" x="-40" y="-53" locked="yes"/>
@@ -12628,11 +12628,12 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="-53" y="11.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="ROUGH_HEIGHT" value="16" x="-53" y="11.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U$1" library="Artwork" package="CSE_LOGO_30X20MM" value="" x="-16.5" y="7.5"/>
+<element name="U$1" library="Artwork" package="CSE_LOGO_30X20MM" value="" x="-15.5" y="7.5"/>
 <element name="U$2" library="Artwork" package="UCSD_LOGO_COMBINED_26X20MM" value="" x="11" y="20" rot="MR0"/>
 <element name="RESET" library="Controller" package="BUTTON-TACTILE-SQUARE-ADAFRUIT1010" value="BUTTON-TACTILE-SQUARE" x="-53.5" y="49.5">
 <attribute name="DISTPN" value="1010" x="-53.5" y="49.5" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="ADAFRUIT" x="-53.5" y="49.5" size="1.778" layer="27" display="off"/>
+<attribute name="MISC" value="temp" x="-53.5" y="49.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="J11" library="Components" package="SCREW-TERMINAL-1X3-2.54MM" value="" x="52.5" y="-36" smashed="yes" rot="R90">
 <attribute name="PIN1" value="+" x="48.595" y="-36" size="1.778" layer="21" font="vector" rot="R180" align="center-left"/>
@@ -12759,6 +12760,7 @@ design rules under a new name.</description>
 <element name="B2" library="Controller" package="BUTTON-TACTILE-SQUARE-ADAFRUIT1010" value="BUTTON-TACTILE-SQUARE" x="54" y="-47">
 <attribute name="DISTPN" value="1010" x="54" y="-47" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="ADAFRUIT" x="54" y="-47" size="1.778" layer="27" display="off"/>
+<attribute name="MISC" value="temp" x="54" y="-47" size="1.778" layer="27" display="off"/>
 </element>
 <element name="GND" library="Components" package="SCREW-TERMINAL-1X3-2.54MM" value="" x="14.5" y="54.5" smashed="yes">
 <attribute name="DISTPN" value="ED10562-ND" x="14.5" y="54.5" size="1.778" layer="27" display="off"/>
