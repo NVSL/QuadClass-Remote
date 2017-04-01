@@ -9827,6 +9827,7 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <junction x="-5.08" y="132.08"/>
 <pinref part="J10" gate="G$1" pin="3"/>
 <label x="-5.08" y="124.46" size="1.778" layer="95" rot="R270" xref="yes"/>
+<pinref part="GND" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="D1" gate="G$1" pin="C"/>
