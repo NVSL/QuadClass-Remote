@@ -24,9 +24,9 @@
 <layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="113" name="IDFDebug" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="114" name="Unresolved" color="12" fill="1" visible="yes" active="yes"/>
-<layer number="115" name="Resolved" color="10" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Generic" color="9" fill="1" visible="yes" active="yes"/>
+<layer number="114" name="Unresolved" color="12" fill="1" visible="no" active="yes"/>
+<layer number="115" name="Resolved" color="10" fill="1" visible="no" active="yes"/>
+<layer number="116" name="Generic" color="9" fill="1" visible="no" active="yes"/>
 <layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
 <layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
@@ -9099,6 +9099,7 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9126,9 +9127,9 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <instance part="J13" gate="G$1" x="-15.24" y="43.18"/>
 <instance part="J15" gate="G$1" x="-15.24" y="22.86"/>
 <instance part="J17" gate="G$1" x="-15.24" y="7.62"/>
-<instance part="J2" gate="G$1" x="-33.02" y="5.08">
-<attribute name="CH1" x="-33.02" y="5.08" size="1.4224" layer="96" display="off"/>
-<attribute name="CH2" x="-33.02" y="5.08" size="1.4224" layer="96" display="off"/>
+<instance part="J2" gate="G$1" x="-35.56" y="5.08">
+<attribute name="CH1" x="-35.56" y="5.08" size="1.4224" layer="96" display="off"/>
+<attribute name="CH2" x="-35.56" y="5.08" size="1.4224" layer="96" display="off"/>
 </instance>
 <instance part="J1" gate="G$1" x="-33.02" y="43.18">
 <attribute name="CH1" x="-33.02" y="43.18" size="1.778" layer="96" display="off"/>
@@ -9185,6 +9186,7 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <instance part="GND9" gate="1" x="167.64" y="17.78"/>
 <instance part="GND12" gate="1" x="157.48" y="17.78"/>
 <instance part="GND10" gate="1" x="73.66" y="121.92"/>
+<instance part="+3V6" gate="G$1" x="264.16" y="66.04"/>
 </instances>
 <busses>
 </busses>
@@ -9239,12 +9241,12 @@ Groups of components that insist on having their own PCB. Usually requires heade
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="GND-V"/>
-<wire x1="-30.48" y1="30.48" x2="-27.94" y2="30.48" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="30.48" x2="-27.94" y2="30.48" width="0.1524" layer="91"/>
 <label x="-27.94" y="30.48" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="GND-H"/>
-<wire x1="-30.48" y1="22.86" x2="-27.94" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="22.86" x2="-27.94" y2="22.86" width="0.1524" layer="91"/>
 <label x="-27.94" y="22.86" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
@@ -9380,7 +9382,7 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <wire x1="-5.08" y1="27.94" x2="38.1" y2="27.94" width="0.1524" layer="91"/>
 <junction x="38.1" y="27.94"/>
 <pinref part="J2" gate="G$1" pin="S-V"/>
-<wire x1="-5.08" y1="27.94" x2="-30.48" y2="27.94" width="0.1524" layer="91"/>
+<wire x1="-5.08" y1="27.94" x2="-33.02" y2="27.94" width="0.1524" layer="91"/>
 <junction x="-5.08" y="27.94"/>
 </segment>
 <segment>
@@ -9401,7 +9403,7 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <wire x1="-22.86" y1="12.7" x2="-22.86" y2="20.32" width="0.1524" layer="91"/>
 <junction x="-5.08" y="12.7"/>
 <pinref part="J2" gate="G$1" pin="S-H"/>
-<wire x1="-22.86" y1="20.32" x2="-30.48" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="-22.86" y1="20.32" x2="-33.02" y2="20.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="A0"/>
@@ -9446,12 +9448,12 @@ Groups of components that insist on having their own PCB. Usually requires heade
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="VCC-V"/>
-<wire x1="-30.48" y1="25.4" x2="-27.94" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="25.4" x2="-27.94" y2="25.4" width="0.1524" layer="91"/>
 <label x="-27.94" y="25.4" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="VCC-H"/>
-<wire x1="-30.48" y1="17.78" x2="-27.94" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="-33.02" y1="17.78" x2="-27.94" y2="17.78" width="0.1524" layer="91"/>
 <label x="-27.94" y="17.78" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
@@ -9514,6 +9516,11 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="210.82" y1="134.62" x2="210.82" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="AREF"/>
+<wire x1="254" y1="63.5" x2="264.16" y2="63.5" width="0.1524" layer="91"/>
+<pinref part="+3V6" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="TX1" class="0">
@@ -9838,11 +9845,6 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <pinref part="C1" gate="G$1" pin="-"/>
 <wire x1="226.06" y1="127" x2="226.06" y2="124.46" width="0.1524" layer="91"/>
 <label x="226.06" y="124.46" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="S1" gate="G$1" pin="OFF"/>
-<wire x1="154.94" y1="93.98" x2="154.94" y2="99.06" width="0.1524" layer="91"/>
-<label x="154.94" y="93.98" size="1.778" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="BLACK"/>
