@@ -184,9 +184,9 @@ The size of the faceplate opening is 0.5mm larger than it "should" be to allow f
 <pad name="P2" x="6" y="2.5" drill="1.3"/>
 <pad name="S" x="-6" y="-2.5" drill="1.3"/>
 <pad name="S2" x="6" y="-2.5" drill="1.3"/>
+<text x="0" y="-6.35" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
 <hole x="0" y="4.5" drill="1.4"/>
 <hole x="0" y="-4.5" drill="1.4"/>
-<text x="0" y="-6.35" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
 </package>
 <package name="BUTTON-TACTILE-ROUND-ADAFRUIT1009">
 <description>Round, colorful tactile button from adafruit
@@ -321,6 +321,7 @@ The radius of the faceplate opening is 0.5mm larger than it "should" be to allow
 <technology name="">
 <attribute name="DIST" value="ADAFRUIT"/>
 <attribute name="DISTPN" value="1010"/>
+<attribute name="MISC" value="temp" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -8768,7 +8769,6 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <text x="41.402" y="49.276" size="0.889" layer="21" font="vector" rot="R270">4</text>
 <text x="43.942" y="49.276" size="0.889" layer="21" font="vector" rot="R270">3</text>
 <text x="46.482" y="49.276" size="0.889" layer="21" font="vector" rot="R270">2</text>
-<text x="19.558" y="4.4243" size="0.889" layer="21" font="vector" rot="R90">IOREF</text>
 <text x="7.366" y="49.411" size="0.889" layer="21" font="vector" rot="R270" align="center-left">SCL</text>
 <text x="9.906" y="49.411" size="0.889" layer="21" font="vector" rot="R270" align="center-left">SDA</text>
 <text x="12.446" y="49.411" size="0.889" layer="21" font="vector" rot="R270" align="center-left">AREF</text>
