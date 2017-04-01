@@ -3909,6 +3909,10 @@ The radius of the faceplate opening is 0.5mm larger than it "should" be to allow
 <text x="20" y="-3" size="1.27" layer="21" font="vector" align="center">B</text>
 <text x="0" y="-5" size="1.27" layer="21" font="vector" align="center">&gt;CH1</text>
 <text x="6" y="-5" size="1.27" layer="21" font="vector" align="center">&gt;CH2</text>
+<wire x1="-4.5" y1="3.5" x2="22.5" y2="3.5" width="0.127" layer="39"/>
+<wire x1="22.5" y1="3.5" x2="22.5" y2="-2.5" width="0.127" layer="39"/>
+<wire x1="22.5" y1="-2.5" x2="-4.5" y2="-2.5" width="0.127" layer="39"/>
+<wire x1="-4.5" y1="-2.5" x2="-4.5" y2="3.5" width="0.127" layer="39"/>
 </package>
 <package name="TRIM-3386">
 <pad name="2" x="0" y="-2.8575" drill="0.9" diameter="1.778"/>
@@ -9029,7 +9033,6 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <part name="D2" library="Components" deviceset="LED" device="3MM"/>
 <part name="D1" library="Components" deviceset="LED" device="3MM"/>
 <part name="B2" library="Controller" deviceset="BUTTON-TACTILE" device="-SQUARE"/>
-<part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND" library="Components" deviceset="HEADER-0.1IN-3POS" device="-SCREW">
 <attribute name="PIN1" value=""/>
 <attribute name="PIN2" value=""/>
@@ -9095,6 +9098,7 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
+<part name="GND10" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9150,7 +9154,6 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <instance part="D2" gate="G$1" x="-22.86" y="-10.16"/>
 <instance part="D1" gate="G$1" x="-22.86" y="-17.78"/>
 <instance part="B2" gate="G$1" x="86.36" y="124.46" rot="R270"/>
-<instance part="+3V6" gate="G$1" x="73.66" y="129.54"/>
 <instance part="GND" gate="G$1" x="-15.24" y="127"/>
 <instance part="VBAT" gate="G$1" x="12.7" y="127"/>
 <instance part="3.3V" gate="G$1" x="38.1" y="127"/>
@@ -9181,6 +9184,7 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <instance part="GND6" gate="1" x="177.8" y="17.78"/>
 <instance part="GND9" gate="1" x="167.64" y="17.78"/>
 <instance part="GND12" gate="1" x="157.48" y="17.78"/>
+<instance part="GND10" gate="1" x="73.66" y="121.92"/>
 </instances>
 <busses>
 </busses>
@@ -9298,6 +9302,20 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <pinref part="D3" gate="G$1" pin="C"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="157.48" y1="30.48" x2="157.48" y2="20.32" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="B1" gate="G$1" pin="P1"/>
+<pinref part="B2" gate="G$1" pin="P1"/>
+<pinref part="B2" gate="G$1" pin="P"/>
+<wire x1="81.28" y1="124.46" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
+<junction x="81.28" y="121.92"/>
+<pinref part="B1" gate="G$1" pin="P"/>
+<wire x1="81.28" y1="109.22" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
+<junction x="81.28" y="109.22"/>
+<wire x1="81.28" y1="109.22" x2="81.28" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="124.46" x2="73.66" y2="124.46" width="0.1524" layer="91"/>
+<junction x="81.28" y="124.46"/>
+<pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="BTN1" class="0">
@@ -9457,21 +9475,6 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <segment>
 <pinref part="TM2" gate="G$1" pin="E"/>
 <pinref part="+3V2" gate="G$1" pin="+3V3"/>
-</segment>
-<segment>
-<pinref part="B1" gate="G$1" pin="P1"/>
-<pinref part="B2" gate="G$1" pin="P1"/>
-<pinref part="B2" gate="G$1" pin="P"/>
-<wire x1="81.28" y1="124.46" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
-<junction x="81.28" y="121.92"/>
-<pinref part="B1" gate="G$1" pin="P"/>
-<wire x1="81.28" y1="109.22" x2="81.28" y2="121.92" width="0.1524" layer="91"/>
-<junction x="81.28" y="109.22"/>
-<wire x1="81.28" y1="109.22" x2="81.28" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="81.28" y1="124.46" x2="73.66" y2="124.46" width="0.1524" layer="91"/>
-<junction x="81.28" y="124.46"/>
-<wire x1="73.66" y1="124.46" x2="73.66" y2="127" width="0.1524" layer="91"/>
-<pinref part="+3V6" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
 <pinref part="3.3V" gate="G$1" pin="1"/>
