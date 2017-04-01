@@ -12,6 +12,7 @@
 
 #include "quad_remote.h"      // Header file with pin definitions and setup
 #include "RadioFunctions.h"   // Header file for radio functions
+#include <serLCD.h>
 
 
   // Initialize global variables for storing incoming data from input pins
@@ -27,6 +28,55 @@
   bool button2Press = 0;
   bool LEDVal = 0;
 
+uint8_t scale[8] = 
+                 {B00000000,
+                  B00000000,
+                  B00000000,
+                  B00000000,
+                  B00000000,
+                  B00000000,
+                  B00000000,
+                  B00000000};
+                  
+int numbers[8] = {0,1,2,3,4,5,6,7};
+char *labels[8] = {"T ", "Y ", "P ", "R ", "P1", "P2", "B1", "B2"};
+char pins[8] = {PIN_THROTTLE, PIN_YAW, PIN_PITCH, PIN_ROLL, PIN_POT1, PIN_POT2, PIN_POT1, PIN_POT2};
+
+serLCD lcd;
+
+void update_display() {
+  lcd.clear();
+  lcd.home();
+
+  for(char h = 0; h < 8; h++) {
+      char buf[2];
+      buf[0] = labels[h][0];
+      buf[1] = 0;
+      lcd.print(buf);
+      int n = numbers[h] >> 6;
+      if (n > 8) {
+         lcd.printCustomChar(n - 8);
+      } else {
+         lcd.print(" ");
+      }
+  }
+  //lcd.print("\r");
+
+  for(char h = 0; h < 8; h++) {
+      char buf[2];
+      buf[0] = labels[h][1];
+      buf[1] = 0;
+      lcd.print(buf);
+      int n = numbers[h] >> 6;
+      if (n >= 8) {
+         lcd.printCustomChar(8);
+      } else if (n == 0) {
+        lcd.print(" ");
+      } else {
+         lcd.printCustomChar(n);
+      }
+  }
+}
 
 void setup() {
 
@@ -38,11 +88,17 @@ void setup() {
 
   Serial.begin(SERIAL_BAUD);           // Start up serial
   Serial1.begin(SERIAL_BAUD);         // TODO: what will we use this for
+
+  for(char i = 0; i < 8; i++) {
+    scale[7-i] = B11111111;
+    lcd.createChar(i+1, scale);
+  }
+ 
   rfBegin(RADIO_CHANNEL);              // Initialize ATmega128RFA1 radio on given channel
   
   // Send a message to other RF boards on this channel
-  rfPrint("ATmega128RFA1 Dev Board Online!\r\n");
-
+  //rfPrint("ATmega128RFA1 Dev Board Online!\r\n");
+  
   // Set pin modes for all input pins
   pinMode(PIN_YAW, INPUT);             // Gimbal: Yaw
   pinMode(PIN_THROTTLE, INPUT);        // Gimbal: throttle
@@ -50,49 +106,17 @@ void setup() {
   pinMode(PIN_PITCH, INPUT);           // Gimbal: pitch
   pinMode(PIN_POT1, INPUT);            // Potentiometer 1
   pinMode(PIN_POT2, INPUT);            // Potentiometer 2
-  pinMode(PIN_BTN1, INPUT);            // Button 1
-  pinMode(PIN_BTN2, INPUT);            // Button 2
+  
+  pinMode(PIN_BTN1, INPUT_PULLUP);            // Button 1
+  pinMode(PIN_BTN2, INPUT_PULLUP);            // Button 2
+  
   pinMode(PIN_LED_BLUE, OUTPUT);       // LED Indicator: Blue
   pinMode(PIN_LED_GRN, OUTPUT);        // LED Indicator: Green
   pinMode(PIN_LED_RED, OUTPUT);        // LED Indicator: Red
 
-  // Write HIGH to buttons for pullup
-  digitalWrite(PIN_BTN1, HIGH);   // buttons are active low
-  digitalWrite(PIN_BTN2, HIGH);
-
-  // Write low to LED pins
-  digitalWrite(PIN_LED_BLUE, 0);
-  digitalWrite(PIN_LED_GRN, 0);
-  digitalWrite(PIN_LED_RED, 0);
-  
-
-  // Attach interrupt for button presses
-  //attachInterrupt(PIN_BTN1, button1Callback, CHANGE);
-  //attachInterrupt(PIN_BTN2, button2Callback, CHANGE);
-
 }
 
-void button1Callback()
-{
-
-  button1Value = digitalRead(PIN_BTN1);
-  if (button1Value == LOW)
-  {
-    button1Press = 1;
-  }
-  
-}
-
-void button2Callback()
-{
-
-  button2Value = digitalRead(PIN_BTN2);
-  if (button2Value == LOW)
-  {
-    button2Press = 1;
-  }
-  
-}
+int last = 0;
 
 void loop() {
 
@@ -101,49 +125,61 @@ void loop() {
   // Read incoming presses from buttons: WHY AREN'T INTERRUPTS WORKING
   button1Value = digitalRead(PIN_BTN1); 
   button2Value = digitalRead(PIN_BTN2); 
-
-  //Serial.println(digitalRead(PIN_BTN1));
-  //Serial.println(digitalRead(PIN_BTN2));
+  Serial.println(button1Value);
+  Serial.println(button2Value);
 
   // Print to serial if press registered
   if (button1Value == 0)
   {
-    Serial.println("Button 1 press registered!");
-    //button1Press = 0;
+    numbers[6] = 1024;
+  } else {
+    numbers[6] = 0;
   }
 
   if (button2Value == 0)
   {
-    Serial.println("Button 2 press registered!");
-    //button2Press = 0;
+    numbers[7] = 1024;
+  } else {
+    numbers[7] = 0;
   }
 
   /* LED TEST: Turn LEDs on and off as program cycles (start LOW) */
-  LEDVal = !LEDVal;
-  digitalWrite(PIN_LED_BLUE, LEDVal);
-  digitalWrite(PIN_LED_GRN, LEDVal);
-  digitalWrite(PIN_LED_RED, LEDVal);
 
+  if (last + 1000 <= millis()) {
+    LEDVal = !LEDVal;
+    digitalWrite(PIN_LED_BLUE, LEDVal);
+    digitalWrite(PIN_LED_GRN, LEDVal);
+    digitalWrite(PIN_LED_RED, LEDVal);
+    last = millis();
+  }
+  // Read analog values
+  for(char i = 0; i < 6; i++) {
+    numbers[i] = analogRead(pins[i]); 
+  }
 
-  /* GIMBAL TEST: Output incoming values to serial */
-  
-  /* Read the incoming data from gimbal pins and potentiometer pins
-  /*readYaw = analogRead(PIN_YAW);
+  update_display();
+
+  readYaw = analogRead(PIN_YAW);
   readThrottle = analogRead(PIN_THROTTLE);
   readRoll = analogRead(PIN_ROLL);
   readPitch = analogRead(PIN_PITCH);
   readPot1 = analogRead(PIN_POT1);
   readPot2 = analogRead(PIN_POT2);
 
-
-  // Simple check of analog input functionality: print incoming data to serial out
-  //Serial.println("Gimbal Inputs: Roll: " + String(readRoll) + ", Pitch: " + String(readPitch) + ", Yaw: " + String(readYaw) + ", Throttle: " + String(readThrottle));
-  //Serial.println("Potentiometer 1: " + String(readPot1) + ", Potentiometer 2: " + String(readPot2));
+  Serial.println(
+                 String(readYaw) + " " + 
+                 String(readThrottle) + " " + 
+                 String(readRoll) + " " + 
+                 String(readPitch) + " " + 
+                 String(readPot1) + " " + 
+                 String(readPot2)
+                 );
+                 
 
   /* RADIO TEST: Test sending/receiving of serial data over radio */
 
-  /* If serial comes in...
- /* if (Serial.available())  
+  /* If serial comes in... */
+  if (Serial.available())  
   {
     rfWrite(Serial.read()); // ...send it out the radio.
   }
@@ -153,14 +189,7 @@ void loop() {
   }
 
   Serial.println("\n");
-  delay(1);*/
-
-  //Serial1.print("Hello!");
-  /*for (int i = 0; i <=255; i++)
-  {
-    Serial1.write(i);
-  }*/
-
+ 
   delay(50);
 
 }
