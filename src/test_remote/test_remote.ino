@@ -1,3 +1,5 @@
+#include <radio.h>
+
 
 /* test_remote.ino
  * Sketch for testing all parts of QuadRemote.
@@ -11,7 +13,6 @@
  */
 
 #include "quad_remote.h"      // Header file with pin definitions and setup
-#include "RadioFunctions.h"   // Header file for radio functions
 #include <serLCD.h>
 
 
