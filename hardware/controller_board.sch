@@ -3856,7 +3856,7 @@ The radius of the faceplate opening is 0.5mm larger than it "should" be to allow
 </deviceset>
 </devicesets>
 </library>
-<library name="RemotePartsB">
+<library name="RemoteParts">
 <packages>
 <package name="JST-3-PTH-REVERSE">
 <wire x1="-3.95" y1="-1.6" x2="-3.95" y2="2.69" width="0.2032" layer="21"/>
@@ -8961,10 +8961,10 @@ Groups of components that insist on having their own PCB. Usually requires heade
 </class>
 </classes>
 <parts>
-<part name="J12" library="RemotePartsB" deviceset="JST_3PIN_GND_VDD_SIG" device=""/>
-<part name="J14" library="RemotePartsB" deviceset="JST_3PIN_GND_VDD_SIG" device=""/>
-<part name="J16" library="RemotePartsB" deviceset="JST_3PIN_GND_VDD_SIG" device=""/>
-<part name="J18" library="RemotePartsB" deviceset="JST_3PIN_GND_VDD_SIG" device=""/>
+<part name="J12" library="RemoteParts" deviceset="JST_3PIN_GND_VDD_SIG" device=""/>
+<part name="J14" library="RemoteParts" deviceset="JST_3PIN_GND_VDD_SIG" device=""/>
+<part name="J16" library="RemoteParts" deviceset="JST_3PIN_GND_VDD_SIG" device=""/>
+<part name="J18" library="RemoteParts" deviceset="JST_3PIN_GND_VDD_SIG" device=""/>
 <part name="B1" library="Controller" deviceset="BUTTON-TACTILE" device="-SQUARE"/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="BATT1" library="Components" deviceset="BATTERY" device="-AA-CLIP"/>
@@ -8993,29 +8993,29 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <attribute name="PIN2" value="A"/>
 <attribute name="PIN3" value="-"/>
 </part>
-<part name="J2" library="RemotePartsB" deviceset="FRSKY-GIMBAL" device="">
+<part name="J2" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="">
 <attribute name="CH1" value="THR"/>
 <attribute name="CH2" value="YAW"/>
 </part>
-<part name="J1" library="RemotePartsB" deviceset="FRSKY-GIMBAL" device="">
+<part name="J1" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="">
 <attribute name="CH1" value="PITCH"/>
 <attribute name="CH2" value="ROLL"/>
 </part>
-<part name="TM1" library="RemotePartsB" deviceset="TRIMPOT" device="3386"/>
+<part name="TM1" library="RemoteParts" deviceset="TRIMPOT" device="3386"/>
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="S1" library="RemotePartsB" deviceset="POWER-SWITCH-MFS201N-9-Z" device=""/>
+<part name="S1" library="RemoteParts" deviceset="POWER-SWITCH-MFS201N-9-Z" device=""/>
 <part name="LED1" library="Components" deviceset="LED" device="-5MM-RED">
 <attribute name="DISTPN" value="679"/>
 </part>
 <part name="+3V4" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
-<part name="J3" library="RemotePartsB" deviceset="WIRE-HARNESS-SPARKFUN-9915" device=""/>
+<part name="J3" library="RemoteParts" deviceset="WIRE-HARNESS-SPARKFUN-9915" device=""/>
 <part name="U$3" library="Components" deviceset="PROTO-AREA" device="-10X10"/>
 <part name="+3V5" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="U$4" library="BOBs" deviceset="ATMEGA128RFA1" device="-BOB"/>
-<part name="TM2" library="RemotePartsB" deviceset="TRIMPOT" device="3386"/>
+<part name="TM2" library="RemoteParts" deviceset="TRIMPOT" device="3386"/>
 <part name="+3V2" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="J4" library="Components" deviceset="HEADER-0.1IN-4POS" device="-FEMALE">
@@ -9068,7 +9068,7 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <part name="J8" library="Components" deviceset="HEADER-0.1IN-3POS" device="-FEMALE"/>
 <part name="J9" library="Components" deviceset="HEADER-0.1IN-3POS" device="-FEMALE"/>
 <part name="J10" library="Components" deviceset="HEADER-0.1IN-3POS" device="-FEMALE"/>
-<part name="F1" library="RemotePartsB" deviceset="SHORT" device=""/>
+<part name="F1" library="RemoteParts" deviceset="SHORT" device=""/>
 <part name="C1" library="KoalaBuild" deviceset="RESOLVED-CAPACITOR-POL_" device="TH-RADIAL_ALUMINUM_18MM">
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="P5158-ND"/>

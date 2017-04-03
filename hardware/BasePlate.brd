@@ -248,29 +248,113 @@
 <wire x1="-39" y1="-35" x2="-40" y2="-34" width="0.0254" layer="20" curve="-90"/>
 </plain>
 <libraries>
-<library name="RemotePartsA">
+<library name="RemoteParts">
 <packages>
-<package name="FRSKY-TARANIS-GIMBAL">
-<description>Frsky-Taranis-Replacement-Gimbal
-
-http://rclife.co.uk/Frsky-Taranis-Replacement-Gimbal
-
-https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.html</description>
-<hole x="-27" y="27" drill="2.8"/>
-<hole x="-27" y="-27" drill="2.8"/>
-<hole x="27" y="-27" drill="2.8"/>
-<hole x="27" y="27" drill="2.8"/>
-<wire x1="29.5" y1="26.5" x2="29.5" y2="-26.5" width="0.127" layer="51"/>
-<wire x1="29.5" y1="-26.5" x2="26.5" y2="-29.5" width="0.127" layer="51" curve="-90"/>
-<wire x1="26.5" y1="-29.5" x2="-26.5" y2="-29.5" width="0.127" layer="51"/>
-<wire x1="-26.5" y1="-29.5" x2="-29.5" y2="-26.5" width="0.127" layer="51" curve="-90"/>
-<wire x1="-29.5" y1="-26.5" x2="-29.5" y2="26.5" width="0.127" layer="51"/>
-<wire x1="-29.5" y1="26.5" x2="-26.5" y2="29.5" width="0.127" layer="51" curve="-90"/>
-<wire x1="-26.5" y1="29.5" x2="26.5" y2="29.5" width="0.127" layer="51"/>
-<wire x1="26.5" y1="29.5" x2="29.5" y2="26.5" width="0.127" layer="51" curve="-90"/>
-<wire x1="30" y1="7.5" x2="35" y2="7.5" width="0.127" layer="51"/>
-<wire x1="35" y1="7.5" x2="35" y2="-7.5" width="0.127" layer="51"/>
-<wire x1="35" y1="-7.5" x2="30" y2="-7.5" width="0.127" layer="51"/>
+<package name="JST-3-PTH-REVERSE">
+<wire x1="-3.95" y1="-1.6" x2="-3.95" y2="2.69" width="0.2032" layer="21"/>
+<wire x1="-3.95" y1="2.69" x2="3.95" y2="2.69" width="0.2032" layer="21"/>
+<wire x1="3.95" y1="2.69" x2="3.95" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-3.95" y1="-1.6" x2="-3.3" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="3.95" y1="-1.6" x2="3.3" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-1.6" x2="-3.3" y2="0" width="0.2032" layer="21"/>
+<wire x1="3.3" y1="-1.6" x2="3.3" y2="0" width="0.2032" layer="21"/>
+<pad name="1" x="-2" y="0" drill="0.9" diameter="1.6"/>
+<pad name="2" x="0" y="0" drill="0.9" diameter="1.6"/>
+<pad name="3" x="2" y="0" drill="0.9" diameter="1.6"/>
+<text x="0" y="3.835" size="1.27" layer="25" font="vector" align="center">&gt;Name</text>
+<text x="0" y="-2.54" size="1.778" layer="51" font="vector" align="center">+</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="51" font="vector" align="center">-</text>
+<text x="2.2225" y="-2.54" size="1.778" layer="51" font="vector" align="center">S</text>
+</package>
+<package name="JST-13-PTH">
+<wire x1="-3.95" y1="-2" x2="-3.95" y2="3" width="0.2032" layer="21"/>
+<wire x1="-3.95" y1="3" x2="21.95" y2="3" width="0.2032" layer="21"/>
+<wire x1="21.95" y1="3" x2="21.95" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-3.95" y1="-2" x2="-3.3" y2="-2" width="0.2032" layer="21"/>
+<wire x1="21.95" y1="-2" x2="21.3" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-2" x2="-3.3" y2="0" width="0.2032" layer="21"/>
+<wire x1="21.3" y1="-2" x2="21.3" y2="0" width="0.2032" layer="21"/>
+<wire x1="-4.5" y1="3.5" x2="22.5" y2="3.5" width="0.127" layer="39"/>
+<wire x1="22.5" y1="3.5" x2="22.5" y2="-2.5" width="0.127" layer="39"/>
+<wire x1="22.5" y1="-2.5" x2="-4.5" y2="-2.5" width="0.127" layer="39"/>
+<wire x1="-4.5" y1="-2.5" x2="-4.5" y2="3.5" width="0.127" layer="39"/>
+<pad name="1" x="-2" y="0" drill="0.9" diameter="1.6" shape="square"/>
+<pad name="2" x="0" y="0" drill="0.9" diameter="1.6"/>
+<pad name="3" x="2" y="0" drill="0.9" diameter="1.6"/>
+<pad name="4" x="4" y="0" drill="0.9" diameter="1.6"/>
+<pad name="5" x="6" y="0" drill="0.9" diameter="1.6"/>
+<pad name="6" x="8" y="0" drill="0.9" diameter="1.6"/>
+<pad name="7" x="10" y="0" drill="0.9" diameter="1.6"/>
+<pad name="8" x="12" y="0" drill="0.9" diameter="1.6"/>
+<pad name="9" x="14" y="0" drill="0.9" diameter="1.6"/>
+<pad name="10" x="16" y="0" drill="0.9" diameter="1.6"/>
+<pad name="11" x="18" y="0" drill="0.9" diameter="1.6"/>
+<pad name="12" x="20" y="0" drill="0.9" diameter="1.6"/>
+<text x="8.5" y="3.9625" size="1.27" layer="25" font="vector" align="center">&gt;Name</text>
+<text x="-2" y="-3" size="1.27" layer="21" font="vector" align="center">R</text>
+<text x="0" y="-3" size="1.27" layer="21" font="vector" align="center">O</text>
+<text x="2" y="-3" size="1.27" layer="21" font="vector" align="center">B</text>
+<text x="4" y="-3" size="1.27" layer="21" font="vector" align="center">R</text>
+<text x="6" y="-3" size="1.27" layer="21" font="vector" align="center">O</text>
+<text x="8" y="-3" size="1.27" layer="21" font="vector" align="center">B</text>
+<text x="10" y="-3" size="1.27" layer="21" font="vector" align="center">R</text>
+<text x="16" y="-3" size="1.27" layer="21" font="vector" align="center">R</text>
+<text x="12" y="-3" size="1.27" layer="21" font="vector" align="center">O</text>
+<text x="18" y="-3" size="1.27" layer="21" font="vector" align="center">O</text>
+<text x="8" y="-3" size="1.27" layer="21" font="vector" align="center">B</text>
+<text x="14" y="-3" size="1.27" layer="21" font="vector" align="center">B</text>
+<text x="20" y="-3" size="1.27" layer="21" font="vector" align="center">B</text>
+<text x="0" y="-5" size="1.27" layer="21" font="vector" align="center">&gt;CH1</text>
+<text x="6" y="-5" size="1.27" layer="21" font="vector" align="center">&gt;CH2</text>
+</package>
+<package name="POWER-SWITCH-MFS201N-9-Z">
+<wire x1="-10.16" y1="2.54" x2="10.16" y2="2.54" width="0.127" layer="21"/>
+<wire x1="10.16" y1="2.54" x2="10.16" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="10.16" y1="-2.54" x2="-10.16" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="-2.54" x2="-10.16" y2="2.54" width="0.127" layer="21"/>
+<pad name="P$1" x="-4" y="1.25" drill="1.5" shape="square"/>
+<pad name="P$2" x="0" y="1.25" drill="1.5"/>
+<pad name="P$3" x="4" y="1.25" drill="1.5"/>
+<pad name="P$4" x="-4" y="-1.25" drill="1.5"/>
+<pad name="P$5" x="0" y="-1.25" drill="1.5"/>
+<pad name="P$6" x="4" y="-1.25" drill="1.5"/>
+<text x="-5.08" y="3.81" size="1.27" layer="21" font="vector" align="center">ON</text>
+<text x="5.08" y="3.81" size="1.27" layer="21" font="vector" align="center">OFF</text>
+<text x="0" y="-3.81" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
+<hole x="-8.25" y="0" drill="2.3"/>
+<hole x="8.25" y="0" drill="2.3"/>
+</package>
+<package name="SHORT">
+<smd name="A" x="-1" y="0" dx="2" dy="2" layer="1" stop="no" thermals="no" cream="no"/>
+<smd name="B" x="1" y="0" dx="2" dy="2" layer="1" stop="no" thermals="no" cream="no"/>
+</package>
+<package name="TRIM-3386">
+<circle x="0" y="0" radius="3.302" width="0.127" layer="21"/>
+<wire x1="-4.7625" y1="-4.7625" x2="4.7625" y2="-4.7625" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="-4.7625" x2="4.7625" y2="4.7625" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="4.7625" x2="-4.7625" y2="4.7625" width="0.127" layer="21"/>
+<wire x1="-4.7625" y1="4.7625" x2="-4.7625" y2="-4.7625" width="0.127" layer="21"/>
+<pad name="1" x="-2.54" y="-2.8575" drill="0.9" diameter="1.778"/>
+<pad name="2" x="0" y="-2.8575" drill="0.9" diameter="1.778"/>
+<pad name="3" x="2.54" y="-2.8575" drill="0.9" diameter="1.778"/>
+<text x="-5.08" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="6.35" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+</package>
+<package name="WIRE-HARNESS-SPARKFUN-9915">
+<wire x1="-3.95" y1="-1.6" x2="-3.95" y2="6" width="0.2032" layer="21"/>
+<wire x1="-3.95" y1="6" x2="3.95" y2="6" width="0.2032" layer="21"/>
+<wire x1="3.95" y1="6" x2="3.95" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-3.95" y1="-1.6" x2="-3.3" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="3.95" y1="-1.6" x2="3.3" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-3.3" y1="-1.6" x2="-3.3" y2="0" width="0.2032" layer="21"/>
+<wire x1="3.3" y1="-1.6" x2="3.3" y2="0" width="0.2032" layer="21"/>
+<pad name="BLACK" x="2" y="0" drill="0.9" diameter="1.6"/>
+<pad name="BLUE" x="-2" y="0" drill="0.9" diameter="1.6"/>
+<pad name="RED" x="0" y="0" drill="0.9" diameter="1.6"/>
+<text x="0" y="7.4625" size="1.778" layer="25" font="vector" align="center">&gt;Name</text>
+<text x="-2" y="-2" size="1.778" layer="21" font="vector" rot="R90" align="center-right">BLUE</text>
+<text x="0" y="-2" size="1.778" layer="21" font="vector" rot="R90" align="center-right">RED</text>
+<text x="2" y="-2" size="1.778" layer="21" font="vector" rot="R90" align="center-right">BLACK</text>
 </package>
 <package name="SPARKFUN_LCD_33">
 <wire x1="0" y1="0" x2="80" y2="0" width="0.001" layer="21"/>
@@ -293,6 +377,63 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 <hole x="77.5" y="33.5" drill="2.8"/>
 <hole x="2.5" y="2.5" drill="2.8"/>
 <hole x="2.5" y="33.5" drill="2.8"/>
+</package>
+<package name="GIMBAL_FOOTPRINT_SCREWS">
+<description>This is the mounting footprint for the 9XR Replacement Gimbal. It requires a separate pinout to be placed to measure the gimbal.
+ You can see the analog transmitter here: http://www.hobbyking.com/hobbyking/store/__39505__Transmitter_Gimbal_Set_Left_Turnigy_9XR_Transmitter_Mode_1.html
+ The black wire is VDD, the White wire is Ground, the Red wire is Analog Out 
+Author: Dustin Richmond 
+Created: 10/25/2014</description>
+<hole x="-23.5" y="22.95" drill="2.8"/>
+<hole x="-23.5" y="-22.95" drill="2.8"/>
+<hole x="23.5" y="-22.95" drill="2.8"/>
+<hole x="23.5" y="22.95" drill="2.8"/>
+<wire x1="-26" y1="29" x2="26" y2="29" width="0.127" layer="51"/>
+<wire x1="26" y1="29" x2="29" y2="26" width="0.127" layer="51" curve="-90"/>
+<wire x1="29" y1="26" x2="29" y2="-26" width="0.127" layer="51"/>
+<wire x1="29" y1="-26" x2="26" y2="-29" width="0.127" layer="51" curve="-90"/>
+<wire x1="26" y1="-29" x2="-26" y2="-29" width="0.127" layer="51"/>
+<wire x1="-26" y1="-29" x2="-29" y2="-26" width="0.127" layer="51" curve="-90"/>
+<wire x1="-29" y1="-26" x2="-29" y2="26" width="0.127" layer="51"/>
+<wire x1="-29" y1="26" x2="-26" y2="29" width="0.127" layer="51" curve="-90"/>
+<wire x1="29.2167" y1="8.2354" x2="39.2167" y2="8.2354" width="0.127" layer="51"/>
+<wire x1="39.2167" y1="8.2354" x2="39.2167" y2="-16.7646" width="0.127" layer="51"/>
+<wire x1="39.2167" y1="-16.7646" x2="29.2167" y2="-16.7646" width="0.127" layer="51"/>
+</package>
+<package name="GIMBAL_FOOTPRINT">
+<description>This is the mounting footprint for the 9XR Replacement Gimbal. It requires a separate pinout to be placed to measure the gimbal.
+ You can see the analog transmitter here: http://www.hobbyking.com/hobbyking/store/__39505__Transmitter_Gimbal_Set_Left_Turnigy_9XR_Transmitter_Mode_1.html
+ The black wire is VDD, the White wire is Ground, the Red wire is Analog Out 
+Author: Dustin Richmond 
+Created: 10/25/2014</description>
+<circle x="0" y="0" radius="23.67" width="0.1" layer="48"/>
+<circle x="0" y="0" radius="23.8" width="0.05" layer="20"/>
+<hole x="-23.5" y="22.95" drill="2.8"/>
+<hole x="-23.5" y="-22.95" drill="2.8"/>
+<hole x="23.5" y="-22.95" drill="2.8"/>
+<hole x="23.5" y="22.95" drill="2.8"/>
+</package>
+<package name="FRSKY-TARANIS-GIMBAL">
+<description>Frsky-Taranis-Replacement-Gimbal
+
+http://rclife.co.uk/Frsky-Taranis-Replacement-Gimbal
+
+https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.html</description>
+<hole x="-27" y="27" drill="2.8"/>
+<hole x="-27" y="-27" drill="2.8"/>
+<hole x="27" y="-27" drill="2.8"/>
+<hole x="27" y="27" drill="2.8"/>
+<wire x1="29.5" y1="26.5" x2="29.5" y2="-26.5" width="0.127" layer="51"/>
+<wire x1="29.5" y1="-26.5" x2="26.5" y2="-29.5" width="0.127" layer="51" curve="-90"/>
+<wire x1="26.5" y1="-29.5" x2="-26.5" y2="-29.5" width="0.127" layer="51"/>
+<wire x1="-26.5" y1="-29.5" x2="-29.5" y2="-26.5" width="0.127" layer="51" curve="-90"/>
+<wire x1="-29.5" y1="-26.5" x2="-29.5" y2="26.5" width="0.127" layer="51"/>
+<wire x1="-29.5" y1="26.5" x2="-26.5" y2="29.5" width="0.127" layer="51" curve="-90"/>
+<wire x1="-26.5" y1="29.5" x2="26.5" y2="29.5" width="0.127" layer="51"/>
+<wire x1="26.5" y1="29.5" x2="29.5" y2="26.5" width="0.127" layer="51" curve="-90"/>
+<wire x1="30" y1="7.5" x2="35" y2="7.5" width="0.127" layer="51"/>
+<wire x1="35" y1="7.5" x2="35" y2="-7.5" width="0.127" layer="51"/>
+<wire x1="35" y1="-7.5" x2="30" y2="-7.5" width="0.127" layer="51"/>
 </package>
 <package name="CONTROLLER_OUTLINE">
 <hole x="-64.5" y="-52.5" drill="2.8"/>
@@ -638,10 +779,10 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="E$3" library="RemotePartsA" package="FRSKY-TARANIS-GIMBAL" value="" x="-108" y="0" locked="yes"/>
-<element name="E$4" library="RemotePartsA" package="FRSKY-TARANIS-GIMBAL" value="" x="108" y="0" locked="yes" rot="R180"/>
-<element name="E$5" library="RemotePartsA" package="SPARKFUN_LCD_33" value="" x="-40" y="-53" locked="yes"/>
-<element name="E$6" library="RemotePartsA" package="CONTROLLER_OUTLINE" value="" x="0" y="0" locked="yes"/>
+<element name="E$3" library="RemoteParts" package="FRSKY-TARANIS-GIMBAL" value="" x="-108" y="0" locked="yes"/>
+<element name="E$4" library="RemoteParts" package="FRSKY-TARANIS-GIMBAL" value="" x="108" y="0" locked="yes" rot="R180"/>
+<element name="E$5" library="RemoteParts" package="SPARKFUN_LCD_33" value="" x="-40" y="-53" locked="yes"/>
+<element name="E$6" library="RemoteParts" package="CONTROLLER_OUTLINE" value="" x="0" y="0" locked="yes"/>
 <element name="E$7" library="BOBs" package="ATMEGA128RFA1" value="" x="-25.5" y="58.5" locked="yes" rot="R270"/>
 </elements>
 <signals>
