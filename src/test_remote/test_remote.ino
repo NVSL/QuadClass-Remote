@@ -126,9 +126,7 @@ void loop() {
   // Read incoming presses from buttons: WHY AREN'T INTERRUPTS WORKING
   button1Value = digitalRead(PIN_BTN1); 
   button2Value = digitalRead(PIN_BTN2); 
-  Serial.println(button1Value);
-  Serial.println(button2Value);
-
+    
   // Print to serial if press registered
   if (button1Value == 0)
   {
@@ -160,22 +158,11 @@ void loop() {
 
   update_display();
 
-  readYaw = analogRead(PIN_YAW);
-  readThrottle = analogRead(PIN_THROTTLE);
-  readRoll = analogRead(PIN_ROLL);
-  readPitch = analogRead(PIN_PITCH);
-  readPot1 = analogRead(PIN_POT1);
-  readPot2 = analogRead(PIN_POT2);
-
-  Serial.println(
-                 String(readYaw) + " " + 
-                 String(readThrottle) + " " + 
-                 String(readRoll) + " " + 
-                 String(readPitch) + " " + 
-                 String(readPot1) + " " + 
-                 String(readPot2)
-                 );
-                 
+  for(char i= 0; i < 8;i++) {
+    Serial.print(numbers[i]);
+    Serial.print(" ");
+    
+  }
 
   /* RADIO TEST: Test sending/receiving of serial data over radio */
 
@@ -191,6 +178,6 @@ void loop() {
 
   Serial.println("\n");
  
-  delay(50);
+  delay(200);
 
 }
