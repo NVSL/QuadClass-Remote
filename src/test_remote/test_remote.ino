@@ -85,14 +85,16 @@ void setup() {
  
   const int RADIO_CHANNEL = 11;        // Channel for radio communications (can be 11-26)
   const int SERIAL_BAUD = 9600;        // Baud rate for serial port 
-  const int SERIAL1_BAUD = 115200;     // Baud rate for serial1 port
+  const int SERIAL1_BAUD = 9600;     // Baud rate for serial1 port
 
   Serial.begin(SERIAL_BAUD);           // Start up serial
-  Serial1.begin(SERIAL_BAUD);         // TODO: what will we use this for
-
+  Serial1.begin(SERIAL_BAUD);  
+  
+  delay(100);
   for(char i = 0; i < 8; i++) {
     scale[7-i] = B11111111;
     lcd.createChar(i+1, scale);
+    delay(10);
   }
  
   rfBegin(RADIO_CHANNEL);              // Initialize ATmega128RFA1 radio on given channel
@@ -145,7 +147,7 @@ void loop() {
   /* LED TEST: Turn LEDs on and off as program cycles (start LOW) */
 
   if (last + 1000 <= millis()) {
-    LEDVal = !LEDVal;
+    LEDVal = 1;//!LEDVal;
     digitalWrite(PIN_LED_BLUE, LEDVal);
     digitalWrite(PIN_LED_GRN, LEDVal);
     digitalWrite(PIN_LED_RED, LEDVal);
@@ -167,14 +169,14 @@ void loop() {
   /* RADIO TEST: Test sending/receiving of serial data over radio */
 
   /* If serial comes in... */
-  if (Serial.available())  
+  /*if (Serial.available())  
   {
     rfWrite(Serial.read()); // ...send it out the radio.
   }
   if (rfAvailable())  // If data received on radio...
   {
     Serial.print(rfRead());  // ... send it out serial.
-  }
+  }*/
 
   Serial.println("\n");
  
