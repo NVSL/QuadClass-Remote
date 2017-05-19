@@ -9100,6 +9100,12 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="+3V6" library="supply1" deviceset="+3V3" device=""/>
+<part name="TM3" library="RemoteParts" deviceset="TRIMPOT" device="3386"/>
+<part name="TM4" library="RemoteParts" deviceset="TRIMPOT" device="3386"/>
+<part name="GND11" library="supply1" deviceset="GND" device=""/>
+<part name="GND13" library="supply1" deviceset="GND" device=""/>
+<part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
+<part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9187,6 +9193,12 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <instance part="GND12" gate="1" x="157.48" y="17.78"/>
 <instance part="GND10" gate="1" x="73.66" y="121.92"/>
 <instance part="+3V6" gate="G$1" x="264.16" y="66.04"/>
+<instance part="TM3" gate="G$1" x="-45.72" y="149.86"/>
+<instance part="TM4" gate="G$1" x="-22.86" y="149.86"/>
+<instance part="GND11" gate="1" x="-45.72" y="142.24"/>
+<instance part="GND13" gate="1" x="-22.86" y="142.24"/>
+<instance part="+3V9" gate="G$1" x="-45.72" y="157.48"/>
+<instance part="+3V10" gate="G$1" x="-22.86" y="157.48"/>
 </instances>
 <busses>
 </busses>
@@ -9318,6 +9330,14 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <wire x1="81.28" y1="124.46" x2="73.66" y2="124.46" width="0.1524" layer="91"/>
 <junction x="81.28" y="124.46"/>
 <pinref part="GND10" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="TM3" gate="G$1" pin="A"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="TM4" gate="G$1" pin="A"/>
+<pinref part="GND13" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="BTN1" class="0">
@@ -9521,6 +9541,14 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <pinref part="U$4" gate="G$1" pin="AREF"/>
 <wire x1="254" y1="63.5" x2="264.16" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="+3V6" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="TM3" gate="G$1" pin="E"/>
+<pinref part="+3V9" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="TM4" gate="G$1" pin="E"/>
+<pinref part="+3V10" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="TX1" class="0">
@@ -9862,6 +9890,30 @@ Groups of components that insist on having their own PCB. Usually requires heade
 <segment>
 <pinref part="D5" gate="G$1" pin="C"/>
 <pinref part="R5" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="POT3" class="0">
+<segment>
+<pinref part="TM3" gate="G$1" pin="S"/>
+<wire x1="-40.64" y1="149.86" x2="-38.1" y2="149.86" width="0.1524" layer="91"/>
+<label x="-38.1" y="149.86" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="A4"/>
+<wire x1="218.44" y1="-2.54" x2="215.9" y2="-2.54" width="0.1524" layer="91"/>
+<label x="213.36" y="-2.54" size="1.778" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="POT4" class="0">
+<segment>
+<pinref part="TM4" gate="G$1" pin="S"/>
+<wire x1="-17.78" y1="149.86" x2="-12.7" y2="149.86" width="0.1524" layer="91"/>
+<label x="-12.7" y="149.86" size="1.778" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$4" gate="G$1" pin="A5"/>
+<wire x1="218.44" y1="-5.08" x2="215.9" y2="-5.08" width="0.1524" layer="91"/>
+<label x="213.36" y="-5.08" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>

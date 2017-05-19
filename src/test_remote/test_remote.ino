@@ -147,7 +147,7 @@ void loop() {
   /* LED TEST: Turn LEDs on and off as program cycles (start LOW) */
 
   if (last + 1000 <= millis()) {
-    LEDVal = 1;//!LEDVal;
+    LEDVal = 0;//!LEDVal;
     digitalWrite(PIN_LED_BLUE, LEDVal);
     digitalWrite(PIN_LED_GRN, LEDVal);
     digitalWrite(PIN_LED_RED, LEDVal);
