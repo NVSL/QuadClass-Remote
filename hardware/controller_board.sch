@@ -7918,6 +7918,7 @@ Otherwise, use 4xAA and regulate down to 4V.</text>
 <text x="-48.26" y="-22.86" size="1.778" layer="97">Double check button polarity.</text>
 <text x="-48.26" y="-27.94" size="1.778" layer="97">Double check other fixes on current boards.</text>
 <text x="-48.26" y="-33.02" size="1.778" layer="97">See notes about aref on board layout.  </text>
+<text x="271.78" y="-33.02" size="1.778" layer="97">Use 3.3 V regulator</text>
 </plain>
 <instances>
 <instance part="B1" gate="G$1" x="78.74" y="134.62" rot="R270"/>
@@ -8104,7 +8105,7 @@ Otherwise, use 4xAA and regulate down to 4V.</text>
 <segment>
 <pinref part="J3" gate="G$1" pin="BLACK"/>
 <wire x1="210.82" y1="152.4" x2="205.74" y2="152.4" width="0.1524" layer="91"/>
-<label x="205.74" y="152.4" size="1.27" layer="91" rot="R180" xref="yes"/>
+<label x="205.74" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="GND8" gate="1" pin="GND"/>
@@ -8215,11 +8216,6 @@ Otherwise, use 4xAA and regulate down to 4V.</text>
 <pinref part="S1" gate="G$1" pin="C"/>
 <wire x1="-38.1" y1="121.92" x2="-43.18" y2="121.92" width="0.1524" layer="91"/>
 <label x="-43.18" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J3" gate="G$1" pin="RED"/>
-<wire x1="210.82" y1="149.86" x2="205.74" y2="149.86" width="0.1524" layer="91"/>
-<label x="205.74" y="149.86" size="1.27" layer="91" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C16" gate="G$1" pin="2"/>
@@ -8390,6 +8386,11 @@ Otherwise, use 4xAA and regulate down to 4V.</text>
 <pinref part="+3V7" gate="G$1" pin="+3V3"/>
 <wire x1="15.24" y1="160.02" x2="15.24" y2="154.94" width="0.1524" layer="91"/>
 <junction x="15.24" y="154.94"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="RED"/>
+<wire x1="210.82" y1="149.86" x2="205.74" y2="149.86" width="0.1524" layer="91"/>
+<label x="205.74" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TX1" class="0">
