@@ -26,6 +26,7 @@
   
 #include <Arduino.h> // Required for digitalWrites, etc.
 
+
 // Board pin definitions.
 const int RX_LED = 34;  // B6 - RF RX LED
 const int TX_LED = 35;  // B7 - RF TX LED
@@ -41,18 +42,20 @@ struct ringBuffer
 } radioRXBuffer;
 
 
+void rfFlush() {
+	for (int i = 0; i < RF_BUFFER_SIZE; i++)
+	{
+		radioRXBuffer.buffer[i] = 0;
+	}
+	radioRXBuffer.head = radioRXBuffer.tail = 0;
+}
 // Initialize the RFA1's low-power 2.4GHz transciever.
 // Sets up the state machine, and gets the radio into
 // the RX_ON state. Interrupts are enabled for RX
 // begin and end, as well as TX end.
 uint8_t rfBegin(uint8_t channel)
 {
-  for (int i=0; i<128; i++)
-  {
-    radioRXBuffer.buffer[i] = 0;
-  }
-  radioRXBuffer.tail = 0;
-  radioRXBuffer.head = 0;
+	rfFlush();
 
   // Setup RX/TX LEDs: These are pins B6/34 (RX) and B7/35 (TX).
   pinMode(RX_LED, OUTPUT);
@@ -168,6 +171,42 @@ void rfWrite(uint8_t b)
   TRX_STATE = (TRX_STATE & 0xE0) | RX_ON;
 }
 
+/** 
+ *  Description: This function will transmit a packet of bytes out of the radio
+ *  Arguments:
+ *  b - pointer to the location in memory that we want to send over the radio
+ *  length - the length of the buffer. The datasheet suggests that the
+ *           radio can send packets of up-to 127 bytes long. In practice, it
+ *           only sends approximately 125 bytes successfully.
+ */
+void rfWrite(uint8_t * b, uint8_t length)
+{
+
+  // Transceiver State Control Register -- TRX_STATE
+  // This regiseter controls the states of the radio.
+  // Set to the PLL_ON state - this state begins the TX.
+  TRX_STATE = (TRX_STATE & 0xE0) | PLL_ON;  // Set to TX start state
+  while(!(TRX_STATUS & PLL_ON));  // Wait for PLL to lock
+
+  digitalWrite(TX_LED, HIGH);  // Turn on TX LED
+
+  // Start of frame buffer - TRXFBST
+  // This is the first byte of the 128 byte frame. It should contain
+  // the length of the transmission.
+  TRXFBST = length + 2;
+  // Now copy the byte-to-send into the address directly after TRXFBST.
+  memcpy((void *)(&TRXFBST+1), b, length);
+
+  // Transceiver Pin Register -- TRXPR.
+  // From the PLL_ON state, setting SLPTR high will initiate the TX.
+  TRXPR |= (1<<SLPTR);   // SLPTR = 1
+  TRXPR &= ~(1<<SLPTR);  // SLPTR = 0  // Then bring it back low
+
+  // After sending the byte, set the radio back into the RX waiting state.
+  TRX_STATE = (TRX_STATE & 0xE0) | RX_ON;
+}
+
+
 // Returns how many unread bytes remain in the radio RX buffer.
 // 0 means the buffer is empty. Maxes out at RF_BUFFER_SIZE.
 unsigned int rfAvailable()
@@ -190,6 +229,24 @@ char rfRead()
     radioRXBuffer.tail = (unsigned int)(radioRXBuffer.tail + 1) % RF_BUFFER_SIZE;
     return c;
   }
+}
+
+
+// Read up to len bytes into buf.  Return the number of bytes read.
+char rfRead(uint8_t * buf, uint8_t len)
+{
+     uint8_t count = 0;
+     while (count <= len) {
+	  if (radioRXBuffer.head == radioRXBuffer.tail) {
+	       break;
+	  } else {
+	       // Read from the buffer tail, and update the tail pointer.
+	       char c = radioRXBuffer.buffer[radioRXBuffer.tail];
+	       radioRXBuffer.tail = (unsigned int)(radioRXBuffer.tail + 1) % RF_BUFFER_SIZE;
+	       buf[count++] = c;
+	  }
+     }
+     return count;
 }
 
 // This interrupt is called when radio TX is complete. We'll just
@@ -241,3 +298,4 @@ ISR(TRX24_RX_END_vect)
 
   digitalWrite(RX_LED, LOW);  // Turn receive LED off, and we're out
 }
+
