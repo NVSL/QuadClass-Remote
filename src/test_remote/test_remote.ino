@@ -1,3 +1,4 @@
+
 #include <radio.h>
 
 
@@ -39,7 +40,7 @@ uint8_t scale[8] =
                   B00000000,
                   B00000000};
                   
-int numbers[8] = {0,1,2,3,4,5,6,7};
+int numbers[9] = {0,1,2,3,4,5,6,7, 0};
 char *labels[8] = {"T ", "Y ", "P ", "R ", "P1", "P2", "B1", "B2"};
 char pins[8] = {PIN_THROTTLE, PIN_YAW, PIN_PITCH, PIN_ROLL, PIN_POT1, PIN_POT2, PIN_POT1, PIN_POT2};
 
@@ -89,7 +90,9 @@ void setup() {
 
   Serial.begin(SERIAL_BAUD);           // Start up serial
   Serial1.begin(SERIAL_BAUD);  
-  
+  rfBegin(11);  // Initialize ATmega128RFA1 radio on channel 11 (can be 11-26)
+
+
   delay(100);
   for(char i = 0; i < 8; i++) {
     scale[7-i] = B11111111;
@@ -120,6 +123,8 @@ void setup() {
 }
 
 int last = 0;
+char c  = 'A';
+char magic;
 
 void loop() {
 
@@ -163,23 +168,21 @@ void loop() {
   for(char i= 0; i < 8;i++) {
     Serial.print(numbers[i]);
     Serial.print(" ");
-    
   }
 
-  /* RADIO TEST: Test sending/receiving of serial data over radio */
-
-  /* If serial comes in... */
-  /*if (Serial.available())  
-  {
-    rfWrite(Serial.read()); // ...send it out the radio.
-  }
-  if (rfAvailable())  // If data received on radio...
-  {
-    Serial.print(rfRead());  // ... send it out serial.
-  }*/
+  rfWrite((uint8_t*)numbers, sizeof(numbers));
 
   Serial.println("\n");
- 
-  delay(200);
+
+  if (rfAvailable()) {  // If data receievd on radio...
+      digitalWrite(34, 1);
+      delay(200);
+      rfRead(&magic, sizeof(magic));
+      numbers[8] = magic;
+      digitalWrite(34, 0);
+  } else {
+    delay(200);
+    digitalWrite(34,0); 
+  }
 
 }
