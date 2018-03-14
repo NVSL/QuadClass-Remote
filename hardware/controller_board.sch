@@ -7784,15 +7784,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <text x="154.94" y="114.3" size="1.778" layer="97">Potentiameter</text>
 <text x="314.96" y="-27.94" size="1.778" layer="97">Power LED</text>
 <text x="127" y="114.3" size="1.778" layer="97">Potentiameter</text>
-<text x="-35.56" y="182.88" size="1.778" layer="97">What about serial LCD?
-Check if we can run it off lipo battery.  See if we can run it at 3.3 V.  If so, we could use a bigger 3.3V regulator. and power everything off of it.
-
-Otherwise, use 4xAA and regulate down to 4V.
-
-</text>
-<text x="-48.26" y="-22.86" size="1.778" layer="97">Double check button polarity.  Seem right confirm with fixed boards.</text>
-<text x="-48.26" y="-27.94" size="1.778" layer="97">Double check other fixes on current boards.</text>
-<text x="-48.26" y="-33.02" size="1.778" layer="97">See notes about aref on board layout.  </text>
 <text x="271.78" y="-40.64" size="1.778" layer="97">Use 3.3 V regulator
 
 LP3985IM5‑3.3/NOPBCT‑ND
@@ -7803,9 +7794,7 @@ pwr led,
 info?,
 big cap,
 </text>
-<text x="200.66" y="160.02" size="1.778" layer="97">Connect power to +3v3 or VBAT?</text>
 <text x="271.78" y="-48.26" size="1.27" layer="97">For next rev:  Red board has 2x1uf + 2x10uf decoupling.  instead of 2x100uf</text>
-<rectangle x1="193.04" y1="124.46" x2="243.84" y2="172.72" layer="91"/>
 </plain>
 <instances>
 <instance part="B1" gate="G$1" x="78.74" y="134.62" rot="R270"/>
@@ -8568,6 +8557,11 @@ big cap,
 <pinref part="P+4" gate="VCC" pin="VBAT"/>
 <pinref part="C7" gate="G$1" pin="+"/>
 <wire x1="259.08" y1="10.16" x2="251.46" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="RED"/>
+<wire x1="210.82" y1="149.86" x2="205.74" y2="149.86" width="0.1524" layer="91"/>
+<label x="205.74" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$1" class="0">
