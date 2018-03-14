@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -352,11 +352,11 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 <hole x="-64.5" y="52.5" drill="2.8"/>
 <wire x1="-41.5" y1="-55" x2="-41.5" y2="-16" width="0.254" layer="51"/>
 <wire x1="-41.5" y1="-16" x2="-39.5" y2="-14" width="0.254" layer="51" curve="-90"/>
-<wire x1="-39.5" y1="-14" x2="41.5" y2="-14" width="0.254" layer="51"/>
-<wire x1="41.5" y1="-14" x2="43.5" y2="-16" width="0.254" layer="51" curve="-90"/>
-<wire x1="43.5" y1="-16" x2="43.5" y2="-55" width="0.254" layer="51"/>
-<wire x1="43.5" y1="-55" x2="49" y2="-60" width="0.254" layer="51" curve="90"/>
-<wire x1="49" y1="-60" x2="66" y2="-60" width="0.254" layer="51"/>
+<wire x1="-39.5" y1="-14" x2="39.5" y2="-14" width="0.254" layer="51"/>
+<wire x1="39.5" y1="-14" x2="41.5" y2="-16" width="0.254" layer="51" curve="-90"/>
+<wire x1="41.5" y1="-16" x2="41.5" y2="-55" width="0.254" layer="51"/>
+<wire x1="41.5" y1="-55" x2="47" y2="-60" width="0.254" layer="51" curve="90"/>
+<wire x1="47" y1="-60" x2="66" y2="-60" width="0.254" layer="51"/>
 <wire x1="-46.5" y1="-60" x2="-67" y2="-60" width="0.254" layer="51"/>
 <wire x1="-67" y1="-60" x2="-72" y2="-55" width="0.254" layer="51" curve="-90"/>
 <wire x1="-72" y1="-55" x2="-72" y2="53" width="0.254" layer="51"/>
