@@ -2289,8 +2289,8 @@ The radius of the faceplate opening is 0.5mm larger than it "should" be to allow
 <pad name="1" x="-2.54" y="-2.8575" drill="0.9" diameter="1.778"/>
 <pad name="2" x="0" y="-2.8575" drill="0.9" diameter="1.778"/>
 <pad name="3" x="2.54" y="-2.8575" drill="0.9" diameter="1.778"/>
-<text x="-5.08" y="-1.905" size="1.27" layer="25" rot="R90">&gt;NAME</text>
-<text x="6.35" y="-1.905" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<text x="-5.08" y="-1.905" size="1.27" layer="25" font="vector" rot="R90">&gt;NAME</text>
+<text x="6.35" y="-1.905" size="1.27" layer="27" font="vector" rot="R90">&gt;VALUE</text>
 </package>
 <package name="POWER-SWITCH-MFS201N-9-Z">
 <wire x1="-10.16" y1="2.54" x2="10.16" y2="2.54" width="0.127" layer="21"/>
@@ -6684,7 +6684,7 @@ The radius of the faceplate opening is 0.5mm larger than it "should" be to allow
 <wire x1="-1.7" y1="1.7" x2="14.4" y2="1.7" width="0.127" layer="39"/>
 <wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
-<text x="0.635" y="1.905" size="1.27" layer="51" font="vector" rot="R90">GRN</text>
+<text x="0.635" y="1.905" size="1.27" layer="21" font="vector" rot="R90">GRN</text>
 <wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
@@ -6698,7 +6698,7 @@ The radius of the faceplate opening is 0.5mm larger than it "should" be to allow
 <rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
 <wire x1="13.335" y1="-1.27" x2="12.065" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="13.335" y1="1.27" x2="13.97" y2="0.635" width="0.2032" layer="21"/>
-<text x="13.335" y="1.905" size="1.27" layer="51" font="vector" rot="R90">BLK</text>
+<text x="13.335" y="1.905" size="1.27" layer="21" font="vector" rot="R90">BLK</text>
 <wire x1="13.97" y1="-0.635" x2="13.335" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="13.97" y1="0.635" x2="13.97" y2="-0.635" width="0.2032" layer="21"/>
 <wire x1="14.4" y1="-1.7" x2="-1.7" y2="-1.7" width="0.127" layer="39"/>
@@ -7189,7 +7189,7 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DATASHEET" value="http://www.atmel.com/Images/Atmel-8266-MCU_Wireless-ATmega128RFA1_Datasheet.pdf"/>
 <attribute name="DIST" value="Digikey"/>
-<attribute name="DISTPN" value="ATMEGA128RFA1-ZUR00DKR-ND"/>
+<attribute name="DISTPN" value="ATMEGA128RFA1-ZU-ND "/>
 <attribute name="MFR" value="Atmel"/>
 <attribute name="MPN" value="ATMEGA128RFA1-ZUR00"/>
 <attribute name="PRICE" value="10.21"/>
@@ -7260,9 +7260,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="Digikey"/>
-<attribute name="DISTPN" value="490-1666-1-ND"/>
-<attribute name="MFR" value="Murata Electronics North America"/>
-<attribute name="MPN" value="GRM21BR71H104KA01L"/>
+<attribute name="DISTPN" value="399-6362-1-ND"/>
+<attribute name="MFR" value="KEMET"/>
+<attribute name="MPN" value="C0805C104K5RALTU"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="0.1uF"/>
 </technology>
@@ -7345,9 +7345,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="Digikey"/>
-<attribute name="DISTPN" value="490-4736-1-ND"/>
-<attribute name="MFR" value="Murata Electronics North America"/>
-<attribute name="MPN" value="GRM21BR71H105KA12L"/>
+<attribute name="DISTPN" value="1276-2928-1-ND "/>
+<attribute name="MFR" value="Samsung Electro-Mechanics"/>
+<attribute name="MPN" value="CL21B105KBFNFNE"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="1uF"/>
 </technology>
@@ -7597,7 +7597,11 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <connect gate="G$1" pin="P" pad="+"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="NA"/>
+<attribute name="DISTPN" value="NA" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -7677,7 +7681,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="TM1" library="RemoteParts" deviceset="TRIMPOT" device="3386"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="S1" library="RemoteParts" deviceset="POWER-SWITCH-MFS201N-9-Z" device=""/>
-<part name="LED1" library="Components" deviceset="LED" device="-5MM-RED">
+<part name="D4" library="Components" deviceset="LED" device="-5MM-RED">
 <attribute name="DISTPN" value="679"/>
 </part>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
@@ -7735,7 +7739,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="GND17" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND18" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND19" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="LED_Y" library="custom" deviceset="LED" device="CMD17" value="2V - 20mA"/>
+<part name="D1" library="custom" deviceset="LED" device="CMD17" value="2V - 20mA"/>
 <part name="P+10" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+1" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+2" library="supply1" deviceset="+3V3" device=""/>
@@ -7750,7 +7754,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="J4" library="quadparts_prebuilt" deviceset="AVR_SPI_PRG_6" device="NS"/>
 <part name="C6" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
 <part name="GND21" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="JP1" library="quadparts_prebuilt" deviceset="FTDI_BASIC" device="PTH"/>
+<part name="J7" library="quadparts_prebuilt" deviceset="FTDI_BASIC" device="PTH"/>
 <part name="BATT5" library="quadparts_prebuilt" deviceset="BATTERY" device="" value="BATTERY"/>
 <part name="C16" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
 <part name="C17" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
@@ -7811,7 +7815,7 @@ big cap,
 <instance part="TM1" gate="G$1" x="162.56" y="129.54"/>
 <instance part="GND5" gate="1" x="162.56" y="121.92"/>
 <instance part="S1" gate="G$1" x="281.94" y="7.62"/>
-<instance part="LED1" gate="G$1" x="317.5" y="-12.7"/>
+<instance part="D4" gate="G$1" x="317.5" y="-12.7"/>
 <instance part="GND7" gate="1" x="317.5" y="-20.32"/>
 <instance part="J3" gate="G$1" x="220.98" y="149.86" rot="R180"/>
 <instance part="TM2" gate="G$1" x="134.62" y="129.54"/>
@@ -7852,7 +7856,7 @@ big cap,
 <instance part="GND17" gate="1" x="142.24" y="38.1"/>
 <instance part="GND18" gate="1" x="73.66" y="7.62"/>
 <instance part="GND19" gate="1" x="73.66" y="0"/>
-<instance part="LED_Y" gate="G$1" x="88.9" y="-35.56" rot="R180"/>
+<instance part="D1" gate="G$1" x="88.9" y="-35.56" rot="R180"/>
 <instance part="P+10" gate="G$1" x="190.5" y="38.1"/>
 <instance part="P+1" gate="G$1" x="182.88" y="35.56"/>
 <instance part="P+2" gate="G$1" x="134.62" y="55.88"/>
@@ -7867,7 +7871,7 @@ big cap,
 <instance part="J4" gate="G$1" x="281.94" y="160.02"/>
 <instance part="C6" gate="G$1" x="289.56" y="138.43"/>
 <instance part="GND21" gate="1" x="281.94" y="115.57"/>
-<instance part="JP1" gate="G$1" x="269.24" y="128.27" rot="MR180"/>
+<instance part="J7" gate="G$1" x="269.24" y="128.27" rot="MR180"/>
 <instance part="BATT5" gate="G$1" x="299.72" y="10.16"/>
 <instance part="C16" gate="G$1" x="259.08" y="7.62"/>
 <instance part="C17" gate="G$1" x="302.26" y="-15.24" rot="R180"/>
@@ -7927,7 +7931,7 @@ big cap,
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="LED1" gate="G$1" pin="C"/>
+<pinref part="D4" gate="G$1" pin="C"/>
 </segment>
 <segment>
 <pinref part="TM2" gate="G$1" pin="A"/>
@@ -8019,7 +8023,7 @@ big cap,
 </segment>
 <segment>
 <pinref part="GND29" gate="1" pin="GND"/>
-<pinref part="LED_Y" gate="G$1" pin="C"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="83.82" y1="-35.56" x2="76.2" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -8055,7 +8059,7 @@ big cap,
 </segment>
 <segment>
 <pinref part="GND21" gate="1" pin="GND"/>
-<pinref part="JP1" gate="G$1" pin="6"/>
+<pinref part="J7" gate="G$1" pin="6"/>
 <wire x1="274.32" y1="120.65" x2="281.94" y2="120.65" width="0.1524" layer="91"/>
 <wire x1="281.94" y1="120.65" x2="281.94" y2="118.11" width="0.1524" layer="91"/>
 </segment>
@@ -8216,7 +8220,7 @@ big cap,
 <junction x="302.26" y="-10.16"/>
 <pinref part="C2" gate="G$1" pin="+"/>
 <wire x1="309.88" y1="-10.16" x2="302.26" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="LED1" gate="G$1" pin="A"/>
+<pinref part="D4" gate="G$1" pin="A"/>
 <wire x1="309.88" y1="-10.16" x2="317.5" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="309.88" y="-10.16"/>
 </segment>
@@ -8373,7 +8377,7 @@ big cap,
 </net>
 <net name="N$18" class="0">
 <segment>
-<pinref part="LED_Y" gate="G$1" pin="A"/>
+<pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="96.52" y1="-35.56" x2="93.98" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
@@ -8470,7 +8474,7 @@ big cap,
 <label x="119.38" y="-22.86" size="1.27" layer="95" font="fixed" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="3"/>
+<pinref part="J7" gate="G$1" pin="3"/>
 <wire x1="274.32" y1="128.27" x2="279.4" y2="128.27" width="0.1524" layer="91"/>
 <label x="279.4" y="128.27" size="1.27" layer="95" font="fixed" xref="yes"/>
 </segment>
@@ -8482,7 +8486,7 @@ big cap,
 <label x="119.38" y="-25.4" size="1.27" layer="95" font="fixed" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="J7" gate="G$1" pin="2"/>
 <wire x1="279.4" y1="130.81" x2="274.32" y2="130.81" width="0.1524" layer="91"/>
 <label x="279.4" y="130.81" size="1.27" layer="95" font="fixed" xref="yes"/>
 </segment>
@@ -8526,7 +8530,7 @@ big cap,
 <net name="N$11" class="0">
 <segment>
 <pinref part="C6" gate="G$1" pin="2"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="J7" gate="G$1" pin="1"/>
 <wire x1="274.32" y1="133.35" x2="289.56" y2="133.35" width="0.1524" layer="91"/>
 </segment>
 </net>
