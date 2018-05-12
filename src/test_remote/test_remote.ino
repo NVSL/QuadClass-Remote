@@ -5,7 +5,7 @@
 /* test_remote.ino
  * Sketch for testing all parts of QuadRemote.
  * Components tested:
- *    Gimbals: 
+ *    Gimbals:  
  *    Indicator LEDs
  *    Buttons
  *    Serial display
@@ -15,6 +15,7 @@
 
 #include "quad_remote.h"      // Header file with pin definitions and setup
 #include <serLCD.h>
+serLCD lcd;
 
 
   // Initialize global variables for storing incoming data from input pins
@@ -39,18 +40,19 @@ uint8_t scale[8] =
                   B00000000,
                   B00000000,
                   B00000000};
-                  
-int numbers[9] = {0,1,2,3,4,5,6,7, 0};
-char *labels[8] = {"T ", "Y ", "P ", "R ", "P1", "P2", "B1", "B2"};
-char pins[8] = {PIN_THROTTLE, PIN_YAW, PIN_PITCH, PIN_ROLL, PIN_POT1, PIN_POT2, PIN_POT1, PIN_POT2};
 
-serLCD lcd;
+#define BUTTON_NUMBERS 2
+#define ANALOG_NUMBERS 8
+#define NUMBER_COUNT (BUTTON_NUMBERS + ANALOG_NUMBERS)
+int numbers[NUMBER_COUNT+1] = {0,1,2,3,4,5,6,7,8,9, 0};
+char *labels[NUMBER_COUNT] = {"T ", "Y ", "P ", "R ", "P1", "P2", "P3", "P4", "B1", "B2"};
+char pins[NUMBER_COUNT] = {PIN_THROTTLE, PIN_YAW, PIN_PITCH, PIN_ROLL, PIN_POT1 , PIN_POT2, PIN_POT3, PIN_POT4, PIN_BTN1, PIN_BTN2};
 
 void update_display() {
   lcd.clear();
   lcd.home();
 
-  for(char h = 0; h < 8; h++) {
+  for(char h = 0; h < NUMBER_COUNT; h++) {
       char buf[2];
       buf[0] = labels[h][0];
       buf[1] = 0;
@@ -64,7 +66,7 @@ void update_display() {
   }
   //lcd.print("\r");
 
-  for(char h = 0; h < 8; h++) {
+  for(char h = 0; h < NUMBER_COUNT; h++) {
       char buf[2];
       buf[0] = labels[h][1];
       buf[1] = 0;
@@ -85,7 +87,7 @@ void setup() {
   //lcd.print("Hello, World!");
  
   const int RADIO_CHANNEL = 11;        // Channel for radio communications (can be 11-26)
-  const int SERIAL_BAUD = 9600;        // Baud rate for serial port 
+  const int SERIAL_BAUD = 9600 ;        // Baud rate for serial port 
   const int SERIAL1_BAUD = 9600;     // Baud rate for serial1 port
 
   Serial.begin(SERIAL_BAUD);           // Start up serial
@@ -120,6 +122,8 @@ void setup() {
   pinMode(PIN_LED_GRN, OUTPUT);        // LED Indicator: Green
   pinMode(PIN_LED_RED, OUTPUT);        // LED Indicator: Red
 
+  //analogReference(0);
+  //Serial.println(ADMUX);
 }
 
 int last = 0;
@@ -128,29 +132,6 @@ char magic;
 
 void loop() {
 
-  /* BUTTON TEST: Print to serial when button press registered */
-
-  // Read incoming presses from buttons: WHY AREN'T INTERRUPTS WORKING
-  button1Value = digitalRead(PIN_BTN1); 
-  button2Value = digitalRead(PIN_BTN2); 
-    
-  // Print to serial if press registered
-  if (button1Value == 0)
-  {
-    numbers[6] = 1024;
-  } else {
-    numbers[6] = 0;
-  }
-
-  if (button2Value == 0)
-  {
-    numbers[7] = 1024;
-  } else {
-    numbers[7] = 0;
-  }
-
-  /* LED TEST: Turn LEDs on and off as program cycles (start LOW) */
-
   if (last + 1000 <= millis()) {
     LEDVal = 0;//!LEDVal;
     digitalWrite(PIN_LED_BLUE, LEDVal);
@@ -158,14 +139,21 @@ void loop() {
     digitalWrite(PIN_LED_RED, LEDVal);
     last = millis();
   }
+  
   // Read analog values
-  for(char i = 0; i < 6; i++) {
+  for(char i = 0; i < ANALOG_NUMBERS; i++) {
     numbers[i] = analogRead(pins[i]); 
   }
+  
+  // Read btns
+  for(char i = ANALOG_NUMBERS; i < ANALOG_NUMBERS + BUTTON_NUMBERS; i++) {
+    numbers[i] = digitalRead(pins[i]) ? 1023 : 0; 
+  }
+
 
   update_display();
 
-  for(char i= 0; i < 8;i++) {
+  for(char i= 0; i < NUMBER_COUNT;i++) {
     Serial.print(numbers[i]);
     Serial.print(" ");
   }
@@ -178,7 +166,7 @@ void loop() {
       digitalWrite(34, 1);
       delay(200);
       rfRead(&magic, sizeof(magic));
-      numbers[8] = magic;
+      numbers[NUMBER_COUNT] = magic;
       digitalWrite(34, 0);
   } else {
     delay(200);

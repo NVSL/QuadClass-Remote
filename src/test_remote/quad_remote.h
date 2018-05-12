@@ -18,6 +18,9 @@
 #define PIN_POT1		7//A7
 #define PIN_POT2		6//A6
 
+#define PIN_POT3		4//A4
+#define PIN_POT4		5//A5
+
 // Pin definitions for digital pins (buttons and indicator LEDs)
 #define PIN_BTN1		16		// PG0 (schematic) G0 (red board)
 #define PIN_BTN2		17		// PG1 (schematic) G1 (red board)
