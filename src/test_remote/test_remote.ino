@@ -164,12 +164,12 @@ void loop() {
 
   if (rfAvailable()) {  // If data receievd on radio...
       digitalWrite(34, 1);
-      delay(200);
+      delay(100);
       rfRead(&magic, sizeof(magic));
       numbers[NUMBER_COUNT] = magic;
       digitalWrite(34, 0);
   } else {
-    delay(200);
+    delay(100);
     digitalWrite(34,0); 
   }
 
