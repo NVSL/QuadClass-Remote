@@ -176,184 +176,6 @@
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
-<library name="Controller">
-<description>This library is the part library for the Controller Subproject of the UCSD CSE Quadcopter Architecture Class (Grad: 249A, Ugrad: ???).
-
-Author: Dustin Richmond &lt;darichmond, drichmond@eng.ucsd.edu&gt; (Initial: 10/14/2014, Modified: 10/16/2014)
-Reviewer 1: 
-Reviewer 2:</description>
-<packages>
-<package name="BUTTON-TACTILE-SQUARE-ADAFRUIT1010">
-<description>Square, colorful tactile button from adafruit
-&lt;br&gt;
-
-The size of the faceplate opening is 0.5mm larger than it "should" be to allow for small misalignments between the faceplace and board.</description>
-<wire x1="-5" y1="5" x2="5" y2="5" width="0.127" layer="21"/>
-<wire x1="5" y1="5" x2="5" y2="-5" width="0.127" layer="21"/>
-<wire x1="5" y1="-5" x2="-5" y2="-5" width="0.127" layer="21"/>
-<wire x1="-5" y1="-5" x2="-5" y2="5" width="0.127" layer="21"/>
-<rectangle x1="-7.5" y1="-7" x2="7.5" y2="7" layer="39"/>
-<rectangle x1="-5.25" y1="-5.25" x2="5.25" y2="5.25" layer="150"/>
-<pad name="P" x="-6" y="2.5" drill="1.3" shape="square"/>
-<pad name="P2" x="6" y="2.5" drill="1.3"/>
-<pad name="S" x="-6" y="-2.5" drill="1.3"/>
-<pad name="S2" x="6" y="-2.5" drill="1.3"/>
-<text x="0" y="-6.35" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
-<hole x="0" y="4.5" drill="1.4"/>
-<hole x="0" y="-4.5" drill="1.4"/>
-</package>
-<package name="BUTTON-TACTILE-ROUND-ADAFRUIT1009">
-<description>Round, colorful tactile button from adafruit
-&lt;br&gt;
-The radius of the faceplate opening is 0.5mm larger than it "should" be to allow for small misalignments between the faceplace and board.</description>
-<circle x="0" y="0" radius="6.25" width="0.127" layer="150"/>
-<circle x="0" y="0" radius="6.5" width="0.127" layer="21"/>
-<rectangle x1="-7.5" y1="-7" x2="7.5" y2="7" layer="39"/>
-<pad name="P" x="-6" y="2.5" drill="1.3" shape="square"/>
-<pad name="P2" x="6" y="2.5" drill="1.3"/>
-<pad name="S" x="-6" y="-2.5" drill="1.3"/>
-<pad name="S2" x="6" y="-2.5" drill="1.3"/>
-<hole x="0" y="4.5" drill="1.4"/>
-<hole x="0" y="-4.5" drill="1.4"/>
-</package>
-<package name="BUTTON-TACTILE-TALL-ADAFRUIT1490">
-<description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
-<circle x="0" y="0" radius="1.6" width="0.1524" layer="150"/>
-<circle x="-2.159" y="-2.159" radius="0.508" width="0.1524" layer="51"/>
-<circle x="2.159" y="-2.032" radius="0.508" width="0.1524" layer="51"/>
-<circle x="2.159" y="2.159" radius="0.508" width="0.1524" layer="51"/>
-<circle x="-2.159" y="2.159" radius="0.508" width="0.1524" layer="51"/>
-<circle x="0" y="0" radius="0.635" width="0.0508" layer="51"/>
-<circle x="0" y="0" radius="0.254" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="1.778" width="0.1524" layer="21"/>
-<wire x1="3.302" y1="-0.762" x2="3.048" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="3.302" y1="-0.762" x2="3.302" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="3.048" y1="0.762" x2="3.302" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="3.048" y1="1.016" x2="3.048" y2="2.54" width="0.1524" layer="51"/>
-<wire x1="-3.302" y1="0.762" x2="-3.048" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-3.302" y1="0.762" x2="-3.302" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="-3.048" y1="-0.762" x2="-3.302" y2="-0.762" width="0.1524" layer="21"/>
-<wire x1="3.048" y1="2.54" x2="2.54" y2="3.048" width="0.1524" layer="51"/>
-<wire x1="2.54" y1="-3.048" x2="3.048" y2="-2.54" width="0.1524" layer="51"/>
-<wire x1="3.048" y1="-2.54" x2="3.048" y2="-1.016" width="0.1524" layer="51"/>
-<wire x1="-2.54" y1="3.048" x2="-3.048" y2="2.54" width="0.1524" layer="51"/>
-<wire x1="-3.048" y1="2.54" x2="-3.048" y2="1.016" width="0.1524" layer="51"/>
-<wire x1="-2.54" y1="-3.048" x2="-3.048" y2="-2.54" width="0.1524" layer="51"/>
-<wire x1="-3.048" y1="-2.54" x2="-3.048" y2="-1.016" width="0.1524" layer="51"/>
-<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.0508" layer="51"/>
-<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.0508" layer="51"/>
-<wire x1="1.27" y1="-1.27" x2="1.27" y2="1.27" width="0.0508" layer="51"/>
-<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.0508" layer="51"/>
-<wire x1="-1.27" y1="3.048" x2="-1.27" y2="2.794" width="0.0508" layer="21"/>
-<wire x1="1.27" y1="2.794" x2="-1.27" y2="2.794" width="0.0508" layer="21"/>
-<wire x1="1.27" y1="2.794" x2="1.27" y2="3.048" width="0.0508" layer="21"/>
-<wire x1="1.143" y1="-2.794" x2="-1.27" y2="-2.794" width="0.0508" layer="21"/>
-<wire x1="1.143" y1="-2.794" x2="1.143" y2="-3.048" width="0.0508" layer="21"/>
-<wire x1="-1.27" y1="-2.794" x2="-1.27" y2="-3.048" width="0.0508" layer="21"/>
-<wire x1="2.54" y1="-3.048" x2="2.159" y2="-3.048" width="0.1524" layer="51"/>
-<wire x1="-2.54" y1="-3.048" x2="-2.159" y2="-3.048" width="0.1524" layer="51"/>
-<wire x1="-2.159" y1="-3.048" x2="-1.27" y2="-3.048" width="0.1524" layer="21"/>
-<wire x1="-2.54" y1="3.048" x2="-2.159" y2="3.048" width="0.1524" layer="51"/>
-<wire x1="2.54" y1="3.048" x2="2.159" y2="3.048" width="0.1524" layer="51"/>
-<wire x1="2.159" y1="3.048" x2="1.27" y2="3.048" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="3.048" x2="-1.27" y2="3.048" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="3.048" x2="-2.159" y2="3.048" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-3.048" x2="1.143" y2="-3.048" width="0.1524" layer="21"/>
-<wire x1="1.143" y1="-3.048" x2="2.159" y2="-3.048" width="0.1524" layer="21"/>
-<wire x1="3.048" y1="-0.762" x2="3.048" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="3.048" y1="0.762" x2="3.048" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-3.048" y1="-0.762" x2="-3.048" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="-3.048" y1="0.762" x2="-3.048" y2="1.016" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="-2.159" x2="1.27" y2="-2.159" width="0.1524" layer="51"/>
-<wire x1="1.27" y1="2.286" x2="-1.27" y2="2.286" width="0.1524" layer="51"/>
-<wire x1="-2.413" y1="1.27" x2="-2.413" y2="0.508" width="0.1524" layer="51"/>
-<wire x1="-2.413" y1="-0.508" x2="-2.413" y2="-1.27" width="0.1524" layer="51"/>
-<wire x1="-2.413" y1="0.508" x2="-2.159" y2="-0.381" width="0.1524" layer="51"/>
-<pad name="1" x="-3.2512" y="2.2606" drill="1.016" shape="long"/>
-<pad name="2" x="3.2512" y="2.2606" drill="1.016" shape="long"/>
-<pad name="3" x="-3.2512" y="-2.2606" drill="1.016" shape="long"/>
-<pad name="4" x="3.2512" y="-2.2606" drill="1.016" shape="long"/>
-<text x="-3.048" y="3.683" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-3.048" y="-5.08" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-4.318" y="1.651" size="1.27" layer="51" ratio="10">1</text>
-<text x="3.556" y="1.524" size="1.27" layer="51" ratio="10">2</text>
-<text x="-4.572" y="-2.794" size="1.27" layer="51" ratio="10">3</text>
-<text x="3.556" y="-2.794" size="1.27" layer="51" ratio="10">4</text>
-</package>
-</packages>
-<symbols>
-<symbol name="TS2">
-<circle x="0" y="-2.54" radius="0.127" width="0.4064" layer="94"/>
-<circle x="0" y="2.54" radius="0.127" width="0.4064" layer="94"/>
-<wire x1="0" y1="1.905" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="-4.445" y1="1.905" x2="-3.175" y2="1.905" width="0.254" layer="94"/>
-<wire x1="-4.445" y1="-1.905" x2="-3.175" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="-4.445" y1="1.905" x2="-4.445" y2="0" width="0.254" layer="94"/>
-<wire x1="-4.445" y1="0" x2="-4.445" y2="-1.905" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
-<wire x1="-4.445" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-1.27" y2="1.905" width="0.254" layer="94"/>
-<pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="2" rot="R90"/>
-<pin name="P1" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="2" rot="R90"/>
-<pin name="S" x="0" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="S1" x="2.54" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<text x="-6.35" y="-2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
-<text x="-3.81" y="3.175" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="BUTTON-TACTILE">
-<gates>
-<gate name="G$1" symbol="TS2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-ROUND" package="BUTTON-TACTILE-ROUND-ADAFRUIT1009">
-<connects>
-<connect gate="G$1" pin="P" pad="P"/>
-<connect gate="G$1" pin="P1" pad="P2"/>
-<connect gate="G$1" pin="S" pad="S"/>
-<connect gate="G$1" pin="S1" pad="S2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DIST" value="Adafruit"/>
-<attribute name="DISTPN" value="1009"/>
-</technology>
-</technologies>
-</device>
-<device name="-SQUARE" package="BUTTON-TACTILE-SQUARE-ADAFRUIT1010">
-<connects>
-<connect gate="G$1" pin="P" pad="P"/>
-<connect gate="G$1" pin="P1" pad="P2"/>
-<connect gate="G$1" pin="S" pad="S"/>
-<connect gate="G$1" pin="S1" pad="S2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="DIST" value="ADAFRUIT"/>
-<attribute name="DISTPN" value="1010"/>
-<attribute name="MISC" value="temp" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="-TALL-SMALL" package="BUTTON-TACTILE-TALL-ADAFRUIT1490">
-<connects>
-<connect gate="G$1" pin="P" pad="1"/>
-<connect gate="G$1" pin="P1" pad="2"/>
-<connect gate="G$1" pin="S" pad="3"/>
-<connect gate="G$1" pin="S1" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="supply1">
 <description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
  GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
@@ -971,6 +793,22 @@ The radius of the faceplate opening is 0.5mm larger than it "should" be to allow
 <text x="0" y="-2" size="1.778" layer="21" font="vector" rot="R90" align="center-right">RED</text>
 <text x="2" y="-2" size="1.778" layer="21" font="vector" rot="R90" align="center-right">BLACK</text>
 </package>
+<package name="JS102011SAQN">
+<smd name="P$1" x="2.5" y="2.75" dx="1.2" dy="2.5" layer="1"/>
+<smd name="P$2" x="0" y="2.75" dx="1.2" dy="2.5" layer="1"/>
+<smd name="P$3" x="-2.5" y="2.75" dx="1.2" dy="2.5" layer="1"/>
+<hole x="3.4" y="0" drill="0.9"/>
+<hole x="-3.4" y="0" drill="0.9"/>
+<wire x1="-3" y1="-1.8" x2="-3" y2="-4" width="0.1" layer="21"/>
+<wire x1="-3" y1="-4" x2="-1.5" y2="-4" width="0.1" layer="21"/>
+<wire x1="-1.5" y1="-4" x2="-1.5" y2="-1.8" width="0.1" layer="21"/>
+<wire x1="-4.5" y1="-1.8" x2="4.5" y2="-1.8" width="0.1" layer="21"/>
+<wire x1="4.5" y1="-1.8" x2="4.5" y2="1.8" width="0.1" layer="21"/>
+<wire x1="4.5" y1="1.8" x2="-4.5" y2="1.8" width="0.1" layer="21"/>
+<wire x1="-4.5" y1="1.8" x2="-4.5" y2="-1.8" width="0.1" layer="21"/>
+<rectangle x1="-5" y1="-4" x2="5" y2="5" layer="39"/>
+<text x="4" y="3" size="1.27" layer="21" font="vector">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="FRSKY-GIMBAL">
@@ -1099,6 +937,16 @@ The radius of the faceplate opening is 0.5mm larger than it "should" be to allow
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="563-1565-ND" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="JS102011SAQN" package="JS102011SAQN">
+<connects>
+<connect gate="G$1" pin="C" pad="P$2"/>
+<connect gate="G$1" pin="OFF" pad="P$3"/>
+<connect gate="G$1" pin="ON" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -3314,7 +3162,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </class>
 </classes>
 <parts>
-<part name="RESET" library="Controller" deviceset="BUTTON-TACTILE" device="-SQUARE"/>
 <part name="GND4" library="supply1" deviceset="GND" device=""/>
 <part name="J2" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="">
 <attribute name="CH1" value="THR"/>
@@ -3326,7 +3173,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </part>
 <part name="TM1" library="RemoteParts" deviceset="TRIMPOT" device="3386"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
-<part name="S1" library="RemoteParts" deviceset="POWER-SWITCH-MFS201N-9-Z" device=""/>
+<part name="S1" library="RemoteParts" deviceset="POWER-SWITCH-MFS201N-9-Z" device="JS102011SAQN" value="POWER-SWITCH-MFS201N-9-ZJS102011SAQN"/>
 <part name="D4" library="quadparts_prebuilt" deviceset="DIODE-LED_" device="SMD-2012-0805-GREEN" value="green"/>
 <part name="GND7" library="supply1" deviceset="GND" device=""/>
 <part name="J3" library="RemoteParts" deviceset="WIRE-HARNESS-SPARKFUN-9915" device=""/>
@@ -3418,6 +3265,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="SW2" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="SMD-VERTICAL-1"/>
 <part name="SW3" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="SMD-VERTICAL-1"/>
 <part name="SW4" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="SMD-VERTICAL-1"/>
+<part name="SW5" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="SMD-VERTICAL-1"/>
 </parts>
 <sheets>
 <sheet>
@@ -3438,7 +3286,6 @@ big cap,
 <text x="271.78" y="-48.26" size="1.27" layer="97">For next rev:  Red board has 2x1uf + 2x10uf decoupling.  instead of 2x100uf</text>
 </plain>
 <instances>
-<instance part="RESET" gate="G$1" x="254" y="68.58" rot="R270"/>
 <instance part="GND4" gate="1" x="266.7" y="58.42"/>
 <instance part="J2" gate="G$1" x="-33.02" y="35.56">
 <attribute name="CH1" x="-33.02" y="35.56" size="1.4224" layer="96" display="off"/>
@@ -3526,19 +3373,17 @@ big cap,
 <instance part="SW2" gate="G$1" x="78.74" y="137.16"/>
 <instance part="SW3" gate="G$1" x="78.74" y="124.46"/>
 <instance part="SW4" gate="G$1" x="78.74" y="111.76"/>
+<instance part="SW5" gate="G$1" x="254" y="71.12"/>
 </instances>
 <busses>
 </busses>
 <nets>
 <net name="GND" class="0">
 <segment>
-<pinref part="RESET" gate="G$1" pin="S"/>
-<pinref part="RESET" gate="G$1" pin="S1"/>
-<wire x1="259.08" y1="68.58" x2="259.08" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="68.58" x2="266.7" y2="68.58" width="0.1524" layer="91"/>
-<junction x="259.08" y="68.58"/>
 <wire x1="266.7" y1="68.58" x2="266.7" y2="60.96" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="SW5" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="GND-V"/>
@@ -3894,12 +3739,9 @@ big cap,
 <label x="289.56" y="143.51" size="1.778" layer="95" font="fixed" rot="MR0" xref="yes"/>
 </segment>
 <segment>
-<pinref part="RESET" gate="G$1" pin="P1"/>
-<pinref part="RESET" gate="G$1" pin="P"/>
-<wire x1="248.92" y1="66.04" x2="248.92" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="248.92" y1="68.58" x2="243.84" y2="68.58" width="0.1524" layer="91"/>
-<junction x="248.92" y="68.58"/>
 <label x="243.84" y="68.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="SW5" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="POT2" class="0">
