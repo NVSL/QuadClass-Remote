@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="yes" active="yes"/>
@@ -2689,9 +2689,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="Digikey"/>
-<attribute name="DISTPN" value="490-8295-1-ND"/>
-<attribute name="MFR" value="Murata Electronics North America"/>
-<attribute name="MPN" value="GRM2195C1H103FA01D"/>
+<attribute name="DISTPN" value="1608-1458-1-ND "/>
+<attribute name="MFR" value="Knowles Syfer"/>
+<attribute name="MPN" value="0805J0500104KJT"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="0.01uF"/>
 </technology>
@@ -2706,9 +2706,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="Digikey"/>
-<attribute name="DISTPN" value="399-6362-1-ND"/>
-<attribute name="MFR" value="KEMET"/>
-<attribute name="MPN" value="C0805C104K5RALTU"/>
+<attribute name="DISTPN" value="445-1418-1-ND"/>
+<attribute name="MFR" value="TDK"/>
+<attribute name="MPN" value="C2012X7R2A104K125AA"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="0.1uF"/>
 </technology>
@@ -2757,9 +2757,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="Digikey"/>
-<attribute name="DISTPN" value="490-5523-1-ND"/>
-<attribute name="MFR" value="Murata Electronics North America"/>
-<attribute name="MPN" value="GRM21BR61E106KA73L"/>
+<attribute name="DISTPN" value="445-14387-1-ND"/>
+<attribute name="MFR" value="TDK Corporation"/>
+<attribute name="MPN" value="C2012X5R1E106K085AC"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="10uF"/>
 </technology>
@@ -2791,9 +2791,9 @@ Single endded antenna. Common with smaller chip antennas. CHIP4 package is the G
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="Digikey"/>
-<attribute name="DISTPN" value="1276-2928-1-ND "/>
-<attribute name="MFR" value="Samsung Electro-Mechanics"/>
-<attribute name="MPN" value="CL21B105KBFNFNE"/>
+<attribute name="DISTPN" value="587-1281-1-ND"/>
+<attribute name="MFR" value="Taiyo Yuden"/>
+<attribute name="MPN" value="TMK212B7105KG-T"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="1uF"/>
 </technology>
@@ -3282,6 +3282,10 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="SW3" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="SMD-VERTICAL-1"/>
 <part name="SW4" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="SMD-VERTICAL-1"/>
 <part name="SW5" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="SMD-VERTICAL-1"/>
+<part name="C2" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
+<part name="C7" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
+<part name="GND1" library="quadparts_prebuilt" deviceset="GND" device=""/>
+<part name="GND3" library="quadparts_prebuilt" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3289,10 +3293,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <text x="154.94" y="114.3" size="1.778" layer="97">Potentiameter</text>
 <text x="314.96" y="-27.94" size="1.778" layer="97">Power LED</text>
 <text x="127" y="114.3" size="1.778" layer="97">Potentiameter</text>
-<text x="271.78" y="-40.64" size="1.778" layer="97">Use 3.3 V regulator
-
-LP3985IM5‑3.3/NOPBCT‑ND
-https://www.digikey.com/product-detail/en/texas-instruments/LP3985IM5-3.3-NOPB/LP3985IM5-3.3-NOPBCT-ND/562199</text>
 <text x="-35.56" y="177.8" size="1.778" layer="97" align="top-left">Surface mount: 
 buttons, 
 pwr led, 
@@ -3390,6 +3390,10 @@ big cap,
 <instance part="SW3" gate="G$1" x="78.74" y="124.46"/>
 <instance part="SW4" gate="G$1" x="78.74" y="111.76"/>
 <instance part="SW5" gate="G$1" x="254" y="71.12"/>
+<instance part="C2" gate="G$1" x="251.46" y="7.62"/>
+<instance part="C7" gate="G$1" x="308.61" y="-12.7"/>
+<instance part="GND1" gate="1" x="308.61" y="-20.32"/>
+<instance part="GND3" gate="1" x="251.46" y="0"/>
 </instances>
 <busses>
 </busses>
@@ -3596,6 +3600,14 @@ big cap,
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C7" gate="G$1" pin="2"/>
+<pinref part="GND1" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="2"/>
+<pinref part="GND3" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="BTN1" class="0">
 <segment>
@@ -3704,7 +3716,10 @@ big cap,
 <wire x1="297.18" y1="-7.62" x2="297.18" y2="-10.16" width="0.1524" layer="91"/>
 <junction x="302.26" y="-10.16"/>
 <pinref part="D4" gate="G$1" pin="A"/>
-<wire x1="302.26" y1="-10.16" x2="317.5" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="-10.16" x2="308.61" y2="-10.16" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="308.61" y1="-10.16" x2="317.5" y2="-10.16" width="0.1524" layer="91"/>
+<junction x="308.61" y="-10.16"/>
 </segment>
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
@@ -4035,6 +4050,9 @@ big cap,
 <junction x="266.7" y="10.16"/>
 <pinref part="S1" gate="G$1" pin="C"/>
 <pinref part="P+4" gate="VCC" pin="VBAT"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="259.08" y1="10.16" x2="251.46" y2="10.16" width="0.1524" layer="91"/>
+<junction x="259.08" y="10.16"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="RED"/>
@@ -4141,6 +4159,18 @@ big cap,
 <pinref part="U1" gate="G$1" pin="PG3(TOSC2)"/>
 <wire x1="121.92" y1="-53.34" x2="119.38" y2="-53.34" width="0.1524" layer="91"/>
 <label x="119.38" y="-53.34" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="3.3V" class="0">
+<segment>
+<pinref part="J4" gate="G$1" pin="2"/>
+<wire x1="292.1" y1="162.56" x2="294.64" y2="162.56" width="0.1524" layer="91"/>
+<label x="294.64" y="162.56" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J7" gate="G$1" pin="4"/>
+<wire x1="274.32" y1="125.73" x2="279.4" y2="125.73" width="0.1524" layer="91"/>
+<label x="279.4" y="125.73" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
