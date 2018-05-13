@@ -3057,7 +3057,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <gate name="G$1" symbol="TPS736*" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT23-DBV">
+<device name="3.0.V" package="SOT23-DBV">
 <connects>
 <connect gate="G$1" pin="EN" pad="3"/>
 <connect gate="G$1" pin="GND" pad="2"/>
@@ -3075,6 +3075,22 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="MPN" value="LP3985IM5X-3.0/NOPB"/>
 <attribute name="PRICE" value="0.59"/>
 <attribute name="REVIEWER" value="Swanson"/>
+</technology>
+</technologies>
+</device>
+<device name="3.3V" package="SOT23-DBV">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="NC/FB" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="LP3985IM5‑3.3/NOPBCT‑ND"/>
 </technology>
 </technologies>
 </device>
@@ -3248,7 +3264,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="GND23" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND24" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="P+14" library="supply1" deviceset="+3V3" device=""/>
-<part name="U2" library="quadparts_prebuilt" deviceset="TPS73633-DBVT" device=""/>
+<part name="U2" library="quadparts_prebuilt" deviceset="TPS73633-DBVT" device="3.3V"/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="P+4" library="quadparts_prebuilt" deviceset="VBAT" device=""/>
 <part name="R4" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
