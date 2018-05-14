@@ -1214,17 +1214,72 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <rectangle x1="0.9525" y1="-0.1905" x2="1.5875" y2="0.1905" layer="51"/>
 <rectangle x1="3.4925" y1="-0.1905" x2="4.1275" y2="0.1905" layer="51"/>
 <rectangle x1="6.0325" y1="-0.1905" x2="6.6675" y2="0.1905" layer="51"/>
-<pad name="1" x="-6.35" y="0.254" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="-3.81" y="-0.254" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="-1.27" y="0.254" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="4" x="1.27" y="-0.254" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="5" x="3.81" y="0.254" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="6" x="6.35" y="-0.254" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="1" x="-6.35" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="-3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="4" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="5" x="3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="6" x="6.35" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <text x="1.1938" y="-3.2512" size="1.27" layer="25" ratio="10">&gt;NAME</text>
 <text x="-7.62" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-8" y1="3" x2="8" y2="11" layer="39"/>
 </package>
+<package name="SOP65P640X110-16" urn="urn:adsk.eagle:footprint:3027344/1">
+<description>16-SOP, 0.65 mm pitch, 6.4 mm span, 5 X 4.4 X 1.1 mm body
+&lt;p&gt;16-pin SOP package with 0.65 mm pitch, 6.4 mm span with body size 5 X 4.4 X 1.1 mm&lt;/p&gt;</description>
+<circle x="-2.9538" y="2.8074" radius="0.075" width="0" layer="21"/>
+<wire x1="-2.25" y1="2.7924" x2="2.25" y2="2.7924" width="0.12" layer="21"/>
+<wire x1="-2.25" y1="-2.7924" x2="2.25" y2="-2.7924" width="0.12" layer="21"/>
+<wire x1="2.25" y1="-2.55" x2="-2.25" y2="-2.55" width="0.12" layer="51"/>
+<wire x1="-2.25" y1="-2.55" x2="-2.25" y2="2.55" width="0.12" layer="51"/>
+<wire x1="-2.25" y1="2.55" x2="2.25" y2="2.55" width="0.12" layer="51"/>
+<wire x1="2.25" y1="2.55" x2="2.25" y2="-2.55" width="0.12" layer="51"/>
+<smd name="1" x="-2.8717" y="2.275" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
+<smd name="2" x="-2.8717" y="1.625" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
+<smd name="3" x="-2.8717" y="0.975" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
+<smd name="4" x="-2.8717" y="0.325" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
+<smd name="5" x="-2.8717" y="-0.325" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
+<smd name="6" x="-2.8717" y="-0.975" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
+<smd name="7" x="-2.8717" y="-1.625" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
+<smd name="8" x="-2.8717" y="-2.275" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
+<smd name="9" x="2.8717" y="-2.275" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
+<smd name="10" x="2.8717" y="-1.625" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
+<smd name="11" x="2.8717" y="-0.975" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
+<smd name="12" x="2.8717" y="-0.325" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
+<smd name="13" x="2.8717" y="0.325" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
+<smd name="14" x="2.8717" y="0.975" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
+<smd name="15" x="2.8717" y="1.625" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
+<smd name="16" x="2.8717" y="2.275" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
+<text x="0" y="3.5174" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-3.4274" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+</package>
+<package name="USB-MINIB-EDAC-690-005-299-043">
+<smd name="P$1" x="5.5" y="1.6" dx="2.3" dy="0.5" layer="1"/>
+<smd name="P$2" x="5.5" y="0.8" dx="2.3" dy="0.5" layer="1"/>
+<smd name="P$3" x="5.5" y="0" dx="2.3" dy="0.5" layer="1"/>
+<smd name="P$4" x="5.5" y="-0.8" dx="2.3" dy="0.5" layer="1"/>
+<smd name="P$5" x="5.5" y="-1.6" dx="2.3" dy="0.5" layer="1"/>
+<smd name="P$6" x="5.5" y="-4.5" dx="2.5" dy="2" layer="1"/>
+<smd name="P$7" x="5.5" y="4.5" dx="2.5" dy="2" layer="1"/>
+<smd name="P$8" x="0" y="4.5" dx="2.5" dy="2" layer="1"/>
+<smd name="P$9" x="0" y="-4.5" dx="2.5" dy="2" layer="1"/>
+<hole x="2.95" y="2.2" drill="0.9"/>
+<hole x="2.95" y="-2.2" drill="0.9"/>
+<wire x1="-2.25" y1="6.75" x2="-2.25" y2="-6.75" width="0.127" layer="51"/>
+<wire x1="-1.875" y1="3.75" x2="7.5" y2="3.75" width="0.127" layer="21"/>
+<wire x1="-1.875" y1="-3.75" x2="7.5" y2="-3.75" width="0.127" layer="21"/>
+<rectangle x1="-1.875" y1="-5.625" x2="9.375" y2="5.625" layer="39"/>
+</package>
 </packages>
+<packages3d>
+<package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" type="model">
+<description>16-SOP, 0.65 mm pitch, 6.4 mm span, 5 X 4.4 X 1.1 mm body
+&lt;p&gt;16-pin SOP package with 0.65 mm pitch, 6.4 mm span with body size 5 X 4.4 X 1.1 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SOP65P640X110-16"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="FRSKY-GIMBAL">
 <wire x1="-2.54" y1="27.94" x2="-15.24" y2="27.94" width="0.254" layer="94"/>
@@ -1422,6 +1477,100 @@ Created: 10/25/2014</description>
 <text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
 <text x="-5.08" y="10.922" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="16-8-MUX">
+<pin name="A0" x="-17.78" y="25.4" length="middle"/>
+<pin name="A1" x="-17.78" y="22.86" length="middle"/>
+<pin name="A2" x="-17.78" y="20.32" length="middle"/>
+<pin name="A3" x="-17.78" y="17.78" length="middle"/>
+<pin name="A4" x="-17.78" y="15.24" length="middle"/>
+<pin name="A5" x="-17.78" y="12.7" length="middle"/>
+<pin name="A6" x="-17.78" y="10.16" length="middle"/>
+<pin name="A7" x="-17.78" y="7.62" length="middle"/>
+<pin name="B0" x="-17.78" y="0" length="middle"/>
+<pin name="B1" x="-17.78" y="-2.54" length="middle"/>
+<pin name="B2" x="-17.78" y="-5.08" length="middle"/>
+<pin name="B3" x="-17.78" y="-7.62" length="middle"/>
+<pin name="B4" x="-17.78" y="-10.16" length="middle"/>
+<pin name="B5" x="-17.78" y="-12.7" length="middle"/>
+<pin name="B6" x="-17.78" y="-15.24" length="middle"/>
+<pin name="B7" x="-17.78" y="-17.78" length="middle"/>
+<pin name="C0" x="12.7" y="25.4" length="middle" rot="R180"/>
+<pin name="C1" x="12.7" y="22.86" length="middle" rot="R180"/>
+<pin name="C2" x="12.7" y="20.32" length="middle" rot="R180"/>
+<pin name="C3" x="12.7" y="17.78" length="middle" rot="R180"/>
+<pin name="C4" x="12.7" y="15.24" length="middle" rot="R180"/>
+<pin name="C5" x="12.7" y="12.7" length="middle" rot="R180"/>
+<pin name="C6" x="12.7" y="10.16" length="middle" rot="R180"/>
+<pin name="C7" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="AEN" x="-17.78" y="5.08" length="middle" function="dot"/>
+<pin name="BEN" x="-17.78" y="-20.32" length="middle" function="dot"/>
+<pin name="VCC" x="-2.54" y="33.02" length="middle" rot="R270"/>
+<pin name="GND" x="-2.54" y="-27.94" length="middle" rot="R90"/>
+<wire x1="-12.7" y1="27.94" x2="-12.7" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-22.86" x2="7.62" y2="-22.86" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-22.86" x2="7.62" y2="27.94" width="0.254" layer="94"/>
+<wire x1="7.62" y1="27.94" x2="-12.7" y2="27.94" width="0.254" layer="94"/>
+</symbol>
+<symbol name="DPDT-X2">
+<pin name="1Y0" x="-17.78" y="17.78" visible="pin" length="middle"/>
+<pin name="1Y1" x="-17.78" y="15.24" length="middle"/>
+<pin name="2Y0" x="-17.78" y="10.16" length="middle"/>
+<pin name="2Y1" x="-17.78" y="7.62" length="middle"/>
+<pin name="3Y0" x="-17.78" y="2.54" length="middle"/>
+<pin name="3Y1" x="-17.78" y="0" length="middle"/>
+<pin name="4Y0" x="-17.78" y="-5.08" length="middle"/>
+<pin name="4Y1" x="-17.78" y="-7.62" length="middle"/>
+<pin name="1Z" x="7.62" y="17.78" length="middle" rot="R180"/>
+<pin name="2Z" x="7.62" y="10.16" length="middle" rot="R180"/>
+<pin name="3Z" x="7.62" y="2.54" length="middle" rot="R180"/>
+<pin name="4Z" x="7.62" y="-5.08" length="middle" rot="R180"/>
+<pin name="1S" x="7.62" y="7.62" length="middle" rot="R180"/>
+<pin name="2S" x="7.62" y="-7.62" length="middle" rot="R180"/>
+<wire x1="2.54" y1="-7.62" x2="-3.81" y2="-7.62" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-3.81" y1="-7.62" x2="-3.81" y2="3.81" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="2.54" y1="7.62" x2="-3.81" y2="7.62" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-3.81" y1="7.62" x2="-3.81" y2="19.05" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-2.54" y1="17.78" x2="-10.795" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="10.16" x2="-10.795" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-10.795" y2="0" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-5.08" x2="-10.795" y2="-7.62" width="0.254" layer="94"/>
+<circle x="-2.54" y="10.16" radius="0.3175" width="0.254" layer="94"/>
+<circle x="-2.54" y="2.54" radius="0.3175" width="0.254" layer="94"/>
+<circle x="-2.54" y="-5.08" radius="0.3175" width="0.254" layer="94"/>
+<circle x="-2.54" y="17.78" radius="0.3175" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="22.86" x2="-12.7" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="17.78" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="15.24" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="10.16" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="2.54" x2="-12.7" y2="0" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="0" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="-12.7" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-12.7" x2="2.54" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-12.7" x2="2.54" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="7.62" width="0.254" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="2.54" y2="17.78" width="0.254" layer="94"/>
+<wire x1="2.54" y1="17.78" x2="2.54" y2="22.86" width="0.254" layer="94"/>
+<wire x1="2.54" y1="22.86" x2="-12.7" y2="22.86" width="0.254" layer="94"/>
+<pin name="VCC" x="-5.08" y="27.94" length="middle" rot="R270"/>
+<pin name="GND" x="-5.08" y="-17.78" length="middle" rot="R90"/>
+<wire x1="-12.7" y1="15.24" x2="-9.525" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="7.62" x2="-9.525" y2="7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="0" x2="-9.525" y2="0" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-9.525" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="10.16" x2="-9.525" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="17.78" x2="-9.525" y2="17.78" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="2.54" x2="-9.525" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="-9.525" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="-1.905" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="-1.905" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
+<wire x1="2.54" y1="17.78" x2="-2.54" y2="17.78" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRSKY-GIMBAL">
@@ -1576,6 +1725,23 @@ Created: 10/25/2014</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="-MICROB-EDAC-690-005-299-043" package="USB-MINIB-EDAC-690-005-299-043">
+<connects>
+<connect gate="A" pin="1-VCC" pad="P$1"/>
+<connect gate="A" pin="2-D-" pad="P$2"/>
+<connect gate="A" pin="3-D+" pad="P$3"/>
+<connect gate="A" pin="4-ID" pad="P$4"/>
+<connect gate="A" pin="5-GND" pad="P$5 P$6 P$7 P$8 P$9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="151-1206-1-ND
+"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1804,7 +1970,102 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </device>
 </devices>
 </deviceset>
+<deviceset name="16-8-MUX">
+<gates>
+<gate name="G$1" symbol="16-8-MUX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SSOP28DB">
+<connects>
+<connect gate="G$1" pin="A0" pad="1"/>
+<connect gate="G$1" pin="A1" pad="4"/>
+<connect gate="G$1" pin="A2" pad="7"/>
+<connect gate="G$1" pin="A3" pad="10"/>
+<connect gate="G$1" pin="A4" pad="18"/>
+<connect gate="G$1" pin="A5" pad="21"/>
+<connect gate="G$1" pin="A6" pad="24"/>
+<connect gate="G$1" pin="A7" pad="27"/>
+<connect gate="G$1" pin="AEN" pad="13"/>
+<connect gate="G$1" pin="B0" pad="2"/>
+<connect gate="G$1" pin="B1" pad="5"/>
+<connect gate="G$1" pin="B2" pad="8"/>
+<connect gate="G$1" pin="B3" pad="11"/>
+<connect gate="G$1" pin="B4" pad="17"/>
+<connect gate="G$1" pin="B5" pad="20"/>
+<connect gate="G$1" pin="B6" pad="23"/>
+<connect gate="G$1" pin="B7" pad="26"/>
+<connect gate="G$1" pin="BEN" pad="15"/>
+<connect gate="G$1" pin="C0" pad="3"/>
+<connect gate="G$1" pin="C1" pad="6"/>
+<connect gate="G$1" pin="C2" pad="9"/>
+<connect gate="G$1" pin="C3" pad="12"/>
+<connect gate="G$1" pin="C4" pad="16"/>
+<connect gate="G$1" pin="C5" pad="19"/>
+<connect gate="G$1" pin="C6" pad="22"/>
+<connect gate="G$1" pin="C7" pad="25"/>
+<connect gate="G$1" pin="GND" pad="14"/>
+<connect gate="G$1" pin="VCC" pad="28"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="PI5C3390QEXDICT-ND"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPDT-X2" prefix="U">
+<gates>
+<gate name="G$1" symbol="DPDT-X2" x="5.08" y="-5.08"/>
+</gates>
+<devices>
+<device name="" package="SOP65P640X110-16">
+<connects>
+<connect gate="G$1" pin="1S" pad="4"/>
+<connect gate="G$1" pin="1Y0" pad="3"/>
+<connect gate="G$1" pin="1Y1" pad="1"/>
+<connect gate="G$1" pin="1Z" pad="2"/>
+<connect gate="G$1" pin="2S" pad="12"/>
+<connect gate="G$1" pin="2Y0" pad="7"/>
+<connect gate="G$1" pin="2Y1" pad="5"/>
+<connect gate="G$1" pin="2Z" pad="6"/>
+<connect gate="G$1" pin="3Y0" pad="11"/>
+<connect gate="G$1" pin="3Y1" pad="9"/>
+<connect gate="G$1" pin="3Z" pad="10"/>
+<connect gate="G$1" pin="4Y0" pad="15"/>
+<connect gate="G$1" pin="4Y1" pad="13"/>
+<connect gate="G$1" pin="4Z" pad="14"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="VCC" pad="16"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:3027343/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="568-5300-1-ND"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
+<compatibility>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports URNs for individual library
+assets (packages, symbols, and devices). The URNs of those assets
+will not be understood (or retained) with this version.
+</note>
+<note version="8.3" severity="warning">
+Since Version 8.3, EAGLE supports the association of 3D packages
+with devices in libraries, schematics, and board files. Those 3D
+packages will not be understood (or retained) with this version.
+</note>
+</compatibility>
 </eagle>
