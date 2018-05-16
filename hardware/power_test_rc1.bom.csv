@@ -1,0 +1,20 @@
+Digikey,445-1418-1-ND,8,power_test.sch,quadparts_prebuilt:CAPACITOR-NP_:SMD-2012-0805_CERAMIC-0.1UF,power_test.sch-C13_C11
+DIGIKEY,609-4613-1-ND ,4,power_test.sch,RemoteParts:USB:-MICROA-AMPHENOL-10118192-0001LF,power_test.sch-J10
+DIGIKEY,568-5300-1-ND,4,power_test.sch,RemoteParts:DPDT-X2:,power_test.sch-U1
+Digikey,1276-1026-1-ND,8,power_test.sch,quadparts_prebuilt:CAPACITOR-NP_:SMD-2012-0805_CERAMIC-1UF,power_test.sch-C17_C16
+DIGIKEY,160-1176-1-ND,8,power_test.sch,RemoteParts:DIODE-LED_:SMD-2012-0805-RED,power_test.sch-D8_D7
+Digikey,445-7644-1-ND,20,power_test.sch,quadparts_prebuilt:CAPACITOR-NP_:SMD-2012-0805_CERAMIC-10UF,power_test.sch-C12_C10_C8_C2_C7
+Digikey,3M9448-ND,24,power_test.sch,Components:HEADER-0.1IN-3POS:-MALE,power_test.sch-GND_5V_VBAT_3.3V_J5_J1
+DIGIKEY,311-1.0KARCT-ND,20,power_test.sch,quadparts_prebuilt:RESISTOR_:SMD-2012-0805-1K,power_test.sch-R11_R6_R7_R8_R9
+Digikey, SI2301CDS-T1-E3CT-ND,4,power_test.sch,RemoteParts:P-FET:,power_test.sch-Y1
+DIGIKEY,311-2.0KARCT-ND,4,power_test.sch,quadparts_prebuilt:RESISTOR_:SMD-2012-0805-2K,power_test.sch-R10
+DIGIKEY,MCP73831T-2ACI/OTCT-ND,4,power_test.sch,RemoteParts:MCP73831/2:,power_test.sch-U4
+Digikey,311-10KARCT-ND,8,power_test.sch,quadparts_prebuilt:RESISTOR_:SMD-2012-0805-10K,power_test.sch-R1_R2
+DIGIKEY,LP3985IM5-3.3/NOPBCT-ND,4,power_test.sch,quadparts_prebuilt:TPS73633-DBVT:3V3,power_test.sch-U2
+DIGIKEY,768-1007-1-ND ,4,power_test.sch,RemoteParts:FT232RL:SSOP,power_test.sch-U3
+Digikey,CRS08QMCT-ND,4,power_test.sch,quadparts_prebuilt:DIODE-SCHOTTKY_:SMD-SOD123-360MV,power_test.sch-D1
+DIGIKEY,151-1206-1-ND ,4,power_test.sch,RemoteParts:USB:-MICROB-EDAC-690-005-299-043,power_test.sch-J3
+DIGIKEY,401-1999-1-ND,8,power_test.sch,RemoteParts:POWER-SWITCH-MFS201N-9-Z:JS102011SAQN,power_test.sch-S1_S2
+Digikey,3M9447-ND,4,power_test.sch,custom:MALE_HEADER_2POS:-2X1-0.1IN,power_test.sch-J2
+Digikey,160-1179-1-ND,12,power_test.sch,RemoteParts:DIODE-LED_:SMD-2012-0805-GREEN,power_test.sch-D6_D4_D5
+
