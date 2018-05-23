@@ -3392,6 +3392,13 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="133.35" y="270.51" size="1.27" layer="97">Selecting VBAT puts everything under control of the power switch. 
 Selecting VBUS, powers the FTDI whenever USB is attached.
 Connecting all three will make USB attachment override the switch.</text>
+<text x="30.48" y="190.5" size="1.778" layer="97">If we follow the example of both sparkfun and adafruit, this nonsense with the fet is not necessary.
+The data sheet claims VBAT will never fall below 3.7V.</text>
+<text x="30.48" y="203.2" size="1.778" layer="97">Things to check:
+1.  Does the FTDI LDO 3.3V regulator work when VBUS is at 3.7V?
+2.  Can we keep current below 50mA for the microcontroller, etc. ?  The question, I guess is LEDs:  ucontrller says it draws &lt; 18.6mA.  Redboard does fine, but FTDI gets a little hot.
+
+</text>
 </plain>
 <instances>
 <instance part="S1" gate="G$1" x="36.83" y="157.48"/>
