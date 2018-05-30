@@ -1,0 +1,34 @@
+
+Design notes for RC1
+
+1.  FTDI works ok, but only the green LED lights up.  Not sure why.
+2.  The mux and switches work fine.
+3.  Battery charger seems to charge batteries, but LEDs don't light up.  I can light up green manually.  Red is a no go.
+4.  Some how blew C8.
+5.  Using PWREN to enable the battery charger may not be a good idea.  Will it work with a "wall wart"
+
+6.  The solder stencil applied a little too much paste.  I had some bridges on ftdi and mux.
+7.  When disconnected from USB and connected to power, VBAT sits at 2.7V.
+8.  When J5 is not connected to anything, D5 flashes for ever, which suggests that FTDI is resetting.
+9.  Connecting VBAT ot FTDI via J5, causes slower flashing.  Maybe something capacitors and the mosfet?
+10.  connecting VBUS to FTDI powers it correctly.
+
+Current plan:
+
+Assemble second board:
+
+1.  DNP Diode, mosfet, and separate vreg.  mux, too.
+2.  Test battery status voltage before assembly.
+3.  Test red LEDs.  None of them work.  Did I overdrive them?  100Ohms at 5V > 32mA, which is 2mA over absolute max.  Try 200Ohms.  Shouldn't been a problem for batt charger because outut should be 5V-0.4 => 28mA
+4.  Check whether wall wart charging works.
+
+
+
+
+
+
+
+
+
+
+
