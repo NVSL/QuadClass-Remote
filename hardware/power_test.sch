@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="yes" active="yes"/>
@@ -3665,10 +3665,18 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <label x="259.08" y="234.95" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
+<pinref part="J1" gate="G$1" pin="1"/>
+<wire x1="99.06" y1="143.51" x2="96.52" y2="143.51" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="146.05" x2="96.52" y2="143.51" width="0.1524" layer="91"/>
+<label x="96.52" y="146.05" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="2"/>
 <label x="83.82" y="140.97" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="140.97" x2="83.82" y2="140.97" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="140.97" x2="96.52" y2="140.97" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="140.97" x2="83.82" y2="140.97" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="143.51" x2="96.52" y2="140.97" width="0.1524" layer="91"/>
+<junction x="96.52" y="143.51"/>
+<junction x="96.52" y="140.97"/>
 </segment>
 </net>
 <net name="VBAT" class="1">
@@ -3724,14 +3732,19 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 </segment>
 <segment>
 <pinref part="B1" gate="G$1" pin="P"/>
-<wire x1="55.88" y1="162.56" x2="57.15" y2="162.56" width="0.1524" layer="91"/>
 <label x="62.23" y="162.56" size="1.27" layer="95" rot="R270" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="1"/>
 <wire x1="57.15" y1="162.56" x2="62.23" y2="162.56" width="0.1524" layer="91"/>
 <wire x1="57.15" y1="162.56" x2="57.15" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="57.15" y1="157.48" x2="54.61" y2="157.48" width="0.1524" layer="91"/>
-<junction x="57.15" y="162.56"/>
-<pinref part="Y1" gate="G$1" pin="S"/>
+<pinref part="J2" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="157.48" x2="52.07" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="162.56" x2="48.26" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="S1" gate="G$1" pin="ON"/>
+<wire x1="31.75" y1="162.56" x2="48.26" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="54.61" y1="157.48" x2="52.07" y2="157.48" width="0.1524" layer="91"/>
+<junction x="54.61" y="157.48"/>
+<junction x="52.07" y="157.48"/>
 </segment>
 </net>
 <net name="USB_D-" class="0">
@@ -3857,12 +3870,6 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <label x="148.59" y="245.11" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="148.59" y1="247.65" x2="148.59" y2="245.11" width="0.1524" layer="91"/>
 <junction x="148.59" y="247.65"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="143.51" x2="96.52" y2="143.51" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="146.05" x2="96.52" y2="143.51" width="0.1524" layer="91"/>
-<label x="96.52" y="146.05" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
@@ -4029,8 +4036,14 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <label x="257.81" y="264.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="FTDI_VCC" class="1">
+<net name="VBUS" class="1">
 <segment>
+<pinref part="J10" gate="A" pin="1-VCC"/>
+<wire x1="102.87" y1="260.35" x2="106.68" y2="260.35" width="0.1524" layer="91"/>
+<pinref part="J5" gate="G$1" pin="1"/>
+<wire x1="123.19" y1="265.43" x2="106.68" y2="265.43" width="0.1524" layer="91"/>
+<wire x1="106.68" y1="265.43" x2="106.68" y2="260.35" width="0.1524" layer="91"/>
+<label x="106.68" y="265.43" size="1.27" layer="95" rot="R90" xref="yes"/>
 <wire x1="110.49" y1="260.35" x2="120.65" y2="260.35" width="0.1524" layer="91"/>
 <wire x1="120.65" y1="260.35" x2="125.73" y2="260.35" width="0.1524" layer="91"/>
 <wire x1="125.73" y1="260.35" x2="144.78" y2="260.35" width="0.1524" layer="91"/>
@@ -4046,16 +4059,9 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <wire x1="125.73" y1="265.43" x2="125.73" y2="260.35" width="0.1524" layer="91"/>
 <junction x="125.73" y="260.35"/>
 <label x="144.78" y="260.35" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="VBUS" class="1">
-<segment>
-<pinref part="J10" gate="A" pin="1-VCC"/>
-<wire x1="102.87" y1="260.35" x2="106.68" y2="260.35" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$1" pin="1"/>
-<wire x1="123.19" y1="265.43" x2="106.68" y2="265.43" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="265.43" x2="106.68" y2="260.35" width="0.1524" layer="91"/>
-<label x="106.68" y="265.43" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="123.19" y1="265.43" x2="125.73" y2="265.43" width="0.1524" layer="91"/>
+<junction x="123.19" y="265.43"/>
+<junction x="125.73" y="265.43"/>
 </segment>
 <segment>
 <wire x1="281.94" y1="257.81" x2="281.94" y2="255.27" width="0.1524" layer="91"/>
@@ -4144,20 +4150,6 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <wire x1="184.15" y1="227.33" x2="187.96" y2="227.33" width="0.1524" layer="91"/>
 <label x="187.96" y="227.33" size="1.27" layer="95" xref="yes"/>
 <pinref part="R2" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$4" class="1">
-<segment>
-<pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="157.48" x2="52.07" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="Y1" gate="G$1" pin="D"/>
-<wire x1="48.26" y1="162.56" x2="50.8" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="162.56" x2="48.26" y2="157.48" width="0.1524" layer="91"/>
-<junction x="48.26" y="162.56"/>
-<pinref part="D1" gate="G$1" pin="C"/>
-<wire x1="48.26" y1="168.91" x2="48.26" y2="162.56" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="ON"/>
-<wire x1="31.75" y1="162.56" x2="48.26" y2="162.56" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
