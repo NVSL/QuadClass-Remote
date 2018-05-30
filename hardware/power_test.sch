@@ -3864,6 +3864,12 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <wire x1="96.52" y1="146.05" x2="96.52" y2="143.51" width="0.1524" layer="91"/>
 <label x="96.52" y="146.05" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="187.96" y1="217.17" x2="187.96" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="215.9" x2="191.77" y2="215.9" width="0.1524" layer="91"/>
+<label x="191.77" y="215.9" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="N$6" class="0">
 <segment>
@@ -4107,12 +4113,6 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <wire x1="17.78" y1="256.54" x2="17.78" y2="252.73" width="0.1524" layer="91"/>
 <junction x="17.78" y="256.54"/>
 <label x="17.78" y="252.73" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="217.17" x2="187.96" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="215.9" x2="191.77" y2="215.9" width="0.1524" layer="91"/>
-<label x="191.77" y="215.9" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="REG_3V3" class="0">
