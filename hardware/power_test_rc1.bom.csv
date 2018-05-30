@@ -1,20 +1,26 @@
-Digikey,445-1418-1-ND,8,power_test.sch,quadparts_prebuilt:CAPACITOR-NP_:SMD-2012-0805_CERAMIC-0.1UF,power_test.sch-C13_C11
-DIGIKEY,609-4613-1-ND ,4,power_test.sch,RemoteParts:USB:-MICROA-AMPHENOL-10118192-0001LF,power_test.sch-J10
-DIGIKEY,568-5300-1-ND,4,power_test.sch,RemoteParts:DPDT-X2:,power_test.sch-U1
-Digikey,1276-1026-1-ND,8,power_test.sch,quadparts_prebuilt:CAPACITOR-NP_:SMD-2012-0805_CERAMIC-1UF,power_test.sch-C17_C16
-DIGIKEY,160-1176-1-ND,8,power_test.sch,RemoteParts:DIODE-LED_:SMD-2012-0805-RED,power_test.sch-D8_D7
-Digikey,445-7644-1-ND,20,power_test.sch,quadparts_prebuilt:CAPACITOR-NP_:SMD-2012-0805_CERAMIC-10UF,power_test.sch-C12_C10_C8_C2_C7
-Digikey,3M9448-ND,24,power_test.sch,Components:HEADER-0.1IN-3POS:-MALE,power_test.sch-GND_5V_VBAT_3.3V_J5_J1
-DIGIKEY,311-1.0KARCT-ND,20,power_test.sch,quadparts_prebuilt:RESISTOR_:SMD-2012-0805-1K,power_test.sch-R11_R6_R7_R8_R9
-Digikey, SI2301CDS-T1-E3CT-ND,4,power_test.sch,RemoteParts:P-FET:,power_test.sch-Y1
-DIGIKEY,311-2.0KARCT-ND,4,power_test.sch,quadparts_prebuilt:RESISTOR_:SMD-2012-0805-2K,power_test.sch-R10
-DIGIKEY,MCP73831T-2ACI/OTCT-ND,4,power_test.sch,RemoteParts:MCP73831/2:,power_test.sch-U4
-Digikey,311-10KARCT-ND,8,power_test.sch,quadparts_prebuilt:RESISTOR_:SMD-2012-0805-10K,power_test.sch-R1_R2
-DIGIKEY,LP3985IM5-3.3/NOPBCT-ND,4,power_test.sch,quadparts_prebuilt:TPS73633-DBVT:3V3,power_test.sch-U2
-DIGIKEY,768-1007-1-ND ,4,power_test.sch,RemoteParts:FT232RL:SSOP,power_test.sch-U3
-Digikey,CRS08QMCT-ND,4,power_test.sch,quadparts_prebuilt:DIODE-SCHOTTKY_:SMD-SOD123-360MV,power_test.sch-D1
-DIGIKEY,151-1206-1-ND ,4,power_test.sch,RemoteParts:USB:-MICROB-EDAC-690-005-299-043,power_test.sch-J3
-DIGIKEY,401-1999-1-ND,8,power_test.sch,RemoteParts:POWER-SWITCH-MFS201N-9-Z:JS102011SAQN,power_test.sch-S1_S2
-Digikey,3M9447-ND,4,power_test.sch,custom:MALE_HEADER_2POS:-2X1-0.1IN,power_test.sch-J2
-Digikey,160-1179-1-ND,12,power_test.sch,RemoteParts:DIODE-LED_:SMD-2012-0805-GREEN,power_test.sch-D6_D4_D5
-
+"Qty";"Value";"Device";"Package";"Parts";"Description";"CREATOR";"DIST";"DISTPN";"MFR";"MPN";"PIN1";"PIN2";"PIN3";"REVIEWER";"VALUE";
+"4";"";"HEADER-0.1IN-3POS-MALE";"HDRV3W63P254_3X1_762X254H838_HS";"3.3V, 5V, GND, VBAT";"3 pin single inline pin header, socket, or connector";"";"Digikey";"3M9448-ND";"";"";"";"";"";"";"";
+"1";"";"HEADER-0.1IN-3POS-MALE";"HDRV3W63P254_3X1_762X254H838_HS";"J1";"3 pin single inline pin header, socket, or connector";"";"Digikey";"3M9448-ND";"";"";"FTDI";"out";"REG";"";"";
+"1";"";"HEADER-0.1IN-3POS-MALE";"HDRV3W63P254_3X1_762X254H838_HS";"J5";"3 pin single inline pin header, socket, or connector";"";"Digikey";"3M9448-ND";"";"";"VBUS";"FTDI";"VBAT";"";"";
+"10";"";"LOCKED-VIA-0.2";"VIA-0.2MM";"V1, V2, V3, V4, V5, V6, V7, V8, V17, V18";"";"Swanson";"NA";"NA";"";"";"";"";"";"";"";
+"1";"";"MALE_HEADER_2POS-2X1-0.1IN";"MALE_HEADER_2X1_0.1IN";"J2";"2 pin single inline pin header, socket, or connector";"SWANSON";"Digikey";"3M9447-ND";"3M";"961102-6404-AR";"";"";"";"";"";
+"2";"0.1uF";"CAPACITOR-NP_SMD-2012-0805_CERAMIC-0.1UF";"CAPC2012X140_HS";"C11, C13";"Nonpolarized capacitor";"Swanson";"Digikey";"445-1418-1-ND";"TDK";"C2012X7R2A104K125AA";"";"";"";"Swanson";"0.1uF";
+"2";"10K";"RESISTOR_SMD-2012-0805-10K";"RESC2012X60_HS";"R1, R2";"Resistor";"Swanson";"Digikey";"311-10KARCT-ND";"Yageo";"RC0805JR-0710KL";"";"";"";"Swanson";"10K";
+"5";"10uF";"CAPACITOR-NP_SMD-2012-0805_CERAMIC-10UF";"CAPC2012X140_HS";"C2, C7, C8, C10, C12";"Nonpolarized capacitor";"Swanson";"Digikey";"445-14387-1-ND";"TDK Corporation";"C2012X5R1E106K085AC";"";"";"";"Swanson";"10uF";
+"5";"1K";"RESISTOR_SMD-2012-0805-1K";"RESC2012X60_HS";"R6, R7, R8, R9, R11";"Resistor";"Swanson";"DIGIKEY";"311-1.0KARCT-ND";"";"";"";"";"";"";"1K";
+"2";"1uF";"CAPACITOR-NP_SMD-2012-0805_CERAMIC-1UF";"CAPC2012X140_HS";"C16, C17";"Nonpolarized capacitor";"Swanson";"Digikey";"587-1281-1-ND";"Taiyo Yuden";"TMK212B7105KG-T";"";"";"";"Swanson";"1uF";
+"1";"2K";"RESISTOR_SMD-2012-0805-2K";"RESC2012X60_HS";"R10";"Resistor";"Swanson";"DIGIKEY";"311-2.0KARCT-ND";"";"";"";"";"";"";"2K";
+"1";"3.3V";"TPS73633-DBVT3V3";"SOT23-DBV";"U2";"";"Swanson";"DIGIKEY";"LP3985IM5-3.3/NOPBCT-ND";"";"";"";"";"";"";"3.3V";
+"1";"360mV";"DIODE-SCHOTTKY_SMD-SOD123-360MV";"SOD3716X135_HS";"D1";"Schottky diode";"Swanson";"Digikey";"CRS08QMCT-ND";"Toshiba Semiconductor and Storage";"CRS08(TE85L,Q,M)";"";"";"";"Swanson";"360mV";
+"1";"BATTERY";"BATTERY";"BATTERY-TERMINALS";"B1";"";"Swanson";"NA";"NA";"";"";"";"";"";"";"";
+"1";"DPDT-X2";"DPDT-X2";"SOP65P640X110-16";"U1";"";"Swanson";"DIGIKEY";"568-5300-1-ND";"";"";"";"";"";"";"";
+"1";"FT232RLSSOP";"FT232RLSSOP";"SSOP28DB";"U3";"USB UART";"Swanson";"DIGIKEY";"768-1007-1-ND ";"";"";"";"";"";"";"";
+"2";"M06-TH-RIGHT-ANGLE";"M06-TH-RIGHT-ANGLE";"1X06-SIP-RIGHT-ANGLE";"JP1, JP2";"Header 6";"";"";"";"";"";"";"";"";"";"";
+"1";"MCP73831T-2ACI/OT";"MCP73831/2";"SOT23-5";"U4";"MCP73831/2 LIPO Charger";"Adafruit";"DIGIKEY";"MCP73831T-2ACI/OTCT-ND";"";"";"";"";"";"";"";
+"1";"NET_BRIDGE";"NET_BRIDGE";"NET_BRIDGE";"U$8";"";"Michael Gonzalez";"Nobody";"0";"Digikey";"0";"";"";"";"";"";
+"1";"P-FET";"P-FET";"FET_SI2302CDS-T1-E3CT-ND";"Y1";"";"Michael M. Gonzalez";"Digikey";" SI2301CDS-T1-E3CT-ND";"Vishay Siliconix ";"SI2301CDS-T1-E3 ";"";"";"";"";"";
+"2";"POWER-SWITCH-MFS201N-9-ZJS102011SAQN";"POWER-SWITCH-MFS201N-9-ZJS102011SAQN";"JS102011SAQN";"S1, S2";"";"Swanson";"DIGIKEY";"401-1999-1-ND";"";"";"";"";"";"";"";
+"2";"RED";"DIODE-LED_SMD-2012-0805-RED";"LEDSC125X200X120-2_HS";"D7, D8";"Light emitting diode";"Swanson";"DIGIKEY";"160-1176-1-ND";"";"";"";"";"";"";"RED";
+"1";"USB-MICROA-AMPHENOL-10118192-0001LF";"USB-MICROA-AMPHENOL-10118192-0001LF";"USB-MICROA-10118192-0001LF";"J10";"";"Swanson";"DIGIKEY";"609-4613-1-ND ";"";"";"";"";"";"";"";
+"1";"USB-MICROB-EDAC-690-005-299-043";"USB-MICROB-EDAC-690-005-299-043";"USB-MINIB-EDAC-690-005-299-043";"J3";"";"Swanson";"DIGIKEY";"151-1206-1-ND ";"";"";"";"";"";"";"";
+"3";"green";"DIODE-LED_SMD-2012-0805-GREEN";"LEDSC125X200X120-2_HS";"D4, D5, D6";"Light emitting diode";"Swanson";"Digikey";"160-1179-1-ND";"Lite-On Inc";"LTST-C170GKT";"";"";"";"Swanson";"green";
