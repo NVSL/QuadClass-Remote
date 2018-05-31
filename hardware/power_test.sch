@@ -3007,7 +3007,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="HIGH-I" width="0.508" drill="0">
+<class number="1" name="HIGH-I" width="0.381" drill="0">
 </class>
 <class number="2" name="RFSIG" width="0.4572" drill="0">
 </class>
@@ -3092,6 +3092,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="PIN2" value="PROG"/>
 <attribute name="PIN3" value="VSS"/>
 </part>
+<part name="V9" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
+<part name="V10" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
+<part name="V11" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 </parts>
 <sheets>
 <sheet>
@@ -3170,6 +3173,9 @@ Connecting all three will make USB attachment override the switch.</text>
 <instance part="GND4" gate="1" x="105.41" y="215.9"/>
 <instance part="J4" gate="G$1" x="157.48" y="135.89"/>
 <instance part="J5" gate="G$1" x="213.36" y="146.05" rot="R180"/>
+<instance part="V9" gate="G$1" x="165.1" y="187.96" rot="R90"/>
+<instance part="V10" gate="G$1" x="267.97" y="187.96" rot="R90"/>
+<instance part="V11" gate="G$1" x="86.36" y="181.61" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -3304,7 +3310,7 @@ Connecting all three will make USB attachment override the switch.</text>
 <label x="243.84" y="217.17" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="3V3" class="0">
+<net name="3V3" class="1">
 <segment>
 <pinref part="U1" gate="G$1" pin="VCC"/>
 <wire x1="224.79" y1="267.97" x2="224.79" y2="270.51" width="0.1524" layer="91"/>
@@ -3356,8 +3362,11 @@ Connecting all three will make USB attachment override the switch.</text>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="180.34" x2="86.36" y2="184.15" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="180.34" x2="86.36" y2="181.61" width="0.1524" layer="91"/>
 <label x="86.36" y="184.15" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="V11" gate="G$1" pin="N"/>
+<wire x1="86.36" y1="181.61" x2="86.36" y2="184.15" width="0.1524" layer="91"/>
+<junction x="86.36" y="181.61"/>
 </segment>
 </net>
 <net name="VBAT" class="1">
@@ -3399,7 +3408,10 @@ Connecting all three will make USB attachment override the switch.</text>
 <wire x1="278.13" y1="187.96" x2="278.13" y2="189.23" width="0.1524" layer="91"/>
 <junction x="278.13" y="187.96"/>
 <pinref part="D2" gate="G$1" pin="C"/>
-<wire x1="261.62" y1="187.96" x2="278.13" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="187.96" x2="267.97" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="V10" gate="G$1" pin="N"/>
+<wire x1="267.97" y1="187.96" x2="278.13" y2="187.96" width="0.1524" layer="91"/>
+<junction x="267.97" y="187.96"/>
 </segment>
 </net>
 <net name="BPOS" class="1">
@@ -3739,13 +3751,16 @@ Connecting all three will make USB attachment override the switch.</text>
 <junction x="157.48" y="177.8"/>
 <label x="137.16" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="142.24" y1="177.8" x2="142.24" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="142.24" y1="187.96" x2="254" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="187.96" x2="165.1" y2="187.96" width="0.1524" layer="91"/>
 <junction x="142.24" y="177.8"/>
 <pinref part="D2" gate="G$1" pin="A"/>
 <pinref part="J4" gate="G$1" pin="3"/>
+<wire x1="165.1" y1="187.96" x2="254" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="168.91" y1="177.8" x2="168.91" y2="143.51" width="0.1524" layer="91"/>
 <wire x1="168.91" y1="143.51" x2="167.64" y2="143.51" width="0.1524" layer="91"/>
 <junction x="168.91" y="177.8"/>
+<pinref part="V9" gate="G$1" pin="N"/>
+<junction x="165.1" y="187.96"/>
 </segment>
 </net>
 <net name="CHR_ENABLE#" class="0">

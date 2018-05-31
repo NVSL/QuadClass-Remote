@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="mm" altunit="mm"/>
+<grid distance="0.00001" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.001" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -59,7 +59,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
@@ -199,7 +199,6 @@
 <text x="-56.6" y="6.1" size="1.778" layer="21" font="vector" rot="R90">GND</text>
 <text x="-61.8" y="6.1" size="1.778" layer="21" font="vector" rot="R90">3V3</text>
 <text x="-32.9" y="5.7" size="1.778" layer="21" font="vector" rot="R90">3V3</text>
-<text x="-62.7" y="43.2" size="1.778" layer="21" font="vector" rot="R90">PWR</text>
 </plain>
 <libraries>
 <library name="Controller">
@@ -1473,7 +1472,7 @@ Reviewer 2:</description>
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="HIGH-I" width="0.508" drill="0">
+<class number="1" name="HIGH-I" width="0.381" drill="0">
 </class>
 <class number="2" name="RFSIG" width="0.4572" drill="0">
 </class>
@@ -1666,230 +1665,231 @@ design rules under a new name.</description>
 <attribute name="DISTPN" value="401-1999-1-ND" x="-70" y="43.75" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-70.1" y="49.56" size="1.27" layer="21" font="vector" rot="R180" align="center"/>
 </element>
-<element name="D4" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="green" x="-64.6" y="40.2" smashed="yes" rot="R90">
-<attribute name="CREATOR" value="Swanson" x="-64.6" y="40.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="-64.6" y="40.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="160-1179-1-ND" x="-64.6" y="40.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="Lite-On Inc" x="-64.6" y="40.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="LTST-C170GKT" x="-64.6" y="40.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-60.275" y="41.6666" size="1.27" layer="25" font="vector" ratio="10" rot="R180"/>
-<attribute name="REVIEWER" value="Swanson" x="-64.6" y="40.2" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" value="green" x="-63.2966" y="38.4004" size="1.27" layer="27" font="vector" ratio="10" rot="R90"/>
+<element name="D4" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="green" x="-66.890678125" y="50.064203125" smashed="yes" rot="R180">
+<attribute name="CREATOR" value="Swanson" x="-66.890678125" y="50.064203125" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digikey" x="-66.890678125" y="50.064203125" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="160-1179-1-ND" x="-66.890678125" y="50.064203125" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="Lite-On Inc" x="-66.890678125" y="50.064203125" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="LTST-C170GKT" x="-66.890678125" y="50.064203125" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-68.672403125" y="48.769721875" size="1.27" layer="25" font="vector" ratio="10"/>
+<attribute name="REVIEWER" value="Swanson" x="-66.890678125" y="50.064203125" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" value="green" x="-64.727628125" y="51.78309375" size="1.27" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
-<element name="GND" library="Components" package="HDRV3W63P254_3X1_762X254H838_HS" value="" x="-30.3" y="20.25" smashed="yes" rot="R90">
-<attribute name="DIST" value="Digikey" x="-30.3" y="20.25" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="3M9448-ND" x="-30.3" y="20.25" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-28.16" y="22.79" size="1.27" layer="25" font="vector" ratio="10" rot="R90" align="center"/>
-<attribute name="NAME" x="-25.26" y="22.79" size="1.778" layer="51" font="vector" ratio="10" rot="R90" align="center"/>
-<attribute name="PIN1" value="" x="-32.205" y="20.25" size="1.778" layer="21" font="vector" rot="R180" align="center-left"/>
-<attribute name="PIN2" value="" x="-32.205" y="22.79" size="1.778" layer="21" font="vector" rot="R180" align="center-left"/>
-<attribute name="PIN3" value="" x="-32.205" y="25.33" size="1.778" layer="21" font="vector" rot="R180" align="center-left"/>
+<element name="GND" library="Components" package="HDRV3W63P254_3X1_762X254H838_HS" value="" x="-41.7331" y="14.312940625" smashed="yes">
+<attribute name="DIST" value="Digikey" x="-41.7331" y="14.312940625" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="3M9448-ND" x="-41.7331" y="14.312940625" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-39.1931" y="12.172940625" size="1.27" layer="25" font="vector" ratio="10" align="center"/>
+<attribute name="NAME" x="-39.1931" y="9.272940625" size="1.778" layer="51" font="vector" ratio="10" align="center"/>
+<attribute name="PIN1" value="" x="-41.7331" y="16.217940625" size="1.778" layer="21" font="vector" rot="R90" align="center-left"/>
+<attribute name="PIN2" value="" x="-39.1931" y="16.217940625" size="1.778" layer="21" font="vector" rot="R90" align="center-left"/>
+<attribute name="PIN3" value="" x="-36.6531" y="16.217940625" size="1.778" layer="21" font="vector" rot="R90" align="center-left"/>
 </element>
-<element name="VBAT" library="Components" package="HDRV3W63P254_3X1_762X254H838_HS" value="" x="-34" y="25.35" smashed="yes" rot="R270">
-<attribute name="DIST" value="Digikey" x="-34" y="25.35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="3M9448-ND" x="-34" y="25.35" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-39.04" y="22.81" size="1.778" layer="51" font="vector" ratio="10" rot="R270" align="center"/>
-<attribute name="PIN1" value="" x="-32.095" y="25.35" size="1.778" layer="21" font="vector" align="center-left"/>
-<attribute name="PIN2" value="" x="-32.095" y="22.81" size="1.778" layer="21" font="vector" align="center-left"/>
-<attribute name="PIN3" value="" x="-32.095" y="20.27" size="1.778" layer="21" font="vector" align="center-left"/>
+<element name="VBAT" library="Components" package="HDRV3W63P254_3X1_762X254H838_HS" value="" x="-49.69531875" y="14.28973125" smashed="yes">
+<attribute name="DIST" value="Digikey" x="-49.69531875" y="14.28973125" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="3M9448-ND" x="-49.69531875" y="14.28973125" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-47.15531875" y="9.24973125" size="1.778" layer="51" font="vector" ratio="10" align="center"/>
+<attribute name="PIN1" value="" x="-49.69531875" y="16.19473125" size="1.778" layer="21" font="vector" rot="R90" align="center-left"/>
+<attribute name="PIN2" value="" x="-47.15531875" y="16.19473125" size="1.778" layer="21" font="vector" rot="R90" align="center-left"/>
+<attribute name="PIN3" value="" x="-44.61531875" y="16.19473125" size="1.778" layer="21" font="vector" rot="R90" align="center-left"/>
 </element>
-<element name="3.3V" library="Components" package="HDRV3W63P254_3X1_762X254H838_HS" value="" x="-34" y="17.15" smashed="yes" rot="R270">
-<attribute name="DIST" value="Digikey" x="-34" y="17.15" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="3M9448-ND" x="-34" y="17.15" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-36.34" y="14.51" size="1.27" layer="25" font="vector" ratio="10" rot="R270" align="center"/>
-<attribute name="NAME" x="-39.04" y="14.11" size="1.778" layer="51" font="vector" ratio="10" rot="R270" align="center"/>
-<attribute name="PIN1" value="" x="-32.095" y="17.15" size="1.778" layer="21" font="vector" align="center-left"/>
-<attribute name="PIN2" value="" x="-32.095" y="14.61" size="1.778" layer="21" font="vector" align="center-left"/>
-<attribute name="PIN3" value="" x="-32.095" y="12.07" size="1.778" layer="21" font="vector" align="center-left"/>
+<element name="3.3V" library="Components" package="HDRV3W63P254_3X1_762X254H838_HS" value="" x="-33.39758125" y="14.34221875" smashed="yes">
+<attribute name="DIST" value="Digikey" x="-33.39758125" y="14.34221875" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="3M9448-ND" x="-33.39758125" y="14.34221875" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-30.75758125" y="12.00221875" size="1.27" layer="25" font="vector" ratio="10" align="center"/>
+<attribute name="NAME" x="-30.35758125" y="9.30221875" size="1.778" layer="51" font="vector" ratio="10" align="center"/>
+<attribute name="PIN1" value="" x="-33.39758125" y="16.24721875" size="1.778" layer="21" font="vector" rot="R90" align="center-left"/>
+<attribute name="PIN2" value="" x="-30.85758125" y="16.24721875" size="1.778" layer="21" font="vector" rot="R90" align="center-left"/>
+<attribute name="PIN3" value="" x="-28.31758125" y="16.24721875" size="1.778" layer="21" font="vector" rot="R90" align="center-left"/>
 </element>
-<element name="B1" library="quadparts_prebuilt" package="BATTERY-TERMINALS" value="BATTERY" x="-58.375" y="46.275" rot="R180">
-<attribute name="CREATOR" value="Swanson" x="-58.375" y="46.275" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DIST" value="NA" x="-58.375" y="46.275" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="NA" x="-58.375" y="46.275" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="B1" library="quadparts_prebuilt" package="BATTERY-TERMINALS" value="BATTERY" x="-59.4662625" y="47.39585625" smashed="yes">
+<attribute name="CREATOR" value="Swanson" x="-59.4662625" y="47.39585625" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="NA" x="-59.4662625" y="47.39585625" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="NA" x="-59.4662625" y="47.39585625" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-55.703703125" y="46.695815625" size="1.27" layer="25" font="vector" align="center"/>
 </element>
-<element name="U3" library="RemoteParts" package="SSOP28DB" value="FT232RLSSOP" x="-32.95" y="39.6" rot="R90">
-<attribute name="CREATOR" value="Swanson" x="-32.95" y="39.6" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="DIGIKEY" x="-32.95" y="39.6" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="768-1007-1-ND " x="-32.95" y="39.6" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="U3" library="RemoteParts" package="SSOP28DB" value="FT232RLSSOP" x="-34.061428125" y="38.866509375" rot="R90">
+<attribute name="CREATOR" value="Swanson" x="-34.061428125" y="38.866509375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-34.061428125" y="38.866509375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="768-1007-1-ND " x="-34.061428125" y="38.866509375" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="R6" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="-45" y="30.775" smashed="yes" rot="R270">
-<attribute name="DIST" value="DIGIKEY" x="-45" y="30.775" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="311-510ARCT-ND" x="-45" y="30.775" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-45.4" y="28.875" size="1.27" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" value="510" x="-45" y="30.775" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" value="100" x="-45.6" y="32.075" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
+<element name="R6" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="-39.804525" y="45.793128125" smashed="yes" rot="R270">
+<attribute name="DIST" value="DIGIKEY" x="-39.804525" y="45.793128125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTPN" value="311-510ARCT-ND" x="-39.804525" y="45.793128125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="-38.532275" y="46.97715" size="1.27" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" value="510" x="-39.804525" y="45.793128125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" value="100" x="-40.404525" y="47.093128125" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="R7" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="-47.55" y="30.775" smashed="yes" rot="R270">
-<attribute name="DIST" value="DIGIKEY" x="-47.55" y="30.775" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="311-510ARCT-ND" x="-47.55" y="30.775" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-48.15" y="28.875" size="1.27" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" value="510" x="-47.55" y="30.775" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" value="100" x="-48.05" y="31.975" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
+<element name="R7" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="-59.19626875" y="50.9275" smashed="yes">
+<attribute name="DIST" value="DIGIKEY" x="-59.19626875" y="50.9275" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="311-510ARCT-ND" x="-59.19626875" y="50.9275" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-57.29626875" y="50.3275" size="1.27" layer="25" font="vector"/>
+<attribute name="VALUE" value="510" x="-59.19626875" y="50.9275" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" value="100" x="-60.39626875" y="50.4275" size="1.2" layer="27" font="vector" ratio="10"/>
 </element>
 <element name="JP1" library="RemoteParts" package="1X06-SIP-RIGHT-ANGLE" value="M06-TH-RIGHT-ANGLE" x="-34.9" y="4.65" rot="R180"/>
-<element name="C11" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="0.1uF" x="-37.9" y="33" smashed="yes" rot="R180">
-<attribute name="CREATOR" value="Swanson" x="-37.9" y="33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DIST" value="Digikey" x="-37.9" y="33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="445-1418-1-ND" x="-37.9" y="33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR" value="TDK" x="-37.9" y="33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="C2012X7R2A104K125AA" x="-37.9" y="33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-39.6" y="33.6" size="1.27" layer="25" font="vector" rot="R180"/>
-<attribute name="REVIEWER" value="Swanson" x="-37.9" y="33" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-35.3" y="33.6" size="1.2" layer="27" font="vector" ratio="10" rot="R180"/>
+<element name="C11" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="0.1uF" x="-40.418240625" y="36.262521875" smashed="yes" rot="R270">
+<attribute name="CREATOR" value="Swanson" x="-40.418240625" y="36.262521875" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIST" value="Digikey" x="-40.418240625" y="36.262521875" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTPN" value="445-1418-1-ND" x="-40.418240625" y="36.262521875" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFR" value="TDK" x="-40.418240625" y="36.262521875" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="C2012X7R2A104K125AA" x="-40.418240625" y="36.262521875" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="-43.056290625" y="37.855634375" size="1.27" layer="25" font="vector" rot="R270"/>
+<attribute name="REVIEWER" value="Swanson" x="-40.418240625" y="36.262521875" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="-41.018240625" y="38.862521875" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="C12" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="10uF" x="-29.7" y="32.9" smashed="yes" rot="R180">
-<attribute name="CREATOR" value="Swanson" x="-29.7" y="32.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DIST" value="Digikey" x="-29.7" y="32.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="445-14387-1-ND" x="-29.7" y="32.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR" value="TDK Corporation" x="-29.7" y="32.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="C2012X5R1E106K085AC" x="-29.7" y="32.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-31.4" y="33.3" size="1.27" layer="25" font="vector" rot="R180"/>
-<attribute name="REVIEWER" value="Swanson" x="-29.7" y="32.9" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-27.4" y="33.5" size="1.2" layer="27" font="vector" ratio="10" rot="R180"/>
+<element name="C12" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="10uF" x="-28.009703125" y="37.71761875" smashed="yes" rot="R90">
+<attribute name="CREATOR" value="Swanson" x="-28.009703125" y="37.71761875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digikey" x="-28.009703125" y="37.71761875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="445-14387-1-ND" x="-28.009703125" y="37.71761875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="TDK Corporation" x="-28.009703125" y="37.71761875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="C2012X5R1E106K085AC" x="-28.009703125" y="37.71761875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="-27.609703125" y="39.41761875" size="1.27" layer="25" font="vector" rot="R90"/>
+<attribute name="REVIEWER" value="Swanson" x="-28.009703125" y="37.71761875" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="-27.409703125" y="35.41761875" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="C13" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="0.1uF" x="-41.6" y="38.6" smashed="yes" rot="R270">
-<attribute name="CREATOR" value="Swanson" x="-41.6" y="38.6" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIST" value="Digikey" x="-41.6" y="38.6" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="445-1418-1-ND" x="-41.6" y="38.6" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MFR" value="TDK" x="-41.6" y="38.6" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="C2012X7R2A104K125AA" x="-41.6" y="38.6" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-44" y="40.4" size="1.27" layer="25" font="vector" rot="R270"/>
-<attribute name="REVIEWER" value="Swanson" x="-41.6" y="38.6" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-42.3" y="41.3" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
+<element name="C13" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="0.1uF" x="-40.39708125" y="40.06944375" smashed="yes" rot="R270">
+<attribute name="CREATOR" value="Swanson" x="-40.39708125" y="40.06944375" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIST" value="Digikey" x="-40.39708125" y="40.06944375" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTPN" value="445-1418-1-ND" x="-40.39708125" y="40.06944375" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFR" value="TDK" x="-40.39708125" y="40.06944375" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="C2012X7R2A104K125AA" x="-40.39708125" y="40.06944375" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="-43.006121875" y="41.921721875" size="1.27" layer="25" font="vector" rot="R270"/>
+<attribute name="REVIEWER" value="Swanson" x="-40.39708125" y="40.06944375" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="-41.09708125" y="42.76944375" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="D5" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="green" x="-48.4" y="34.9" smashed="yes" rot="R90">
-<attribute name="CREATOR" value="Swanson" x="-48.4" y="34.9" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="-48.4" y="34.9" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="160-1179-1-ND" x="-48.4" y="34.9" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="Lite-On Inc" x="-48.4" y="34.9" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="LTST-C170GKT" x="-48.4" y="34.9" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-48.1" y="40.4" size="1.27" layer="25" font="vector" rot="R270"/>
-<attribute name="REVIEWER" value="Swanson" x="-48.4" y="34.9" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-48.2" y="38.6" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
+<element name="D5" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="green" x="-53" y="50.5" smashed="yes" rot="R270">
+<attribute name="CREATOR" value="Swanson" x="-53" y="50.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIST" value="Digikey" x="-53" y="50.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTPN" value="160-1179-1-ND" x="-53" y="50.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFR" value="Lite-On Inc" x="-53" y="50.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="LTST-C170GKT" x="-53" y="50.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="-53.3" y="45" size="1.27" layer="25" font="vector" rot="R90"/>
+<attribute name="REVIEWER" value="Swanson" x="-53" y="50.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="-53.2" y="46.8" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="D7" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="RED" x="-45.9" y="34.9" smashed="yes" rot="R90">
-<attribute name="CREATOR" value="Swanson" x="-45.9" y="34.9" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="DIGIKEY" x="-45.9" y="34.9" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="160-1176-1-ND" x="-45.9" y="34.9" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-45.6" y="40.4" size="1.27" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" value="RED" x="-45.9" y="34.9" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-45.6" y="37.4" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
+<element name="D7" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="RED" x="-38.8" y="50.6" smashed="yes" rot="R270">
+<attribute name="CREATOR" value="Swanson" x="-38.8" y="50.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-38.8" y="50.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTPN" value="160-1176-1-ND" x="-38.8" y="50.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="-37.1142" y="48.86356875" size="1.27" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" value="RED" x="-38.8" y="50.6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="-39.1" y="48.1" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="J10" library="RemoteParts" package="USB-MICROA-10118192-0001LF" value="USB-MICROA-AMPHENOL-10118192-0001LF" x="-31.9" y="48" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-31.9" y="48" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-31.9" y="48" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="609-4613-1-ND " x="-31.9" y="48" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U4" library="RemoteParts" package="SOT23-5" value="MCP73831T-2ACI/OT" x="-55.75" y="36.5" rot="R270">
-<attribute name="CREATOR" value="Adafruit" x="-55.75" y="36.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIST" value="DIGIKEY" x="-55.75" y="36.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="MCP73831T-2ACI/OTCT-ND" x="-55.75" y="36.5" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="U4" library="RemoteParts" package="SOT23-5" value="MCP73831T-2ACI/OT" x="-56.220321875" y="32.318259375" rot="R270">
+<attribute name="CREATOR" value="Adafruit" x="-56.220321875" y="32.318259375" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-56.220321875" y="32.318259375" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTPN" value="MCP73831T-2ACI/OTCT-ND" x="-56.220321875" y="32.318259375" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="R8" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="-56.75" y="32.25" smashed="yes" rot="R90">
-<attribute name="DIST" value="DIGIKEY" x="-56.75" y="32.25" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="311-510ARCT-ND" x="-56.75" y="32.25" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-57.75" y="31.25" size="1.27" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" value="510" x="-56.15" y="31.25" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
-<attribute name="VALUE" value="1K" x="-56.75" y="32.25" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R8" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="-62.1850625" y="39.31021875" smashed="yes" rot="R180">
+<attribute name="DIST" value="DIGIKEY" x="-62.1850625" y="39.31021875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="311-510ARCT-ND" x="-62.1850625" y="39.31021875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-60.923703125" y="38.1525" size="1.27" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" value="510" x="-61.1850625" y="39.91021875" size="1.2" layer="27" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" value="1K" x="-62.1850625" y="39.31021875" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R9" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="-54" y="32.25" smashed="yes" rot="R90">
-<attribute name="DIST" value="DIGIKEY" x="-54" y="32.25" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="311-510ARCT-ND" x="-54" y="32.25" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-51.7" y="31.35" size="1.27" layer="25" font="vector" rot="R90"/>
-<attribute name="VALUE" value="510" x="-53.4" y="31.15" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
-<attribute name="VALUE" value="1K" x="-54" y="32.25" size="1.778" layer="27" rot="R90" display="off"/>
+<element name="R9" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="-57.01488125" y="39.32605" smashed="yes">
+<attribute name="DIST" value="DIGIKEY" x="-57.01488125" y="39.32605" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="311-510ARCT-ND" x="-57.01488125" y="39.32605" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-57.91488125" y="37.02605" size="1.27" layer="25" font="vector"/>
+<attribute name="VALUE" value="510" x="-58.11488125" y="38.72605" size="1.2" layer="27" font="vector" ratio="10"/>
+<attribute name="VALUE" value="1K" x="-57.01488125" y="39.32605" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C10" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="10uF" x="-51.75" y="36.5" smashed="yes" rot="R90">
-<attribute name="CREATOR" value="Swanson" x="-51.75" y="36.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="-51.75" y="36.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="445-14387-1-ND" x="-51.75" y="36.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="TDK Corporation" x="-51.75" y="36.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="C2012X5R1E106K085AC" x="-51.75" y="36.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-49.25" y="34.8" size="1.27" layer="25" font="vector" rot="R90"/>
-<attribute name="REVIEWER" value="Swanson" x="-51.75" y="36.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-51.15" y="34.6" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
+<element name="C10" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="10uF" x="-52.220321875" y="32.318259375" smashed="yes" rot="R90">
+<attribute name="CREATOR" value="Swanson" x="-52.220321875" y="32.318259375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digikey" x="-52.220321875" y="32.318259375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="445-14387-1-ND" x="-52.220321875" y="32.318259375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="TDK Corporation" x="-52.220321875" y="32.318259375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="C2012X5R1E106K085AC" x="-52.220321875" y="32.318259375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="-49.720321875" y="30.618259375" size="1.27" layer="25" font="vector" rot="R90"/>
+<attribute name="REVIEWER" value="Swanson" x="-52.220321875" y="32.318259375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="-51.620321875" y="30.418259375" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="D6" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="green" x="-54.8" y="27.4" smashed="yes" rot="R90">
-<attribute name="CREATOR" value="Swanson" x="-54.8" y="27.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="-54.8" y="27.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="160-1179-1-ND" x="-54.8" y="27.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="Lite-On Inc" x="-54.8" y="27.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="LTST-C170GKT" x="-54.8" y="27.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-55.9" y="29.4" size="1.27" layer="25" font="vector" rot="R270"/>
-<attribute name="REVIEWER" value="Swanson" x="-54.8" y="27.4" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-54.6" y="30.8" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
+<element name="D6" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="green" x="-58.82384375" y="41.7747" smashed="yes" rot="R90">
+<attribute name="CREATOR" value="Swanson" x="-58.82384375" y="41.7747" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digikey" x="-58.82384375" y="41.7747" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="160-1179-1-ND" x="-58.82384375" y="41.7747" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="Lite-On Inc" x="-58.82384375" y="41.7747" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="LTST-C170GKT" x="-58.82384375" y="41.7747" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="-59.92384375" y="43.7747" size="1.27" layer="25" font="vector" rot="R270"/>
+<attribute name="REVIEWER" value="Swanson" x="-58.82384375" y="41.7747" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="-58.62384375" y="45.1747" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="D8" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="RED" x="-57.75" y="27.35" smashed="yes" rot="R90">
-<attribute name="CREATOR" value="Swanson" x="-57.75" y="27.35" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="DIGIKEY" x="-57.75" y="27.35" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="160-1176-1-ND" x="-57.75" y="27.35" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-59.05" y="29.45" size="1.27" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" value="RED" x="-57.75" y="27.35" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-57.45" y="29.95" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
+<element name="D8" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="RED" x="-60.3002875" y="43.26905" smashed="yes" rot="R270">
+<attribute name="CREATOR" value="Swanson" x="-60.3002875" y="43.26905" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-60.3002875" y="43.26905" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTPN" value="160-1176-1-ND" x="-60.3002875" y="43.26905" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="-62.0312375" y="41.7440375" size="1.27" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" value="RED" x="-60.3002875" y="43.26905" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="-60.6002875" y="40.66905" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="C8" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="10uF" x="-59.5" y="36.5" smashed="yes" rot="R90">
-<attribute name="CREATOR" value="Swanson" x="-59.5" y="36.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="-59.5" y="36.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="445-14387-1-ND" x="-59.5" y="36.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="TDK Corporation" x="-59.5" y="36.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="C2012X5R1E106K085AC" x="-59.5" y="36.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-60.6" y="35.3" size="1.27" layer="25" font="vector" rot="R90"/>
-<attribute name="REVIEWER" value="Swanson" x="-59.5" y="36.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-58.9" y="34.5" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
+<element name="C8" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="10uF" x="-59.970321875" y="32.318259375" smashed="yes" rot="R90">
+<attribute name="CREATOR" value="Swanson" x="-59.970321875" y="32.318259375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digikey" x="-59.970321875" y="32.318259375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="445-14387-1-ND" x="-59.970321875" y="32.318259375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="TDK Corporation" x="-59.970321875" y="32.318259375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="C2012X5R1E106K085AC" x="-59.970321875" y="32.318259375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="-61.070321875" y="31.118259375" size="1.27" layer="25" font="vector" rot="R90"/>
+<attribute name="REVIEWER" value="Swanson" x="-59.970321875" y="32.318259375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="-59.370321875" y="30.318259375" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="R10" library="quadparts_prebuilt" package="RESC2012X60_HS" value="2K" x="-55.75" y="39.5" smashed="yes" rot="R180">
-<attribute name="CREATOR" value="Swanson" x="-55.75" y="39.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DIST" value="DIGIKEY" x="-55.75" y="39.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="311-2.0KARCT-ND" x="-55.75" y="39.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-53.85" y="41.8" size="1.27" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="-54.55" y="40.1" size="1.2" layer="27" font="vector" ratio="10" rot="R180"/>
+<element name="R10" library="quadparts_prebuilt" package="RESC2012X60_HS" value="2K" x="-56.324840625" y="35.10916875" smashed="yes" rot="R180">
+<attribute name="CREATOR" value="Swanson" x="-56.324840625" y="35.10916875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-56.324840625" y="35.10916875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="311-2.0KARCT-ND" x="-56.324840625" y="35.10916875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-50.923571875" y="35.73648125" size="1.27" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="-55.124840625" y="35.70916875" size="1.2" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
-<element name="R11" library="quadparts_prebuilt" package="RESC2012X60_HS" value="270" x="-66.5" y="25.45" smashed="yes">
-<attribute name="DIST" value="DIGIKEY" x="-66.5" y="25.45" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="311-270ARCT-ND" x="-66.5" y="25.45" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-68.2" y="26.25" size="1.27" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" value="270" x="-66.5" y="25.45" size="1.2" layer="27" font="vector" ratio="10"/>
-<attribute name="VALUE" value="1K" x="-66.5" y="25.45" size="1.778" layer="27" display="off"/>
+<element name="R11" library="quadparts_prebuilt" package="RESC2012X60_HS" value="270" x="-62.917478125" y="50.898940625" smashed="yes">
+<attribute name="DIST" value="DIGIKEY" x="-62.917478125" y="50.898940625" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="311-270ARCT-ND" x="-62.917478125" y="50.898940625" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-61.346496875" y="49.6734125" size="1.27" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" value="270" x="-64.4750875" y="50.431509375" size="1.2" layer="27" font="vector" ratio="10"/>
+<attribute name="VALUE" value="1K" x="-62.917478125" y="50.898940625" size="1.778" layer="27" display="off"/>
 </element>
-<element name="V1" library="quadparts_prebuilt" package="VIA-0.2MM" value="" x="-51" y="33.75">
-<attribute name="CREATOR" value="Swanson" x="-51" y="33.75" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="NA" x="-51" y="33.75" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="NA" x="-51" y="33.75" size="1.778" layer="27" display="off"/>
+<element name="V1" library="quadparts_prebuilt" package="VIA-0.2MM" value="" x="-51.470321875" y="29.568259375">
+<attribute name="CREATOR" value="Swanson" x="-51.470321875" y="29.568259375" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="NA" x="-51.470321875" y="29.568259375" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="NA" x="-51.470321875" y="29.568259375" size="1.778" layer="27" display="off"/>
 </element>
-<element name="V2" library="quadparts_prebuilt" package="VIA-0.2MM" value="" x="-52" y="31.5">
-<attribute name="CREATOR" value="Swanson" x="-52" y="31.5" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="NA" x="-52" y="31.5" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="NA" x="-52" y="31.5" size="1.778" layer="27" display="off"/>
+<element name="V2" library="quadparts_prebuilt" package="VIA-0.2MM" value="" x="-52.470321875" y="27.318259375">
+<attribute name="CREATOR" value="Swanson" x="-52.470321875" y="27.318259375" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="NA" x="-52.470321875" y="27.318259375" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="NA" x="-52.470321875" y="27.318259375" size="1.778" layer="27" display="off"/>
 </element>
-<element name="V5" library="quadparts_prebuilt" package="VIA-0.2MM" value="" x="-60.75" y="34">
-<attribute name="CREATOR" value="Swanson" x="-60.75" y="34" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="NA" x="-60.75" y="34" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="NA" x="-60.75" y="34" size="1.778" layer="27" display="off"/>
+<element name="V5" library="quadparts_prebuilt" package="VIA-0.2MM" value="" x="-61.220321875" y="29.818259375">
+<attribute name="CREATOR" value="Swanson" x="-61.220321875" y="29.818259375" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="NA" x="-61.220321875" y="29.818259375" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="NA" x="-61.220321875" y="29.818259375" size="1.778" layer="27" display="off"/>
 </element>
-<element name="V6" library="quadparts_prebuilt" package="VIA-0.2MM" value="" x="-59" y="31.75">
-<attribute name="CREATOR" value="Swanson" x="-59" y="31.75" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="NA" x="-59" y="31.75" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="NA" x="-59" y="31.75" size="1.778" layer="27" display="off"/>
+<element name="V6" library="quadparts_prebuilt" package="VIA-0.2MM" value="" x="-59.470321875" y="27.568259375">
+<attribute name="CREATOR" value="Swanson" x="-59.470321875" y="27.568259375" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="NA" x="-59.470321875" y="27.568259375" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="NA" x="-59.470321875" y="27.568259375" size="1.778" layer="27" display="off"/>
 </element>
-<element name="V3" library="quadparts_prebuilt" package="VIA-0.2MM" value="" x="-61" y="39">
-<attribute name="CREATOR" value="Swanson" x="-61" y="39" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="NA" x="-61" y="39" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="NA" x="-61" y="39" size="1.778" layer="27" display="off"/>
+<element name="V3" library="quadparts_prebuilt" package="VIA-0.2MM" value="" x="-61.470321875" y="34.818259375">
+<attribute name="CREATOR" value="Swanson" x="-61.470321875" y="34.818259375" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="NA" x="-61.470321875" y="34.818259375" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="NA" x="-61.470321875" y="34.818259375" size="1.778" layer="27" display="off"/>
 </element>
-<element name="V4" library="quadparts_prebuilt" package="VIA-0.2MM" value="" x="-58.5" y="40.75">
-<attribute name="CREATOR" value="Swanson" x="-58.5" y="40.75" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="NA" x="-58.5" y="40.75" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="NA" x="-58.5" y="40.75" size="1.778" layer="27" display="off"/>
+<element name="V4" library="quadparts_prebuilt" package="VIA-0.2MM" value="" x="-58.970321875" y="36.568259375">
+<attribute name="CREATOR" value="Swanson" x="-58.970321875" y="36.568259375" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="NA" x="-58.970321875" y="36.568259375" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="NA" x="-58.970321875" y="36.568259375" size="1.778" layer="27" display="off"/>
 </element>
-<element name="V7" library="quadparts_prebuilt" package="VIA-0.2MM" value="" x="-53.25" y="40.75">
-<attribute name="CREATOR" value="Swanson" x="-53.25" y="40.75" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="NA" x="-53.25" y="40.75" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="NA" x="-53.25" y="40.75" size="1.778" layer="27" display="off"/>
+<element name="V7" library="quadparts_prebuilt" package="VIA-0.2MM" value="" x="-53.720321875" y="36.568259375">
+<attribute name="CREATOR" value="Swanson" x="-53.720321875" y="36.568259375" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="NA" x="-53.720321875" y="36.568259375" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="NA" x="-53.720321875" y="36.568259375" size="1.778" layer="27" display="off"/>
 </element>
-<element name="V8" library="quadparts_prebuilt" package="VIA-0.2MM" value="" x="-50.25" y="38.75">
-<attribute name="CREATOR" value="Swanson" x="-50.25" y="38.75" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="NA" x="-50.25" y="38.75" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="NA" x="-50.25" y="38.75" size="1.778" layer="27" display="off"/>
+<element name="V8" library="quadparts_prebuilt" package="VIA-0.2MM" value="" x="-50.720321875" y="34.568259375">
+<attribute name="CREATOR" value="Swanson" x="-50.720321875" y="34.568259375" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="NA" x="-50.720321875" y="34.568259375" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="NA" x="-50.720321875" y="34.568259375" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U$8" library="custom" package="NET_BRIDGE" value="NET_BRIDGE" x="-28.8" y="29.6" rot="R90">
 <attribute name="CREATOR" value="Michael Gonzalez" x="-28.8" y="29.6" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1899,12 +1899,12 @@ design rules under a new name.</description>
 <attribute name="MPN" value="0" x="-28.8" y="29.6" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="REVIEWER" value="" x="-28.8" y="29.6" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="U1" library="RemoteParts" package="SOP65P640X110-16" package3d_urn="urn:adsk.eagle:package:3027343/1" value="DPDT-X2" x="-55.6" y="13.5" smashed="yes">
-<attribute name="CREATOR" value="Swanson" x="-55.6" y="13.5" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="DIGIKEY" x="-55.6" y="13.5" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="568-5300-1-ND" x="-55.6" y="13.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-55.6" y="17.0174" size="1.27" layer="25" font="vector" align="bottom-center"/>
-<attribute name="VALUE" x="-55.4" y="14.1726" size="1.27" layer="27" font="vector" align="top-center"/>
+<element name="U1" library="RemoteParts" package="SOP65P640X110-16" package3d_urn="urn:adsk.eagle:package:3027343/1" value="DPDT-X2" x="-59.83288125" y="13.3954625" smashed="yes">
+<attribute name="CREATOR" value="Swanson" x="-59.83288125" y="13.3954625" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-59.83288125" y="13.3954625" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="568-5300-1-ND" x="-59.83288125" y="13.3954625" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-59.83288125" y="16.9128625" size="1.27" layer="25" font="vector" align="bottom-center"/>
+<attribute name="VALUE" x="-59.63288125" y="14.0680625" size="1.27" layer="27" font="vector" align="top-center"/>
 </element>
 <element name="J3" library="RemoteParts" package="USB-MINIB-EDAC-690-005-299-043" value="USB-MICROB-EDAC-690-005-299-043" x="-47" y="49.9" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-47" y="49.9" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1917,35 +1917,35 @@ design rules under a new name.</description>
 <attribute name="DIST" value="DIGIKEY" x="-49.4" y="4.9" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="401-1999-1-ND" x="-49.4" y="4.9" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R2" library="quadparts_prebuilt" package="RESC2012X60_HS" value="10K" x="-59.8" y="42.9" smashed="yes">
-<attribute name="CREATOR" value="Swanson" x="-59.8" y="42.9" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="-59.8" y="42.9" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="311-10KARCT-ND" x="-59.8" y="42.9" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Yageo" x="-59.8" y="42.9" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="RC0805JR-0710KL" x="-59.8" y="42.9" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-57.9" y="42.3" size="1.27" layer="25" font="vector"/>
-<attribute name="REVIEWER" value="Swanson" x="-59.8" y="42.9" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-61.2" y="42.3" size="1.2" layer="27" font="vector" ratio="10"/>
+<element name="R2" library="quadparts_prebuilt" package="RESC2012X60_HS" value="10K" x="-36.824640625" y="32.58041875" smashed="yes" rot="R180">
+<attribute name="CREATOR" value="Swanson" x="-36.824640625" y="32.58041875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digikey" x="-36.824640625" y="32.58041875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="311-10KARCT-ND" x="-36.824640625" y="32.58041875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="Yageo" x="-36.824640625" y="32.58041875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="RC0805JR-0710KL" x="-36.824640625" y="32.58041875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-38.724640625" y="33.18041875" size="1.27" layer="25" font="vector" rot="R180"/>
+<attribute name="REVIEWER" value="Swanson" x="-36.824640625" y="32.58041875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="-35.424640625" y="33.18041875" size="1.2" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
-<element name="D1" library="quadparts_prebuilt" package="SOD3716X135_HS" value="360mV" x="-66" y="28.7" smashed="yes">
-<attribute name="CREATOR" value="Swanson" x="-66" y="28.7" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="-66" y="28.7" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="CRS08QMCT-ND" x="-66" y="28.7" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Toshiba Semiconductor and Storage" x="-66" y="28.7" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="CRS08(TE85L,Q,M)" x="-66" y="28.7" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-71.5" y="28.2" size="1.27" layer="25" font="vector"/>
-<attribute name="REVIEWER" value="Swanson" x="-66" y="28.7" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-66" y="28.7" size="1.2" layer="27" font="vector" ratio="10"/>
+<element name="D1" library="quadparts_prebuilt" package="SOD3716X135_HS" value="360mV" x="-63.821959375" y="31.252428125" smashed="yes" rot="R270">
+<attribute name="CREATOR" value="Swanson" x="-63.821959375" y="31.252428125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIST" value="Digikey" x="-63.821959375" y="31.252428125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTPN" value="CRS08QMCT-ND" x="-63.821959375" y="31.252428125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFR" value="Toshiba Semiconductor and Storage" x="-63.821959375" y="31.252428125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="CRS08(TE85L,Q,M)" x="-63.821959375" y="31.252428125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="-64.321959375" y="36.752428125" size="1.27" layer="25" font="vector" rot="R270"/>
+<attribute name="REVIEWER" value="Swanson" x="-63.821959375" y="31.252428125" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="-64.421959375" y="33.452428125" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="D2" library="quadparts_prebuilt" package="SOD3716X135_HS" value="360mV" x="-66.1" y="32" smashed="yes">
-<attribute name="CREATOR" value="Swanson" x="-66.1" y="32" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="-66.1" y="32" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="CRS08QMCT-ND" x="-66.1" y="32" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Toshiba Semiconductor and Storage" x="-66.1" y="32" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="CRS08(TE85L,Q,M)" x="-66.1" y="32" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-71.4" y="31.3" size="1.27" layer="25" font="vector"/>
-<attribute name="REVIEWER" value="Swanson" x="-66.1" y="32" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-68.7" y="31.4" size="1.2" layer="27" font="vector" ratio="10"/>
+<element name="D2" library="quadparts_prebuilt" package="SOD3716X135_HS" value="360mV" x="-45.5" y="38.3" smashed="yes" rot="R90">
+<attribute name="CREATOR" value="Swanson" x="-45.5" y="38.3" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digikey" x="-45.5" y="38.3" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="CRS08QMCT-ND" x="-45.5" y="38.3" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="Toshiba Semiconductor and Storage" x="-45.5" y="38.3" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="CRS08(TE85L,Q,M)" x="-45.5" y="38.3" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="-44.8" y="33" size="1.27" layer="25" font="vector" rot="R90"/>
+<attribute name="REVIEWER" value="Swanson" x="-45.5" y="38.3" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="-44.9" y="35.7" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="J4" library="Components" package="HDRV3W63P254_3X1_762X254H838_HS" value="" x="-60.7" y="18.9" rot="R90">
 <attribute name="DIST" value="Digikey" x="-60.7" y="18.9" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1961,6 +1961,21 @@ design rules under a new name.</description>
 <attribute name="PIN2" value="PROG" x="-51" y="23.9" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PIN3" value="VSS" x="-51" y="23.9" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
+<element name="V9" library="quadparts_prebuilt" package="VIA-0.2MM" value="" x="-70.3" y="33.3">
+<attribute name="CREATOR" value="Swanson" x="-70.3" y="33.3" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="NA" x="-70.3" y="33.3" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="NA" x="-70.3" y="33.3" size="1.778" layer="27" display="off"/>
+</element>
+<element name="V10" library="quadparts_prebuilt" package="VIA-0.2MM" value="" x="-70.2" y="31.7">
+<attribute name="CREATOR" value="Swanson" x="-70.2" y="31.7" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="NA" x="-70.2" y="31.7" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="NA" x="-70.2" y="31.7" size="1.778" layer="27" display="off"/>
+</element>
+<element name="V11" library="quadparts_prebuilt" package="VIA-0.2MM" value="" x="-70.2" y="29.8">
+<attribute name="CREATOR" value="Swanson" x="-70.2" y="29.8" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="NA" x="-70.2" y="29.8" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="NA" x="-70.2" y="29.8" size="1.778" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -1969,7 +1984,7 @@ design rules under a new name.</description>
 <contactref element="GND" pad="1"/>
 <contactref element="GND" pad="2"/>
 <contactref element="B1" pad="-"/>
-<polygon width="0.127" layer="2" isolate="0.1524" rank="6">
+<polygon width="0.1524" layer="2" isolate="0.1524" rank="6">
 <vertex x="20.5" y="60.35"/>
 <vertex x="62.1" y="60.25"/>
 <vertex x="74" y="60.25"/>
@@ -1999,12 +2014,10 @@ design rules under a new name.</description>
 <contactref element="C8" pad="2"/>
 <contactref element="V3" pad="P1"/>
 <polygon width="0.1524" layer="16">
-<vertex x="-61.75" y="36.5"/>
-<vertex x="-61.75" y="42"/>
-<vertex x="-61.5" y="42"/>
-<vertex x="-49.5" y="42"/>
-<vertex x="-49.5" y="36.25"/>
-<vertex x="-61.75" y="36.25"/>
+<vertex x="-62.220321875" y="32.068259375"/>
+<vertex x="-62.220321875" y="37.818259375"/>
+<vertex x="-49.970321875" y="37.818259375"/>
+<vertex x="-49.970321875" y="32.068259375"/>
 </polygon>
 <contactref element="V4" pad="P1"/>
 <contactref element="V7" pad="P1"/>
@@ -2019,59 +2032,60 @@ design rules under a new name.</description>
 <contactref element="U1" pad="8"/>
 <contactref element="S2" pad="B"/>
 <polygon width="0.1524" layer="1" thermals="no">
-<vertex x="-61.8" y="36.3"/>
-<vertex x="-61.8" y="41.1"/>
-<vertex x="-49.5" y="41.1"/>
-<vertex x="-49.5" y="36.3"/>
+<vertex x="-62.270321875" y="32.118259375"/>
+<vertex x="-62.270321875" y="36.918259375"/>
+<vertex x="-49.970321875" y="36.918259375"/>
+<vertex x="-49.970321875" y="32.118259375"/>
 </polygon>
 <contactref element="J5" pad="3"/>
-<wire x1="-70.25" y1="4.6" x2="-51" y2="18.82" width="0" layer="19" extent="1-1"/>
-<wire x1="-58.4717" y1="11.225" x2="-70.25" y2="4.6" width="0" layer="19" extent="1-1"/>
-<wire x1="-46.9" y1="7.65" x2="-58.4717" y2="11.225" width="0" layer="19" extent="1-1"/>
-<wire x1="-53.9" y1="29.145" x2="-58.4717" y2="11.225" width="0" layer="19" extent="1-1"/>
-<wire x1="-57.0501" y1="36.5" x2="-53.9" y2="29.145" width="0" layer="19" extent="1-1"/>
-<wire x1="-59.5" y1="37.395" x2="-57.0501" y2="36.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-61" y1="39" x2="-59.5" y2="37.395" width="0" layer="19" extent="1-1"/>
-<wire x1="-58.5" y1="40.75" x2="-61" y2="39" width="0" layer="19" extent="1-1"/>
-<wire x1="-63.7" y1="41.945" x2="-61" y2="39" width="0" layer="19" extent="1-1"/>
-<wire x1="-53.25" y1="40.75" x2="-58.5" y2="40.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-50.25" y1="38.75" x2="-53.25" y2="40.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-51.75" y1="37.395" x2="-50.25" y2="38.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-51.5" y1="44.4" x2="-53.25" y2="40.75" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="1" isolate="0.1524" rank="6">
+<vertex x="20.5" y="61.25"/>
+<vertex x="62.1" y="61.25"/>
+<vertex x="75" y="61.25"/>
+<vertex x="75" y="-62.75"/>
+<vertex x="-74.5" y="-62.75"/>
+<vertex x="-74.5" y="61.25"/>
+</polygon>
+<wire x1="-62.70458125" y1="11.1204625" x2="-70.25" y2="4.6" width="0" layer="19" extent="1-1"/>
+<wire x1="-51" y1="18.82" x2="-62.70458125" y2="11.1204625" width="0" layer="19" extent="1-1"/>
+<wire x1="-41.7331" y1="14.312940625" x2="-51" y2="18.82" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.1931" y1="14.312940625" x2="-41.7331" y2="14.312940625" width="0" layer="19" extent="1-1"/>
+<wire x1="-36.6531" y1="14.312940625" x2="-39.1931" y2="14.312940625" width="0" layer="19" extent="1-1"/>
+<wire x1="-46.9" y1="7.65" x2="-41.7331" y2="14.312940625" width="0" layer="19" extent="1-1"/>
+<wire x1="-28.55" y1="4.65" x2="-36.6531" y2="14.312940625" width="0" layer="19" extent="1-1"/>
+<wire x1="-52.220321875" y1="33.213259375" x2="-51" y2="18.82" width="0" layer="19" extent="1-1"/>
+<wire x1="-50.720321875" y1="34.568259375" x2="-52.220321875" y2="33.213259375" width="0" layer="19" extent="1-1"/>
+<wire x1="-53.720321875" y1="36.568259375" x2="-50.720321875" y2="34.568259375" width="0" layer="19" extent="1-1"/>
+<wire x1="-58.970321875" y1="36.568259375" x2="-53.720321875" y2="36.568259375" width="0" layer="19" extent="1-1"/>
+<wire x1="-61.470321875" y1="34.818259375" x2="-58.970321875" y2="36.568259375" width="0" layer="19" extent="1-1"/>
+<wire x1="-59.970321875" y1="33.213259375" x2="-61.470321875" y2="34.818259375" width="0" layer="19" extent="1-1"/>
+<wire x1="-57.520421875" y1="32.318259375" x2="-59.970321875" y2="33.213259375" width="0" layer="19" extent="1-1"/>
+<wire x1="-57.92384375" y1="43.5197" x2="-58.970321875" y2="36.568259375" width="0" layer="19" extent="1-1"/>
+<wire x1="-58.1962625" y1="46.76085625" x2="-57.92384375" y2="43.5197" width="0" layer="19" extent="1-1"/>
+<wire x1="-51.5" y1="44.4" x2="-57.92384375" y2="43.5197" width="0" layer="19" extent="1-1"/>
 <wire x1="-48.6" y1="44.4" x2="-51.5" y2="44.4" width="0" layer="19" extent="1-1"/>
 <wire x1="-51.5" y1="49.9" x2="-51.5" y2="44.4" width="0" layer="19" extent="1-1"/>
 <wire x1="-42.5" y1="44.4" x2="-48.6" y2="44.4" width="0" layer="19" extent="1-1"/>
 <wire x1="-42.5" y1="49.9" x2="-42.5" y2="44.4" width="0" layer="19" extent="1-1"/>
-<wire x1="-59.645" y1="46.91" x2="-58.5" y2="40.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-36.606" y1="41.875" x2="-42.5" y2="44.4" width="0" layer="19" extent="1-1"/>
-<wire x1="-36.606" y1="39.925" x2="-36.606" y2="41.875" width="0" layer="19" extent="1-1"/>
-<wire x1="-36.606" y1="37.325" x2="-36.606" y2="39.925" width="0" layer="19" extent="1-1"/>
-<wire x1="-36.606" y1="36.675" x2="-36.606" y2="37.325" width="0" layer="19" extent="1-1"/>
-<wire x1="-38.795" y1="33" x2="-36.606" y2="36.675" width="0" layer="19" extent="1-1"/>
-<wire x1="-41.6" y1="37.705" x2="-36.606" y2="37.325" width="0" layer="19" extent="1-1"/>
-<wire x1="-35" y1="48.125" x2="-36.606" y2="41.875" width="0" layer="19" extent="1-1"/>
-<wire x1="-33.2" y1="48" x2="-35" y2="48.125" width="0" layer="19" extent="1-1"/>
-<wire x1="-35.7" y1="50.675" x2="-35" y2="48.125" width="0" layer="19" extent="1-1"/>
+<wire x1="-40.39708125" y1="39.17444375" x2="-42.5" y2="44.4" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.717428125" y1="39.191509375" x2="-40.39708125" y2="39.17444375" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.717428125" y1="41.141509375" x2="-37.717428125" y2="39.191509375" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.717428125" y1="36.591509375" x2="-37.717428125" y2="39.191509375" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.717428125" y1="35.941509375" x2="-37.717428125" y2="36.591509375" width="0" layer="19" extent="1-1"/>
+<wire x1="-40.418240625" y1="35.367521875" x2="-37.717428125" y2="35.941509375" width="0" layer="19" extent="1-1"/>
+<wire x1="-35.7" y1="50.675" x2="-42.5" y2="49.9" width="0" layer="19" extent="1-1"/>
 <wire x1="-33.1" y1="50.675" x2="-35.7" y2="50.675" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.7" y1="50.675" x2="-33.1" y2="50.675" width="0" layer="19" extent="1-1"/>
 <wire x1="-28.1" y1="50.675" x2="-30.7" y2="50.675" width="0" layer="19" extent="1-1"/>
 <wire x1="-28.8" y1="48.125" x2="-28.1" y2="50.675" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.595" y1="32.9" x2="-36.606" y2="36.675" width="0" layer="19" extent="1-1"/>
-<wire x1="-28.8" y1="29.1" x2="-30.595" y2="32.9" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.3" y1="25.33" x2="-28.8" y2="29.1" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.3" y1="22.79" x2="-30.3" y2="25.33" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.3" y1="20.25" x2="-30.3" y2="22.79" width="0" layer="19" extent="1-1"/>
-<wire x1="-29.294" y1="39.275" x2="-30.595" y2="32.9" width="0" layer="19" extent="1-1"/>
-<wire x1="-28.55" y1="4.65" x2="-30.3" y2="20.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-35" y1="48.125" x2="-35.7" y2="50.675" width="0" layer="19" extent="1-1"/>
+<wire x1="-33.2" y1="48" x2="-35" y2="48.125" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.405428125" y1="38.541509375" x2="-37.717428125" y2="39.191509375" width="0" layer="19" extent="1-1"/>
+<wire x1="-28.009703125" y1="38.61261875" x2="-30.405428125" y2="38.541509375" width="0" layer="19" extent="1-1"/>
+<wire x1="-28.8" y1="29.1" x2="-28.009703125" y2="38.61261875" width="0" layer="19" extent="1-1"/>
+<wire x1="-68.635678125" y1="50.964203125" x2="-58.1962625" y2="46.76085625" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="3V3">
-<polygon width="0.127" layer="15" rank="2">
-<vertex x="-75.25" y="61.5"/>
-<vertex x="62.1" y="61.5"/>
-<vertex x="75.75" y="61.5"/>
-<vertex x="75.75" y="-64"/>
-<vertex x="-75.25" y="-64"/>
-</polygon>
+<signal name="3V3" class="1">
 <contactref element="U1" pad="16"/>
 <contactref element="S2" pad="A"/>
 <contactref element="JP1" pad="3"/>
@@ -2084,17 +2098,19 @@ design rules under a new name.</description>
 <contactref element="U3" pad="4"/>
 <contactref element="R2" pad="1"/>
 <contactref element="R11" pad="2"/>
+<contactref element="V11" pad="P1"/>
 <wire x1="-51.9" y1="7.65" x2="-65.17" y2="4.6" width="0" layer="19" extent="1-1"/>
-<wire x1="-52.7283" y1="15.775" x2="-51.9" y2="7.65" width="0" layer="19" extent="1-1"/>
-<wire x1="-34" y1="17.15" x2="-52.7283" y2="15.775" width="0" layer="19" extent="1-1"/>
-<wire x1="-34" y1="14.61" x2="-34" y2="17.15" width="0" layer="19" extent="1-1"/>
-<wire x1="-34" y1="12.07" x2="-34" y2="14.61" width="0" layer="19" extent="1-1"/>
-<wire x1="-33.63" y1="4.65" x2="-34" y2="12.07" width="0" layer="19" extent="1-1"/>
-<wire x1="-29.294" y1="37.325" x2="-34" y2="17.15" width="0" layer="19" extent="1-1"/>
-<wire x1="-36.606" y1="42.525" x2="-29.294" y2="37.325" width="0" layer="19" extent="1-1"/>
-<wire x1="-41.6" y1="39.495" x2="-36.606" y2="42.525" width="0" layer="19" extent="1-1"/>
-<wire x1="-60.755" y1="42.9" x2="-41.6" y2="39.495" width="0" layer="19" extent="1-1"/>
-<wire x1="-65.545" y1="25.45" x2="-60.755" y2="42.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-56.96118125" y1="15.6704625" x2="-51.9" y2="7.65" width="0" layer="19" extent="1-1"/>
+<wire x1="-33.63" y1="4.65" x2="-51.9" y2="7.65" width="0" layer="19" extent="1-1"/>
+<wire x1="-33.39758125" y1="14.34221875" x2="-33.63" y2="4.65" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.85758125" y1="14.34221875" x2="-33.39758125" y2="14.34221875" width="0" layer="19" extent="1-1"/>
+<wire x1="-28.31758125" y1="14.34221875" x2="-30.85758125" y2="14.34221875" width="0" layer="19" extent="1-1"/>
+<wire x1="-35.869640625" y1="32.58041875" x2="-33.39758125" y2="14.34221875" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.405428125" y1="36.591509375" x2="-35.869640625" y2="32.58041875" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.717428125" y1="41.791509375" x2="-30.405428125" y2="36.591509375" width="0" layer="19" extent="1-1"/>
+<wire x1="-40.39708125" y1="40.96444375" x2="-37.717428125" y2="41.791509375" width="0" layer="19" extent="1-1"/>
+<wire x1="-70.2" y1="29.8" x2="-56.96118125" y2="15.6704625" width="0" layer="19" extent="1-1"/>
+<wire x1="-61.962478125" y1="50.898940625" x2="-70.2" y2="29.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBAT" class="1">
 <contactref element="VBAT" pad="2"/>
@@ -2107,15 +2123,24 @@ design rules under a new name.</description>
 <contactref element="R7" pad="2"/>
 <contactref element="S1" pad="C"/>
 <contactref element="D2" pad="C"/>
-<wire x1="-67.25" y1="43.75" x2="-67.765" y2="32" width="0" layer="19" extent="1-1"/>
-<wire x1="-47.55" y1="29.82" x2="-67.765" y2="32" width="0" layer="19" extent="1-1"/>
-<wire x1="-45" y1="29.82" x2="-47.55" y2="29.82" width="0" layer="19" extent="1-1"/>
-<wire x1="-37.005" y1="33" x2="-45" y2="29.82" width="0" layer="19" extent="1-1"/>
-<wire x1="-36.606" y1="40.575" x2="-37.005" y2="33" width="0" layer="19" extent="1-1"/>
-<wire x1="-28.805" y1="32.9" x2="-37.005" y2="33" width="0" layer="19" extent="1-1"/>
-<wire x1="-34" y1="25.35" x2="-37.005" y2="33" width="0" layer="19" extent="1-1"/>
-<wire x1="-34" y1="22.81" x2="-34" y2="25.35" width="0" layer="19" extent="1-1"/>
-<wire x1="-34" y1="20.27" x2="-34" y2="22.81" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="15" rank="2">
+<vertex x="-75.25" y="61.5"/>
+<vertex x="62.1" y="61.5"/>
+<vertex x="75.75" y="61.5"/>
+<vertex x="75.75" y="-64"/>
+<vertex x="-75.25" y="-64"/>
+</polygon>
+<contactref element="V10" pad="P1"/>
+<wire x1="-67.25" y1="43.75" x2="-70.2" y2="31.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-58.24126875" y1="50.9275" x2="-67.25" y2="43.75" width="0" layer="19" extent="1-1"/>
+<wire x1="-45.5" y1="36.635" x2="-58.24126875" y2="50.9275" width="0" layer="19" extent="1-1"/>
+<wire x1="-40.418240625" y1="37.157521875" x2="-45.5" y2="36.635" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.717428125" y1="39.841509375" x2="-40.418240625" y2="37.157521875" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.804525" y1="44.838128125" x2="-37.717428125" y2="39.841509375" width="0" layer="19" extent="1-1"/>
+<wire x1="-28.009703125" y1="36.82261875" x2="-37.717428125" y2="39.841509375" width="0" layer="19" extent="1-1"/>
+<wire x1="-44.61531875" y1="14.28973125" x2="-45.5" y2="36.635" width="0" layer="19" extent="1-1"/>
+<wire x1="-47.15531875" y1="14.28973125" x2="-44.61531875" y2="14.28973125" width="0" layer="19" extent="1-1"/>
+<wire x1="-49.69531875" y1="14.28973125" x2="-47.15531875" y2="14.28973125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BPOS" class="1">
 <contactref element="U4" pad="3"/>
@@ -2123,183 +2148,175 @@ design rules under a new name.</description>
 <contactref element="V5" pad="P1"/>
 <contactref element="V6" pad="P1"/>
 <polygon width="0.1524" layer="1" thermals="no">
-<vertex x="-56" y="36"/>
-<vertex x="-61.75" y="36"/>
-<vertex x="-61.75" y="29.75"/>
-<vertex x="-56" y="29.75"/>
+<vertex x="-56.470321875" y="31.818259375"/>
+<vertex x="-62.220321875" y="31.818259375"/>
+<vertex x="-62.220321875" y="25.568259375"/>
+<vertex x="-56.470321875" y="25.568259375"/>
 </polygon>
 <polygon width="0.1524" layer="16">
-<vertex x="-56" y="36"/>
-<vertex x="-61.75" y="36"/>
-<vertex x="-61.75" y="29.75"/>
-<vertex x="-56" y="29.75"/>
+<vertex x="-56.470321875" y="31.818259375"/>
+<vertex x="-62.220321875" y="31.818259375"/>
+<vertex x="-62.220321875" y="25.568259375"/>
+<vertex x="-56.470321875" y="25.568259375"/>
 </polygon>
 <contactref element="B1" pad="+"/>
 <contactref element="D1" pad="A"/>
 <contactref element="J5" pad="1"/>
-<wire x1="-64.335" y1="28.7" x2="-51" y2="23.9" width="0" layer="19" extent="1-1"/>
-<wire x1="-59" y1="31.75" x2="-64.335" y2="28.7" width="0" layer="19" extent="1-1"/>
-<wire x1="-60.75" y1="34" x2="-59" y2="31.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-59.5" y1="35.605" x2="-60.75" y2="34" width="0" layer="19" extent="1-1"/>
-<wire x1="-57.0501" y1="35.55" x2="-59.5" y2="35.605" width="0" layer="19" extent="1-1"/>
-<wire x1="-57.105" y1="46.91" x2="-57.0501" y2="35.55" width="0" layer="19" extent="1-1"/>
+<wire x1="-61.220321875" y1="29.818259375" x2="-63.821959375" y2="29.587428125" width="0" layer="19" extent="1-1"/>
+<wire x1="-59.970321875" y1="31.423259375" x2="-61.220321875" y2="29.818259375" width="0" layer="19" extent="1-1"/>
+<wire x1="-57.520421875" y1="31.368259375" x2="-59.970321875" y2="31.423259375" width="0" layer="19" extent="1-1"/>
+<wire x1="-59.470321875" y1="27.568259375" x2="-61.220321875" y2="29.818259375" width="0" layer="19" extent="1-1"/>
+<wire x1="-51" y1="23.9" x2="-59.470321875" y2="27.568259375" width="0" layer="19" extent="1-1"/>
+<wire x1="-60.7362625" y1="46.76085625" x2="-59.970321875" y2="31.423259375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB_D-">
 <contactref element="U3" pad="16"/>
 <contactref element="J10" pad="2"/>
 <contactref element="J3" pad="2"/>
-<wire x1="-36.606" y1="43.175" x2="-31.25" y2="48" width="0" layer="19" extent="1-1"/>
-<wire x1="-46.2" y1="44.4" x2="-36.606" y2="43.175" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.717428125" y1="42.441509375" x2="-31.25" y2="48" width="0" layer="19" extent="1-1"/>
+<wire x1="-46.2" y1="44.4" x2="-37.717428125" y2="42.441509375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB_D+">
 <contactref element="U3" pad="15"/>
 <contactref element="J10" pad="3"/>
 <contactref element="J3" pad="3"/>
-<wire x1="-36.606" y1="43.825" x2="-31.9" y2="48" width="0" layer="19" extent="1-1"/>
-<wire x1="-47" y1="44.4" x2="-36.606" y2="43.825" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.717428125" y1="43.091509375" x2="-31.9" y2="48" width="0" layer="19" extent="1-1"/>
+<wire x1="-47" y1="44.4" x2="-37.717428125" y2="43.091509375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTS">
 <contactref element="U3" pad="11"/>
 <contactref element="U1" pad="2"/>
-<wire x1="-29.294" y1="41.875" x2="-58.4717" y2="15.125" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.405428125" y1="41.141509375" x2="-62.70458125" y2="15.0204625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DTR">
 <contactref element="U3" pad="2"/>
 <contactref element="U1" pad="14"/>
-<wire x1="-29.294" y1="36.025" x2="-52.7283" y2="14.475" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.405428125" y1="35.291509375" x2="-56.96118125" y2="14.3704625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TXLED">
 <contactref element="U3" pad="23"/>
 <contactref element="D7" pad="C"/>
-<wire x1="-36.606" y1="38.625" x2="-45" y2="36.645" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.717428125" y1="37.891509375" x2="-39.7" y2="48.855" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RXLED">
 <contactref element="U3" pad="22"/>
 <contactref element="D5" pad="C"/>
-<wire x1="-36.606" y1="39.275" x2="-47.5" y2="36.645" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.717428125" y1="38.541509375" x2="-53.9" y2="48.755" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R6" pad="1"/>
 <contactref element="D7" pad="A"/>
-<wire x1="-45" y1="34.555" x2="-45" y2="31.73" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.804525" y1="46.748128125" x2="-39.7" y2="50.945" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="R7" pad="1"/>
 <contactref element="D5" pad="A"/>
-<wire x1="-47.5" y1="34.555" x2="-47.55" y2="31.73" width="0" layer="19" extent="1-1"/>
+<wire x1="-53.9" y1="50.845" x2="-60.15126875" y2="50.9275" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TXO">
 <contactref element="U3" pad="1"/>
 <contactref element="U1" pad="6"/>
-<wire x1="-29.294" y1="35.375" x2="-58.4717" y2="12.525" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.405428125" y1="34.641509375" x2="-62.70458125" y2="12.4204625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RXI">
 <contactref element="U3" pad="5"/>
 <contactref element="U1" pad="10"/>
-<wire x1="-29.294" y1="37.975" x2="-52.7283" y2="11.875" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.405428125" y1="37.241509375" x2="-56.96118125" y2="11.7704625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="R8" pad="1"/>
 <contactref element="D8" pad="C"/>
-<wire x1="-56.75" y1="31.295" x2="-56.85" y2="29.095" width="0" layer="19" extent="1-1"/>
+<wire x1="-61.2002875" y1="41.52405" x2="-61.2300625" y2="39.31021875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$11">
 <contactref element="R8" pad="2"/>
 <contactref element="U4" pad="1"/>
 <contactref element="R9" pad="2"/>
 <contactref element="J4" pad="1"/>
-<wire x1="-56.75" y1="33.205" x2="-60.7" y2="18.9" width="0" layer="19" extent="1-1"/>
-<wire x1="-54" y1="33.205" x2="-56.75" y2="33.205" width="0" layer="19" extent="1-1"/>
-<wire x1="-57.0501" y1="37.45" x2="-56.75" y2="33.205" width="0" layer="19" extent="1-1"/>
+<wire x1="-57.520421875" y1="33.268259375" x2="-60.7" y2="18.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-56.05988125" y1="39.32605" x2="-57.520421875" y2="33.268259375" width="0" layer="19" extent="1-1"/>
+<wire x1="-63.1400625" y1="39.31021875" x2="-56.05988125" y2="39.32605" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$12">
 <contactref element="U4" pad="5"/>
 <contactref element="R10" pad="1"/>
 <contactref element="J5" pad="2"/>
-<wire x1="-54.4499" y1="37.45" x2="-51" y2="21.36" width="0" layer="19" extent="1-1"/>
-<wire x1="-54.795" y1="39.5" x2="-54.4499" y2="37.45" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.920221875" y1="33.268259375" x2="-51" y2="21.36" width="0" layer="19" extent="1-1"/>
+<wire x1="-55.369840625" y1="35.10916875" x2="-54.920221875" y2="33.268259375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$13">
 <contactref element="R9" pad="1"/>
 <contactref element="D6" pad="A"/>
-<wire x1="-54" y1="31.295" x2="-53.9" y2="27.055" width="0" layer="19" extent="1-1"/>
+<wire x1="-57.92384375" y1="41.4297" x2="-57.96988125" y2="39.32605" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$14">
 <contactref element="D4" pad="A"/>
 <contactref element="R11" pad="1"/>
-<wire x1="-63.7" y1="39.855" x2="-67.455" y2="25.45" width="0" layer="19" extent="1-1"/>
+<wire x1="-63.872478125" y1="50.898940625" x2="-66.545678125" y2="50.964203125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PGND">
 <contactref element="U$8" pad="P$2"/>
-<polygon width="0.127" layer="1" isolate="0.1524" rank="6">
-<vertex x="20.5" y="61.25"/>
-<vertex x="62.1" y="61.25"/>
-<vertex x="75" y="61.25"/>
-<vertex x="75" y="-62.75"/>
-<vertex x="-74.5" y="-62.75"/>
-<vertex x="-74.5" y="61.25"/>
-</polygon>
 </signal>
 <signal name="PROG_SEL">
 <contactref element="U1" pad="4"/>
 <contactref element="U1" pad="12"/>
 <contactref element="S2" pad="C"/>
-<wire x1="-52.7283" y1="13.175" x2="-49.4" y2="7.65" width="0" layer="19" extent="1-1"/>
-<wire x1="-58.4717" y1="13.825" x2="-52.7283" y2="13.175" width="0" layer="19" extent="1-1"/>
+<wire x1="-56.96118125" y1="13.0704625" x2="-62.70458125" y2="13.7204625" width="0" layer="19" extent="1-1"/>
+<wire x1="-49.4" y1="7.65" x2="-56.96118125" y2="13.0704625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RXI-0">
 <contactref element="JP1" pad="5"/>
 <contactref element="U1" pad="11"/>
-<wire x1="-52.7283" y1="12.525" x2="-38.71" y2="4.65" width="0" layer="19" extent="1-1"/>
+<wire x1="-38.71" y1="4.65" x2="-56.96118125" y2="12.4204625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DTR-0">
 <contactref element="JP1" pad="6"/>
 <contactref element="U1" pad="15"/>
-<wire x1="-52.7283" y1="15.125" x2="-41.25" y2="4.65" width="0" layer="19" extent="1-1"/>
+<wire x1="-41.25" y1="4.65" x2="-56.96118125" y2="15.0204625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DTR-1">
 <contactref element="JP2" pad="6"/>
 <contactref element="U1" pad="13"/>
-<wire x1="-52.7283" y1="13.825" x2="-57.55" y2="4.6" width="0" layer="19" extent="1-1"/>
+<wire x1="-56.96118125" y1="13.7204625" x2="-57.55" y2="4.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RXI-1">
 <contactref element="JP2" pad="5"/>
 <contactref element="U1" pad="9"/>
-<wire x1="-52.7283" y1="11.225" x2="-60.09" y2="4.6" width="0" layer="19" extent="1-1"/>
+<wire x1="-56.96118125" y1="11.1204625" x2="-60.09" y2="4.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TXO-1">
 <contactref element="JP2" pad="4"/>
 <contactref element="U1" pad="5"/>
-<wire x1="-58.4717" y1="13.175" x2="-62.63" y2="4.6" width="0" layer="19" extent="1-1"/>
+<wire x1="-62.70458125" y1="13.0704625" x2="-62.63" y2="4.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTS-1">
 <contactref element="JP2" pad="2"/>
 <contactref element="U1" pad="1"/>
-<wire x1="-58.4717" y1="15.775" x2="-67.71" y2="4.6" width="0" layer="19" extent="1-1"/>
+<wire x1="-62.70458125" y1="15.6704625" x2="-67.71" y2="4.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTS-0">
 <contactref element="U1" pad="3"/>
 <contactref element="JP1" pad="2"/>
-<wire x1="-31.09" y1="4.65" x2="-58.4717" y2="14.475" width="0" layer="19" extent="1-1"/>
+<wire x1="-31.09" y1="4.65" x2="-62.70458125" y2="14.3704625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TXO-0">
 <contactref element="U1" pad="7"/>
 <contactref element="JP1" pad="4"/>
-<wire x1="-36.17" y1="4.65" x2="-58.4717" y2="11.875" width="0" layer="19" extent="1-1"/>
+<wire x1="-36.17" y1="4.65" x2="-62.70458125" y2="11.7704625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBUS" class="1">
 <contactref element="J3" pad="1"/>
 <polygon width="0.1524" layer="1" thermals="no">
-<vertex x="-55.5" y="36"/>
-<vertex x="-49.5" y="36"/>
-<vertex x="-49.5" y="29.75"/>
-<vertex x="-55.5" y="29.75"/>
+<vertex x="-55.970321875" y="31.818259375"/>
+<vertex x="-49.970321875" y="31.818259375"/>
+<vertex x="-49.970321875" y="25.568259375"/>
+<vertex x="-55.970321875" y="25.568259375"/>
 </polygon>
 <polygon width="0.1524" layer="16">
-<vertex x="-55.5" y="36"/>
-<vertex x="-49.5" y="36"/>
-<vertex x="-49.5" y="29.75"/>
-<vertex x="-55.5" y="29.75"/>
+<vertex x="-55.970321875" y="31.818259375"/>
+<vertex x="-49.970321875" y="31.818259375"/>
+<vertex x="-49.970321875" y="25.568259375"/>
+<vertex x="-55.970321875" y="25.568259375"/>
 </polygon>
 <contactref element="J10" pad="1"/>
 <contactref element="U4" pad="4"/>
@@ -2309,26 +2326,36 @@ design rules under a new name.</description>
 <contactref element="V2" pad="P1"/>
 <contactref element="D2" pad="A"/>
 <contactref element="J4" pad="3"/>
-<wire x1="-64.435" y1="32" x2="-60.7" y2="23.98" width="0" layer="19" extent="1-1"/>
-<wire x1="-56.85" y1="27.005" x2="-64.435" y2="32" width="0" layer="19" extent="1-1"/>
-<wire x1="-52" y1="31.5" x2="-56.85" y2="27.005" width="0" layer="19" extent="1-1"/>
-<wire x1="-51" y1="33.75" x2="-52" y2="31.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-51.75" y1="35.605" x2="-51" y2="33.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-54.4499" y1="35.55" x2="-51.75" y2="35.605" width="0" layer="19" extent="1-1"/>
-<wire x1="-45.4" y1="44.4" x2="-51.75" y2="35.605" width="0" layer="19" extent="1-1"/>
+<polygon width="0.1524" layer="16">
+<vertex x="-72.1" y="53.3"/>
+<vertex x="-24" y="53.3"/>
+<vertex x="-24" y="-1"/>
+<vertex x="-73.2" y="-1"/>
+<vertex x="-73.2" y="53.4"/>
+<vertex x="-72.1" y="53.4"/>
+</polygon>
+<contactref element="V9" pad="P1"/>
+<wire x1="-52.470321875" y1="27.318259375" x2="-60.7" y2="23.98" width="0" layer="19" extent="1-1"/>
+<wire x1="-51.470321875" y1="29.568259375" x2="-52.470321875" y2="27.318259375" width="0" layer="19" extent="1-1"/>
+<wire x1="-52.220321875" y1="31.423259375" x2="-51.470321875" y2="29.568259375" width="0" layer="19" extent="1-1"/>
+<wire x1="-54.920221875" y1="31.368259375" x2="-52.220321875" y2="31.423259375" width="0" layer="19" extent="1-1"/>
+<wire x1="-45.5" y1="39.965" x2="-52.220321875" y2="31.423259375" width="0" layer="19" extent="1-1"/>
+<wire x1="-45.4" y1="44.4" x2="-45.5" y2="39.965" width="0" layer="19" extent="1-1"/>
+<wire x1="-70.3" y1="33.3" x2="-60.7" y2="23.98" width="0" layer="19" extent="1-1"/>
+<wire x1="-61.2002875" y1="43.61405" x2="-54.920221875" y2="31.368259375" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.6" y1="48" x2="-45.4" y2="44.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CHR_ENABLE#">
 <contactref element="R10" pad="2"/>
 <contactref element="U3" pad="14"/>
 <contactref element="R2" pad="2"/>
-<wire x1="-58.845" y1="42.9" x2="-56.705" y2="39.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-29.294" y1="43.825" x2="-56.705" y2="39.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.779640625" y1="32.58041875" x2="-57.279840625" y2="35.10916875" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.405428125" y1="43.091509375" x2="-37.779640625" y2="32.58041875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15" class="1">
 <contactref element="S1" pad="B"/>
 <contactref element="D1" pad="C"/>
-<wire x1="-67.25" y1="41.25" x2="-67.665" y2="28.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-67.25" y1="41.25" x2="-63.821959375" y2="32.917428125" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
