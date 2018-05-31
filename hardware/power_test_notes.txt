@@ -1,24 +1,24 @@
 
 Design notes for RC1
 
-1.  FTDI works ok, but only the green LED lights up.  Not sure why.
-2.  The mux and switches work fine.
-3.  Battery charger seems to charge batteries, but LEDs don't light up.  I can light up green manually.  Red is a no go.
-4.  Some how blew C8.
-5.  Using PWREN to enable the battery charger may not be a good idea.  Will it work with a "wall wart"
+1.  FTDI works ok, but only the green LED lights up.  Not sure why. -- Fixed
+2.  The mux and switches work fine. 
+3.  Battery charger seems to charge batteries, but LEDs don't light up.  I can light up green manually.  Red is a no go. -- fixed
+4.  Some how blew C8. -- na
+5.  Using PWREN to enable the battery charger may not be a good idea.  Will it work with a "wall wart" ***
 
-6.  The solder stencil applied a little too much paste.  I had some bridges on ftdi and mux.
-7.  When disconnected from USB and connected to power, VBAT sits at 2.7V.
-8.  When J5 is not connected to anything, D5 flashes for ever, which suggests that FTDI is resetting.
-9.  Connecting VBAT ot FTDI via J5, causes slower flashing.  Maybe something capacitors and the mosfet?
+6.  The solder stencil applied a little too much paste.  I had some bridges on ftdi and mux. -- make sure it's very flat to the board.  Works fine.
+7.  When disconnected from USB and connected to power, VBAT sits at 2.7V.  -- powered via switch.
+8.  When J5 is not connected to anything, D5 flashes for ever, which suggests that FTDI is resetting. -- unclear.
+9.  Connecting VBAT ot FTDI via J5, causes slower flashing.  Maybe something capacitors and the mosfet?  -- unclear
 10.  connecting VBUS to FTDI powers it correctly.
 
 11.  The switch chip will drive it's vdd high if you connect power to pins, but leave VDD in floating.
-12.  The polarity of my red leds is backwards. WTF????
+12.  The polarity of my red leds is backwards. WTF???? *******
 
 In order to use them FTDI voltage regulator, we have to have mosfet:  We are driving the FTDI with two different voltage sources: VBUS and VBAT (driven by charger), they are different, so one must be disconnected.  A diode by itself might do...  We can replace the pfet with a diode to prevent current from flowing back onto the battery from vbus.  This seems to work.
 
-13.  The power switch needs to be in a different spot.  Turning it off disables ftdi when connected to VBUS.  Without vbus, FTDI red led is on a bit when switch is off.  Battery charge lites are both on a little
+13.  The power switch needs to be in a different spot.  Turning it off disables ftdi when connected to VBUS.  Without vbus, FTDI red led is on a bit when switch is off.  Battery charge lites are both on a little --fixed
 
 Current plan:
 

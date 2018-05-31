@@ -1152,21 +1152,6 @@
 <rectangle x1="-1.875" y1="-5.625" x2="9.375" y2="5.625" layer="39"/>
 <text x="8.89" y="-2.54" size="1.27" layer="21" font="vector" rot="R90">&gt;NAME</text>
 </package>
-<package name="FET_SI2302CDS-T1-E3CT-ND">
-<wire x1="-1.1" y1="1.45" x2="-1.1" y2="-1.45" width="0.127" layer="21"/>
-<text x="-1.95" y="2" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<text x="-2.25" y="-3.1" size="1.27" layer="27" font="vector">&gt;VALUE</text>
-<wire x1="1.2" y1="-1.45" x2="-1.1" y2="-1.45" width="0.127" layer="21"/>
-<wire x1="1.2" y1="1.45" x2="-1.1" y2="1.45" width="0.127" layer="21"/>
-<wire x1="1.2" y1="1.45" x2="1.2" y2="-1.45" width="0.127" layer="21"/>
-<smd name="D" x="1.146" y="0" dx="2.9" dy="2.45" layer="1" rot="R270" stop="no"/>
-<smd name="G" x="-1.546" y="0.95" dx="1" dy="2" layer="1" rot="R270" stop="no"/>
-<smd name="S" x="-1.546" y="-0.95" dx="1" dy="2" layer="1" rot="R270" stop="no"/>
-<rectangle x1="-3.35" y1="-1.75" x2="3.25" y2="1.75" layer="39"/>
-<rectangle x1="-2.3" y1="-1.1" x2="-1.1" y2="-0.6" layer="29"/>
-<rectangle x1="-2.3" y1="0.6" x2="-1.1" y2="1.1" layer="29"/>
-<rectangle x1="1.1" y1="-0.25" x2="2.3" y2="0.25" layer="29"/>
-</package>
 <package name="POWER-SWITCH-MFS201N-9-Z">
 <wire x1="-10.16" y1="2.54" x2="10.16" y2="2.54" width="0.127" layer="21"/>
 <wire x1="10.16" y1="2.54" x2="10.16" y2="-2.54" width="0.127" layer="21"/>
@@ -1379,25 +1364,6 @@
 <wire x1="2.54" y1="10.16" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
 <wire x1="2.54" y1="17.78" x2="-2.54" y2="17.78" width="0.254" layer="94"/>
 <text x="-12.7" y="-15.24" size="1.27" layer="95">&gt;NAME</text>
-</symbol>
-<symbol name="P-FET">
-<wire x1="-2.54" y1="0" x2="-1.412875" y2="0" width="0.254" layer="94"/>
-<text x="-3.175" y="3.81" size="1.27" layer="96" font="vector">&gt;VALUE</text>
-<text x="-3.175" y="5.08" size="1.27" layer="95" font="vector">&gt;NAME</text>
-<wire x1="0" y1="-1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="0.0762" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0.0762" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="2.54" y1="1.27" x2="2.54" y2="2.54" width="0.254" layer="94"/>
-<pin name="D" x="2.54" y="-2.54" length="point"/>
-<pin name="G" x="-2.54" y="0" length="point" rot="R270"/>
-<pin name="S" x="2.54" y="2.54" length="point"/>
-<circle x="-1.089025" y="0" radius="0.220015625" width="0.254" layer="94"/>
-<wire x1="-0.6223" y1="0.6223" x2="-0.6223" y2="-0.6223" width="0.254" layer="94"/>
-<wire x1="0.0254" y1="1.2446" x2="0.762" y2="1.7272" width="0.254" layer="94"/>
-<wire x1="0.762" y1="1.7272" x2="0.762" y2="0.8636" width="0.254" layer="94"/>
-<wire x1="0.762" y1="0.8636" x2="0.0762" y2="1.27" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1728,152 +1694,15 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </device>
 </devices>
 </deviceset>
-<deviceset name="P-FET">
-<gates>
-<gate name="G$1" symbol="P-FET" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="FET_SI2302CDS-T1-E3CT-ND">
-<connects>
-<connect gate="G$1" pin="D" pad="D"/>
-<connect gate="G$1" pin="G" pad="G"/>
-<connect gate="G$1" pin="S" pad="S"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="Michael M. Gonzalez"/>
-<attribute name="DIST" value="Digikey"/>
-<attribute name="DISTPN" value=" SI2301CDS-T1-E3CT-ND"/>
-<attribute name="MFR" value="Vishay Siliconix "/>
-<attribute name="MPN" value="SI2301CDS-T1-E3 "/>
-<attribute name="REVIEWER" value=""/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="custom">
 <packages>
 <package name="NET_BRIDGE">
 <rectangle x1="-1" y1="-1" x2="1" y2="1" layer="39"/>
-<text x="-2" y="1" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<smd name="P1" x="-0.5" y="0" dx="1.27" dy="1.016" layer="1" rot="R270" stop="no"/>
-<smd name="P2" x="0.5" y="0" dx="1.27" dy="1.016" layer="1" rot="R90" stop="no"/>
-</package>
-<package name="MALE_HEADER_2X1_0.1IN">
-<description>Header, Vertical,2.54 mm pitch;0.635 mm lead width,2 pins,1 row,2 pins per row,5.08 mm L X 2.54 mm W X 8.38 mm H body&lt;p&gt;&lt;i&gt;PCB Libraries Packages&lt;/i&gt;</description>
-<wire x1="-0.4233" y1="1.27" x2="3.81" y2="1.27" width="0.12" layer="51"/>
-<text x="-1.1684" y="-3.048" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.1684" y="1.8288" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
-<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="0.4233" width="0.12" layer="51"/>
-<wire x1="-1.27" y1="-1.27" x2="3.81" y2="-1.27" width="0.12" layer="21"/>
-<wire x1="-1.27" y1="0.4233" x2="-0.4233" y2="1.27" width="0.12" layer="51"/>
-<wire x1="-1.27" y1="0.4233" x2="-1.27" y2="-1.27" width="0.12" layer="21"/>
-<wire x1="-1.27" y1="0.4233" x2="-1.27" y2="1.27" width="0.001" layer="51"/>
-<wire x1="-1.27" y1="1.27" x2="-0.4233" y2="1.27" width="0.001" layer="51"/>
-<wire x1="-1.52" y1="-1.52" x2="-1.52" y2="1.52" width="0.05" layer="39"/>
-<wire x1="-1.52" y1="1.52" x2="4.06" y2="1.52" width="0.05" layer="39"/>
-<circle x="0" y="0" radius="0.25" width="0.05" layer="39"/>
-<wire x1="0" y1="0.35" x2="0" y2="-0.35" width="0.05" layer="39"/>
-<polygon width="0.01" layer="30">
-<vertex x="3.36" y="0"/>
-<vertex x="3.3475" y="0.1424"/>
-<vertex x="3.3105" y="0.2805"/>
-<vertex x="3.2501" y="0.41"/>
-<vertex x="3.1682" y="0.5271"/>
-<vertex x="3.0671" y="0.6282"/>
-<vertex x="2.95" y="0.7101"/>
-<vertex x="2.8205" y="0.7705"/>
-<vertex x="2.6824" y="0.8075"/>
-<vertex x="2.54" y="0.82"/>
-<vertex x="2.3976" y="0.8075"/>
-<vertex x="2.2595" y="0.7705"/>
-<vertex x="2.13" y="0.7101"/>
-<vertex x="2.0129" y="0.6282"/>
-<vertex x="1.9118" y="0.5271"/>
-<vertex x="1.8299" y="0.41"/>
-<vertex x="1.7695" y="0.2805"/>
-<vertex x="1.7325" y="0.1424"/>
-<vertex x="1.72" y="0"/>
-<vertex x="1.7325" y="-0.1424"/>
-<vertex x="1.7695" y="-0.2805"/>
-<vertex x="1.8299" y="-0.41"/>
-<vertex x="1.9118" y="-0.5271"/>
-<vertex x="2.0129" y="-0.6282"/>
-<vertex x="2.13" y="-0.7101"/>
-<vertex x="2.2595" y="-0.7705"/>
-<vertex x="2.3976" y="-0.8075"/>
-<vertex x="2.54" y="-0.82"/>
-<vertex x="2.6824" y="-0.8075"/>
-<vertex x="2.8205" y="-0.7705"/>
-<vertex x="2.95" y="-0.7101"/>
-<vertex x="3.0671" y="-0.6282"/>
-<vertex x="3.1682" y="-0.5271"/>
-<vertex x="3.2501" y="-0.41"/>
-<vertex x="3.3105" y="-0.2805"/>
-<vertex x="3.3475" y="-0.1424"/>
-</polygon>
-<polygon width="0.01" layer="30">
-<vertex x="-0.825" y="-0.825"/>
-<vertex x="-0.825" y="0.825"/>
-<vertex x="0.825" y="0.825"/>
-<vertex x="0.825" y="-0.825"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="-0.825" y="-0.825"/>
-<vertex x="-0.825" y="0.825"/>
-<vertex x="0.825" y="0.825"/>
-<vertex x="0.825" y="-0.825"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="3.36" y="0"/>
-<vertex x="3.3475" y="0.1424"/>
-<vertex x="3.3105" y="0.2805"/>
-<vertex x="3.2501" y="0.41"/>
-<vertex x="3.1682" y="0.5271"/>
-<vertex x="3.0671" y="0.6282"/>
-<vertex x="2.95" y="0.7101"/>
-<vertex x="2.8205" y="0.7705"/>
-<vertex x="2.6824" y="0.8075"/>
-<vertex x="2.54" y="0.82"/>
-<vertex x="2.3976" y="0.8075"/>
-<vertex x="2.2595" y="0.7705"/>
-<vertex x="2.13" y="0.7101"/>
-<vertex x="2.0129" y="0.6282"/>
-<vertex x="1.9118" y="0.5271"/>
-<vertex x="1.8299" y="0.41"/>
-<vertex x="1.7695" y="0.2805"/>
-<vertex x="1.7325" y="0.1424"/>
-<vertex x="1.72" y="0"/>
-<vertex x="1.7325" y="-0.1424"/>
-<vertex x="1.7695" y="-0.2805"/>
-<vertex x="1.8299" y="-0.41"/>
-<vertex x="1.9118" y="-0.5271"/>
-<vertex x="2.0129" y="-0.6282"/>
-<vertex x="2.13" y="-0.7101"/>
-<vertex x="2.2595" y="-0.7705"/>
-<vertex x="2.3976" y="-0.8075"/>
-<vertex x="2.54" y="-0.82"/>
-<vertex x="2.6824" y="-0.8075"/>
-<vertex x="2.8205" y="-0.7705"/>
-<vertex x="2.95" y="-0.7101"/>
-<vertex x="3.0671" y="-0.6282"/>
-<vertex x="3.1682" y="-0.5271"/>
-<vertex x="3.2501" y="-0.41"/>
-<vertex x="3.3105" y="-0.2805"/>
-<vertex x="3.3475" y="-0.1424"/>
-</polygon>
-<wire x1="0.35" y1="0" x2="-0.35" y2="0" width="0.05" layer="39"/>
-<wire x1="3.81" y1="-1.27" x2="-1.27" y2="-1.27" width="0.12" layer="51"/>
-<wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.12" layer="21"/>
-<wire x1="3.81" y1="1.27" x2="-0.4233" y2="1.27" width="0.12" layer="21"/>
-<wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.12" layer="51"/>
-<wire x1="4.06" y1="-1.52" x2="-1.52" y2="-1.52" width="0.05" layer="39"/>
-<wire x1="4.06" y1="1.52" x2="4.06" y2="-1.52" width="0.05" layer="39"/>
-<pad name="1" x="0" y="0" drill="1.1" diameter="1.65" shape="square" stop="no" first="yes"/>
-<pad name="2" x="2.54" y="0" drill="1.1" diameter="1.65" rot="R80" stop="no"/>
+<pad name="P$1" x="-0.5" y="0" drill="0.2" stop="no" thermals="no"/>
+<pad name="P$2" x="0.5" y="0" drill="0.2" stop="no" thermals="no"/>
+<wire x1="-0.5" y1="0" x2="0.5" y2="0" width="0.8" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -1882,19 +1711,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="-5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
 <pin name="P1" x="-2.54" y="0" length="point" function="dot" rot="R90"/>
 <pin name="P2" x="0" y="0" length="point" function="dot" rot="R90"/>
-</symbol>
-<symbol name="MALE_HEADER_2POS">
-<description>2 pin single inline pin header, socket, or connector</description>
-<text x="0" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="0" y1="0" x2="0" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="0" y1="7.62" x2="6.35" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="3.81" y1="2.54" x2="5.08" y2="2.54" width="0.6096" layer="94"/>
-<wire x1="3.81" y1="5.08" x2="5.08" y2="5.08" width="0.6096" layer="94"/>
-<wire x1="6.35" y1="0" x2="0" y2="0" width="0.4064" layer="94"/>
-<wire x1="6.35" y1="7.62" x2="6.35" y2="0" width="0.4064" layer="94"/>
-<text x="6.858" y="0" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="10.16" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="10.16" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1905,8 +1721,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <devices>
 <device name="" package="NET_BRIDGE">
 <connects>
-<connect gate="G$1" pin="P1" pad="P1"/>
-<connect gate="G$1" pin="P2" pad="P2"/>
+<connect gate="G$1" pin="P1" pad="P$1"/>
+<connect gate="G$1" pin="P2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1915,30 +1731,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="DISTPN" value="0"/>
 <attribute name="MFR" value="Digikey"/>
 <attribute name="MPN" value="0"/>
-<attribute name="REVIEWER" value=""/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="MALE_HEADER_2POS" prefix="J" uservalue="yes">
-<description>2 pin single inline pin header, socket, or connector</description>
-<gates>
-<gate name="G$1" symbol="MALE_HEADER_2POS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-2X1-0.1IN" package="MALE_HEADER_2X1_0.1IN">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="SWANSON"/>
-<attribute name="DIST" value="Digikey"/>
-<attribute name="DISTPN" value="3M9447-ND"/>
-<attribute name="MFR" value="3M"/>
-<attribute name="MPN" value="961102-6404-AR"/>
 <attribute name="REVIEWER" value=""/>
 </technology>
 </technologies>
@@ -2465,35 +2257,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pad name="+" x="-2.54" y="14.605" drill="1" shape="long" rot="R90"/>
 <pad name="-" x="0" y="14.605" drill="1" shape="long" rot="R90"/>
 </package>
-<package name="SOT23-DBV">
-<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
-<wire x1="-0.428" y1="-0.81" x2="-0.522" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="-0.522" y1="0.81" x2="0.522" y2="0.81" width="0.1524" layer="21"/>
-<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
-<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
-<wire x1="-1.328" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="-1.422" y1="-0.81" x2="-1.422" y2="0.81" width="0.1524" layer="21"/>
-<wire x1="-1.422" y1="0.81" x2="-1.328" y2="0.81" width="0.1524" layer="21"/>
-<wire x1="-1.422" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="51"/>
-<wire x1="-2" y1="-2.5" x2="-2" y2="2.5" width="0.127" layer="39"/>
-<wire x1="-2" y1="2.5" x2="2" y2="2.5" width="0.127" layer="39"/>
-<text x="0.095" y="-3.429" size="1.27" layer="27" font="vector" align="center">&gt;VALUE</text>
-<text x="0.095" y="2.905" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
-<wire x1="0.522" y1="-0.81" x2="0.428" y2="-0.81" width="0.1524" layer="21"/>
-<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
-<wire x1="1.328" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="21"/>
-<wire x1="1.422" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="51"/>
-<wire x1="1.422" y1="-0.81" x2="1.328" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="2" y1="-2.5" x2="-2" y2="-2.5" width="0.127" layer="39"/>
-<wire x1="2" y1="2.5" x2="2" y2="-2.5" width="0.127" layer="39"/>
-<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="5" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
-</package>
 <package name="BATTERY-TERMINALS">
 <text x="-1.964" y="1.27" size="1.27" layer="21" font="vector">+</text>
 <rectangle x1="-3.81" y1="-3.81" x2="3.81" y2="2.54" layer="39"/>
@@ -2748,19 +2511,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="3.81" y="1.27" size="1.778" layer="94">-</text>
 <pin name="N" x="5.08" y="0" visible="off" length="middle" rot="R180"/>
 <pin name="P" x="-7.62" y="0" visible="off" length="middle"/>
-</symbol>
-<symbol name="TPS736*">
-<text x="0" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="0" y1="0" x2="0" y2="15.24" width="0.254" layer="94"/>
-<wire x1="0" y1="15.24" x2="17.78" y2="15.24" width="0.254" layer="94"/>
-<text x="0" y="16.51" size="1.778" layer="95">&gt;NAME</text>
-<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="17.78" y1="15.24" x2="17.78" y2="0" width="0.254" layer="94"/>
-<pin name="EN" x="-2.54" y="2.54" length="short" direction="in"/>
-<pin name="GND" x="-2.54" y="7.62" length="short" direction="in"/>
-<pin name="IN" x="-2.54" y="12.7" length="short" direction="in"/>
-<pin name="NC/FB" x="20.32" y="2.54" length="short" direction="pas" rot="R180"/>
-<pin name="OUT" x="20.32" y="12.7" length="short" direction="pas" rot="R180"/>
 </symbol>
 <symbol name="VBAT">
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
@@ -3104,6 +2854,32 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </technology>
 </technologies>
 </device>
+<device name="SMD-2012-0805-510" package="RESC2012X60_HS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="311-510ARCT-ND"/>
+<attribute name="VALUE" value="510"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-2012-0805-270" package="RESC2012X60_HS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="311-270ARCT-ND"/>
+<attribute name="VALUE" value="270"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="BATTERY" prefix="BATT">
@@ -3137,52 +2913,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="NA"/>
 <attribute name="DISTPN" value="NA" constant="no"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TPS73633-DBVT">
-<gates>
-<gate name="G$1" symbol="TPS736*" x="0" y="0"/>
-</gates>
-<devices>
-<device name="3V" package="SOT23-DBV">
-<connects>
-<connect gate="G$1" pin="EN" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="NC/FB" pad="4"/>
-<connect gate="G$1" pin="OUT" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="Swanson"/>
-<attribute name="DATASHEET" value="http://www.ti.com/lit/ds/symlink/lp3985.pdf"/>
-<attribute name="DIST" value="Digikey"/>
-<attribute name="DISTPN" value="LP3985IM5X-3.0/NOPBCT-ND"/>
-<attribute name="MFR" value="Texas Instruments"/>
-<attribute name="MPN" value="LP3985IM5X-3.0/NOPB"/>
-<attribute name="PRICE" value="0.59"/>
-<attribute name="REVIEWER" value="Swanson"/>
-<attribute name="VALUE" value="3V"/>
-</technology>
-</technologies>
-</device>
-<device name="3V3" package="SOT23-DBV">
-<connects>
-<connect gate="G$1" pin="EN" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="NC/FB" pad="4"/>
-<connect gate="G$1" pin="OUT" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="Swanson"/>
-<attribute name="DIST" value="DIGIKEY"/>
-<attribute name="DISTPN" value="LP3985IM5-3.3/NOPBCT-ND"/>
-<attribute name="VALUE" value="3.3V"/>
 </technology>
 </technologies>
 </device>
@@ -3302,25 +3032,14 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="PIN3" value=""/>
 </part>
 <part name="B1" library="quadparts_prebuilt" deviceset="BATTERY" device="" value="BATTERY"/>
-<part name="C16" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
-<part name="C17" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
-<part name="GND22" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="GND23" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND24" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="U2" library="quadparts_prebuilt" deviceset="TPS73633-DBVT" device="3V3" value="3.3V"/>
-<part name="GND25" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="P+4" library="quadparts_prebuilt" deviceset="VBAT" device=""/>
-<part name="C2" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
-<part name="C7" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
-<part name="GND1" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="GND3" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND20" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND26" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="U3" library="RemoteParts" deviceset="FT232RL" device="SSOP"/>
 <part name="GND28" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND30" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="R6" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-100" value="100"/>
-<part name="R7" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-100" value="100"/>
+<part name="R6" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
+<part name="R7" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
 <part name="JP1" library="RemoteParts" deviceset="M06" device="-TH-RIGHT-ANGLE"/>
 <part name="C11" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
 <part name="C12" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
@@ -3331,8 +3050,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="GND35" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="FRAME1" library="quadparts_prebuilt" deviceset="FRAME_B_L" device=""/>
 <part name="U4" library="RemoteParts" deviceset="MCP73831/2" device="" value="MCP73831T-2ACI/OT"/>
-<part name="R8" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1K" value="1K"/>
-<part name="R9" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1K" value="1K"/>
+<part name="R8" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
+<part name="R9" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
 <part name="U$9" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="U$11" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="U$12" library="quadparts_prebuilt" deviceset="GND" device=""/>
@@ -3342,7 +3061,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="D8" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-RED" value="RED"/>
 <part name="C8" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
 <part name="R10" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-2K" value="2K"/>
-<part name="R11" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1K" value="1K"/>
+<part name="R11" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-270" value="270"/>
 <part name="V1" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V2" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V5" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
@@ -3353,34 +3072,26 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="V8" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="GND21" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="U$8" library="custom" deviceset="NET_BRIDGE" device=""/>
-<part name="V17" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
-<part name="V18" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
-<part name="J1" library="Components" deviceset="HEADER-0.1IN-3POS" device="-MALE">
-<attribute name="PIN1" value="FTDI"/>
-<attribute name="PIN2" value="out"/>
-<attribute name="PIN3" value="REG"/>
-</part>
-<part name="5V" library="Components" deviceset="HEADER-0.1IN-3POS" device="-MALE">
-<attribute name="PIN1" value=""/>
-<attribute name="PIN2" value=""/>
-<attribute name="PIN3" value=""/>
-</part>
 <part name="U1" library="RemoteParts" deviceset="DPDT-X2" device="" package3d_urn="urn:adsk.eagle:package:3027343/1"/>
 <part name="J3" library="RemoteParts" deviceset="USB" device="-MICROB-EDAC-690-005-299-043"/>
 <part name="JP2" library="RemoteParts" deviceset="M06" device="-TH-RIGHT-ANGLE"/>
 <part name="GND2" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="S2" library="RemoteParts" deviceset="POWER-SWITCH-MFS201N-9-Z" device="JS102011SAQN" value="POWER-SWITCH-MFS201N-9-ZJS102011SAQN"/>
-<part name="R1" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
-<part name="GND4" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="J2" library="custom" deviceset="MALE_HEADER_2POS" device="-2X1-0.1IN"/>
-<part name="Y1" library="RemoteParts" deviceset="P-FET" device=""/>
-<part name="J5" library="Components" deviceset="HEADER-0.1IN-3POS" device="-MALE">
-<attribute name="PIN1" value="VBUS"/>
-<attribute name="PIN2" value="FTDI"/>
-<attribute name="PIN3" value="VBAT"/>
-</part>
 <part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
 <part name="D1" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123-360MV" value="360mV"/>
+<part name="P+1" library="quadparts_prebuilt" deviceset="VBAT" device=""/>
+<part name="D2" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123-360MV" value="360mV"/>
+<part name="GND4" library="quadparts_prebuilt" deviceset="GND" device=""/>
+<part name="J4" library="Components" deviceset="HEADER-0.1IN-3POS" device="-MALE">
+<attribute name="PIN1" value="STAT"/>
+<attribute name="PIN2" value=""/>
+<attribute name="PIN3" value="VDD"/>
+</part>
+<part name="J5" library="Components" deviceset="HEADER-0.1IN-3POS" device="-MALE">
+<attribute name="PIN1" value="VBAT"/>
+<attribute name="PIN2" value="PROG"/>
+<attribute name="PIN3" value="VSS"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -3392,8 +3103,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="133.35" y="270.51" size="1.27" layer="97">Selecting VBAT puts everything under control of the power switch. 
 Selecting VBUS, powers the FTDI whenever USB is attached.
 Connecting all three will make USB attachment override the switch.</text>
-<text x="30.48" y="190.5" size="1.778" layer="97">If we follow the example of both sparkfun and adafruit, this nonsense with the fet is not necessary.
-The data sheet claims VBAT will never fall below 3.7V.</text>
 <text x="30.48" y="203.2" size="1.778" layer="97">Things to check:
 1.  Does the FTDI LDO 3.3V regulator work when VBUS is at 3.7V?
 2.  Can we keep current below 50mA for the microcontroller, etc. ?  The question, I guess is LEDs:  ucontrller says it draws &lt; 18.6mA.  Redboard does fine, but FTDI gets a little hot.
@@ -3401,36 +3110,25 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 </text>
 </plain>
 <instances>
-<instance part="S1" gate="G$1" x="36.83" y="157.48"/>
-<instance part="D4" gate="G$1" x="83.82" y="125.73" rot="R270"/>
-<instance part="GND7" gate="1" x="83.82" y="118.11"/>
+<instance part="S1" gate="G$1" x="262.89" y="182.88" rot="R180"/>
+<instance part="D4" gate="G$1" x="86.36" y="165.1" rot="R270"/>
+<instance part="GND7" gate="1" x="86.36" y="157.48"/>
 <instance part="GND" gate="G$1" x="21.59" y="254"/>
 <instance part="VBAT" gate="G$1" x="36.83" y="254"/>
 <instance part="3.3V" gate="G$1" x="52.07" y="254"/>
-<instance part="B1" gate="G$1" x="69.85" y="162.56"/>
-<instance part="C16" gate="G$1" x="16.51" y="135.89"/>
-<instance part="C17" gate="G$1" x="66.04" y="133.35" rot="R180"/>
-<instance part="GND22" gate="1" x="66.04" y="128.27"/>
-<instance part="GND23" gate="1" x="29.21" y="130.81"/>
-<instance part="GND24" gate="1" x="74.93" y="152.4"/>
-<instance part="U2" gate="G$1" x="34.29" y="125.73"/>
-<instance part="GND25" gate="1" x="16.51" y="121.92"/>
-<instance part="P+4" gate="VCC" x="24.13" y="171.45"/>
-<instance part="C2" gate="G$1" x="8.89" y="135.89"/>
-<instance part="C7" gate="G$1" x="72.39" y="135.89"/>
-<instance part="GND1" gate="1" x="72.39" y="128.27"/>
-<instance part="GND3" gate="1" x="8.89" y="121.92"/>
-<instance part="GND20" gate="1" x="130.81" y="234.95"/>
+<instance part="B1" gate="G$1" x="246.38" y="170.18" rot="R270"/>
+<instance part="GND24" gate="1" x="246.38" y="158.75"/>
+<instance part="GND20" gate="1" x="139.7" y="234.95"/>
 <instance part="GND26" gate="1" x="151.13" y="217.17"/>
 <instance part="U3" gate="G$1" x="168.91" y="240.03"/>
-<instance part="GND28" gate="1" x="110.49" y="240.03"/>
-<instance part="GND30" gate="1" x="120.65" y="234.95"/>
+<instance part="GND28" gate="1" x="123.19" y="234.95"/>
+<instance part="GND30" gate="1" x="129.54" y="234.95"/>
 <instance part="R6" gate="G$1" x="281.94" y="250.19" rot="R90"/>
 <instance part="R7" gate="G$1" x="290.83" y="250.19" rot="R90"/>
 <instance part="JP1" gate="G$1" x="267.97" y="261.62" rot="MR0"/>
-<instance part="C11" gate="G$1" x="110.49" y="250.19"/>
-<instance part="C12" gate="G$1" x="120.65" y="242.57"/>
-<instance part="C13" gate="G$1" x="130.81" y="242.57"/>
+<instance part="C11" gate="G$1" x="123.19" y="247.65"/>
+<instance part="C12" gate="G$1" x="129.54" y="242.57"/>
+<instance part="C13" gate="G$1" x="139.7" y="242.57"/>
 <instance part="D5" gate="G$1" x="290.83" y="238.76" rot="R270"/>
 <instance part="D7" gate="G$1" x="281.94" y="238.76" rot="R270"/>
 <instance part="J10" gate="A" x="97.79" y="255.27" rot="MR0"/>
@@ -3449,7 +3147,7 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <instance part="D8" gate="G$1" x="151.13" y="172.72"/>
 <instance part="C8" gate="G$1" x="223.52" y="172.72"/>
 <instance part="R10" gate="G$1" x="208.28" y="175.26"/>
-<instance part="R11" gate="G$1" x="83.82" y="135.89" rot="R90"/>
+<instance part="R11" gate="G$1" x="86.36" y="175.26" rot="R90"/>
 <instance part="V1" gate="G$1" x="154.94" y="177.8" rot="R90"/>
 <instance part="V2" gate="G$1" x="157.48" y="177.8" rot="R90"/>
 <instance part="V5" gate="G$1" x="200.66" y="177.8" rot="R90"/>
@@ -3459,23 +3157,19 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <instance part="V7" gate="G$1" x="152.4" y="193.04" rot="R90"/>
 <instance part="V8" gate="G$1" x="154.94" y="193.04" rot="R90"/>
 <instance part="GND21" gate="1" x="147.32" y="190.5"/>
-<instance part="U$8" gate="G$1" x="297.18" y="184.15"/>
-<instance part="V17" gate="G$1" x="304.8" y="184.15"/>
-<instance part="V18" gate="G$1" x="290.83" y="184.15" rot="R180"/>
-<instance part="J1" gate="G$1" x="109.22" y="146.05" rot="R180"/>
-<instance part="5V" gate="G$1" x="7.62" y="254"/>
+<instance part="U$8" gate="G$1" x="316.23" y="248.92"/>
 <instance part="U1" gate="G$1" x="219.71" y="240.03" rot="MR0"/>
 <instance part="J3" gate="A" x="97.79" y="226.06" rot="MR0"/>
 <instance part="JP2" gate="G$1" x="267.97" y="234.95" rot="MR0"/>
 <instance part="GND2" gate="1" x="224.79" y="219.71"/>
 <instance part="S2" gate="G$1" x="237.49" y="212.09"/>
-<instance part="R1" gate="G$1" x="58.42" y="179.07"/>
-<instance part="GND4" gate="1" x="63.5" y="176.53"/>
-<instance part="J2" gate="G$1" x="57.15" y="147.32" rot="R90"/>
-<instance part="Y1" gate="G$1" x="53.34" y="165.1" rot="R270"/>
-<instance part="J5" gate="G$1" x="120.65" y="275.59" rot="R270"/>
 <instance part="R2" gate="G$1" x="187.96" y="222.25" rot="R90"/>
-<instance part="D1" gate="G$1" x="48.26" y="171.45" rot="R270"/>
+<instance part="D1" gate="G$1" x="259.08" y="177.8"/>
+<instance part="P+1" gate="VCC" x="278.13" y="191.77"/>
+<instance part="D2" gate="G$1" x="259.08" y="187.96"/>
+<instance part="GND4" gate="1" x="105.41" y="215.9"/>
+<instance part="J4" gate="G$1" x="157.48" y="135.89"/>
+<instance part="J5" gate="G$1" x="213.36" y="146.05" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -3497,32 +3191,9 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <pinref part="GND" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="C17" gate="G$1" pin="1"/>
-<pinref part="GND22" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="GND24" gate="1" pin="GND"/>
 <pinref part="B1" gate="G$1" pin="N"/>
-<wire x1="74.93" y1="154.94" x2="74.93" y2="162.56" width="0.1524" layer="91" style="longdash"/>
-</segment>
-<segment>
-<pinref part="GND23" gate="1" pin="GND"/>
-<pinref part="U2" gate="G$1" pin="GND"/>
-<wire x1="31.75" y1="133.35" x2="29.21" y2="133.35" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C16" gate="G$1" pin="2"/>
-<pinref part="GND25" gate="1" pin="GND"/>
-<wire x1="16.51" y1="124.46" x2="16.51" y2="130.81" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C7" gate="G$1" pin="2"/>
-<pinref part="GND1" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C2" gate="G$1" pin="2"/>
-<pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="8.89" y1="124.46" x2="8.89" y2="130.81" width="0.1524" layer="91"/>
+<wire x1="246.38" y1="161.29" x2="246.38" y2="165.1" width="0.1524" layer="91" style="longdash"/>
 </segment>
 <segment>
 <pinref part="GND20" gate="1" pin="GND"/>
@@ -3553,7 +3224,7 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <segment>
 <pinref part="GND28" gate="1" pin="GND"/>
 <pinref part="C11" gate="G$1" pin="2"/>
-<wire x1="110.49" y1="245.11" x2="110.49" y2="242.57" width="0.1524" layer="91"/>
+<wire x1="123.19" y1="242.57" x2="123.19" y2="237.49" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND30" gate="1" pin="GND"/>
@@ -3583,6 +3254,10 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <pinref part="U$12" gate="1" pin="GND"/>
 <pinref part="U4" gate="G$1" pin="VSS"/>
 <wire x1="198.12" y1="172.72" x2="200.66" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="J5" gate="G$1" pin="3"/>
+<wire x1="198.12" y1="172.72" x2="198.12" y2="138.43" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="138.43" x2="203.2" y2="138.43" width="0.1524" layer="91"/>
+<junction x="198.12" y="172.72"/>
 </segment>
 <segment>
 <pinref part="U$13" gate="1" pin="GND"/>
@@ -3604,14 +3279,15 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <junction x="152.4" y="193.04"/>
 </segment>
 <segment>
-<wire x1="294.64" y1="184.15" x2="290.83" y2="184.15" width="0.1524" layer="91"/>
-<pinref part="V18" gate="G$1" pin="N"/>
+<wire x1="313.69" y1="248.92" x2="309.88" y2="248.92" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="P1"/>
+<label x="309.88" y="248.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J3" gate="A" pin="5-GND"/>
 <wire x1="102.87" y1="220.98" x2="105.41" y2="220.98" width="0.1524" layer="91"/>
-<label x="105.41" y="220.98" size="1.27" layer="95" xref="yes"/>
+<wire x1="105.41" y1="220.98" x2="105.41" y2="218.44" width="0.1524" layer="91"/>
+<pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="G$1" pin="1"/>
@@ -3626,10 +3302,6 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <pinref part="S2" gate="G$1" pin="ON"/>
 <wire x1="232.41" y1="217.17" x2="243.84" y2="217.17" width="0.1524" layer="91"/>
 <label x="243.84" y="217.17" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="R1" gate="G$1" pin="2"/>
-<pinref part="GND4" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -3665,18 +3337,27 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <label x="259.08" y="234.95" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J1" gate="G$1" pin="1"/>
-<wire x1="99.06" y1="143.51" x2="96.52" y2="143.51" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="146.05" x2="96.52" y2="143.51" width="0.1524" layer="91"/>
-<label x="96.52" y="146.05" size="1.27" layer="95" rot="R90" xref="yes"/>
-<pinref part="J1" gate="G$1" pin="2"/>
-<label x="83.82" y="140.97" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="153.67" y1="247.65" x2="148.59" y2="247.65" width="0.1524" layer="91"/>
+<wire x1="148.59" y1="247.65" x2="139.7" y2="247.65" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="247.65" x2="139.7" y2="245.11" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="3V3OUT"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<label x="139.7" y="247.65" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="148.59" y1="245.11" x2="153.67" y2="245.11" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="VCCIO"/>
+<wire x1="148.59" y1="247.65" x2="148.59" y2="245.11" width="0.1524" layer="91"/>
+<junction x="148.59" y="247.65"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="187.96" y1="217.17" x2="187.96" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="215.9" x2="191.77" y2="215.9" width="0.1524" layer="91"/>
+<label x="191.77" y="215.9" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
 <pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="99.06" y1="140.97" x2="96.52" y2="140.97" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="140.97" x2="83.82" y2="140.97" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="143.51" x2="96.52" y2="140.97" width="0.1524" layer="91"/>
-<junction x="96.52" y="143.51"/>
-<junction x="96.52" y="140.97"/>
+<wire x1="86.36" y1="180.34" x2="86.36" y2="184.15" width="0.1524" layer="91"/>
+<label x="86.36" y="184.15" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="VBAT" class="1">
@@ -3691,27 +3372,34 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <junction x="46.99" y="256.54"/>
 </segment>
 <segment>
-<junction x="24.13" y="168.91"/>
-<pinref part="S1" gate="G$1" pin="C"/>
-<pinref part="P+4" gate="VCC" pin="VBAT"/>
-<wire x1="24.13" y1="168.91" x2="24.13" y2="138.43" width="0.1524" layer="91"/>
-<wire x1="24.13" y1="168.91" x2="24.13" y2="160.02" width="0.1524" layer="91"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<pinref part="C16" gate="G$1" pin="1"/>
-<junction x="16.51" y="138.43"/>
-<wire x1="16.51" y1="138.43" x2="8.89" y2="138.43" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="EN"/>
-<wire x1="24.13" y1="128.27" x2="31.75" y2="128.27" width="0.1524" layer="91"/>
-<wire x1="24.13" y1="138.43" x2="24.13" y2="128.27" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="IN"/>
-<wire x1="31.75" y1="138.43" x2="24.13" y2="138.43" width="0.1524" layer="91"/>
-<junction x="24.13" y="138.43"/>
-<wire x1="16.51" y1="138.43" x2="24.13" y2="138.43" width="0.1524" layer="91"/>
+<wire x1="123.19" y1="250.19" x2="129.54" y2="250.19" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="250.19" x2="153.67" y2="250.19" width="0.1524" layer="91"/>
+<wire x1="129.54" y1="245.11" x2="129.54" y2="250.19" width="0.1524" layer="91"/>
+<junction x="129.54" y="250.19"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<pinref part="U3" gate="G$1" pin="VCC"/>
+<label x="123.19" y="250.19" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J5" gate="G$1" pin="3"/>
-<wire x1="128.27" y1="265.43" x2="138.43" y2="265.43" width="0.1524" layer="91"/>
-<label x="138.43" y="265.43" size="1.27" layer="95" xref="yes"/>
+<wire x1="281.94" y1="257.81" x2="281.94" y2="255.27" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<label x="281.94" y="257.81" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<wire x1="290.83" y1="257.81" x2="290.83" y2="255.27" width="0.1524" layer="91"/>
+<pinref part="R7" gate="G$1" pin="2"/>
+<label x="290.83" y="257.81" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+<segment>
+<pinref part="P+1" gate="VCC" pin="VBAT"/>
+<pinref part="S1" gate="G$1" pin="C"/>
+<wire x1="275.59" y1="180.34" x2="278.13" y2="180.34" width="0.1524" layer="91"/>
+<wire x1="278.13" y1="180.34" x2="278.13" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="278.13" y1="187.96" x2="278.13" y2="189.23" width="0.1524" layer="91"/>
+<junction x="278.13" y="187.96"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="261.62" y1="187.96" x2="278.13" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BPOS" class="1">
@@ -3719,56 +3407,50 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <pinref part="U4" gate="G$1" pin="VBAT"/>
 <wire x1="223.52" y1="177.8" x2="203.2" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="177.8" x2="200.66" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="177.8" x2="198.12" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="177.8" x2="199.39" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="199.39" y1="177.8" x2="198.12" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="175.26" x2="223.52" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="177.8" x2="226.06" y2="177.8" width="0.1524" layer="91"/>
 <junction x="223.52" y="177.8"/>
 <pinref part="C8" gate="G$1" pin="1"/>
 <pinref part="V5" gate="G$1" pin="N"/>
 <junction x="200.66" y="177.8"/>
 <pinref part="V6" gate="G$1" pin="N"/>
 <junction x="203.2" y="177.8"/>
-<label x="226.06" y="177.8" size="1.778" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="B1" gate="G$1" pin="P"/>
-<label x="62.23" y="162.56" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="J2" gate="G$1" pin="1"/>
-<wire x1="57.15" y1="162.56" x2="62.23" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="57.15" y1="162.56" x2="57.15" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="57.15" y1="157.48" x2="54.61" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="J2" gate="G$1" pin="2"/>
-<wire x1="48.26" y1="157.48" x2="52.07" y2="157.48" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="162.56" x2="48.26" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="S1" gate="G$1" pin="ON"/>
-<wire x1="31.75" y1="162.56" x2="48.26" y2="162.56" width="0.1524" layer="91"/>
-<wire x1="54.61" y1="157.48" x2="52.07" y2="157.48" width="0.1524" layer="91"/>
-<junction x="54.61" y="157.48"/>
-<junction x="52.07" y="157.48"/>
+<pinref part="D1" gate="G$1" pin="A"/>
+<wire x1="254" y1="177.8" x2="246.38" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="177.8" x2="246.38" y2="177.8" width="0.1524" layer="91"/>
+<junction x="246.38" y="177.8"/>
+<pinref part="J5" gate="G$1" pin="1"/>
+<wire x1="199.39" y1="177.8" x2="199.39" y2="143.51" width="0.1524" layer="91"/>
+<wire x1="199.39" y1="143.51" x2="203.2" y2="143.51" width="0.1524" layer="91"/>
+<junction x="199.39" y="177.8"/>
 </segment>
 </net>
 <net name="USB_D-" class="0">
 <segment>
-<wire x1="153.67" y1="257.81" x2="102.87" y2="257.81" width="0.1524" layer="91"/>
+<pinref part="J3" gate="A" pin="2-D-"/>
+<wire x1="153.67" y1="257.81" x2="109.22" y2="257.81" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="USBDM"/>
 <pinref part="J10" gate="A" pin="2-D-"/>
-</segment>
-<segment>
-<pinref part="J3" gate="A" pin="2-D-"/>
-<wire x1="102.87" y1="228.6" x2="105.41" y2="228.6" width="0.1524" layer="91"/>
-<label x="105.41" y="228.6" size="1.27" layer="95" xref="yes"/>
+<wire x1="109.22" y1="257.81" x2="102.87" y2="257.81" width="0.1524" layer="91"/>
+<wire x1="102.87" y1="228.6" x2="109.22" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="228.6" x2="109.22" y2="257.81" width="0.1524" layer="91"/>
+<junction x="109.22" y="257.81"/>
+<label x="109.22" y="257.81" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="USB_D+" class="0">
 <segment>
-<wire x1="153.67" y1="255.27" x2="102.87" y2="255.27" width="0.1524" layer="91"/>
+<pinref part="J3" gate="A" pin="3-D+"/>
+<wire x1="153.67" y1="255.27" x2="111.76" y2="255.27" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="USBDP"/>
 <pinref part="J10" gate="A" pin="3-D+"/>
-</segment>
-<segment>
-<pinref part="J3" gate="A" pin="3-D+"/>
-<wire x1="102.87" y1="226.06" x2="105.41" y2="226.06" width="0.1524" layer="91"/>
-<label x="105.41" y="226.06" size="1.27" layer="95" xref="yes"/>
+<wire x1="111.76" y1="255.27" x2="102.87" y2="255.27" width="0.1524" layer="91"/>
+<wire x1="102.87" y1="226.06" x2="111.76" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="226.06" x2="111.76" y2="255.27" width="0.1524" layer="91"/>
+<junction x="111.76" y="255.27"/>
+<label x="111.76" y="255.27" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="CTS" class="0">
@@ -3857,27 +3539,6 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <label x="208.28" y="242.57" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="FTDI+3V3" class="0">
-<segment>
-<wire x1="153.67" y1="247.65" x2="148.59" y2="247.65" width="0.1524" layer="91"/>
-<wire x1="148.59" y1="247.65" x2="130.81" y2="247.65" width="0.1524" layer="91"/>
-<wire x1="130.81" y1="247.65" x2="130.81" y2="245.11" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="3V3OUT"/>
-<pinref part="C13" gate="G$1" pin="1"/>
-<label x="130.81" y="247.65" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="148.59" y1="245.11" x2="153.67" y2="245.11" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="VCCIO"/>
-<label x="148.59" y="245.11" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="148.59" y1="247.65" x2="148.59" y2="245.11" width="0.1524" layer="91"/>
-<junction x="148.59" y="247.65"/>
-</segment>
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="217.17" x2="187.96" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="215.9" x2="191.77" y2="215.9" width="0.1524" layer="91"/>
-<label x="191.77" y="215.9" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="N$6" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
@@ -3893,17 +3554,27 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <pinref part="U4" gate="G$1" pin="STAT"/>
 <wire x1="167.64" y1="172.72" x2="170.18" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="170.18" y1="172.72" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="172.72" x2="171.45" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="171.45" y1="172.72" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="165.1" x2="170.18" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="165.1" x2="170.18" y2="172.72" width="0.1524" layer="91"/>
 <junction x="170.18" y="172.72"/>
+<pinref part="J4" gate="G$1" pin="1"/>
+<wire x1="171.45" y1="172.72" x2="171.45" y2="138.43" width="0.1524" layer="91"/>
+<wire x1="171.45" y1="138.43" x2="167.64" y2="138.43" width="0.1524" layer="91"/>
+<junction x="171.45" y="172.72"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PROG"/>
-<wire x1="198.12" y1="175.26" x2="203.2" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="175.26" x2="201.93" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="J5" gate="G$1" pin="2"/>
+<wire x1="201.93" y1="175.26" x2="203.2" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="201.93" y1="175.26" x2="201.93" y2="140.97" width="0.1524" layer="91"/>
+<wire x1="201.93" y1="140.97" x2="203.2" y2="140.97" width="0.1524" layer="91"/>
+<junction x="201.93" y="175.26"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -3917,14 +3588,14 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <segment>
 <pinref part="D4" gate="G$1" pin="A"/>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="83.82" y1="130.81" x2="83.82" y2="128.27" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="170.18" x2="86.36" y2="167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PGND" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="P2"/>
-<wire x1="297.18" y1="184.15" x2="304.8" y2="184.15" width="0.1524" layer="91"/>
-<pinref part="V17" gate="G$1" pin="N"/>
+<wire x1="316.23" y1="248.92" x2="320.04" y2="248.92" width="0.1524" layer="91"/>
+<label x="320.04" y="248.92" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="PROG_SEL" class="0">
@@ -4040,50 +3711,20 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <segment>
 <pinref part="J10" gate="A" pin="1-VCC"/>
 <wire x1="102.87" y1="260.35" x2="106.68" y2="260.35" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$1" pin="1"/>
-<wire x1="123.19" y1="265.43" x2="106.68" y2="265.43" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="265.43" x2="106.68" y2="260.35" width="0.1524" layer="91"/>
-<label x="106.68" y="265.43" size="1.27" layer="95" rot="R90" xref="yes"/>
-<wire x1="110.49" y1="260.35" x2="120.65" y2="260.35" width="0.1524" layer="91"/>
-<wire x1="120.65" y1="260.35" x2="125.73" y2="260.35" width="0.1524" layer="91"/>
-<wire x1="125.73" y1="260.35" x2="144.78" y2="260.35" width="0.1524" layer="91"/>
-<wire x1="120.65" y1="245.11" x2="120.65" y2="260.35" width="0.1524" layer="91"/>
-<wire x1="110.49" y1="252.73" x2="110.49" y2="260.35" width="0.1524" layer="91"/>
-<junction x="120.65" y="260.35"/>
-<pinref part="C12" gate="G$1" pin="1"/>
-<pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="144.78" y1="260.35" x2="144.78" y2="250.19" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="VCC"/>
-<wire x1="144.78" y1="250.19" x2="153.67" y2="250.19" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$1" pin="2"/>
-<wire x1="125.73" y1="265.43" x2="125.73" y2="260.35" width="0.1524" layer="91"/>
-<junction x="125.73" y="260.35"/>
-<label x="144.78" y="260.35" size="1.27" layer="95" xref="yes"/>
-<wire x1="123.19" y1="265.43" x2="125.73" y2="265.43" width="0.1524" layer="91"/>
-<junction x="123.19" y="265.43"/>
-<junction x="125.73" y="265.43"/>
-</segment>
-<segment>
-<wire x1="281.94" y1="257.81" x2="281.94" y2="255.27" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<label x="281.94" y="257.81" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
-<wire x1="290.83" y1="257.81" x2="290.83" y2="255.27" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
-<label x="290.83" y="257.81" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-<segment>
+<label x="106.68" y="260.35" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="106.68" y1="260.35" x2="106.68" y2="231.14" width="0.1524" layer="91"/>
+<junction x="106.68" y="260.35"/>
 <pinref part="J3" gate="A" pin="1-VCC"/>
-<wire x1="102.87" y1="231.14" x2="105.41" y2="231.14" width="0.1524" layer="91"/>
-<label x="105.41" y="231.14" size="1.27" layer="95" xref="yes"/>
+<wire x1="102.87" y1="231.14" x2="106.68" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="VDD"/>
-<wire x1="137.16" y1="177.8" x2="144.78" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="137.16" y1="177.8" x2="142.24" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="177.8" x2="144.78" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="177.8" x2="154.94" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="177.8" x2="157.48" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="177.8" x2="172.72" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="177.8" x2="168.91" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="168.91" y1="177.8" x2="172.72" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="175.26" x2="137.16" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="172.72" x2="148.59" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="148.59" y1="172.72" x2="144.78" y2="172.72" width="0.1524" layer="91"/>
@@ -4097,45 +3738,14 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <pinref part="V2" gate="G$1" pin="N"/>
 <junction x="157.48" y="177.8"/>
 <label x="137.16" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<wire x1="53.34" y1="167.64" x2="53.34" y2="179.07" width="0.1524" layer="91"/>
-<label x="53.34" y="186.69" size="1.27" layer="95" xref="yes"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="53.34" y1="179.07" x2="53.34" y2="186.69" width="0.1524" layer="91"/>
-<junction x="53.34" y="179.07"/>
-<wire x1="53.34" y1="179.07" x2="48.26" y2="179.07" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="179.07" x2="48.26" y2="176.53" width="0.1524" layer="91"/>
-<pinref part="Y1" gate="G$1" pin="G"/>
-<pinref part="D1" gate="G$1" pin="A"/>
-</segment>
-<segment>
-<pinref part="5V" gate="G$1" pin="3"/>
-<pinref part="5V" gate="G$1" pin="2"/>
-<wire x1="17.78" y1="261.62" x2="17.78" y2="259.08" width="0.1524" layer="91"/>
-<pinref part="5V" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="259.08" x2="17.78" y2="256.54" width="0.1524" layer="91"/>
-<junction x="17.78" y="259.08"/>
-<wire x1="17.78" y1="256.54" x2="17.78" y2="252.73" width="0.1524" layer="91"/>
-<junction x="17.78" y="256.54"/>
-<label x="17.78" y="252.73" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="REG_3V3" class="0">
-<segment>
-<pinref part="C17" gate="G$1" pin="2"/>
-<junction x="66.04" y="138.43"/>
-<wire x1="66.04" y1="138.43" x2="72.39" y2="138.43" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="1"/>
-<junction x="72.39" y="138.43"/>
-<pinref part="U2" gate="G$1" pin="OUT"/>
-<wire x1="54.61" y1="138.43" x2="66.04" y2="138.43" width="0.1524" layer="91"/>
-<pinref part="J1" gate="G$1" pin="3"/>
-<wire x1="99.06" y1="138.43" x2="96.52" y2="138.43" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="138.43" x2="96.52" y2="134.62" width="0.1524" layer="91"/>
-<label x="96.52" y="134.62" size="1.27" layer="95" rot="R270" xref="yes"/>
-<junction x="96.52" y="138.43"/>
-<wire x1="72.39" y1="138.43" x2="96.52" y2="138.43" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="177.8" x2="142.24" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="142.24" y1="187.96" x2="254" y2="187.96" width="0.1524" layer="91"/>
+<junction x="142.24" y="177.8"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<pinref part="J4" gate="G$1" pin="3"/>
+<wire x1="168.91" y1="177.8" x2="168.91" y2="143.51" width="0.1524" layer="91"/>
+<wire x1="168.91" y1="143.51" x2="167.64" y2="143.51" width="0.1524" layer="91"/>
+<junction x="168.91" y="177.8"/>
 </segment>
 </net>
 <net name="CHR_ENABLE#" class="0">
@@ -4150,6 +3760,13 @@ The data sheet claims VBAT will never fall below 3.7V.</text>
 <wire x1="184.15" y1="227.33" x2="187.96" y2="227.33" width="0.1524" layer="91"/>
 <label x="187.96" y="227.33" size="1.27" layer="95" xref="yes"/>
 <pinref part="R2" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$15" class="1">
+<segment>
+<pinref part="S1" gate="G$1" pin="ON"/>
+<wire x1="267.97" y1="177.8" x2="261.62" y2="177.8" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 </segment>
 </net>
 </nets>
