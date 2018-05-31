@@ -13,6 +13,13 @@ Design notes for RC1
 9.  Connecting VBAT ot FTDI via J5, causes slower flashing.  Maybe something capacitors and the mosfet?
 10.  connecting VBUS to FTDI powers it correctly.
 
+11.  The switch chip will drive it's vdd high if you connect power to pins, but leave VDD in floating.
+12.  The polarity of my red leds is backwards. WTF????
+
+In order to use them FTDI voltage regulator, we have to have mosfet:  We are driving the FTDI with two different voltage sources: VBUS and VBAT (driven by charger), they are different, so one must be disconnected.  A diode by itself might do...  We can replace the pfet with a diode to prevent current from flowing back onto the battery from vbus.  This seems to work.
+
+13.  The power switch needs to be in a different spot.  Turning it off disables ftdi when connected to VBUS.  Without vbus, FTDI red led is on a bit when switch is off.  Battery charge lites are both on a little
+
 Current plan:
 
 Assemble second board:
@@ -23,12 +30,41 @@ Assemble second board:
 4.  Check whether wall wart charging works.
 
 
+Red leds turn on nicely at 1.6V @ 6mA
+
+V = IR
+V = 5-1.6 = 3.4
+I = 6mA 
+R = V/I = 3.4/6e-3 = 566Ohms.  Using 510 for R6
+
+For Battery charger:
+
+4.6-1.6 = 3
+I = 6mA
+R = 500 Ohms.  Using 510 for R8
+
+
+green leds light up nicely at 1.9V 5mA
+
+V = 5-1.9 = 3.1
+R = 3.1/5e-3 =620 Ohms
+
+4.6 - 1.9 = 2.7
+R = 2.7/5e-3 = 540Ohms
+
+Using 510 for R9 R7
+
+V = 3.3-1.9 = 1.4
+R = 1.4=5e-3 = 280Ohms for power LED
+
+Using 270 on R11
 
 
 
 
+V=IR 
+V=0.81
+r = 510
 
-
-
-
+I = V/R 
 
