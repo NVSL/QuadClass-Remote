@@ -1678,8 +1678,8 @@ design rules under a new name.</description>
 <element name="GND" library="Components" package="HDRV3W63P254_3X1_762X254H838_HS" value="" x="-41.7331" y="14.312940625" smashed="yes">
 <attribute name="DIST" value="Digikey" x="-41.7331" y="14.312940625" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="3M9448-ND" x="-41.7331" y="14.312940625" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-39.1931" y="12.172940625" size="1.27" layer="25" font="vector" ratio="10" align="center"/>
 <attribute name="NAME" x="-39.1931" y="9.272940625" size="1.778" layer="51" font="vector" ratio="10" align="center"/>
+<attribute name="NAME" x="-39.1931" y="12.172940625" size="1.27" layer="25" font="vector" ratio="10" align="center"/>
 <attribute name="PIN1" value="" x="-41.7331" y="16.217940625" size="1.778" layer="21" font="vector" rot="R90" align="center-left"/>
 <attribute name="PIN2" value="" x="-39.1931" y="16.217940625" size="1.778" layer="21" font="vector" rot="R90" align="center-left"/>
 <attribute name="PIN3" value="" x="-36.6531" y="16.217940625" size="1.778" layer="21" font="vector" rot="R90" align="center-left"/>
@@ -1695,8 +1695,8 @@ design rules under a new name.</description>
 <element name="3.3V" library="Components" package="HDRV3W63P254_3X1_762X254H838_HS" value="" x="-33.39758125" y="14.34221875" smashed="yes">
 <attribute name="DIST" value="Digikey" x="-33.39758125" y="14.34221875" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="3M9448-ND" x="-33.39758125" y="14.34221875" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-30.75758125" y="12.00221875" size="1.27" layer="25" font="vector" ratio="10" align="center"/>
 <attribute name="NAME" x="-30.35758125" y="9.30221875" size="1.778" layer="51" font="vector" ratio="10" align="center"/>
+<attribute name="NAME" x="-30.75758125" y="12.00221875" size="1.27" layer="25" font="vector" ratio="10" align="center"/>
 <attribute name="PIN1" value="" x="-33.39758125" y="16.24721875" size="1.778" layer="21" font="vector" rot="R90" align="center-left"/>
 <attribute name="PIN2" value="" x="-30.85758125" y="16.24721875" size="1.778" layer="21" font="vector" rot="R90" align="center-left"/>
 <attribute name="PIN3" value="" x="-28.31758125" y="16.24721875" size="1.778" layer="21" font="vector" rot="R90" align="center-left"/>
@@ -1837,12 +1837,11 @@ design rules under a new name.</description>
 <attribute name="REVIEWER" value="Swanson" x="-59.970321875" y="32.318259375" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="-59.370321875" y="30.318259375" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="R10" library="quadparts_prebuilt" package="RESC2012X60_HS" value="2K" x="-56.324840625" y="35.10916875" smashed="yes" rot="R180">
-<attribute name="CREATOR" value="Swanson" x="-56.324840625" y="35.10916875" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="R10" library="quadparts_prebuilt" package="RESC2012X60_HS" value="2.2K" x="-56.324840625" y="35.10916875" smashed="yes" rot="R180">
 <attribute name="DIST" value="DIGIKEY" x="-56.324840625" y="35.10916875" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="311-2.0KARCT-ND" x="-56.324840625" y="35.10916875" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="YAG3776CT-ND " x="-56.324840625" y="35.10916875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="-50.923571875" y="35.73648125" size="1.27" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="-55.124840625" y="35.70916875" size="1.2" layer="27" font="vector" ratio="10" rot="R180"/>
+<attribute name="VALUE" value="2.2K" x="-55.124840625" y="35.70916875" size="1.2" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="R11" library="quadparts_prebuilt" package="RESC2012X60_HS" value="270" x="-62.917478125" y="50.898940625" smashed="yes">
 <attribute name="DIST" value="DIGIKEY" x="-62.917478125" y="50.898940625" size="1.778" layer="27" display="off"/>
@@ -1916,16 +1915,6 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="-49.4" y="4.9" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-49.4" y="4.9" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="401-1999-1-ND" x="-49.4" y="4.9" size="1.778" layer="27" display="off"/>
-</element>
-<element name="R2" library="quadparts_prebuilt" package="RESC2012X60_HS" value="10K" x="-36.824640625" y="32.58041875" smashed="yes" rot="R180">
-<attribute name="CREATOR" value="Swanson" x="-36.824640625" y="32.58041875" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DIST" value="Digikey" x="-36.824640625" y="32.58041875" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="311-10KARCT-ND" x="-36.824640625" y="32.58041875" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR" value="Yageo" x="-36.824640625" y="32.58041875" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="RC0805JR-0710KL" x="-36.824640625" y="32.58041875" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-38.724640625" y="33.18041875" size="1.27" layer="25" font="vector" rot="R180"/>
-<attribute name="REVIEWER" value="Swanson" x="-36.824640625" y="32.58041875" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-35.424640625" y="33.18041875" size="1.2" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="D1" library="quadparts_prebuilt" package="SOD3716X135_HS" value="360mV" x="-63.821959375" y="31.252428125" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-63.821959375" y="31.252428125" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2046,6 +2035,7 @@ design rules under a new name.</description>
 <vertex x="-74.5" y="-62.75"/>
 <vertex x="-74.5" y="61.25"/>
 </polygon>
+<contactref element="R10" pad="2"/>
 <wire x1="-62.70458125" y1="11.1204625" x2="-70.25" y2="4.6" width="0" layer="19" extent="1-1"/>
 <wire x1="-51" y1="18.82" x2="-62.70458125" y2="11.1204625" width="0" layer="19" extent="1-1"/>
 <wire x1="-41.7331" y1="14.312940625" x2="-51" y2="18.82" width="0" layer="19" extent="1-1"/>
@@ -2056,10 +2046,11 @@ design rules under a new name.</description>
 <wire x1="-52.220321875" y1="33.213259375" x2="-51" y2="18.82" width="0" layer="19" extent="1-1"/>
 <wire x1="-50.720321875" y1="34.568259375" x2="-52.220321875" y2="33.213259375" width="0" layer="19" extent="1-1"/>
 <wire x1="-53.720321875" y1="36.568259375" x2="-50.720321875" y2="34.568259375" width="0" layer="19" extent="1-1"/>
-<wire x1="-58.970321875" y1="36.568259375" x2="-53.720321875" y2="36.568259375" width="0" layer="19" extent="1-1"/>
-<wire x1="-61.470321875" y1="34.818259375" x2="-58.970321875" y2="36.568259375" width="0" layer="19" extent="1-1"/>
-<wire x1="-59.970321875" y1="33.213259375" x2="-61.470321875" y2="34.818259375" width="0" layer="19" extent="1-1"/>
-<wire x1="-57.520421875" y1="32.318259375" x2="-59.970321875" y2="33.213259375" width="0" layer="19" extent="1-1"/>
+<wire x1="-57.279840625" y1="35.10916875" x2="-53.720321875" y2="36.568259375" width="0" layer="19" extent="1-1"/>
+<wire x1="-58.970321875" y1="36.568259375" x2="-57.279840625" y2="35.10916875" width="0" layer="19" extent="1-1"/>
+<wire x1="-57.520421875" y1="32.318259375" x2="-57.279840625" y2="35.10916875" width="0" layer="19" extent="1-1"/>
+<wire x1="-59.970321875" y1="33.213259375" x2="-57.520421875" y2="32.318259375" width="0" layer="19" extent="1-1"/>
+<wire x1="-61.470321875" y1="34.818259375" x2="-59.970321875" y2="33.213259375" width="0" layer="19" extent="1-1"/>
 <wire x1="-57.92384375" y1="43.5197" x2="-58.970321875" y2="36.568259375" width="0" layer="19" extent="1-1"/>
 <wire x1="-58.1962625" y1="46.76085625" x2="-57.92384375" y2="43.5197" width="0" layer="19" extent="1-1"/>
 <wire x1="-51.5" y1="44.4" x2="-57.92384375" y2="43.5197" width="0" layer="19" extent="1-1"/>
@@ -2096,7 +2087,6 @@ design rules under a new name.</description>
 <contactref element="U3" pad="17"/>
 <contactref element="C13" pad="1"/>
 <contactref element="U3" pad="4"/>
-<contactref element="R2" pad="1"/>
 <contactref element="R11" pad="2"/>
 <contactref element="V11" pad="P1"/>
 <wire x1="-51.9" y1="7.65" x2="-65.17" y2="4.6" width="0" layer="19" extent="1-1"/>
@@ -2105,11 +2095,10 @@ design rules under a new name.</description>
 <wire x1="-33.39758125" y1="14.34221875" x2="-33.63" y2="4.65" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.85758125" y1="14.34221875" x2="-33.39758125" y2="14.34221875" width="0" layer="19" extent="1-1"/>
 <wire x1="-28.31758125" y1="14.34221875" x2="-30.85758125" y2="14.34221875" width="0" layer="19" extent="1-1"/>
-<wire x1="-35.869640625" y1="32.58041875" x2="-33.39758125" y2="14.34221875" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.405428125" y1="36.591509375" x2="-35.869640625" y2="32.58041875" width="0" layer="19" extent="1-1"/>
+<wire x1="-70.2" y1="29.8" x2="-56.96118125" y2="15.6704625" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.405428125" y1="36.591509375" x2="-30.85758125" y2="14.34221875" width="0" layer="19" extent="1-1"/>
 <wire x1="-37.717428125" y1="41.791509375" x2="-30.405428125" y2="36.591509375" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.39708125" y1="40.96444375" x2="-37.717428125" y2="41.791509375" width="0" layer="19" extent="1-1"/>
-<wire x1="-70.2" y1="29.8" x2="-56.96118125" y2="15.6704625" width="0" layer="19" extent="1-1"/>
 <wire x1="-61.962478125" y1="50.898940625" x2="-70.2" y2="29.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBAT" class="1">
@@ -2344,13 +2333,6 @@ design rules under a new name.</description>
 <wire x1="-70.3" y1="33.3" x2="-60.7" y2="23.98" width="0" layer="19" extent="1-1"/>
 <wire x1="-61.2002875" y1="43.61405" x2="-54.920221875" y2="31.368259375" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.6" y1="48" x2="-45.4" y2="44.4" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="CHR_ENABLE#">
-<contactref element="R10" pad="2"/>
-<contactref element="U3" pad="14"/>
-<contactref element="R2" pad="2"/>
-<wire x1="-37.779640625" y1="32.58041875" x2="-57.279840625" y2="35.10916875" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.405428125" y1="43.091509375" x2="-37.779640625" y2="32.58041875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$15" class="1">
 <contactref element="S1" pad="B"/>

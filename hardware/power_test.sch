@@ -2880,6 +2880,19 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </technology>
 </technologies>
 </device>
+<device name="SMD-2012-0805-2.2K" package="RESC2012X60_HS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="YAG3776CT-ND "/>
+<attribute name="VALUE" value="2.2K"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="BATTERY" prefix="BATT">
@@ -3060,7 +3073,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="D6" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-GREEN" value="green"/>
 <part name="D8" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-RED" value="RED"/>
 <part name="C8" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
-<part name="R10" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-2K" value="2K"/>
+<part name="R10" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-2.2K" value="2.2K"/>
 <part name="R11" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-270" value="270"/>
 <part name="V1" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V2" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
@@ -3077,7 +3090,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="JP2" library="RemoteParts" deviceset="M06" device="-TH-RIGHT-ANGLE"/>
 <part name="GND2" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="S2" library="RemoteParts" deviceset="POWER-SWITCH-MFS201N-9-Z" device="JS102011SAQN" value="POWER-SWITCH-MFS201N-9-ZJS102011SAQN"/>
-<part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
 <part name="D1" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123-360MV" value="360mV"/>
 <part name="P+1" library="quadparts_prebuilt" deviceset="VBAT" device=""/>
 <part name="D2" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123-360MV" value="360mV"/>
@@ -3095,14 +3107,13 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="V9" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V10" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V11" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
+<part name="U$1" library="quadparts_prebuilt" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="200.66" y="195.58" size="1.778" layer="97">10K  = 100mA</text>
-<text x="200.66" y="193.04" size="1.778" layer="97">5.0K  = 200mA</text>
-<text x="200.66" y="190.5" size="1.778" layer="97">2.0K  = 500mA</text>
-<text x="200.66" y="187.96" size="1.778" layer="97">1.0K  = 1000mA</text>
+<text x="204.47" y="153.67" size="1.778" layer="97">Ireg = 1000V/Rprog
+2.2KOhm -&gt; 450mA</text>
 <text x="133.35" y="270.51" size="1.27" layer="97">Selecting VBAT puts everything under control of the power switch. 
 Selecting VBUS, powers the FTDI whenever USB is attached.
 Connecting all three will make USB attachment override the switch.</text>
@@ -3166,7 +3177,6 @@ Connecting all three will make USB attachment override the switch.</text>
 <instance part="JP2" gate="G$1" x="267.97" y="234.95" rot="MR0"/>
 <instance part="GND2" gate="1" x="224.79" y="219.71"/>
 <instance part="S2" gate="G$1" x="237.49" y="212.09"/>
-<instance part="R2" gate="G$1" x="187.96" y="222.25" rot="R90"/>
 <instance part="D1" gate="G$1" x="259.08" y="177.8"/>
 <instance part="P+1" gate="VCC" x="278.13" y="191.77"/>
 <instance part="D2" gate="G$1" x="259.08" y="187.96"/>
@@ -3176,6 +3186,7 @@ Connecting all three will make USB attachment override the switch.</text>
 <instance part="V9" gate="G$1" x="165.1" y="187.96" rot="R90"/>
 <instance part="V10" gate="G$1" x="267.97" y="187.96" rot="R90"/>
 <instance part="V11" gate="G$1" x="86.36" y="181.61" rot="R180"/>
+<instance part="U$1" gate="1" x="214.63" y="168.91"/>
 </instances>
 <busses>
 </busses>
@@ -3309,6 +3320,12 @@ Connecting all three will make USB attachment override the switch.</text>
 <wire x1="232.41" y1="217.17" x2="243.84" y2="217.17" width="0.1524" layer="91"/>
 <label x="243.84" y="217.17" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R10" gate="G$1" pin="2"/>
+<wire x1="213.36" y1="175.26" x2="214.63" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="214.63" y1="175.26" x2="214.63" y2="171.45" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="3V3" class="1">
 <segment>
@@ -3353,12 +3370,6 @@ Connecting all three will make USB attachment override the switch.</text>
 <pinref part="U3" gate="G$1" pin="VCCIO"/>
 <wire x1="148.59" y1="247.65" x2="148.59" y2="245.11" width="0.1524" layer="91"/>
 <junction x="148.59" y="247.65"/>
-</segment>
-<segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="187.96" y1="217.17" x2="187.96" y2="215.9" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="215.9" x2="191.77" y2="215.9" width="0.1524" layer="91"/>
-<label x="191.77" y="215.9" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
@@ -3761,20 +3772,6 @@ Connecting all three will make USB attachment override the switch.</text>
 <junction x="168.91" y="177.8"/>
 <pinref part="V9" gate="G$1" pin="N"/>
 <junction x="165.1" y="187.96"/>
-</segment>
-</net>
-<net name="CHR_ENABLE#" class="0">
-<segment>
-<pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="213.36" y1="175.26" x2="214.63" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="214.63" y1="175.26" x2="214.63" y2="171.45" width="0.1524" layer="91"/>
-<label x="214.63" y="171.45" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U3" gate="G$1" pin="PWREN"/>
-<wire x1="184.15" y1="227.33" x2="187.96" y2="227.33" width="0.1524" layer="91"/>
-<label x="187.96" y="227.33" size="1.27" layer="95" xref="yes"/>
-<pinref part="R2" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$15" class="1">
