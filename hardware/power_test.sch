@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="yes" active="yes"/>
@@ -3094,16 +3094,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <part name="P+1" library="quadparts_prebuilt" deviceset="VBAT" device=""/>
 <part name="D2" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123-360MV" value="360mV"/>
 <part name="GND4" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="J4" library="Components" deviceset="HEADER-0.1IN-3POS" device="-MALE">
-<attribute name="PIN1" value="STAT"/>
-<attribute name="PIN2" value=""/>
-<attribute name="PIN3" value="VDD"/>
-</part>
-<part name="J5" library="Components" deviceset="HEADER-0.1IN-3POS" device="-MALE">
-<attribute name="PIN1" value="VBAT"/>
-<attribute name="PIN2" value="PROG"/>
-<attribute name="PIN3" value="VSS"/>
-</part>
 <part name="V9" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V10" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V11" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
@@ -3114,14 +3104,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <plain>
 <text x="204.47" y="153.67" size="1.778" layer="97">Ireg = 1000V/Rprog
 2.2KOhm -&gt; 450mA</text>
-<text x="133.35" y="270.51" size="1.27" layer="97">Selecting VBAT puts everything under control of the power switch. 
-Selecting VBUS, powers the FTDI whenever USB is attached.
-Connecting all three will make USB attachment override the switch.</text>
-<text x="30.48" y="203.2" size="1.778" layer="97">Things to check:
-1.  Does the FTDI LDO 3.3V regulator work when VBUS is at 3.7V?
-2.  Can we keep current below 50mA for the microcontroller, etc. ?  The question, I guess is LEDs:  ucontrller says it draws &lt; 18.6mA.  Redboard does fine, but FTDI gets a little hot.
-
-</text>
+<text x="144.78" y="264.16" size="1.778" layer="97">The 3.3V regulator works down to VDD of about 3.4V.</text>
 </plain>
 <instances>
 <instance part="S1" gate="G$1" x="262.89" y="182.88" rot="R180"/>
@@ -3181,8 +3164,6 @@ Connecting all three will make USB attachment override the switch.</text>
 <instance part="P+1" gate="VCC" x="278.13" y="191.77"/>
 <instance part="D2" gate="G$1" x="259.08" y="187.96"/>
 <instance part="GND4" gate="1" x="105.41" y="215.9"/>
-<instance part="J4" gate="G$1" x="157.48" y="135.89"/>
-<instance part="J5" gate="G$1" x="213.36" y="146.05" rot="R180"/>
 <instance part="V9" gate="G$1" x="165.1" y="187.96" rot="R90"/>
 <instance part="V10" gate="G$1" x="267.97" y="187.96" rot="R90"/>
 <instance part="V11" gate="G$1" x="86.36" y="181.61" rot="R180"/>
@@ -3271,10 +3252,6 @@ Connecting all three will make USB attachment override the switch.</text>
 <pinref part="U$12" gate="1" pin="GND"/>
 <pinref part="U4" gate="G$1" pin="VSS"/>
 <wire x1="198.12" y1="172.72" x2="200.66" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="J5" gate="G$1" pin="3"/>
-<wire x1="198.12" y1="172.72" x2="198.12" y2="138.43" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="138.43" x2="203.2" y2="138.43" width="0.1524" layer="91"/>
-<junction x="198.12" y="172.72"/>
 </segment>
 <segment>
 <pinref part="U$13" gate="1" pin="GND"/>
@@ -3430,8 +3407,7 @@ Connecting all three will make USB attachment override the switch.</text>
 <pinref part="U4" gate="G$1" pin="VBAT"/>
 <wire x1="223.52" y1="177.8" x2="203.2" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="177.8" x2="200.66" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="200.66" y1="177.8" x2="199.39" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="199.39" y1="177.8" x2="198.12" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="177.8" x2="198.12" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="175.26" x2="223.52" y2="177.8" width="0.1524" layer="91"/>
 <junction x="223.52" y="177.8"/>
 <pinref part="C8" gate="G$1" pin="1"/>
@@ -3444,10 +3420,6 @@ Connecting all three will make USB attachment override the switch.</text>
 <wire x1="254" y1="177.8" x2="246.38" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="177.8" x2="246.38" y2="177.8" width="0.1524" layer="91"/>
 <junction x="246.38" y="177.8"/>
-<pinref part="J5" gate="G$1" pin="1"/>
-<wire x1="199.39" y1="177.8" x2="199.39" y2="143.51" width="0.1524" layer="91"/>
-<wire x1="199.39" y1="143.51" x2="203.2" y2="143.51" width="0.1524" layer="91"/>
-<junction x="199.39" y="177.8"/>
 </segment>
 </net>
 <net name="USB_D-" class="0">
@@ -3577,27 +3549,17 @@ Connecting all three will make USB attachment override the switch.</text>
 <pinref part="U4" gate="G$1" pin="STAT"/>
 <wire x1="167.64" y1="172.72" x2="170.18" y2="172.72" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="170.18" y1="172.72" x2="171.45" y2="172.72" width="0.1524" layer="91"/>
-<wire x1="171.45" y1="172.72" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="170.18" y1="172.72" x2="172.72" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="165.1" x2="170.18" y2="165.1" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="165.1" x2="170.18" y2="172.72" width="0.1524" layer="91"/>
 <junction x="170.18" y="172.72"/>
-<pinref part="J4" gate="G$1" pin="1"/>
-<wire x1="171.45" y1="172.72" x2="171.45" y2="138.43" width="0.1524" layer="91"/>
-<wire x1="171.45" y1="138.43" x2="167.64" y2="138.43" width="0.1524" layer="91"/>
-<junction x="171.45" y="172.72"/>
 </segment>
 </net>
 <net name="N$12" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PROG"/>
-<wire x1="198.12" y1="175.26" x2="201.93" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="175.26" x2="203.2" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="J5" gate="G$1" pin="2"/>
-<wire x1="201.93" y1="175.26" x2="203.2" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="201.93" y1="175.26" x2="201.93" y2="140.97" width="0.1524" layer="91"/>
-<wire x1="201.93" y1="140.97" x2="203.2" y2="140.97" width="0.1524" layer="91"/>
-<junction x="201.93" y="175.26"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -3746,8 +3708,7 @@ Connecting all three will make USB attachment override the switch.</text>
 <wire x1="142.24" y1="177.8" x2="144.78" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="177.8" x2="154.94" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="177.8" x2="157.48" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="177.8" x2="168.91" y2="177.8" width="0.1524" layer="91"/>
-<wire x1="168.91" y1="177.8" x2="172.72" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="177.8" x2="172.72" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="175.26" x2="137.16" y2="177.8" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="172.72" x2="148.59" y2="172.72" width="0.1524" layer="91"/>
 <wire x1="148.59" y1="172.72" x2="144.78" y2="172.72" width="0.1524" layer="91"/>
@@ -3765,11 +3726,7 @@ Connecting all three will make USB attachment override the switch.</text>
 <wire x1="142.24" y1="187.96" x2="165.1" y2="187.96" width="0.1524" layer="91"/>
 <junction x="142.24" y="177.8"/>
 <pinref part="D2" gate="G$1" pin="A"/>
-<pinref part="J4" gate="G$1" pin="3"/>
 <wire x1="165.1" y1="187.96" x2="254" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="168.91" y1="177.8" x2="168.91" y2="143.51" width="0.1524" layer="91"/>
-<wire x1="168.91" y1="143.51" x2="167.64" y2="143.51" width="0.1524" layer="91"/>
-<junction x="168.91" y="177.8"/>
 <pinref part="V9" gate="G$1" pin="N"/>
 <junction x="165.1" y="187.96"/>
 </segment>
