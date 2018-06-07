@@ -229,7 +229,7 @@
 <wire x1="16" y1="13.5" x2="19" y2="13.5" width="0.1524" layer="41"/>
 <wire x1="13.5" y1="8.5" x2="16" y2="6" width="0.1524" layer="41"/>
 <wire x1="16" y1="6" x2="19" y2="6" width="0.1524" layer="41"/>
-<text x="-7.5" y="25.5" size="1.778" layer="21" font="vector">Quadremote
+<text x="-7.5" y="25.5" size="1.778" layer="29" font="vector" ratio="15">Quadremote
 Mark IV</text>
 <text x="-42" y="-24" size="1.778" layer="21" font="vector">Steven
 Swanson</text>
@@ -240,6 +240,14 @@ Swanson</text>
 <wire x1="19" y1="6" x2="19.875" y2="6.875" width="0.1524" layer="42"/>
 <wire x1="19.875" y1="6.875" x2="19.875" y2="12.625" width="0.1524" layer="42"/>
 <wire x1="19.875" y1="12.625" x2="19" y2="13.5" width="0.1524" layer="42"/>
+<text x="-39" y="-34" size="1.778" layer="1" font="vector">Top Metal</text>
+<text x="-25.875" y="-34" size="1.778" layer="2" font="vector">Upper Inner Metal</text>
+<text x="-2.75" y="-34" size="1.778" layer="15" font="vector">Lower Inner Metal</text>
+<text x="35.625" y="-34" size="1.778" layer="16" font="vector" rot="MR0">Bottom Metal</text>
+<text x="-103.5" y="23.75" size="1.778" layer="21" font="vector">Ignore four drills outside of board area</text>
+<text x="57" y="23.75" size="1.778" layer="21" font="vector">Ignore four drills outside of board area</text>
+<text x="-7.5" y="25.5" size="1.778" layer="1" font="vector" ratio="15">Quadremote
+Mark IV</text>
 </plain>
 <libraries>
 <library name="Components">
