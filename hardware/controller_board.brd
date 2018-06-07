@@ -1807,8 +1807,8 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 <text x="8.89" y="-2.54" size="1.27" layer="21" font="vector" rot="R90">&gt;NAME</text>
 </package>
 <package name="FIDUCIAL_STENCIL">
-<hole x="0" y="0" drill="1"/>
-<circle x="0" y="0" radius="0.5" width="0.127" layer="31"/>
+<hole x="0" y="0" drill="0.66"/>
+<circle x="0" y="0" radius="0.33" width="0.127" layer="31"/>
 </package>
 </packages>
 <packages3d>
@@ -2737,6 +2737,16 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="27.125" y="-25.75" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="NA" x="27.125" y="-25.75" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="27.125" y="-25.75" size="1.778" layer="27" display="off"/>
+</element>
+<element name="F3" library="RemoteParts" package="FIDUCIAL_STENCIL" value="1mm" x="33.25" y="30">
+<attribute name="CREATOR" value="Swanson" x="33.25" y="30" size="1.778" layer="27" font="vector" display="off"/>
+<attribute name="DIST" value="NA" x="33.25" y="30" size="1.778" layer="27" font="vector" display="off"/>
+<attribute name="DISTPN" value="NA" x="33.25" y="30" size="1.778" layer="27" font="vector" display="off"/>
+</element>
+<element name="F4" library="RemoteParts" package="FIDUCIAL_STENCIL" value="1mm" x="-27" y="-25.625">
+<attribute name="CREATOR" value="Swanson" x="-27" y="-25.625" size="1.778" layer="27" font="vector" display="off"/>
+<attribute name="DIST" value="NA" x="-27" y="-25.625" size="1.778" layer="27" font="vector" display="off"/>
+<attribute name="DISTPN" value="NA" x="-27" y="-25.625" size="1.778" layer="27" font="vector" display="off"/>
 </element>
 </elements>
 <signals>

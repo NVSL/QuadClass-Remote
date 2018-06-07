@@ -1284,8 +1284,8 @@
 <text x="0" y="-3.4274" size="1.27" layer="27" font="vector" align="top-center">&gt;VALUE</text>
 </package>
 <package name="FIDUCIAL_STENCIL">
-<hole x="0" y="0" drill="1"/>
-<circle x="0" y="0" radius="0.5" width="0.127" layer="31"/>
+<hole x="0" y="0" drill="0.66"/>
+<circle x="0" y="0" radius="0.33" width="0.127" layer="31"/>
 </package>
 </packages>
 <packages3d>
@@ -4017,6 +4017,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="V19" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="F1" library="RemoteParts" deviceset="FIDUCIAL" device="-STENCIL" value="1mm"/>
 <part name="F2" library="RemoteParts" deviceset="FIDUCIAL" device="-STENCIL" value="1mm"/>
+<part name="F3" library="RemoteParts" deviceset="FIDUCIAL" device="-STENCIL" value="1mm"/>
+<part name="F4" library="RemoteParts" deviceset="FIDUCIAL" device="-STENCIL" value="1mm"/>
 </parts>
 <sheets>
 <sheet>
@@ -4182,6 +4184,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="V19" gate="G$1" x="340.36" y="86.36" rot="R90"/>
 <instance part="F1" gate="G$1" x="332.74" y="29.21"/>
 <instance part="F2" gate="G$1" x="344.17" y="29.21"/>
+<instance part="F3" gate="G$1" x="355.6" y="29.21"/>
+<instance part="F4" gate="G$1" x="367.03" y="29.21"/>
 </instances>
 <busses>
 </busses>
