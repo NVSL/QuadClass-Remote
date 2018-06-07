@@ -3807,7 +3807,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </class>
 <class number="1" name="HIGH-I" width="0.381" drill="0">
 </class>
-<class number="2" name="RFSIG" width="0.4572" drill="0">
+<class number="2" name="RFSIG" width="0.762" drill="0">
 </class>
 </classes>
 <parts>
