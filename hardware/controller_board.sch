@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="yes" active="yes"/>
@@ -1135,8 +1135,8 @@
 <smd name="3" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
 <smd name="4" x="0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
 <smd name="5" x="-0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
-<text x="1.978" y="0" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="1.978" y="-0.635" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<text x="1.978" y="0" size="0.8128" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="1.978" y="-0.635" size="0.4064" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 </package>
 <package name="1X06">
 <wire x1="11.43" y1="0.635" x2="12.065" y2="1.27" width="0.2032" layer="21"/>
@@ -1282,6 +1282,10 @@
 <smd name="16" x="2.8717" y="2.275" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
 <text x="0" y="3.5174" size="1.27" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-3.4274" size="1.27" layer="27" font="vector" align="top-center">&gt;VALUE</text>
+</package>
+<package name="FIDUCIAL_STENCIL">
+<hole x="0" y="0" drill="1"/>
+<circle x="0" y="0" radius="0.5" width="0.127" layer="31"/>
 </package>
 </packages>
 <packages3d>
@@ -1517,6 +1521,10 @@
 <wire x1="2.54" y1="10.16" x2="-2.54" y2="10.16" width="0.254" layer="94"/>
 <wire x1="2.54" y1="17.78" x2="-2.54" y2="17.78" width="0.254" layer="94"/>
 <text x="-12.7" y="-15.24" size="1.27" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="FIDUCIAL">
+<circle x="0" y="0" radius="5.08" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1894,6 +1902,23 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="568-5300-1-ND"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIAL" prefix="F">
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-STENCIL" package="FIDUCIAL_STENCIL">
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="NA"/>
+<attribute name="DISTPN" value="NA"/>
+<attribute name="VALUE" value="1mm"/>
 </technology>
 </technologies>
 </device>
@@ -2496,7 +2521,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="-3.06" y1="-3.06" x2="-3.06" y2="1.02" width="0.12" layer="21"/>
 <wire x1="-3.25" y1="-5.85" x2="-3.25" y2="5.85" width="0.05" layer="39"/>
 <wire x1="-3.25" y1="5.85" x2="3.25" y2="5.85" width="0.05" layer="39"/>
-<circle x="-3.55" y="4.5" radius="0.2" width="0.4" layer="21"/>
 <circle x="0" y="0" radius="0.25" width="0.05" layer="39"/>
 <text x="0" y="0" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <circle x="0" y="0" radius="1.75" width="0.2" layer="21"/>
@@ -2570,7 +2594,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <smd name="4" x="2.25" y="-4.55" dx="1.4" dy="2.1" layer="1" stop="no" cream="no"/>
 </package>
 <package name="VIA-0.2MM">
-<pad name="P1" x="0" y="0" drill="0.2" diameter="0.3" thermals="no"/>
+<pad name="P1" x="0" y="0" drill="0.2" diameter="0.3" stop="no" thermals="no"/>
 </package>
 <package name="BATTERY-W/HOLDER-380MAH-HUBSAN">
 <wire x1="-12" y1="11" x2="-9" y2="2.5" width="0.127" layer="21"/>
@@ -3916,7 +3940,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="C13" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
 <part name="D5" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-GREEN" value="green"/>
 <part name="D7" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-RED" value="RED"/>
-<part name="J10" library="RemoteParts" deviceset="USB" device="-MICROA-AMPHENOL-10118192-0001LF"/>
 <part name="GND35" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="U4" library="RemoteParts" deviceset="MCP73831/2" device="" value="MCP73831T-2ACI/OT"/>
 <part name="R8" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
@@ -3992,6 +4015,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="V40" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V22" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V19" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
+<part name="F1" library="RemoteParts" deviceset="FIDUCIAL" device="-STENCIL" value="1mm"/>
+<part name="F2" library="RemoteParts" deviceset="FIDUCIAL" device="-STENCIL" value="1mm"/>
 </parts>
 <sheets>
 <sheet>
@@ -4096,7 +4121,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="C13" gate="G$1" x="177.8" y="234.95"/>
 <instance part="D5" gate="G$1" x="328.93" y="231.14" rot="R270"/>
 <instance part="D7" gate="G$1" x="320.04" y="231.14" rot="R270"/>
-<instance part="J10" gate="A" x="135.89" y="247.65" rot="MR0"/>
 <instance part="GND35" gate="1" x="140.97" y="237.49"/>
 <instance part="U4" gate="G$1" x="223.52" y="167.64"/>
 <instance part="R8" gate="G$1" x="200.66" y="165.1"/>
@@ -4156,6 +4180,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="V40" gate="G$1" x="335.28" y="86.36" rot="R90"/>
 <instance part="V22" gate="G$1" x="337.82" y="86.36" rot="R90"/>
 <instance part="V19" gate="G$1" x="340.36" y="86.36" rot="R90"/>
+<instance part="F1" gate="G$1" x="332.74" y="29.21"/>
+<instance part="F2" gate="G$1" x="344.17" y="29.21"/>
 </instances>
 <busses>
 </busses>
@@ -4405,7 +4431,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="C12" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<pinref part="J10" gate="A" pin="5-GND"/>
 <pinref part="GND35" gate="1" pin="GND"/>
 <wire x1="140.97" y1="240.03" x2="140.97" y2="242.57" width="0.1524" layer="91"/>
 </segment>
@@ -5097,7 +5122,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="J3" gate="A" pin="2-D-"/>
 <wire x1="191.77" y1="250.19" x2="147.32" y2="250.19" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="USBDM"/>
-<pinref part="J10" gate="A" pin="2-D-"/>
 <wire x1="147.32" y1="250.19" x2="140.97" y2="250.19" width="0.1524" layer="91"/>
 <wire x1="140.97" y1="220.98" x2="147.32" y2="220.98" width="0.1524" layer="91"/>
 <wire x1="147.32" y1="220.98" x2="147.32" y2="250.19" width="0.1524" layer="91"/>
@@ -5110,7 +5134,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="J3" gate="A" pin="3-D+"/>
 <wire x1="191.77" y1="247.65" x2="149.86" y2="247.65" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="USBDP"/>
-<pinref part="J10" gate="A" pin="3-D+"/>
 <wire x1="149.86" y1="247.65" x2="140.97" y2="247.65" width="0.1524" layer="91"/>
 <wire x1="140.97" y1="218.44" x2="149.86" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="149.86" y1="218.44" x2="149.86" y2="247.65" width="0.1524" layer="91"/>
@@ -5328,7 +5351,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </net>
 <net name="VBUS" class="1">
 <segment>
-<pinref part="J10" gate="A" pin="1-VCC"/>
 <wire x1="140.97" y1="252.73" x2="144.78" y2="252.73" width="0.1524" layer="91"/>
 <label x="144.78" y="252.73" size="1.27" layer="95" rot="R90" xref="yes"/>
 <wire x1="144.78" y1="252.73" x2="144.78" y2="223.52" width="0.1524" layer="91"/>

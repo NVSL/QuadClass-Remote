@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -464,8 +464,8 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 <smd name="3" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
 <smd name="4" x="0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
 <smd name="5" x="-0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
-<text x="1.978" y="0" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="1.978" y="-0.635" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<text x="1.978" y="0" size="0.8128" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="1.978" y="-0.635" size="0.4064" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 </package>
 <package name="SSOP28DB">
 <description>&lt;b&gt;Small Shrink Outline Package&lt;/b&gt;</description>
@@ -1319,6 +1319,10 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <rectangle x1="1.1" y1="-0.25" x2="2.3" y2="0.25" layer="32"/>
 <rectangle x1="1.1" y1="-0.25" x2="2.3" y2="0.25" layer="31"/>
 </package>
+<package name="FIDUCIAL_STENCIL">
+<hole x="0" y="0" drill="1"/>
+<circle x="0" y="0" radius="0.5" width="0.127" layer="31"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" locally_modified="yes" type="model">
@@ -1644,6 +1648,10 @@ Created: 10/25/2014</description>
 <wire x1="0.0254" y1="1.2446" x2="0.762" y2="1.7272" width="0.254" layer="94"/>
 <wire x1="0.762" y1="1.7272" x2="0.762" y2="0.8636" width="0.254" layer="94"/>
 <wire x1="0.762" y1="0.8636" x2="0.0762" y2="1.27" width="0.254" layer="94"/>
+</symbol>
+<symbol name="FIDUCIAL">
+<circle x="0" y="0" radius="5.08" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2152,6 +2160,23 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="MFR" value="Vishay Siliconix "/>
 <attribute name="MPN" value="SI2301CDS-T1-E3 "/>
 <attribute name="REVIEWER" value=""/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FIDUCIAL" prefix="F">
+<gates>
+<gate name="G$1" symbol="FIDUCIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-STENCIL" package="FIDUCIAL_STENCIL">
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="NA"/>
+<attribute name="DISTPN" value="NA"/>
+<attribute name="VALUE" value="1mm"/>
 </technology>
 </technologies>
 </device>
