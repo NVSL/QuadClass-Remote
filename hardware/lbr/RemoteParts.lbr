@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="2.54" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1323,6 +1323,35 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <hole x="0" y="0" drill="0.66"/>
 <circle x="0" y="0" radius="0.33" width="0.127" layer="31"/>
 </package>
+<package name="SPARKFUN_LCD_33_PARALLEL">
+<wire x1="-40" y1="-18" x2="40" y2="-18" width="0.127" layer="51"/>
+<wire x1="40" y1="-18" x2="40" y2="18" width="0.127" layer="51"/>
+<wire x1="40" y1="18" x2="-40" y2="18" width="0.127" layer="51"/>
+<wire x1="-40" y1="18" x2="-40" y2="-18" width="0.127" layer="51"/>
+<hole x="-37.5" y="15.5" drill="2.6"/>
+<hole x="-37.5" y="-15.5" drill="2.6"/>
+<hole x="37.5" y="-15.5" drill="2.6"/>
+<hole x="37.5" y="15.5" drill="2.6"/>
+<pad name="VSS" x="-32" y="15.5" drill="1.4" shape="square"/>
+<pad name="VDD" x="-29.46" y="15.5" drill="1.4"/>
+<pad name="V0" x="-26.92" y="15.5" drill="1.4"/>
+<pad name="RS" x="-24.38" y="15.5" drill="1.4"/>
+<pad name="RW" x="-21.84" y="15.5" drill="1.4"/>
+<pad name="E" x="-19.3" y="15.5" drill="1.4"/>
+<pad name="DB0" x="-16.76" y="15.5" drill="1.4"/>
+<pad name="DB1" x="-14.22" y="15.5" drill="1.4"/>
+<pad name="DB2" x="-11.68" y="15.5" drill="1.4"/>
+<pad name="DB3" x="-9.14" y="15.5" drill="1.4"/>
+<pad name="DB4" x="-6.6" y="15.5" drill="1.4"/>
+<pad name="DB5" x="-4.06" y="15.5" drill="1.4"/>
+<pad name="DB6" x="-1.52" y="15.5" drill="1.4"/>
+<pad name="DB7" x="1.02" y="15.5" drill="1.4"/>
+<pad name="K" x="3.56" y="15.5" drill="1.4"/>
+<pad name="A-RED" x="6.1" y="15.5" drill="1.4"/>
+<pad name="A-BLUE" x="8.64" y="15.5" drill="1.4"/>
+<pad name="A-GREEN" x="11.18" y="15.5" drill="1.4"/>
+<text x="-33.288" y="18.047" size="1.27" layer="21" font="vector">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" locally_modified="yes" type="model">
@@ -1652,6 +1681,31 @@ Created: 10/25/2014</description>
 <symbol name="FIDUCIAL">
 <circle x="0" y="0" radius="5.08" width="0.254" layer="94"/>
 <circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
+</symbol>
+<symbol name="SPARKFUN_LCD_33_SERIAL">
+<pin name="VSS" x="-10.16" y="33.02" length="middle"/>
+<pin name="VDD" x="-10.16" y="30.48" length="middle"/>
+<pin name="RS" x="-10.16" y="25.4" length="middle"/>
+<pin name="RW" x="-10.16" y="22.86" length="middle"/>
+<pin name="E" x="-10.16" y="20.32" length="middle"/>
+<pin name="DB0" x="-10.16" y="17.78" length="middle"/>
+<pin name="DB1" x="-10.16" y="15.24" length="middle"/>
+<pin name="DB2" x="-10.16" y="12.7" length="middle"/>
+<pin name="DB3" x="-10.16" y="10.16" length="middle"/>
+<pin name="DB4" x="-10.16" y="7.62" length="middle"/>
+<pin name="DB5" x="-10.16" y="5.08" length="middle"/>
+<pin name="DB6" x="-10.16" y="2.54" length="middle"/>
+<pin name="DB7" x="-10.16" y="0" length="middle"/>
+<pin name="K" x="-10.16" y="-2.54" length="middle"/>
+<pin name="A-RED/LED+" x="-10.16" y="-5.08" length="middle"/>
+<pin name="A-GREEN/LED-" x="-10.16" y="-7.62" length="middle"/>
+<pin name="A-BLUE" x="-10.16" y="-10.16" length="middle"/>
+<wire x1="-5.08" y1="35.56" x2="12.7" y2="35.56" width="0.254" layer="94"/>
+<wire x1="12.7" y1="35.56" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="35.56" width="0.254" layer="94"/>
+<text x="-2.54" y="-15.24" size="1.778" layer="95">&gt;NAME</text>
+<pin name="V0" x="-10.16" y="27.94" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2177,6 +2231,42 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="DIST" value="NA"/>
 <attribute name="DISTPN" value="NA"/>
 <attribute name="VALUE" value="1mm"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPARKFUN_LCD_33_SERIAL" prefix="L">
+<gates>
+<gate name="G$1" symbol="SPARKFUN_LCD_33_SERIAL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-RGB" package="SPARKFUN_LCD_33_PARALLEL">
+<connects>
+<connect gate="G$1" pin="A-BLUE" pad="A-BLUE"/>
+<connect gate="G$1" pin="A-GREEN/LED-" pad="A-GREEN"/>
+<connect gate="G$1" pin="A-RED/LED+" pad="A-RED"/>
+<connect gate="G$1" pin="DB0" pad="DB0"/>
+<connect gate="G$1" pin="DB1" pad="DB1"/>
+<connect gate="G$1" pin="DB2" pad="DB2"/>
+<connect gate="G$1" pin="DB3" pad="DB3"/>
+<connect gate="G$1" pin="DB4" pad="DB4"/>
+<connect gate="G$1" pin="DB5" pad="DB5"/>
+<connect gate="G$1" pin="DB6" pad="DB6"/>
+<connect gate="G$1" pin="DB7" pad="DB7"/>
+<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="K" pad="K"/>
+<connect gate="G$1" pin="RS" pad="RS"/>
+<connect gate="G$1" pin="RW" pad="RW"/>
+<connect gate="G$1" pin="V0" pad="V0"/>
+<connect gate="G$1" pin="VDD" pad="VDD"/>
+<connect gate="G$1" pin="VSS" pad="VSS"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="SparkFun"/>
+<attribute name="DISTPN" value="LCD-10862"/>
 </technology>
 </technologies>
 </device>
