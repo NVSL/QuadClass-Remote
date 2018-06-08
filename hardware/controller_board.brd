@@ -3,7 +3,7 @@
 <eagle version="9.0.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.125" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -251,6 +251,16 @@ Swanson</text>
 <text x="25.25" y="22.125" size="1.4224" layer="21" font="vector" rot="R90">TX</text>
 <text x="27.75" y="22.125" size="1.4224" layer="21" font="vector" rot="R90">RX</text>
 <text x="30.25" y="22.125" size="1.4224" layer="21" font="vector" rot="R90">DTR</text>
+<text x="-89.125" y="-7.375" size="1.4224" layer="1" font="vector">Replace 3-pin servo connectors for cheap 
+gimbals with 1x6 right-angle headers 
+to reduce clearance under the board.</text>
+<text x="-89.875" y="-13.375" size="1.4224" layer="1" font="vector">Put headers for nice gimbals on top to 
+reduce clearance underneath</text>
+<text x="-92.5" y="-22.625" size="1.4224" layer="1" font="vector">Use longer screws + spacers to reach
+threaded standoff between board and LCD.
+Just use LCD mounting holes:  4 standoffs, 4 spaces, 8 screws.
+standoff: https://www.fastenal.com/products/details/0145659
+Contrast controll pot?  PWM line?</text>
 </plain>
 <libraries>
 <library name="Components">
@@ -2022,8 +2032,8 @@ design rules under a new name.</description>
 <element name="3.3V" library="Components" package="SCREW-TERMINAL-1X3-2.54MM" value="" x="-3" y="-10" smashed="yes" rot="R90">
 <attribute name="DIST" value="digikey" x="-3" y="-10" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="ED10562-ND" x="-3" y="-10" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-2.54" y="-1.96" size="1.778" layer="25" font="vector" ratio="10" rot="R180" align="center"/>
 <attribute name="NAME" x="-2.54" y="-1.96" size="1.778" layer="51" font="vector" ratio="10" rot="R180" align="center"/>
+<attribute name="NAME" x="-2.54" y="-1.96" size="1.778" layer="25" font="vector" ratio="10" rot="R180" align="center"/>
 <attribute name="PIN1" value="" x="-6.905" y="-10" size="1.778" layer="21" font="vector" rot="R180" align="center-left"/>
 <attribute name="PIN2" value="" x="-6.905" y="-7.46" size="1.778" layer="21" font="vector" rot="R180" align="center-left"/>
 <attribute name="PIN3" value="" x="-6.905" y="-4.92" size="1.778" layer="21" font="vector" rot="R180" align="center-left"/>
@@ -2165,8 +2175,8 @@ design rules under a new name.</description>
 <element name="GND" library="Components" package="SCREW-TERMINAL-1X3-2.54MM" value="" x="-11" y="-10" smashed="yes" rot="R90">
 <attribute name="DIST" value="digikey" x="-11" y="-10" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="ED10562-ND" x="-11" y="-10" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-10.54" y="-1.96" size="1.778" layer="25" font="vector" ratio="10" rot="R180" align="center"/>
 <attribute name="NAME" x="-10.54" y="-1.96" size="1.778" layer="51" font="vector" ratio="10" rot="R180" align="center"/>
+<attribute name="NAME" x="-10.54" y="-1.96" size="1.778" layer="25" font="vector" ratio="10" rot="R180" align="center"/>
 <attribute name="PIN1" value="" x="-14.905" y="-10" size="1.778" layer="21" font="vector" rot="R180" align="center-left"/>
 <attribute name="PIN2" value="" x="-14.905" y="-7.46" size="1.778" layer="21" font="vector" rot="R180" align="center-left"/>
 <attribute name="PIN3" value="" x="-14.905" y="-4.92" size="1.778" layer="21" font="vector" rot="R180" align="center-left"/>
@@ -2341,8 +2351,8 @@ design rules under a new name.</description>
 <element name="VBAT" library="Components" package="SCREW-TERMINAL-1X3-2.54MM" value="" x="-19" y="-10" smashed="yes" rot="R90">
 <attribute name="DIST" value="digikey" x="-19" y="-10" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="ED10562-ND" x="-19" y="-10" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-18.54" y="-1.96" size="1.778" layer="25" font="vector" ratio="10" rot="R180" align="center"/>
 <attribute name="NAME" x="-18.54" y="-1.96" size="1.778" layer="51" font="vector" ratio="10" rot="R180" align="center"/>
+<attribute name="NAME" x="-18.54" y="-1.96" size="1.778" layer="25" font="vector" ratio="10" rot="R180" align="center"/>
 <attribute name="PIN1" value="" x="-22.905" y="-10" size="1.778" layer="21" font="vector" rot="R180" align="center-left"/>
 <attribute name="PIN2" value="" x="-22.905" y="-7.46" size="1.778" layer="21" font="vector" rot="R180" align="center-left"/>
 <attribute name="PIN3" value="" x="-22.905" y="-4.92" size="1.778" layer="21" font="vector" rot="R180" align="center-left"/>
