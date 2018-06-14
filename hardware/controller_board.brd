@@ -3,7 +3,7 @@
 <eagle version="9.0.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.125" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -253,8 +253,8 @@ Contrast controll pot?  PWM line?</text>
 <text x="-16" y="15.75" size="1.016" layer="21">GND</text>
 <text x="-16" y="5.625" size="1.016" layer="21">VBAT</text>
 <text x="-16" y="10.625" size="1.016" layer="21">3V3</text>
-<circle x="-0.125" y="-31.875" radius="16" width="0.1524" layer="21"/>
-<circle x="0" y="0" radius="10.5" width="0.1524" layer="21"/>
+<circle x="-11.125" y="77.375" radius="16" width="0.1524" layer="21"/>
+<circle x="-46.5" y="77.25" radius="10.5" width="0.1524" layer="21"/>
 </plain>
 <libraries>
 <library name="quadparts_prebuilt">
