@@ -770,6 +770,14 @@
 <pad name="A-BLUE" x="8.64" y="15.5" drill="1.02"/>
 <pad name="A-GREEN" x="11.18" y="15.5" drill="1.02"/>
 <text x="-33.288" y="18.047" size="1.27" layer="21" font="vector">&gt;NAME</text>
+<wire x1="-33.7" y1="14.25" x2="12.87" y2="14.25" width="0.127" layer="39"/>
+<wire x1="12.87" y1="14.25" x2="12.87" y2="16.79" width="0.127" layer="39"/>
+<wire x1="12.87" y1="16.79" x2="-33.7" y2="16.79" width="0.127" layer="39"/>
+<wire x1="-33.7" y1="16.79" x2="-33.7" y2="14.25" width="0.127" layer="39"/>
+<circle x="37.5" y="15.5" radius="2.6" width="0.127" layer="39"/>
+<circle x="-37.5" y="15.5" radius="2.5" width="0.127" layer="39"/>
+<circle x="-37.5" y="-15.5" radius="2.5" width="0.127" layer="39"/>
+<circle x="37.5" y="-15.5" radius="2.5" width="0.127" layer="39"/>
 </package>
 <package name="JS102011JCQN">
 <smd name="3" x="2.5" y="-1.2" dx="1" dy="1.6" layer="1"/>

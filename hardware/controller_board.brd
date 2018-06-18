@@ -3,7 +3,7 @@
 <eagle version="9.0.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.125" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
@@ -204,8 +204,8 @@
 <wire x1="38" y1="31.5" x2="-38" y2="31.5" width="0.127" layer="20"/>
 <wire x1="-38" y1="31.5" x2="-43" y2="26.5" width="0.127" layer="20" curve="90"/>
 <wire x1="38" y1="31.5" x2="43" y2="26.5" width="0.127" layer="20" curve="-90"/>
-<text x="-21.5" y="25" size="1.778" layer="21" font="vector" rot="R180" align="center">on</text>
-<text x="-11.625" y="25.125" size="1.778" layer="21" font="vector" rot="R180" align="center">off</text>
+<text x="-21.25" y="24.875" size="1.778" layer="21" font="vector" rot="R180" align="center">on</text>
+<text x="-12.25" y="24.75" size="1.778" layer="21" font="vector" rot="R180" align="center">off</text>
 <text x="4.25" y="24.75" size="1.778" layer="21" font="vector" align="center">RC</text>
 <text x="-4.375" y="24.875" size="1.778" layer="21" font="vector" align="center">quad</text>
 <text x="-34" y="-23.125" size="1.778" layer="21" font="vector" rot="R180">reset</text>
@@ -250,11 +250,9 @@ Contrast controll pot?  PWM line?</text>
 <wire x1="99.5" y1="38" x2="-91.5" y2="38" width="0.1524" layer="100"/>
 <wire x1="-7.625" y1="31.5" x2="-6.375" y2="31.5" width="1" layer="21"/>
 <wire x1="5.375" y1="31.5" x2="6.625" y2="31.5" width="1" layer="21"/>
-<text x="-16" y="15.75" size="1.016" layer="21">GND</text>
-<text x="-16" y="5.625" size="1.016" layer="21">VBAT</text>
-<text x="-16" y="10.625" size="1.016" layer="21">3V3</text>
-<circle x="-11.125" y="77.375" radius="16" width="0.1524" layer="21"/>
-<circle x="-46.5" y="77.25" radius="10.5" width="0.1524" layer="21"/>
+<text x="-16" y="15.75" size="1.016" layer="21" font="vector">GND</text>
+<text x="-16" y="5.625" size="1.016" layer="21" font="vector">VBAT</text>
+<text x="-16" y="10.625" size="1.016" layer="21" font="vector">3V3</text>
 <text x="37.125" y="-27.875" size="1.778" layer="21" font="vector" align="center">contrast</text>
 </plain>
 <libraries>
@@ -1645,6 +1643,14 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 <pad name="A-BLUE" x="8.64" y="15.5" drill="1.02"/>
 <pad name="A-GREEN" x="11.18" y="15.5" drill="1.02"/>
 <text x="-33.288" y="18.047" size="1.27" layer="21" font="vector">&gt;NAME</text>
+<wire x1="-33.7" y1="14.25" x2="12.87" y2="14.25" width="0.127" layer="39"/>
+<wire x1="12.87" y1="14.25" x2="12.87" y2="16.79" width="0.127" layer="39"/>
+<wire x1="12.87" y1="16.79" x2="-33.7" y2="16.79" width="0.127" layer="39"/>
+<wire x1="-33.7" y1="16.79" x2="-33.7" y2="14.25" width="0.127" layer="39"/>
+<circle x="37.5" y="15.5" radius="2.6" width="0.127" layer="39"/>
+<circle x="-37.5" y="15.5" radius="2.5" width="0.127" layer="39"/>
+<circle x="-37.5" y="-15.5" radius="2.5" width="0.127" layer="39"/>
+<circle x="37.5" y="-15.5" radius="2.5" width="0.127" layer="39"/>
 </package>
 <package name="2X-GIMBAL-SERVO">
 <wire x1="11.43" y1="0.635" x2="12.065" y2="1.27" width="0.2032" layer="21"/>
@@ -2229,7 +2235,7 @@ design rules under a new name.</description>
 <element name="R1" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="14.75" y="-17.375" smashed="yes" rot="R90">
 <attribute name="DIST" value="DIGIKEY" x="14.75" y="-17.375" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="311-510ARCT-ND" x="14.75" y="-17.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="15.875" y="-14.25" size="1" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="17.25" y="-15.625" size="1" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="15.375" y="-18.875" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R17" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="9.75" y="-17.375" smashed="yes" rot="R90">
@@ -2352,15 +2358,15 @@ design rules under a new name.</description>
 <attribute name="DISTPN" value="CKN10721CT-ND" x="-1.875" y="-13.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="-22.875" y="27.875" size="1" layer="25" font="vector"/>
 </element>
-<element name="D4" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="green" x="-17.625" y="25.5" smashed="yes">
-<attribute name="CREATOR" value="Swanson" x="-36.625" y="97.5" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="-36.625" y="97.5" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="160-1179-1-ND" x="-36.625" y="97.5" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Lite-On Inc" x="-36.625" y="97.5" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="LTST-C170GKT" x="-36.625" y="97.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-24.825" y="22.025" size="1" layer="25" font="vector"/>
-<attribute name="REVIEWER" value="Swanson" x="-36.625" y="97.5" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-14.675" y="24.975" size="1.2" layer="27" font="vector" ratio="10" rot="R180"/>
+<element name="D4" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="green" x="-17.875" y="25.5" smashed="yes">
+<attribute name="CREATOR" value="Swanson" x="-36.875" y="97.5" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-36.875" y="97.5" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="160-1179-1-ND" x="-36.875" y="97.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Lite-On Inc" x="-36.875" y="97.5" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="LTST-C170GKT" x="-36.875" y="97.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-17.7" y="22.525" size="1" layer="25" font="vector"/>
+<attribute name="REVIEWER" value="Swanson" x="-36.875" y="97.5" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-14.925" y="24.975" size="1.2" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="B6" library="quadparts_prebuilt" package="BATTERY-TERMINALS" value="BATTERY" x="-20.625" y="9.875" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-14.625" y="41.875" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2378,13 +2384,13 @@ design rules under a new name.</description>
 <element name="R6" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="-13.375" y="-17.5" smashed="yes" rot="R270">
 <attribute name="DIST" value="DIGIKEY" x="38.625" y="-6.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DISTPN" value="311-510ARCT-ND" x="38.625" y="-6.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-12.75" y="-14.25" size="1" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="-14.5" y="-15.625" size="1" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="-14" y="-16.125" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="R7" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="-10.375" y="-17.5" smashed="yes" rot="R270">
 <attribute name="DIST" value="DIGIKEY" x="36.625" y="-1.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DISTPN" value="311-510ARCT-ND" x="36.625" y="-1.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-9.875" y="-14.375" size="1" layer="25" font="vector" rot="R180"/>
+<attribute name="NAME" x="-9.75" y="-14.5" size="1" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="-11" y="-16" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="C11" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="0.1uF" x="-8" y="8.25" smashed="yes" rot="R270">
@@ -2749,15 +2755,15 @@ design rules under a new name.</description>
 <attribute name="DISTPN" value="356" x="37.125" y="-21.75" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" value="10K" x="37.125" y="-21.75" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R4" library="quadparts_prebuilt" package="RESC2012X60_HS" value="100" x="6.125" y="15.125" smashed="yes" rot="R90">
-<attribute name="CREATOR" value="Swanson" x="6.125" y="15.125" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="6.125" y="15.125" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="311-100ARCT-ND" x="6.125" y="15.125" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="Yageo" x="6.125" y="15.125" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="RC0805JR-07100RL" x="6.125" y="15.125" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="6.75" y="11.25" size="1.27" layer="25" font="vector" rot="R90"/>
-<attribute name="REVIEWER" value="Swanson" x="6.125" y="15.125" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="6.75" y="13.75" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
+<element name="R4" library="quadparts_prebuilt" package="RESC2012X60_HS" value="100" x="6.125" y="14.625" smashed="yes" rot="R90">
+<attribute name="CREATOR" value="Swanson" x="6.125" y="14.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digikey" x="6.125" y="14.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="311-100ARCT-ND" x="6.125" y="14.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="Yageo" x="6.125" y="14.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="RC0805JR-07100RL" x="6.125" y="14.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="6.75" y="10.75" size="1.27" layer="25" font="vector" rot="R90"/>
+<attribute name="REVIEWER" value="Swanson" x="6.125" y="14.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="6.75" y="13.25" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="R5" library="quadparts_prebuilt" package="RESC2012X60_HS" value="100" x="11.25" y="15" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="11.25" y="15" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2769,15 +2775,15 @@ design rules under a new name.</description>
 <attribute name="REVIEWER" value="Swanson" x="11.25" y="15" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="11.875" y="13.5" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="R12" library="quadparts_prebuilt" package="RESC2012X60_HS" value="100" x="8.75" y="15" smashed="yes" rot="R90">
-<attribute name="CREATOR" value="Swanson" x="8.75" y="15" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="8.75" y="15" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="311-100ARCT-ND" x="8.75" y="15" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="Yageo" x="8.75" y="15" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="RC0805JR-07100RL" x="8.75" y="15" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="9.5" y="10.125" size="1.27" layer="25" font="vector" rot="R90"/>
-<attribute name="REVIEWER" value="Swanson" x="8.75" y="15" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="9.25" y="13.5" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
+<element name="R12" library="quadparts_prebuilt" package="RESC2012X60_HS" value="100" x="8.75" y="14.625" smashed="yes" rot="R90">
+<attribute name="CREATOR" value="Swanson" x="8.75" y="14.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digikey" x="8.75" y="14.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="311-100ARCT-ND" x="8.75" y="14.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="Yageo" x="8.75" y="14.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="RC0805JR-07100RL" x="8.75" y="14.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="9.5" y="9.75" size="1.27" layer="25" font="vector" rot="R90"/>
+<attribute name="REVIEWER" value="Swanson" x="8.75" y="14.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="9.25" y="13.125" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="E1" library="RemoteParts" package="BOURNS-PEC12R" value="ROTARY-ENCODER-W/BUTTON-ADAFRUIT377-BOURNS-PEC12R" x="24.5" y="-23.375">
 <attribute name="AUX1DIST" value="DIGIKEY" x="24.5" y="-23.375" size="1.778" layer="27" display="off"/>
@@ -2800,15 +2806,19 @@ design rules under a new name.</description>
 <attribute name="DIST" value="DIGIKEY" x="-24.5" y="-23.375" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="PEC12R-4020F-S0024-ND" x="-24.5" y="-23.375" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R13" library="quadparts_prebuilt" package="RESC2012X60_HS" value="9.09K" x="-143.375" y="-43">
-<attribute name="CREATOR" value="Swanson" x="-143.375" y="-43" size="1.778" layer="27" font="vector" display="off"/>
-<attribute name="DIST" value="DIGIKEY" x="-143.375" y="-43" size="1.778" layer="27" font="vector" display="off"/>
-<attribute name="DISTPN" value="YAG5383CT-ND" x="-143.375" y="-43" size="1.778" layer="27" font="vector" display="off"/>
+<element name="R13" library="quadparts_prebuilt" package="RESC2012X60_HS" value="9.09K" x="-18" y="8.875" smashed="yes" rot="R90">
+<attribute name="CREATOR" value="Swanson" x="-18" y="8.875" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-18" y="8.875" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="DISTPN" value="YAG5383CT-ND" x="-18" y="8.875" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="NAME" x="-17.25" y="10.625" size="1.27" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="-17.375" y="6.875" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="R14" library="quadparts_prebuilt" package="RESC2012X60_HS" value="33K" x="-143.375" y="-47.625">
-<attribute name="CREATOR" value="SWANSON" x="-143.375" y="-47.625" size="1.778" layer="27" font="vector" display="off"/>
-<attribute name="DIST" value="DIGIKEY" x="-143.375" y="-47.625" size="1.778" layer="27" font="vector" display="off"/>
-<attribute name="DISTPN" value="YAG3726CT-ND" x="-143.375" y="-47.625" size="1.778" layer="27" font="vector" display="off"/>
+<element name="R14" library="quadparts_prebuilt" package="RESC2012X60_HS" value="33K" x="-18" y="4.875" smashed="yes" rot="R90">
+<attribute name="CREATOR" value="SWANSON" x="-18" y="4.875" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-18" y="4.875" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="DISTPN" value="YAG3726CT-ND" x="-18" y="4.875" size="1.778" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="NAME" x="-17.375" y="0" size="1.27" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="-17.375" y="3.375" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 </elements>
 <signals>
@@ -2949,7 +2959,7 @@ design rules under a new name.</description>
 <contactref element="E2" pad="BUTB"/>
 <contactref element="E3" pad="BUTB"/>
 <contactref element="R14" pad="1"/>
-<wire x1="-41.505" y1="-21.545" x2="-144.33" y2="-47.625" width="0" layer="19" extent="1-1"/>
+<wire x1="-41.505" y1="-21.545" x2="-18" y2="3.92" width="0" layer="19" extent="1-1"/>
 <wire x1="-32.405" y1="-21.545" x2="-41.505" y2="-21.545" width="0" layer="19" extent="1-1"/>
 <wire x1="-22" y1="-16.375" x2="-32.405" y2="-21.545" width="0" layer="19" extent="1-1"/>
 <wire x1="-15" y1="-11.46" x2="-22" y2="-16.375" width="0" layer="19" extent="1-1"/>
@@ -2980,7 +2990,7 @@ design rules under a new name.</description>
 <wire x1="1.656" y1="7.425" x2="-5.656" y2="8.075" width="0" layer="19" extent="1-1"/>
 <wire x1="4" y1="3.855" x2="1.656" y2="7.425" width="0" layer="19" extent="1-1"/>
 <wire x1="-21.84" y1="18.125" x2="-14.54" y2="14" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.88" y1="24.6" x2="-21.84" y2="18.125" width="0" layer="19" extent="1-1"/>
+<wire x1="-16.13" y1="24.6" x2="-21.84" y2="18.125" width="0" layer="19" extent="1-1"/>
 <wire x1="-6.725" y1="21.5" x2="-8" y2="12.645" width="0" layer="19" extent="1-1"/>
 <wire x1="-32" y1="18.125" x2="-30.75" y2="8.855" width="0" layer="19" extent="1-1"/>
 <wire x1="-29.5" y1="24" x2="-32" y2="18.125" width="0" layer="19" extent="1-1"/>
@@ -3313,7 +3323,7 @@ design rules under a new name.</description>
 <contactref element="V34" pad="P1"/>
 <contactref element="V36" pad="P1"/>
 <contactref element="R13" pad="2"/>
-<wire x1="-25.9499" y1="10.2" x2="-142.42" y2="-43" width="0" layer="19" extent="1-1"/>
+<wire x1="-25.9499" y1="10.2" x2="-18" y2="9.83" width="0" layer="19" extent="1-1"/>
 <wire x1="-26.25" y1="11.25" x2="-25.9499" y2="10.2" width="0" layer="19" extent="1-1"/>
 <wire x1="-26.25" y1="13.25" x2="-26.25" y2="11.25" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.25" y1="13.25" x2="-26.25" y2="13.25" width="0" layer="19" extent="1-1"/>
@@ -3390,7 +3400,7 @@ design rules under a new name.</description>
 <signal name="N$14">
 <contactref element="D4" pad="2"/>
 <contactref element="R11" pad="1"/>
-<wire x1="-26.5" y1="28.545" x2="-17.97" y2="24.6" width="0" layer="19" extent="1-1"/>
+<wire x1="-26.5" y1="28.545" x2="-18.22" y2="24.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PROG_SEL">
 <contactref element="U2" pad="4"/>
@@ -3504,7 +3514,7 @@ design rules under a new name.</description>
 <signal name="LCD-R">
 <contactref element="U1" pad="40"/>
 <contactref element="R4" pad="1"/>
-<wire x1="22.42" y1="5.439" x2="6.125" y2="14.17" width="0" layer="19" extent="1-1"/>
+<wire x1="22.42" y1="5.439" x2="6.125" y2="13.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LCD-G">
 <contactref element="U1" pad="41"/>
@@ -3514,7 +3524,7 @@ design rules under a new name.</description>
 <signal name="LCD-B">
 <contactref element="U1" pad="49"/>
 <contactref element="R12" pad="1"/>
-<wire x1="27.551" y1="6.57" x2="8.75" y2="14.045" width="0" layer="19" extent="1-1"/>
+<wire x1="27.551" y1="6.57" x2="8.75" y2="13.67" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LCD-CONTRAST">
 <contactref element="L1" pad="V0"/>
@@ -3535,7 +3545,7 @@ design rules under a new name.</description>
 <signal name="N$5">
 <contactref element="L1" pad="A-RED"/>
 <contactref element="R4" pad="2"/>
-<wire x1="6.1" y1="18.125" x2="6.125" y2="16.08" width="0" layer="19" extent="1-1"/>
+<wire x1="6.1" y1="18.125" x2="6.125" y2="15.58" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$17">
 <contactref element="L1" pad="A-GREEN"/>
@@ -3545,7 +3555,7 @@ design rules under a new name.</description>
 <signal name="N$22">
 <contactref element="L1" pad="A-BLUE"/>
 <contactref element="R12" pad="2"/>
-<wire x1="8.64" y1="18.125" x2="8.75" y2="15.955" width="0" layer="19" extent="1-1"/>
+<wire x1="8.64" y1="18.125" x2="8.75" y2="15.58" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$16">
 <contactref element="U1" pad="19"/>
@@ -3601,8 +3611,8 @@ design rules under a new name.</description>
 <contactref element="R13" pad="1"/>
 <contactref element="R14" pad="2"/>
 <contactref element="U1" pad="3"/>
-<wire x1="-144.33" y1="-43" x2="-142.42" y2="-47.625" width="0" layer="19" extent="1-1"/>
-<wire x1="25.42" y1="15.201" x2="-142.42" y2="-47.625" width="0" layer="19" extent="1-1"/>
+<wire x1="-18" y1="7.92" x2="-18" y2="5.83" width="0" layer="19" extent="1-1"/>
+<wire x1="25.42" y1="15.201" x2="-18" y2="5.83" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
