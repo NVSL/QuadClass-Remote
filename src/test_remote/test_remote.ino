@@ -91,14 +91,13 @@ void setup() {
   const int SERIAL1_BAUD = 9600;     // Baud rate for serial1 port
 
   Serial.begin(SERIAL_BAUD);           // Start up serial
-  Serial1.begin(SERIAL_BAUD);  
-  rfBegin(11);  // Initialize ATmega128RFA1 radio on channel 11 (can be 11-26)
-
-
+ // Serial1.begin(SERIAL_BAUD);  
+  
+  Serial.println("hello");
   delay(100);
   for(char i = 0; i < 8; i++) {
     scale[7-i] = B11111111;
-    lcd.createChar(i+1, scale);
+    //lcd.createChar(i+1, scale);
     delay(10);
   }
  
