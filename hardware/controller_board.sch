@@ -1094,6 +1094,25 @@
 <rectangle x1="-0.9" y1="-3.5" x2="3.4" y2="9.2" layer="102"/>
 <rectangle x1="-1.9" y1="-3.6" x2="4.4" y2="-1.4" layer="102"/>
 </package>
+<package name="M2.5-MOUNTING-HOLE">
+<hole x="0" y="0" drill="2.1"/>
+<circle x="0" y="0" radius="2.65" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="2.65" width="0.127" layer="40"/>
+<circle x="0" y="0" radius="2.05" width="1" layer="1"/>
+<circle x="0" y="0" radius="2.05" width="1" layer="16"/>
+<circle x="0" y="0" radius="2.05" width="1" layer="15"/>
+<circle x="0" y="0" radius="2.05" width="1" layer="2"/>
+<pad name="P$1" x="0" y="2" drill="0.2"/>
+<pad name="P$2" x="0" y="-2" drill="0.2"/>
+<pad name="P$3" x="2" y="0" drill="0.2"/>
+<pad name="P$4" x="-2" y="0" drill="0.2"/>
+<pad name="P$6" x="-1.375" y="1.375" drill="0.2" rot="R45"/>
+<pad name="P$7" x="1.453425" y="-1.453425" drill="0.2" rot="R45"/>
+<pad name="P$8" x="1.453425" y="1.375" drill="0.2" rot="R45"/>
+<pad name="P$9" x="-1.375" y="-1.453425" drill="0.2" rot="R45"/>
+<circle x="0" y="0" radius="2.05" width="1" layer="29"/>
+<circle x="0" y="0" radius="2.05" width="1" layer="30"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" locally_modified="yes" type="model">
@@ -1373,6 +1392,12 @@
 <pin name="1" x="10.16" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="10.16" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
+<symbol name="MOUNTING-HOLE">
+<circle x="0" y="0" radius="5.08" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="3.81" y2="0" width="0.508" layer="94"/>
+<wire x1="0" y1="3.81" x2="0" y2="-3.81" width="0.508" layer="94"/>
+<pin name="P$1" x="0" y="0" length="point"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRSKY-GIMBAL" prefix="J">
@@ -1398,10 +1423,10 @@
 </device>
 <device name="-2X-SERVO" package="2X-GIMBAL-SERVO">
 <connects>
-<connect gate="G$1" pin="GND-H" pad="5"/>
-<connect gate="G$1" pin="GND-V" pad="2"/>
-<connect gate="G$1" pin="S-H" pad="6"/>
-<connect gate="G$1" pin="S-V" pad="3"/>
+<connect gate="G$1" pin="GND-H" pad="3"/>
+<connect gate="G$1" pin="GND-V" pad="6"/>
+<connect gate="G$1" pin="S-H" pad="2"/>
+<connect gate="G$1" pin="S-V" pad="5"/>
 <connect gate="G$1" pin="VCC-H" pad="4"/>
 <connect gate="G$1" pin="VCC-V" pad="1"/>
 </connects>
@@ -1947,6 +1972,21 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="3M9447-ND"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MOUNTING-HOLE">
+<gates>
+<gate name="G$1" symbol="MOUNTING-HOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-M2.5-GROUNDED" package="M2.5-MOUNTING-HOLE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1 P$2 P$3 P$4 P$6 P$7 P$8 P$9"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -4065,11 +4105,14 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="J11" library="RemoteParts" deviceset="USB" device="-MICROA-AMPHENOL-10118192-0001LF"/>
 <part name="V3" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V5" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
+<part name="U$1" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-M2.5-GROUNDED"/>
+<part name="U$3" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-M2.5-GROUNDED"/>
+<part name="U$6" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-M2.5-GROUNDED"/>
+<part name="U$7" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-M2.5-GROUNDED"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="5.08" y="104.14" size="1.778" layer="97">Power LED</text>
 <text x="204.47" y="143.51" size="1.778" layer="97">Ireg = 1000V/Rprog
 2.2KOhm -&gt; 450mA</text>
 <text x="144.78" y="254" size="1.778" layer="97">The 3.3V regulator works down to VDD of about 3.4V.</text>
@@ -4231,6 +4274,10 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="J11" gate="A" x="97.79" y="245.11" rot="MR0"/>
 <instance part="V3" gate="G$1" x="144.78" y="182.88" rot="R90"/>
 <instance part="V5" gate="G$1" x="147.32" y="182.88" rot="R90"/>
+<instance part="U$1" gate="G$1" x="344.17" y="44.45"/>
+<instance part="U$3" gate="G$1" x="355.6" y="44.45"/>
+<instance part="U$6" gate="G$1" x="367.03" y="44.45"/>
+<instance part="U$7" gate="G$1" x="378.46" y="44.45"/>
 </instances>
 <busses>
 </busses>

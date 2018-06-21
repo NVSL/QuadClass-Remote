@@ -3,10 +3,10 @@
 <eagle version="9.0.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.125" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1774,6 +1774,25 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 <wire x1="3.75" y1="-3.75" x2="3.75" y2="0" width="0.127" layer="21"/>
 <text x="0" y="2.75" size="1.27" layer="25" font="vector" align="top-center">&gt;NAME</text>
 </package>
+<package name="M2.5-MOUNTING-HOLE">
+<hole x="0" y="0" drill="2.1"/>
+<circle x="0" y="0" radius="2.65" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="2.65" width="0.127" layer="40"/>
+<circle x="0" y="0" radius="2.05" width="1" layer="1"/>
+<circle x="0" y="0" radius="2.05" width="1" layer="16"/>
+<circle x="0" y="0" radius="2.05" width="1" layer="15"/>
+<circle x="0" y="0" radius="2.05" width="1" layer="2"/>
+<pad name="P$1" x="0" y="2" drill="0.2"/>
+<pad name="P$2" x="0" y="-2" drill="0.2"/>
+<pad name="P$3" x="2" y="0" drill="0.2"/>
+<pad name="P$4" x="-2" y="0" drill="0.2"/>
+<pad name="P$6" x="-1.375" y="1.375" drill="0.2" rot="R45"/>
+<pad name="P$7" x="1.453425" y="-1.453425" drill="0.2" rot="R45"/>
+<pad name="P$8" x="1.453425" y="1.375" drill="0.2" rot="R45"/>
+<pad name="P$9" x="-1.375" y="-1.453425" drill="0.2" rot="R45"/>
+<circle x="0" y="0" radius="2.05" width="1" layer="29"/>
+<circle x="0" y="0" radius="2.05" width="1" layer="30"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" locally_modified="yes" type="model">
@@ -2877,6 +2896,10 @@ design rules under a new name.</description>
 <attribute name="DIST" value="NA" x="-22.25" y="6.5" size="1" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="-22.25" y="6.5" size="1" layer="27" display="off"/>
 </element>
+<element name="U$1" library="RemoteParts" package="M2.5-MOUNTING-HOLE" value="MOUNTING-HOLE-M2.5-GROUNDED" x="-37.5" y="-12.875"/>
+<element name="U$3" library="RemoteParts" package="M2.5-MOUNTING-HOLE" value="MOUNTING-HOLE-M2.5-GROUNDED" x="-37.5" y="18.125"/>
+<element name="U$6" library="RemoteParts" package="M2.5-MOUNTING-HOLE" value="MOUNTING-HOLE-M2.5-GROUNDED" x="37.5" y="18.125"/>
+<element name="U$7" library="RemoteParts" package="M2.5-MOUNTING-HOLE" value="MOUNTING-HOLE-M2.5-GROUNDED" x="37.5" y="-12.875"/>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -3000,10 +3023,10 @@ design rules under a new name.</description>
 <vertex x="43" y="24"/>
 <vertex x="8" y="24"/>
 </polygon>
-<contactref element="J8" pad="2"/>
-<contactref element="J8" pad="5"/>
-<contactref element="J9" pad="2"/>
-<contactref element="J9" pad="5"/>
+<contactref element="J8" pad="6"/>
+<contactref element="J8" pad="3"/>
+<contactref element="J9" pad="6"/>
+<contactref element="J9" pad="3"/>
 <contactref element="J5" pad="2"/>
 <contactref element="J5" pad="1"/>
 <contactref element="P6" pad="1"/>
@@ -3030,9 +3053,9 @@ design rules under a new name.</description>
 <wire x1="-36.13" y1="-26.9" x2="-41.505" y2="-21.545" width="0" layer="19" extent="1-1"/>
 <wire x1="-32.405" y1="-21.545" x2="-36.13" y2="-26.9" width="0" layer="19" extent="1-1"/>
 <wire x1="-22" y1="-16.375" x2="-32.405" y2="-21.545" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.25" y1="1.46" x2="-22" y2="-16.375" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.25" y1="-6.16" x2="-15.25" y2="1.46" width="0" layer="19" extent="1-1"/>
-<wire x1="-22.67" y1="1.875" x2="-15.25" y2="-6.16" width="0" layer="19" extent="1-1"/>
+<wire x1="-15.25" y1="-8.7" x2="-22" y2="-16.375" width="0" layer="19" extent="1-1"/>
+<wire x1="-15.25" y1="-1.08" x2="-15.25" y2="-8.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-22.67" y1="1.875" x2="-15.25" y2="-1.08" width="0" layer="19" extent="1-1"/>
 <wire x1="-22.25" y1="4.5" x2="-22.67" y2="1.875" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.25" y1="4.5" x2="-22.25" y2="4.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-24.25" y1="6.5" x2="-24.25" y2="4.5" width="0" layer="19" extent="1-1"/>
@@ -3072,8 +3095,8 @@ design rules under a new name.</description>
 <wire x1="5.156" y1="4.8" x2="-2.156" y2="5.45" width="0" layer="19" extent="1-1"/>
 <wire x1="7.5" y1="1.23" x2="5.156" y2="4.8" width="0" layer="19" extent="1-1"/>
 <wire x1="5.975" y1="21.5" x2="-8.25" y2="2.875" width="0" layer="19" extent="1-1"/>
-<wire x1="15.25" y1="-6.46" x2="7.5" y2="1.23" width="0" layer="19" extent="1-1"/>
-<wire x1="15.25" y1="1.16" x2="15.25" y2="-6.46" width="0" layer="19" extent="1-1"/>
+<wire x1="15.25" y1="3.7" x2="7.5" y2="1.23" width="0" layer="19" extent="1-1"/>
+<wire x1="15.25" y1="-3.92" x2="15.25" y2="3.7" width="0" layer="19" extent="1-1"/>
 <wire x1="13.105" y1="9.5" x2="5.156" y2="4.8" width="0" layer="19" extent="1-1"/>
 <wire x1="13.105" y1="12" x2="13.105" y2="9.5" width="0" layer="19" extent="1-1"/>
 <wire x1="17.789" y1="12.57" x2="13.105" y2="12" width="0" layer="19" extent="1-1"/>
@@ -3111,7 +3134,7 @@ design rules under a new name.</description>
 <wire x1="39" y1="1.5" x2="34.25" y2="3.355" width="0" layer="19" extent="1-1"/>
 <wire x1="39" y1="-4.5" x2="39" y2="1.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-13.86" y1="27.445" x2="5.975" y2="21.5" width="0" layer="19" extent="1-1"/>
-<wire x1="12.15" y1="-20.63" x2="15.25" y2="1.16" width="0" layer="19" extent="1-1"/>
+<wire x1="12.15" y1="-20.63" x2="15.25" y2="-3.92" width="0" layer="19" extent="1-1"/>
 <wire x1="9.65" y1="-20.63" x2="12.15" y2="-20.63" width="0" layer="19" extent="1-1"/>
 <wire x1="14.65" y1="-22.72" x2="12.15" y2="-20.63" width="0" layer="19" extent="1-1"/>
 <wire x1="16.675" y1="-28" x2="14.65" y2="-22.72" width="0" layer="19" extent="1-1"/>
@@ -3138,29 +3161,29 @@ design rules under a new name.</description>
 <signal name="PITCH">
 <contactref element="J1" pad="2"/>
 <contactref element="U1" pad="2"/>
-<contactref element="J8" pad="3"/>
+<contactref element="J8" pad="5"/>
 <wire x1="39" y1="-6.5" x2="25.92" y2="15.201" width="0" layer="19" extent="1-1"/>
-<wire x1="15.25" y1="-3.92" x2="39" y2="-6.5" width="0" layer="19" extent="1-1"/>
+<wire x1="15.25" y1="1.16" x2="39" y2="-6.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ROLL">
 <contactref element="J1" pad="5"/>
 <contactref element="U1" pad="1"/>
-<contactref element="J8" pad="6"/>
+<contactref element="J8" pad="2"/>
 <wire x1="26.42" y1="15.201" x2="39" y2="-0.5" width="0" layer="19" extent="1-1"/>
-<wire x1="15.25" y1="3.7" x2="39" y2="-0.5" width="0" layer="19" extent="1-1"/>
+<wire x1="15.25" y1="-6.46" x2="39" y2="-0.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="THROTTLE">
 <contactref element="J2" pad="2"/>
 <contactref element="U1" pad="64"/>
-<contactref element="J9" pad="3"/>
-<wire x1="-38.5" y1="11.5" x2="-15.25" y2="-1.08" width="0" layer="19" extent="1-1"/>
+<contactref element="J9" pad="5"/>
+<wire x1="-38.5" y1="11.5" x2="-15.25" y2="-6.16" width="0" layer="19" extent="1-1"/>
 <wire x1="27.551" y1="14.07" x2="-38.5" y2="11.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="YAW">
 <contactref element="J2" pad="5"/>
 <contactref element="U1" pad="63"/>
-<contactref element="J9" pad="6"/>
-<wire x1="-38.5" y1="5.5" x2="-15.25" y2="-8.7" width="0" layer="19" extent="1-1"/>
+<contactref element="J9" pad="2"/>
+<wire x1="-38.5" y1="5.5" x2="-15.25" y2="1.46" width="0" layer="19" extent="1-1"/>
 <wire x1="27.551" y1="13.57" x2="-38.5" y2="5.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="3V3" class="1">
