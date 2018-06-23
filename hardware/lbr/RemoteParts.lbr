@@ -1348,10 +1348,10 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pad name="DB5" x="-4.06" y="15.5" drill="1.02"/>
 <pad name="DB6" x="-1.52" y="15.5" drill="1.02"/>
 <pad name="DB7" x="1.02" y="15.5" drill="1.02"/>
-<pad name="K" x="3.56" y="15.5" drill="1.02"/>
-<pad name="A-RED" x="6.1" y="15.5" drill="1.02"/>
-<pad name="A-BLUE" x="8.64" y="15.5" drill="1.02"/>
-<pad name="A-GREEN" x="11.18" y="15.5" drill="1.02"/>
+<pad name="K" x="6.06" y="15.5" drill="1.02"/>
+<pad name="RED" x="6.1" y="-15.5" drill="1.02"/>
+<pad name="BLUE" x="8.64" y="-15.5" drill="1.02"/>
+<pad name="GREEN" x="11.18" y="-15.5" drill="1.02"/>
 <text x="-33.288" y="18.047" size="1.27" layer="21" font="vector">&gt;NAME</text>
 <wire x1="-33.7" y1="14.25" x2="12.87" y2="14.25" width="0.127" layer="39"/>
 <wire x1="12.87" y1="14.25" x2="12.87" y2="16.79" width="0.127" layer="39"/>
@@ -1361,6 +1361,28 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <circle x="-37.5" y="15.5" radius="2.5" width="0.127" layer="39"/>
 <circle x="-37.5" y="-15.5" radius="2.5" width="0.127" layer="39"/>
 <circle x="37.5" y="-15.5" radius="2.5" width="0.127" layer="39"/>
+<pad name="VSS1" x="-32" y="-15.5" drill="1.02" shape="square"/>
+<pad name="VDD1" x="-29.46" y="-15.5" drill="1.02"/>
+<pad name="V1" x="-26.92" y="-15.5" drill="1.02"/>
+<pad name="RS1" x="-24.38" y="-15.5" drill="1.02"/>
+<pad name="RW1" x="-21.84" y="-15.5" drill="1.02"/>
+<pad name="E1" x="-19.3" y="-15.5" drill="1.02"/>
+<pad name="DB0-1" x="-16.76" y="-15.5" drill="1.02"/>
+<pad name="DB1-1" x="-14.22" y="-15.5" drill="1.02"/>
+<pad name="DB2-1" x="-11.68" y="-15.5" drill="1.02"/>
+<pad name="DB3-1" x="-9.14" y="-15.5" drill="1.02"/>
+<pad name="DB4-1" x="-6.6" y="-15.5" drill="1.02"/>
+<pad name="DB5-1" x="-4.06" y="-15.5" drill="1.02"/>
+<pad name="DB6-1" x="-1.52" y="-15.5" drill="1.02"/>
+<pad name="DB7-1" x="1.02" y="-15.5" drill="1.02"/>
+<pad name="K1" x="3.56" y="-15.5" drill="1.02"/>
+<wire x1="-33.7" y1="-16.75" x2="12.87" y2="-16.75" width="0.127" layer="39"/>
+<wire x1="12.87" y1="-16.75" x2="12.87" y2="-14.21" width="0.127" layer="39"/>
+<wire x1="12.87" y1="-14.21" x2="-33.7" y2="-14.21" width="0.127" layer="39"/>
+<wire x1="-33.7" y1="-14.21" x2="-33.7" y2="-16.75" width="0.127" layer="39"/>
+<pad name="A" x="3.56" y="15.5" drill="1.02"/>
+<pad name="DNC1" x="8.6" y="15.5" drill="1.02"/>
+<pad name="DNC2" x="11.14" y="15.5" drill="1.02"/>
 </package>
 <package name="JS102011JCQN">
 <smd name="3" x="2.5" y="-1.2" dx="1" dy="1.6" layer="1"/>
@@ -1699,14 +1721,14 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <circle x="0" y="0" radius="2.05" width="1" layer="16"/>
 <circle x="0" y="0" radius="2.05" width="1" layer="15"/>
 <circle x="0" y="0" radius="2.05" width="1" layer="2"/>
-<pad name="P$1" x="0" y="2" drill="0.2"/>
-<pad name="P$2" x="0" y="-2" drill="0.2"/>
-<pad name="P$3" x="2" y="0" drill="0.2"/>
-<pad name="P$4" x="-2" y="0" drill="0.2"/>
-<pad name="P$6" x="-1.375" y="1.375" drill="0.2" rot="R45"/>
-<pad name="P$7" x="1.453425" y="-1.453425" drill="0.2" rot="R45"/>
-<pad name="P$8" x="1.453425" y="1.375" drill="0.2" rot="R45"/>
-<pad name="P$9" x="-1.375" y="-1.453425" drill="0.2" rot="R45"/>
+<pad name="P$1" x="0" y="2" drill="0.2" thermals="no"/>
+<pad name="P$2" x="0" y="-2" drill="0.2" thermals="no"/>
+<pad name="P$3" x="2" y="0" drill="0.2" thermals="no"/>
+<pad name="P$4" x="-2" y="0" drill="0.2" thermals="no"/>
+<pad name="P$6" x="-1.375" y="1.375" drill="0.2" rot="R45" thermals="no"/>
+<pad name="P$7" x="1.453425" y="-1.453425" drill="0.2" rot="R45" thermals="no"/>
+<pad name="P$8" x="1.453425" y="1.375" drill="0.2" rot="R45" thermals="no"/>
+<pad name="P$9" x="-1.375" y="-1.453425" drill="0.2" rot="R45" thermals="no"/>
 <circle x="0" y="0" radius="2.05" width="1" layer="29"/>
 <circle x="0" y="0" radius="2.05" width="1" layer="30"/>
 </package>
@@ -2045,16 +2067,17 @@ Created: 10/25/2014</description>
 <pin name="DB5" x="-10.16" y="5.08" length="middle"/>
 <pin name="DB6" x="-10.16" y="2.54" length="middle"/>
 <pin name="DB7" x="-10.16" y="0" length="middle"/>
-<pin name="K/LED+" x="-10.16" y="-2.54" length="middle"/>
-<pin name="A-RED/LED-" x="-10.16" y="-5.08" length="middle"/>
-<pin name="A-GREEN" x="-10.16" y="-7.62" length="middle"/>
-<pin name="A-BLUE" x="-10.16" y="-10.16" length="middle"/>
+<pin name="K" x="-10.16" y="-2.54" length="middle"/>
+<pin name="RED" x="-10.16" y="-7.62" length="middle"/>
+<pin name="GREEN" x="-10.16" y="-10.16" length="middle"/>
+<pin name="BLUE" x="-10.16" y="-12.7" length="middle"/>
 <wire x1="-5.08" y1="35.56" x2="12.7" y2="35.56" width="0.254" layer="94"/>
-<wire x1="12.7" y1="35.56" x2="12.7" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-12.7" x2="-5.08" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="-12.7" x2="-5.08" y2="35.56" width="0.254" layer="94"/>
-<text x="-2.54" y="-15.24" size="1.778" layer="95">&gt;NAME</text>
+<wire x1="12.7" y1="35.56" x2="12.7" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-15.24" x2="-5.08" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-15.24" x2="-5.08" y2="35.56" width="0.254" layer="94"/>
+<text x="-2.54" y="-17.78" size="1.778" layer="95">&gt;NAME</text>
 <pin name="V0" x="-10.16" y="27.94" length="middle"/>
+<pin name="A" x="-10.16" y="-5.08" length="middle"/>
 </symbol>
 <symbol name="ROTARY-ENCODER-W/BUTTON-ADAFRUIT377">
 <wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
@@ -2667,24 +2690,25 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <devices>
 <device name="-RGB" package="SPARKFUN_LCD_33_PARALLEL">
 <connects>
-<connect gate="G$1" pin="A-BLUE" pad="A-BLUE"/>
-<connect gate="G$1" pin="A-GREEN" pad="A-GREEN"/>
-<connect gate="G$1" pin="A-RED/LED-" pad="A-RED"/>
-<connect gate="G$1" pin="DB0" pad="DB0"/>
-<connect gate="G$1" pin="DB1" pad="DB1"/>
-<connect gate="G$1" pin="DB2" pad="DB2"/>
-<connect gate="G$1" pin="DB3" pad="DB3"/>
-<connect gate="G$1" pin="DB4" pad="DB4"/>
-<connect gate="G$1" pin="DB5" pad="DB5"/>
-<connect gate="G$1" pin="DB6" pad="DB6"/>
-<connect gate="G$1" pin="DB7" pad="DB7"/>
-<connect gate="G$1" pin="E" pad="E"/>
-<connect gate="G$1" pin="K/LED+" pad="K"/>
-<connect gate="G$1" pin="RS" pad="RS"/>
-<connect gate="G$1" pin="RW" pad="RW"/>
-<connect gate="G$1" pin="V0" pad="V0"/>
-<connect gate="G$1" pin="VDD" pad="VDD"/>
-<connect gate="G$1" pin="VSS" pad="VSS"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="BLUE" pad="BLUE"/>
+<connect gate="G$1" pin="DB0" pad="DB0 DB0-1" route="any"/>
+<connect gate="G$1" pin="DB1" pad="DB1 DB1-1" route="any"/>
+<connect gate="G$1" pin="DB2" pad="DB2 DB2-1" route="any"/>
+<connect gate="G$1" pin="DB3" pad="DB3 DB3-1" route="any"/>
+<connect gate="G$1" pin="DB4" pad="DB4 DB4-1" route="any"/>
+<connect gate="G$1" pin="DB5" pad="DB5 DB5-1" route="any"/>
+<connect gate="G$1" pin="DB6" pad="DB6 DB6-1" route="any"/>
+<connect gate="G$1" pin="DB7" pad="DB7 DB7-1" route="any"/>
+<connect gate="G$1" pin="E" pad="E E1" route="any"/>
+<connect gate="G$1" pin="GREEN" pad="GREEN"/>
+<connect gate="G$1" pin="K" pad="K K1"/>
+<connect gate="G$1" pin="RED" pad="RED"/>
+<connect gate="G$1" pin="RS" pad="RS RS1"/>
+<connect gate="G$1" pin="RW" pad="RW RW1" route="any"/>
+<connect gate="G$1" pin="V0" pad="V0 V1" route="any"/>
+<connect gate="G$1" pin="VDD" pad="VDD VDD1"/>
+<connect gate="G$1" pin="VSS" pad="VSS VSS1"/>
 </connects>
 <technologies>
 <technology name="">
@@ -2734,7 +2758,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="AUX1DISTPN" value="1722-1241-ND"/>
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
-<attribute name="DISTPN" value="	PEC12R-4030F-S0024-ND"/>
+<attribute name="DISTPN" value=" PEC12R-4030F-S0024-ND"/>
 </technology>
 </technologies>
 </device>
