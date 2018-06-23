@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -211,10 +211,10 @@
 <wire x1="22.5" y1="-2.5" x2="-4.5" y2="-2.5" width="0.127" layer="39"/>
 <wire x1="-4.5" y1="-2.5" x2="-4.5" y2="3.5" width="0.127" layer="39"/>
 <pad name="1" x="-2" y="0" drill="0.9" diameter="1.6" shape="square"/>
-<pad name="2" x="0" y="0" drill="0.9" diameter="1.6"/>
+<pad name="V" x="0" y="0" drill="0.9" diameter="1.6"/>
 <pad name="3" x="2" y="0" drill="0.9" diameter="1.6"/>
 <pad name="4" x="4" y="0" drill="0.9" diameter="1.6"/>
-<pad name="5" x="6" y="0" drill="0.9" diameter="1.6"/>
+<pad name="H" x="6" y="0" drill="0.9" diameter="1.6"/>
 <pad name="6" x="8" y="0" drill="0.9" diameter="1.6"/>
 <pad name="7" x="10" y="0" drill="0.9" diameter="1.6"/>
 <pad name="8" x="12" y="0" drill="0.9" diameter="1.6"/>
@@ -223,19 +223,8 @@
 <pad name="11" x="18" y="0" drill="0.9" diameter="1.6"/>
 <pad name="12" x="20" y="0" drill="0.9" diameter="1.6"/>
 <text x="8.5" y="4.4325" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
-<text x="-2" y="-3" size="1.27" layer="21" font="vector" align="center">R</text>
-<text x="0" y="-3" size="1.27" layer="21" font="vector" align="center">O</text>
-<text x="2" y="-3" size="1.27" layer="21" font="vector" align="center">B</text>
-<text x="4" y="-3" size="1.27" layer="21" font="vector" align="center">R</text>
-<text x="6" y="-3" size="1.27" layer="21" font="vector" align="center">O</text>
-<text x="8" y="-3" size="1.27" layer="21" font="vector" align="center">B</text>
-<text x="10" y="-3" size="1.27" layer="21" font="vector" align="center">R</text>
-<text x="16" y="-3" size="1.27" layer="21" font="vector" align="center">R</text>
-<text x="12" y="-3" size="1.27" layer="21" font="vector" align="center">O</text>
-<text x="18" y="-3" size="1.27" layer="21" font="vector" align="center">O</text>
-<text x="8" y="-3" size="1.27" layer="21" font="vector" align="center">B</text>
-<text x="14" y="-3" size="1.27" layer="21" font="vector" align="center">B</text>
-<text x="20" y="-3" size="1.27" layer="21" font="vector" align="center">B</text>
+<text x="0" y="-3" size="1.27" layer="21" font="vector" align="center">V</text>
+<text x="6" y="-3" size="1.27" layer="21" font="vector" align="center">H</text>
 <text x="0" y="-5" size="1.27" layer="21" font="vector" align="center">&gt;CH1</text>
 <text x="6" y="-5" size="1.27" layer="21" font="vector" align="center">&gt;CH2</text>
 </package>
@@ -1494,10 +1483,10 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 <pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="H" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="5" x="10.16" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="V" x="10.16" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="6" x="12.7" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <text x="-1.3462" y="1.8288" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
 <text x="6.35" y="1.905" size="1.27" layer="27" font="vector">&gt;VALUE</text>
@@ -1506,8 +1495,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="5.08" y1="0" x2="5.08" y2="11.43" width="0.127" layer="51"/>
 <wire x1="7.62" y1="0" x2="7.62" y2="11.43" width="0.127" layer="51"/>
 <wire x1="10.16" y1="0" x2="10.16" y2="11.43" width="0.127" layer="51"/>
-<text x="2.54" y="-2.54" size="1.27" layer="51" font="vector" align="center">G</text>
-<text x="10.16" y="-2.54" size="1.27" layer="51" font="vector" align="center">G</text>
+<text x="2.54" y="-2.54" size="1.27" layer="51" font="vector" align="center">H</text>
+<text x="10.16" y="-2.54" size="1.27" layer="51" font="vector" align="center">V</text>
 <text x="0" y="-2.54" size="1.27" layer="51" font="vector" align="center">+</text>
 <text x="7.62" y="-2.54" size="1.27" layer="51" font="vector" align="center">+</text>
 <text x="5.08" y="-2.54" size="1.27" layer="51" font="vector" align="center">-</text>
@@ -1744,20 +1733,15 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </packages3d>
 <symbols>
 <symbol name="FRSKY-GIMBAL">
-<wire x1="12.7" y1="13.97" x2="0" y2="13.97" width="0.254" layer="94"/>
-<wire x1="0" y1="13.97" x2="0" y2="-1.27" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-1.27" x2="12.7" y2="13.97" width="0.254" layer="94"/>
-<wire x1="0" y1="6.35" x2="12.7" y2="6.35" width="0.254" layer="97"/>
-<wire x1="0" y1="-1.27" x2="12.7" y2="-1.27" width="0.254" layer="94"/>
-<pin name="GND-H" x="17.78" y="5.08" length="middle" rot="R180"/>
-<pin name="GND-V" x="17.78" y="12.7" length="middle" rot="R180"/>
-<pin name="S-H" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="S-V" x="17.78" y="10.16" length="middle" rot="R180"/>
-<pin name="VCC-H" x="17.78" y="0" length="middle" rot="R180"/>
-<pin name="VCC-V" x="17.78" y="7.62" length="middle" rot="R180"/>
-<text x="2.54" y="10.16" size="1.27" layer="94" font="vector" rot="R90" align="center">VERT</text>
-<text x="2.54" y="2.54" size="1.27" layer="94" font="vector" rot="R90" align="center">HORIZ</text>
-<text x="2.54" y="-3.81" size="1.27" layer="95">&gt;NAME</text>
+<wire x1="6.35" y1="12.7" x2="0" y2="12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="12.7" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="6.35" y1="0" x2="6.35" y2="12.7" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="6.35" y2="0" width="0.254" layer="94"/>
+<pin name="-" x="11.43" y="2.54" length="middle" rot="R180"/>
+<pin name="H" x="11.43" y="5.08" length="middle" rot="R180"/>
+<pin name="V" x="11.43" y="7.62" length="middle" rot="R180"/>
+<pin name="+" x="11.43" y="10.16" length="middle" rot="R180"/>
+<text x="0" y="-1.905" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="GIMBAL_3PIN">
 <description>This is the surface mount connector for the 9XR Replacement Gimbal. 
@@ -2118,12 +2102,10 @@ Created: 10/25/2014</description>
 <devices>
 <device name="-FRYSKY" package="JST-13-PTH">
 <connects>
-<connect gate="G$1" pin="GND-H" pad="6"/>
-<connect gate="G$1" pin="GND-V" pad="3"/>
-<connect gate="G$1" pin="S-H" pad="5"/>
-<connect gate="G$1" pin="S-V" pad="2"/>
-<connect gate="G$1" pin="VCC-H" pad="4"/>
-<connect gate="G$1" pin="VCC-V" pad="1"/>
+<connect gate="G$1" pin="+" pad="1 4"/>
+<connect gate="G$1" pin="-" pad="3 6"/>
+<connect gate="G$1" pin="H" pad="H"/>
+<connect gate="G$1" pin="V" pad="V"/>
 </connects>
 <technologies>
 <technology name="">
@@ -2134,12 +2116,10 @@ Created: 10/25/2014</description>
 </device>
 <device name="-2X-SERVO" package="2X-GIMBAL-SERVO">
 <connects>
-<connect gate="G$1" pin="GND-H" pad="3"/>
-<connect gate="G$1" pin="GND-V" pad="6"/>
-<connect gate="G$1" pin="S-H" pad="2"/>
-<connect gate="G$1" pin="S-V" pad="5"/>
-<connect gate="G$1" pin="VCC-H" pad="4"/>
-<connect gate="G$1" pin="VCC-V" pad="1"/>
+<connect gate="G$1" pin="+" pad="1 4"/>
+<connect gate="G$1" pin="-" pad="3 6"/>
+<connect gate="G$1" pin="H" pad="H"/>
+<connect gate="G$1" pin="V" pad="V"/>
 </connects>
 <technologies>
 <technology name="">
