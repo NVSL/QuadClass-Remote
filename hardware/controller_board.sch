@@ -1184,6 +1184,29 @@
 </polygon>
 <circle x="0" y="0" radius="1.74625" width="0.2032" layer="21"/>
 </package>
+<package name="SMT-JUMPER_3_1-NC_PASTE_NO-SILK">
+<text x="0" y="1.143" size="1" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-0.4064" y1="-1.1176" x2="1.651" y2="1.1176" layer="31"/>
+<smd name="1" x="-0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+</package>
+<package name="SMT-JUMPER_3_1-NC_PASTE_SILK">
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<wire x1="1.27" y1="-1.016" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="1.016" x2="1.524" y2="0.762" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.524" y1="0.762" x2="-1.27" y2="1.016" width="0.1524" layer="21" curve="-90"/>
+<wire x1="-1.524" y1="-0.762" x2="-1.27" y2="-1.016" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.27" y1="-1.016" x2="1.524" y2="-0.762" width="0.1524" layer="21" curve="90"/>
+<wire x1="1.524" y1="-0.762" x2="1.524" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.524" y1="-0.762" x2="-1.524" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="1.016" x2="1.27" y2="1.016" width="0.1524" layer="21"/>
+<rectangle x1="-0.4064" y1="-1.1176" x2="1.651" y2="1.1176" layer="31"/>
+<smd name="1" x="-0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" locally_modified="yes" type="model">
@@ -1473,6 +1496,28 @@
 <text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="SMT-JUMPER_3_1-NC_PASTE">
+<wire x1="-0.635" y1="-1.397" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="180" cap="flat"/>
+<wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<text x="2.54" y="0.381" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="94"/>
+<pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
+<polygon width="0.254" layer="95">
+<vertex x="-1.524" y="0.762"/>
+<vertex x="-1.524" y="-1.524" curve="90"/>
+<vertex x="0" y="-3.048" curve="90"/>
+<vertex x="1.524" y="-1.524"/>
+<vertex x="1.524" y="0.762"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -2107,6 +2152,35 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JUMPER-SMT_3_1-NC_PASTE" prefix="JP">
+<description>&lt;h3&gt;Normally closed solder jumper (1 of 2 connections)&lt;/h3&gt;
+&lt;p&gt;This jumper has an aperture in the stencil to allow solder paste to bridge one of the two connections. One connection is normally closed (NC), while the other is normally open (NO). Wick off the solder to open the connection. Reapply solder to reclose the connection. Apply solder to the other side instead to change the current path.&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SMT-JUMPER_3_1-NC_PASTE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_NO-SILK" package="SMT-JUMPER_3_1-NC_PASTE_NO-SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SILK" package="SMT-JUMPER_3_1-NC_PASTE_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4393,6 +4467,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="GND11" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND4" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="U5" library="quadparts_prebuilt" deviceset="TPS73633-DBVT" device="3V3" value="3.3V"/>
+<part name="JP6" library="RemoteParts" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_NO-SILK"/>
 </parts>
 <sheets>
 <sheet>
@@ -4510,12 +4585,12 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <instance part="GND20" gate="1" x="176.53" y="91.44"/>
 <instance part="GND26" gate="1" x="187.96" y="73.66"/>
 <instance part="U3" gate="G$1" x="205.74" y="96.52"/>
-<instance part="GND28" gate="1" x="160.02" y="91.44"/>
-<instance part="GND30" gate="1" x="166.37" y="91.44"/>
+<instance part="GND28" gate="1" x="148.59" y="95.25"/>
+<instance part="GND30" gate="1" x="156.21" y="95.25"/>
 <instance part="R6" gate="G$1" x="240.03" y="101.6" rot="R90"/>
 <instance part="R7" gate="G$1" x="248.92" y="101.6" rot="R90"/>
-<instance part="C11" gate="G$1" x="160.02" y="104.14"/>
-<instance part="C12" gate="G$1" x="166.37" y="99.06"/>
+<instance part="C11" gate="G$1" x="148.59" y="104.14"/>
+<instance part="C12" gate="G$1" x="156.21" y="104.14"/>
 <instance part="C13" gate="G$1" x="176.53" y="99.06"/>
 <instance part="D5" gate="G$1" x="248.92" y="90.17" rot="R270"/>
 <instance part="D7" gate="G$1" x="240.03" y="90.17" rot="R270"/>
@@ -4611,6 +4686,7 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <instance part="GND11" gate="1" x="53.34" y="113.03"/>
 <instance part="GND4" gate="1" x="22.86" y="118.11"/>
 <instance part="U5" gate="G$1" x="27.94" y="113.03"/>
+<instance part="JP6" gate="G$1" x="116.84" y="241.3" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -4802,11 +4878,12 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <segment>
 <pinref part="GND28" gate="1" pin="GND"/>
 <pinref part="C11" gate="G$1" pin="2"/>
-<wire x1="160.02" y1="99.06" x2="160.02" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="148.59" y1="99.06" x2="148.59" y2="97.79" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND30" gate="1" pin="GND"/>
 <pinref part="C12" gate="G$1" pin="2"/>
+<wire x1="156.21" y1="99.06" x2="156.21" y2="97.79" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND35" gate="1" pin="GND"/>
@@ -5109,21 +5186,13 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <label x="396.24" y="62.23" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="190.5" y1="104.14" x2="185.42" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="185.42" y1="104.14" x2="176.53" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="176.53" y1="104.14" x2="176.53" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="3V3OUT"/>
-<pinref part="C13" gate="G$1" pin="1"/>
-<label x="176.53" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="185.42" y1="101.6" x2="190.5" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="VCCIO"/>
-<wire x1="185.42" y1="104.14" x2="185.42" y2="101.6" width="0.1524" layer="91"/>
-<junction x="185.42" y="104.14"/>
-</segment>
-<segment>
 <pinref part="R11" gate="G$1" pin="2"/>
 <label x="127" y="243.84" size="1.27" layer="95" rot="R90" xref="yes"/>
-<wire x1="127" y1="240.03" x2="127" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="127" y1="240.03" x2="127" y2="241.3" width="0.1524" layer="91"/>
+<pinref part="JP6" gate="G$1" pin="2"/>
+<wire x1="127" y1="241.3" x2="127" y2="243.84" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="241.3" x2="127" y2="241.3" width="0.1524" layer="91" style="longdash"/>
+<junction x="127" y="241.3"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="AREF"/>
@@ -5157,12 +5226,6 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <pinref part="J9" gate="G$1" pin="+"/>
 <wire x1="26.67" y1="171.45" x2="30.48" y2="171.45" width="0.1524" layer="91"/>
 <label x="30.48" y="171.45" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="C17" gate="G$1" pin="2"/>
-<pinref part="U5" gate="G$1" pin="OUT"/>
-<wire x1="48.26" y1="125.73" x2="53.34" y2="125.73" width="0.1524" layer="91"/>
-<label x="53.34" y="125.73" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -5341,18 +5404,16 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 </net>
 <net name="VBAT" class="1">
 <segment>
-<wire x1="160.02" y1="106.68" x2="166.37" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="166.37" y1="106.68" x2="190.5" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="166.37" y1="101.6" x2="166.37" y2="106.68" width="0.1524" layer="91"/>
-<junction x="166.37" y="106.68"/>
+<wire x1="148.59" y1="106.68" x2="156.21" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="156.21" y1="106.68" x2="190.5" y2="106.68" width="0.1524" layer="91"/>
+<junction x="156.21" y="106.68"/>
 <pinref part="C12" gate="G$1" pin="1"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 <pinref part="U3" gate="G$1" pin="VCC"/>
 <wire x1="148.59" y1="116.84" x2="148.59" y2="106.68" width="0.1524" layer="91"/>
 <pinref part="D10" gate="G$1" pin="C"/>
 <wire x1="132.08" y1="116.84" x2="148.59" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="148.59" y1="106.68" x2="160.02" y2="106.68" width="0.1524" layer="91"/>
-<junction x="160.02" y="106.68"/>
+<junction x="148.59" y="106.68"/>
 <label x="148.59" y="116.84" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
@@ -6101,6 +6162,36 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <wire x1="137.16" y1="163.83" x2="137.16" y2="173.99" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="PG2(AMR)"/>
 <wire x1="137.16" y1="173.99" x2="154.94" y2="173.99" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="FTDI3V3" class="1">
+<segment>
+<wire x1="190.5" y1="104.14" x2="190.5" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="101.6" x2="176.53" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="101.6" x2="176.53" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="3V3OUT"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<label x="172.72" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="VCCIO"/>
+<junction x="190.5" y="101.6"/>
+</segment>
+<segment>
+<pinref part="JP6" gate="G$1" pin="3"/>
+<wire x1="116.84" y1="246.38" x2="116.84" y2="248.92" width="0.1524" layer="91" style="longdash"/>
+<label x="116.84" y="248.92" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="VREG3V3" class="1">
+<segment>
+<pinref part="C17" gate="G$1" pin="2"/>
+<pinref part="U5" gate="G$1" pin="OUT"/>
+<wire x1="48.26" y1="125.73" x2="53.34" y2="125.73" width="0.1524" layer="91"/>
+<label x="53.34" y="125.73" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP6" gate="G$1" pin="1"/>
+<wire x1="116.84" y1="236.22" x2="116.84" y2="233.68" width="0.1524" layer="91" style="longdash"/>
+<label x="116.84" y="233.68" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 </nets>

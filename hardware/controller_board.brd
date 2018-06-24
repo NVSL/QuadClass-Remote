@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.125" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -191,7 +191,7 @@
 <wire x1="99.5" y1="38" x2="115.5" y2="20" width="0.1524" layer="100" curve="-90"/>
 <wire x1="115.5" y1="20" x2="115.5" y2="-20" width="0.1524" layer="100"/>
 <wire x1="95.5" y1="-38" x2="115.5" y2="-20" width="0.1524" layer="100" curve="90"/>
-<wire x1="-91.5" y1="38" x2="-115.5" y2="20" width="0.1524" layer="100" curve="90"/>
+<wire x1="-95.5" y1="38" x2="-115.5" y2="20" width="0.1524" layer="100" curve="90"/>
 <wire x1="-115.5" y1="-20" x2="-95.5" y2="-38" width="0.1524" layer="100" curve="90"/>
 <text x="37.75" y="24.5" size="1.1" layer="21" font="vector" rot="R90">charging</text>
 <text x="33.25" y="24.5" size="1.1" layer="21" font="vector" rot="R90">complete</text>
@@ -241,7 +241,7 @@ Mark IV</text>
 <text x="57" y="23.75" size="1.778" layer="21" font="vector">Ignore four drills outside of board area</text>
 <text x="6.125" y="28.375" size="1.4224" layer="21" font="vector" rot="R90" align="center">GND</text>
 <text x="-6.875" y="28.25" size="1.4224" layer="21" font="vector" rot="R270" align="center">DTR</text>
-<wire x1="99.5" y1="38" x2="-91.5" y2="38" width="0.1524" layer="100"/>
+<wire x1="99.5" y1="38" x2="-95.5" y2="38" width="0.1524" layer="100"/>
 <wire x1="-7.625" y1="31.5" x2="-6.375" y2="31.5" width="1" layer="21"/>
 <wire x1="5.375" y1="31.5" x2="6.625" y2="31.5" width="1" layer="21"/>
 <text x="-5.125" y="13.5" size="1.016" layer="21" font="vector" rot="R90">GND</text>
@@ -1837,6 +1837,13 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 <wire x1="0.9" y1="-0.8" x2="-0.9" y2="-0.8" width="0.127" layer="21"/>
 <wire x1="-0.9" y1="-0.8" x2="-0.9" y2="0.8" width="0.127" layer="21"/>
 </package>
+<package name="SMT-JUMPER_3_1-NC_PASTE_NO-SILK">
+<text x="0" y="1.143" size="1" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<rectangle x1="-0.4064" y1="-1.1176" x2="1.651" y2="1.1176" layer="31"/>
+<smd name="1" x="-0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" locally_modified="yes" type="model">
@@ -2984,6 +2991,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="-8.72" y="9.429" size="1.27" layer="27" font="vector" rot="R180" align="center"/>
 <attribute name="VALUE" value="3.3V" x="-8.75" y="9.375" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
+<element name="JP6" library="RemoteParts" package="SMT-JUMPER_3_1-NC_PASTE_NO-SILK" value="JUMPER-SMT_3_1-NC_PASTE_NO-SILK" x="-3.25" y="13.25"/>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -3292,9 +3300,6 @@ design rules under a new name.</description>
 <contactref element="U2" pad="16"/>
 <contactref element="S2" pad="3"/>
 <contactref element="JP2" pad="3"/>
-<contactref element="U3" pad="17"/>
-<contactref element="C13" pad="1"/>
-<contactref element="U3" pad="4"/>
 <contactref element="R11" pad="2"/>
 <contactref element="U1" pad="62"/>
 <polygon width="0.381" layer="15">
@@ -3321,31 +3326,26 @@ design rules under a new name.</description>
 <contactref element="J2" pad="4"/>
 <contactref element="J9" pad="1"/>
 <contactref element="J9" pad="4"/>
-<contactref element="C17" pad="2"/>
-<contactref element="U5" pad="5"/>
-<wire x1="-7.8" y1="8.075" x2="-5.5" y2="8.605" width="0" layer="19" extent="1-1"/>
-<wire x1="-41.5" y1="-12.67" x2="-7.8" y2="8.075" width="0" layer="19" extent="1-1"/>
+<contactref element="JP6" pad="2"/>
+<wire x1="-41.5" y1="-12.67" x2="-3.25" y2="13.25" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.5" y1="7.65" x2="-41.5" y2="-12.67" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.5" y1="13.65" x2="-40.5" y2="7.65" width="0" layer="19" extent="1-1"/>
 <wire x1="-25.75" y1="30.455" x2="-40.5" y2="13.65" width="0" layer="19" extent="1-1"/>
 <wire x1="-18.94" y1="27.445" x2="-25.75" y2="30.455" width="0" layer="19" extent="1-1"/>
 <wire x1="-2.625" y1="29.45" x2="-18.94" y2="27.445" width="0" layer="19" extent="1-1"/>
 <wire x1="0.895" y1="21.5" x2="-2.625" y2="29.45" width="0" layer="19" extent="1-1"/>
-<wire x1="0.594" y1="8.05" x2="0.895" y2="21.5" width="0" layer="19" extent="1-1"/>
-<wire x1="7.906" y1="2.85" x2="0.594" y2="8.05" width="0" layer="19" extent="1-1"/>
-<wire x1="10.25" y1="3.02" x2="7.906" y2="2.85" width="0" layer="19" extent="1-1"/>
-<wire x1="15.25" y1="-1.38" x2="10.25" y2="3.02" width="0" layer="19" extent="1-1"/>
-<wire x1="15.25" y1="-9" x2="15.25" y2="-1.38" width="0" layer="19" extent="1-1"/>
-<wire x1="2.9967" y1="-3.6" x2="7.906" y2="2.85" width="0" layer="19" extent="1-1"/>
-<wire x1="19.42" y1="5.439" x2="15.25" y2="-1.38" width="0" layer="19" extent="1-1"/>
+<wire x1="14.895" y1="9.5" x2="0.895" y2="21.5" width="0" layer="19" extent="1-1"/>
+<wire x1="17.789" y1="11.07" x2="14.895" y2="9.5" width="0" layer="19" extent="1-1"/>
+<wire x1="19.42" y1="5.439" x2="17.789" y2="11.07" width="0" layer="19" extent="1-1"/>
 <wire x1="24.42" y1="5.439" x2="19.42" y2="5.439" width="0" layer="19" extent="1-1"/>
 <wire x1="27.551" y1="9.07" x2="24.42" y2="5.439" width="0" layer="19" extent="1-1"/>
 <wire x1="27.551" y1="11.57" x2="27.551" y2="9.07" width="0" layer="19" extent="1-1"/>
 <wire x1="27.551" y1="13.07" x2="27.551" y2="11.57" width="0" layer="19" extent="1-1"/>
 <wire x1="30.605" y1="5.5" x2="27.551" y2="9.07" width="0" layer="19" extent="1-1"/>
-<wire x1="17.789" y1="11.07" x2="19.42" y2="5.439" width="0" layer="19" extent="1-1"/>
-<wire x1="14.895" y1="9.5" x2="17.789" y2="11.07" width="0" layer="19" extent="1-1"/>
-<wire x1="-7.75" y1="2.75" x2="0.594" y2="8.05" width="0" layer="19" extent="1-1"/>
+<wire x1="15.25" y1="-1.38" x2="19.42" y2="5.439" width="0" layer="19" extent="1-1"/>
+<wire x1="15.25" y1="-9" x2="15.25" y2="-1.38" width="0" layer="19" extent="1-1"/>
+<wire x1="2.9967" y1="-3.6" x2="15.25" y2="-1.38" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.75" y1="2.75" x2="2.9967" y2="-3.6" width="0" layer="19" extent="1-1"/>
 <wire x1="-10.29" y1="2.75" x2="-7.75" y2="2.75" width="0" layer="19" extent="1-1"/>
 <wire x1="-15.25" y1="4" x2="-10.29" y2="2.75" width="0" layer="19" extent="1-1"/>
 <wire x1="-15.25" y1="-3.62" x2="-15.25" y2="4" width="0" layer="19" extent="1-1"/>
@@ -3860,6 +3860,22 @@ design rules under a new name.</description>
 <contactref element="R17" pad="2"/>
 <contactref element="U1" pad="16"/>
 <wire x1="9.75" y1="-16.42" x2="18.92" y2="15.201" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="FTDI3V3" class="1">
+<contactref element="U3" pad="17"/>
+<contactref element="C13" pad="1"/>
+<contactref element="U3" pad="4"/>
+<contactref element="JP6" pad="3"/>
+<wire x1="0.594" y1="8.05" x2="-2.4372" y2="13.25" width="0" layer="19" extent="1-1"/>
+<wire x1="7.906" y1="2.85" x2="0.594" y2="8.05" width="0" layer="19" extent="1-1"/>
+<wire x1="10.25" y1="3.02" x2="7.906" y2="2.85" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VREG3V3" class="1">
+<contactref element="C17" pad="2"/>
+<contactref element="U5" pad="5"/>
+<contactref element="JP6" pad="1"/>
+<wire x1="-7.8" y1="8.075" x2="-4.0628" y2="13.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.5" y1="8.605" x2="-7.8" y2="8.075" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 </board>
