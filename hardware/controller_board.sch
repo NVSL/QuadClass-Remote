@@ -1207,6 +1207,11 @@
 <smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 <smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 </package>
+<package name="TEST-POINT-KEYSTONE-5000">
+<pad name="T" x="0" y="0" drill="1"/>
+<circle x="0" y="0" radius="1.27" width="0.127" layer="39"/>
+<text x="0" y="2" size="1" layer="25" font="vector" align="center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" locally_modified="yes" type="model">
@@ -1519,6 +1524,10 @@
 <vertex x="1.524" y="0.762"/>
 </polygon>
 </symbol>
+<symbol name="TEST-POINT">
+<pin name="T" x="0" y="0" visible="off" length="middle" function="dot" rot="R90"/>
+<text x="0" y="7.62" size="1.27" layer="95" align="center">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TRIMPOT" prefix="P" uservalue="yes">
@@ -1697,7 +1706,7 @@
 </technology>
 </technologies>
 </device>
-<device name="-MICROB-EDAC-690-005-299-043" package="USB-MINIB-EDAC-690-005-299-043">
+<device name="-MINIB-EDAC-690-005-299-043" package="USB-MINIB-EDAC-690-005-299-043">
 <connects>
 <connect gate="A" pin="1-VCC" pad="1"/>
 <connect gate="A" pin="2-D-" pad="2"/>
@@ -2184,6 +2193,25 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TEST-POINT" prefix="P">
+<gates>
+<gate name="G$1" symbol="TEST-POINT" x="0" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="TEST-POINT-KEYSTONE-5000">
+<connects>
+<connect gate="G$1" pin="T" pad="T"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="36-5001-ND "/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -4108,164 +4136,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </deviceset>
 </devicesets>
 </library>
-<library name="custom">
-<packages>
-<package name="MALE_HEADER_2X1_0.1IN">
-<description>Header, Vertical,2.54 mm pitch;0.635 mm lead width,2 pins,1 row,2 pins per row,5.08 mm L X 2.54 mm W X 8.38 mm H body&lt;p&gt;&lt;i&gt;PCB Libraries Packages&lt;/i&gt;</description>
-<wire x1="-0.4233" y1="1.27" x2="3.81" y2="1.27" width="0.12" layer="51"/>
-<text x="-1.1684" y="-3.048" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.1684" y="1.8288" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
-<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="0.4233" width="0.12" layer="51"/>
-<wire x1="-1.27" y1="-1.27" x2="3.81" y2="-1.27" width="0.12" layer="21"/>
-<wire x1="-1.27" y1="0.4233" x2="-0.4233" y2="1.27" width="0.12" layer="51"/>
-<wire x1="-1.27" y1="0.4233" x2="-1.27" y2="-1.27" width="0.12" layer="21"/>
-<wire x1="-1.27" y1="0.4233" x2="-1.27" y2="1.27" width="0.001" layer="51"/>
-<wire x1="-1.27" y1="1.27" x2="-0.4233" y2="1.27" width="0.001" layer="51"/>
-<wire x1="-1.52" y1="-1.52" x2="-1.52" y2="1.52" width="0.05" layer="39"/>
-<wire x1="-1.52" y1="1.52" x2="4.06" y2="1.52" width="0.05" layer="39"/>
-<circle x="0" y="0" radius="0.25" width="0.05" layer="39"/>
-<wire x1="0" y1="0.35" x2="0" y2="-0.35" width="0.05" layer="39"/>
-<polygon width="0.01" layer="30">
-<vertex x="3.36" y="0"/>
-<vertex x="3.3475" y="0.1424"/>
-<vertex x="3.3105" y="0.2805"/>
-<vertex x="3.2501" y="0.41"/>
-<vertex x="3.1682" y="0.5271"/>
-<vertex x="3.0671" y="0.6282"/>
-<vertex x="2.95" y="0.7101"/>
-<vertex x="2.8205" y="0.7705"/>
-<vertex x="2.6824" y="0.8075"/>
-<vertex x="2.54" y="0.82"/>
-<vertex x="2.3976" y="0.8075"/>
-<vertex x="2.2595" y="0.7705"/>
-<vertex x="2.13" y="0.7101"/>
-<vertex x="2.0129" y="0.6282"/>
-<vertex x="1.9118" y="0.5271"/>
-<vertex x="1.8299" y="0.41"/>
-<vertex x="1.7695" y="0.2805"/>
-<vertex x="1.7325" y="0.1424"/>
-<vertex x="1.72" y="0"/>
-<vertex x="1.7325" y="-0.1424"/>
-<vertex x="1.7695" y="-0.2805"/>
-<vertex x="1.8299" y="-0.41"/>
-<vertex x="1.9118" y="-0.5271"/>
-<vertex x="2.0129" y="-0.6282"/>
-<vertex x="2.13" y="-0.7101"/>
-<vertex x="2.2595" y="-0.7705"/>
-<vertex x="2.3976" y="-0.8075"/>
-<vertex x="2.54" y="-0.82"/>
-<vertex x="2.6824" y="-0.8075"/>
-<vertex x="2.8205" y="-0.7705"/>
-<vertex x="2.95" y="-0.7101"/>
-<vertex x="3.0671" y="-0.6282"/>
-<vertex x="3.1682" y="-0.5271"/>
-<vertex x="3.2501" y="-0.41"/>
-<vertex x="3.3105" y="-0.2805"/>
-<vertex x="3.3475" y="-0.1424"/>
-</polygon>
-<polygon width="0.01" layer="30">
-<vertex x="-0.825" y="-0.825"/>
-<vertex x="-0.825" y="0.825"/>
-<vertex x="0.825" y="0.825"/>
-<vertex x="0.825" y="-0.825"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="-0.825" y="-0.825"/>
-<vertex x="-0.825" y="0.825"/>
-<vertex x="0.825" y="0.825"/>
-<vertex x="0.825" y="-0.825"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="3.36" y="0"/>
-<vertex x="3.3475" y="0.1424"/>
-<vertex x="3.3105" y="0.2805"/>
-<vertex x="3.2501" y="0.41"/>
-<vertex x="3.1682" y="0.5271"/>
-<vertex x="3.0671" y="0.6282"/>
-<vertex x="2.95" y="0.7101"/>
-<vertex x="2.8205" y="0.7705"/>
-<vertex x="2.6824" y="0.8075"/>
-<vertex x="2.54" y="0.82"/>
-<vertex x="2.3976" y="0.8075"/>
-<vertex x="2.2595" y="0.7705"/>
-<vertex x="2.13" y="0.7101"/>
-<vertex x="2.0129" y="0.6282"/>
-<vertex x="1.9118" y="0.5271"/>
-<vertex x="1.8299" y="0.41"/>
-<vertex x="1.7695" y="0.2805"/>
-<vertex x="1.7325" y="0.1424"/>
-<vertex x="1.72" y="0"/>
-<vertex x="1.7325" y="-0.1424"/>
-<vertex x="1.7695" y="-0.2805"/>
-<vertex x="1.8299" y="-0.41"/>
-<vertex x="1.9118" y="-0.5271"/>
-<vertex x="2.0129" y="-0.6282"/>
-<vertex x="2.13" y="-0.7101"/>
-<vertex x="2.2595" y="-0.7705"/>
-<vertex x="2.3976" y="-0.8075"/>
-<vertex x="2.54" y="-0.82"/>
-<vertex x="2.6824" y="-0.8075"/>
-<vertex x="2.8205" y="-0.7705"/>
-<vertex x="2.95" y="-0.7101"/>
-<vertex x="3.0671" y="-0.6282"/>
-<vertex x="3.1682" y="-0.5271"/>
-<vertex x="3.2501" y="-0.41"/>
-<vertex x="3.3105" y="-0.2805"/>
-<vertex x="3.3475" y="-0.1424"/>
-</polygon>
-<wire x1="0.35" y1="0" x2="-0.35" y2="0" width="0.05" layer="39"/>
-<wire x1="3.81" y1="-1.27" x2="-1.27" y2="-1.27" width="0.12" layer="51"/>
-<wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.12" layer="21"/>
-<wire x1="3.81" y1="1.27" x2="-0.4233" y2="1.27" width="0.12" layer="21"/>
-<wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.12" layer="51"/>
-<wire x1="4.06" y1="-1.52" x2="-1.52" y2="-1.52" width="0.05" layer="39"/>
-<wire x1="4.06" y1="1.52" x2="4.06" y2="-1.52" width="0.05" layer="39"/>
-<pad name="1" x="0" y="0" drill="1.1" diameter="1.65" shape="square" stop="no" first="yes"/>
-<pad name="2" x="2.54" y="0" drill="1.1" diameter="1.65" rot="R80" stop="no"/>
-</package>
-</packages>
-<symbols>
-<symbol name="MALE_HEADER_2POS">
-<description>2 pin single inline pin header, socket, or connector</description>
-<text x="0" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="0" y1="0" x2="0" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="0" y1="7.62" x2="6.35" y2="7.62" width="0.4064" layer="94"/>
-<wire x1="3.81" y1="2.54" x2="5.08" y2="2.54" width="0.6096" layer="94"/>
-<wire x1="3.81" y1="5.08" x2="5.08" y2="5.08" width="0.6096" layer="94"/>
-<wire x1="6.35" y1="0" x2="0" y2="0" width="0.4064" layer="94"/>
-<wire x1="6.35" y1="7.62" x2="6.35" y2="0" width="0.4064" layer="94"/>
-<text x="6.858" y="0" size="1.778" layer="95">&gt;NAME</text>
-<pin name="1" x="10.16" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="2" x="10.16" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="MALE_HEADER_2POS" prefix="J" uservalue="yes">
-<description>2 pin single inline pin header, socket, or connector</description>
-<gates>
-<gate name="G$1" symbol="MALE_HEADER_2POS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-2X1-0.1IN" package="MALE_HEADER_2X1_0.1IN">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="SWANSON"/>
-<attribute name="DIST" value="Digikey"/>
-<attribute name="DISTPN" value="3M9447-ND"/>
-<attribute name="MFR" value="3M"/>
-<attribute name="MPN" value="961102-6404-AR"/>
-<attribute name="REVIEWER" value=""/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4372,7 +4242,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="V8" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="GND21" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="U2" library="RemoteParts" deviceset="DPDT-X2" device="" package3d_urn="urn:adsk.eagle:package:3027343/1"/>
-<part name="J3" library="RemoteParts" deviceset="USB" device="-MICROB-EDAC-690-005-299-043"/>
 <part name="JP2" library="RemoteParts" deviceset="M06" device="-TH-RIGHT-ANGLE"/>
 <part name="GND1" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="S2" library="RemoteParts" deviceset="POWER-SWITCH-MFS201N-9-Z" device="-SMD-VERTICAL" value="POWER-SWITCH-MFS201N-9-Z-SMD-VERTICAL"/>
@@ -4408,15 +4277,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="L1" library="RemoteParts" deviceset="SPARKFUN_LCD_33_SERIAL" device="-RGB">
 <attribute name="SPICEPREFIX" value="X"/>
 </part>
-<part name="J5" library="custom" deviceset="MALE_HEADER_2POS" device="-2X1-0.1IN">
-<attribute name="SPICEPREFIX" value="B"/>
-</part>
-<part name="J6" library="custom" deviceset="MALE_HEADER_2POS" device="-2X1-0.1IN">
-<attribute name="SPICEPREFIX" value="B"/>
-</part>
-<part name="J7" library="custom" deviceset="MALE_HEADER_2POS" device="-2X1-0.1IN">
-<attribute name="SPICEPREFIX" value="B"/>
-</part>
 <part name="P6" library="RemoteParts" deviceset="TRIMPOT" device="3386" value="10K">
 <attribute name="SPICEPREFIX" value="J"/>
 </part>
@@ -4435,9 +4295,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="R13" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-12K" value="12K"/>
 <part name="R14" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-30K" value="30K"/>
 <part name="GND2" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="J10" library="custom" deviceset="MALE_HEADER_2POS" device="-2X1-0.1IN">
-<attribute name="SPICEPREFIX" value="B"/>
-</part>
 <part name="B3" library="RemoteParts" deviceset="HEADER-0.1IN-2POS" device="-SCREW">
 <attribute name="PIN1" value="+"/>
 <attribute name="PIN2" value="-"/>
@@ -4468,6 +4325,10 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="GND4" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="U5" library="quadparts_prebuilt" deviceset="TPS73633-DBVT" device="3V3" value="3.3V"/>
 <part name="JP6" library="RemoteParts" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_NO-SILK"/>
+<part name="P1" library="RemoteParts" deviceset="TEST-POINT" device=""/>
+<part name="P2" library="RemoteParts" deviceset="TEST-POINT" device=""/>
+<part name="P3" library="RemoteParts" deviceset="TEST-POINT" device=""/>
+<part name="P4" library="RemoteParts" deviceset="TEST-POINT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4498,7 +4359,7 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <wire x1="63.5" y1="181.61" x2="3.81" y2="181.61" width="0.1524" layer="97" style="longdash"/>
 <wire x1="63.5" y1="181.61" x2="63.5" y2="135.89" width="0.1524" layer="97" style="longdash"/>
 <wire x1="63.5" y1="135.89" x2="3.81" y2="135.89" width="0.1524" layer="97" style="longdash"/>
-<text x="6.35" y="227.33" size="3.81" layer="97">Power Breakouts *</text>
+<text x="6.35" y="227.33" size="3.81" layer="97">Test Points*</text>
 <text x="7.62" y="184.15" size="3.81" layer="97">Frysky Gimbals *</text>
 <text x="7.62" y="138.43" size="3.81" layer="97">Servo Gimbals *</text>
 <wire x1="328.93" y1="275.59" x2="328.93" y2="196.85" width="0.1524" layer="97" style="longdash"/>
@@ -4616,7 +4477,6 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <instance part="V8" gate="G$1" x="148.59" y="16.51" rot="R90"/>
 <instance part="GND21" gate="1" x="140.97" y="13.97"/>
 <instance part="U2" gate="G$1" x="276.86" y="96.52" rot="MR0"/>
-<instance part="J3" gate="A" x="101.6" y="82.55" rot="MR0"/>
 <instance part="JP2" gate="G$1" x="405.13" y="62.23" rot="MR0"/>
 <instance part="GND1" gate="1" x="281.94" y="76.2"/>
 <instance part="S2" gate="G$1" x="294.64" y="68.58"/>
@@ -4650,9 +4510,6 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <instance part="F3" gate="G$1" x="342.9" y="29.21"/>
 <instance part="F4" gate="G$1" x="353.06" y="29.21"/>
 <instance part="L1" gate="G$1" x="392.43" y="149.86"/>
-<instance part="J5" gate="G$1" x="15.24" y="238.76"/>
-<instance part="J6" gate="G$1" x="30.48" y="238.76"/>
-<instance part="J7" gate="G$1" x="15.24" y="254"/>
 <instance part="P6" gate="G$1" x="361.95" y="177.8"/>
 <instance part="R4" gate="G$1" x="359.41" y="144.78"/>
 <instance part="R5" gate="G$1" x="359.41" y="137.16"/>
@@ -4663,7 +4520,6 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <instance part="R13" gate="G$1" x="222.25" y="34.29" rot="R90"/>
 <instance part="R14" gate="G$1" x="222.25" y="22.86" rot="R90"/>
 <instance part="GND2" gate="1" x="222.25" y="15.24"/>
-<instance part="J10" gate="G$1" x="30.48" y="254"/>
 <instance part="B3" gate="G$1" x="242.57" y="34.29" rot="R180"/>
 <instance part="J11" gate="A" x="101.6" y="111.76" rot="MR0"/>
 <instance part="V3" gate="G$1" x="138.43" y="16.51" rot="R90"/>
@@ -4687,6 +4543,10 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <instance part="GND4" gate="1" x="22.86" y="118.11"/>
 <instance part="U5" gate="G$1" x="27.94" y="113.03"/>
 <instance part="JP6" gate="G$1" x="116.84" y="241.3" rot="R180"/>
+<instance part="P1" gate="G$1" x="25.4" y="260.35" rot="R180"/>
+<instance part="P2" gate="G$1" x="38.1" y="260.35" rot="R180"/>
+<instance part="P3" gate="G$1" x="31.75" y="260.35" rot="R180"/>
+<instance part="P4" gate="G$1" x="17.78" y="252.73"/>
 </instances>
 <busses>
 </busses>
@@ -4936,7 +4796,6 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <pinref part="V5" gate="G$1" pin="N"/>
 </segment>
 <segment>
-<pinref part="J3" gate="A" pin="5-GND"/>
 <wire x1="106.68" y1="77.47" x2="109.22" y2="77.47" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="77.47" x2="109.22" y2="74.93" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
@@ -4977,12 +4836,9 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <label x="379.73" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J5" gate="G$1" pin="2"/>
-<pinref part="J5" gate="G$1" pin="1"/>
-<wire x1="25.4" y1="243.84" x2="25.4" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="241.3" x2="25.4" y2="238.76" width="0.1524" layer="91"/>
-<junction x="25.4" y="241.3"/>
-<label x="25.4" y="238.76" size="1.27" layer="95" rot="R270" xref="yes"/>
+<wire x1="17.78" y1="252.73" x2="17.78" y2="251.46" width="0.1524" layer="91"/>
+<label x="17.78" y="251.46" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="P4" gate="G$1" pin="T"/>
 </segment>
 <segment>
 <pinref part="P6" gate="G$1" pin="A"/>
@@ -5200,12 +5056,9 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <label x="223.52" y="196.85" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J7" gate="G$1" pin="1"/>
-<pinref part="J7" gate="G$1" pin="2"/>
-<wire x1="25.4" y1="256.54" x2="25.4" y2="259.08" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="261.62" x2="25.4" y2="259.08" width="0.1524" layer="91"/>
-<junction x="25.4" y="259.08"/>
+<wire x1="25.4" y1="261.62" x2="25.4" y2="260.35" width="0.1524" layer="91"/>
 <label x="25.4" y="261.62" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="P1" gate="G$1" pin="T"/>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="+"/>
@@ -5438,12 +5291,9 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <label x="379.73" y="180.34" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="J6" gate="G$1" pin="1"/>
-<pinref part="J6" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="241.3" x2="40.64" y2="243.84" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="243.84" x2="40.64" y2="246.38" width="0.1524" layer="91"/>
-<junction x="40.64" y="243.84"/>
-<label x="40.64" y="246.38" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="31.75" y1="260.35" x2="31.75" y2="261.62" width="0.1524" layer="91"/>
+<label x="31.75" y="261.62" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="P3" gate="G$1" pin="T"/>
 </segment>
 <segment>
 <pinref part="P6" gate="G$1" pin="E"/>
@@ -5531,7 +5381,6 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 </net>
 <net name="USB_D-" class="0">
 <segment>
-<pinref part="J3" gate="A" pin="2-D-"/>
 <wire x1="190.5" y1="114.3" x2="113.03" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="USBDM"/>
 <wire x1="113.03" y1="114.3" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
@@ -5544,7 +5393,6 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 </net>
 <net name="USB_D+" class="0">
 <segment>
-<pinref part="J3" gate="A" pin="3-D+"/>
 <wire x1="190.5" y1="111.76" x2="115.57" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="USBDP"/>
 <wire x1="115.57" y1="111.76" x2="106.68" y2="111.76" width="0.1524" layer="91"/>
@@ -5809,7 +5657,6 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <label x="110.49" y="116.84" size="1.27" layer="95" rot="R90" xref="yes"/>
 <wire x1="110.49" y1="116.84" x2="110.49" y2="87.63" width="0.1524" layer="91"/>
 <junction x="110.49" y="116.84"/>
-<pinref part="J3" gate="A" pin="1-VCC"/>
 <wire x1="106.68" y1="87.63" x2="110.49" y2="87.63" width="0.1524" layer="91"/>
 <pinref part="J11" gate="A" pin="1-VCC"/>
 <pinref part="D10" gate="G$1" pin="A"/>
@@ -5854,12 +5701,9 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <junction x="105.41" y="39.37"/>
 </segment>
 <segment>
-<pinref part="J10" gate="G$1" pin="1"/>
-<pinref part="J10" gate="G$1" pin="2"/>
-<wire x1="40.64" y1="256.54" x2="40.64" y2="259.08" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="261.62" x2="40.64" y2="259.08" width="0.1524" layer="91"/>
-<junction x="40.64" y="259.08"/>
-<label x="40.64" y="261.62" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="38.1" y1="261.62" x2="38.1" y2="260.35" width="0.1524" layer="91"/>
+<label x="38.1" y="261.62" size="1.27" layer="95" rot="R90" xref="yes"/>
+<pinref part="P2" gate="G$1" pin="T"/>
 </segment>
 </net>
 <net name="N$1" class="1">

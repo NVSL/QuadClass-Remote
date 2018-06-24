@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.025" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -244,11 +244,11 @@ Mark IV</text>
 <wire x1="99.5" y1="38" x2="-95.5" y2="38" width="0.1524" layer="100"/>
 <wire x1="-7.625" y1="31.5" x2="-6.375" y2="31.5" width="1" layer="21"/>
 <wire x1="5.375" y1="31.5" x2="6.625" y2="31.5" width="1" layer="21"/>
-<text x="-5.125" y="13.5" size="1.016" layer="21" font="vector" rot="R90">GND</text>
-<text x="-8.5" y="-0.125" size="1.016" layer="21" font="vector">VBAT</text>
-<text x="-8.5" y="4.875" size="1.016" layer="21" font="vector">3V3</text>
+<text x="-8.5" y="2.125" size="1.016" layer="21" font="vector">GND</text>
+<text x="-8.5" y="-6.125" size="1.016" layer="21" font="vector">VBAT</text>
+<text x="-8.5" y="-2.125" size="1.016" layer="21" font="vector">3V3</text>
 <text x="36.875" y="-19.375" size="1.778" layer="21" font="vector" align="center">contrast</text>
-<text x="-8.5" y="-5.25" size="1.016" layer="21" font="vector">VBUS</text>
+<text x="-8.5" y="-10.25" size="1.016" layer="21" font="vector">VBUS</text>
 </plain>
 <libraries>
 <library name="quadparts_prebuilt">
@@ -1563,24 +1563,6 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 <text x="0" y="3.5174" size="1.27" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-3.4274" size="1.27" layer="27" font="vector" align="top-center">&gt;VALUE</text>
 </package>
-<package name="USB-MINIB-EDAC-690-005-299-043">
-<smd name="1" x="5.5" y="1.6" dx="2.3" dy="0.5" layer="1"/>
-<smd name="2" x="5.5" y="0.8" dx="2.3" dy="0.5" layer="1"/>
-<smd name="3" x="5.5" y="0" dx="2.3" dy="0.5" layer="1"/>
-<smd name="4" x="5.5" y="-0.8" dx="2.3" dy="0.5" layer="1"/>
-<smd name="5" x="5.5" y="-1.6" dx="2.3" dy="0.5" layer="1"/>
-<smd name="P6" x="5.5" y="-4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="P7" x="5.5" y="4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="P8" x="0" y="4.5" dx="2.5" dy="2" layer="1"/>
-<smd name="P9" x="0" y="-4.5" dx="2.5" dy="2" layer="1"/>
-<hole x="2.95" y="2.2" drill="0.9"/>
-<hole x="2.95" y="-2.2" drill="0.9"/>
-<wire x1="-2.25" y1="6.75" x2="-2.25" y2="-6.75" width="0.127" layer="51"/>
-<wire x1="-1.875" y1="3.75" x2="7.5" y2="3.75" width="0.127" layer="21"/>
-<wire x1="-1.875" y1="-3.75" x2="7.5" y2="-3.75" width="0.127" layer="21"/>
-<rectangle x1="-1.875" y1="-5.625" x2="9.375" y2="5.625" layer="39"/>
-<text x="8.89" y="-2.54" size="1.27" layer="21" font="vector" rot="R90">&gt;NAME</text>
-</package>
 <package name="FIDUCIAL_STENCIL">
 <hole x="0" y="0" drill="0.66"/>
 <circle x="0" y="0" radius="0.33" width="0.127" layer="31"/>
@@ -1844,6 +1826,11 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 <smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 <smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 </package>
+<package name="TEST-POINT-KEYSTONE-5000">
+<pad name="T" x="0" y="0" drill="1"/>
+<circle x="0" y="0" radius="1.27" width="0.127" layer="39"/>
+<text x="0" y="2" size="1" layer="25" font="vector" align="center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" locally_modified="yes" type="model">
@@ -1854,123 +1841,6 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 </packageinstances>
 </package3d>
 </packages3d>
-</library>
-<library name="custom">
-<packages>
-<package name="MALE_HEADER_2X1_0.1IN">
-<description>Header, Vertical,2.54 mm pitch;0.635 mm lead width,2 pins,1 row,2 pins per row,5.08 mm L X 2.54 mm W X 8.38 mm H body&lt;p&gt;&lt;i&gt;PCB Libraries Packages&lt;/i&gt;</description>
-<wire x1="-0.4233" y1="1.27" x2="3.81" y2="1.27" width="0.12" layer="51"/>
-<text x="-1.1684" y="-3.048" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<text x="-1.1684" y="1.8288" size="1.2" layer="27" font="vector" ratio="10">&gt;VALUE</text>
-<wire x1="-1.27" y1="-1.27" x2="-1.27" y2="0.4233" width="0.12" layer="51"/>
-<wire x1="-1.27" y1="-1.27" x2="3.81" y2="-1.27" width="0.12" layer="21"/>
-<wire x1="-1.27" y1="0.4233" x2="-0.4233" y2="1.27" width="0.12" layer="51"/>
-<wire x1="-1.27" y1="0.4233" x2="-1.27" y2="-1.27" width="0.12" layer="21"/>
-<wire x1="-1.27" y1="0.4233" x2="-1.27" y2="1.27" width="0.001" layer="51"/>
-<wire x1="-1.27" y1="1.27" x2="-0.4233" y2="1.27" width="0.001" layer="51"/>
-<wire x1="-1.52" y1="-1.52" x2="-1.52" y2="1.52" width="0.05" layer="39"/>
-<wire x1="-1.52" y1="1.52" x2="4.06" y2="1.52" width="0.05" layer="39"/>
-<circle x="0" y="0" radius="0.25" width="0.05" layer="39"/>
-<wire x1="0" y1="0.35" x2="0" y2="-0.35" width="0.05" layer="39"/>
-<polygon width="0.01" layer="30">
-<vertex x="3.36" y="0"/>
-<vertex x="3.3475" y="0.1424"/>
-<vertex x="3.3105" y="0.2805"/>
-<vertex x="3.2501" y="0.41"/>
-<vertex x="3.1682" y="0.5271"/>
-<vertex x="3.0671" y="0.6282"/>
-<vertex x="2.95" y="0.7101"/>
-<vertex x="2.8205" y="0.7705"/>
-<vertex x="2.6824" y="0.8075"/>
-<vertex x="2.54" y="0.82"/>
-<vertex x="2.3976" y="0.8075"/>
-<vertex x="2.2595" y="0.7705"/>
-<vertex x="2.13" y="0.7101"/>
-<vertex x="2.0129" y="0.6282"/>
-<vertex x="1.9118" y="0.5271"/>
-<vertex x="1.8299" y="0.41"/>
-<vertex x="1.7695" y="0.2805"/>
-<vertex x="1.7325" y="0.1424"/>
-<vertex x="1.72" y="0"/>
-<vertex x="1.7325" y="-0.1424"/>
-<vertex x="1.7695" y="-0.2805"/>
-<vertex x="1.8299" y="-0.41"/>
-<vertex x="1.9118" y="-0.5271"/>
-<vertex x="2.0129" y="-0.6282"/>
-<vertex x="2.13" y="-0.7101"/>
-<vertex x="2.2595" y="-0.7705"/>
-<vertex x="2.3976" y="-0.8075"/>
-<vertex x="2.54" y="-0.82"/>
-<vertex x="2.6824" y="-0.8075"/>
-<vertex x="2.8205" y="-0.7705"/>
-<vertex x="2.95" y="-0.7101"/>
-<vertex x="3.0671" y="-0.6282"/>
-<vertex x="3.1682" y="-0.5271"/>
-<vertex x="3.2501" y="-0.41"/>
-<vertex x="3.3105" y="-0.2805"/>
-<vertex x="3.3475" y="-0.1424"/>
-</polygon>
-<polygon width="0.01" layer="30">
-<vertex x="-0.825" y="-0.825"/>
-<vertex x="-0.825" y="0.825"/>
-<vertex x="0.825" y="0.825"/>
-<vertex x="0.825" y="-0.825"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="-0.825" y="-0.825"/>
-<vertex x="-0.825" y="0.825"/>
-<vertex x="0.825" y="0.825"/>
-<vertex x="0.825" y="-0.825"/>
-</polygon>
-<polygon width="0.01" layer="29">
-<vertex x="3.36" y="0"/>
-<vertex x="3.3475" y="0.1424"/>
-<vertex x="3.3105" y="0.2805"/>
-<vertex x="3.2501" y="0.41"/>
-<vertex x="3.1682" y="0.5271"/>
-<vertex x="3.0671" y="0.6282"/>
-<vertex x="2.95" y="0.7101"/>
-<vertex x="2.8205" y="0.7705"/>
-<vertex x="2.6824" y="0.8075"/>
-<vertex x="2.54" y="0.82"/>
-<vertex x="2.3976" y="0.8075"/>
-<vertex x="2.2595" y="0.7705"/>
-<vertex x="2.13" y="0.7101"/>
-<vertex x="2.0129" y="0.6282"/>
-<vertex x="1.9118" y="0.5271"/>
-<vertex x="1.8299" y="0.41"/>
-<vertex x="1.7695" y="0.2805"/>
-<vertex x="1.7325" y="0.1424"/>
-<vertex x="1.72" y="0"/>
-<vertex x="1.7325" y="-0.1424"/>
-<vertex x="1.7695" y="-0.2805"/>
-<vertex x="1.8299" y="-0.41"/>
-<vertex x="1.9118" y="-0.5271"/>
-<vertex x="2.0129" y="-0.6282"/>
-<vertex x="2.13" y="-0.7101"/>
-<vertex x="2.2595" y="-0.7705"/>
-<vertex x="2.3976" y="-0.8075"/>
-<vertex x="2.54" y="-0.82"/>
-<vertex x="2.6824" y="-0.8075"/>
-<vertex x="2.8205" y="-0.7705"/>
-<vertex x="2.95" y="-0.7101"/>
-<vertex x="3.0671" y="-0.6282"/>
-<vertex x="3.1682" y="-0.5271"/>
-<vertex x="3.2501" y="-0.41"/>
-<vertex x="3.3105" y="-0.2805"/>
-<vertex x="3.3475" y="-0.1424"/>
-</polygon>
-<wire x1="0.35" y1="0" x2="-0.35" y2="0" width="0.05" layer="39"/>
-<wire x1="3.81" y1="-1.27" x2="-1.27" y2="-1.27" width="0.12" layer="51"/>
-<wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.12" layer="21"/>
-<wire x1="3.81" y1="1.27" x2="-0.4233" y2="1.27" width="0.12" layer="21"/>
-<wire x1="3.81" y1="1.27" x2="3.81" y2="-1.27" width="0.12" layer="51"/>
-<wire x1="4.06" y1="-1.52" x2="-1.52" y2="-1.52" width="0.05" layer="39"/>
-<wire x1="4.06" y1="1.52" x2="4.06" y2="-1.52" width="0.05" layer="39"/>
-<pad name="1" x="0" y="0" drill="1.1" diameter="1.65" shape="square" stop="no" first="yes"/>
-<pad name="2" x="2.54" y="0" drill="1.1" diameter="1.65" rot="R80" stop="no"/>
-</package>
-</packages>
 </library>
 </libraries>
 <attributes>
@@ -2620,12 +2490,6 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-3" y="-2.6076" size="1" layer="25" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="-0.4476" y="-5.5" size="1.27" layer="27" font="vector" rot="R90" align="top-center"/>
 </element>
-<element name="J3" library="RemoteParts" package="USB-MINIB-EDAC-690-005-299-043" value="USB-MICROB-EDAC-690-005-299-043" x="-33.75" y="29" smashed="yes" rot="R270">
-<attribute name="CREATOR" value="Swanson" x="-204.75" y="51" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIST" value="DIGIKEY" x="-204.75" y="51" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="151-1206-1-ND " x="-204.75" y="51" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-41.165" y="25.61" size="1.27" layer="21" font="vector"/>
-</element>
 <element name="JP2" library="RemoteParts" package="1X06-SIP-RIGHT-ANGLE" value="M06-TH-RIGHT-ANGLE" x="-0.375" y="21.5" smashed="yes" rot="MR0">
 <attribute name="CREATOR" value="Swanson" x="-0.375" y="21.5" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-0.375" y="21.5" size="1.778" layer="28" rot="MR0" display="off"/>
@@ -2764,20 +2628,20 @@ design rules under a new name.</description>
 <attribute name="DIST" value="NA" x="-24.25" y="4.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="-24.25" y="4.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="F2" library="RemoteParts" package="FIDUCIAL_STENCIL" value="1mm" x="-38.75" y="26" smashed="yes">
-<attribute name="CREATOR" value="Swanson" x="-38.75" y="26" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="NA" x="-38.75" y="26" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="NA" x="-38.75" y="26" size="1.778" layer="27" display="off"/>
+<element name="F2" library="RemoteParts" package="FIDUCIAL_STENCIL" value="1mm" x="-33.75" y="28.725" smashed="yes">
+<attribute name="CREATOR" value="Swanson" x="-33.75" y="28.725" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="NA" x="-33.75" y="28.725" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="NA" x="-33.75" y="28.725" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F3" library="RemoteParts" package="FIDUCIAL_STENCIL" value="1mm" x="-37" y="-19.375" smashed="yes">
 <attribute name="CREATOR" value="Swanson" x="-37" y="-19.375" size="1.778" layer="27" font="vector" display="off"/>
 <attribute name="DIST" value="NA" x="-37" y="-19.375" size="1.778" layer="27" font="vector" display="off"/>
 <attribute name="DISTPN" value="NA" x="-37" y="-19.375" size="1.778" layer="27" font="vector" display="off"/>
 </element>
-<element name="F4" library="RemoteParts" package="FIDUCIAL_STENCIL" value="1mm" x="37" y="-21.75" smashed="yes">
-<attribute name="CREATOR" value="Swanson" x="37" y="-21.75" size="1.778" layer="27" font="vector" display="off"/>
-<attribute name="DIST" value="NA" x="37" y="-21.75" size="1.778" layer="27" font="vector" display="off"/>
-<attribute name="DISTPN" value="NA" x="37" y="-21.75" size="1.778" layer="27" font="vector" display="off"/>
+<element name="F4" library="RemoteParts" package="FIDUCIAL_STENCIL" value="1mm" x="37" y="-26.25" smashed="yes">
+<attribute name="CREATOR" value="Swanson" x="37" y="-26.25" size="1.778" layer="27" font="vector" display="off"/>
+<attribute name="DIST" value="NA" x="37" y="-26.25" size="1.778" layer="27" font="vector" display="off"/>
+<attribute name="DISTPN" value="NA" x="37" y="-26.25" size="1.778" layer="27" font="vector" display="off"/>
 </element>
 <element name="L1" library="RemoteParts" package="SPARKFUN_LCD_33_PARALLEL" value="SPARKFUN_LCD_33_SERIAL-RGB" x="0" y="2.625" locked="yes">
 <attribute name="AUX1DIST" value="DIGIKEY" x="0" y="2.625" size="1.778" layer="27" display="off"/>
@@ -2788,39 +2652,6 @@ design rules under a new name.</description>
 <attribute name="DIST" value="SparkFun" x="0" y="2.625" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="LCD-10862" x="0" y="2.625" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="X" x="0" y="2.625" size="1.778" layer="27" display="off"/>
-</element>
-<element name="J5" library="custom" package="MALE_HEADER_2X1_0.1IN" value="" x="-7.875" y="14.625" smashed="yes" rot="R180">
-<attribute name="CREATOR" value="SWANSON" x="-7.875" y="14.625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DIST" value="Digikey" x="-7.875" y="14.625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="3M9447-ND" x="-7.875" y="14.625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR" value="3M" x="-7.875" y="14.625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="961102-6404-AR" x="-7.875" y="14.625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-11.7934" y="11.952" size="1" layer="25" font="vector"/>
-<attribute name="REVIEWER" value="" x="-7.875" y="14.625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SPICEPREFIX" value="B" x="-7.875" y="14.625" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-6.7066" y="12.7962" size="1.2" layer="27" font="vector" ratio="10" rot="R180"/>
-</element>
-<element name="J6" library="custom" package="MALE_HEADER_2X1_0.1IN" value="" x="-7.75" y="-2.25" smashed="yes" rot="R180">
-<attribute name="CREATOR" value="SWANSON" x="-7.75" y="-2.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DIST" value="Digikey" x="-7.75" y="-2.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="3M9447-ND" x="-7.75" y="-2.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR" value="3M" x="-7.75" y="-2.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="961102-6404-AR" x="-7.75" y="-2.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-11.7934" y="-0.173" size="1" layer="25" font="vector"/>
-<attribute name="REVIEWER" value="" x="-7.75" y="-2.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SPICEPREFIX" value="B" x="-7.75" y="-2.25" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-6.5816" y="-4.0788" size="1.2" layer="27" font="vector" ratio="10" rot="R180"/>
-</element>
-<element name="J7" library="custom" package="MALE_HEADER_2X1_0.1IN" value="" x="-7.75" y="2.75" smashed="yes" rot="R180">
-<attribute name="CREATOR" value="SWANSON" x="-7.75" y="2.75" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DIST" value="Digikey" x="-7.75" y="2.75" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="3M9447-ND" x="-7.75" y="2.75" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR" value="3M" x="-7.75" y="2.75" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="961102-6404-AR" x="-7.75" y="2.75" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-11.7934" y="4.827" size="1" layer="25" font="vector"/>
-<attribute name="REVIEWER" value="" x="-7.75" y="2.75" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SPICEPREFIX" value="B" x="-7.75" y="2.75" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-6.5816" y="0.9212" size="1.2" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="U$4" library="RemoteParts" package="375MAH-BATTERY" value="" x="23.875" y="78.5"/>
 <element name="U$5" library="RemoteParts" package="600MAH-BATTERY" value="" x="50" y="78"/>
@@ -2890,17 +2721,6 @@ design rules under a new name.</description>
 <attribute name="DISTPN" value="YAG3721CT-ND" x="-23.625" y="1.875" size="1.778" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="NAME" x="-18.75" y="2.5" size="1.27" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" value="30K" x="-22.125" y="2.5" size="1.2" layer="27" font="vector" ratio="10" rot="R180"/>
-</element>
-<element name="J10" library="custom" package="MALE_HEADER_2X1_0.1IN" value="" x="-7.75" y="-7.375" smashed="yes" rot="R180">
-<attribute name="CREATOR" value="SWANSON" x="-7.75" y="-7.375" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DIST" value="Digikey" x="-7.75" y="-7.375" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="3M9447-ND" x="-7.75" y="-7.375" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR" value="3M" x="-7.75" y="-7.375" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="961102-6404-AR" x="-7.75" y="-7.375" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-11.7934" y="-5.298" size="1" layer="25" font="vector"/>
-<attribute name="REVIEWER" value="" x="-7.75" y="-7.375" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="SPICEPREFIX" value="B" x="-7.75" y="-7.375" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="-6.5816" y="-9.2038" size="1.2" layer="27" font="vector" ratio="10" rot="R180"/>
 </element>
 <element name="B3" library="RemoteParts" package="SCREW-TERMINAL-1X2-2.54MM" value="HEADER-0.1IN-2POS-SCREW" x="-18.5" y="9.625" rot="R270">
 <attribute name="DIST" value="digikey" x="-18.5" y="9.625" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2992,6 +2812,26 @@ design rules under a new name.</description>
 <attribute name="VALUE" value="3.3V" x="-8.75" y="9.375" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="JP6" library="RemoteParts" package="SMT-JUMPER_3_1-NC_PASTE_NO-SILK" value="JUMPER-SMT_3_1-NC_PASTE_NO-SILK" x="-3.25" y="13.25"/>
+<element name="P1" library="RemoteParts" package="TEST-POINT-KEYSTONE-5000" value="TEST-POINT" x="-10" y="-1">
+<attribute name="CREATOR" value="Swanson" x="-10" y="-1" size="1" layer="27" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-10" y="-1" size="1" layer="27" display="off"/>
+<attribute name="DISTPN" value="36-5001-ND " x="-10" y="-1" size="1" layer="27" display="off"/>
+</element>
+<element name="P2" library="RemoteParts" package="TEST-POINT-KEYSTONE-5000" value="TEST-POINT" x="-10" y="-9">
+<attribute name="CREATOR" value="Swanson" x="-10" y="-9" size="1" layer="27" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-10" y="-9" size="1" layer="27" display="off"/>
+<attribute name="DISTPN" value="36-5001-ND " x="-10" y="-9" size="1" layer="27" display="off"/>
+</element>
+<element name="P3" library="RemoteParts" package="TEST-POINT-KEYSTONE-5000" value="TEST-POINT" x="-10" y="-5">
+<attribute name="CREATOR" value="Swanson" x="-10" y="-5" size="1" layer="27" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-10" y="-5" size="1" layer="27" display="off"/>
+<attribute name="DISTPN" value="36-5001-ND " x="-10" y="-5" size="1" layer="27" display="off"/>
+</element>
+<element name="P4" library="RemoteParts" package="TEST-POINT-KEYSTONE-5000" value="TEST-POINT" x="-10" y="3">
+<attribute name="CREATOR" value="Swanson" x="-10" y="3" size="1" layer="27" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-10" y="3" size="1" layer="27" display="off"/>
+<attribute name="DISTPN" value="36-5001-ND " x="-10" y="3" size="1" layer="27" display="off"/>
+</element>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -3047,11 +2887,6 @@ design rules under a new name.</description>
 <contactref element="V4" pad="P1"/>
 <contactref element="V7" pad="P1"/>
 <contactref element="V8" pad="P1"/>
-<contactref element="J3" pad="P9"/>
-<contactref element="J3" pad="P6"/>
-<contactref element="J3" pad="P8"/>
-<contactref element="J3" pad="P7"/>
-<contactref element="J3" pad="5"/>
 <contactref element="JP2" pad="1"/>
 <contactref element="U2" pad="8"/>
 <contactref element="S2" pad="1"/>
@@ -3111,8 +2946,6 @@ design rules under a new name.</description>
 <vertex x="43" y="24"/>
 <vertex x="8" y="24"/>
 </polygon>
-<contactref element="J5" pad="2"/>
-<contactref element="J5" pad="1"/>
 <contactref element="P6" pad="1"/>
 <contactref element="L1" pad="RW" route="any" routetag="G$1.RW"/>
 <contactref element="E1" pad="BUTB"/>
@@ -3146,9 +2979,8 @@ design rules under a new name.</description>
 <contactref element="C17" pad="1"/>
 <contactref element="U5" pad="2"/>
 <contactref element="C16" pad="2"/>
-<wire x1="-5.5" y1="10.395" x2="-12" y2="8.73" width="0" layer="19" extent="1-1"/>
-<wire x1="-8.75" y1="10.675" x2="-5.5" y2="10.395" width="0" layer="19" extent="1-1"/>
-<wire x1="-41.55" y1="-21.625" x2="-8.75" y2="10.675" width="0" layer="19" extent="1-1"/>
+<contactref element="P4" pad="T"/>
+<wire x1="-41.55" y1="-21.625" x2="-10" y2="3" width="0" layer="19" extent="1-1"/>
 <wire x1="-36.13" y1="-26.9" x2="-41.55" y2="-21.625" width="0" layer="19" extent="1-1"/>
 <wire x1="-32.45" y1="-21.625" x2="-36.13" y2="-26.9" width="0" layer="19" extent="1-1"/>
 <wire x1="-32" y1="-12.875" x2="-32.45" y2="-21.625" width="0" layer="19" extent="1-1"/>
@@ -3171,24 +3003,10 @@ design rules under a new name.</description>
 <wire x1="-29.75" y1="6.5" x2="-29.75" y2="4.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.75" y1="8.855" x2="-31.75" y2="6.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-18.5" y1="8.355" x2="-22.25" y2="6.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-40.5" y1="3.65" x2="-31.75" y2="4.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-40.5" y1="9.65" x2="-40.5" y2="3.65" width="0" layer="19" extent="1-1"/>
-<wire x1="-29.25" y1="23.5" x2="-21.84" y2="18.125" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.65" y1="27.625" x2="-29.25" y2="23.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-29.25" y1="29" x2="-30.65" y2="27.625" width="0" layer="19" extent="1-1"/>
-<wire x1="-29.95" y1="30.175" x2="-29.25" y2="29" width="0" layer="19" extent="1-1"/>
-<wire x1="-32.55" y1="30.175" x2="-29.95" y2="30.175" width="0" layer="19" extent="1-1"/>
-<wire x1="-34.95" y1="30.175" x2="-32.55" y2="30.175" width="0" layer="19" extent="1-1"/>
-<wire x1="-37.55" y1="30.175" x2="-34.95" y2="30.175" width="0" layer="19" extent="1-1"/>
-<wire x1="-38.25" y1="29" x2="-37.55" y2="30.175" width="0" layer="19" extent="1-1"/>
-<wire x1="-36.85" y1="27.625" x2="-38.25" y2="29" width="0" layer="19" extent="1-1"/>
-<wire x1="-35.05" y1="27.5" x2="-36.85" y2="27.625" width="0" layer="19" extent="1-1"/>
-<wire x1="-35.35" y1="23.5" x2="-35.05" y2="27.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-38.25" y1="23.5" x2="-35.35" y2="23.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-32" y1="18.125" x2="-29.25" y2="23.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-10.415" y1="14.625" x2="-18.5" y2="8.355" width="0" layer="19" extent="1-1"/>
-<wire x1="-7.875" y1="14.625" x2="-10.415" y2="14.625" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.75" y1="10.02" x2="-7.875" y2="14.625" width="0" layer="19" extent="1-1"/>
+<wire x1="-12" y1="8.73" x2="-18.5" y2="8.355" width="0" layer="19" extent="1-1"/>
+<wire x1="-8.75" y1="10.675" x2="-12" y2="8.73" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.5" y1="10.395" x2="-8.75" y2="10.675" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.75" y1="10.02" x2="-5.5" y2="10.395" width="0" layer="19" extent="1-1"/>
 <wire x1="0.594" y1="7.4" x2="-1.75" y2="10.02" width="0" layer="19" extent="1-1"/>
 <wire x1="0.594" y1="5.45" x2="0.594" y2="7.4" width="0" layer="19" extent="1-1"/>
 <wire x1="-1.75" y1="4.73" x2="0.594" y2="5.45" width="0" layer="19" extent="1-1"/>
@@ -3233,10 +3051,20 @@ design rules under a new name.</description>
 <wire x1="34.25" y1="3.355" x2="32.395" y2="5.5" width="0" layer="19" extent="1-1"/>
 <wire x1="40.5" y1="1.65" x2="34.25" y2="3.355" width="0" layer="19" extent="1-1"/>
 <wire x1="40.5" y1="-4.35" x2="40.5" y2="1.65" width="0" layer="19" extent="1-1"/>
-<wire x1="15.25" y1="-3.92" x2="15.25" y2="3.7" width="0" layer="19" extent="1-1"/>
+<wire x1="15.25" y1="-3.92" x2="10.25" y2="1.23" width="0" layer="19" extent="1-1"/>
 <wire x1="6.06" y1="18.125" x2="14.5" y2="17.5" width="0" layer="19" extent="1-1"/>
 <wire x1="5.975" y1="21.5" x2="6.06" y2="18.125" width="0" layer="19" extent="1-1"/>
 <wire x1="2.375" y1="29.45" x2="5.975" y2="21.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-40.5" y1="3.65" x2="-31.75" y2="4.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-40.5" y1="9.65" x2="-40.5" y2="3.65" width="0" layer="19" extent="1-1"/>
+<wire x1="-32" y1="18.125" x2="-30.75" y2="8.855" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.65" y1="27.625" x2="-32" y2="18.125" width="0" layer="19" extent="1-1"/>
+<wire x1="-29.95" y1="30.175" x2="-30.65" y2="27.625" width="0" layer="19" extent="1-1"/>
+<wire x1="-32.55" y1="30.175" x2="-29.95" y2="30.175" width="0" layer="19" extent="1-1"/>
+<wire x1="-34.95" y1="30.175" x2="-32.55" y2="30.175" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.55" y1="30.175" x2="-34.95" y2="30.175" width="0" layer="19" extent="1-1"/>
+<wire x1="-36.85" y1="27.625" x2="-37.55" y2="30.175" width="0" layer="19" extent="1-1"/>
+<wire x1="-35.05" y1="27.5" x2="-36.85" y2="27.625" width="0" layer="19" extent="1-1"/>
 <wire x1="-2.7467" y1="-8.15" x2="0.594" y2="2.2" width="0" layer="19" extent="1-1"/>
 <wire x1="3.56" y1="-12.875" x2="-2.7467" y2="-8.15" width="0" layer="19" extent="1-1"/>
 <wire x1="2.5" y1="-16.375" x2="3.56" y2="-12.875" width="0" layer="19" extent="1-1"/>
@@ -3316,8 +3144,6 @@ design rules under a new name.</description>
 <vertex x="14" y="24"/>
 <vertex x="8" y="24"/>
 </polygon>
-<contactref element="J7" pad="1"/>
-<contactref element="J7" pad="2"/>
 <contactref element="J1" pad="1"/>
 <contactref element="J1" pad="4"/>
 <contactref element="J8" pad="1"/>
@@ -3327,28 +3153,28 @@ design rules under a new name.</description>
 <contactref element="J9" pad="1"/>
 <contactref element="J9" pad="4"/>
 <contactref element="JP6" pad="2"/>
-<wire x1="-41.5" y1="-12.67" x2="-3.25" y2="13.25" width="0" layer="19" extent="1-1"/>
+<contactref element="P1" pad="T"/>
+<wire x1="-41.5" y1="-12.67" x2="-10" y2="-1" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.5" y1="7.65" x2="-41.5" y2="-12.67" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.5" y1="13.65" x2="-40.5" y2="7.65" width="0" layer="19" extent="1-1"/>
 <wire x1="-25.75" y1="30.455" x2="-40.5" y2="13.65" width="0" layer="19" extent="1-1"/>
 <wire x1="-18.94" y1="27.445" x2="-25.75" y2="30.455" width="0" layer="19" extent="1-1"/>
 <wire x1="-2.625" y1="29.45" x2="-18.94" y2="27.445" width="0" layer="19" extent="1-1"/>
 <wire x1="0.895" y1="21.5" x2="-2.625" y2="29.45" width="0" layer="19" extent="1-1"/>
-<wire x1="14.895" y1="9.5" x2="0.895" y2="21.5" width="0" layer="19" extent="1-1"/>
-<wire x1="17.789" y1="11.07" x2="14.895" y2="9.5" width="0" layer="19" extent="1-1"/>
-<wire x1="19.42" y1="5.439" x2="17.789" y2="11.07" width="0" layer="19" extent="1-1"/>
+<wire x1="-3.25" y1="13.25" x2="0.895" y2="21.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-15.25" y1="4" x2="-3.25" y2="13.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-15.25" y1="-3.62" x2="-15.25" y2="4" width="0" layer="19" extent="1-1"/>
+<wire x1="2.9967" y1="-3.6" x2="-3.25" y2="13.25" width="0" layer="19" extent="1-1"/>
+<wire x1="15.25" y1="-1.38" x2="2.9967" y2="-3.6" width="0" layer="19" extent="1-1"/>
+<wire x1="15.25" y1="-9" x2="15.25" y2="-1.38" width="0" layer="19" extent="1-1"/>
+<wire x1="19.42" y1="5.439" x2="15.25" y2="-1.38" width="0" layer="19" extent="1-1"/>
 <wire x1="24.42" y1="5.439" x2="19.42" y2="5.439" width="0" layer="19" extent="1-1"/>
 <wire x1="27.551" y1="9.07" x2="24.42" y2="5.439" width="0" layer="19" extent="1-1"/>
 <wire x1="27.551" y1="11.57" x2="27.551" y2="9.07" width="0" layer="19" extent="1-1"/>
 <wire x1="27.551" y1="13.07" x2="27.551" y2="11.57" width="0" layer="19" extent="1-1"/>
 <wire x1="30.605" y1="5.5" x2="27.551" y2="9.07" width="0" layer="19" extent="1-1"/>
-<wire x1="15.25" y1="-1.38" x2="19.42" y2="5.439" width="0" layer="19" extent="1-1"/>
-<wire x1="15.25" y1="-9" x2="15.25" y2="-1.38" width="0" layer="19" extent="1-1"/>
-<wire x1="2.9967" y1="-3.6" x2="15.25" y2="-1.38" width="0" layer="19" extent="1-1"/>
-<wire x1="-7.75" y1="2.75" x2="2.9967" y2="-3.6" width="0" layer="19" extent="1-1"/>
-<wire x1="-10.29" y1="2.75" x2="-7.75" y2="2.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.25" y1="4" x2="-10.29" y2="2.75" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.25" y1="-3.62" x2="-15.25" y2="4" width="0" layer="19" extent="1-1"/>
+<wire x1="17.789" y1="11.07" x2="19.42" y2="5.439" width="0" layer="19" extent="1-1"/>
+<wire x1="14.895" y1="9.5" x2="17.789" y2="11.07" width="0" layer="19" extent="1-1"/>
 <wire x1="40.5" y1="-2.35" x2="30.605" y2="5.5" width="0" layer="19" extent="1-1"/>
 <wire x1="40.5" y1="-8.35" x2="40.5" y2="-2.35" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -3466,8 +3292,6 @@ design rules under a new name.</description>
 <contactref element="R7" pad="2"/>
 <contactref element="S1" pad="3"/>
 <contactref element="L1" pad="VDD"/>
-<contactref element="J6" pad="1"/>
-<contactref element="J6" pad="2"/>
 <contactref element="P6" pad="3"/>
 <contactref element="L1" pad="VDD1"/>
 <contactref element="R15" pad="1"/>
@@ -3475,19 +3299,19 @@ design rules under a new name.</description>
 <contactref element="C16" pad="1"/>
 <contactref element="U5" pad="3"/>
 <contactref element="U5" pad="1"/>
-<wire x1="-7.8" y1="10.675" x2="-12" y2="10.52" width="0" layer="19" extent="1-1"/>
-<wire x1="-9.7" y1="10.675" x2="-7.8" y2="10.675" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.5" y1="-28.8" x2="-9.7" y2="10.675" width="0" layer="19" extent="1-1"/>
+<contactref element="P3" pad="T"/>
+<wire x1="-39.5" y1="-28.8" x2="-10" y2="-5" width="0" layer="19" extent="1-1"/>
 <wire x1="-29.46" y1="-12.875" x2="-39.5" y2="-28.8" width="0" layer="19" extent="1-1"/>
 <wire x1="-13.375" y1="-18.455" x2="-29.46" y2="-12.875" width="0" layer="19" extent="1-1"/>
 <wire x1="-10.375" y1="-18.455" x2="-13.375" y2="-18.455" width="0" layer="19" extent="1-1"/>
-<wire x1="-10.29" y1="-2.25" x2="-10.375" y2="-18.455" width="0" layer="19" extent="1-1"/>
-<wire x1="-7.75" y1="-2.25" x2="-10.29" y2="-2.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-1.75" y1="6.52" x2="-7.75" y2="-2.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-1.75" y1="6.52" x2="-10.375" y2="-18.455" width="0" layer="19" extent="1-1"/>
 <wire x1="-1.75" y1="8.23" x2="-1.75" y2="6.52" width="0" layer="19" extent="1-1"/>
 <wire x1="0.594" y1="6.1" x2="-1.75" y2="6.52" width="0" layer="19" extent="1-1"/>
+<wire x1="-7.8" y1="10.675" x2="-1.75" y2="8.23" width="0" layer="19" extent="1-1"/>
+<wire x1="-9.7" y1="10.675" x2="-7.8" y2="10.675" width="0" layer="19" extent="1-1"/>
+<wire x1="-12" y1="10.52" x2="-9.7" y2="10.675" width="0" layer="19" extent="1-1"/>
 <wire x1="3.625" y1="15.58" x2="-1.75" y2="8.23" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.75" y1="21.835" x2="-1.75" y2="8.23" width="0" layer="19" extent="1-1"/>
+<wire x1="-25.75" y1="21.835" x2="-12" y2="10.52" width="0" layer="19" extent="1-1"/>
 <wire x1="-29.46" y1="18.125" x2="-25.75" y2="21.835" width="0" layer="19" extent="1-1"/>
 <wire x1="39.415" y1="-28.8575" x2="-10.375" y2="-18.455" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -3539,18 +3363,14 @@ design rules under a new name.</description>
 <wire x1="-28.58" y1="1.875" x2="-22.25" y2="13.25" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB_D-">
-<contactref element="J3" pad="2"/>
 <contactref element="U3" pad="16"/>
 <contactref element="J11" pad="2"/>
-<wire x1="-32.95" y1="23.5" x2="-33.1" y2="27.5" width="0" layer="19" extent="1-1"/>
-<wire x1="0.594" y1="8.7" x2="-32.95" y2="23.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-33.1" y1="27.5" x2="0.594" y2="8.7" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB_D+">
-<contactref element="J3" pad="3"/>
 <contactref element="U3" pad="15"/>
 <contactref element="J11" pad="3"/>
-<wire x1="-33.75" y1="23.5" x2="-33.75" y2="27.5" width="0" layer="19" extent="1-1"/>
-<wire x1="0.594" y1="9.35" x2="-33.75" y2="23.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-33.75" y1="27.5" x2="0.594" y2="9.35" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTS">
 <contactref element="U3" pad="11"/>
@@ -3671,7 +3491,6 @@ design rules under a new name.</description>
 <wire x1="25.42" y1="5.439" x2="-2.7467" y2="-7.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBUS" class="1">
-<contactref element="J3" pad="1"/>
 <contactref element="U4" pad="4"/>
 <contactref element="C10" pad="1"/>
 <contactref element="D8" pad="1"/>
@@ -3695,25 +3514,22 @@ design rules under a new name.</description>
 <contactref element="V26" pad="P1"/>
 <contactref element="V27" pad="P1"/>
 <contactref element="V28" pad="P1"/>
-<contactref element="J10" pad="1"/>
-<contactref element="J10" pad="2"/>
 <contactref element="J11" pad="1"/>
 <contactref element="D10" pad="A"/>
-<wire x1="-7.75" y1="-7.375" x2="36.755" y2="23.15" width="0" layer="19" extent="1-1"/>
-<wire x1="-10.29" y1="-7.375" x2="-7.75" y2="-7.375" width="0" layer="19" extent="1-1"/>
-<wire x1="-28.5501" y1="10.2" x2="-10.29" y2="-7.375" width="0" layer="19" extent="1-1"/>
-<wire x1="-28.25" y1="11.25" x2="-28.5501" y2="10.2" width="0" layer="19" extent="1-1"/>
-<wire x1="-28.25" y1="13.25" x2="-28.25" y2="11.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.25" y1="13.25" x2="-28.25" y2="13.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-32.25" y1="13.25" x2="-30.25" y2="13.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-32.25" y1="11.25" x2="-32.25" y2="13.25" width="0" layer="19" extent="1-1"/>
+<contactref element="P2" pad="T"/>
+<wire x1="-32.25" y1="11.25" x2="-10" y2="-9" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.75" y1="10.645" x2="-32.25" y2="11.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-32.25" y1="13.25" x2="-32.25" y2="11.25" width="0" layer="19" extent="1-1"/>
 <wire x1="-32.25" y1="15.25" x2="-32.25" y2="13.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.25" y1="13.25" x2="-32.25" y2="13.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-28.25" y1="13.25" x2="-30.25" y2="13.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-28.25" y1="11.25" x2="-28.25" y2="13.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-28.5501" y1="10.2" x2="-28.25" y2="11.25" width="0" layer="19" extent="1-1"/>
 <wire x1="-28.25" y1="15.25" x2="-28.25" y2="13.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.25" y1="15.25" x2="-30.25" y2="13.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-32.15" y1="23.5" x2="-32.25" y2="15.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-32.45" y1="27.5" x2="-32.15" y2="23.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.75" y1="25.165" x2="-32.15" y2="23.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.25" y1="15.25" x2="-32.25" y2="15.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-25.75" y1="25.165" x2="-28.25" y2="15.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-32.45" y1="27.5" x2="-25.75" y2="25.165" width="0" layer="19" extent="1-1"/>
+<wire x1="36.755" y1="23.15" x2="-25.75" y2="25.165" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1" class="1">
 <contactref element="D9" pad="C"/>

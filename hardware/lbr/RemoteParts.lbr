@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1850,6 +1850,11 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 <smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 </package>
+<package name="TEST-POINT-KEYSTONE-5000">
+<pad name="T" x="0" y="0" drill="1"/>
+<circle x="0" y="0" radius="1.27" width="0.127" layer="39"/>
+<text x="0" y="2" size="1" layer="25" font="vector" align="center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" locally_modified="yes" type="model">
@@ -2280,6 +2285,10 @@ Created: 10/25/2014</description>
 <vertex x="1.524" y="0.762"/>
 </polygon>
 </symbol>
+<symbol name="TEST-POINT">
+<pin name="T" x="0" y="0" visible="off" length="middle" function="dot" rot="R90"/>
+<text x="0" y="7.62" size="1.27" layer="95" align="center">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRSKY-GIMBAL" prefix="J">
@@ -2488,7 +2497,7 @@ Created: 10/25/2014</description>
 </technology>
 </technologies>
 </device>
-<device name="-MICROB-EDAC-690-005-299-043" package="USB-MINIB-EDAC-690-005-299-043">
+<device name="-MINIB-EDAC-690-005-299-043" package="USB-MINIB-EDAC-690-005-299-043">
 <connects>
 <connect gate="A" pin="1-VCC" pad="1"/>
 <connect gate="A" pin="2-D-" pad="2"/>
@@ -3132,6 +3141,26 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TEST-POINT" prefix="P">
+<gates>
+<gate name="G$1" symbol="TEST-POINT" x="0" y="5.08"/>
+</gates>
+<devices>
+<device name="" package="TEST-POINT-KEYSTONE-5000">
+<connects>
+<connect gate="G$1" pin="T" pad="T"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="36-5001-ND
+"/>
+</technology>
 </technologies>
 </device>
 </devices>
