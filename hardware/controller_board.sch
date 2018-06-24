@@ -2989,6 +2989,35 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <smd name="A" x="1.665" y="0" dx="1.25" dy="0.8" layer="1" roundness="50" stop="no" cream="no"/>
 <smd name="C" x="-1.665" y="0" dx="1.25" dy="0.8" layer="1" roundness="50" rot="R180" stop="no" cream="no"/>
 </package>
+<package name="SOT23-DBV">
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
+<wire x1="-0.428" y1="-0.81" x2="-0.522" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="-0.522" y1="0.81" x2="0.522" y2="0.81" width="0.1524" layer="21"/>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+<wire x1="-1.328" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="-0.81" x2="-1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.81" x2="-1.328" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="51"/>
+<wire x1="-2" y1="-2.5" x2="-2" y2="2.5" width="0.127" layer="39"/>
+<wire x1="-2" y1="2.5" x2="2" y2="2.5" width="0.127" layer="39"/>
+<text x="0.095" y="-3.429" size="1.27" layer="27" font="vector" align="center">&gt;VALUE</text>
+<text x="0.095" y="2.905" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
+<wire x1="0.522" y1="-0.81" x2="0.428" y2="-0.81" width="0.1524" layer="21"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
+<wire x1="1.328" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="51"/>
+<wire x1="1.422" y1="-0.81" x2="1.328" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="2" y1="-2.5" x2="-2" y2="-2.5" width="0.127" layer="39"/>
+<wire x1="2" y1="2.5" x2="2" y2="-2.5" width="0.127" layer="39"/>
+<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ANTENNA2">
@@ -3268,6 +3297,19 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <wire x1="0.635" y1="1.27" x2="0.635" y2="1.016" width="0.254" layer="94"/>
 <pin name="A" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="TPS736*">
+<text x="0" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="15.24" x2="17.78" y2="15.24" width="0.254" layer="94"/>
+<text x="0" y="16.51" size="1.778" layer="95">&gt;NAME</text>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="15.24" x2="17.78" y2="0" width="0.254" layer="94"/>
+<pin name="EN" x="-2.54" y="2.54" length="short" direction="in"/>
+<pin name="GND" x="-2.54" y="7.62" length="short" direction="in"/>
+<pin name="IN" x="-2.54" y="12.7" length="short" direction="in"/>
+<pin name="NC/FB" x="20.32" y="2.54" length="short" direction="pas" rot="R180"/>
+<pin name="OUT" x="20.32" y="12.7" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3944,6 +3986,52 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </device>
 </devices>
 </deviceset>
+<deviceset name="TPS73633-DBVT">
+<gates>
+<gate name="G$1" symbol="TPS736*" x="0" y="0"/>
+</gates>
+<devices>
+<device name="3V" package="SOT23-DBV">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="NC/FB" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DATASHEET" value="http://www.ti.com/lit/ds/symlink/lp3985.pdf"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="LP3985IM5X-3.0/NOPBCT-ND"/>
+<attribute name="MFR" value="Texas Instruments"/>
+<attribute name="MPN" value="LP3985IM5X-3.0/NOPB"/>
+<attribute name="PRICE" value="0.59"/>
+<attribute name="REVIEWER" value="Swanson"/>
+<attribute name="VALUE" value="3V"/>
+</technology>
+</technologies>
+</device>
+<device name="3V3" package="SOT23-DBV">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="NC/FB" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="LP3985IM5-3.3/NOPBCT-ND"/>
+<attribute name="VALUE" value="3.3V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="custom">
@@ -4300,6 +4388,11 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="JP3" library="RemoteParts" deviceset="JUMPER-SMT_2_NO" device="_SILK"/>
 <part name="JP4" library="RemoteParts" deviceset="JUMPER-SMT_2_NO" device="_SILK"/>
 <part name="JP5" library="RemoteParts" deviceset="JUMPER-SMT_2_NO" device="_SILK"/>
+<part name="C16" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
+<part name="C17" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
+<part name="GND11" library="quadparts_prebuilt" deviceset="GND" device=""/>
+<part name="GND4" library="quadparts_prebuilt" deviceset="GND" device=""/>
+<part name="U5" library="quadparts_prebuilt" deviceset="TPS73633-DBVT" device="3V3" value="3.3V"/>
 </parts>
 <sheets>
 <sheet>
@@ -4322,20 +4415,20 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <wire x1="77.47" y1="130.81" x2="77.47" y2="64.77" width="0.1524" layer="97" style="longdash"/>
 <wire x1="77.47" y1="64.77" x2="311.15" y2="64.77" width="0.1524" layer="97" style="longdash"/>
 <wire x1="311.15" y1="64.77" x2="311.15" y2="130.81" width="0.1524" layer="97" style="longdash"/>
-<text x="85.09" y="6.35" size="3.81" layer="97">LiPo Charger</text>
-<text x="196.85" y="66.04" size="3.81" layer="97">Switchable FTDI</text>
+<text x="85.09" y="6.35" size="3.81" layer="97">LiPo Charger *</text>
+<text x="154.94" y="66.04" size="3.81" layer="97">Switchable FTDI (&amp; 70mA 3.3V regulator)*</text>
 <wire x1="63.5" y1="275.59" x2="63.5" y2="226.06" width="0.1524" layer="97" style="longdash"/>
 <wire x1="63.5" y1="226.06" x2="3.81" y2="226.06" width="0.1524" layer="97" style="longdash"/>
 <wire x1="63.5" y1="226.06" x2="63.5" y2="181.61" width="0.1524" layer="97" style="longdash"/>
 <wire x1="63.5" y1="181.61" x2="3.81" y2="181.61" width="0.1524" layer="97" style="longdash"/>
 <wire x1="63.5" y1="181.61" x2="63.5" y2="135.89" width="0.1524" layer="97" style="longdash"/>
 <wire x1="63.5" y1="135.89" x2="3.81" y2="135.89" width="0.1524" layer="97" style="longdash"/>
-<text x="6.35" y="227.33" size="3.81" layer="97">Power Breakouts</text>
-<text x="7.62" y="184.15" size="3.81" layer="97">Frysky Gimbals</text>
-<text x="7.62" y="138.43" size="3.81" layer="97">Servo Gimbals</text>
+<text x="6.35" y="227.33" size="3.81" layer="97">Power Breakouts *</text>
+<text x="7.62" y="184.15" size="3.81" layer="97">Frysky Gimbals *</text>
+<text x="7.62" y="138.43" size="3.81" layer="97">Servo Gimbals *</text>
 <wire x1="328.93" y1="275.59" x2="328.93" y2="196.85" width="0.1524" layer="97" style="longdash"/>
 <wire x1="328.93" y1="196.85" x2="427.99" y2="196.85" width="0.1524" layer="97" style="longdash"/>
-<text x="344.17" y="199.39" size="3.81" layer="97">Rotary Encoders and Buttons</text>
+<text x="344.17" y="199.39" size="3.81" layer="97">Rotary Encoders and Buttons *</text>
 <wire x1="208.28" y1="59.69" x2="270.51" y2="59.69" width="0.1524" layer="97" style="longdash"/>
 <wire x1="270.51" y1="59.69" x2="270.51" y2="3.81" width="0.1524" layer="97" style="longdash"/>
 <wire x1="270.51" y1="2.54" x2="270.51" y2="3.81" width="0.1524" layer="97" style="longdash"/>
@@ -4344,12 +4437,15 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <text x="229.87" y="6.35" size="3.81" layer="97">Battery</text>
 <wire x1="328.93" y1="196.85" x2="327.66" y2="114.3" width="0.1524" layer="97" style="longdash"/>
 <wire x1="327.66" y1="114.3" x2="426.72" y2="114.3" width="0.1524" layer="97" style="longdash"/>
-<text x="370.84" y="116.84" size="3.81" layer="97">LCD</text>
+<text x="370.84" y="116.84" size="3.81" layer="97">LCD *</text>
 <wire x1="327.66" y1="114.3" x2="327.66" y2="78.74" width="0.1524" layer="97" style="longdash"/>
 <wire x1="327.66" y1="78.74" x2="427.99" y2="78.74" width="0.1524" layer="97" style="longdash"/>
 <wire x1="327.66" y1="78.74" x2="327.66" y2="35.56" width="0.1524" layer="97" style="longdash"/>
 <text x="373.38" y="82.55" size="3.81" layer="97">ISP</text>
 <text x="361.95" y="39.37" size="3.81" layer="97">FTDI Header</text>
+<wire x1="63.5" y1="135.89" x2="63.5" y2="99.06" width="0.1524" layer="97" style="longdash"/>
+<wire x1="63.5" y1="99.06" x2="3.81" y2="99.06" width="0.1524" layer="97" style="longdash"/>
+<text x="5.08" y="100.33" size="3.81" layer="97">150mA 3.3V Regulator *</text>
 </plain>
 <instances>
 <instance part="GND10" gate="1" x="339.09" y="226.06"/>
@@ -4510,6 +4606,11 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <instance part="JP3" gate="G$1" x="365.76" y="66.04"/>
 <instance part="JP4" gate="G$1" x="365.76" y="60.96"/>
 <instance part="JP5" gate="G$1" x="365.76" y="55.88"/>
+<instance part="C16" gate="G$1" x="10.16" y="123.19"/>
+<instance part="C17" gate="G$1" x="53.34" y="120.65" rot="R180"/>
+<instance part="GND11" gate="1" x="53.34" y="113.03"/>
+<instance part="GND4" gate="1" x="22.86" y="118.11"/>
+<instance part="U5" gate="G$1" x="27.94" y="113.03"/>
 </instances>
 <busses>
 </busses>
@@ -4870,6 +4971,21 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <wire x1="26.67" y1="163.83" x2="30.48" y2="163.83" width="0.1524" layer="91"/>
 <label x="30.48" y="163.83" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="C17" gate="G$1" pin="1"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="53.34" y1="118.11" x2="53.34" y2="115.57" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="U5" gate="G$1" pin="GND"/>
+<wire x1="25.4" y1="120.65" x2="22.86" y2="120.65" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C16" gate="G$1" pin="2"/>
+<wire x1="10.16" y1="113.03" x2="10.16" y2="118.11" width="0.1524" layer="91"/>
+<label x="10.16" y="113.03" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="BTN1" class="0">
 <segment>
@@ -5041,6 +5157,12 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <pinref part="J9" gate="G$1" pin="+"/>
 <wire x1="26.67" y1="171.45" x2="30.48" y2="171.45" width="0.1524" layer="91"/>
 <label x="30.48" y="171.45" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C17" gate="G$1" pin="2"/>
+<pinref part="U5" gate="G$1" pin="OUT"/>
+<wire x1="48.26" y1="125.73" x2="53.34" y2="125.73" width="0.1524" layer="91"/>
+<label x="53.34" y="125.73" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -5271,6 +5393,17 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="354.33" y1="152.4" x2="351.79" y2="152.4" width="0.1524" layer="91"/>
 <label x="351.79" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C16" gate="G$1" pin="1"/>
+<junction x="10.16" y="125.73"/>
+<pinref part="U5" gate="G$1" pin="EN"/>
+<wire x1="17.78" y1="125.73" x2="10.16" y2="125.73" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="115.57" x2="25.4" y2="115.57" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="125.73" x2="17.78" y2="115.57" width="0.1524" layer="91"/>
+<pinref part="U5" gate="G$1" pin="IN"/>
+<wire x1="25.4" y1="125.73" x2="17.78" y2="125.73" width="0.1524" layer="91"/>
+<junction x="17.78" y="125.73"/>
 </segment>
 </net>
 <net name="TXO" class="0">
