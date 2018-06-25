@@ -1014,8 +1014,6 @@
 <circle x="0" y="0" radius="2.65" width="0.127" layer="40"/>
 <circle x="0" y="0" radius="2.05" width="1" layer="1"/>
 <circle x="0" y="0" radius="2.05" width="1" layer="16"/>
-<circle x="0" y="0" radius="2.05" width="1" layer="15"/>
-<circle x="0" y="0" radius="2.05" width="1" layer="2"/>
 <pad name="P$1" x="0" y="2" drill="0.2" thermals="no"/>
 <pad name="P$2" x="0" y="-2" drill="0.2" thermals="no"/>
 <pad name="P$3" x="2" y="0" drill="0.2" thermals="no"/>
@@ -1649,7 +1647,7 @@
 <circle x="0" y="0" radius="5.08" width="0.254" layer="94"/>
 <wire x1="-3.81" y1="0" x2="3.81" y2="0" width="0.508" layer="94"/>
 <wire x1="0" y1="3.81" x2="0" y2="-3.81" width="0.508" layer="94"/>
-<pin name="P$1" x="0" y="0" length="point"/>
+<pin name="P$1" x="0" y="0" visible="off" length="point"/>
 </symbol>
 <symbol name="FRSKY-GIMBAL">
 <wire x1="6.35" y1="12.7" x2="0" y2="12.7" width="0.254" layer="94"/>
@@ -2416,7 +2414,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="P$1" pad="FEED"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="VALUE" value="2.4GHz"/>
+</technology>
 </technologies>
 </device>
 <device name="NRF8001_1.6MM_REV" package="ANT_PCB_2.4GHZ_NRF8001_1.6MM_1OZ_REV">
@@ -3563,10 +3563,8 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <text x="88.9" y="11.43" size="2.54" layer="94">REV:</text>
 </symbol>
 <symbol name="VIA">
-<text x="5.08" y="-2.54" size="1.27" layer="95">&gt;NAME</text>
-<text x="5.08" y="-2.54" size="1.27" layer="95">&gt;NAME</text>
-<text x="5.08" y="1.27" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="N" x="0" y="0" length="middle" function="dot"/>
+<text x="5.334" y="0" size="1.27" layer="95" align="center-left">&gt;NAME</text>
+<pin name="N" x="0" y="0" visible="off" length="middle" function="dot"/>
 </symbol>
 <symbol name="VBAT">
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
@@ -4191,7 +4189,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </device>
 </devices>
 </deviceset>
-<deviceset name="LOCKED-VIA" prefix="V" uservalue="yes">
+<deviceset name="LOCKED-VIA" prefix="V">
 <gates>
 <gate name="G$1" symbol="VIA" x="0" y="0"/>
 </gates>
@@ -4492,7 +4490,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="P2" library="RemoteParts" deviceset="TEST-POINT" device=""/>
 <part name="P3" library="RemoteParts" deviceset="TEST-POINT" device=""/>
 <part name="P4" library="RemoteParts" deviceset="TEST-POINT" device=""/>
-<part name="U$8" library="RemoteParts" deviceset="ANTENNA_PCB" device="NRF8001_1.6MM"/>
+<part name="A1" library="RemoteParts" deviceset="ANTENNA_PCB" device="NRF8001_1.6MM" value="2.4GHz"/>
 </parts>
 <sheets>
 <sheet>
@@ -4564,11 +4562,11 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <instance part="GND9" gate="1" x="247.65" y="222.25"/>
 <instance part="GND29" gate="1" x="106.68" y="161.29"/>
 <instance part="GND31" gate="1" x="246.38" y="189.23"/>
-<instance part="GND14" gate="1" x="274.32" y="218.44"/>
+<instance part="GND14" gate="1" x="274.32" y="215.9"/>
 <instance part="GND32" gate="1" x="238.76" y="189.23"/>
 <instance part="GND33" gate="1" x="254" y="189.23"/>
 <instance part="GND34" gate="1" x="261.62" y="189.23"/>
-<instance part="GND15" gate="1" x="266.7" y="218.44"/>
+<instance part="GND15" gate="1" x="266.7" y="215.9"/>
 <instance part="GND16" gate="1" x="238.76" y="158.75"/>
 <instance part="GND17" gate="1" x="246.38" y="158.75"/>
 <instance part="GND18" gate="1" x="106.68" y="186.69"/>
@@ -4687,10 +4685,10 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <instance part="J11" gate="A" x="101.6" y="111.76" rot="MR0"/>
 <instance part="V3" gate="G$1" x="138.43" y="16.51" rot="R90"/>
 <instance part="V5" gate="G$1" x="140.97" y="16.51" rot="R90"/>
-<instance part="U$1" gate="G$1" x="391.16" y="121.92"/>
-<instance part="U$3" gate="G$1" x="401.32" y="121.92"/>
-<instance part="U$6" gate="G$1" x="411.48" y="121.92"/>
-<instance part="U$7" gate="G$1" x="421.64" y="121.92"/>
+<instance part="U$1" gate="G$1" x="391.16" y="125.73"/>
+<instance part="U$3" gate="G$1" x="401.32" y="125.73"/>
+<instance part="U$6" gate="G$1" x="411.48" y="125.73"/>
+<instance part="U$7" gate="G$1" x="421.64" y="125.73"/>
 <instance part="R15" gate="G$1" x="359.41" y="152.4"/>
 <instance part="J1" gate="G$1" x="15.24" y="207.01"/>
 <instance part="J2" gate="G$1" x="15.24" y="191.77"/>
@@ -4710,7 +4708,7 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <instance part="P2" gate="G$1" x="38.1" y="260.35" rot="R180"/>
 <instance part="P3" gate="G$1" x="31.75" y="260.35" rot="R180"/>
 <instance part="P4" gate="G$1" x="17.78" y="252.73"/>
-<instance part="U$8" gate="G$1" x="279.4" y="236.22"/>
+<instance part="A1" gate="G$1" x="279.4" y="236.22"/>
 </instances>
 <busses>
 </busses>
@@ -4743,12 +4741,11 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <segment>
 <pinref part="C3" gate="G$1" pin="2"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="274.32" y1="220.98" x2="274.32" y2="222.25" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="218.44" x2="274.32" y2="222.25" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="B5" gate="G$1" pin="GND@5"/>
 <pinref part="GND15" gate="1" pin="GND"/>
-<wire x1="266.7" y1="218.44" x2="266.7" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -4825,20 +4822,18 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <pinref part="V12" gate="G$1" pin="N"/>
 <pinref part="GND27" gate="1" pin="GND"/>
 <wire x1="264.16" y1="158.75" x2="264.16" y2="161.29" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="V9" gate="G$1" pin="N"/>
-<pinref part="V16" gate="G$1" pin="N"/>
-<wire x1="256.54" y1="161.29" x2="259.08" y2="161.29" width="0.1524" layer="91"/>
 <pinref part="V11" gate="G$1" pin="N"/>
 <wire x1="259.08" y1="161.29" x2="261.62" y2="161.29" width="0.1524" layer="91"/>
-<wire x1="261.62" y1="161.29" x2="266.7" y2="161.29" width="0.1524" layer="91"/>
-<junction x="261.62" y="161.29"/>
 <pinref part="V10" gate="G$1" pin="N"/>
 <junction x="259.08" y="161.29"/>
+<pinref part="V9" gate="G$1" pin="N"/>
+<wire x1="256.54" y1="161.29" x2="259.08" y2="161.29" width="0.1524" layer="91"/>
+<wire x1="261.62" y1="161.29" x2="264.16" y2="161.29" width="0.1524" layer="91"/>
+<junction x="261.62" y="161.29"/>
+<junction x="264.16" y="161.29"/>
+<pinref part="V16" gate="G$1" pin="N"/>
 <pinref part="V13" gate="G$1" pin="N"/>
 <wire x1="266.7" y1="161.29" x2="269.24" y2="161.29" width="0.1524" layer="91"/>
-<junction x="266.7" y="161.29"/>
 <pinref part="V14" gate="G$1" pin="N"/>
 <wire x1="269.24" y1="161.29" x2="271.78" y2="161.29" width="0.1524" layer="91"/>
 <junction x="269.24" y="161.29"/>
@@ -4863,6 +4858,8 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <pinref part="V19" gate="G$1" pin="N"/>
 <wire x1="287.02" y1="161.29" x2="289.56" y2="161.29" width="0.1524" layer="91"/>
 <junction x="287.02" y="161.29"/>
+<wire x1="264.16" y1="161.29" x2="266.7" y2="161.29" width="0.1524" layer="91"/>
+<junction x="266.7" y="161.29"/>
 </segment>
 <segment>
 <pinref part="GND7" gate="1" pin="GND"/>
@@ -5083,12 +5080,32 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <wire x1="10.16" y1="113.03" x2="10.16" y2="118.11" width="0.1524" layer="91"/>
 <label x="10.16" y="113.03" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="P$1"/>
+<pinref part="U$3" gate="G$1" pin="P$1"/>
+<wire x1="391.16" y1="125.73" x2="396.24" y2="125.73" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="P$1"/>
+<wire x1="396.24" y1="125.73" x2="401.32" y2="125.73" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="125.73" x2="411.48" y2="125.73" width="0.1524" layer="91"/>
+<junction x="401.32" y="125.73"/>
+<pinref part="U$7" gate="G$1" pin="P$1"/>
+<wire x1="411.48" y1="125.73" x2="421.64" y2="125.73" width="0.1524" layer="91"/>
+<junction x="411.48" y="125.73"/>
+<wire x1="396.24" y1="125.73" x2="396.24" y2="120.65" width="0.1524" layer="91"/>
+<junction x="396.24" y="125.73"/>
+<label x="396.24" y="120.65" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="BTN1" class="0">
 <segment>
 <wire x1="349.25" y1="228.6" x2="351.79" y2="228.6" width="0.1524" layer="91"/>
 <label x="351.79" y="228.6" size="1.27" layer="95" xref="yes"/>
 <pinref part="B1" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PE4(OC3B/INT4)"/>
+<wire x1="154.94" y1="191.77" x2="152.4" y2="191.77" width="0.1524" layer="91"/>
+<label x="152.4" y="191.77" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="PITCH" class="0">
@@ -5263,6 +5280,8 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <wire x1="247.65" y1="240.03" x2="236.22" y2="240.03" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="1"/>
 <junction x="247.65" y="242.57"/>
+<junction x="247.65" y="240.03"/>
+<label x="229.87" y="240.03" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="BTN2" class="0">
@@ -5270,6 +5289,11 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <wire x1="349.25" y1="243.84" x2="351.79" y2="243.84" width="0.1524" layer="91"/>
 <label x="351.79" y="243.84" size="1.27" layer="95" xref="yes"/>
 <pinref part="B2" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="PD3(TXD1/INT3)"/>
+<wire x1="154.94" y1="217.17" x2="152.4" y2="217.17" width="0.1524" layer="91"/>
+<label x="152.4" y="217.17" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="ANTENNA" class="2">
@@ -5280,7 +5304,7 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <wire x1="274.32" y1="233.68" x2="279.4" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="229.87" x2="274.32" y2="233.68" width="0.1524" layer="91"/>
 <junction x="274.32" y="233.68"/>
-<pinref part="U$8" gate="G$1" pin="P$1"/>
+<pinref part="A1" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -5479,6 +5503,7 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <pinref part="U5" gate="G$1" pin="IN"/>
 <wire x1="25.4" y1="125.73" x2="17.78" y2="125.73" width="0.1524" layer="91"/>
 <junction x="17.78" y="125.73"/>
+<label x="10.16" y="125.73" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="TXO" class="0">
@@ -5541,6 +5566,7 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <wire x1="232.41" y1="39.37" x2="240.03" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="232.41" y1="39.37" x2="232.41" y2="31.75" width="0.1524" layer="91"/>
 <pinref part="B3" gate="G$1" pin="1"/>
+<junction x="232.41" y="39.37"/>
 </segment>
 </net>
 <net name="USB_D-" class="0">
@@ -6149,20 +6175,6 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <wire x1="372.11" y1="152.4" x2="364.49" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="BTN-1" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PE4(OC3B/INT4)"/>
-<wire x1="154.94" y1="191.77" x2="152.4" y2="191.77" width="0.1524" layer="91"/>
-<label x="152.4" y="191.77" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="BTN-2" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="PD3(TXD1/INT3)"/>
-<wire x1="154.94" y1="217.17" x2="152.4" y2="217.17" width="0.1524" layer="91"/>
-<label x="152.4" y="217.17" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="N$16" class="0">
 <segment>
 <pinref part="R17" gate="G$1" pin="2"/>
@@ -6182,6 +6194,7 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <label x="172.72" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U3" gate="G$1" pin="VCCIO"/>
 <junction x="190.5" y="101.6"/>
+<junction x="176.53" y="101.6"/>
 </segment>
 <segment>
 <pinref part="JP6" gate="G$1" pin="3"/>
@@ -6205,6 +6218,25 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,190.5,86.36,U3,AGND,GND,,,"/>
+<approved hash="202,1,220.98,96.52,U3,DCD,,,,"/>
+<approved hash="202,1,220.98,99.06,U3,DSR,,,,"/>
+<approved hash="104,1,190.5,83.82,U3,GND7,GND,,,"/>
+<approved hash="104,1,190.5,81.28,U3,GND18,GND,,,"/>
+<approved hash="104,1,190.5,78.74,U3,GND21,GND,,,"/>
+<approved hash="202,1,190.5,96.52,U3,OSCI,,,,"/>
+<approved hash="202,1,220.98,83.82,U3,PWREN,,,,"/>
+<approved hash="202,1,190.5,91.44,U3,RESET,,,,"/>
+<approved hash="202,1,220.98,93.98,U3,RI,,,,"/>
+<approved hash="202,1,220.98,78.74,U3,SLEEP,,,,"/>
+<approved hash="202,1,220.98,81.28,U3,TXDEN,,,,"/>
+<approved hash="104,1,190.5,106.68,U3,VCC,VBAT,,,"/>
+<approved hash="104,1,190.5,101.6,U3,VCCIO,FTDI3V3,,,"/>
+<approved hash="104,1,153.67,39.37,U4,VBAT,BPOS,,,"/>
+<approved hash="104,1,128.27,39.37,U4,VDD,VBUS,,,"/>
+<approved hash="104,1,153.67,34.29,U4,VSS,GND,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
