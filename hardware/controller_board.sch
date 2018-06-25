@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="yes" active="yes"/>
@@ -2119,23 +2119,23 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="BLUE" pad="BLUE"/>
-<connect gate="G$1" pin="DB0" pad="DB0 DB0-1" route="any"/>
-<connect gate="G$1" pin="DB1" pad="DB1 DB1-1" route="any"/>
-<connect gate="G$1" pin="DB2" pad="DB2 DB2-1" route="any"/>
-<connect gate="G$1" pin="DB3" pad="DB3 DB3-1" route="any"/>
-<connect gate="G$1" pin="DB4" pad="DB4 DB4-1" route="any"/>
-<connect gate="G$1" pin="DB5" pad="DB5 DB5-1" route="any"/>
-<connect gate="G$1" pin="DB6" pad="DB6 DB6-1" route="any"/>
-<connect gate="G$1" pin="DB7" pad="DB7 DB7-1" route="any"/>
-<connect gate="G$1" pin="E" pad="E E1" route="any"/>
+<connect gate="G$1" pin="DB0" pad="DB0 DB0-1"/>
+<connect gate="G$1" pin="DB1" pad="DB1 DB1-1"/>
+<connect gate="G$1" pin="DB2" pad="DB2 DB2-1"/>
+<connect gate="G$1" pin="DB3" pad="DB3 DB3-1"/>
+<connect gate="G$1" pin="DB4" pad="DB4 DB4-1"/>
+<connect gate="G$1" pin="DB5" pad="DB5 DB5-1"/>
+<connect gate="G$1" pin="DB6" pad="DB6 DB6-1"/>
+<connect gate="G$1" pin="DB7" pad="DB7 DB7-1"/>
+<connect gate="G$1" pin="E" pad="E E1"/>
 <connect gate="G$1" pin="GREEN" pad="GREEN"/>
-<connect gate="G$1" pin="K" pad="K K1" route="any"/>
+<connect gate="G$1" pin="K" pad="K K1"/>
 <connect gate="G$1" pin="RED" pad="RED"/>
-<connect gate="G$1" pin="RS" pad="RS RS1" route="any"/>
-<connect gate="G$1" pin="RW" pad="RW RW1" route="any"/>
-<connect gate="G$1" pin="V0" pad="V0 V1" route="any"/>
-<connect gate="G$1" pin="VDD" pad="VDD VDD1" route="any"/>
-<connect gate="G$1" pin="VSS" pad="VSS VSS1" route="any"/>
+<connect gate="G$1" pin="RS" pad="RS RS1"/>
+<connect gate="G$1" pin="RW" pad="RW RW1"/>
+<connect gate="G$1" pin="V0" pad="V0 V1"/>
+<connect gate="G$1" pin="VDD" pad="VDD VDD1"/>
+<connect gate="G$1" pin="VSS" pad="VSS VSS1"/>
 </connects>
 <technologies>
 <technology name="">
