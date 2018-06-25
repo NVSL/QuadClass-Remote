@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="yes" active="yes"/>
@@ -1212,6 +1212,175 @@
 <circle x="0" y="0" radius="1.27" width="0.127" layer="39"/>
 <text x="0" y="2" size="1" layer="25" font="vector" align="center">&gt;NAME</text>
 </package>
+<package name="ANT_PCB_868MHZ_2.4GHZ_DUALBAND">
+<description>&lt;p&gt;Source: CC-ANTENNA-DK Board #6&lt;/p&gt;
+&lt;p&gt;Note: Layed out on a 0.1mm grid, with 0.2mm polygon width, meaning ever so slightly smaller than 8mil ... Eagle DRU may complain about this with 8 mil limits.&lt;/p&gt;</description>
+<wire x1="-0.4" y1="26.422" x2="-0.4" y2="22.612" width="0.762" layer="21"/>
+<smd name="FEED" x="0" y="0" dx="0.7" dy="0.7" layer="1"/>
+<pad name="P$1" x="-17.35" y="24.35" drill="0.3"/>
+<pad name="P$2" x="-15.85" y="24.35" drill="0.3"/>
+<pad name="P$3" x="-14.35" y="24.35" drill="0.3"/>
+<pad name="P$4" x="-12.85" y="24.35" drill="0.3"/>
+<pad name="P$5" x="-11.35" y="24.35" drill="0.3"/>
+<pad name="P$6" x="-9.85" y="24.35" drill="0.3"/>
+<pad name="P$7" x="-8.35" y="24.35" drill="0.3"/>
+<pad name="P$8" x="-6.85" y="24.35" drill="0.3"/>
+<pad name="P$9" x="-5.35" y="24.35" drill="0.3"/>
+<pad name="P$10" x="-3.85" y="24.35" drill="0.3"/>
+<pad name="P$11" x="-2.35" y="24.35" drill="0.3"/>
+<pad name="P$12" x="-0.85" y="24.35" drill="0.3"/>
+<pad name="P$13" x="0.65" y="24.35" drill="0.3"/>
+<pad name="P$14" x="2.15" y="24.35" drill="0.3"/>
+<pad name="P$15" x="3.65" y="24.35" drill="0.3"/>
+<pad name="P$16" x="5.15" y="24.35" drill="0.3"/>
+<pad name="P$17" x="6.65" y="24.35" drill="0.3"/>
+<pad name="P$18" x="8.15" y="24.35" drill="0.3"/>
+<pad name="P$19" x="9.65" y="24.35" drill="0.3"/>
+<pad name="P$20" x="11.15" y="24.35" drill="0.3"/>
+<pad name="P$21" x="12.65" y="24.35" drill="0.3"/>
+<pad name="P$22" x="14.15" y="24.35" drill="0.3"/>
+<pad name="P$23" x="15.65" y="24.35" drill="0.3"/>
+<pad name="P$24" x="17.15" y="24.35" drill="0.3"/>
+<pad name="P$25" x="18.05" y="23.25" drill="0.3"/>
+<pad name="P$26" x="18.05" y="21.65" drill="0.3"/>
+<pad name="P$27" x="18.05" y="20.05" drill="0.3"/>
+<pad name="P$28" x="-17.35" y="19.35" drill="0.3"/>
+<pad name="P$29" x="-15.85" y="19.35" drill="0.3"/>
+<pad name="P$30" x="-14.35" y="19.35" drill="0.3"/>
+<pad name="P$31" x="-12.85" y="19.35" drill="0.3"/>
+<pad name="P$32" x="-11.35" y="19.35" drill="0.3"/>
+<pad name="P$33" x="-9.85" y="19.35" drill="0.3"/>
+<pad name="P$34" x="-8.35" y="19.35" drill="0.3"/>
+<pad name="P$35" x="-6.85" y="19.35" drill="0.3"/>
+<pad name="P$36" x="-5.35" y="19.35" drill="0.3"/>
+<pad name="P$37" x="-3.85" y="19.35" drill="0.3"/>
+<pad name="P$38" x="-2.35" y="19.35" drill="0.3"/>
+<pad name="P$39" x="-0.85" y="19.35" drill="0.3"/>
+<pad name="P$40" x="0.65" y="19.35" drill="0.3"/>
+<pad name="P$41" x="2.15" y="19.35" drill="0.3"/>
+<pad name="P$42" x="3.65" y="19.35" drill="0.3"/>
+<pad name="P$43" x="5.15" y="19.35" drill="0.3"/>
+<pad name="P$44" x="6.65" y="19.35" drill="0.3"/>
+<pad name="P$45" x="8.15" y="19.35" drill="0.3"/>
+<pad name="P$46" x="9.65" y="19.35" drill="0.3"/>
+<pad name="P$47" x="11.15" y="19.35" drill="0.3"/>
+<pad name="P$48" x="12.65" y="19.35" drill="0.3"/>
+<pad name="P$49" x="14.15" y="19.35" drill="0.3"/>
+<pad name="P$50" x="15.65" y="19.35" drill="0.3"/>
+<pad name="P$51" x="17.15" y="19.35" drill="0.3"/>
+<pad name="P$52" x="-17.35" y="14.35" drill="0.3"/>
+<pad name="P$53" x="-15.85" y="14.35" drill="0.3"/>
+<pad name="P$54" x="-14.35" y="14.35" drill="0.3"/>
+<pad name="P$55" x="-12.85" y="14.35" drill="0.3"/>
+<pad name="P$56" x="-11.35" y="14.35" drill="0.3"/>
+<pad name="P$57" x="-9.85" y="14.35" drill="0.3"/>
+<pad name="P$58" x="-8.35" y="14.35" drill="0.3"/>
+<pad name="P$59" x="-6.85" y="14.35" drill="0.3"/>
+<pad name="P$60" x="-5.35" y="14.35" drill="0.3"/>
+<pad name="P$61" x="-3.85" y="14.35" drill="0.3"/>
+<pad name="P$62" x="-2.35" y="14.35" drill="0.3"/>
+<pad name="P$63" x="-0.85" y="14.35" drill="0.3"/>
+<pad name="P$64" x="0.65" y="14.35" drill="0.3"/>
+<pad name="P$65" x="2.15" y="14.35" drill="0.3"/>
+<pad name="P$66" x="3.65" y="14.35" drill="0.3"/>
+<pad name="P$67" x="5.15" y="14.35" drill="0.3"/>
+<pad name="P$68" x="6.65" y="14.35" drill="0.3"/>
+<pad name="P$69" x="8.15" y="14.35" drill="0.3"/>
+<pad name="P$70" x="9.65" y="14.35" drill="0.3"/>
+<pad name="P$71" x="11.15" y="14.35" drill="0.3"/>
+<pad name="P$72" x="12.65" y="14.35" drill="0.3"/>
+<pad name="P$73" x="14.15" y="14.35" drill="0.3"/>
+<pad name="P$74" x="15.65" y="14.35" drill="0.3"/>
+<pad name="P$75" x="17.15" y="14.35" drill="0.3"/>
+<pad name="P$76" x="-18.05" y="18.35" drill="0.3"/>
+<pad name="P$77" x="-18.05" y="16.85" drill="0.3"/>
+<pad name="P$78" x="-18.05" y="15.35" drill="0.3"/>
+<pad name="P$79" x="18.15" y="13.85" drill="0.3"/>
+<pad name="P$80" x="18.15" y="12.35" drill="0.3"/>
+<pad name="P$81" x="18.15" y="10.85" drill="0.3"/>
+<pad name="P$82" x="18.15" y="9.35" drill="0.3"/>
+<pad name="P$83" x="16.65" y="9.35" drill="0.3"/>
+<pad name="P$84" x="15.15" y="9.35" drill="0.3"/>
+<pad name="P$85" x="13.65" y="9.35" drill="0.3"/>
+<pad name="P$86" x="12.15" y="9.35" drill="0.3"/>
+<pad name="P$87" x="10.65" y="9.35" drill="0.3"/>
+<pad name="P$88" x="9.15" y="9.35" drill="0.3"/>
+<pad name="P$89" x="7.65" y="9.35" drill="0.3"/>
+<pad name="P$90" x="6.15" y="9.35" drill="0.3"/>
+<pad name="P$91" x="4.65" y="9.35" drill="0.3"/>
+<pad name="P$92" x="3.15" y="9.35" drill="0.3"/>
+<pad name="P$93" x="1.65" y="9.35" drill="0.3"/>
+<pad name="P$94" x="0.15" y="9.35" drill="0.3"/>
+<pad name="P$95" x="0.15" y="7.85" drill="0.3"/>
+<pad name="P$96" x="0.15" y="6.35" drill="0.3"/>
+<pad name="P$97" x="0.15" y="4.85" drill="0.3"/>
+<pad name="P$98" x="0.15" y="3.35" drill="0.3"/>
+<pad name="P$99" x="0.15" y="1.85" drill="0.3"/>
+<polygon width="0.2032" layer="1">
+<vertex x="-18.95" y="25.25"/>
+<vertex x="18.85" y="25.25"/>
+<vertex x="18.85" y="18.45"/>
+<vertex x="-17.15" y="18.45"/>
+<vertex x="-17.15" y="15.25"/>
+<vertex x="18.85" y="15.25"/>
+<vertex x="18.85" y="8.45"/>
+<vertex x="0.85" y="8.45"/>
+<vertex x="0.85" y="1.55"/>
+<vertex x="0.25" y="0.85"/>
+<vertex x="0.25" y="-0.25"/>
+<vertex x="-0.25" y="-0.25"/>
+<vertex x="-0.25" y="0.85"/>
+<vertex x="-0.95" y="1.55"/>
+<vertex x="-0.95" y="10.25"/>
+<vertex x="17.05" y="10.25"/>
+<vertex x="17.05" y="13.45"/>
+<vertex x="-18.95" y="13.45"/>
+<vertex x="-18.95" y="20.25"/>
+<vertex x="17.05" y="20.25"/>
+<vertex x="17.05" y="23.45"/>
+<vertex x="-18.95" y="23.45"/>
+</polygon>
+<polygon width="0.2032" layer="16">
+<vertex x="-18.95" y="25.25"/>
+<vertex x="18.85" y="25.25"/>
+<vertex x="18.85" y="18.45"/>
+<vertex x="-17.15" y="18.45"/>
+<vertex x="-17.15" y="15.25"/>
+<vertex x="18.85" y="15.25"/>
+<vertex x="18.85" y="8.45"/>
+<vertex x="0.85" y="8.45"/>
+<vertex x="0.85" y="1.55"/>
+<vertex x="0.25" y="0.85"/>
+<vertex x="0.25" y="0.1"/>
+<vertex x="-0.25" y="0.1"/>
+<vertex x="-0.25" y="0.85"/>
+<vertex x="-0.95" y="1.55"/>
+<vertex x="-0.95" y="10.25"/>
+<vertex x="17.05" y="10.25"/>
+<vertex x="17.05" y="13.45"/>
+<vertex x="-18.95" y="13.45"/>
+<vertex x="-18.95" y="20.25"/>
+<vertex x="17.05" y="20.25"/>
+<vertex x="17.05" y="23.45"/>
+<vertex x="-18.95" y="23.45"/>
+</polygon>
+</package>
+<package name="ANT_PCB_2.4GHZ_NRF8001_1.6MM_1OZ">
+<description>&lt;p&gt;2.4GHz PCB Antenna for Nordic nRF8001 Modules&lt;/p&gt;
+&lt;p&gt;Source: nRF2470 Production Files (nRF8001-DK Rev 1.0)&lt;/p&gt;</description>
+<wire x1="-8.1686" y1="17.0256" x2="-8.1686" y2="1.5799" width="1.27" layer="1"/>
+<wire x1="-8.1686" y1="1.5799" x2="-6.5888" y2="0" width="1.27" layer="1"/>
+<wire x1="-6.5888" y1="0" x2="0" y2="0" width="1.27" layer="1"/>
+<smd name="FEED" x="0" y="0" dx="1.27" dy="1.27" layer="1" stop="no" cream="no"/>
+<smd name="TESTPOINT" x="-8.1686" y="17.6047" dx="1.27" dy="1.27" layer="1" cream="no"/>
+</package>
+<package name="ANT_PCB_2.4GHZ_NRF8001_1.6MM_1OZ_REV">
+<wire x1="8.1686" y1="17.0256" x2="8.1686" y2="1.5799" width="1.27" layer="1"/>
+<wire x1="8.1686" y1="1.5799" x2="6.5888" y2="0" width="1.27" layer="1"/>
+<wire x1="6.5888" y1="0" x2="0" y2="0" width="1.27" layer="1"/>
+<smd name="FEED" x="0" y="0" dx="1.27" dy="1.27" layer="1" stop="no" cream="no"/>
+<smd name="TESTPOINT" x="8.1686" y="17.6047" dx="1.27" dy="1.27" layer="1" cream="no"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" locally_modified="yes" type="model">
@@ -1527,6 +1696,16 @@
 <symbol name="TEST-POINT">
 <pin name="T" x="0" y="0" visible="off" length="middle" function="dot" rot="R90"/>
 <text x="0" y="7.62" size="1.27" layer="95" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="ANT">
+<wire x1="0" y1="0" x2="0" y2="3.81" width="0.254" layer="94"/>
+<wire x1="0" y1="3.81" x2="-2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="3.81" width="0.254" layer="94"/>
+<wire x1="2.54" y1="3.81" x2="0" y2="3.81" width="0.254" layer="94"/>
+<pin name="P$1" x="0" y="-2.54" visible="off" length="short" direction="pas" rot="R90"/>
+<text x="3.81" y="1.27" size="1.778" layer="95">&gt;NAME</text>
+<text x="3.81" y="-1.27" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1950,13 +2129,13 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="DB7" pad="DB7 DB7-1" route="any"/>
 <connect gate="G$1" pin="E" pad="E E1" route="any"/>
 <connect gate="G$1" pin="GREEN" pad="GREEN"/>
-<connect gate="G$1" pin="K" pad="K K1"/>
+<connect gate="G$1" pin="K" pad="K K1" route="any"/>
 <connect gate="G$1" pin="RED" pad="RED"/>
-<connect gate="G$1" pin="RS" pad="RS RS1"/>
+<connect gate="G$1" pin="RS" pad="RS RS1" route="any"/>
 <connect gate="G$1" pin="RW" pad="RW RW1" route="any"/>
 <connect gate="G$1" pin="V0" pad="V0 V1" route="any"/>
-<connect gate="G$1" pin="VDD" pad="VDD VDD1"/>
-<connect gate="G$1" pin="VSS" pad="VSS VSS1"/>
+<connect gate="G$1" pin="VDD" pad="VDD VDD1" route="any"/>
+<connect gate="G$1" pin="VSS" pad="VSS VSS1" route="any"/>
 </connects>
 <technologies>
 <technology name="">
@@ -2216,25 +2395,44 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </device>
 </devices>
 </deviceset>
+<deviceset name="ANTENNA_PCB" uservalue="yes">
+<description>&lt;p&gt;Various pre-calculated PCB Antennas&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;NRF8001 1.6mm 1Oz&lt;/b&gt; - 2.4GHz PCB antenna for 1.6mm PCBs with 1oz copper, double-sided boards (no GND plan beneath antenna).  See nRF2740 production files for further information and impedance matching network.&lt;/p&gt;
+&lt;p&gt;&lt;b&gt;868MHz/2.4GHz DUALBAND&lt;/b&gt; - Dual 868MHz and 2.4GHz centered antenna based on board #6 of the CC-ANTENNA-DK from Chipcon/TI&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ANT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="868/2.4_DUALBAND" package="ANT_PCB_868MHZ_2.4GHZ_DUALBAND">
+<connects>
+<connect gate="G$1" pin="P$1" pad="FEED"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NRF8001_1.6MM" package="ANT_PCB_2.4GHZ_NRF8001_1.6MM_1OZ">
+<connects>
+<connect gate="G$1" pin="P$1" pad="FEED"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NRF8001_1.6MM_REV" package="ANT_PCB_2.4GHZ_NRF8001_1.6MM_1OZ_REV">
+<connects>
+<connect gate="G$1" pin="P$1" pad="FEED"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="quadparts_prebuilt">
 <packages>
-<package name="ANTENNA-CHIP5">
-<text x="-1.64" y="2.431" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
-<wire x1="-2.413" y1="-1.143" x2="2.413" y2="-1.143" width="0.2032" layer="21"/>
-<wire x1="-2.413" y1="1.143" x2="2.413" y2="1.143" width="0.2032" layer="21"/>
-<wire x1="-4.2" y1="-1.7" x2="-4.2" y2="1.7" width="0.127" layer="39"/>
-<wire x1="-4.2" y1="1.7" x2="4.2" y2="1.7" width="0.127" layer="39"/>
-<text x="0.508" y="0.127" size="0.8128" layer="51" font="vector">AF</text>
-<wire x1="1.27" y1="0" x2="2.159" y2="0" width="0.2032" layer="21"/>
-<wire x1="2.159" y1="0" x2="1.778" y2="-0.381" width="0.2032" layer="21"/>
-<wire x1="2.159" y1="0" x2="1.778" y2="0.381" width="0.2032" layer="21"/>
-<wire x1="4.2" y1="-1.7" x2="-4.2" y2="-1.7" width="0.127" layer="39"/>
-<wire x1="4.2" y1="1.7" x2="4.2" y2="-1.7" width="0.127" layer="39"/>
-<smd name="FEED" x="-3.302" y="0" dx="1.016" dy="2.54" layer="1" rot="R180"/>
-<smd name="NC" x="3.302" y="0" dx="1.016" dy="2.54" layer="1" rot="R180"/>
-</package>
 <package name="QFN-64">
 <circle x="-3.442" y="3.45" radius="0.2" width="0.09" layer="51"/>
 <wire x1="-4.5" y1="-4.5" x2="-4.2" y2="-4.5" width="0.2032" layer="21"/>
@@ -3122,14 +3320,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </package>
 </packages>
 <symbols>
-<symbol name="ANTENNA2">
-<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="2.54" y2="5.08" width="0.254" layer="94"/>
-<text x="1.27" y="0" size="1.778" layer="95">&gt;NAME</text>
-<pin name="SIGNAL" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
-</symbol>
 <symbol name="ATMEGA128RFA1">
 <description>&lt;h3&gt;ATmega128RFA1&lt;/h3&gt;
 8-bit Microcontroller with Low Power 2.4GHz Transceiver for ZigBee and IEEE 802.15.4.
@@ -3415,32 +3605,6 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ANTENNA2">
-<description>&lt;b&gt;Chip antenna&lt;/b&gt;&lt;p&gt;
-Single endded antenna. Common with smaller chip antennas. CHIP4 package is the GPS Chip Antenna &lt;b&gt;SKU:&lt;/b&gt; GPS-08418. CHIP5 package is 2.4GHz chip antenna &lt;b&gt;SKU:&lt;/b&gt; WRL-00144.</description>
-<gates>
-<gate name="G$1" symbol="ANTENNA2" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SMD5" package="ANTENNA-CHIP5">
-<connects>
-<connect gate="G$1" pin="SIGNAL" pad="FEED"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="Swanson"/>
-<attribute name="DATASHEET" value="http://www.linxtechnologies.com/resources/data-guides/ant-xxx-chp-x.pdf"/>
-<attribute name="DIST" value="Digikey"/>
-<attribute name="DISTPN" value="ANT-2.45-CHPCT-ND"/>
-<attribute name="MFR" value="Linx Technologies Inc."/>
-<attribute name="MPN" value="ANT-2.45-CHP-T"/>
-<attribute name="PRICE" value="3.16"/>
-<attribute name="REVIEWER" value="Swanson"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="ATMEGA128RFA1" prefix="U">
 <description>&lt;h3&gt;ATmega128RFA1&lt;/h3&gt;
 8-bit AVR Microcontroller with Low Power 2.4GHz Transceiver for ZigBee and IEEE 802.15.4</description>
@@ -4144,14 +4308,13 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="HIGH-I" width="0.381" drill="0">
+<class number="1" name="HIGH-I" width="0.254" drill="0">
 </class>
-<class number="2" name="RFSIG" width="0.762" drill="0">
+<class number="2" name="RFSIG" width="1.016" drill="0">
 </class>
 </classes>
 <parts>
 <part name="GND10" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="A1" library="quadparts_prebuilt" deviceset="ANTENNA2" device="SMD5"/>
 <part name="B5" library="quadparts_prebuilt" deviceset="BALUN" device="0805"/>
 <part name="C1" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-22PF" value="22pF"/>
 <part name="C22" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-12PF" value="12pF"/>
@@ -4329,6 +4492,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="P2" library="RemoteParts" deviceset="TEST-POINT" device=""/>
 <part name="P3" library="RemoteParts" deviceset="TEST-POINT" device=""/>
 <part name="P4" library="RemoteParts" deviceset="TEST-POINT" device=""/>
+<part name="U$8" library="RemoteParts" deviceset="ANTENNA_PCB" device="NRF8001_1.6MM"/>
 </parts>
 <sheets>
 <sheet>
@@ -4385,7 +4549,6 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 </plain>
 <instances>
 <instance part="GND10" gate="1" x="339.09" y="226.06"/>
-<instance part="A1" gate="G$1" x="279.4" y="238.76"/>
 <instance part="B5" gate="G$1" x="264.16" y="228.6" rot="MR0"/>
 <instance part="C1" gate="G$1" x="252.73" y="226.06" rot="R90"/>
 <instance part="C22" gate="G$1" x="246.38" y="199.39"/>
@@ -4547,6 +4710,7 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <instance part="P2" gate="G$1" x="38.1" y="260.35" rot="R180"/>
 <instance part="P3" gate="G$1" x="31.75" y="260.35" rot="R180"/>
 <instance part="P4" gate="G$1" x="17.78" y="252.73"/>
+<instance part="U$8" gate="G$1" x="279.4" y="236.22"/>
 </instances>
 <busses>
 </busses>
@@ -5110,13 +5274,13 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 </net>
 <net name="ANTENNA" class="2">
 <segment>
-<pinref part="A1" gate="G$1" pin="SIGNAL"/>
 <pinref part="B5" gate="G$1" pin="IN"/>
 <pinref part="C3" gate="G$1" pin="1"/>
 <wire x1="266.7" y1="233.68" x2="274.32" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="233.68" x2="279.4" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="229.87" x2="274.32" y2="233.68" width="0.1524" layer="91"/>
 <junction x="274.32" y="233.68"/>
+<pinref part="U$8" gate="G$1" pin="P$1"/>
 </segment>
 </net>
 <net name="N$15" class="0">
