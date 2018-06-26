@@ -224,7 +224,7 @@
 <wire x1="28.5" y1="11.5" x2="31" y2="14" width="0.1524" layer="41"/>
 <wire x1="28.5" y1="9" x2="31" y2="6.5" width="0.1524" layer="41"/>
 <wire x1="31" y1="6.5" x2="34" y2="6.5" width="0.1524" layer="41"/>
-<text x="8.75" y="24.5" size="1.9" layer="21" font="vector">Quadremote
+<text x="8.5625" y="25.625" size="1.9" layer="21" font="vector">Quadremote
 Mark IV</text>
 <text x="14.25" y="-13.625" size="1.778" layer="21" font="vector">Steven Swanson</text>
 <wire x1="28.5" y1="11.5" x2="31" y2="14" width="0.1524" layer="42"/>
@@ -253,6 +253,7 @@ Mark IV</text>
 <wire x1="21.3125" y1="17" x2="21.625" y2="16.6875" width="0.127" layer="41"/>
 <wire x1="21.625" y1="16.6875" x2="21.625" y2="16.0625" width="0.127" layer="41"/>
 <wire x1="23.625" y1="17" x2="23.625" y2="16.25" width="0.127" layer="41"/>
+<text x="8.75" y="22.8125" size="0.7" layer="21" font="vector">Rev 2</text>
 </plain>
 <libraries>
 <library name="quadparts_prebuilt">
