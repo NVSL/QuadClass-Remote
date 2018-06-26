@@ -3,10 +3,10 @@
 <eagle version="9.0.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -202,7 +202,7 @@
 <wire x1="19" y1="29.5" x2="24" y2="24.5" width="0.127" layer="20" curve="-90"/>
 <text x="-5.375" y="-20.875" size="1.778" layer="21" font="vector" rot="R180" align="center">on</text>
 <text x="3.125" y="-20.75" size="1.778" layer="21" font="vector" rot="R180" align="center">off</text>
-<text x="17" y="-30.125" size="1.778" layer="21" font="vector" rot="R180">reset</text>
+<text x="13.5" y="-17.125" size="1.778" layer="21" font="vector" rot="R180">reset</text>
 <wire x1="-9" y1="20" x2="-9" y2="15" width="0.127" layer="41"/>
 <wire x1="-9" y1="15" x2="-1.6875" y2="15" width="0.127" layer="41"/>
 <wire x1="0.625" y1="15" x2="4.8125" y2="15" width="0.127" layer="41"/>
@@ -247,6 +247,7 @@ Mark IV</text>
 <wire x1="-1.375" y1="14.6875" x2="-1.375" y2="14.0625" width="0.127" layer="41"/>
 <wire x1="0.625" y1="15" x2="0.625" y2="14.25" width="0.127" layer="41"/>
 <text x="-8.25" y="20.8125" size="0.7" layer="21" font="vector">Rev 2</text>
+<text x="-34.5" y="41.75" size="3" layer="48" font="vector">For 50 boards, this is $1.66/board</text>
 </plain>
 <libraries>
 <library name="quadparts_prebuilt">
@@ -1823,10 +1824,10 @@ design rules under a new name.</description>
 <attribute name="DIST" value="NA" x="3.625" y="19.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="3.625" y="19.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="V19" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-17.25" y="26.5">
-<attribute name="CREATOR" value="Swanson" x="-17.25" y="26.5" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="NA" x="-17.25" y="26.5" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="NA" x="-17.25" y="26.5" size="1.778" layer="27" display="off"/>
+<element name="V19" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-4.5" y="17.75">
+<attribute name="CREATOR" value="Swanson" x="-4.5" y="17.75" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="NA" x="-4.5" y="17.75" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="NA" x="-4.5" y="17.75" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F2" library="RemoteParts" package="FIDUCIAL_STENCIL" value="1mm" x="10.125" y="-15.8375" smashed="yes">
 <attribute name="CREATOR" value="Swanson" x="10.125" y="-15.8375" size="1.778" layer="27" display="off"/>
@@ -2052,17 +2053,13 @@ design rules under a new name.</description>
 <wire x1="-6.47" y1="8.57" x2="-6.5" y2="8.6" width="0.254" layer="1"/>
 <via x="-6.5" y="8.6" extent="1-16" drill="0.2"/>
 <wire x1="4.551" y1="10.57" x2="4.581" y2="10.6" width="0.254" layer="1"/>
-<wire x1="4.581" y1="10.6" x2="5.6" y2="10.6" width="0.254" layer="1"/>
-<via x="5.6" y="10.6" extent="1-16" drill="0.2"/>
 <wire x1="4.551" y1="9.07" x2="5.67" y2="9.07" width="0.254" layer="1"/>
 <wire x1="5.67" y1="9.07" x2="5.9" y2="9.3" width="0.254" layer="1"/>
 <via x="5.9" y="9.3" extent="1-16" drill="0.2"/>
 <wire x1="4.551" y1="7.57" x2="5.83" y2="7.57" width="0.254" layer="1"/>
 <wire x1="5.83" y1="7.57" x2="6.1" y2="7.3" width="0.254" layer="1"/>
 <via x="6.1" y="7.3" extent="1-16" drill="0.2"/>
-<wire x1="1.92" y1="3.439" x2="1.92" y2="4.78" width="0.254" layer="1"/>
 <wire x1="1.92" y1="4.78" x2="1.9" y2="4.8" width="0.254" layer="1"/>
-<via x="1.9" y="4.8" extent="1-16" drill="0.2"/>
 <wire x1="13.125" y1="6.645" x2="13.125" y2="8.175" width="0.254" layer="1"/>
 <wire x1="13.125" y1="8.175" x2="13.1" y2="8.2" width="0.254" layer="1"/>
 <via x="13.1" y="8.2" extent="1-16" drill="0.2"/>
@@ -2078,6 +2075,12 @@ design rules under a new name.</description>
 <wire x1="-3.08" y1="3.439" x2="-3.08" y2="4.3134" width="0.254" layer="1"/>
 <wire x1="-3.08" y1="4.3134" x2="-2.794" y2="4.5994" width="0.254" layer="1"/>
 <via x="-2.794" y="4.5994" extent="1-16" drill="0.2"/>
+<wire x1="1.92" y1="3.439" x2="1.92" y2="4.587" width="0.254" layer="1"/>
+<wire x1="1.92" y1="4.587" x2="2.413" y2="5.08" width="0.254" layer="1"/>
+<via x="2.413" y="5.08" extent="1-16" drill="0.2"/>
+<wire x1="4.551" y1="10.57" x2="5.6764" y2="10.57" width="0.254" layer="1"/>
+<wire x1="5.6764" y1="10.57" x2="5.75" y2="10.6436" width="0.254" layer="1"/>
+<via x="5.75" y="10.6436" extent="1-16" drill="0.2"/>
 </signal>
 <signal name="BTN1">
 <contactref element="U1" pad="50"/>
@@ -2139,10 +2142,10 @@ design rules under a new name.</description>
 <wire x1="4.75" y1="11.5" x2="4.551" y2="11.57" width="0.1524" layer="1"/>
 <wire x1="-5" y1="-5.54" x2="-5" y2="-5.75" width="0.1524" layer="16"/>
 <via x="5.75" y="11.25" extent="1-16" drill="0.2"/>
-<wire x1="5.41128125" y1="11.0556" x2="5.5556" y2="11.0556" width="0.1524" layer="16"/>
-<wire x1="5.5556" y1="11.0556" x2="5.75" y2="11.25" width="0.1524" layer="16"/>
-<wire x1="-3.25" y1="2.39431875" x2="5.41128125" y2="11.0556" width="0.1524" layer="16"/>
 <wire x1="-3.25" y1="-4" x2="-3.25" y2="2.39431875" width="0.1524" layer="16"/>
+<wire x1="5.5992" y1="11.0992" x2="5.75" y2="11.25" width="0.1524" layer="16"/>
+<wire x1="5.45488125" y1="11.0992" x2="5.5992" y2="11.0992" width="0.1524" layer="16"/>
+<wire x1="-3.25" y1="2.39431875" x2="5.45488125" y2="11.0992" width="0.1524" layer="16"/>
 </signal>
 <signal name="3V3" class="1">
 <contactref element="U1" pad="23"/>
@@ -2338,11 +2341,11 @@ design rules under a new name.</description>
 <wire x1="7.25" y1="12" x2="7.25" y2="12.855" width="0.1524" layer="1"/>
 <wire x1="4.75" y1="10" x2="5.25" y2="10" width="0.1524" layer="1"/>
 <wire x1="4.551" y1="10.07" x2="4.75" y2="10" width="0.1524" layer="1"/>
-<wire x1="5.78871875" y1="10.1444" x2="6.0556" y2="10.41128125" width="0.1524" layer="1"/>
 <wire x1="5.25" y1="10" x2="5.3944" y2="10.1444" width="0.1524" layer="1"/>
-<wire x1="6.0556" y1="10.8056" x2="7.25" y2="12" width="0.1524" layer="1"/>
-<wire x1="5.3944" y1="10.1444" x2="5.78871875" y2="10.1444" width="0.1524" layer="1"/>
-<wire x1="6.0556" y1="10.41128125" x2="6.0556" y2="10.8056" width="0.1524" layer="1"/>
+<wire x1="6.2056" y1="10.9556" x2="7.25" y2="12" width="0.1524" layer="1"/>
+<wire x1="6.2056" y1="10.45488125" x2="6.2056" y2="10.9556" width="0.1524" layer="1"/>
+<wire x1="5.89511875" y1="10.1444" x2="6.2056" y2="10.45488125" width="0.1524" layer="1"/>
+<wire x1="5.3944" y1="10.1444" x2="5.89511875" y2="10.1444" width="0.1524" layer="1"/>
 </signal>
 <signal name="N$7">
 <contactref element="B5" pad="2"/>
