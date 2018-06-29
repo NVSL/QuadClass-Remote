@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="yes" active="yes"/>
@@ -4685,10 +4685,10 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <instance part="J11" gate="A" x="101.6" y="111.76" rot="MR0"/>
 <instance part="V3" gate="G$1" x="138.43" y="16.51" rot="R90"/>
 <instance part="V5" gate="G$1" x="140.97" y="16.51" rot="R90"/>
-<instance part="U$1" gate="G$1" x="391.16" y="125.73"/>
-<instance part="U$3" gate="G$1" x="401.32" y="125.73"/>
-<instance part="U$6" gate="G$1" x="411.48" y="125.73"/>
-<instance part="U$7" gate="G$1" x="421.64" y="125.73"/>
+<instance part="U$1" gate="G$1" x="388.62" y="29.21"/>
+<instance part="U$3" gate="G$1" x="398.78" y="29.21"/>
+<instance part="U$6" gate="G$1" x="408.94" y="29.21"/>
+<instance part="U$7" gate="G$1" x="419.1" y="29.21"/>
 <instance part="R15" gate="G$1" x="359.41" y="152.4"/>
 <instance part="J1" gate="G$1" x="15.24" y="207.01"/>
 <instance part="J2" gate="G$1" x="15.24" y="191.77"/>
@@ -5083,17 +5083,17 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <segment>
 <pinref part="U$1" gate="G$1" pin="P$1"/>
 <pinref part="U$3" gate="G$1" pin="P$1"/>
-<wire x1="391.16" y1="125.73" x2="396.24" y2="125.73" width="0.1524" layer="91"/>
+<wire x1="388.62" y1="29.21" x2="393.7" y2="29.21" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="G$1" pin="P$1"/>
-<wire x1="396.24" y1="125.73" x2="401.32" y2="125.73" width="0.1524" layer="91"/>
-<wire x1="401.32" y1="125.73" x2="411.48" y2="125.73" width="0.1524" layer="91"/>
-<junction x="401.32" y="125.73"/>
+<wire x1="393.7" y1="29.21" x2="398.78" y2="29.21" width="0.1524" layer="91"/>
+<wire x1="398.78" y1="29.21" x2="408.94" y2="29.21" width="0.1524" layer="91"/>
+<junction x="398.78" y="29.21"/>
 <pinref part="U$7" gate="G$1" pin="P$1"/>
-<wire x1="411.48" y1="125.73" x2="421.64" y2="125.73" width="0.1524" layer="91"/>
-<junction x="411.48" y="125.73"/>
-<wire x1="396.24" y1="125.73" x2="396.24" y2="120.65" width="0.1524" layer="91"/>
-<junction x="396.24" y="125.73"/>
-<label x="396.24" y="120.65" size="1.27" layer="95" rot="R270" xref="yes"/>
+<wire x1="408.94" y1="29.21" x2="419.1" y2="29.21" width="0.1524" layer="91"/>
+<junction x="408.94" y="29.21"/>
+<wire x1="393.7" y1="29.21" x2="393.7" y2="24.13" width="0.1524" layer="91"/>
+<junction x="393.7" y="29.21"/>
+<label x="393.7" y="24.13" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="BTN1" class="0">

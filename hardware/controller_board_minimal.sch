@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="yes" active="yes"/>
@@ -1013,6 +1013,83 @@
 <circle x="0" y="0" radius="2.05" width="1" layer="29"/>
 <circle x="0" y="0" radius="2.05" width="1" layer="30"/>
 </package>
+<package name="ADAFRUIT-377">
+<hole x="-5.7" y="0" drill="2.8"/>
+<circle x="0" y="0" radius="3.5" width="0.1" layer="59"/>
+<circle x="0" y="0" radius="8" width="0.1" layer="100"/>
+<hole x="5.7" y="0" drill="2.8"/>
+<pad name="A" x="-2.5" y="-7.5" drill="1.1"/>
+<pad name="B" x="2.5" y="-7.5" drill="1.1"/>
+<pad name="BUTA" x="-2.5" y="7" drill="1.1" shape="square"/>
+<pad name="BUTB" x="2.5" y="7" drill="1.1"/>
+<pad name="COMMON" x="0" y="-7.5" drill="1.1"/>
+<circle x="0" y="0" radius="3.5" width="0.1" layer="21"/>
+<circle x="0" y="0" radius="8" width="0.1" layer="100"/>
+<circle x="0" y="0" radius="8" width="0.1" layer="21"/>
+<circle x="0" y="0" radius="9.919015625" width="0.127" layer="39"/>
+<text x="0" y="-11.43" size="1.778" layer="21" font="vector" align="center">&gt;NAME</text>
+<rectangle x1="-5" y1="-13" x2="5" y2="-8" layer="39"/>
+</package>
+<package name="BOURNS-PEC12R">
+<hole x="-5.7" y="0" drill="2.2"/>
+<hole x="5.7" y="0" drill="2.2"/>
+<pad name="A" x="-2.5" y="-7.5" drill="1.3"/>
+<pad name="B" x="2.5" y="-7.5" drill="1.3"/>
+<pad name="BUTA" x="-2.5" y="7" drill="1.3" shape="square"/>
+<pad name="BUTB" x="2.5" y="7" drill="1.3"/>
+<pad name="C" x="0" y="-7.5" drill="1.3"/>
+<circle x="0" y="0" radius="3" width="0.1" layer="21"/>
+<circle x="0" y="0" radius="5.715" width="0.1" layer="21"/>
+<text x="0" y="-11.43" size="1.778" layer="21" font="vector" align="center">&gt;NAME</text>
+<wire x1="-6.2" y1="6.7" x2="6.2" y2="6.7" width="0.127" layer="39"/>
+<wire x1="6.2" y1="6.7" x2="6.2" y2="-6.7" width="0.127" layer="39"/>
+<wire x1="6.2" y1="-6.7" x2="-6.2" y2="-6.7" width="0.127" layer="39"/>
+<wire x1="-6.2" y1="-6.7" x2="-6.2" y2="6.7" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="6.35" width="0.1" layer="21"/>
+</package>
+<package name="NAV-SWITCH-JS5208">
+<hole x="3" y="3" drill="1.6"/>
+<hole x="-3" y="-3" drill="1.6"/>
+<smd name="RIGHT" x="7.5" y="0" dx="1.9" dy="2" layer="1"/>
+<smd name="LEFT" x="-7.5" y="0" dx="1.9" dy="2" layer="1"/>
+<smd name="COMMON" x="-7.5" y="4" dx="1.9" dy="2" layer="1"/>
+<smd name="CENTER" x="-7.5" y="-4" dx="1.9" dy="2" layer="1"/>
+<smd name="DOWN" x="7.5" y="-4" dx="1.9" dy="2" layer="1"/>
+<smd name="UP" x="7.5" y="4" dx="1.9" dy="2" layer="1"/>
+<polygon width="0.127" layer="20">
+<vertex x="-1.9" y="-6.25"/>
+<vertex x="-5.1" y="-6.25"/>
+<vertex x="-5.1" y="-4.8"/>
+<vertex x="-1.9" y="-4.8"/>
+</polygon>
+<polygon width="0.127" layer="20">
+<vertex x="5.1" y="-6.25"/>
+<vertex x="1.9" y="-6.25"/>
+<vertex x="1.9" y="-4.8"/>
+<vertex x="5.1" y="-4.8"/>
+</polygon>
+<polygon width="0.127" layer="20">
+<vertex x="1.6" y="4.8"/>
+<vertex x="-1.6" y="4.8"/>
+<vertex x="-1.6" y="6.25"/>
+<vertex x="1.6" y="6.25"/>
+</polygon>
+<wire x1="-6.2" y1="-6.2" x2="6.2" y2="-6.2" width="0.127" layer="39"/>
+<wire x1="6.2" y1="-6.2" x2="6.2" y2="6.2" width="0.127" layer="39"/>
+<wire x1="6.2" y1="6.2" x2="-6.2" y2="6.2" width="0.127" layer="39"/>
+<wire x1="-6.2" y1="6.2" x2="-6.2" y2="-6.2" width="0.127" layer="39"/>
+<wire x1="-6.2" y1="-6.2" x2="6.2" y2="-6.2" width="0.127" layer="21"/>
+<wire x1="6.2" y1="-6.2" x2="6.2" y2="6.2" width="0.127" layer="21"/>
+<wire x1="6.2" y1="6.2" x2="-6.2" y2="6.2" width="0.127" layer="21"/>
+<wire x1="-6.2" y1="6.2" x2="-6.2" y2="-6.2" width="0.127" layer="21"/>
+<wire x1="-1.65" y1="-1.65" x2="1.65" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="1.65" y1="-1.65" x2="1.65" y2="0.825" width="0.127" layer="21"/>
+<wire x1="0.825" y1="1.65" x2="-0.825" y2="1.65" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="3" width="0.127" layer="21"/>
+<wire x1="-1.65" y1="0.825" x2="-1.65" y2="-1.65" width="0.127" layer="21"/>
+<wire x1="-0.825" y1="1.65" x2="-1.65" y2="0.825" width="0.127" layer="21"/>
+<wire x1="0.825" y1="1.65" x2="1.65" y2="0.825" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="RESOLVED-DIODE-LED_">
@@ -1108,6 +1185,31 @@
 <wire x1="-3.81" y1="0" x2="3.81" y2="0" width="0.508" layer="94"/>
 <wire x1="0" y1="3.81" x2="0" y2="-3.81" width="0.508" layer="94"/>
 <pin name="P$1" x="0" y="0" visible="off" length="point"/>
+</symbol>
+<symbol name="ROTARY-ENCODER-W/BUTTON-ADAFRUIT377">
+<wire x1="-7.62" y1="-5.08" x2="7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-7.62" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
+<wire x1="7.62" y1="5.08" x2="-7.62" y2="5.08" width="0.254" layer="94"/>
+<pin name="A" x="-12.7" y="2.54" length="middle"/>
+<pin name="C" x="-12.7" y="0" length="middle"/>
+<pin name="B" x="-12.7" y="-2.54" length="middle"/>
+<pin name="X" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="Y" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<text x="0" y="-6.35" size="1.27" layer="95" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="NAV-SWITCH">
+<pin name="CENTER" x="-5.08" y="5.08" length="middle"/>
+<pin name="LEFT" x="-5.08" y="7.62" length="middle"/>
+<pin name="RIGHT" x="-5.08" y="10.16" length="middle"/>
+<pin name="UP" x="-5.08" y="12.7" length="middle"/>
+<pin name="DOWN" x="-5.08" y="15.24" length="middle"/>
+<pin name="COM" x="-5.08" y="2.54" length="middle"/>
+<wire x1="0" y1="17.78" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="15.24" y2="0" width="0.254" layer="94"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="17.78" width="0.254" layer="94"/>
+<wire x1="15.24" y1="17.78" x2="0" y2="17.78" width="0.254" layer="94"/>
+<text x="7.62" y="-2.54" size="1.27" layer="95" align="center">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1475,6 +1577,72 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ROTARY-ENCODER-W/BUTTON" prefix="E">
+<gates>
+<gate name="G$1" symbol="ROTARY-ENCODER-W/BUTTON-ADAFRUIT377" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-ADAFRUIT-377" package="ADAFRUIT-377">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="COMMON"/>
+<connect gate="G$1" pin="X" pad="BUTA"/>
+<connect gate="G$1" pin="Y" pad="BUTB"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="DIST" value="Adafruit"/>
+<attribute name="DISTPN" value="377"/>
+</technology>
+</technologies>
+</device>
+<device name="-BOURNS-PEC12R-30MM" package="BOURNS-PEC12R">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="X" pad="BUTB"/>
+<connect gate="G$1" pin="Y" pad="BUTA"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AUX1DIST" value="DIGIKEY"/>
+<attribute name="AUX1DISTPN" value="1722-1241-ND"/>
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="PEC12R-4030F-S0024-ND"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NAV-SWITCH">
+<gates>
+<gate name="G$1" symbol="NAV-SWITCH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NAV-SWITCH-JS5208">
+<connects>
+<connect gate="G$1" pin="CENTER" pad="CENTER"/>
+<connect gate="G$1" pin="COM" pad="COMMON"/>
+<connect gate="G$1" pin="DOWN" pad="DOWN"/>
+<connect gate="G$1" pin="LEFT" pad="LEFT"/>
+<connect gate="G$1" pin="RIGHT" pad="RIGHT"/>
+<connect gate="G$1" pin="UP" pad="UP"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AUX1DIST" value="Digikey"/>
+<attribute name="AUX1DISTPN" value="EG1091-ND"/>
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="EG4561-ND"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -3207,6 +3375,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="U$2" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-M2.5-GROUNDED"/>
 <part name="U$3" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-M2.5-GROUNDED"/>
 <part name="U$6" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-M2.5-GROUNDED"/>
+<part name="E1" library="RemoteParts" deviceset="ROTARY-ENCODER-W/BUTTON" device="-BOURNS-PEC12R-30MM"/>
+<part name="U$4" library="RemoteParts" deviceset="NAV-SWITCH" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3343,6 +3513,8 @@ Buttons 1 and 2 are on INT4 and INT3, respectively.</text>
 <instance part="U$2" gate="G$1" x="292.1" y="267.97"/>
 <instance part="U$3" gate="G$1" x="302.26" y="267.97"/>
 <instance part="U$6" gate="G$1" x="312.42" y="267.97"/>
+<instance part="E1" gate="G$1" x="383.54" y="241.3"/>
+<instance part="U$4" gate="G$1" x="355.6" y="213.36"/>
 </instances>
 <busses>
 </busses>

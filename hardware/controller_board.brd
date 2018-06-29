@@ -3,10 +3,10 @@
 <eagle version="9.0.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.0625" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="7" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -255,6 +255,15 @@ Mark IV</text>
 <wire x1="23.625" y1="17" x2="23.625" y2="16.25" width="0.127" layer="41"/>
 <text x="8.75" y="22.8125" size="0.7" layer="21" font="vector">Rev 2</text>
 <text x="-42.75" y="46" size="3" layer="48" font="vector">For 50 boards: $2/board</text>
+<text x="-136" y="78.0625" size="1.778" layer="48">notes from undegrads:
+1.  no knobs, just d-pad of tactile buttons + a couple extra.
+2.  1 or two RGB LEDs for status.
+3.  No LCD by default.
+4.  no knobs :-(
+5.  No FTDI; rely on programmer board and have them buy if they want to.  Use 5V programmer, run it through the vreg.
+
+
+</text>
 </plain>
 <libraries>
 <library name="quadparts_prebuilt">
@@ -1829,6 +1838,10 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 <smd name="FEED" x="0" y="0" dx="1.27" dy="1.27" layer="1" stop="no" cream="no"/>
 <smd name="TESTPOINT" x="-8.1686" y="17.6047" dx="1.27" dy="1.27" layer="1" cream="no"/>
 </package>
+<package name="SUPPORT_DONUT">
+<circle x="0" y="0" radius="1.0922" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="3.1" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" locally_modified="yes" type="model">
@@ -2839,6 +2852,90 @@ design rules under a new name.</description>
 <element name="A1" library="RemoteParts" package="ANT_PCB_2.4GHZ_NRF8001_1.6MM_1OZ" value="2.4GHz" x="20.625" y="22.275" rot="R270">
 <attribute name="VALUE" value="2.4GHz" x="20.625" y="22.275" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
+<element name="U$8" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-98" y="21"/>
+<element name="U$10" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-91" y="21"/>
+<element name="U$14" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-84" y="21"/>
+<element name="U$15" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-77" y="21"/>
+<element name="U$16" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="21"/>
+<element name="U$17" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="21"/>
+<element name="U$18" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-98" y="14"/>
+<element name="U$19" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-91" y="14"/>
+<element name="U$20" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-84" y="14"/>
+<element name="U$21" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-77" y="14"/>
+<element name="U$22" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="14"/>
+<element name="U$23" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="14"/>
+<element name="U$24" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="7"/>
+<element name="U$25" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-77" y="7"/>
+<element name="U$26" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="7"/>
+<element name="U$27" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-84" y="7"/>
+<element name="U$28" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-91" y="7"/>
+<element name="U$29" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-98" y="7"/>
+<element name="U$30" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-98" y="0"/>
+<element name="U$31" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-91" y="0"/>
+<element name="U$32" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-84" y="0"/>
+<element name="U$33" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-77" y="0"/>
+<element name="U$34" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="0"/>
+<element name="U$35" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="0"/>
+<element name="U$36" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="-7"/>
+<element name="U$37" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="-7"/>
+<element name="U$38" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-77" y="-7"/>
+<element name="U$39" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-84" y="-7"/>
+<element name="U$40" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-98" y="-7"/>
+<element name="U$41" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-91" y="-7"/>
+<element name="U$42" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-98" y="-14"/>
+<element name="U$43" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-91" y="-14"/>
+<element name="U$44" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-84" y="-14"/>
+<element name="U$45" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-77" y="-14"/>
+<element name="U$46" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="-14"/>
+<element name="U$47" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="-14"/>
+<element name="U$48" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="-21"/>
+<element name="U$49" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="-21"/>
+<element name="U$50" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-77" y="-21"/>
+<element name="U$51" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-91" y="-21"/>
+<element name="U$52" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-98" y="-21"/>
+<element name="U$53" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-84" y="-21"/>
+<element name="U$54" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="21"/>
+<element name="U$55" library="RemoteParts" package="SUPPORT_DONUT" value="" x="70" y="21"/>
+<element name="U$56" library="RemoteParts" package="SUPPORT_DONUT" value="" x="77" y="21"/>
+<element name="U$57" library="RemoteParts" package="SUPPORT_DONUT" value="" x="84" y="21"/>
+<element name="U$58" library="RemoteParts" package="SUPPORT_DONUT" value="" x="91" y="21"/>
+<element name="U$59" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="21"/>
+<element name="U$60" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="14"/>
+<element name="U$61" library="RemoteParts" package="SUPPORT_DONUT" value="" x="70" y="14"/>
+<element name="U$62" library="RemoteParts" package="SUPPORT_DONUT" value="" x="77" y="14"/>
+<element name="U$63" library="RemoteParts" package="SUPPORT_DONUT" value="" x="84" y="14"/>
+<element name="U$64" library="RemoteParts" package="SUPPORT_DONUT" value="" x="91" y="14"/>
+<element name="U$65" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="14"/>
+<element name="U$66" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="7"/>
+<element name="U$67" library="RemoteParts" package="SUPPORT_DONUT" value="" x="84" y="7"/>
+<element name="U$68" library="RemoteParts" package="SUPPORT_DONUT" value="" x="91" y="7"/>
+<element name="U$69" library="RemoteParts" package="SUPPORT_DONUT" value="" x="77" y="7"/>
+<element name="U$70" library="RemoteParts" package="SUPPORT_DONUT" value="" x="70" y="7"/>
+<element name="U$71" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="7"/>
+<element name="U$72" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="0"/>
+<element name="U$73" library="RemoteParts" package="SUPPORT_DONUT" value="" x="70" y="0"/>
+<element name="U$74" library="RemoteParts" package="SUPPORT_DONUT" value="" x="77" y="0"/>
+<element name="U$75" library="RemoteParts" package="SUPPORT_DONUT" value="" x="84" y="0"/>
+<element name="U$76" library="RemoteParts" package="SUPPORT_DONUT" value="" x="91" y="0"/>
+<element name="U$77" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="0"/>
+<element name="U$78" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="-7"/>
+<element name="U$79" library="RemoteParts" package="SUPPORT_DONUT" value="" x="91" y="-7"/>
+<element name="U$80" library="RemoteParts" package="SUPPORT_DONUT" value="" x="84" y="-7"/>
+<element name="U$81" library="RemoteParts" package="SUPPORT_DONUT" value="" x="77" y="-7"/>
+<element name="U$82" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="-7"/>
+<element name="U$83" library="RemoteParts" package="SUPPORT_DONUT" value="" x="70" y="-7"/>
+<element name="U$84" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="-14"/>
+<element name="U$85" library="RemoteParts" package="SUPPORT_DONUT" value="" x="70" y="-14"/>
+<element name="U$86" library="RemoteParts" package="SUPPORT_DONUT" value="" x="77" y="-14"/>
+<element name="U$87" library="RemoteParts" package="SUPPORT_DONUT" value="" x="84" y="-14"/>
+<element name="U$88" library="RemoteParts" package="SUPPORT_DONUT" value="" x="91" y="-14"/>
+<element name="U$89" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="-14"/>
+<element name="U$90" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="-21"/>
+<element name="U$91" library="RemoteParts" package="SUPPORT_DONUT" value="" x="91" y="-21"/>
+<element name="U$92" library="RemoteParts" package="SUPPORT_DONUT" value="" x="84" y="-21"/>
+<element name="U$93" library="RemoteParts" package="SUPPORT_DONUT" value="" x="70" y="-21"/>
+<element name="U$94" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="-21"/>
+<element name="U$95" library="RemoteParts" package="SUPPORT_DONUT" value="" x="77" y="-21"/>
 </elements>
 <signals>
 <signal name="GND" class="1">
