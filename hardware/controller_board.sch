@@ -696,7 +696,7 @@
 <package name="FIDUCIAL_STENCIL">
 <hole x="0" y="0" drill="0.66"/>
 <circle x="0" y="0" radius="0.33" width="0.127" layer="31"/>
-<circle x="0" y="0" radius="0.33" width="0.127" layer="31"/>
+<circle x="0" y="0" radius="0.33" width="0.2" layer="31"/>
 <circle x="0" y="0" radius="0.2032" width="0.127" layer="31"/>
 <circle x="0" y="0" radius="0.0762" width="0.127" layer="31"/>
 <circle x="0" y="0" radius="0.0254" width="0.127" layer="31"/>

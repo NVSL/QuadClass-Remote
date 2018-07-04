@@ -2254,8 +2254,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pad name="P$16" x="8.89" y="16.27" drill="1.02"/>
 </package>
 <package name="SUPPORT_DONUT">
-<circle x="0" y="0" radius="1.0922" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="3.1" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="1.25" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="2.9" width="0.127" layer="21"/>
 </package>
 </packages>
 <packages3d>

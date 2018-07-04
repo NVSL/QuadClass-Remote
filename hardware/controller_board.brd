@@ -1566,7 +1566,7 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 <package name="FIDUCIAL_STENCIL">
 <hole x="0" y="0" drill="0.66"/>
 <circle x="0" y="0" radius="0.33" width="0.127" layer="31"/>
-<circle x="0" y="0" radius="0.33" width="0.127" layer="31"/>
+<circle x="0" y="0" radius="0.33" width="0.2" layer="31"/>
 <circle x="0" y="0" radius="0.2032" width="0.127" layer="31"/>
 <circle x="0" y="0" radius="0.0762" width="0.127" layer="31"/>
 <circle x="0" y="0" radius="0.0254" width="0.127" layer="31"/>
@@ -1839,8 +1839,8 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 <smd name="TESTPOINT" x="-8.1686" y="17.6047" dx="1.27" dy="1.27" layer="1" cream="no"/>
 </package>
 <package name="SUPPORT_DONUT">
-<circle x="0" y="0" radius="1.0922" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="3.1" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="1.25" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="2.9" width="0.127" layer="21"/>
 </package>
 </packages>
 <packages3d>
