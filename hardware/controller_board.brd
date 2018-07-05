@@ -26,7 +26,7 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -253,7 +253,7 @@ Mark IV</text>
 <wire x1="21.3125" y1="17" x2="21.625" y2="16.6875" width="0.127" layer="41"/>
 <wire x1="21.625" y1="16.6875" x2="21.625" y2="16.0625" width="0.127" layer="41"/>
 <wire x1="23.625" y1="17" x2="23.625" y2="16.25" width="0.127" layer="41"/>
-<text x="8.75" y="22.8125" size="0.7" layer="21" font="vector">Rev 2</text>
+<text x="8.75" y="22.8125" size="0.7" layer="21" font="vector">Rev 3</text>
 <text x="-42.75" y="46" size="3" layer="48" font="vector">For 50 boards: $2/board</text>
 <text x="-136" y="78.0625" size="1.778" layer="48">notes from undegrads:
 1.  no knobs, just d-pad of tactile buttons + a couple extra.
@@ -1725,14 +1725,12 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 <rectangle x1="-1.5" y1="0" x2="14" y2="20" layer="39"/>
 <wire x1="12.7" y1="0" x2="12.7" y2="11.43" width="0.127" layer="51"/>
 </package>
-<package name="SMT-JUMPER_2_NO_SILK">
-<text x="0" y="0.943" size="0.6096" layer="25" font="vector" ratio="7" align="bottom-center">&gt;NAME</text>
+<package name="SMT-JUMPER_2_NC_PASTE_NO-SILK">
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<rectangle x1="-1.2446" y1="-1.1176" x2="1.2446" y2="1.1176" layer="31"/>
 <smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 <smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<wire x1="-0.9" y1="0.8" x2="0.9" y2="0.8" width="0.127" layer="21"/>
-<wire x1="0.9" y1="0.8" x2="0.9" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="0.9" y1="-0.8" x2="-0.9" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="-0.9" y1="-0.8" x2="-0.9" y2="0.8" width="0.127" layer="21"/>
 </package>
 <package name="SMT-JUMPER_3_1-NC_PASTE_NO-SILK">
 <text x="0" y="1.143" size="1" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
@@ -1757,7 +1755,42 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 </package>
 <package name="SUPPORT_DONUT">
 <circle x="0" y="0" radius="1.25" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="2.9" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="2.65" width="0.127" layer="21"/>
+</package>
+<package name="USB-MINIB-EDAC-690-005-299-043">
+<smd name="1" x="5.5" y="1.6" dx="2.3" dy="0.5" layer="1"/>
+<smd name="2" x="5.5" y="0.8" dx="2.3" dy="0.5" layer="1"/>
+<smd name="3" x="5.5" y="0" dx="2.3" dy="0.5" layer="1"/>
+<smd name="4" x="5.5" y="-0.8" dx="2.3" dy="0.5" layer="1"/>
+<smd name="5" x="5.5" y="-1.6" dx="2.3" dy="0.5" layer="1"/>
+<smd name="P6" x="5.5" y="-4.5" dx="2.5" dy="2" layer="1"/>
+<smd name="P7" x="5.5" y="4.5" dx="2.5" dy="2" layer="1"/>
+<smd name="P8" x="0" y="4.5" dx="2.5" dy="2" layer="1"/>
+<smd name="P9" x="0" y="-4.5" dx="2.5" dy="2" layer="1"/>
+<hole x="2.95" y="2.2" drill="0.9"/>
+<hole x="2.95" y="-2.2" drill="0.9"/>
+<wire x1="-2.25" y1="6.75" x2="-2.25" y2="-6.75" width="0.127" layer="51"/>
+<wire x1="-1.875" y1="3.75" x2="7.5" y2="3.75" width="0.127" layer="21"/>
+<wire x1="-1.875" y1="-3.75" x2="7.5" y2="-3.75" width="0.127" layer="21"/>
+<rectangle x1="-1.875" y1="-5.625" x2="9.375" y2="5.625" layer="39"/>
+<text x="8.89" y="-2.54" size="1.27" layer="21" font="vector" rot="R90">&gt;NAME</text>
+</package>
+<package name="BOURNS-PEC12R">
+<hole x="-5.7" y="0" drill="2.2"/>
+<hole x="5.7" y="0" drill="2.2"/>
+<pad name="A" x="-2.5" y="-7.5" drill="1.3"/>
+<pad name="B" x="2.5" y="-7.5" drill="1.3"/>
+<pad name="BUTA" x="-2.5" y="7" drill="1.3" shape="square"/>
+<pad name="BUTB" x="2.5" y="7" drill="1.3"/>
+<pad name="C" x="0" y="-7.5" drill="1.3"/>
+<circle x="0" y="0" radius="3" width="0.1" layer="21"/>
+<circle x="0" y="0" radius="5.715" width="0.1" layer="21"/>
+<text x="0" y="-11.43" size="1.778" layer="21" font="vector" align="center">&gt;NAME</text>
+<wire x1="-6.2" y1="6.7" x2="6.2" y2="6.7" width="0.127" layer="39"/>
+<wire x1="6.2" y1="6.7" x2="6.2" y2="-6.7" width="0.127" layer="39"/>
+<wire x1="6.2" y1="-6.7" x2="-6.2" y2="-6.7" width="0.127" layer="39"/>
+<wire x1="-6.2" y1="-6.7" x2="-6.2" y2="6.7" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="6.35" width="0.1" layer="21"/>
 </package>
 </packages>
 <packages3d>
@@ -2062,88 +2095,84 @@ design rules under a new name.</description>
 <attribute name="REVIEWER" value="Swanson" x="31.5" y="5.5" size="1.778" layer="27" display="off"/>
 <attribute name="VALUE" x="30.25" y="4.875" size="1.2" layer="27" font="vector" ratio="10"/>
 </element>
-<element name="C6" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="0.1uF" x="-30.5" y="-30.25" smashed="yes" rot="R270">
-<attribute name="CREATOR" value="Swanson" x="-30.5" y="-30.25" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIST" value="Digikey" x="-30.5" y="-30.25" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="445-1418-1-ND" x="-30.5" y="-30.25" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MFR" value="TDK" x="-30.5" y="-30.25" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="C2012X7R2A104K125AA" x="-30.5" y="-30.25" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-30.875" y="-32.125" size="1" layer="25" font="vector" rot="R270"/>
-<attribute name="REVIEWER" value="Swanson" x="-30.5" y="-30.25" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="-31" y="-27.75" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
+<element name="C6" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="0.1uF" x="-32.5" y="-1.75" smashed="yes" rot="R270">
+<attribute name="CREATOR" value="Swanson" x="-32.5" y="-1.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIST" value="Digikey" x="-32.5" y="-1.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTPN" value="445-1418-1-ND" x="-32.5" y="-1.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFR" value="TDK" x="-32.5" y="-1.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="C2012X7R2A104K125AA" x="-32.5" y="-1.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="-32.875" y="-3.625" size="1" layer="25" font="vector" rot="R270"/>
+<attribute name="REVIEWER" value="Swanson" x="-32.5" y="-1.75" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="VALUE" x="-33" y="0.75" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="D1" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="ORANGE" x="23.75" y="-22.375" smashed="yes" rot="R90">
-<attribute name="CREATOR" value="Swanson" x="23.75" y="-22.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="DIGIKEY" x="23.75" y="-22.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="160-1177-1-ND" x="23.75" y="-22.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="24.15" y="-23.8" size="1" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="24.15" y="-18.925" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
+<element name="D2" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="RED" x="-26.75" y="-27.375" smashed="yes" rot="R90">
+<attribute name="CREATOR" value="Swanson" x="-26.75" y="-27.375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-26.75" y="-27.375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="160-1176-1-ND" x="-26.75" y="-27.375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="-26.35" y="-28.8" size="1" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="-26.475" y="-25.3" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="D2" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="RED" x="28.75" y="-22.375" smashed="yes" rot="R90">
-<attribute name="CREATOR" value="Swanson" x="28.75" y="-22.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="DIGIKEY" x="28.75" y="-22.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="160-1176-1-ND" x="28.75" y="-22.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="29.15" y="-23.8" size="1" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="29.025" y="-20.3" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
+<element name="D3" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="green" x="-29.25" y="-27.375" smashed="yes" rot="R90">
+<attribute name="CREATOR" value="Swanson" x="-29.25" y="-27.375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digikey" x="-29.25" y="-27.375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="160-1179-1-ND" x="-29.25" y="-27.375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="Lite-On Inc" x="-29.25" y="-27.375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="LTST-C170GKT" x="-29.25" y="-27.375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="-28.85" y="-28.8" size="1" layer="25" font="vector" rot="R270"/>
+<attribute name="REVIEWER" value="Swanson" x="-29.25" y="-27.375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="-29.1" y="-24.55" size="1.2" layer="28" font="vector" ratio="10" rot="MR270"/>
 </element>
-<element name="D3" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="green" x="26.25" y="-22.375" smashed="yes" rot="R90">
-<attribute name="CREATOR" value="Swanson" x="26.25" y="-22.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="26.25" y="-22.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="160-1179-1-ND" x="26.25" y="-22.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="Lite-On Inc" x="26.25" y="-22.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="LTST-C170GKT" x="26.25" y="-22.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="26.65" y="-23.8" size="1" layer="25" font="vector" rot="R270"/>
-<attribute name="REVIEWER" value="Swanson" x="26.25" y="-22.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="26.4" y="-19.55" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
+<element name="J4" library="quadparts_prebuilt" package="2X3-NS" value="AVR_SPI_PRG_6NS" x="-36.15" y="26.3" smashed="yes">
+<attribute name="CREATOR" value="Swanson" x="-36.15" y="26.3" size="1.778" layer="27" display="off"/>
+<attribute name="DATASHEET" value="http://portal.fciconnect.com/Comergent//fci/drawing/67996.pdf" x="-36.15" y="26.3" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="Digikey" x="-36.15" y="26.3" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="609-3234-ND" x="-36.15" y="26.3" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="Amphenol FCI" x="-36.15" y="26.3" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="67997-206HLF" x="-36.15" y="26.3" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-39.96" y="29.475" size="1" layer="25" font="vector"/>
+<attribute name="PRICE" value="0.31" x="-36.15" y="26.3" size="1.778" layer="27" display="off"/>
+<attribute name="REVIEWER" value="Swanson" x="-36.15" y="26.3" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-39.96" y="21.855" size="1.27" layer="27" font="vector"/>
 </element>
-<element name="J4" library="quadparts_prebuilt" package="2X3-NS" value="AVR_SPI_PRG_6NS" x="-32.65" y="26.3" smashed="yes">
-<attribute name="CREATOR" value="Swanson" x="-32.65" y="26.3" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET" value="http://portal.fciconnect.com/Comergent//fci/drawing/67996.pdf" x="-32.65" y="26.3" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="-32.65" y="26.3" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="609-3234-ND" x="-32.65" y="26.3" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Amphenol FCI" x="-32.65" y="26.3" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="67997-206HLF" x="-32.65" y="26.3" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-36.46" y="29.475" size="1" layer="25" font="vector"/>
-<attribute name="PRICE" value="0.31" x="-32.65" y="26.3" size="1.778" layer="27" display="off"/>
-<attribute name="REVIEWER" value="Swanson" x="-32.65" y="26.3" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-36.46" y="21.855" size="1.27" layer="27" font="vector"/>
+<element name="R1" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="-25.75" y="-22.375" smashed="yes" rot="R90">
+<attribute name="DIST" value="DIGIKEY" x="-25.75" y="-22.375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="311-510ARCT-ND" x="-25.75" y="-22.375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="-24.5625" y="-19.375" size="1" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="-25.125" y="-23.875" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="R1" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="29.75" y="-17.375" smashed="yes" rot="R90">
-<attribute name="DIST" value="DIGIKEY" x="29.75" y="-17.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="311-510ARCT-ND" x="29.75" y="-17.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="30.9375" y="-14.375" size="1" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="30.375" y="-18.875" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
+<element name="R2" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="-28.25" y="-22.375" smashed="yes" rot="R90">
+<attribute name="DIST" value="DIGIKEY" x="-28.25" y="-22.375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="311-510ARCT-ND" x="-28.25" y="-22.375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="-27.1875" y="-19.375" size="1" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="-27.625" y="-23.875" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="R17" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="24.75" y="-17.375" smashed="yes" rot="R90">
-<attribute name="DIST" value="DIGIKEY" x="24.75" y="-17.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="311-510ARCT-ND" x="24.75" y="-17.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="25.75" y="-14.25" size="1" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="25.375" y="-18.875" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
+<element name="R3" library="quadparts_prebuilt" package="RESC2012X60_HS" value="10K" x="-30" y="-1.625" smashed="yes" rot="R90">
+<attribute name="CREATOR" value="Swanson" x="-30" y="-1.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digikey" x="-30" y="-1.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="311-10KARCT-ND" x="-30" y="-1.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="Yageo" x="-30" y="-1.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="RC0805JR-0710KL" x="-30" y="-1.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="-29.75" y="0.375" size="1" layer="25" font="vector" rot="R90"/>
+<attribute name="REVIEWER" value="Swanson" x="-30" y="-1.625" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="-29.375" y="-3.125" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
-<element name="R2" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="27.25" y="-17.375" smashed="yes" rot="R90">
-<attribute name="DIST" value="DIGIKEY" x="27.25" y="-17.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="311-510ARCT-ND" x="27.25" y="-17.375" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="28.3125" y="-14.375" size="1" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="27.875" y="-18.875" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
+<element name="B2" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="-2.25" y="-29.125" smashed="yes" rot="R180">
+<attribute name="CREATOR" value="Swanson" x="-2.25" y="-29.125" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-2.25" y="-29.125" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="EG5350CT-ND  " x="-2.25" y="-29.125" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-0.9" y="-26.35" size="1" layer="25" font="vector"/>
 </element>
-<element name="R3" library="quadparts_prebuilt" package="RESC2012X60_HS" value="10K" x="-41.5" y="-13.625" smashed="yes" rot="R90">
-<attribute name="CREATOR" value="Swanson" x="-41.5" y="-13.625" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="-41.5" y="-13.625" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="311-10KARCT-ND" x="-41.5" y="-13.625" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="Yageo" x="-41.5" y="-13.625" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="RC0805JR-0710KL" x="-41.5" y="-13.625" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-41.25" y="-11.625" size="1" layer="25" font="vector" rot="R90"/>
-<attribute name="REVIEWER" value="Swanson" x="-41.5" y="-13.625" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-40.875" y="-15.125" size="1.2" layer="27" font="vector" ratio="10" rot="R90"/>
+<element name="B1" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="-2.25" y="-20.125" smashed="yes" rot="R180">
+<attribute name="CREATOR" value="Swanson" x="-2.25" y="-20.125" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-2.25" y="-20.125" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="EG5350CT-ND  " x="-2.25" y="-20.125" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-1.2" y="-17.375" size="1" layer="25" font="vector"/>
 </element>
-<element name="B2" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="17.25" y="-30.875" smashed="yes">
-<attribute name="NAME" x="17.75" y="-27" size="1" layer="25" font="vector" rot="R90"/>
-</element>
-<element name="B1" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="-16.75" y="-30.875" smashed="yes">
-<attribute name="NAME" x="-16.125" y="-27" size="1" layer="25" font="vector" rot="R90"/>
-</element>
-<element name="B7" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="-36.375" y="-19" smashed="yes" rot="R180">
-<attribute name="NAME" x="-36.66" y="-22.625" size="1" layer="25" font="vector" rot="R270"/>
+<element name="B7" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="-36" y="-19" smashed="yes" rot="R180">
+<attribute name="CREATOR" value="Swanson" x="-36" y="-19" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-36" y="-19" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="EG5350CT-ND  " x="-36" y="-19" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-40.3" y="-22.86" size="1" layer="25" font="vector"/>
 </element>
 <element name="U1" library="quadparts_prebuilt" package="QFN-64" value="ATMEGA128RFA1" x="22.67" y="10.32" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="22.67" y="10.32" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2208,8 +2237,8 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="XTAL-08218" x="32.42" y="10.37" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="REVIEWER" value="Swanson" x="32.42" y="10.37" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="E$1" library="RemoteParts" package="FRSKY-TARANIS-GIMBAL" value="" x="-78.5" y="0"/>
-<element name="E$2" library="RemoteParts" package="FRSKY-TARANIS-GIMBAL" value="" x="78.5" y="0" rot="R180"/>
+<element name="E$1" library="RemoteParts" package="FRSKY-TARANIS-GIMBAL" value="" x="-78.5" y="0" locked="yes"/>
+<element name="E$2" library="RemoteParts" package="FRSKY-TARANIS-GIMBAL" value="" x="78.5" y="0" locked="yes" rot="R180"/>
 <element name="S1" library="RemoteParts" package="JS102011JCQN" value="POWER-SWITCH-MFS201N-9-Z-SMD-VERTICAL" x="-37" y="-30" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-22" y="-72" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-22" y="-72" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2233,17 +2262,17 @@ design rules under a new name.</description>
 <attribute name="NAME" x="8.185" y="-0.27" size="1" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="4.895" y="-0.685" size="1.27" layer="27" font="vector" rot="R90"/>
 </element>
-<element name="R6" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="-28.375" y="-17.5" smashed="yes" rot="R270">
-<attribute name="DIST" value="DIGIKEY" x="23.625" y="-6.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="311-510ARCT-ND" x="23.625" y="-6.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-27.625" y="-14.6875" size="1" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="-29" y="-16.125" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
+<element name="R6" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="26.625" y="-22" smashed="yes" rot="R270">
+<attribute name="DIST" value="DIGIKEY" x="78.625" y="-11" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTPN" value="311-510ARCT-ND" x="78.625" y="-11" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="27.375" y="-19.1875" size="1" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="26" y="-20.625" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="R7" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="-25.375" y="-17.5" smashed="yes" rot="R270">
-<attribute name="DIST" value="DIGIKEY" x="21.625" y="-1.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="311-510ARCT-ND" x="21.625" y="-1.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-24.625" y="-14.625" size="1" layer="25" font="vector" rot="R180"/>
-<attribute name="VALUE" x="-26" y="-16" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
+<element name="R7" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="29.625" y="-22" smashed="yes" rot="R270">
+<attribute name="DIST" value="DIGIKEY" x="76.625" y="-6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTPN" value="311-510ARCT-ND" x="76.625" y="-6" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="30.375" y="-19.125" size="1" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="29" y="-20.5" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="C11" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="0.1uF" x="-1.75" y="5.625" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="11.25" y="34.625" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2275,22 +2304,22 @@ design rules under a new name.</description>
 <attribute name="REVIEWER" value="Swanson" x="13.25" y="38.125" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="9.625" y="3.875" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="D5" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="green" x="-26.375" y="-22.5" smashed="yes" rot="R90">
-<attribute name="CREATOR" value="Swanson" x="-32.375" y="-59.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="Digikey" x="-32.375" y="-59.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="160-1179-1-ND" x="-32.375" y="-59.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MFR" value="Lite-On Inc" x="-32.375" y="-59.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="MPN" value="LTST-C170GKT" x="-32.375" y="-59.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-25.85" y="-24.425" size="1" layer="25" font="vector" rot="R270"/>
-<attribute name="REVIEWER" value="Swanson" x="-32.375" y="-59.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-25.85" y="-19.8" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
+<element name="D5" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="green" x="28.625" y="-27" smashed="yes" rot="R90">
+<attribute name="CREATOR" value="Swanson" x="22.625" y="-64" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="Digikey" x="22.625" y="-64" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="160-1179-1-ND" x="22.625" y="-64" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MFR" value="Lite-On Inc" x="22.625" y="-64" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MPN" value="LTST-C170GKT" x="22.625" y="-64" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="29.15" y="-28.925" size="1" layer="25" font="vector" rot="R270"/>
+<attribute name="REVIEWER" value="Swanson" x="22.625" y="-64" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="VALUE" x="29.15" y="-24.3" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
-<element name="D7" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="RED" x="-29.375" y="-22.5" smashed="yes" rot="R90">
-<attribute name="CREATOR" value="Swanson" x="-31.375" y="-72.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DIST" value="DIGIKEY" x="-31.375" y="-72.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="DISTPN" value="160-1176-1-ND" x="-31.375" y="-72.5" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-28.975" y="-24.3" size="1" layer="25" font="vector" rot="R270"/>
-<attribute name="VALUE" x="-29.1" y="-20.175" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
+<element name="D7" library="RemoteParts" package="LEDSC125X200X120-2_HS" value="RED" x="25.625" y="-27" smashed="yes" rot="R90">
+<attribute name="CREATOR" value="Swanson" x="23.625" y="-77" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="23.625" y="-77" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="160-1176-1-ND" x="23.625" y="-77" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="26.025" y="-28.8" size="1" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="25.9" y="-24.675" size="1.2" layer="27" font="vector" ratio="10" rot="R270"/>
 </element>
 <element name="U4" library="RemoteParts" package="SOT23-5" value="MCP73831T-2ACI/OT" x="-27.25" y="9.25" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Adafruit" x="-6.25" y="-9.75" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2535,15 +2564,15 @@ design rules under a new name.</description>
 <attribute name="DIST" value="NA" x="-24.25" y="4.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="-24.25" y="4.5" size="1.778" layer="27" display="off"/>
 </element>
-<element name="F2" library="RemoteParts" package="FIDUCIAL_STENCIL" value="1mm" x="-31.375" y="26.225" smashed="yes">
-<attribute name="CREATOR" value="Swanson" x="-31.375" y="26.225" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="NA" x="-31.375" y="26.225" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="NA" x="-31.375" y="26.225" size="1.778" layer="27" display="off"/>
+<element name="F2" library="RemoteParts" package="FIDUCIAL_STENCIL" value="1mm" x="-34.875" y="26.225" smashed="yes">
+<attribute name="CREATOR" value="Swanson" x="-34.875" y="26.225" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="NA" x="-34.875" y="26.225" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="NA" x="-34.875" y="26.225" size="1.778" layer="27" display="off"/>
 </element>
-<element name="F3" library="RemoteParts" package="FIDUCIAL_STENCIL" value="1mm" x="-36" y="-19.375" smashed="yes">
-<attribute name="CREATOR" value="Swanson" x="-36" y="-19.375" size="1.778" layer="27" font="vector" display="off"/>
-<attribute name="DIST" value="NA" x="-36" y="-19.375" size="1.778" layer="27" font="vector" display="off"/>
-<attribute name="DISTPN" value="NA" x="-36" y="-19.375" size="1.778" layer="27" font="vector" display="off"/>
+<element name="F3" library="RemoteParts" package="FIDUCIAL_STENCIL" value="1mm" x="-36" y="-19" smashed="yes">
+<attribute name="CREATOR" value="Swanson" x="-36" y="-19" size="1.778" layer="27" font="vector" display="off"/>
+<attribute name="DIST" value="NA" x="-36" y="-19" size="1.778" layer="27" font="vector" display="off"/>
+<attribute name="DISTPN" value="NA" x="-36" y="-19" size="1.778" layer="27" font="vector" display="off"/>
 </element>
 <element name="F4" library="RemoteParts" package="FIDUCIAL_STENCIL" value="1mm" x="37" y="-26.25" smashed="yes">
 <attribute name="CREATOR" value="Swanson" x="37" y="-26.25" size="1.778" layer="27" font="vector" display="off"/>
@@ -2615,11 +2644,11 @@ design rules under a new name.</description>
 <attribute name="PIN1" value="+" x="-14.595" y="10.895" size="1.778" layer="21" font="vector" align="center-left"/>
 <attribute name="PIN2" value="-" x="-14.595" y="8.355" size="1.778" layer="21" font="vector" align="center-left"/>
 </element>
-<element name="J11" library="RemoteParts" package="USB-MICROA-10118192-0001LF" value="USB-MICROA-AMPHENOL-10118192-0001LF" x="-19.25" y="27.375" smashed="yes" rot="R180">
-<attribute name="CREATOR" value="Swanson" x="-19.25" y="27.375" size="1" layer="27" rot="R180" display="off"/>
-<attribute name="DIST" value="DIGIKEY" x="-19.25" y="27.375" size="1" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="609-4613-1-ND " x="-19.25" y="27.375" size="1" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-25.25" y="27.875" size="1" layer="25" font="vector" rot="R180" align="top-center"/>
+<element name="J11" library="RemoteParts" package="USB-MICROA-10118192-0001LF" value="USB-MICROA-AMPHENOL-10118192-0001LF" x="-26.75" y="27.375" smashed="yes" rot="R180">
+<attribute name="CREATOR" value="Swanson" x="-26.75" y="27.375" size="1" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-26.75" y="27.375" size="1" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="609-4613-1-ND " x="-26.75" y="27.375" size="1" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-20.25" y="29.875" size="1" layer="25" font="vector" rot="R180" align="top-center"/>
 </element>
 <element name="V3" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-20.25" y="4.5">
 <attribute name="CREATOR" value="Swanson" x="-20.25" y="4.5" size="1" layer="27" display="off"/>
@@ -2663,17 +2692,17 @@ design rules under a new name.</description>
 <attribute name="DIST" value="DIGIKEY" x="15.25" y="-9" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="DISTPN" value="609-3327-ND" x="15.25" y="-9" size="1.778" layer="28" rot="MR90" display="off"/>
 </element>
-<element name="JP1" library="RemoteParts" package="SMT-JUMPER_2_NO_SILK" value="JUMPER-SMT_2_NO_SILK" x="-1" y="-4.25" smashed="yes" rot="R270">
-<attribute name="NAME" x="-0.393" y="-1.75" size="1" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<element name="JP1" library="RemoteParts" package="SMT-JUMPER_2_NC_PASTE_NO-SILK" value="JUMPER-SMT_2_NC_PASTE_NO-SILK" x="-0.8" y="-4.25" smashed="yes" rot="R270">
+<attribute name="NAME" x="-0.193" y="-1.75" size="1" layer="25" font="vector" rot="R90" align="bottom-center"/>
 </element>
-<element name="JP3" library="RemoteParts" package="SMT-JUMPER_2_NO_SILK" value="JUMPER-SMT_2_NO_SILK" x="1.25" y="-7.5" smashed="yes" rot="R90">
-<attribute name="NAME" x="0.643" y="-10" size="1" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<element name="JP3" library="RemoteParts" package="SMT-JUMPER_2_NC_PASTE_NO-SILK" value="JUMPER-SMT_2_NC_PASTE_NO-SILK" x="1.05" y="-7.5" smashed="yes" rot="R90">
+<attribute name="NAME" x="0.443" y="-10" size="1" layer="25" font="vector" rot="R270" align="bottom-center"/>
 </element>
-<element name="JP4" library="RemoteParts" package="SMT-JUMPER_2_NO_SILK" value="JUMPER-SMT_2_NO_SILK" x="-1" y="-6.875" smashed="yes" rot="R270">
-<attribute name="NAME" x="-0.393" y="-10" size="1" layer="25" font="vector" rot="R90" align="bottom-center"/>
+<element name="JP4" library="RemoteParts" package="SMT-JUMPER_2_NC_PASTE_NO-SILK" value="JUMPER-SMT_2_NC_PASTE_NO-SILK" x="-0.8" y="-6.875" smashed="yes" rot="R270">
+<attribute name="NAME" x="-0.193" y="-10" size="1" layer="25" font="vector" rot="R90" align="bottom-center"/>
 </element>
-<element name="JP5" library="RemoteParts" package="SMT-JUMPER_2_NO_SILK" value="JUMPER-SMT_2_NO_SILK" x="1.25" y="-4.875" smashed="yes" rot="R90">
-<attribute name="NAME" x="0.643" y="-1.875" size="1" layer="25" font="vector" rot="R270" align="bottom-center"/>
+<element name="JP5" library="RemoteParts" package="SMT-JUMPER_2_NC_PASTE_NO-SILK" value="JUMPER-SMT_2_NC_PASTE_NO-SILK" x="1.05" y="-4.875" smashed="yes" rot="R90">
+<attribute name="NAME" x="0.443" y="-1.875" size="1" layer="25" font="vector" rot="R270" align="bottom-center"/>
 </element>
 <element name="C16" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="1uF" x="-12" y="9.625" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-3.375" y="9.625" size="1" layer="27" rot="R270" display="off"/>
@@ -2703,7 +2732,6 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="-8.72" y="9.429" size="1.27" layer="27" font="vector" rot="R180" align="center"/>
 <attribute name="VALUE" value="3.3V" x="-8.75" y="9.375" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="JP6" library="RemoteParts" package="SMT-JUMPER_3_1-NC_PASTE_NO-SILK" value="JUMPER-SMT_3_1-NC_PASTE_NO-SILK" x="-3.25" y="13.25"/>
 <element name="P1" library="RemoteParts" package="TEST-POINT-KEYSTONE-5000" value="TEST-POINT" x="-10" y="-1">
 <attribute name="CREATOR" value="Swanson" x="-10" y="-1" size="1" layer="27" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-10" y="-1" size="1" layer="27" display="off"/>
@@ -2727,95 +2755,173 @@ design rules under a new name.</description>
 <element name="A1" library="RemoteParts" package="ANT_PCB_2.4GHZ_NRF8001_1.6MM_1OZ" value="2.4GHz" x="20.625" y="22.275" rot="R270">
 <attribute name="VALUE" value="2.4GHz" x="20.625" y="22.275" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U$8" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-98" y="21"/>
-<element name="U$10" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-91" y="21"/>
-<element name="U$14" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-84" y="21"/>
-<element name="U$15" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-77" y="21"/>
-<element name="U$16" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="21"/>
-<element name="U$17" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="21"/>
-<element name="U$18" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-98" y="14"/>
-<element name="U$19" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-91" y="14"/>
-<element name="U$20" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-84" y="14"/>
-<element name="U$21" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-77" y="14"/>
-<element name="U$22" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="14"/>
-<element name="U$23" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="14"/>
-<element name="U$24" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="7"/>
-<element name="U$25" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-77" y="7"/>
-<element name="U$26" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="7"/>
-<element name="U$27" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-84" y="7"/>
-<element name="U$28" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-91" y="7"/>
-<element name="U$29" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-98" y="7"/>
-<element name="U$30" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-98" y="0"/>
-<element name="U$31" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-91" y="0"/>
-<element name="U$32" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-84" y="0"/>
-<element name="U$33" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-77" y="0"/>
-<element name="U$34" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="0"/>
-<element name="U$35" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="0"/>
-<element name="U$36" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="-7"/>
-<element name="U$37" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="-7"/>
-<element name="U$38" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-77" y="-7"/>
-<element name="U$39" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-84" y="-7"/>
-<element name="U$40" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-98" y="-7"/>
-<element name="U$41" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-91" y="-7"/>
-<element name="U$42" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-98" y="-14"/>
-<element name="U$43" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-91" y="-14"/>
-<element name="U$44" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-84" y="-14"/>
-<element name="U$45" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-77" y="-14"/>
-<element name="U$46" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="-14"/>
-<element name="U$47" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="-14"/>
-<element name="U$48" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="-21"/>
-<element name="U$49" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="-21"/>
-<element name="U$50" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-77" y="-21"/>
-<element name="U$51" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-91" y="-21"/>
-<element name="U$52" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-98" y="-21"/>
-<element name="U$53" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-84" y="-21"/>
-<element name="U$54" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="21"/>
-<element name="U$55" library="RemoteParts" package="SUPPORT_DONUT" value="" x="70" y="21"/>
-<element name="U$56" library="RemoteParts" package="SUPPORT_DONUT" value="" x="77" y="21"/>
-<element name="U$57" library="RemoteParts" package="SUPPORT_DONUT" value="" x="84" y="21"/>
-<element name="U$58" library="RemoteParts" package="SUPPORT_DONUT" value="" x="91" y="21"/>
-<element name="U$59" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="21"/>
-<element name="U$60" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="14"/>
-<element name="U$61" library="RemoteParts" package="SUPPORT_DONUT" value="" x="70" y="14"/>
-<element name="U$62" library="RemoteParts" package="SUPPORT_DONUT" value="" x="77" y="14"/>
-<element name="U$63" library="RemoteParts" package="SUPPORT_DONUT" value="" x="84" y="14"/>
-<element name="U$64" library="RemoteParts" package="SUPPORT_DONUT" value="" x="91" y="14"/>
-<element name="U$65" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="14"/>
-<element name="U$66" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="7"/>
-<element name="U$67" library="RemoteParts" package="SUPPORT_DONUT" value="" x="84" y="7"/>
-<element name="U$68" library="RemoteParts" package="SUPPORT_DONUT" value="" x="91" y="7"/>
-<element name="U$69" library="RemoteParts" package="SUPPORT_DONUT" value="" x="77" y="7"/>
-<element name="U$70" library="RemoteParts" package="SUPPORT_DONUT" value="" x="70" y="7"/>
-<element name="U$71" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="7"/>
-<element name="U$72" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="0"/>
-<element name="U$73" library="RemoteParts" package="SUPPORT_DONUT" value="" x="70" y="0"/>
-<element name="U$74" library="RemoteParts" package="SUPPORT_DONUT" value="" x="77" y="0"/>
-<element name="U$75" library="RemoteParts" package="SUPPORT_DONUT" value="" x="84" y="0"/>
-<element name="U$76" library="RemoteParts" package="SUPPORT_DONUT" value="" x="91" y="0"/>
-<element name="U$77" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="0"/>
-<element name="U$78" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="-7"/>
-<element name="U$79" library="RemoteParts" package="SUPPORT_DONUT" value="" x="91" y="-7"/>
-<element name="U$80" library="RemoteParts" package="SUPPORT_DONUT" value="" x="84" y="-7"/>
-<element name="U$81" library="RemoteParts" package="SUPPORT_DONUT" value="" x="77" y="-7"/>
-<element name="U$82" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="-7"/>
-<element name="U$83" library="RemoteParts" package="SUPPORT_DONUT" value="" x="70" y="-7"/>
-<element name="U$84" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="-14"/>
-<element name="U$85" library="RemoteParts" package="SUPPORT_DONUT" value="" x="70" y="-14"/>
-<element name="U$86" library="RemoteParts" package="SUPPORT_DONUT" value="" x="77" y="-14"/>
-<element name="U$87" library="RemoteParts" package="SUPPORT_DONUT" value="" x="84" y="-14"/>
-<element name="U$88" library="RemoteParts" package="SUPPORT_DONUT" value="" x="91" y="-14"/>
-<element name="U$89" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="-14"/>
-<element name="U$90" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="-21"/>
-<element name="U$91" library="RemoteParts" package="SUPPORT_DONUT" value="" x="91" y="-21"/>
-<element name="U$92" library="RemoteParts" package="SUPPORT_DONUT" value="" x="84" y="-21"/>
-<element name="U$93" library="RemoteParts" package="SUPPORT_DONUT" value="" x="70" y="-21"/>
-<element name="U$94" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="-21"/>
-<element name="U$95" library="RemoteParts" package="SUPPORT_DONUT" value="" x="77" y="-21"/>
-<element name="B4" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="0" y="-24.5" rot="R180"/>
-<element name="B6" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="7.5" y="-24.5" rot="R90"/>
-<element name="B8" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="-7.5" y="-24.5" rot="R90"/>
-<element name="B9" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="0" y="-31" rot="R180"/>
-<element name="B10" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="0" y="-18" rot="R180"/>
+<element name="B4" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="14" y="-24.5" smashed="yes" rot="R180">
+<attribute name="CREATOR" value="Swanson" x="14" y="-24.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="14" y="-24.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="EG5350CT-ND  " x="14" y="-24.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="16.7" y="-22.2" size="1" layer="25" font="vector"/>
+</element>
+<element name="B6" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="21" y="-24.5" smashed="yes" rot="R90">
+<attribute name="CREATOR" value="Swanson" x="21" y="-24.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="21" y="-24.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="EG5350CT-ND  " x="21" y="-24.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="23.4" y="-29.4" size="1" layer="25" font="vector" rot="R180"/>
+</element>
+<element name="B8" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="7" y="-24.5" smashed="yes" rot="R90">
+<attribute name="CREATOR" value="Swanson" x="7" y="-24.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="7" y="-24.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="DISTPN" value="EG5350CT-ND  " x="7" y="-24.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="NAME" x="6.5" y="-29.4" size="1" layer="25" font="vector" rot="R180"/>
+</element>
+<element name="B9" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="14" y="-30.5" smashed="yes" rot="R180">
+<attribute name="CREATOR" value="Swanson" x="14" y="-30.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="14" y="-30.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="EG5350CT-ND  " x="14" y="-30.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="18.9" y="-32.6" size="1" layer="25" font="vector"/>
+</element>
+<element name="B10" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="14" y="-18.5" smashed="yes" rot="R180">
+<attribute name="CREATOR" value="Swanson" x="14" y="-18.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="14" y="-18.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="EG5350CT-ND  " x="14" y="-18.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="18.8" y="-17.7" size="1" layer="25" font="vector"/>
+</element>
+<element name="J3" library="RemoteParts" package="USB-MINIB-EDAC-690-005-299-043" value="USB-MINIB-EDAC-690-005-299-043" x="-15.5" y="29.5" rot="R270">
+<attribute name="CREATOR" value="Swanson" x="-15.5" y="29.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-15.5" y="29.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTPN" value="151-1206-1-ND " x="-15.5" y="29.5" size="1.778" layer="27" rot="R270" display="off"/>
+</element>
+<element name="JP7" library="RemoteParts" package="SMT-JUMPER_3_1-NC_PASTE_NO-SILK" value="JUMPER-SMT_3_1-NC_PASTE_NO-SILK" x="-4.5" y="14.5"/>
+<element name="JP6" library="RemoteParts" package="SMT-JUMPER_3_1-NC_PASTE_NO-SILK" value="JUMPER-SMT_3_1-NC_PASTE_NO-SILK" x="8.5" y="14.5"/>
+<element name="E1" library="RemoteParts" package="BOURNS-PEC12R" value="ROTARY-ENCODER-W/BUTTON-BOURNS-PEC12R-30MM" x="-15.5" y="-24" smashed="yes">
+<attribute name="AUX1DIST" value="DIGIKEY" x="-15.5" y="-24" size="1.778" layer="27" display="off"/>
+<attribute name="AUX1DISTPN" value="1722-1241-ND" x="-15.5" y="-24" size="1.778" layer="27" display="off"/>
+<attribute name="CREATOR" value="Swanson" x="-15.5" y="-24" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-15.5" y="-24" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="PEC12R-4030F-S0024-ND" x="-15.5" y="-24" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-20.6" y="-31.93" size="1" layer="21" font="vector" align="center"/>
+</element>
+<element name="U$10" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-94" y="21.5"/>
+<element name="U$14" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-88" y="21.5"/>
+<element name="U$15" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-82" y="21.5"/>
+<element name="U$16" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-76" y="21.5"/>
+<element name="U$17" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="21.5"/>
+<element name="U$18" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-64" y="21.5"/>
+<element name="U$20" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-100" y="15.5"/>
+<element name="U$21" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-94" y="15.5"/>
+<element name="U$22" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-88" y="15.5"/>
+<element name="U$23" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-82" y="15.5"/>
+<element name="U$24" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-76" y="15.5"/>
+<element name="U$25" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="15.5"/>
+<element name="U$26" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-64" y="15.5"/>
+<element name="U$27" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-58" y="15.5"/>
+<element name="U$28" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-100" y="9.5"/>
+<element name="U$29" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-94" y="9.5"/>
+<element name="U$30" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-88" y="9.5"/>
+<element name="U$31" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-82" y="9.5"/>
+<element name="U$32" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-76" y="9.5"/>
+<element name="U$33" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="9.5"/>
+<element name="U$34" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-64" y="9.5"/>
+<element name="U$35" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-58" y="9.5"/>
+<element name="U$36" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-100" y="3.5"/>
+<element name="U$37" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-94" y="3.5"/>
+<element name="U$38" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-88" y="3.5"/>
+<element name="U$39" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-82" y="3.5"/>
+<element name="U$40" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-76" y="3.5"/>
+<element name="U$41" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="3.5"/>
+<element name="U$42" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-64" y="3.5"/>
+<element name="U$43" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-58" y="3.5"/>
+<element name="U$44" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-100" y="-2.5"/>
+<element name="U$45" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-94" y="-2.5"/>
+<element name="U$46" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-88" y="-2.5"/>
+<element name="U$47" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-82" y="-2.5"/>
+<element name="U$48" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-76" y="-2.5"/>
+<element name="U$49" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="-2.5"/>
+<element name="U$50" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-64" y="-2.5"/>
+<element name="U$51" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-58" y="-2.5"/>
+<element name="U$52" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-100" y="-8.5"/>
+<element name="U$53" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-94" y="-8.5"/>
+<element name="U$96" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-88" y="-8.5"/>
+<element name="U$97" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-82" y="-8.5"/>
+<element name="U$98" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-76" y="-8.5"/>
+<element name="U$99" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="-8.5"/>
+<element name="U$100" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-64" y="-8.5"/>
+<element name="U$101" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-58" y="-8.5"/>
+<element name="U$102" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-100" y="-14.5"/>
+<element name="U$103" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-94" y="-14.5"/>
+<element name="U$104" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-88" y="-14.5"/>
+<element name="U$105" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-82" y="-14.5"/>
+<element name="U$106" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-76" y="-14.5"/>
+<element name="U$107" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="-14.5"/>
+<element name="U$108" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-64" y="-14.5"/>
+<element name="U$109" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-58" y="-14.5"/>
+<element name="U$111" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-94" y="-20.5"/>
+<element name="U$112" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-88" y="-20.5"/>
+<element name="U$113" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-82" y="-20.5"/>
+<element name="U$114" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-76" y="-20.5"/>
+<element name="U$115" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="-20.5"/>
+<element name="U$116" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-64" y="-20.5"/>
+<element name="U$117" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-58" y="-20.5"/>
+<element name="U$8" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="21.5"/>
+<element name="U$19" library="RemoteParts" package="SUPPORT_DONUT" value="" x="69" y="21.5"/>
+<element name="U$54" library="RemoteParts" package="SUPPORT_DONUT" value="" x="75" y="21.5"/>
+<element name="U$55" library="RemoteParts" package="SUPPORT_DONUT" value="" x="81" y="21.5"/>
+<element name="U$56" library="RemoteParts" package="SUPPORT_DONUT" value="" x="87" y="21.5"/>
+<element name="U$57" library="RemoteParts" package="SUPPORT_DONUT" value="" x="93" y="21.5"/>
+<element name="U$58" library="RemoteParts" package="SUPPORT_DONUT" value="" x="57" y="15.5"/>
+<element name="U$59" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="15.5"/>
+<element name="U$60" library="RemoteParts" package="SUPPORT_DONUT" value="" x="69" y="15.5"/>
+<element name="U$61" library="RemoteParts" package="SUPPORT_DONUT" value="" x="75" y="15.5"/>
+<element name="U$62" library="RemoteParts" package="SUPPORT_DONUT" value="" x="81" y="15.5"/>
+<element name="U$63" library="RemoteParts" package="SUPPORT_DONUT" value="" x="87" y="15.5"/>
+<element name="U$64" library="RemoteParts" package="SUPPORT_DONUT" value="" x="93" y="15.5"/>
+<element name="U$65" library="RemoteParts" package="SUPPORT_DONUT" value="" x="99" y="15.5"/>
+<element name="U$66" library="RemoteParts" package="SUPPORT_DONUT" value="" x="57" y="9.5"/>
+<element name="U$67" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="9.5"/>
+<element name="U$68" library="RemoteParts" package="SUPPORT_DONUT" value="" x="69" y="9.5"/>
+<element name="U$69" library="RemoteParts" package="SUPPORT_DONUT" value="" x="75" y="9.5"/>
+<element name="U$70" library="RemoteParts" package="SUPPORT_DONUT" value="" x="81" y="9.5"/>
+<element name="U$71" library="RemoteParts" package="SUPPORT_DONUT" value="" x="87" y="9.5"/>
+<element name="U$72" library="RemoteParts" package="SUPPORT_DONUT" value="" x="93" y="9.5"/>
+<element name="U$73" library="RemoteParts" package="SUPPORT_DONUT" value="" x="99" y="9.5"/>
+<element name="U$74" library="RemoteParts" package="SUPPORT_DONUT" value="" x="57" y="3.5"/>
+<element name="U$75" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="3.5"/>
+<element name="U$76" library="RemoteParts" package="SUPPORT_DONUT" value="" x="69" y="3.5"/>
+<element name="U$77" library="RemoteParts" package="SUPPORT_DONUT" value="" x="75" y="3.5"/>
+<element name="U$78" library="RemoteParts" package="SUPPORT_DONUT" value="" x="81" y="3.5"/>
+<element name="U$79" library="RemoteParts" package="SUPPORT_DONUT" value="" x="87" y="3.5"/>
+<element name="U$80" library="RemoteParts" package="SUPPORT_DONUT" value="" x="93" y="3.5"/>
+<element name="U$81" library="RemoteParts" package="SUPPORT_DONUT" value="" x="99" y="3.5"/>
+<element name="U$82" library="RemoteParts" package="SUPPORT_DONUT" value="" x="57" y="-2.5"/>
+<element name="U$83" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="-2.5"/>
+<element name="U$84" library="RemoteParts" package="SUPPORT_DONUT" value="" x="69" y="-2.5"/>
+<element name="U$85" library="RemoteParts" package="SUPPORT_DONUT" value="" x="75" y="-2.5"/>
+<element name="U$86" library="RemoteParts" package="SUPPORT_DONUT" value="" x="81" y="-2.5"/>
+<element name="U$87" library="RemoteParts" package="SUPPORT_DONUT" value="" x="87" y="-2.5"/>
+<element name="U$88" library="RemoteParts" package="SUPPORT_DONUT" value="" x="93" y="-2.5"/>
+<element name="U$89" library="RemoteParts" package="SUPPORT_DONUT" value="" x="99" y="-2.5"/>
+<element name="U$90" library="RemoteParts" package="SUPPORT_DONUT" value="" x="57" y="-8.5"/>
+<element name="U$91" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="-8.5"/>
+<element name="U$92" library="RemoteParts" package="SUPPORT_DONUT" value="" x="69" y="-8.5"/>
+<element name="U$93" library="RemoteParts" package="SUPPORT_DONUT" value="" x="75" y="-8.5"/>
+<element name="U$94" library="RemoteParts" package="SUPPORT_DONUT" value="" x="81" y="-8.5"/>
+<element name="U$95" library="RemoteParts" package="SUPPORT_DONUT" value="" x="87" y="-8.5"/>
+<element name="U$110" library="RemoteParts" package="SUPPORT_DONUT" value="" x="93" y="-8.5"/>
+<element name="U$118" library="RemoteParts" package="SUPPORT_DONUT" value="" x="99" y="-8.5"/>
+<element name="U$119" library="RemoteParts" package="SUPPORT_DONUT" value="" x="57" y="-14.5"/>
+<element name="U$120" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="-14.5"/>
+<element name="U$121" library="RemoteParts" package="SUPPORT_DONUT" value="" x="69" y="-14.5"/>
+<element name="U$122" library="RemoteParts" package="SUPPORT_DONUT" value="" x="75" y="-14.5"/>
+<element name="U$123" library="RemoteParts" package="SUPPORT_DONUT" value="" x="81" y="-14.5"/>
+<element name="U$124" library="RemoteParts" package="SUPPORT_DONUT" value="" x="87" y="-14.5"/>
+<element name="U$125" library="RemoteParts" package="SUPPORT_DONUT" value="" x="93" y="-14.5"/>
+<element name="U$126" library="RemoteParts" package="SUPPORT_DONUT" value="" x="99" y="-14.5"/>
+<element name="U$127" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="-20.5"/>
+<element name="U$128" library="RemoteParts" package="SUPPORT_DONUT" value="" x="69" y="-20.5"/>
+<element name="U$129" library="RemoteParts" package="SUPPORT_DONUT" value="" x="75" y="-20.5"/>
+<element name="U$130" library="RemoteParts" package="SUPPORT_DONUT" value="" x="81" y="-20.5"/>
+<element name="U$131" library="RemoteParts" package="SUPPORT_DONUT" value="" x="87" y="-20.5"/>
+<element name="U$132" library="RemoteParts" package="SUPPORT_DONUT" value="" x="93" y="-20.5"/>
+<element name="U$133" library="RemoteParts" package="SUPPORT_DONUT" value="" x="99" y="-20.5"/>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -2837,7 +2943,6 @@ design rules under a new name.</description>
 <contactref element="C4" pad="2"/>
 <contactref element="D3" pad="1"/>
 <contactref element="D2" pad="2"/>
-<contactref element="D1" pad="1"/>
 <contactref element="C22" pad="2"/>
 <contactref element="C23" pad="2"/>
 <contactref element="C24" pad="2"/>
@@ -2974,10 +3079,26 @@ design rules under a new name.</description>
 <contactref element="U$7" pad="P$3"/>
 <contactref element="U$7" pad="P$8"/>
 <contactref element="U$7" pad="P$4"/>
-<wire x1="-32.775" y1="-20.5" x2="-36.13" y2="-26.9" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.975" y1="-20.5" x2="-36.13" y2="-26.9" width="0" layer="19" extent="1-1"/>
-<wire x1="-38.875" y1="-14.328425" x2="-39.975" y2="-20.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-37.5" y1="-14.875" x2="-38.875" y2="-14.328425" width="0" layer="19" extent="1-1"/>
+<contactref element="J3" pad="5"/>
+<contactref element="J3" pad="P7"/>
+<contactref element="J3" pad="P9"/>
+<contactref element="J3" pad="P6"/>
+<contactref element="J3" pad="P8"/>
+<contactref element="E1" pad="BUTB"/>
+<contactref element="E1" pad="C"/>
+<contactref element="B8" pad="4" route="any" routetag="G$1.2"/>
+<contactref element="B8" pad="3" route="any" routetag="G$1.2"/>
+<contactref element="B6" pad="4" route="any" routetag="G$1.2"/>
+<contactref element="B6" pad="3" route="any" routetag="G$1.2"/>
+<contactref element="B9" pad="4" route="any" routetag="G$1.2"/>
+<contactref element="B9" pad="3" route="any" routetag="G$1.2"/>
+<contactref element="B4" pad="4" route="any" routetag="G$1.2"/>
+<contactref element="B4" pad="3" route="any" routetag="G$1.2"/>
+<contactref element="B10" pad="4" route="any" routetag="G$1.2"/>
+<contactref element="B10" pad="3" route="any" routetag="G$1.2"/>
+<wire x1="-32.4" y1="-20.5" x2="-36.13" y2="-26.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-37.5" y1="-14.875" x2="-39.6" y2="-20.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-38.875" y1="-14.328425" x2="-37.5" y2="-14.875" width="0" layer="19" extent="1-1"/>
 <wire x1="-36.046575" y1="-14.328425" x2="-37.5" y2="-14.875" width="0" layer="19" extent="1-1"/>
 <wire x1="-35.5" y1="-12.875" x2="-36.046575" y2="-14.328425" width="0" layer="19" extent="1-1"/>
 <wire x1="-36.046575" y1="-11.5" x2="-35.5" y2="-12.875" width="0" layer="19" extent="1-1"/>
@@ -2985,6 +3106,8 @@ design rules under a new name.</description>
 <wire x1="-38.875" y1="-11.5" x2="-39.5" y2="-12.875" width="0" layer="19" extent="1-1"/>
 <wire x1="-37.5" y1="-10.875" x2="-38.875" y2="-11.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-32" y1="-12.875" x2="-35.5" y2="-12.875" width="0" layer="19" extent="1-1"/>
+<wire x1="-28.35" y1="-25.63" x2="-32.4" y2="-20.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-25.85" y1="-27.72" x2="-28.35" y2="-25.63" width="0" layer="19" extent="1-1"/>
 <wire x1="-21.84" y1="-12.875" x2="-32" y2="-12.875" width="0" layer="19" extent="1-1"/>
 <wire x1="-15.25" y1="-8.7" x2="-21.84" y2="-12.875" width="0" layer="19" extent="1-1"/>
 <wire x1="-15.25" y1="-1.08" x2="-15.25" y2="-8.7" width="0" layer="19" extent="1-1"/>
@@ -3071,6 +3194,16 @@ design rules under a new name.</description>
 <wire x1="36.125" y1="-14.328425" x2="37.5" y2="-14.875" width="0" layer="19" extent="1-1"/>
 <wire x1="6.06" y1="18.125" x2="14.5" y2="17.5" width="0" layer="19" extent="1-1"/>
 <wire x1="5.975" y1="21.5" x2="6.06" y2="18.125" width="0" layer="19" extent="1-1"/>
+<wire x1="-13" y1="-17" x2="-15.25" y2="-8.7" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.85" y1="-18.625" x2="-13" y2="-17" width="0" layer="19" extent="1-1"/>
+<wire x1="5.5" y1="-20.9" x2="1.35" y2="-18.625" width="0" layer="19" extent="1-1"/>
+<wire x1="1.35" y1="-27.625" x2="5.5" y2="-28.1" width="0" layer="19" extent="1-1"/>
+<wire x1="10.4" y1="-20" x2="5.5" y2="-20.9" width="0" layer="19" extent="1-1"/>
+<wire x1="19.5" y1="-20.9" x2="17.6" y2="-20" width="0" layer="19" extent="1-1"/>
+<wire x1="17.6" y1="-26" x2="19.5" y2="-28.1" width="0" layer="19" extent="1-1"/>
+<wire x1="17.6" y1="-32" x2="19.5" y2="-28.1" width="0" layer="19" extent="1-1"/>
+<wire x1="3.56" y1="-12.875" x2="1.35" y2="-18.625" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.7467" y1="-8.15" x2="3.56" y2="-12.875" width="0" layer="19" extent="1-1"/>
 <wire x1="2.375" y1="29.45" x2="5.975" y2="21.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.5" y1="3.65" x2="-31.75" y2="4.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.5" y1="9.65" x2="-40.5" y2="3.65" width="0" layer="19" extent="1-1"/>
@@ -3083,32 +3216,29 @@ design rules under a new name.</description>
 <wire x1="-38.875" y1="19.5" x2="-39.5" y2="18.125" width="0" layer="19" extent="1-1"/>
 <wire x1="-37.5" y1="20.125" x2="-38.875" y2="19.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-32" y1="18.125" x2="-35.5" y2="18.125" width="0" layer="19" extent="1-1"/>
-<wire x1="-21.84" y1="18.125" x2="-23.75" y2="8.855" width="0" layer="19" extent="1-1"/>
-<wire x1="-20.55" y1="27.375" x2="-21.84" y2="18.125" width="0" layer="19" extent="1-1"/>
-<wire x1="-22.35" y1="27.5" x2="-20.55" y2="27.375" width="0" layer="19" extent="1-1"/>
-<wire x1="-23.05" y1="30.05" x2="-22.35" y2="27.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-20.45" y1="30.05" x2="-23.05" y2="30.05" width="0" layer="19" extent="1-1"/>
-<wire x1="-18.05" y1="30.05" x2="-20.45" y2="30.05" width="0" layer="19" extent="1-1"/>
-<wire x1="-15.45" y1="30.05" x2="-18.05" y2="30.05" width="0" layer="19" extent="1-1"/>
-<wire x1="-16.15" y1="27.5" x2="-15.45" y2="30.05" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.11" y1="27.57" x2="-23.05" y2="30.05" width="0" layer="19" extent="1-1"/>
-<wire x1="-2.7467" y1="-8.15" x2="0.594" y2="2.2" width="0" layer="19" extent="1-1"/>
-<wire x1="3.56" y1="-12.875" x2="-2.7467" y2="-8.15" width="0" layer="19" extent="1-1"/>
-<wire x1="24.65" y1="-20.63" x2="3.56" y2="-12.875" width="0" layer="19" extent="1-1"/>
-<wire x1="27.15" y1="-20.63" x2="24.65" y2="-20.63" width="0" layer="19" extent="1-1"/>
-<wire x1="29.65" y1="-22.72" x2="27.15" y2="-20.63" width="0" layer="19" extent="1-1"/>
-<wire x1="13.65" y1="-32.375" x2="29.65" y2="-22.72" width="0" layer="19" extent="1-1"/>
-<wire x1="20.85" y1="-32.375" x2="24.65" y2="-20.63" width="0" layer="19" extent="1-1"/>
+<wire x1="-33.61" y1="27.57" x2="-37.5" y2="20.125" width="0" layer="19" extent="1-1"/>
+<wire x1="-29.85" y1="27.5" x2="-33.61" y2="27.57" width="0" layer="19" extent="1-1"/>
+<wire x1="-28.05" y1="27.375" x2="-29.85" y2="27.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.55" y1="30.05" x2="-29.85" y2="27.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-27.95" y1="30.05" x2="-30.55" y2="30.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-25.55" y1="30.05" x2="-27.95" y2="30.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-22.95" y1="30.05" x2="-25.55" y2="30.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-23.65" y1="27.5" x2="-22.95" y2="30.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-20" y1="29.5" x2="-22.95" y2="30.05" width="0" layer="19" extent="1-1"/>
+<wire x1="-20" y1="24" x2="-23.65" y2="27.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-17.1" y1="24" x2="-20" y2="24" width="0" layer="19" extent="1-1"/>
+<wire x1="-11" y1="24" x2="-17.1" y2="24" width="0" layer="19" extent="1-1"/>
+<wire x1="-11" y1="29.5" x2="-11" y2="24" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.84" y1="18.125" x2="-20" y2="24" width="0" layer="19" extent="1-1"/>
+<wire x1="-15.5" y1="-31.5" x2="-5.85" y2="-27.625" width="0" layer="19" extent="1-1"/>
 <wire x1="34.335" y1="-28.8575" x2="37.5" y2="-14.875" width="0" layer="19" extent="1-1"/>
-<wire x1="-20.35" y1="-32.375" x2="20.85" y2="-32.375" width="0" layer="19" extent="1-1"/>
-<wire x1="-13.15" y1="-32.375" x2="-20.35" y2="-32.375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BTN1">
 <contactref element="B1" pad="3" route="any" routetag="G$1.2"/>
 <contactref element="B1" pad="4" route="any" routetag="G$1.2"/>
 <contactref element="U1" pad="50"/>
-<wire x1="-20.35" y1="-29.375" x2="-13.15" y2="-29.375" width="0" layer="19" extent="1-1"/>
-<wire x1="27.551" y1="7.07" x2="-20.35" y2="-29.375" width="0" layer="19" extent="1-1"/>
+<wire x1="1.35" y1="-21.625" x2="-5.85" y2="-21.625" width="0" layer="19" extent="1-1"/>
+<wire x1="27.551" y1="7.07" x2="1.35" y2="-21.625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="PITCH">
 <contactref element="U1" pad="2"/>
@@ -3150,7 +3280,6 @@ design rules under a new name.</description>
 <contactref element="J4" pad="2"/>
 <contactref element="U2" pad="16"/>
 <contactref element="S2" pad="3"/>
-<contactref element="JP2" pad="3"/>
 <contactref element="R11" pad="2"/>
 <contactref element="U1" pad="62"/>
 <polygon width="0.381" layer="15">
@@ -3175,12 +3304,15 @@ design rules under a new name.</description>
 <contactref element="J2" pad="4"/>
 <contactref element="J9" pad="1"/>
 <contactref element="J9" pad="4"/>
-<contactref element="JP6" pad="2"/>
 <contactref element="P1" pad="T"/>
-<wire x1="-32.125" y1="-6.045" x2="-41.5" y2="-12.67" width="0" layer="19" extent="1-1"/>
+<contactref element="JP7" pad="1"/>
+<contactref element="JP6" pad="2"/>
+<wire x1="-5.3128" y1="14.5" x2="8.5" y2="14.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-30" y1="-0.67" x2="-5.3128" y2="14.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-32.125" y1="-6.045" x2="-30" y2="-0.67" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.5" y1="7.65" x2="-32.125" y2="-6.045" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.5" y1="13.65" x2="-40.5" y2="7.65" width="0" layer="19" extent="1-1"/>
-<wire x1="-35.19" y1="27.57" x2="-40.5" y2="13.65" width="0" layer="19" extent="1-1"/>
+<wire x1="-38.69" y1="27.57" x2="-40.5" y2="13.65" width="0" layer="19" extent="1-1"/>
 <wire x1="-15.25" y1="-3.62" x2="-32.125" y2="-6.045" width="0" layer="19" extent="1-1"/>
 <wire x1="-10" y1="-1" x2="-15.25" y2="-3.62" width="0" layer="19" extent="1-1"/>
 <wire x1="-15.25" y1="4" x2="-10" y2="-1" width="0" layer="19" extent="1-1"/>
@@ -3197,9 +3329,7 @@ design rules under a new name.</description>
 <wire x1="14.895" y1="9.5" x2="17.789" y2="11.07" width="0" layer="19" extent="1-1"/>
 <wire x1="40.5" y1="-2.35" x2="30.605" y2="5.5" width="0" layer="19" extent="1-1"/>
 <wire x1="40.5" y1="-8.35" x2="40.5" y2="-2.35" width="0" layer="19" extent="1-1"/>
-<wire x1="-3.25" y1="13.25" x2="-15.25" y2="4" width="0" layer="19" extent="1-1"/>
-<wire x1="0.895" y1="21.5" x2="-3.25" y2="13.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-2.625" y1="29.45" x2="0.895" y2="21.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.625" y1="29.45" x2="14.895" y2="9.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RESET">
 <contactref element="R3" pad="1"/>
@@ -3208,18 +3338,18 @@ design rules under a new name.</description>
 <contactref element="B7" pad="1" route="any" routetag="G$1.1"/>
 <contactref element="B7" pad="2" route="any" routetag="G$1.1"/>
 <contactref element="C6" pad="1"/>
-<wire x1="-32.775" y1="-17.5" x2="-30.5" y2="-29.355" width="0" layer="19" extent="1-1"/>
-<wire x1="-39.975" y1="-17.5" x2="-32.775" y2="-17.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-41.5" y1="-14.58" x2="-39.975" y2="-17.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.11" y1="25.03" x2="-41.5" y2="-14.58" width="0" layer="19" extent="1-1"/>
-<wire x1="20.92" y1="15.201" x2="-30.11" y2="25.03" width="0" layer="19" extent="1-1"/>
+<wire x1="-32.4" y1="-17.5" x2="-32.5" y2="-0.855" width="0" layer="19" extent="1-1"/>
+<wire x1="-39.6" y1="-17.5" x2="-32.4" y2="-17.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-30" y1="-2.58" x2="-39.6" y2="-17.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-33.61" y1="25.03" x2="-30" y2="-2.58" width="0" layer="19" extent="1-1"/>
+<wire x1="20.92" y1="15.201" x2="-33.61" y2="25.03" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BTN2">
 <contactref element="B2" pad="3" route="any" routetag="G$1.2"/>
 <contactref element="B2" pad="4" route="any" routetag="G$1.2"/>
 <contactref element="U1" pad="28"/>
-<wire x1="13.65" y1="-29.375" x2="20.85" y2="-29.375" width="0" layer="19" extent="1-1"/>
-<wire x1="17.789" y1="8.57" x2="13.65" y2="-29.375" width="0" layer="19" extent="1-1"/>
+<wire x1="1.35" y1="-30.625" x2="-5.85" y2="-30.625" width="0" layer="19" extent="1-1"/>
+<wire x1="17.789" y1="8.57" x2="1.35" y2="-30.625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="ANTENNA" class="2">
 <contactref element="B5" pad="1"/>
@@ -3235,11 +3365,6 @@ design rules under a new name.</description>
 <wire x1="31.27" y1="12.22" x2="36.125" y2="11.855" width="0" layer="19" extent="1-1"/>
 <wire x1="27.551" y1="10.57" x2="31.27" y2="12.22" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$18">
-<contactref element="D1" pad="2"/>
-<contactref element="R17" pad="1"/>
-<wire x1="24.75" y1="-18.33" x2="24.65" y2="-22.72" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="N$19">
 <contactref element="C23" pad="1"/>
 <contactref element="U1" pad="56"/>
@@ -3250,7 +3375,7 @@ design rules under a new name.</description>
 <signal name="N$4">
 <contactref element="R2" pad="2"/>
 <contactref element="U1" pad="15"/>
-<wire x1="27.25" y1="-16.42" x2="19.42" y2="15.201" width="0" layer="19" extent="1-1"/>
+<wire x1="-28.25" y1="-21.42" x2="19.42" y2="15.201" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$20">
 <contactref element="C24" pad="1"/>
@@ -3272,17 +3397,17 @@ design rules under a new name.</description>
 <signal name="N$8">
 <contactref element="R1" pad="2"/>
 <contactref element="U1" pad="14"/>
-<wire x1="29.75" y1="-16.42" x2="19.92" y2="15.201" width="0" layer="19" extent="1-1"/>
+<wire x1="-25.75" y1="-21.42" x2="19.92" y2="15.201" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$9">
 <contactref element="D2" pad="1"/>
 <contactref element="R1" pad="1"/>
-<wire x1="29.75" y1="-18.33" x2="29.65" y2="-20.63" width="0" layer="19" extent="1-1"/>
+<wire x1="-25.75" y1="-23.33" x2="-25.85" y2="-25.63" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$10">
 <contactref element="D3" pad="2"/>
 <contactref element="R2" pad="1"/>
-<wire x1="27.25" y1="-18.33" x2="27.15" y2="-22.72" width="0" layer="19" extent="1-1"/>
+<wire x1="-28.25" y1="-23.33" x2="-28.35" y2="-27.72" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RFN">
 <contactref element="B5" pad="3"/>
@@ -3297,17 +3422,17 @@ design rules under a new name.</description>
 <signal name="MISO">
 <contactref element="J4" pad="1"/>
 <contactref element="U1" pad="39"/>
-<wire x1="-35.19" y1="25.03" x2="21.92" y2="5.439" width="0" layer="19" extent="1-1"/>
+<wire x1="-38.69" y1="25.03" x2="21.92" y2="5.439" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="J4" pad="4"/>
 <contactref element="U1" pad="38"/>
-<wire x1="-32.65" y1="27.57" x2="21.42" y2="5.439" width="0" layer="19" extent="1-1"/>
+<wire x1="-36.15" y1="27.57" x2="21.42" y2="5.439" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCK">
 <contactref element="J4" pad="3"/>
 <contactref element="U1" pad="37"/>
-<wire x1="-32.65" y1="25.03" x2="20.92" y2="5.439" width="0" layer="19" extent="1-1"/>
+<wire x1="-36.15" y1="25.03" x2="20.92" y2="5.439" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBAT" class="1">
 <contactref element="C12" pad="1"/>
@@ -3336,9 +3461,7 @@ design rules under a new name.</description>
 <vertex x="8" y="22"/>
 </polygon>
 <wire x1="-29.46" y1="-12.875" x2="-39.5" y2="-28.8" width="0" layer="19" extent="1-1"/>
-<wire x1="-28.375" y1="-18.455" x2="-29.46" y2="-12.875" width="0" layer="19" extent="1-1"/>
-<wire x1="-25.375" y1="-18.455" x2="-28.375" y2="-18.455" width="0" layer="19" extent="1-1"/>
-<wire x1="-10" y1="-5" x2="-25.375" y2="-18.455" width="0" layer="19" extent="1-1"/>
+<wire x1="-10" y1="-5" x2="-29.46" y2="-12.875" width="0" layer="19" extent="1-1"/>
 <wire x1="-1.75" y1="6.52" x2="-10" y2="-5" width="0" layer="19" extent="1-1"/>
 <wire x1="-1.75" y1="8.23" x2="-1.75" y2="6.52" width="0" layer="19" extent="1-1"/>
 <wire x1="0.594" y1="6.1" x2="-1.75" y2="6.52" width="0" layer="19" extent="1-1"/>
@@ -3348,7 +3471,9 @@ design rules under a new name.</description>
 <wire x1="3.5625" y1="13.9825" x2="-1.75" y2="8.23" width="0" layer="19" extent="1-1"/>
 <wire x1="-29.46" y1="18.125" x2="-12" y2="10.52" width="0" layer="19" extent="1-1"/>
 <wire x1="-34.165" y1="14.5" x2="-29.46" y2="18.125" width="0" layer="19" extent="1-1"/>
-<wire x1="39.415" y1="-28.8575" x2="-25.375" y2="-18.455" width="0" layer="19" extent="1-1"/>
+<wire x1="26.625" y1="-22.955" x2="-10" y2="-5" width="0" layer="19" extent="1-1"/>
+<wire x1="29.625" y1="-22.955" x2="26.625" y2="-22.955" width="0" layer="19" extent="1-1"/>
+<wire x1="39.415" y1="-28.8575" x2="29.625" y2="-22.955" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TXO">
 <contactref element="U3" pad="1"/>
@@ -3400,12 +3525,16 @@ design rules under a new name.</description>
 <signal name="USB_D-">
 <contactref element="U3" pad="16"/>
 <contactref element="J11" pad="2"/>
-<wire x1="-18.6" y1="27.375" x2="0.594" y2="8.7" width="0" layer="19" extent="1-1"/>
+<contactref element="J3" pad="2"/>
+<wire x1="-26.1" y1="27.375" x2="-14.7" y2="24" width="0" layer="19" extent="1-1"/>
+<wire x1="0.594" y1="8.7" x2="-26.1" y2="27.375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="USB_D+">
 <contactref element="U3" pad="15"/>
 <contactref element="J11" pad="3"/>
-<wire x1="-19.25" y1="27.375" x2="0.594" y2="9.35" width="0" layer="19" extent="1-1"/>
+<contactref element="J3" pad="3"/>
+<wire x1="-26.75" y1="27.375" x2="-15.5" y2="24" width="0" layer="19" extent="1-1"/>
+<wire x1="0.594" y1="9.35" x2="-26.75" y2="27.375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTS">
 <contactref element="U3" pad="11"/>
@@ -3420,22 +3549,22 @@ design rules under a new name.</description>
 <signal name="TXLED">
 <contactref element="U3" pad="23"/>
 <contactref element="D7" pad="2"/>
-<wire x1="0.594" y1="4.15" x2="-28.475" y2="-22.845" width="0" layer="19" extent="1-1"/>
+<wire x1="0.594" y1="4.15" x2="26.525" y2="-27.345" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RXLED">
 <contactref element="U3" pad="22"/>
 <contactref element="D5" pad="1"/>
-<wire x1="0.594" y1="4.8" x2="-25.475" y2="-20.755" width="0" layer="19" extent="1-1"/>
+<wire x1="0.594" y1="4.8" x2="29.525" y2="-25.255" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$2">
 <contactref element="R6" pad="1"/>
 <contactref element="D7" pad="1"/>
-<wire x1="-28.375" y1="-16.545" x2="-28.475" y2="-20.755" width="0" layer="19" extent="1-1"/>
+<wire x1="26.625" y1="-21.045" x2="26.525" y2="-25.255" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$3">
 <contactref element="R7" pad="1"/>
 <contactref element="D5" pad="2"/>
-<wire x1="-25.375" y1="-16.545" x2="-25.475" y2="-22.845" width="0" layer="19" extent="1-1"/>
+<wire x1="29.625" y1="-21.045" x2="29.525" y2="-27.345" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$6">
 <contactref element="R8" pad="1"/>
@@ -3476,54 +3605,54 @@ design rules under a new name.</description>
 <contactref element="U1" pad="47"/>
 <contactref element="JP3" pad="2"/>
 <wire x1="2.9967" y1="-6.85" x2="25.92" y2="5.439" width="0" layer="19" extent="1-1"/>
-<wire x1="1.25" y1="-7.0936" x2="2.9967" y2="-6.85" width="0" layer="19" extent="1-1"/>
+<wire x1="1.05" y1="-7.0936" x2="2.9967" y2="-6.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DTR-0">
 <contactref element="U2" pad="15"/>
 <contactref element="C6" pad="2"/>
 <contactref element="JP5" pad="2"/>
-<wire x1="1.25" y1="-4.4686" x2="-30.5" y2="-31.145" width="0" layer="19" extent="1-1"/>
-<wire x1="2.9967" y1="-4.25" x2="1.25" y2="-4.4686" width="0" layer="19" extent="1-1"/>
+<wire x1="1.05" y1="-4.4686" x2="-32.5" y2="-2.645" width="0" layer="19" extent="1-1"/>
+<wire x1="2.9967" y1="-4.25" x2="1.05" y2="-4.4686" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DTR-1">
 <contactref element="JP2" pad="6"/>
 <contactref element="U2" pad="13"/>
 <contactref element="JP5" pad="1"/>
-<wire x1="1.25" y1="-5.2814" x2="-6.725" y2="21.5" width="0" layer="19" extent="1-1"/>
-<wire x1="2.9967" y1="-5.55" x2="1.25" y2="-5.2814" width="0" layer="19" extent="1-1"/>
+<wire x1="1.05" y1="-5.2814" x2="-6.725" y2="21.5" width="0" layer="19" extent="1-1"/>
+<wire x1="2.9967" y1="-5.55" x2="1.05" y2="-5.2814" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RXI-1">
 <contactref element="JP2" pad="5"/>
 <contactref element="U2" pad="9"/>
 <contactref element="JP3" pad="1"/>
-<wire x1="1.25" y1="-7.9064" x2="-4.185" y2="21.5" width="0" layer="19" extent="1-1"/>
-<wire x1="2.9967" y1="-8.15" x2="1.25" y2="-7.9064" width="0" layer="19" extent="1-1"/>
+<wire x1="1.05" y1="-7.9064" x2="-4.185" y2="21.5" width="0" layer="19" extent="1-1"/>
+<wire x1="2.9967" y1="-8.15" x2="1.05" y2="-7.9064" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TXO-1">
 <contactref element="JP2" pad="4"/>
 <contactref element="U2" pad="5"/>
 <contactref element="JP4" pad="1"/>
 <wire x1="-2.7467" y1="-6.2" x2="-1.645" y2="21.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-1" y1="-6.4686" x2="-2.7467" y2="-6.2" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.8" y1="-6.4686" x2="-2.7467" y2="-6.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTS-1">
 <contactref element="JP2" pad="2"/>
 <contactref element="U2" pad="1"/>
 <contactref element="JP1" pad="1"/>
-<wire x1="-1" y1="-3.8436" x2="3.435" y2="21.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-2.7467" y1="-3.6" x2="-1" y2="-3.8436" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.8" y1="-3.8436" x2="3.435" y2="21.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.7467" y1="-3.6" x2="-0.8" y2="-3.8436" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTS-0">
 <contactref element="U2" pad="3"/>
 <contactref element="JP1" pad="2"/>
-<wire x1="-1" y1="-4.6564" x2="-2.7467" y2="-4.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.8" y1="-4.6564" x2="-2.7467" y2="-4.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TXO-0">
 <contactref element="U2" pad="7"/>
 <contactref element="U1" pad="46"/>
 <contactref element="JP4" pad="2"/>
-<wire x1="-1" y1="-7.2814" x2="25.42" y2="5.439" width="0" layer="19" extent="1-1"/>
-<wire x1="-2.7467" y1="-7.5" x2="-1" y2="-7.2814" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.8" y1="-7.2814" x2="25.42" y2="5.439" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.7467" y1="-7.5" x2="-0.8" y2="-7.2814" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBUS" class="1">
 <contactref element="U4" pad="4"/>
@@ -3552,19 +3681,23 @@ design rules under a new name.</description>
 <contactref element="J11" pad="1"/>
 <contactref element="D10" pad="A"/>
 <contactref element="P2" pad="T"/>
-<wire x1="-10" y1="-9" x2="33.725" y2="19.255" width="0" layer="19" extent="1-1"/>
-<wire x1="-28.5501" y1="10.2" x2="-10" y2="-9" width="0" layer="19" extent="1-1"/>
-<wire x1="-28.25" y1="11.25" x2="-28.5501" y2="10.2" width="0" layer="19" extent="1-1"/>
-<wire x1="-28.25" y1="13.25" x2="-28.25" y2="11.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.25" y1="13.25" x2="-28.25" y2="13.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.835" y1="14.5" x2="-30.25" y2="13.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-30.25" y1="15.25" x2="-30.835" y2="14.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-32.25" y1="15.25" x2="-30.835" y2="14.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-32.25" y1="13.25" x2="-30.835" y2="14.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-32.25" y1="11.25" x2="-32.25" y2="13.25" width="0" layer="19" extent="1-1"/>
+<contactref element="J3" pad="1"/>
+<contactref element="JP7" pad="3"/>
+<wire x1="-32.25" y1="11.25" x2="-3.6872" y2="14.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.75" y1="10.645" x2="-32.25" y2="11.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-28.25" y1="15.25" x2="-28.25" y2="13.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-17.95" y1="27.375" x2="-28.25" y2="15.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-32.25" y1="13.25" x2="-32.25" y2="11.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.835" y1="14.5" x2="-32.25" y2="13.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.25" y1="15.25" x2="-30.835" y2="14.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-30.25" y1="13.25" x2="-30.835" y2="14.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-32.25" y1="15.25" x2="-30.835" y2="14.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-28.25" y1="13.25" x2="-30.25" y2="13.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-28.25" y1="11.25" x2="-28.25" y2="13.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-28.5501" y1="10.2" x2="-28.25" y2="11.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-28.25" y1="15.25" x2="-30.25" y2="15.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-25.45" y1="27.375" x2="-28.25" y2="15.25" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.9" y1="24" x2="-25.45" y2="27.375" width="0" layer="19" extent="1-1"/>
+<wire x1="-10" y1="-9" x2="-28.5501" y2="10.2" width="0" layer="19" extent="1-1"/>
+<wire x1="33.725" y1="19.255" x2="-13.9" y2="24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1" class="1">
 <contactref element="D9" pad="C"/>
@@ -3611,8 +3744,8 @@ design rules under a new name.</description>
 </signal>
 <signal name="LCD-B">
 <contactref element="R12" pad="1"/>
-<contactref element="U1" pad="51"/>
-<wire x1="8.625" y1="-8.295" x2="27.551" y2="7.57" width="0" layer="19" extent="1-1"/>
+<contactref element="U1" pad="42"/>
+<wire x1="8.625" y1="-8.295" x2="23.42" y2="5.439" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="LCD-CONTRAST">
 <contactref element="L1" pad="V0"/>
@@ -3647,30 +3780,18 @@ design rules under a new name.</description>
 </signal>
 <signal name="E1-A">
 <contactref element="U1" pad="40"/>
+<contactref element="E1" pad="A"/>
+<wire x1="22.42" y1="5.439" x2="-18" y2="-31.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="E1-B">
 <contactref element="U1" pad="41"/>
-</signal>
-<signal name="E2-A">
-<contactref element="U1" pad="42"/>
-</signal>
-<signal name="E2-B">
-<contactref element="U1" pad="43"/>
-</signal>
-<signal name="E3-A">
-<contactref element="U1" pad="25"/>
-</signal>
-<signal name="E3-B">
-<contactref element="U1" pad="26"/>
+<contactref element="E1" pad="B"/>
+<wire x1="22.92" y1="5.439" x2="-13" y2="-31.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="E1-BUT">
 <contactref element="U1" pad="27"/>
-</signal>
-<signal name="E2-BUT">
-<contactref element="U1" pad="52"/>
-</signal>
-<signal name="E3-BUT">
-<contactref element="U1" pad="53"/>
+<contactref element="E1" pad="BUTA"/>
+<wire x1="17.789" y1="9.07" x2="-18" y2="-17" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BAT_SENSE">
 <contactref element="R13" pad="1"/>
@@ -3689,26 +3810,56 @@ design rules under a new name.</description>
 <contactref element="R15" pad="2"/>
 <wire x1="3.5625" y1="15.8925" x2="3.56" y2="18.125" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$16">
-<contactref element="R17" pad="2"/>
-<contactref element="U1" pad="16"/>
-<wire x1="24.75" y1="-16.42" x2="18.92" y2="15.201" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="FTDI3V3" class="1">
 <contactref element="U3" pad="17"/>
 <contactref element="C13" pad="1"/>
 <contactref element="U3" pad="4"/>
-<contactref element="JP6" pad="3"/>
-<wire x1="7.906" y1="2.85" x2="10.25" y2="3.02" width="0" layer="19" extent="1-1"/>
-<wire x1="0.594" y1="8.05" x2="7.906" y2="2.85" width="0" layer="19" extent="1-1"/>
-<wire x1="-2.4372" y1="13.25" x2="0.594" y2="8.05" width="0" layer="19" extent="1-1"/>
+<contactref element="JP6" pad="1"/>
+<wire x1="0.594" y1="8.05" x2="7.6872" y2="14.5" width="0" layer="19" extent="1-1"/>
+<wire x1="7.906" y1="2.85" x2="0.594" y2="8.05" width="0" layer="19" extent="1-1"/>
+<wire x1="10.25" y1="3.02" x2="7.906" y2="2.85" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VREG3V3" class="1">
 <contactref element="C17" pad="2"/>
 <contactref element="U5" pad="5"/>
-<contactref element="JP6" pad="1"/>
-<wire x1="-5.5" y1="8.605" x2="-4.0628" y2="13.25" width="0" layer="19" extent="1-1"/>
-<wire x1="-7.8" y1="8.075" x2="-5.5" y2="8.605" width="0" layer="19" extent="1-1"/>
+<contactref element="JP6" pad="3"/>
+<wire x1="-7.8" y1="8.075" x2="9.3128" y2="14.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.5" y1="8.605" x2="-7.8" y2="8.075" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$24">
+<contactref element="JP2" pad="3"/>
+<contactref element="JP7" pad="2"/>
+<wire x1="0.895" y1="21.5" x2="-4.5" y2="14.5" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="BTN_UP">
+<contactref element="U1" pad="25"/>
+<contactref element="B10" pad="1" route="any" routetag="G$1.1"/>
+<contactref element="B10" pad="2" route="any" routetag="G$1.1"/>
+<wire x1="17.6" y1="-17" x2="17.789" y2="10.07" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="BTN_DOWN">
+<contactref element="U1" pad="26"/>
+<contactref element="B9" pad="1" route="any" routetag="G$1.1"/>
+<contactref element="B9" pad="2" route="any" routetag="G$1.1"/>
+<wire x1="17.6" y1="-29" x2="17.789" y2="9.57" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="BTN_LEFT">
+<contactref element="U1" pad="51"/>
+<contactref element="B8" pad="1" route="any" routetag="G$1.1"/>
+<contactref element="B8" pad="2" route="any" routetag="G$1.1"/>
+<wire x1="8.5" y1="-20.9" x2="27.551" y2="7.57" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="BTN_RIGHT">
+<contactref element="U1" pad="52"/>
+<contactref element="B4" pad="1" route="any" routetag="G$1.1"/>
+<contactref element="B4" pad="2" route="any" routetag="G$1.1"/>
+<wire x1="17.6" y1="-23" x2="27.551" y2="8.07" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="BTN_CENTER">
+<contactref element="U1" pad="53"/>
+<contactref element="B6" pad="1" route="any" routetag="G$1.1"/>
+<contactref element="B6" pad="2" route="any" routetag="G$1.1"/>
+<wire x1="22.5" y1="-20.9" x2="27.551" y2="8.57" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <errors>
