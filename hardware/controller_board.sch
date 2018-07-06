@@ -880,8 +880,8 @@
 <text x="-1.27" y="3.905" size="1.778" layer="21" font="vector" rot="R90" align="center-left">&gt;PIN1</text>
 <text x="1.27" y="3.905" size="1.778" layer="21" font="vector" rot="R90" align="center-left">&gt;PIN2</text>
 <text x="0" y="-5.04" size="1.778" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
-<pad name="1" x="-1.27" y="0" drill="1.4" diameter="1.778" shape="square"/>
-<pad name="2" x="1.27" y="0" drill="1.4" diameter="1.778"/>
+<pad name="1" x="-1.27" y="0" drill="1.1" shape="square"/>
+<pad name="2" x="1.27" y="0" drill="1.1"/>
 <wire x1="2.75" y1="3.25" x2="-2.75" y2="3.25" width="0.127" layer="39"/>
 <wire x1="-2.75" y1="3.25" x2="-2.75" y2="-3.25" width="0.127" layer="39"/>
 <wire x1="-2.75" y1="-3.25" x2="2.75" y2="-3.25" width="0.127" layer="39"/>
@@ -1024,6 +1024,7 @@
 <pad name="P$9" x="-1.375" y="-1.453425" drill="0.2" rot="R45" thermals="no"/>
 <circle x="0" y="0" radius="2.05" width="1" layer="29"/>
 <circle x="0" y="0" radius="2.05" width="1" layer="30"/>
+<circle x="0" y="0" radius="1.3" width="0.127" layer="100"/>
 </package>
 <package name="JST-13-PTH">
 <wire x1="-3.95" y1="-2" x2="-3.95" y2="3" width="0.2032" layer="21"/>
@@ -3318,6 +3319,29 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
 <smd name="5" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
 </package>
+<package name="4.5MM_TACTILE_SWITCH_TL3305AF160QG">
+<wire x1="-2.31" y1="-1.02" x2="-2.31" y2="2.31" width="0.12" layer="21"/>
+<wire x1="-2.5" y1="-1.23" x2="-2.5" y2="2.5" width="0.12" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="-1.23" y2="-2.5" width="0.12" layer="51"/>
+<wire x1="-1.23" y1="-2.5" x2="-2.5" y2="-1.23" width="0.12" layer="51"/>
+<wire x1="2.31" y1="-2.31" x2="-1.02" y2="-2.31" width="0.12" layer="21"/>
+<wire x1="2.56" y1="-2.5" x2="-2.56" y2="-2.5" width="0.05" layer="39"/>
+<wire x1="-2.56" y1="-2.5" x2="-2.56" y2="2.5" width="0.05" layer="39"/>
+<circle x="0" y="0" radius="0.25" width="0.05" layer="39"/>
+<text x="0" y="0" size="1.27" layer="25" font="vector" rot="R90">&gt;NAME</text>
+<circle x="0" y="0" radius="1.25" width="0.2" layer="21"/>
+<wire x1="0" y1="0.35" x2="0" y2="-0.35" width="0.05" layer="39"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.12" layer="51"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.12" layer="51"/>
+<wire x1="2.31" y1="2.31" x2="2.31" y2="-2.31" width="0.12" layer="21"/>
+<wire x1="-2.31" y1="2.31" x2="2.31" y2="2.31" width="0.12" layer="21"/>
+<wire x1="2.56" y1="2.5" x2="2.56" y2="-2.5" width="0.05" layer="39"/>
+<wire x1="-2.56" y1="2.5" x2="2.56" y2="2.5" width="0.05" layer="39"/>
+<smd name="1" x="-3.6" y="-1.5" dx="1.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="2" x="3.6" y="-1.5" dx="1.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="3" x="-3.6" y="1.5" dx="1.4" dy="1.6" layer="1" rot="R90"/>
+<smd name="4" x="3.6" y="1.5" dx="1.4" dy="1.6" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ATMEGA128RFA1">
@@ -4166,6 +4190,19 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="MFR" value="TE Connectivity Alcoswitch Switches"/>
 <attribute name="MPN" value="FSM4JSMA"/>
 <attribute name="REVIEWER" value="Swanson"/>
+</technology>
+</technologies>
+</device>
+<device name="-4.5X4.5" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2" route="any"/>
+<connect gate="G$1" pin="2" pad="3 4" route="any"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="EG5350CT-ND  "/>
 </technology>
 </technologies>
 </device>
