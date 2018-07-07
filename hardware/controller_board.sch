@@ -759,6 +759,8 @@
 <pad name="A" x="3.56" y="15.5" drill="1.02"/>
 <pad name="DNC1" x="8.6" y="15.5" drill="1.02"/>
 <pad name="DNC2" x="11.14" y="15.5" drill="1.02"/>
+<text x="-31.76" y="-13.24" size="1.27" layer="51" font="vector" align="center">RGB</text>
+<text x="-28" y="13" size="1.27" layer="51" font="vector" align="center">Monochrome</text>
 </package>
 <package name="JS102011JCQN">
 <smd name="3" x="2.5" y="-1.2" dx="1" dy="1.6" layer="1"/>
@@ -846,8 +848,8 @@
 <text x="-1.27" y="3.905" size="1.778" layer="21" font="vector" rot="R90" align="center-left">&gt;PIN1</text>
 <text x="1.27" y="3.905" size="1.778" layer="21" font="vector" rot="R90" align="center-left">&gt;PIN2</text>
 <text x="0" y="-5.04" size="1.778" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
-<pad name="1" x="-1.27" y="0" drill="1.4" diameter="1.778" shape="square"/>
-<pad name="2" x="1.27" y="0" drill="1.4" diameter="1.778"/>
+<pad name="1" x="-1.27" y="0" drill="1.1" shape="square"/>
+<pad name="2" x="1.27" y="0" drill="1.1"/>
 <wire x1="2.75" y1="3.25" x2="-2.75" y2="3.25" width="0.127" layer="39"/>
 <wire x1="-2.75" y1="3.25" x2="-2.75" y2="-3.25" width="0.127" layer="39"/>
 <wire x1="-2.75" y1="-3.25" x2="2.75" y2="-3.25" width="0.127" layer="39"/>
@@ -990,6 +992,7 @@
 <pad name="P$9" x="-1.375" y="-1.453425" drill="0.2" rot="R45" thermals="no"/>
 <circle x="0" y="0" radius="2.05" width="1" layer="29"/>
 <circle x="0" y="0" radius="2.05" width="1" layer="30"/>
+<circle x="0" y="0" radius="1.3" width="0.127" layer="100"/>
 </package>
 <package name="JST-13-PTH">
 <wire x1="-3.95" y1="-2" x2="-3.95" y2="3" width="0.2032" layer="21"/>

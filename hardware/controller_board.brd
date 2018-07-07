@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -26,7 +26,7 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -177,7 +177,7 @@
 </layers>
 <board>
 <plain>
-<wire x1="95.5" y1="-38" x2="-95.5" y2="-38" width="0.1524" layer="100"/>
+<wire x1="100.5" y1="-38" x2="-100.5" y2="-38" width="0.1524" layer="100"/>
 <wire x1="43" y1="26.5" x2="43" y2="-29" width="0.127" layer="20"/>
 <wire x1="-43" y1="-29" x2="-43" y2="26.5" width="0.127" layer="20"/>
 <wire x1="43" y1="-29" x2="38" y2="-34" width="0.127" layer="20" curve="-90"/>
@@ -185,14 +185,14 @@
 <wire x1="-38" y1="-34" x2="-43" y2="-29" width="0.127" layer="20" curve="-90"/>
 <dimension x1="-43" y1="26.5" x2="43" y2="26.5" x3="0" y3="39.5" textsize="1.778" layer="47" dtype="horizontal"/>
 <dimension x1="-38" y1="31.5" x2="-38" y2="-34" x3="-44" y3="-1.25" textsize="1.778" layer="47" dtype="horizontal"/>
-<dimension x1="-90.5" y1="38" x2="-90.5" y2="-38" x3="-142" y3="0" textsize="1.778" layer="47"/>
-<dimension x1="-115.5" y1="0" x2="115.5" y2="0" x3="0" y3="52" textsize="1.778" layer="47"/>
-<wire x1="-115.5" y1="20" x2="-115.5" y2="-20" width="0.1524" layer="100"/>
-<wire x1="99.5" y1="38" x2="115.5" y2="20" width="0.1524" layer="100" curve="-90"/>
-<wire x1="115.5" y1="20" x2="115.5" y2="-20" width="0.1524" layer="100"/>
-<wire x1="95.5" y1="-38" x2="115.5" y2="-20" width="0.1524" layer="100" curve="90"/>
-<wire x1="-95.5" y1="38" x2="-115.5" y2="20" width="0.1524" layer="100" curve="90"/>
-<wire x1="-115.5" y1="-20" x2="-95.5" y2="-38" width="0.1524" layer="100" curve="90"/>
+<dimension x1="-95.5" y1="38" x2="-95.5" y2="-38" x3="-142" y3="0" textsize="1.778" layer="47"/>
+<dimension x1="-120.5" y1="0" x2="120.5" y2="0" x3="0" y3="52" textsize="1.778" layer="47"/>
+<wire x1="-120.5" y1="20" x2="-120.5" y2="-20" width="0.1524" layer="100"/>
+<wire x1="104.5" y1="38" x2="120.5" y2="20" width="0.1524" layer="100" curve="-90"/>
+<wire x1="120.5" y1="20" x2="120.5" y2="-20" width="0.1524" layer="100"/>
+<wire x1="100.5" y1="-38" x2="120.5" y2="-20" width="0.1524" layer="100" curve="90"/>
+<wire x1="-100.5" y1="38" x2="-120.5" y2="20" width="0.1524" layer="100" curve="90"/>
+<wire x1="-120.5" y1="-20" x2="-100.5" y2="-38" width="0.1524" layer="100" curve="90"/>
 <text x="34" y="22.5" size="1.1" layer="21" font="vector" rot="R90">charging</text>
 <text x="31.625" y="22.375" size="1.1" layer="21" font="vector" rot="R90">complete</text>
 <wire x1="8" y1="35.5" x2="43" y2="35.5" width="0.1524" layer="41"/>
@@ -238,11 +238,11 @@ Mark IV</text>
 <text x="-25.875" y="-38.5" size="1.778" layer="2" font="vector">Upper Inner Metal</text>
 <text x="-2.75" y="-38.5" size="1.778" layer="15" font="vector">Lower Inner Metal</text>
 <text x="35.625" y="-38.5" size="1.778" layer="16" font="vector" rot="MR0">Bottom Metal</text>
-<text x="-103.5" y="23.75" size="1.778" layer="21" font="vector">Ignore four drills outside of board area</text>
-<text x="57" y="23.75" size="1.778" layer="21" font="vector">Ignore four drills outside of board area</text>
+<text x="-108.5" y="23.75" size="1.778" layer="21" font="vector">Ignore four drills outside of board area</text>
+<text x="62" y="23.75" size="1.778" layer="21" font="vector">Ignore four drills outside of board area</text>
 <text x="6.125" y="28.375" size="1.4224" layer="21" font="vector" rot="R90" align="center">GND</text>
 <text x="-6.875" y="28.25" size="1.4224" layer="21" font="vector" rot="R270" align="center">DTR</text>
-<wire x1="99.5" y1="38" x2="-95.5" y2="38" width="0.1524" layer="100"/>
+<wire x1="104.5" y1="38" x2="-100.5" y2="38" width="0.1524" layer="100"/>
 <wire x1="-7.625" y1="31.5" x2="-6.375" y2="31.5" width="1" layer="21"/>
 <wire x1="5.375" y1="31.5" x2="6.625" y2="31.5" width="1" layer="21"/>
 <text x="-8.5" y="2.125" size="1.016" layer="21" font="vector">GND</text>
@@ -1563,6 +1563,8 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 <pad name="A" x="3.56" y="15.5" drill="1.02"/>
 <pad name="DNC1" x="8.6" y="15.5" drill="1.02"/>
 <pad name="DNC2" x="11.14" y="15.5" drill="1.02"/>
+<text x="-31.76" y="-13.24" size="1.27" layer="51" font="vector" align="center">RGB</text>
+<text x="-28" y="13" size="1.27" layer="51" font="vector" align="center">Monochrome</text>
 </package>
 <package name="375MAH-BATTERY">
 <wire x1="-10" y1="-20" x2="-10" y2="20" width="0.127" layer="51"/>
@@ -1583,8 +1585,8 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 <text x="-1.27" y="3.905" size="1.778" layer="21" font="vector" rot="R90" align="center-left">&gt;PIN1</text>
 <text x="1.27" y="3.905" size="1.778" layer="21" font="vector" rot="R90" align="center-left">&gt;PIN2</text>
 <text x="0" y="-5.04" size="1.778" layer="25" font="vector" ratio="10" align="center">&gt;NAME</text>
-<pad name="1" x="-1.27" y="0" drill="1.4" diameter="1.778" shape="square"/>
-<pad name="2" x="1.27" y="0" drill="1.4" diameter="1.778"/>
+<pad name="1" x="-1.27" y="0" drill="1.1" shape="square"/>
+<pad name="2" x="1.27" y="0" drill="1.1"/>
 <wire x1="2.75" y1="3.25" x2="-2.75" y2="3.25" width="0.127" layer="39"/>
 <wire x1="-2.75" y1="3.25" x2="-2.75" y2="-3.25" width="0.127" layer="39"/>
 <wire x1="-2.75" y1="-3.25" x2="2.75" y2="-3.25" width="0.127" layer="39"/>
@@ -1627,6 +1629,7 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 <pad name="P$9" x="-1.375" y="-1.453425" drill="0.2" rot="R45" thermals="no"/>
 <circle x="0" y="0" radius="2.05" width="1" layer="29"/>
 <circle x="0" y="0" radius="2.05" width="1" layer="30"/>
+<circle x="0" y="0" radius="1.3" width="0.127" layer="100"/>
 </package>
 <package name="JST-13-PTH">
 <wire x1="-3.95" y1="-2" x2="-3.95" y2="3" width="0.2032" layer="21"/>
@@ -1754,8 +1757,8 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 <smd name="TESTPOINT" x="-8.1686" y="17.6047" dx="1.27" dy="1.27" layer="1" cream="no"/>
 </package>
 <package name="SUPPORT_DONUT">
-<circle x="0" y="0" radius="1.25" width="0.127" layer="21"/>
-<circle x="0" y="0" radius="2.65" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="1.25" width="0.127" layer="100"/>
+<circle x="0" y="0" radius="2.65" width="0.127" layer="100"/>
 </package>
 <package name="USB-MINIB-EDAC-690-005-299-043">
 <smd name="1" x="5.5" y="1.6" dx="2.3" dy="0.5" layer="1"/>
@@ -2122,17 +2125,17 @@ design rules under a new name.</description>
 <attribute name="REVIEWER" value="Swanson" x="-29.25" y="-27.375" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="-29.1" y="-24.55" size="1.2" layer="28" font="vector" ratio="10" rot="MR270"/>
 </element>
-<element name="J4" library="quadparts_prebuilt" package="2X3-NS" value="AVR_SPI_PRG_6NS" x="-36.15" y="26.3" smashed="yes">
-<attribute name="CREATOR" value="Swanson" x="-36.15" y="26.3" size="1.778" layer="27" display="off"/>
-<attribute name="DATASHEET" value="http://portal.fciconnect.com/Comergent//fci/drawing/67996.pdf" x="-36.15" y="26.3" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="Digikey" x="-36.15" y="26.3" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="609-3234-ND" x="-36.15" y="26.3" size="1.778" layer="27" display="off"/>
-<attribute name="MFR" value="Amphenol FCI" x="-36.15" y="26.3" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="67997-206HLF" x="-36.15" y="26.3" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-39.96" y="29.475" size="1" layer="25" font="vector"/>
-<attribute name="PRICE" value="0.31" x="-36.15" y="26.3" size="1.778" layer="27" display="off"/>
-<attribute name="REVIEWER" value="Swanson" x="-36.15" y="26.3" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="-39.96" y="21.855" size="1.27" layer="27" font="vector"/>
+<element name="J4" library="quadparts_prebuilt" package="2X3-NS" value="AVR_SPI_PRG_6NS" x="-36.35" y="26.2" smashed="yes" rot="R180">
+<attribute name="CREATOR" value="Swanson" x="-36.35" y="26.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DATASHEET" value="http://portal.fciconnect.com/Comergent//fci/drawing/67996.pdf" x="-36.35" y="26.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DIST" value="Digikey" x="-36.35" y="26.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DISTPN" value="609-3234-ND" x="-36.35" y="26.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="Amphenol FCI" x="-36.35" y="26.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="67997-206HLF" x="-36.35" y="26.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="-32.54" y="23.025" size="1" layer="25" font="vector" rot="R180"/>
+<attribute name="PRICE" value="0.31" x="-36.35" y="26.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="REVIEWER" value="Swanson" x="-36.35" y="26.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="-32.54" y="30.645" size="1.27" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="R1" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="-25.75" y="-22.375" smashed="yes" rot="R90">
 <attribute name="DIST" value="DIGIKEY" x="-25.75" y="-22.375" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2237,8 +2240,8 @@ design rules under a new name.</description>
 <attribute name="PROD_ID" value="XTAL-08218" x="32.42" y="10.37" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="REVIEWER" value="Swanson" x="32.42" y="10.37" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
-<element name="E$1" library="RemoteParts" package="FRSKY-TARANIS-GIMBAL" value="" x="-78.5" y="0" locked="yes"/>
-<element name="E$2" library="RemoteParts" package="FRSKY-TARANIS-GIMBAL" value="" x="78.5" y="0" locked="yes" rot="R180"/>
+<element name="E$1" library="RemoteParts" package="FRSKY-TARANIS-GIMBAL" value="" x="-83.5" y="0"/>
+<element name="E$2" library="RemoteParts" package="FRSKY-TARANIS-GIMBAL" value="" x="83.5" y="0" rot="R180"/>
 <element name="S1" library="RemoteParts" package="JS102011JCQN" value="POWER-SWITCH-MFS201N-9-Z-SMD-VERTICAL" x="-37" y="-30" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-22" y="-72" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-22" y="-72" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2426,12 +2429,12 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-3" y="-2.6076" size="1" layer="25" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="-0.4476" y="-5.5" size="1.27" layer="27" font="vector" rot="R90" align="top-center"/>
 </element>
-<element name="JP2" library="RemoteParts" package="1X06-SIP-RIGHT-ANGLE" value="M06-TH-RIGHT-ANGLE" x="-0.375" y="21.5" smashed="yes" rot="MR0">
-<attribute name="CREATOR" value="Swanson" x="-0.375" y="21.5" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="DIST" value="DIGIKEY" x="-0.375" y="21.5" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="DISTPN" value="609-3327-ND" x="-0.375" y="21.5" size="1.778" layer="28" rot="MR0" display="off"/>
-<attribute name="NAME" x="-8.3188" y="20.4988" size="1" layer="26" font="vector" ratio="10" rot="MR0"/>
-<attribute name="VALUE" x="7.245" y="18.325" size="1.27" layer="28" font="vector" rot="MR0"/>
+<element name="JP2" library="RemoteParts" package="1X06-SIP-RIGHT-ANGLE" value="M06-TH-RIGHT-ANGLE" x="-0.375" y="23.5" smashed="yes" rot="MR0">
+<attribute name="CREATOR" value="Swanson" x="-0.375" y="23.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="-0.375" y="23.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="DISTPN" value="609-3327-ND" x="-0.375" y="23.5" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="NAME" x="-8.3188" y="22.4988" size="1" layer="26" font="vector" ratio="10" rot="MR0"/>
+<attribute name="VALUE" x="7.245" y="20.325" size="1.27" layer="28" font="vector" rot="MR0"/>
 </element>
 <element name="S2" library="RemoteParts" package="JS102011JCQN" value="POWER-SWITCH-MFS201N-9-Z-SMD-VERTICAL" x="-0.125" y="28.25" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="47.875" y="234.25" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2800,128 +2803,128 @@ design rules under a new name.</description>
 <attribute name="DISTPN" value="PEC12R-4030F-S0024-ND" x="-15.5" y="-24" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-20.6" y="-31.93" size="1" layer="21" font="vector" align="center"/>
 </element>
-<element name="U$10" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-94" y="21.5"/>
-<element name="U$14" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-88" y="21.5"/>
-<element name="U$15" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-82" y="21.5"/>
-<element name="U$16" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-76" y="21.5"/>
-<element name="U$17" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="21.5"/>
-<element name="U$18" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-64" y="21.5"/>
-<element name="U$20" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-100" y="15.5"/>
-<element name="U$21" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-94" y="15.5"/>
-<element name="U$22" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-88" y="15.5"/>
-<element name="U$23" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-82" y="15.5"/>
-<element name="U$24" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-76" y="15.5"/>
-<element name="U$25" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="15.5"/>
-<element name="U$26" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-64" y="15.5"/>
-<element name="U$27" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-58" y="15.5"/>
-<element name="U$28" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-100" y="9.5"/>
-<element name="U$29" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-94" y="9.5"/>
-<element name="U$30" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-88" y="9.5"/>
-<element name="U$31" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-82" y="9.5"/>
-<element name="U$32" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-76" y="9.5"/>
-<element name="U$33" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="9.5"/>
-<element name="U$34" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-64" y="9.5"/>
-<element name="U$35" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-58" y="9.5"/>
-<element name="U$36" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-100" y="3.5"/>
-<element name="U$37" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-94" y="3.5"/>
-<element name="U$38" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-88" y="3.5"/>
-<element name="U$39" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-82" y="3.5"/>
-<element name="U$40" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-76" y="3.5"/>
-<element name="U$41" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="3.5"/>
-<element name="U$42" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-64" y="3.5"/>
-<element name="U$43" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-58" y="3.5"/>
-<element name="U$44" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-100" y="-2.5"/>
-<element name="U$45" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-94" y="-2.5"/>
-<element name="U$46" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-88" y="-2.5"/>
-<element name="U$47" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-82" y="-2.5"/>
-<element name="U$48" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-76" y="-2.5"/>
-<element name="U$49" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="-2.5"/>
-<element name="U$50" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-64" y="-2.5"/>
-<element name="U$51" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-58" y="-2.5"/>
-<element name="U$52" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-100" y="-8.5"/>
-<element name="U$53" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-94" y="-8.5"/>
-<element name="U$96" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-88" y="-8.5"/>
-<element name="U$97" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-82" y="-8.5"/>
-<element name="U$98" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-76" y="-8.5"/>
-<element name="U$99" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="-8.5"/>
-<element name="U$100" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-64" y="-8.5"/>
-<element name="U$101" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-58" y="-8.5"/>
-<element name="U$102" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-100" y="-14.5"/>
-<element name="U$103" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-94" y="-14.5"/>
-<element name="U$104" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-88" y="-14.5"/>
-<element name="U$105" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-82" y="-14.5"/>
-<element name="U$106" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-76" y="-14.5"/>
-<element name="U$107" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="-14.5"/>
-<element name="U$108" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-64" y="-14.5"/>
-<element name="U$109" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-58" y="-14.5"/>
-<element name="U$111" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-94" y="-20.5"/>
-<element name="U$112" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-88" y="-20.5"/>
-<element name="U$113" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-82" y="-20.5"/>
-<element name="U$114" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-76" y="-20.5"/>
-<element name="U$115" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-70" y="-20.5"/>
-<element name="U$116" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-64" y="-20.5"/>
-<element name="U$117" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-58" y="-20.5"/>
-<element name="U$8" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="21.5"/>
-<element name="U$19" library="RemoteParts" package="SUPPORT_DONUT" value="" x="69" y="21.5"/>
-<element name="U$54" library="RemoteParts" package="SUPPORT_DONUT" value="" x="75" y="21.5"/>
-<element name="U$55" library="RemoteParts" package="SUPPORT_DONUT" value="" x="81" y="21.5"/>
-<element name="U$56" library="RemoteParts" package="SUPPORT_DONUT" value="" x="87" y="21.5"/>
-<element name="U$57" library="RemoteParts" package="SUPPORT_DONUT" value="" x="93" y="21.5"/>
-<element name="U$58" library="RemoteParts" package="SUPPORT_DONUT" value="" x="57" y="15.5"/>
-<element name="U$59" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="15.5"/>
-<element name="U$60" library="RemoteParts" package="SUPPORT_DONUT" value="" x="69" y="15.5"/>
-<element name="U$61" library="RemoteParts" package="SUPPORT_DONUT" value="" x="75" y="15.5"/>
-<element name="U$62" library="RemoteParts" package="SUPPORT_DONUT" value="" x="81" y="15.5"/>
-<element name="U$63" library="RemoteParts" package="SUPPORT_DONUT" value="" x="87" y="15.5"/>
-<element name="U$64" library="RemoteParts" package="SUPPORT_DONUT" value="" x="93" y="15.5"/>
-<element name="U$65" library="RemoteParts" package="SUPPORT_DONUT" value="" x="99" y="15.5"/>
-<element name="U$66" library="RemoteParts" package="SUPPORT_DONUT" value="" x="57" y="9.5"/>
-<element name="U$67" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="9.5"/>
-<element name="U$68" library="RemoteParts" package="SUPPORT_DONUT" value="" x="69" y="9.5"/>
-<element name="U$69" library="RemoteParts" package="SUPPORT_DONUT" value="" x="75" y="9.5"/>
-<element name="U$70" library="RemoteParts" package="SUPPORT_DONUT" value="" x="81" y="9.5"/>
-<element name="U$71" library="RemoteParts" package="SUPPORT_DONUT" value="" x="87" y="9.5"/>
-<element name="U$72" library="RemoteParts" package="SUPPORT_DONUT" value="" x="93" y="9.5"/>
-<element name="U$73" library="RemoteParts" package="SUPPORT_DONUT" value="" x="99" y="9.5"/>
-<element name="U$74" library="RemoteParts" package="SUPPORT_DONUT" value="" x="57" y="3.5"/>
-<element name="U$75" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="3.5"/>
-<element name="U$76" library="RemoteParts" package="SUPPORT_DONUT" value="" x="69" y="3.5"/>
-<element name="U$77" library="RemoteParts" package="SUPPORT_DONUT" value="" x="75" y="3.5"/>
-<element name="U$78" library="RemoteParts" package="SUPPORT_DONUT" value="" x="81" y="3.5"/>
-<element name="U$79" library="RemoteParts" package="SUPPORT_DONUT" value="" x="87" y="3.5"/>
-<element name="U$80" library="RemoteParts" package="SUPPORT_DONUT" value="" x="93" y="3.5"/>
-<element name="U$81" library="RemoteParts" package="SUPPORT_DONUT" value="" x="99" y="3.5"/>
-<element name="U$82" library="RemoteParts" package="SUPPORT_DONUT" value="" x="57" y="-2.5"/>
-<element name="U$83" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="-2.5"/>
-<element name="U$84" library="RemoteParts" package="SUPPORT_DONUT" value="" x="69" y="-2.5"/>
-<element name="U$85" library="RemoteParts" package="SUPPORT_DONUT" value="" x="75" y="-2.5"/>
-<element name="U$86" library="RemoteParts" package="SUPPORT_DONUT" value="" x="81" y="-2.5"/>
-<element name="U$87" library="RemoteParts" package="SUPPORT_DONUT" value="" x="87" y="-2.5"/>
-<element name="U$88" library="RemoteParts" package="SUPPORT_DONUT" value="" x="93" y="-2.5"/>
-<element name="U$89" library="RemoteParts" package="SUPPORT_DONUT" value="" x="99" y="-2.5"/>
-<element name="U$90" library="RemoteParts" package="SUPPORT_DONUT" value="" x="57" y="-8.5"/>
-<element name="U$91" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="-8.5"/>
-<element name="U$92" library="RemoteParts" package="SUPPORT_DONUT" value="" x="69" y="-8.5"/>
-<element name="U$93" library="RemoteParts" package="SUPPORT_DONUT" value="" x="75" y="-8.5"/>
-<element name="U$94" library="RemoteParts" package="SUPPORT_DONUT" value="" x="81" y="-8.5"/>
-<element name="U$95" library="RemoteParts" package="SUPPORT_DONUT" value="" x="87" y="-8.5"/>
-<element name="U$110" library="RemoteParts" package="SUPPORT_DONUT" value="" x="93" y="-8.5"/>
-<element name="U$118" library="RemoteParts" package="SUPPORT_DONUT" value="" x="99" y="-8.5"/>
-<element name="U$119" library="RemoteParts" package="SUPPORT_DONUT" value="" x="57" y="-14.5"/>
-<element name="U$120" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="-14.5"/>
-<element name="U$121" library="RemoteParts" package="SUPPORT_DONUT" value="" x="69" y="-14.5"/>
-<element name="U$122" library="RemoteParts" package="SUPPORT_DONUT" value="" x="75" y="-14.5"/>
-<element name="U$123" library="RemoteParts" package="SUPPORT_DONUT" value="" x="81" y="-14.5"/>
-<element name="U$124" library="RemoteParts" package="SUPPORT_DONUT" value="" x="87" y="-14.5"/>
-<element name="U$125" library="RemoteParts" package="SUPPORT_DONUT" value="" x="93" y="-14.5"/>
-<element name="U$126" library="RemoteParts" package="SUPPORT_DONUT" value="" x="99" y="-14.5"/>
-<element name="U$127" library="RemoteParts" package="SUPPORT_DONUT" value="" x="63" y="-20.5"/>
-<element name="U$128" library="RemoteParts" package="SUPPORT_DONUT" value="" x="69" y="-20.5"/>
-<element name="U$129" library="RemoteParts" package="SUPPORT_DONUT" value="" x="75" y="-20.5"/>
-<element name="U$130" library="RemoteParts" package="SUPPORT_DONUT" value="" x="81" y="-20.5"/>
-<element name="U$131" library="RemoteParts" package="SUPPORT_DONUT" value="" x="87" y="-20.5"/>
-<element name="U$132" library="RemoteParts" package="SUPPORT_DONUT" value="" x="93" y="-20.5"/>
-<element name="U$133" library="RemoteParts" package="SUPPORT_DONUT" value="" x="99" y="-20.5"/>
+<element name="U$10" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-99" y="21.5"/>
+<element name="U$14" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-93" y="21.5"/>
+<element name="U$15" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-87" y="21.5"/>
+<element name="U$16" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-81" y="21.5"/>
+<element name="U$17" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-75" y="21.5"/>
+<element name="U$18" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-69" y="21.5"/>
+<element name="U$20" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-105" y="15.5"/>
+<element name="U$21" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-99" y="15.5"/>
+<element name="U$22" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-93" y="15.5"/>
+<element name="U$23" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-87" y="15.5"/>
+<element name="U$24" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-81" y="15.5"/>
+<element name="U$25" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-75" y="15.5"/>
+<element name="U$26" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-69" y="15.5"/>
+<element name="U$27" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="15.5"/>
+<element name="U$28" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-105" y="9.5"/>
+<element name="U$29" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-99" y="9.5"/>
+<element name="U$30" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-93" y="9.5"/>
+<element name="U$31" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-87" y="9.5"/>
+<element name="U$32" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-81" y="9.5"/>
+<element name="U$33" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-75" y="9.5"/>
+<element name="U$34" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-69" y="9.5"/>
+<element name="U$35" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="9.5"/>
+<element name="U$36" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-105" y="3.5"/>
+<element name="U$37" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-99" y="3.5"/>
+<element name="U$38" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-93" y="3.5"/>
+<element name="U$39" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-87" y="3.5"/>
+<element name="U$40" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-81" y="3.5"/>
+<element name="U$41" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-75" y="3.5"/>
+<element name="U$42" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-69" y="3.5"/>
+<element name="U$43" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="3.5"/>
+<element name="U$44" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-105" y="-2.5"/>
+<element name="U$45" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-99" y="-2.5"/>
+<element name="U$46" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-93" y="-2.5"/>
+<element name="U$47" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-87" y="-2.5"/>
+<element name="U$48" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-81" y="-2.5"/>
+<element name="U$49" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-75" y="-2.5"/>
+<element name="U$50" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-69" y="-2.5"/>
+<element name="U$51" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="-2.5"/>
+<element name="U$52" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-105" y="-8.5"/>
+<element name="U$53" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-99" y="-8.5"/>
+<element name="U$96" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-93" y="-8.5"/>
+<element name="U$97" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-87" y="-8.5"/>
+<element name="U$98" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-81" y="-8.5"/>
+<element name="U$99" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-75" y="-8.5"/>
+<element name="U$100" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-69" y="-8.5"/>
+<element name="U$101" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="-8.5"/>
+<element name="U$102" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-105" y="-14.5"/>
+<element name="U$103" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-99" y="-14.5"/>
+<element name="U$104" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-93" y="-14.5"/>
+<element name="U$105" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-87" y="-14.5"/>
+<element name="U$106" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-81" y="-14.5"/>
+<element name="U$107" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-75" y="-14.5"/>
+<element name="U$108" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-69" y="-14.5"/>
+<element name="U$109" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="-14.5"/>
+<element name="U$111" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-99" y="-20.5"/>
+<element name="U$112" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-93" y="-20.5"/>
+<element name="U$113" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-87" y="-20.5"/>
+<element name="U$114" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-81" y="-20.5"/>
+<element name="U$115" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-75" y="-20.5"/>
+<element name="U$116" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-69" y="-20.5"/>
+<element name="U$117" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="-20.5"/>
+<element name="U$8" library="RemoteParts" package="SUPPORT_DONUT" value="" x="68" y="21.5"/>
+<element name="U$19" library="RemoteParts" package="SUPPORT_DONUT" value="" x="74" y="21.5"/>
+<element name="U$54" library="RemoteParts" package="SUPPORT_DONUT" value="" x="80" y="21.5"/>
+<element name="U$55" library="RemoteParts" package="SUPPORT_DONUT" value="" x="86" y="21.5"/>
+<element name="U$56" library="RemoteParts" package="SUPPORT_DONUT" value="" x="92" y="21.5"/>
+<element name="U$57" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="21.5"/>
+<element name="U$58" library="RemoteParts" package="SUPPORT_DONUT" value="" x="62" y="15.5"/>
+<element name="U$59" library="RemoteParts" package="SUPPORT_DONUT" value="" x="68" y="15.5"/>
+<element name="U$60" library="RemoteParts" package="SUPPORT_DONUT" value="" x="74" y="15.5"/>
+<element name="U$61" library="RemoteParts" package="SUPPORT_DONUT" value="" x="80" y="15.5"/>
+<element name="U$62" library="RemoteParts" package="SUPPORT_DONUT" value="" x="86" y="15.5"/>
+<element name="U$63" library="RemoteParts" package="SUPPORT_DONUT" value="" x="92" y="15.5"/>
+<element name="U$64" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="15.5"/>
+<element name="U$65" library="RemoteParts" package="SUPPORT_DONUT" value="" x="104" y="15.5"/>
+<element name="U$66" library="RemoteParts" package="SUPPORT_DONUT" value="" x="62" y="9.5"/>
+<element name="U$67" library="RemoteParts" package="SUPPORT_DONUT" value="" x="68" y="9.5"/>
+<element name="U$68" library="RemoteParts" package="SUPPORT_DONUT" value="" x="74" y="9.5"/>
+<element name="U$69" library="RemoteParts" package="SUPPORT_DONUT" value="" x="80" y="9.5"/>
+<element name="U$70" library="RemoteParts" package="SUPPORT_DONUT" value="" x="86" y="9.5"/>
+<element name="U$71" library="RemoteParts" package="SUPPORT_DONUT" value="" x="92" y="9.5"/>
+<element name="U$72" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="9.5"/>
+<element name="U$73" library="RemoteParts" package="SUPPORT_DONUT" value="" x="104" y="9.5"/>
+<element name="U$74" library="RemoteParts" package="SUPPORT_DONUT" value="" x="62" y="3.5"/>
+<element name="U$75" library="RemoteParts" package="SUPPORT_DONUT" value="" x="68" y="3.5"/>
+<element name="U$76" library="RemoteParts" package="SUPPORT_DONUT" value="" x="74" y="3.5"/>
+<element name="U$77" library="RemoteParts" package="SUPPORT_DONUT" value="" x="80" y="3.5"/>
+<element name="U$78" library="RemoteParts" package="SUPPORT_DONUT" value="" x="86" y="3.5"/>
+<element name="U$79" library="RemoteParts" package="SUPPORT_DONUT" value="" x="92" y="3.5"/>
+<element name="U$80" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="3.5"/>
+<element name="U$81" library="RemoteParts" package="SUPPORT_DONUT" value="" x="104" y="3.5"/>
+<element name="U$82" library="RemoteParts" package="SUPPORT_DONUT" value="" x="62" y="-2.5"/>
+<element name="U$83" library="RemoteParts" package="SUPPORT_DONUT" value="" x="68" y="-2.5"/>
+<element name="U$84" library="RemoteParts" package="SUPPORT_DONUT" value="" x="74" y="-2.5"/>
+<element name="U$85" library="RemoteParts" package="SUPPORT_DONUT" value="" x="80" y="-2.5"/>
+<element name="U$86" library="RemoteParts" package="SUPPORT_DONUT" value="" x="86" y="-2.5"/>
+<element name="U$87" library="RemoteParts" package="SUPPORT_DONUT" value="" x="92" y="-2.5"/>
+<element name="U$88" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="-2.5"/>
+<element name="U$89" library="RemoteParts" package="SUPPORT_DONUT" value="" x="104" y="-2.5"/>
+<element name="U$90" library="RemoteParts" package="SUPPORT_DONUT" value="" x="62" y="-8.5"/>
+<element name="U$91" library="RemoteParts" package="SUPPORT_DONUT" value="" x="68" y="-8.5"/>
+<element name="U$92" library="RemoteParts" package="SUPPORT_DONUT" value="" x="74" y="-8.5"/>
+<element name="U$93" library="RemoteParts" package="SUPPORT_DONUT" value="" x="80" y="-8.5"/>
+<element name="U$94" library="RemoteParts" package="SUPPORT_DONUT" value="" x="86" y="-8.5"/>
+<element name="U$95" library="RemoteParts" package="SUPPORT_DONUT" value="" x="92" y="-8.5"/>
+<element name="U$110" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="-8.5"/>
+<element name="U$118" library="RemoteParts" package="SUPPORT_DONUT" value="" x="104" y="-8.5"/>
+<element name="U$119" library="RemoteParts" package="SUPPORT_DONUT" value="" x="62" y="-14.5"/>
+<element name="U$120" library="RemoteParts" package="SUPPORT_DONUT" value="" x="68" y="-14.5"/>
+<element name="U$121" library="RemoteParts" package="SUPPORT_DONUT" value="" x="74" y="-14.5"/>
+<element name="U$122" library="RemoteParts" package="SUPPORT_DONUT" value="" x="80" y="-14.5"/>
+<element name="U$123" library="RemoteParts" package="SUPPORT_DONUT" value="" x="86" y="-14.5"/>
+<element name="U$124" library="RemoteParts" package="SUPPORT_DONUT" value="" x="92" y="-14.5"/>
+<element name="U$125" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="-14.5"/>
+<element name="U$126" library="RemoteParts" package="SUPPORT_DONUT" value="" x="104" y="-14.5"/>
+<element name="U$127" library="RemoteParts" package="SUPPORT_DONUT" value="" x="68" y="-20.5"/>
+<element name="U$128" library="RemoteParts" package="SUPPORT_DONUT" value="" x="74" y="-20.5"/>
+<element name="U$129" library="RemoteParts" package="SUPPORT_DONUT" value="" x="80" y="-20.5"/>
+<element name="U$130" library="RemoteParts" package="SUPPORT_DONUT" value="" x="86" y="-20.5"/>
+<element name="U$131" library="RemoteParts" package="SUPPORT_DONUT" value="" x="92" y="-20.5"/>
+<element name="U$132" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="-20.5"/>
+<element name="U$133" library="RemoteParts" package="SUPPORT_DONUT" value="" x="104" y="-20.5"/>
 </elements>
 <signals>
 <signal name="GND" class="1">
@@ -3193,7 +3196,7 @@ design rules under a new name.</description>
 <wire x1="37.5" y1="-14.875" x2="38.953425" y2="-14.328425" width="0" layer="19" extent="1-1"/>
 <wire x1="36.125" y1="-14.328425" x2="37.5" y2="-14.875" width="0" layer="19" extent="1-1"/>
 <wire x1="6.06" y1="18.125" x2="14.5" y2="17.5" width="0" layer="19" extent="1-1"/>
-<wire x1="5.975" y1="21.5" x2="6.06" y2="18.125" width="0" layer="19" extent="1-1"/>
+<wire x1="5.975" y1="23.5" x2="6.06" y2="18.125" width="0" layer="19" extent="1-1"/>
 <wire x1="-13" y1="-17" x2="-15.25" y2="-8.7" width="0" layer="19" extent="1-1"/>
 <wire x1="-5.85" y1="-18.625" x2="-13" y2="-17" width="0" layer="19" extent="1-1"/>
 <wire x1="5.5" y1="-20.9" x2="1.35" y2="-18.625" width="0" layer="19" extent="1-1"/>
@@ -3204,7 +3207,7 @@ design rules under a new name.</description>
 <wire x1="17.6" y1="-32" x2="19.5" y2="-28.1" width="0" layer="19" extent="1-1"/>
 <wire x1="3.56" y1="-12.875" x2="1.35" y2="-18.625" width="0" layer="19" extent="1-1"/>
 <wire x1="-2.7467" y1="-8.15" x2="3.56" y2="-12.875" width="0" layer="19" extent="1-1"/>
-<wire x1="2.375" y1="29.45" x2="5.975" y2="21.5" width="0" layer="19" extent="1-1"/>
+<wire x1="2.375" y1="29.45" x2="5.975" y2="23.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.5" y1="3.65" x2="-31.75" y2="4.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.5" y1="9.65" x2="-40.5" y2="3.65" width="0" layer="19" extent="1-1"/>
 <wire x1="-37.5" y1="16.125" x2="-40.5" y2="9.65" width="0" layer="19" extent="1-1"/>
@@ -3216,8 +3219,8 @@ design rules under a new name.</description>
 <wire x1="-38.875" y1="19.5" x2="-39.5" y2="18.125" width="0" layer="19" extent="1-1"/>
 <wire x1="-37.5" y1="20.125" x2="-38.875" y2="19.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-32" y1="18.125" x2="-35.5" y2="18.125" width="0" layer="19" extent="1-1"/>
-<wire x1="-33.61" y1="27.57" x2="-37.5" y2="20.125" width="0" layer="19" extent="1-1"/>
-<wire x1="-29.85" y1="27.5" x2="-33.61" y2="27.57" width="0" layer="19" extent="1-1"/>
+<wire x1="-38.89" y1="24.93" x2="-37.5" y2="20.125" width="0" layer="19" extent="1-1"/>
+<wire x1="-29.85" y1="27.5" x2="-38.89" y2="24.93" width="0" layer="19" extent="1-1"/>
 <wire x1="-28.05" y1="27.375" x2="-29.85" y2="27.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-30.55" y1="30.05" x2="-29.85" y2="27.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-27.95" y1="30.05" x2="-30.55" y2="30.05" width="0" layer="19" extent="1-1"/>
@@ -3312,7 +3315,7 @@ design rules under a new name.</description>
 <wire x1="-32.125" y1="-6.045" x2="-30" y2="-0.67" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.5" y1="7.65" x2="-32.125" y2="-6.045" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.5" y1="13.65" x2="-40.5" y2="7.65" width="0" layer="19" extent="1-1"/>
-<wire x1="-38.69" y1="27.57" x2="-40.5" y2="13.65" width="0" layer="19" extent="1-1"/>
+<wire x1="-33.81" y1="24.93" x2="-40.5" y2="13.65" width="0" layer="19" extent="1-1"/>
 <wire x1="-15.25" y1="-3.62" x2="-32.125" y2="-6.045" width="0" layer="19" extent="1-1"/>
 <wire x1="-10" y1="-1" x2="-15.25" y2="-3.62" width="0" layer="19" extent="1-1"/>
 <wire x1="-15.25" y1="4" x2="-10" y2="-1" width="0" layer="19" extent="1-1"/>
@@ -3341,8 +3344,8 @@ design rules under a new name.</description>
 <wire x1="-32.4" y1="-17.5" x2="-32.5" y2="-0.855" width="0" layer="19" extent="1-1"/>
 <wire x1="-39.6" y1="-17.5" x2="-32.4" y2="-17.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-30" y1="-2.58" x2="-39.6" y2="-17.5" width="0" layer="19" extent="1-1"/>
-<wire x1="-33.61" y1="25.03" x2="-30" y2="-2.58" width="0" layer="19" extent="1-1"/>
-<wire x1="20.92" y1="15.201" x2="-33.61" y2="25.03" width="0" layer="19" extent="1-1"/>
+<wire x1="-38.89" y1="27.47" x2="-30" y2="-2.58" width="0" layer="19" extent="1-1"/>
+<wire x1="20.92" y1="15.201" x2="-38.89" y2="27.47" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BTN2">
 <contactref element="B2" pad="3" route="any" routetag="G$1.2"/>
@@ -3422,17 +3425,17 @@ design rules under a new name.</description>
 <signal name="MISO">
 <contactref element="J4" pad="1"/>
 <contactref element="U1" pad="39"/>
-<wire x1="-38.69" y1="25.03" x2="21.92" y2="5.439" width="0" layer="19" extent="1-1"/>
+<wire x1="-33.81" y1="27.47" x2="21.92" y2="5.439" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MOSI">
 <contactref element="J4" pad="4"/>
 <contactref element="U1" pad="38"/>
-<wire x1="-36.15" y1="27.57" x2="21.42" y2="5.439" width="0" layer="19" extent="1-1"/>
+<wire x1="-36.35" y1="24.93" x2="21.42" y2="5.439" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCK">
 <contactref element="J4" pad="3"/>
 <contactref element="U1" pad="37"/>
-<wire x1="-36.15" y1="25.03" x2="20.92" y2="5.439" width="0" layer="19" extent="1-1"/>
+<wire x1="-36.35" y1="27.47" x2="20.92" y2="5.439" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBAT" class="1">
 <contactref element="C12" pad="1"/>
@@ -3618,28 +3621,28 @@ design rules under a new name.</description>
 <contactref element="JP2" pad="6"/>
 <contactref element="U2" pad="13"/>
 <contactref element="JP5" pad="1"/>
-<wire x1="1.05" y1="-5.2814" x2="-6.725" y2="21.5" width="0" layer="19" extent="1-1"/>
+<wire x1="1.05" y1="-5.2814" x2="-6.725" y2="23.5" width="0" layer="19" extent="1-1"/>
 <wire x1="2.9967" y1="-5.55" x2="1.05" y2="-5.2814" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RXI-1">
 <contactref element="JP2" pad="5"/>
 <contactref element="U2" pad="9"/>
 <contactref element="JP3" pad="1"/>
-<wire x1="1.05" y1="-7.9064" x2="-4.185" y2="21.5" width="0" layer="19" extent="1-1"/>
+<wire x1="1.05" y1="-7.9064" x2="-4.185" y2="23.5" width="0" layer="19" extent="1-1"/>
 <wire x1="2.9967" y1="-8.15" x2="1.05" y2="-7.9064" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TXO-1">
 <contactref element="JP2" pad="4"/>
 <contactref element="U2" pad="5"/>
 <contactref element="JP4" pad="1"/>
-<wire x1="-2.7467" y1="-6.2" x2="-1.645" y2="21.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.7467" y1="-6.2" x2="-1.645" y2="23.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-0.8" y1="-6.4686" x2="-2.7467" y2="-6.2" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTS-1">
 <contactref element="JP2" pad="2"/>
 <contactref element="U2" pad="1"/>
 <contactref element="JP1" pad="1"/>
-<wire x1="-0.8" y1="-3.8436" x2="3.435" y2="21.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-0.8" y1="-3.8436" x2="3.435" y2="23.5" width="0" layer="19" extent="1-1"/>
 <wire x1="-2.7467" y1="-3.6" x2="-0.8" y2="-3.8436" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CTS-0">
@@ -3829,7 +3832,7 @@ design rules under a new name.</description>
 <signal name="N$24">
 <contactref element="JP2" pad="3"/>
 <contactref element="JP7" pad="2"/>
-<wire x1="0.895" y1="21.5" x2="-4.5" y2="14.5" width="0" layer="19" extent="1-1"/>
+<wire x1="0.895" y1="23.5" x2="-4.5" y2="14.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BTN_UP">
 <contactref element="U1" pad="25"/>
