@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="2.54" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1339,8 +1339,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pad name="DB7" x="1.02" y="15.5" drill="1.02"/>
 <pad name="K" x="6.06" y="15.5" drill="1.02"/>
 <pad name="RED" x="6.1" y="-15.5" drill="1.02"/>
-<pad name="BLUE" x="8.64" y="-15.5" drill="1.02"/>
-<pad name="GREEN" x="11.18" y="-15.5" drill="1.02"/>
+<pad name="BLUE" x="11.18" y="-15.5" drill="1.02"/>
+<pad name="GREEN" x="8.64" y="-15.5" drill="1.02"/>
 <text x="-33.288" y="18.047" size="1.27" layer="21" font="vector">&gt;NAME</text>
 <wire x1="-33.7" y1="14.25" x2="12.87" y2="14.25" width="0.127" layer="39"/>
 <wire x1="12.87" y1="14.25" x2="12.87" y2="16.79" width="0.127" layer="39"/>
@@ -1372,6 +1372,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pad name="A" x="3.56" y="15.5" drill="1.02"/>
 <pad name="DNC1" x="8.6" y="15.5" drill="1.02"/>
 <pad name="DNC2" x="11.14" y="15.5" drill="1.02"/>
+<text x="-31.76" y="-13.24" size="1.27" layer="51" font="vector" align="center">RGB</text>
+<text x="-28" y="13" size="1.27" layer="51" font="vector" align="center">Monochrome</text>
 </package>
 <package name="JS102011JCQN">
 <smd name="3" x="2.5" y="-1.2" dx="1" dy="1.6" layer="1"/>
@@ -2256,7 +2258,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </package>
 <package name="SUPPORT_DONUT">
 <circle x="0" y="0" radius="1.25" width="0.127" layer="100"/>
-<circle x="0" y="0" radius="2.9" width="0.127" layer="100"/>
+<circle x="0" y="0" radius="2.65" width="0.127" layer="100"/>
 </package>
 </packages>
 <packages3d>

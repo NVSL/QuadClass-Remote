@@ -28,8 +28,9 @@
 
 
 // Board pin definitions.
-const int RX_LED = 34;  // B6 - RF RX LED
-const int TX_LED = 35;  // B7 - RF TX LED
+const int RX_LED = LED1;  // B6 - RF RX LED
+const int TX_LED = LED2;  // B7 - RF TX LED
+
 uint8_t rssiRaw; // Global variable shared between RX ISRs
 
 // A buffer to maintain data being received by radio.
