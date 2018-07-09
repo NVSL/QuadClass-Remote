@@ -4,19 +4,6 @@
 #include <quad_remote.h>      // Header file with pin definitions and setup
 
 
-// Initialize global variables for storing incoming data from input pins
-int readYaw = 0;
-int readThrottle = 0;
-int readRoll = 0;
-int readPitch = 0; 
-int readPot1 = 0;
-int readPot2 = 0;
-int button1Value = 0;     // buttons are active high
-int button2Value = 0; 
-bool button1Press = 0;
-bool button2Press = 0;
-bool LEDVal = 0;
-
 uint8_t scale[8] = 
      {B00000000,
       B00000000,
@@ -64,26 +51,38 @@ void update_display() {
 }
 #endif
 
+void knobs_update();
+void btn1_pressed(bool);
+
 void setup() {
 
      const int RADIO_CHANNEL = 11;        // Channel for radio communications (can be 11-26)
      const int SERIAL_BAUD = 9600 ;        // Baud rate for serial port 
      Serial.begin(SERIAL_BAUD);           // Start up serial
-  
      delay(100);
+     quad_remote_setup();
+
      for(char i = 0; i < 8; i++) {
 	  scale[7-i] = B11111111;
-	  //lcd.createChar(i+1, scale);
+	  lcd.createChar(i, scale);
 	  delay(10);
      }
 
      rfBegin(RADIO_CHANNEL);              // Initialize ATmega128RFA1 radio on given channel
 
-     quad_remote_setup();
+     knobs_update_cb = knobs_update;
+     btn1_cb = btn1_pressed;
+     knobs_update();
 }
+
 
 int last = 0;
 unsigned char magic;
+
+#define INFO_MODE 1
+#define CONTROL_MODE 2
+
+int mode = INFO_MODE;
 
 void loop() {
   
@@ -118,13 +117,56 @@ void loop() {
 	  delay(100);
 	  digitalWrite(LED3, 0);
      }
+     
+     lcd.setCursor(12, 1);
+     lcd.write(constrain(map(analogRead(PIN_THROTTLE),140,800,0,7), 0, 7));
+     lcd.write(constrain(map(analogRead(PIN_YAW),140,800,0,7), 0 ,7));
+     lcd.write(constrain(map(analogRead(PIN_PITCH),140,800,0,7), 0, 7));
+     lcd.write(constrain(map(analogRead(PIN_ROLL),140,800,0,7), 0, 7));
 
-     analogWrite(LCD_LED_RED, (unsigned char)(knob3.getCurrentPos() *  16));
-     analogWrite(LCD_LED_GREEN, (unsigned char)(knob2.getCurrentPos() * 16));
-     analogWrite(LCD_LED_BLUE, (unsigned char)(knob1.getCurrentPos() *16));
+}
 
-     lcd.home();
-     lcd.clear();
-     lcd.print("Battery = ");
-     lcd.println(analogRead(BATTERY_SENSE));
+void knobs_update() {
+     unsigned char r = knob3.getCurrentPos() *  16;
+     unsigned char g = knob2.getCurrentPos() *  16;
+     unsigned char b = knob1.getCurrentPos() *  16;
+
+     analogWrite(LCD_LED_RED, (unsigned char)(r));
+     analogWrite(LCD_LED_GREEN, (unsigned char)(g));
+     analogWrite(LCD_LED_BLUE, (unsigned char)(b));
+
+     if (mode == INFO_MODE) {
+	  lcd.home();
+	  lcd.clear();
+	  lcd.print("R");
+	  lcd.print(r);
+	  lcd.setCursor(4,0);
+	  lcd.print(" G");
+	  lcd.print(g);
+	  lcd.setCursor(9,0);
+	  lcd.print(" B");
+	  lcd.print(b);
+	  lcd.setCursor(0,1);
+	  lcd.print("Bat: ");
+	  lcd.print(map(analogRead(BATTERY_SENSE), MIN_BATTERY, MAX_BATTERY, 0, 100));
+	  lcd.print("%");
+	  
+     }
+
+     digitalWrite(LED1,!digitalRead(LED1));
+     digitalWrite(LED2,!digitalRead(LED2));
+     digitalWrite(LED3,!digitalRead(LED3));
+}
+
+
+void btn1_pressed(bool down) {
+     if (down) {
+	  Serial.println("changing modes");
+	  if (mode == INFO_MODE) {
+	       mode = CONTROL_MODE;
+	  } else {
+	       mode = INFO_MODE;
+	  }
+	  knobs_update();
+     }
 }

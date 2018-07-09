@@ -8,16 +8,16 @@
 #include <RotaryEncoder.h>
 
 // Pin definitions for Gimbals (Analog inputs).  It is not clear why the A1, A2,... etc. don't work, but they don't.
-#define PIN_YAW		        0//A0
-#define PIN_THROTTLE 	        1//A1 
-#define PIN_ROLL	        2//A2 
-#define	PIN_PITCH		3//A3  
+#define PIN_YAW		        A0
+#define PIN_THROTTLE 	        A1 
+#define PIN_ROLL	        A2 
+#define	PIN_PITCH		A3  
 
 extern LiquidCrystal lcd;
 
 #define LCD_LED_RED 3
-#define LCD_LED_GREEN 19
-#define LCD_LED_BLUE 5
+#define LCD_LED_GREEN 5  // these should be switch, but... board design error.
+#define LCD_LED_BLUE 19
 
 #define LED3 18
 
@@ -50,7 +50,8 @@ extern RotaryEncoder knob3;
 #define LCD_D7 25
 
 #define BATTERY_SENSE A4
-
+#define MIN_BATTERY (683.0) // calculated
+#define MAX_BATTERY (817.0)
 
 
 #define BUTTONS 11
@@ -60,6 +61,17 @@ extern RotaryEncoder knob3;
 
 #define BUTTONS 11
 #define GIMBAL_AXES 4
+
+extern int foo;
+
+extern void (*knobs_update_cb)();
+extern void (*knob1_btn_cb)(bool);
+extern void (*knob2_btn_cb)(bool);
+extern void (*knob3_btn_cb)(bool);
+
+extern void (*btn1_cb)(bool);
+extern void (*btn2_cb)(bool);
+
 
 #ifdef QUAD_REMOTE_TESTING
 
