@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="yes" active="yes"/>
@@ -726,8 +726,8 @@
 <pad name="DB7" x="1.02" y="15.5" drill="1.02"/>
 <pad name="K" x="6.06" y="15.5" drill="1.02"/>
 <pad name="RED" x="6.1" y="-15.5" drill="1.02"/>
-<pad name="BLUE" x="8.64" y="-15.5" drill="1.02"/>
-<pad name="GREEN" x="11.18" y="-15.5" drill="1.02"/>
+<pad name="BLUE" x="11.18" y="-15.5" drill="1.02"/>
+<pad name="GREEN" x="8.64" y="-15.5" drill="1.02"/>
 <text x="-33.288" y="18.047" size="1.27" layer="21" font="vector">&gt;NAME</text>
 <wire x1="-33.7" y1="14.25" x2="12.87" y2="14.25" width="0.127" layer="39"/>
 <wire x1="12.87" y1="14.25" x2="12.87" y2="16.79" width="0.127" layer="39"/>
@@ -4302,7 +4302,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="C4" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
 <part name="C5" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
 <part name="D2" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-RED" value="RED"/>
-<part name="D3" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-GREEN" value="green"/>
+<part name="D1" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-GREEN" value="green"/>
 <part name="GND8" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND9" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND31" library="quadparts_prebuilt" deviceset="GND" device=""/>
@@ -4341,7 +4341,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="V16" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="GND27" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+3V3" device=""/>
-<part name="S1" library="RemoteParts" deviceset="POWER-SWITCH-MFS201N-9-Z" device="-SMD-VERTICAL" value="POWER-SWITCH-MFS201N-9-Z-SMD-VERTICAL"/>
+<part name="S1" library="RemoteParts" deviceset="POWER-SWITCH-MFS201N-9-Z" device="JS102011SAQN" value="POWER-SWITCH-MFS201N-9-ZJS102011SAQN"/>
 <part name="D4" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-GREEN" value="green"/>
 <part name="GND7" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND24" library="quadparts_prebuilt" deviceset="GND" device=""/>
@@ -4381,7 +4381,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="U2" library="RemoteParts" deviceset="DPDT-X2" device="" package3d_urn="urn:adsk.eagle:package:3027343/1"/>
 <part name="JP2" library="RemoteParts" deviceset="M06" device="-TH-RIGHT-ANGLE"/>
 <part name="GND1" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="S2" library="RemoteParts" deviceset="POWER-SWITCH-MFS201N-9-Z" device="-SMD-VERTICAL" value="POWER-SWITCH-MFS201N-9-Z-SMD-VERTICAL"/>
+<part name="S2" library="RemoteParts" deviceset="POWER-SWITCH-MFS201N-9-Z" device="JS102011SAQN" value="POWER-SWITCH-MFS201N-9-ZJS102011SAQN"/>
 <part name="D9" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123-360MV" value="360mV"/>
 <part name="P+4" library="quadparts_prebuilt" deviceset="VBAT" device=""/>
 <part name="D10" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123-360MV" value="360mV"/>
@@ -4470,7 +4470,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="B10" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5"/>
 <part name="J3" library="RemoteParts" deviceset="USB" device="-MINIB-EDAC-690-005-299-043"/>
 <part name="JP7" library="RemoteParts" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_NO-SILK"/>
-<part name="JP6" library="RemoteParts" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_NO-SILK"/>
 <part name="E1" library="RemoteParts" deviceset="ROTARY-ENCODER-W/BUTTON" device="-BOURNS-PEC12R-30MM"/>
 </parts>
 <sheets>
@@ -4514,12 +4513,12 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <wire x1="270.51" y1="3.81" x2="208.28" y2="3.81" width="0.1524" layer="97" style="longdash"/>
 <wire x1="208.28" y1="3.81" x2="208.28" y2="59.69" width="0.1524" layer="97" style="longdash"/>
 <text x="229.87" y="6.35" size="3.81" layer="97">Battery</text>
-<wire x1="328.93" y1="196.85" x2="327.66" y2="114.3" width="0.1524" layer="97" style="longdash"/>
-<wire x1="327.66" y1="114.3" x2="426.72" y2="114.3" width="0.1524" layer="97" style="longdash"/>
+<wire x1="328.93" y1="196.85" x2="328.93" y2="114.3" width="0.1524" layer="97" style="longdash"/>
+<wire x1="328.93" y1="114.3" x2="426.72" y2="114.3" width="0.1524" layer="97" style="longdash"/>
 <text x="370.84" y="116.84" size="3.81" layer="97">LCD *</text>
-<wire x1="327.66" y1="114.3" x2="327.66" y2="78.74" width="0.1524" layer="97" style="longdash"/>
-<wire x1="327.66" y1="78.74" x2="427.99" y2="78.74" width="0.1524" layer="97" style="longdash"/>
-<wire x1="327.66" y1="78.74" x2="327.66" y2="35.56" width="0.1524" layer="97" style="longdash"/>
+<wire x1="328.93" y1="114.3" x2="328.93" y2="78.74" width="0.1524" layer="97" style="longdash"/>
+<wire x1="328.93" y1="78.74" x2="427.99" y2="78.74" width="0.1524" layer="97" style="longdash"/>
+<wire x1="328.93" y1="78.74" x2="328.93" y2="35.56" width="0.1524" layer="97" style="longdash"/>
 <text x="373.38" y="82.55" size="3.81" layer="97">ISP</text>
 <text x="361.95" y="39.37" size="3.81" layer="97">FTDI Header</text>
 <wire x1="63.5" y1="135.89" x2="63.5" y2="99.06" width="0.1524" layer="97" style="longdash"/>
@@ -4538,7 +4537,7 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <instance part="C4" gate="G$1" x="238.76" y="168.91"/>
 <instance part="C5" gate="G$1" x="246.38" y="168.91"/>
 <instance part="D2" gate="G$1" x="114.3" y="189.23" rot="R180"/>
-<instance part="D3" gate="G$1" x="114.3" y="176.53" rot="R180"/>
+<instance part="D1" gate="G$1" x="114.3" y="176.53" rot="R180"/>
 <instance part="GND8" gate="1" x="226.06" y="158.75"/>
 <instance part="GND9" gate="1" x="247.65" y="222.25"/>
 <instance part="GND31" gate="1" x="246.38" y="189.23"/>
@@ -4690,7 +4689,6 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <instance part="B10" gate="G$1" x="389.89" y="250.19"/>
 <instance part="J3" gate="A" x="101.6" y="82.55" rot="MR0"/>
 <instance part="JP7" gate="G$1" x="396.24" y="62.23" rot="R180"/>
-<instance part="JP6" gate="G$1" x="116.84" y="241.3" rot="MR0"/>
 <instance part="E1" gate="G$1" x="388.62" y="267.97"/>
 </instances>
 <busses>
@@ -4741,7 +4739,7 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <wire x1="238.76" y1="163.83" x2="238.76" y2="161.29" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="D3" gate="G$1" pin="C"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="109.22" y1="176.53" x2="106.68" y2="176.53" width="0.1524" layer="91"/>
 </segment>
@@ -4950,11 +4948,6 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="S2" gate="G$1" pin="ON"/>
-<wire x1="289.56" y1="73.66" x2="300.99" y2="73.66" width="0.1524" layer="91"/>
-<label x="300.99" y="73.66" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R10" gate="G$1" pin="2"/>
 <wire x1="168.91" y1="36.83" x2="170.18" y2="36.83" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="36.83" x2="170.18" y2="33.02" width="0.1524" layer="91"/>
@@ -5079,6 +5072,11 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <wire x1="394.97" y1="247.65" x2="397.51" y2="247.65" width="0.1524" layer="91"/>
 <label x="397.51" y="247.65" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
+<segment>
+<pinref part="S2" gate="G$1" pin="OFF"/>
+<wire x1="289.56" y1="68.58" x2="300.99" y2="68.58" width="0.1524" layer="91"/>
+<label x="300.99" y="68.58" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="BTN1" class="0">
 <segment>
@@ -5197,18 +5195,9 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <label x="281.94" y="127" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="S2" gate="G$1" pin="OFF"/>
-<wire x1="289.56" y1="68.58" x2="300.99" y2="68.58" width="0.1524" layer="91"/>
-<label x="300.99" y="68.58" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R11" gate="G$1" pin="2"/>
 <label x="127" y="243.84" size="1.27" layer="95" rot="R90" xref="yes"/>
-<wire x1="127" y1="240.03" x2="127" y2="241.3" width="0.1524" layer="91"/>
-<wire x1="127" y1="241.3" x2="127" y2="243.84" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="241.3" x2="127" y2="241.3" width="0.1524" layer="91" style="longdash"/>
-<junction x="127" y="241.3"/>
-<pinref part="JP6" gate="G$1" pin="2"/>
+<wire x1="127" y1="240.03" x2="127" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="AREF"/>
@@ -5244,6 +5233,17 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <pinref part="JP7" gate="G$1" pin="1"/>
 <wire x1="396.24" y1="57.15" x2="396.24" y2="53.34" width="0.1524" layer="91"/>
 <label x="396.24" y="53.34" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="C17" gate="G$1" pin="2"/>
+<pinref part="U5" gate="G$1" pin="OUT"/>
+<wire x1="48.26" y1="125.73" x2="53.34" y2="125.73" width="0.1524" layer="91"/>
+<label x="53.34" y="125.73" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="S2" gate="G$1" pin="ON"/>
+<wire x1="289.56" y1="73.66" x2="300.99" y2="73.66" width="0.1524" layer="91"/>
+<label x="300.99" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -5361,7 +5361,7 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="D3" gate="G$1" pin="A"/>
+<pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="116.84" y1="176.53" x2="121.92" y2="176.53" width="0.1524" layer="91"/>
 </segment>
@@ -6099,24 +6099,6 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <pinref part="U3" gate="G$1" pin="VCCIO"/>
 <junction x="190.5" y="101.6"/>
 <junction x="176.53" y="101.6"/>
-</segment>
-<segment>
-<wire x1="116.84" y1="246.38" x2="116.84" y2="248.92" width="0.1524" layer="91" style="longdash"/>
-<label x="116.84" y="248.92" size="1.27" layer="95" rot="R90" xref="yes"/>
-<pinref part="JP6" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="VREG3V3" class="1">
-<segment>
-<pinref part="C17" gate="G$1" pin="2"/>
-<pinref part="U5" gate="G$1" pin="OUT"/>
-<wire x1="48.26" y1="125.73" x2="53.34" y2="125.73" width="0.1524" layer="91"/>
-<label x="53.34" y="125.73" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="116.84" y1="236.22" x2="116.84" y2="233.68" width="0.1524" layer="91" style="longdash"/>
-<label x="116.84" y="233.68" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="JP6" gate="G$1" pin="3"/>
 </segment>
 </net>
 <net name="N$24" class="0">
