@@ -4370,7 +4370,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="D8" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-RED" value="Red"/>
 <part name="C8" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
 <part name="R10" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-2.2K" value="2.2K"/>
-<part name="R11" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-270" value="270"/>
+<part name="R11" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
 <part name="V1" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V2" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V6" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
