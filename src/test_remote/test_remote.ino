@@ -62,7 +62,7 @@ void setup() {
      delay(100);
      quad_remote_setup();
 
-     ADMUX_struct.refs = 0;
+     ADMUX_struct.refs = 2;
      
      for(char i = 0; i < 8; i++) {
 	  scale[7-i] = B11111111;

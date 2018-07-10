@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="yes" active="yes"/>
@@ -1345,6 +1345,66 @@
 <wire x1="-6.2" y1="-6.7" x2="-6.2" y2="6.7" width="0.127" layer="39"/>
 <circle x="0" y="0" radius="6.35" width="0.1" layer="21"/>
 </package>
+<package name="SMT-JUMPER_2_NO_NO-SILK">
+<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+</package>
+<package name="SMT-JUMPER_2_NO_NO-SILK_ROUND">
+<smd name="1" x="-1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R270" stop="no" thermals="no" cream="no"/>
+<smd name="2" x="1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R90" stop="no" thermals="no" cream="no"/>
+<text x="0" y="1.9685" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.9685" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<polygon width="0.00508125" layer="1">
+<vertex x="0.111125" y="-1.42875" curve="85"/>
+<vertex x="1.381125" y="0" curve="85"/>
+<vertex x="0.111125" y="1.42875"/>
+</polygon>
+<polygon width="0.00508125" layer="1">
+<vertex x="-0.111125" y="1.42875"/>
+<vertex x="-0.111125" y="-1.42875" curve="-85"/>
+<vertex x="-1.381125" y="0" curve="-85"/>
+</polygon>
+<polygon width="0.2032" layer="29">
+<vertex x="0" y="1.42875" curve="-90"/>
+<vertex x="1.42875" y="0" curve="-90"/>
+<vertex x="0" y="-1.42875" curve="-90"/>
+<vertex x="-1.42875" y="0" curve="-90"/>
+</polygon>
+</package>
+<package name="SMT-JUMPER_2_NO_SILK">
+<text x="0" y="0.943" size="0.6096" layer="25" font="vector" ratio="7" align="bottom-center">&gt;NAME</text>
+<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
+<wire x1="-0.9" y1="0.8" x2="0.9" y2="0.8" width="0.127" layer="21"/>
+<wire x1="0.9" y1="0.8" x2="0.9" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="0.9" y1="-0.8" x2="-0.9" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-0.9" y1="-0.8" x2="-0.9" y2="0.8" width="0.127" layer="21"/>
+</package>
+<package name="SMT-JUMPER_2_NO_SILK_ROUND">
+<smd name="1" x="-1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R270" stop="no" thermals="no" cream="no"/>
+<smd name="2" x="1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R90" stop="no" thermals="no" cream="no"/>
+<text x="0" y="1.9685" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1.9685" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
+<polygon width="0.00508125" layer="1">
+<vertex x="0.111125" y="-1.42875" curve="85"/>
+<vertex x="1.381125" y="0" curve="85"/>
+<vertex x="0.111125" y="1.42875"/>
+</polygon>
+<polygon width="0.00508125" layer="1">
+<vertex x="-0.111125" y="1.42875"/>
+<vertex x="-0.111125" y="-1.42875" curve="-85"/>
+<vertex x="-1.381125" y="0" curve="-85"/>
+</polygon>
+<polygon width="0.2032" layer="29">
+<vertex x="0" y="1.42875" curve="-90"/>
+<vertex x="1.42875" y="0" curve="-90"/>
+<vertex x="0" y="-1.42875" curve="-90"/>
+<vertex x="-1.42875" y="0" curve="-90"/>
+</polygon>
+<circle x="0" y="0" radius="1.74625" width="0.2032" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" locally_modified="yes" type="model">
@@ -1671,6 +1731,15 @@
 <pin name="X" x="12.7" y="2.54" length="middle" rot="R180"/>
 <pin name="Y" x="12.7" y="-2.54" length="middle" rot="R180"/>
 <text x="0" y="-6.35" size="1.27" layer="95" align="center">&gt;NAME</text>
+</symbol>
+<symbol name="SMT-JUMPER_2_NO">
+<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
+<text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2369,6 +2438,56 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="PEC12R-4030F-S0024-ND"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="JUMPER-SMT_2_NO" prefix="JP">
+<description>&lt;h3&gt;Normally open jumper&lt;/h3&gt;
+&lt;p&gt;This jumper has two pads in close proximity to each other. Apply solder to close the connection.&lt;/p&gt;
+
+&lt;p&gt;Round pads are easier to solder for beginners, but are a lot larger.&lt;/p&gt;
+&lt;p&gt;SparkFun Product that uses the round pads:
+&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12781"&gt;SparkFun EL Sequencer&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SMT-JUMPER_2_NO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_NO-SILK" package="SMT-JUMPER_2_NO_NO-SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_NO-SILK_ROUND" package="SMT-JUMPER_2_NO_NO-SILK_ROUND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SILK" package="SMT-JUMPER_2_NO_SILK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SILK_ROUND" package="SMT-JUMPER_2_NO_SILK_ROUND">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -4471,6 +4590,11 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="JP7" library="RemoteParts" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_NO-SILK"/>
 <part name="E1" library="RemoteParts" deviceset="ROTARY-ENCODER-W/BUTTON" device="-BOURNS-PEC12R-30MM"/>
 <part name="J5" library="RemoteParts" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK"/>
+<part name="JP6" library="RemoteParts" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_NO-SILK"/>
+<part name="JP8" library="RemoteParts" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_NO-SILK"/>
+<part name="R16" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1K" value="1K"/>
+<part name="R17" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1K" value="1K"/>
+<part name="JP9" library="RemoteParts" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK"/>
 </parts>
 <sheets>
 <sheet>
@@ -4524,7 +4648,7 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <wire x1="72.39" y1="135.89" x2="72.39" y2="96.52" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="96.52" x2="3.81" y2="95.25" width="0.1524" layer="97" style="longdash"/>
 <text x="6.35" y="97.79" size="3.81" layer="97">150mA 3.3V Regulator *</text>
-<text x="87.63" y="269.24" size="1.778" layer="91">show  C11 C12 C13 R6 R7 D7 D5 U2 S2 S1 J1 J2 L1 P6 R15 R4 R5 R12 J11 J3 U3 P1 P2 P3 P4 B7 B2 B1 D8 R8 R9 D6 R13 r14</text>
+<text x="87.63" y="269.24" size="1.778" layer="91">show  C11 C12 C13 R6 R7 D7 D5 U2 S2 S1 J1 J2 L1 P6 R15 R4 R5 R12 J11 J3 U3 P1 P2 P3 P4 B7 B2 B1 D8 R8 R9 D6 R13 r14 R16 R17</text>
 <text x="7.62" y="132.08" size="1.778" layer="97">C10 is the input cap (shared with lipo charger)</text>
 </plain>
 <instances>
@@ -4692,6 +4816,11 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <instance part="JP7" gate="G$1" x="396.24" y="62.23" rot="R180"/>
 <instance part="E1" gate="G$1" x="388.62" y="267.97"/>
 <instance part="J5" gate="G$1" x="21.59" y="107.95"/>
+<instance part="JP6" gate="G$1" x="284.48" y="196.85"/>
+<instance part="JP8" gate="G$1" x="63.5" y="204.47"/>
+<instance part="R16" gate="G$1" x="76.2" y="215.9" rot="R90"/>
+<instance part="R17" gate="G$1" x="76.2" y="201.93" rot="R90"/>
+<instance part="JP9" gate="G$1" x="81.28" y="209.55"/>
 </instances>
 <busses>
 </busses>
@@ -5074,6 +5203,11 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <wire x1="289.56" y1="68.58" x2="300.99" y2="68.58" width="0.1524" layer="91"/>
 <label x="300.99" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R17" gate="G$1" pin="1"/>
+<wire x1="76.2" y1="196.85" x2="76.2" y2="193.04" width="0.1524" layer="91"/>
+<label x="76.2" y="193.04" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
 </net>
 <net name="BTN1" class="0">
 <segment>
@@ -5197,34 +5331,9 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <wire x1="127" y1="240.03" x2="127" y2="243.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="AREF"/>
-<wire x1="223.52" y1="196.85" x2="220.98" y2="196.85" width="0.1524" layer="91"/>
-<label x="223.52" y="196.85" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <wire x1="25.4" y1="261.62" x2="25.4" y2="260.35" width="0.1524" layer="91"/>
 <label x="25.4" y="261.62" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="P1" gate="G$1" pin="T"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="+"/>
-<wire x1="26.67" y1="217.17" x2="30.48" y2="217.17" width="0.1524" layer="91"/>
-<label x="30.48" y="217.17" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J8" gate="G$1" pin="+"/>
-<wire x1="26.67" y1="156.21" x2="30.48" y2="156.21" width="0.1524" layer="91"/>
-<label x="30.48" y="156.21" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="+"/>
-<wire x1="26.67" y1="201.93" x2="30.48" y2="201.93" width="0.1524" layer="91"/>
-<label x="30.48" y="201.93" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J9" gate="G$1" pin="+"/>
-<wire x1="26.67" y1="171.45" x2="30.48" y2="171.45" width="0.1524" layer="91"/>
-<label x="30.48" y="171.45" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP7" gate="G$1" pin="1"/>
@@ -5241,6 +5350,21 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <pinref part="S2" gate="G$1" pin="ON"/>
 <wire x1="289.56" y1="73.66" x2="300.99" y2="73.66" width="0.1524" layer="91"/>
 <label x="300.99" y="73.66" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP6" gate="G$1" pin="3"/>
+<wire x1="284.48" y1="191.77" x2="284.48" y2="187.96" width="0.1524" layer="91"/>
+<label x="284.48" y="187.96" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP8" gate="G$1" pin="3"/>
+<wire x1="63.5" y1="199.39" x2="63.5" y2="195.58" width="0.1524" layer="91"/>
+<label x="63.5" y="195.58" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+<segment>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="220.98" x2="76.2" y2="226.06" width="0.1524" layer="91"/>
+<label x="76.2" y="226.06" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -6167,6 +6291,73 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <wire x1="26.67" y1="114.3" x2="34.29" y2="114.3" width="0.1524" layer="91"/>
 <junction x="26.67" y="114.3"/>
 <pinref part="U5" gate="G$1" pin="EN"/>
+</segment>
+</net>
+<net name="AREF" class="0">
+<segment>
+<pinref part="JP6" gate="G$1" pin="2"/>
+<wire x1="279.4" y1="196.85" x2="278.13" y2="196.85" width="0.1524" layer="91"/>
+<label x="278.13" y="196.85" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U1" gate="G$1" pin="AREF"/>
+<wire x1="223.52" y1="196.85" x2="220.98" y2="196.85" width="0.1524" layer="91"/>
+<label x="223.52" y="196.85" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP8" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="209.55" x2="63.5" y2="213.36" width="0.1524" layer="91"/>
+<label x="63.5" y="213.36" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="AVDD" class="0">
+<segment>
+<pinref part="JP6" gate="G$1" pin="1"/>
+<wire x1="284.48" y1="201.93" x2="284.48" y2="205.74" width="0.1524" layer="91"/>
+<label x="284.48" y="205.74" size="1.27" layer="95" rot="R90" xref="yes"/>
+</segment>
+</net>
+<net name="GREF" class="0">
+<segment>
+<pinref part="JP8" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="204.47" x2="57.15" y2="204.47" width="0.1524" layer="91"/>
+<label x="57.15" y="204.47" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="+"/>
+<wire x1="26.67" y1="217.17" x2="30.48" y2="217.17" width="0.1524" layer="91"/>
+<label x="30.48" y="217.17" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="+"/>
+<wire x1="26.67" y1="201.93" x2="30.48" y2="201.93" width="0.1524" layer="91"/>
+<label x="30.48" y="201.93" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J9" gate="G$1" pin="+"/>
+<wire x1="26.67" y1="171.45" x2="30.48" y2="171.45" width="0.1524" layer="91"/>
+<label x="30.48" y="171.45" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J8" gate="G$1" pin="+"/>
+<wire x1="26.67" y1="156.21" x2="30.48" y2="156.21" width="0.1524" layer="91"/>
+<label x="30.48" y="156.21" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="JP9" gate="G$1" pin="2"/>
+<wire x1="86.36" y1="209.55" x2="90.17" y2="209.55" width="0.1524" layer="91"/>
+<label x="90.17" y="209.55" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="V3V/2" class="0">
+<segment>
+<pinref part="R16" gate="G$1" pin="1"/>
+<pinref part="R17" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="210.82" x2="76.2" y2="209.55" width="0.1524" layer="91"/>
+<pinref part="JP9" gate="G$1" pin="1"/>
+<wire x1="76.2" y1="209.55" x2="76.2" y2="207.01" width="0.1524" layer="91"/>
+<junction x="76.2" y="209.55"/>
+<label x="76.2" y="209.55" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
