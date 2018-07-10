@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="yes" active="yes"/>
@@ -508,7 +508,7 @@
 <wire x1="-1.875" y1="3.75" x2="7.5" y2="3.75" width="0.127" layer="21"/>
 <wire x1="-1.875" y1="-3.75" x2="7.5" y2="-3.75" width="0.127" layer="21"/>
 <rectangle x1="-1.875" y1="-5.625" x2="9.375" y2="5.625" layer="39"/>
-<text x="8.89" y="-2.54" size="1.27" layer="21" font="vector" rot="R90">&gt;NAME</text>
+<text x="8.89" y="-2.54" size="1.27" layer="25" font="vector" rot="R90">&gt;NAME</text>
 </package>
 <package name="SSOP28DB">
 <description>&lt;b&gt;Small Shrink Outline Package&lt;/b&gt;</description>
@@ -578,7 +578,7 @@
 <smd name="27" x="-3.575" y="3.656" dx="0.348" dy="1.397" layer="1"/>
 <smd name="28" x="-4.225" y="3.656" dx="0.348" dy="1.397" layer="1"/>
 <text x="-3.81" y="1.27" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<text x="-3.81" y="-1.27" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<text x="0" y="0" size="0.635" layer="27" font="vector" align="center">&gt;VALUE</text>
 </package>
 <package name="SOT23-5">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; - 5 Pin</description>
@@ -600,7 +600,6 @@
 <smd name="4" x="0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
 <smd name="5" x="-0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
 <text x="1.978" y="0" size="0.8128" layer="25" font="vector" ratio="18">&gt;NAME</text>
-<text x="1.978" y="-0.635" size="0.4064" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 </package>
 <package name="1X06-SMD">
 <wire x1="7.62" y1="1.25" x2="-7.62" y2="1.25" width="0.127" layer="51"/>
@@ -728,7 +727,7 @@
 <pad name="RED" x="6.1" y="-15.5" drill="1.02"/>
 <pad name="BLUE" x="11.18" y="-15.5" drill="1.02"/>
 <pad name="GREEN" x="8.64" y="-15.5" drill="1.02"/>
-<text x="-33.288" y="18.047" size="1.27" layer="21" font="vector">&gt;NAME</text>
+<text x="-33.288" y="18.047" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <wire x1="-33.7" y1="14.25" x2="12.87" y2="14.25" width="0.127" layer="39"/>
 <wire x1="12.87" y1="14.25" x2="12.87" y2="16.79" width="0.127" layer="39"/>
 <wire x1="12.87" y1="16.79" x2="-33.7" y2="16.79" width="0.127" layer="39"/>
@@ -1076,7 +1075,6 @@
 <pad name="V" x="10.16" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="6" x="12.7" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <text x="-1.3462" y="1.8288" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
-<text x="6.35" y="1.905" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 <wire x1="0" y1="0" x2="0" y2="11.43" width="0.127" layer="51"/>
 <wire x1="2.54" y1="0" x2="2.54" y2="11.43" width="0.127" layer="51"/>
 <wire x1="5.08" y1="0" x2="5.08" y2="11.43" width="0.127" layer="51"/>
@@ -1097,7 +1095,6 @@
 </package>
 <package name="SMT-JUMPER_2_NC_PASTE_NO-SILK">
 <text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
 <rectangle x1="-1.2446" y1="-1.1176" x2="1.2446" y2="1.1176" layer="31"/>
 <smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
 <smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
@@ -1341,7 +1338,7 @@
 <pad name="C" x="0" y="-7.5" drill="1.3"/>
 <circle x="0" y="0" radius="3" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="5.715" width="0.1" layer="21"/>
-<text x="0" y="-11.43" size="1.778" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-11.43" size="1.778" layer="25" font="vector" align="center">&gt;NAME</text>
 <wire x1="-6.2" y1="6.7" x2="6.2" y2="6.7" width="0.127" layer="39"/>
 <wire x1="6.2" y1="6.7" x2="6.2" y2="-6.7" width="0.127" layer="39"/>
 <wire x1="6.2" y1="-6.7" x2="-6.2" y2="-6.7" width="0.127" layer="39"/>
@@ -1735,7 +1732,7 @@
 <attribute name="MFR" value="Lite-On Inc"/>
 <attribute name="MPN" value="LTST-C170GKT"/>
 <attribute name="REVIEWER" value="Swanson"/>
-<attribute name="VALUE" value="green"/>
+<attribute name="VALUE" value="Green"/>
 </technology>
 </technologies>
 </device>
@@ -1749,7 +1746,7 @@
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="160-1176-1-ND"/>
-<attribute name="VALUE" value="RED"/>
+<attribute name="VALUE" value="Red"/>
 </technology>
 </technologies>
 </device>
@@ -1763,7 +1760,7 @@
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="160-1175-1-ND"/>
-<attribute name="VALUE" value="YELLOW"/>
+<attribute name="VALUE" value="Yellow"/>
 </technology>
 </technologies>
 </device>
@@ -1777,7 +1774,7 @@
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="160-1177-1-ND"/>
-<attribute name="VALUE" value="ORANGE"/>
+<attribute name="VALUE" value="Orange"/>
 </technology>
 </technologies>
 </device>
@@ -2901,7 +2898,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <package name="2X3-NS">
 <rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="51"/>
 <rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="51"/>
-<wire x1="-0.635" y1="-2.54" x2="0.635" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="-2.54" x2="0" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="0" y1="-2.54" x2="0.635" y2="-2.54" width="0.2032" layer="21"/>
 <wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.2032" layer="21"/>
 <wire x1="-1.27" y1="-1.905" x2="-0.635" y2="-2.54" width="0.2032" layer="21"/>
 <wire x1="-1.27" y1="1.905" x2="-0.635" y2="2.54" width="0.2032" layer="51"/>
@@ -2911,11 +2909,11 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="-1.905" y1="2.54" x2="-1.27" y2="1.905" width="0.2032" layer="21"/>
 <rectangle x1="-2.794" y1="-1.524" x2="-2.286" y2="-1.016" layer="51"/>
 <rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="51"/>
-<wire x1="-3.175" y1="-2.54" x2="-1.905" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-3.175" y1="-2.54" x2="-2.54" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-2.54" y1="-2.54" x2="-1.905" y2="-2.54" width="0.2032" layer="21"/>
 <wire x1="-3.175" y1="2.54" x2="-1.905" y2="2.54" width="0.2032" layer="21"/>
 <wire x1="-3.81" y1="-1.905" x2="-3.175" y2="-2.54" width="0.2032" layer="21"/>
 <wire x1="-3.81" y1="-1.905" x2="-3.81" y2="1.905" width="0.2032" layer="21"/>
-<text x="-3.81" y="-4.445" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 <wire x1="-3.81" y1="1.905" x2="-3.175" y2="2.54" width="0.2032" layer="21"/>
 <text x="-3.81" y="3.175" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <wire x1="-4.5" y1="-3" x2="-4.5" y2="3" width="0.127" layer="39"/>
@@ -2925,7 +2923,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="1.27" y1="-1.905" x2="1.905" y2="-2.54" width="0.2032" layer="21"/>
 <wire x1="1.27" y1="1.905" x2="1.27" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="1.27" y1="1.905" x2="1.905" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="-2.54" x2="3.175" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-2.54" x2="2.54" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="2.54" y1="-2.54" x2="3.175" y2="-2.54" width="0.2032" layer="21"/>
 <wire x1="1.905" y1="2.54" x2="3.175" y2="2.54" width="0.2032" layer="21"/>
 <rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
 <rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
@@ -2940,6 +2939,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pad name="4" x="0" y="1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
 <pad name="5" x="2.54" y="-1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
 <pad name="6" x="2.54" y="1.27" drill="1.016" diameter="1.8796" shape="octagon"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="0" y1="-2.54" x2="0" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-6.35" x2="2.54" y2="-2.54" width="0.127" layer="21"/>
 </package>
 <package name="TE_FSM8JSMA_HS">
 <description>Switch, Tactile; 4 pin, 6.00 mm L X 6.00 mm W X 9.50 mm H body&lt;p&gt;&lt;i&gt;PCB Libraries Packages&lt;/i&gt;</description>
@@ -4305,8 +4307,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="C3" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.75PF" value="0.75pF"/>
 <part name="C4" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
 <part name="C5" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
-<part name="D2" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-RED" value="RED"/>
-<part name="D1" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-GREEN" value="green"/>
+<part name="D2" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-RED" value="Red"/>
+<part name="D1" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-GREEN" value="Green"/>
 <part name="GND8" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND9" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND31" library="quadparts_prebuilt" deviceset="GND" device=""/>
@@ -4346,7 +4348,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="GND27" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+3V3" device=""/>
 <part name="S1" library="RemoteParts" deviceset="POWER-SWITCH-MFS201N-9-Z" device="JS102011SAQN" value="POWER-SWITCH-MFS201N-9-ZJS102011SAQN"/>
-<part name="D4" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-GREEN" value="green"/>
+<part name="D4" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-GREEN" value="Green"/>
 <part name="GND7" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND24" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND20" library="quadparts_prebuilt" deviceset="GND" device=""/>
@@ -4359,8 +4361,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="C11" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
 <part name="C12" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
 <part name="C13" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
-<part name="D5" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-GREEN" value="green"/>
-<part name="D7" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-RED" value="RED"/>
+<part name="D5" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-GREEN" value="Green"/>
+<part name="D7" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-RED" value="Red"/>
 <part name="GND35" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="U4" library="RemoteParts" deviceset="MCP73831/2" device="" value="MCP73831T-2ACI/OT"/>
 <part name="R8" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
@@ -4370,8 +4372,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="U$12" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="U$13" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="C10" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
-<part name="D6" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-GREEN" value="green"/>
-<part name="D8" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-RED" value="RED"/>
+<part name="D6" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-GREEN" value="Green"/>
+<part name="D8" library="RemoteParts" deviceset="DIODE-LED_" device="SMD-2012-0805-RED" value="Red"/>
 <part name="C8" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
 <part name="R10" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-2.2K" value="2.2K"/>
 <part name="R11" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-270" value="270"/>
@@ -4528,7 +4530,7 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <wire x1="72.39" y1="135.89" x2="72.39" y2="96.52" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="96.52" x2="3.81" y2="95.25" width="0.1524" layer="97" style="longdash"/>
 <text x="6.35" y="97.79" size="3.81" layer="97">150mA 3.3V Regulator *</text>
-<text x="87.63" y="269.24" size="1.778" layer="91">show @ C11 C12 C13 R6 R7 D7 D5 U2 S2 S1 J1 J2 L1 P6 R15 R4 R5 R12 J11 J3 U3 P1 P2 P3 P4 B7 B2 B1 D8 R8 R9 D8 D6</text>
+<text x="87.63" y="269.24" size="1.778" layer="91">show  C11 C12 C13 R6 R7 D7 D5 U2 S2 S1 J1 J2 L1 P6 R15 R4 R5 R12 J11 J3 U3 P1 P2 P3 P4 B7 B2 B1 D8 R8 R9 D6 R13 r14</text>
 <text x="7.62" y="132.08" size="1.778" layer="97">C10 is the input cap (shared with lipo charger)</text>
 </plain>
 <instances>

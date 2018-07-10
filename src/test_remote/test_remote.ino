@@ -135,24 +135,26 @@ void knobs_update() {
      analogWrite(LCD_LED_GREEN, (unsigned char)(g));
      analogWrite(LCD_LED_BLUE, (unsigned char)(b));
 
+     lcd.home();
+     lcd.clear();
+     lcd.print("R");
+     lcd.print(r);
+     lcd.setCursor(4,0);
+     lcd.print(" G");
+     lcd.print(g);
+     lcd.setCursor(9,0);
+     lcd.print(" B");
+     lcd.print(b);
+     lcd.setCursor(0,1);
+     lcd.print("Bat: ");
+
      if (mode == INFO_MODE) {
-	  lcd.home();
-	  lcd.clear();
-	  lcd.print("R");
-	  lcd.print(r);
-	  lcd.setCursor(4,0);
-	  lcd.print(" G");
-	  lcd.print(g);
-	  lcd.setCursor(9,0);
-	  lcd.print(" B");
-	  lcd.print(b);
-	  lcd.setCursor(0,1);
-	  lcd.print("Bat: ");
 	  lcd.print(map(analogRead(BATTERY_SENSE), MIN_BATTERY, MAX_BATTERY, 0, 100));
 	  lcd.print("%");
-	  
+     } else {
+	  lcd.print(analogRead(BATTERY_SENSE));
      }
-
+	  
      digitalWrite(LED1,!digitalRead(LED1));
      digitalWrite(LED2,!digitalRead(LED2));
      digitalWrite(LED3,!digitalRead(LED3));

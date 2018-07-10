@@ -50,8 +50,10 @@ extern RotaryEncoder knob3;
 #define LCD_D7 25
 
 #define BATTERY_SENSE A4
-#define MIN_BATTERY (683.0) // calculated
-#define MAX_BATTERY (817.0)
+#define MIN_BATTERY (775.0) // calculated
+#define MAX_BATTERY (928.0)
+//#define MIN_BATTERY (683.0) // calculated
+//#define MAX_BATTERY (817.0)
 
 
 #define BUTTONS 11
