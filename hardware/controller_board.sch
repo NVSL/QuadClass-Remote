@@ -4474,6 +4474,7 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <text x="6.35" y="97.79" size="3.81" layer="97">150mA 3.3V Regulator *</text>
 <text x="87.63" y="269.24" size="1.778" layer="91">show  C11 C12 C13 R6 R7 D7 D5 U2 S2 S1 J1 J2 L1 P6 R15 R4 R5 R12 J11 J3 U3 P1 P2 P3 P4 B7 B2 B1 D8 R8 R9 D6 R13 r14 R16 R17</text>
 <text x="7.62" y="132.08" size="1.778" layer="97">C10 is the input cap (shared with lipo charger)</text>
+<text x="248.92" y="251.46" size="1.27" layer="91">Try a 1uF cap, so we don't need 0.1uF caps</text>
 </plain>
 <instances>
 <instance part="GND10" gate="1" x="339.09" y="226.06"/>
