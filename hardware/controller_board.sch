@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="yes" active="yes"/>
@@ -1535,6 +1535,8 @@
 <pin name="X" x="12.7" y="2.54" length="middle" rot="R180"/>
 <pin name="Y" x="12.7" y="-2.54" length="middle" rot="R180"/>
 <text x="0" y="-6.35" size="1.27" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="3.81" size="0.6096" layer="97" align="center">&gt;DETENT=</text>
+<text x="0" y="2.54" size="0.6096" layer="97" align="center">&gt;HEIGHT=</text>
 </symbol>
 <symbol name="SMT-JUMPER_2_NO">
 <wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
@@ -2206,7 +2208,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </technology>
 </technologies>
 </device>
-<device name="-BOURNS-PEC12R-30MM" package="BOURNS-PEC12R">
+<device name="-BOURNS-PEC12R-4030F" package="BOURNS-PEC12R">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="B" pad="B"/>
@@ -2219,8 +2221,30 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="AUX1DIST" value="DIGIKEY"/>
 <attribute name="AUX1DISTPN" value="1722-1241-ND"/>
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DETENT" value="N"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="PEC12R-4030F-S0024-ND"/>
+<attribute name="HEIGHT" value="30"/>
+</technology>
+</technologies>
+</device>
+<device name="-BOURNS-PEC12R-4217F" package="BOURNS-PEC12R">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="X" pad="BUTB"/>
+<connect gate="G$1" pin="Y" pad="BUTA"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AUX1DIST" value="DIGIKEY"/>
+<attribute name="AUX1DISTPN" value="1722-1241-ND"/>
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DETENT" value="Y"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="PEC12R-4217F-S0024-ND"/>
+<attribute name="HEIGHT" value="17.5"/>
 </technology>
 </technologies>
 </device>
@@ -4398,7 +4422,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="B9" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5"/>
 <part name="B10" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5"/>
 <part name="JP7" library="RemoteParts" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_NO-SILK"/>
-<part name="E1" library="RemoteParts" deviceset="ROTARY-ENCODER-W/BUTTON" device="-BOURNS-PEC12R-30MM"/>
+<part name="E1" library="RemoteParts" deviceset="ROTARY-ENCODER-W/BUTTON" device="-BOURNS-PEC12R-4217F"/>
 <part name="J5" library="RemoteParts" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK"/>
 <part name="JP6" library="RemoteParts" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_NO-SILK"/>
 <part name="JP8" library="RemoteParts" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_NO-SILK"/>

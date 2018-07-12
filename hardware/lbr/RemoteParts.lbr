@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2643,6 +2643,8 @@ Created: 10/25/2014</description>
 <pin name="X" x="12.7" y="2.54" length="middle" rot="R180"/>
 <pin name="Y" x="12.7" y="-2.54" length="middle" rot="R180"/>
 <text x="0" y="-6.35" size="1.27" layer="95" align="center">&gt;NAME</text>
+<text x="0" y="3.81" size="0.6096" layer="97" align="center">&gt;DETENT=</text>
+<text x="0" y="2.54" size="0.6096" layer="97" align="center">&gt;HEIGHT=</text>
 </symbol>
 <symbol name="HEADER-0.1IN-2POS">
 <description>2 pin single inline pin header, socket, or connector</description>
@@ -3425,7 +3427,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </technology>
 </technologies>
 </device>
-<device name="-BOURNS-PEC12R-30MM" package="BOURNS-PEC12R">
+<device name="-BOURNS-PEC12R-4030F" package="BOURNS-PEC12R">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="B" pad="B"/>
@@ -3438,8 +3440,30 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="AUX1DIST" value="DIGIKEY"/>
 <attribute name="AUX1DISTPN" value="1722-1241-ND"/>
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DETENT" value="N"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="PEC12R-4030F-S0024-ND"/>
+<attribute name="HEIGHT" value="30"/>
+</technology>
+</technologies>
+</device>
+<device name="-BOURNS-PEC12R-4217F" package="BOURNS-PEC12R">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C"/>
+<connect gate="G$1" pin="X" pad="BUTB"/>
+<connect gate="G$1" pin="Y" pad="BUTA"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AUX1DIST" value="DIGIKEY"/>
+<attribute name="AUX1DISTPN" value="1722-1241-ND"/>
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DETENT" value="Y"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="PEC12R-4217F-S0024-ND"/>
+<attribute name="HEIGHT" value="17.5"/>
 </technology>
 </technologies>
 </device>
