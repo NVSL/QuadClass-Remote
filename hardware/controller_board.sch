@@ -5475,7 +5475,7 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <junction x="232.41" y="39.37"/>
 </segment>
 </net>
-<net name="USB_D-" class="0">
+<net name="USB_D_N" class="0">
 <segment>
 <wire x1="190.5" y1="114.3" x2="106.68" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="USBDM"/>
@@ -5483,7 +5483,7 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <pinref part="J11" gate="A" pin="2-D-"/>
 </segment>
 </net>
-<net name="USB_D+" class="0">
+<net name="USB_D_P" class="0">
 <segment>
 <wire x1="190.5" y1="111.76" x2="106.68" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="USBDP"/>
