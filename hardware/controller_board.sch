@@ -4249,6 +4249,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attributes>
 </attributes>
 <variantdefs>
+<variantdef name="Minimal"/>
+<variantdef name="FullAwesome" current="yes"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -4291,8 +4293,12 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="GND6" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="J4" library="quadparts_prebuilt" deviceset="AVR_SPI_PRG_6" device="NS"/>
 <part name="C6" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
-<part name="B2" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5"/>
-<part name="B1" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5"/>
+<part name="B2" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5">
+<variant name="Minimal" populate="no"/>
+</part>
+<part name="B1" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5">
+<variant name="Minimal" populate="no"/>
+</part>
 <part name="B7" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5"/>
 <part name="FRAME1" library="quadparts_prebuilt" deviceset="FRAME_B_L" device=""/>
 <part name="V9" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
@@ -4305,16 +4311,26 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="V16" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="GND27" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="P+5" library="supply1" deviceset="+3V3" device=""/>
-<part name="S1" library="RemoteParts" deviceset="POWER-SWITCH-MFS201N-9-Z" device="JS102011SAQN" value="POWER-SWITCH-MFS201N-9-ZJS102011SAQN"/>
+<part name="S1" library="RemoteParts" deviceset="POWER-SWITCH-MFS201N-9-Z" device="JS102011SAQN" value="POWER-SWITCH-MFS201N-9-ZJS102011SAQN">
+<variant name="Minimal" populate="no"/>
+</part>
 <part name="GND24" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND20" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND26" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="U3" library="RemoteParts" deviceset="FT232RL" device="SSOP"/>
+<part name="U3" library="RemoteParts" deviceset="FT232RL" device="SSOP">
+<variant name="Minimal" populate="no"/>
+</part>
 <part name="GND28" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND30" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="C11" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
-<part name="C12" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
-<part name="C13" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
+<part name="C11" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF">
+<variant name="Minimal" populate="no"/>
+</part>
+<part name="C12" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF">
+<variant name="Minimal" populate="no"/>
+</part>
+<part name="C13" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF">
+<variant name="Minimal" populate="no"/>
+</part>
 <part name="GND35" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="U4" library="RemoteParts" deviceset="MCP73831/2" device="" value="MCP73831T-2ACI/OT"/>
 <part name="R8" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
@@ -4333,10 +4349,14 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="V7" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V8" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="GND21" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="U2" library="RemoteParts" deviceset="DPDT-X2" device="" package3d_urn="urn:adsk.eagle:package:3027343/1"/>
+<part name="U2" library="RemoteParts" deviceset="DPDT-X2" device="" package3d_urn="urn:adsk.eagle:package:3027343/1">
+<variant name="Minimal" populate="no"/>
+</part>
 <part name="JP2" library="RemoteParts" deviceset="M06" device="-TH-RIGHT-ANGLE"/>
 <part name="GND1" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="S2" library="RemoteParts" deviceset="POWER-SWITCH-MFS201N-9-Z" device="JS102011SAQN" value="POWER-SWITCH-MFS201N-9-ZJS102011SAQN"/>
+<part name="S2" library="RemoteParts" deviceset="POWER-SWITCH-MFS201N-9-Z" device="JS102011SAQN" value="POWER-SWITCH-MFS201N-9-ZJS102011SAQN">
+<variant name="Minimal" populate="no"/>
+</part>
 <part name="D9" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123-360MV" value="360mV"/>
 <part name="P+4" library="quadparts_prebuilt" deviceset="VBAT" device=""/>
 <part name="D10" library="quadparts_prebuilt" deviceset="DIODE-SCHOTTKY_" device="SMD-SOD123-360MV" value="360mV"/>
@@ -4367,27 +4387,38 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="F4" library="RemoteParts" deviceset="FIDUCIAL" device="-STENCIL" value="1mm"/>
 <part name="L1" library="RemoteParts" deviceset="SPARKFUN_LCD_33_SERIAL" device="-RGB">
 <attribute name="SPICEPREFIX" value="X"/>
+<variant name="Minimal" populate="no"/>
 </part>
 <part name="P6" library="RemoteParts" deviceset="TRIMPOT" device="3386" value="10K">
 <attribute name="SPICEPREFIX" value="J"/>
+<variant name="Minimal" populate="no"/>
 </part>
 <part name="R4" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-270" value="270">
 <attribute name="SPICEPREFIX" value="R"/>
+<variant name="Minimal" populate="no"/>
 </part>
 <part name="R5" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1K" value="1K">
 <attribute name="SPICEPREFIX" value="R"/>
+<variant name="Minimal" populate="no"/>
 </part>
 <part name="R12" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1K" value="1K">
 <attribute name="SPICEPREFIX" value="R"/>
+<variant name="Minimal" populate="no"/>
 </part>
-<part name="R13" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-12K" value="12K"/>
-<part name="R14" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-30K" value="30K"/>
+<part name="R13" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-12K" value="12K">
+<variant name="Minimal" populate="no"/>
+</part>
+<part name="R14" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-30K" value="30K">
+<variant name="Minimal" populate="no"/>
+</part>
 <part name="GND2" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="B3" library="RemoteParts" deviceset="HEADER-0.1IN-2POS" device="-SCREW">
 <attribute name="PIN1" value="+"/>
 <attribute name="PIN2" value="-"/>
 </part>
-<part name="J11" library="RemoteParts" deviceset="USB" device="-MICROA-AMPHENOL-10118192-0001LF"/>
+<part name="J11" library="RemoteParts" deviceset="USB" device="-MICROA-AMPHENOL-10118192-0001LF">
+<variant name="Minimal" populate="no"/>
+</part>
 <part name="V3" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V5" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="U$1" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-M2.5-GROUNDED"/>
@@ -4396,25 +4427,45 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="U$7" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-M2.5-GROUNDED"/>
 <part name="R15" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-270" value="270">
 <attribute name="SPICEPREFIX" value="R"/>
+<variant name="Minimal" populate="no"/>
 </part>
-<part name="J1" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-FRYSKY"/>
+<part name="J1" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-FRYSKY">
+<variant name="Minimal" populate="no"/>
+</part>
 <part name="J2" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-FRYSKY">
 <attribute name="SPICEPREFIX" value="E"/>
+<variant name="Minimal" populate="no"/>
 </part>
 <part name="J8" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-2X-SERVO"/>
 <part name="J9" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-2X-SERVO"/>
-<part name="JP1" library="RemoteParts" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK"/>
-<part name="JP3" library="RemoteParts" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK"/>
-<part name="JP4" library="RemoteParts" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK"/>
-<part name="JP5" library="RemoteParts" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK"/>
+<part name="JP1" library="RemoteParts" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK">
+<variant name="FullAwesome" populate="no"/>
+</part>
+<part name="JP3" library="RemoteParts" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK">
+<variant name="FullAwesome" populate="no"/>
+</part>
+<part name="JP4" library="RemoteParts" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK">
+<variant name="FullAwesome" populate="no"/>
+</part>
+<part name="JP5" library="RemoteParts" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK">
+<variant name="FullAwesome" populate="no"/>
+</part>
 <part name="C17" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
 <part name="GND11" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND4" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="U5" library="quadparts_prebuilt" deviceset="TPS73633-DBVT" device="3V3" value="3.3V"/>
-<part name="P1" library="RemoteParts" deviceset="TEST-POINT" device=""/>
-<part name="P2" library="RemoteParts" deviceset="TEST-POINT" device=""/>
-<part name="P3" library="RemoteParts" deviceset="TEST-POINT" device=""/>
-<part name="P4" library="RemoteParts" deviceset="TEST-POINT" device=""/>
+<part name="P1" library="RemoteParts" deviceset="TEST-POINT" device="">
+<variant name="Minimal" populate="no"/>
+</part>
+<part name="P2" library="RemoteParts" deviceset="TEST-POINT" device="">
+<variant name="Minimal" populate="no"/>
+</part>
+<part name="P3" library="RemoteParts" deviceset="TEST-POINT" device="">
+<variant name="Minimal" populate="no"/>
+</part>
+<part name="P4" library="RemoteParts" deviceset="TEST-POINT" device="">
+<variant name="Minimal" populate="no"/>
+</part>
 <part name="A1" library="RemoteParts" deviceset="ANTENNA_PCB" device="NRF8001_1.6MM" value="2.4GHz"/>
 <part name="B4" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5"/>
 <part name="B6" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5"/>
@@ -4423,11 +4474,17 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="B10" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5"/>
 <part name="JP7" library="RemoteParts" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_NO-SILK"/>
 <part name="E1" library="RemoteParts" deviceset="ROTARY-ENCODER-W/BUTTON" device="-BOURNS-PEC12R-4217F"/>
-<part name="J5" library="RemoteParts" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK"/>
+<part name="J5" library="RemoteParts" deviceset="JUMPER-SMT_2_NC_PASTE" device="_NO-SILK">
+<variant name="FullAwesome" populate="no"/>
+</part>
 <part name="JP6" library="RemoteParts" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_NO-SILK"/>
 <part name="JP8" library="RemoteParts" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_NO-SILK"/>
-<part name="R16" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1K" value="1K"/>
-<part name="R17" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1K" value="1K"/>
+<part name="R16" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1K" value="1K">
+<variant name="Minimal" populate="no"/>
+</part>
+<part name="R17" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1K" value="1K">
+<variant name="Minimal" populate="no"/>
+</part>
 <part name="JP9" library="RemoteParts" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK"/>
 <part name="JP10" library="RemoteParts" deviceset="JUMPER-SMT_3_0-NC_PASTE" device=""/>
 <part name="JP11" library="RemoteParts" deviceset="JUMPER-SMT_3_0-NC_PASTE" device=""/>
@@ -4438,11 +4495,15 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="JP16" library="RemoteParts" deviceset="JUMPER-SMT_3_0-NC_PASTE" device=""/>
 <part name="JP17" library="RemoteParts" deviceset="JUMPER-SMT_3_0-NC_PASTE" device=""/>
 <part name="D1" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED"/>
-<part name="D2" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED"/>
+<part name="D2" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED">
+<variant name="Minimal" populate="no"/>
+</part>
 <part name="D3" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED"/>
 <part name="D5" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED"/>
 <part name="GND5" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
+<part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510">
+<variant name="Minimal" populate="no"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -4496,7 +4557,7 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <wire x1="72.39" y1="135.89" x2="72.39" y2="96.52" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="96.52" x2="3.81" y2="95.25" width="0.1524" layer="97" style="longdash"/>
 <text x="6.35" y="97.79" size="3.81" layer="97">150mA 3.3V Regulator *</text>
-<text x="87.63" y="269.24" size="1.778" layer="91">show  C11 C12 C13 R6 R7 D7 D5 U2 S2 S1 J1 J2 L1 P6 R15 R4 R5 R12 J11 J3 U3 P1 P2 P3 P4 B7 B2 B1 D8 R8 R9 D6 R13 r14 R16 R17</text>
+<text x="87.63" y="269.24" size="1.778" layer="91">show B1 B2 C11 C12 C13 J1 J11 J2 L1 P1 P2 P3 P4 P6 R12 R13 R15 R16 R17 R4 R5 S1 S2 U2 U3 d2 r14 r2</text>
 <text x="7.62" y="132.08" size="1.778" layer="97">C10 is the input cap (shared with lipo charger)</text>
 <text x="248.92" y="251.46" size="1.27" layer="91">Try a 1uF cap, so we don't need 0.1uF caps</text>
 </plain>
