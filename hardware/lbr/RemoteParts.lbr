@@ -2811,7 +2811,9 @@ Created: 10/25/2014</description>
 <connect gate="G$1" pin="V" pad="V"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+                  <attribute name="MOUNTING" value="TH"/>
+
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="A100106-ND"/>
 </technology>
@@ -2825,7 +2827,9 @@ Created: 10/25/2014</description>
 <connect gate="G$1" pin="V" pad="V"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+                  <attribute name="MOUNTING" value="TH"/>
+
 <attribute name="CREATOR" value="Swanson" constant="no"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="609-3327-ND"/>
@@ -2846,7 +2850,9 @@ Created: 10/25/2014</description>
 <connect gate="G$1" pin="VDD" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+                  <attribute name="MOUNTING" value="TH"/>
+
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="A100097-ND"/>
 </technology>
@@ -2866,7 +2872,9 @@ Created: 10/25/2014</description>
 <connect gate="G$1" pin="ON" pad="A1 A2"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+                  <attribute name="MOUNTING" value="TH"/>
+
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="563-1565-ND"/>
@@ -2880,7 +2888,9 @@ Created: 10/25/2014</description>
 <connect gate="G$1" pin="ON" pad="B"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+                  <attribute name="MOUNTING" value="SMD"/>
+
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="401-1999-1-ND"/>
@@ -2894,7 +2904,9 @@ Created: 10/25/2014</description>
 <connect gate="G$1" pin="ON" pad="1"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+                  <attribute name="MOUNTING" value="SMD"/>
+
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="CKN10721CT-ND"/>
@@ -2914,7 +2926,9 @@ Created: 10/25/2014</description>
 <connect gate="G$1" pin="B" pad="B"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+                  <attribute name="MOUNTING" value="NONE"/>
+
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="NA"/>
 <attribute name="DISTPN" value="NA"/>
@@ -2937,7 +2951,9 @@ Created: 10/25/2014</description>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+                  <attribute name="MOUNTING" value="TH"/>
+
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="Adafruit"/>
 <attribute name="DISTPN" value="356"/>
@@ -2952,7 +2968,9 @@ Created: 10/25/2014</description>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+                  <attribute name="MOUNTING" value="SMD"/>
+
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="3314R-1-103ETR-ND "/>
@@ -2975,6 +2993,7 @@ Created: 10/25/2014</description>
 </connects>
 <technologies>
 <technology name="">
+                  <attribute name="MOUNTING" value="TH"/>
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="Sparkfun"/>
 <attribute name="DISTPN" value="9915"/>
@@ -2997,7 +3016,9 @@ Created: 10/25/2014</description>
 <connect gate="A" pin="5-GND" pad="5 6 7 8 9 10 11"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+    <attribute name="MOUNTING" value="SMD"/>
+
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="609-4613-1-ND "/>
@@ -3005,7 +3026,8 @@ Created: 10/25/2014</description>
 </technologies>
 </device>
 <device name="-MINIB-EDAC-690-005-299-043" package="USB-MINIB-EDAC-690-005-299-043">
-<connects>
+  <connects>
+    
 <connect gate="A" pin="1-VCC" pad="1"/>
 <connect gate="A" pin="2-D-" pad="2"/>
 <connect gate="A" pin="3-D+" pad="3"/>
@@ -3013,7 +3035,8 @@ Created: 10/25/2014</description>
 <connect gate="A" pin="5-GND" pad="5 P6 P7 P8 P9"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+        <attribute name="MOUNTING" value="SMD"/>
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="151-1206-1-ND "/>
@@ -3046,7 +3069,8 @@ Created: 10/25/2014</description>
 <connect gate="G$1" pin="VSS" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+        <attribute name="MOUNTING" value="SMD"/>
 <attribute name="CREATOR" value="Adafruit"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="MCP73831T-2ACI/OTCT-ND"/>
@@ -3092,7 +3116,8 @@ FT232RL 4&lt;sup&gt;th&lt;/sup&gt; Generation USB UART (USB &amp;lt;-&amp;gt; Se
 <connect gate="G$1" pin="VCCIO" pad="4"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+        <attribute name="MOUNTING" value="SMD"/>
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="768-1007-1-ND "/>
@@ -3113,7 +3138,9 @@ FT232RL 4&lt;sup&gt;th&lt;/sup&gt; Generation USB UART (USB &amp;lt;-&amp;gt; Se
 <connect gate="G$1" pin="C" pad="1"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+            <attribute name="MOUNTING" value="SMD"/>
+
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="160-1179-1-ND"/>
@@ -3130,7 +3157,9 @@ FT232RL 4&lt;sup&gt;th&lt;/sup&gt; Generation USB UART (USB &amp;lt;-&amp;gt; Se
 <connect gate="G$1" pin="C" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+            <attribute name="MOUNTING" value="SMD"/>
+
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="160-1176-1-ND"/>
@@ -3144,7 +3173,9 @@ FT232RL 4&lt;sup&gt;th&lt;/sup&gt; Generation USB UART (USB &amp;lt;-&amp;gt; Se
 <connect gate="G$1" pin="C" pad="1"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+            <attribute name="MOUNTING" value="SMD"/>
+
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="160-1175-1-ND"/>
@@ -3158,7 +3189,9 @@ FT232RL 4&lt;sup&gt;th&lt;/sup&gt; Generation USB UART (USB &amp;lt;-&amp;gt; Se
 <connect gate="G$1" pin="C" pad="1"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+            <attribute name="MOUNTING" value="SMD"/>
+
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="160-1177-1-ND"/>
@@ -3194,7 +3227,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="6" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+  <technology name="">
+  </technology>
 </technologies>
 </device>
 <device name="SMD" package="1X06-SMD">
@@ -3233,7 +3267,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="6" pad="6"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+                <attribute name="MOUNTING" value="TH"/>
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="609-3327-ND"/>
@@ -3279,7 +3314,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="VCC" pad="28"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+                <attribute name="MOUNTING" value="SMD"/>
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="PI5C3390QEXDICT-ND"/>
@@ -3316,7 +3352,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <package3dinstance package3d_urn="urn:adsk.eagle:package:3027343/1"/>
 </package3dinstances>
 <technologies>
-<technology name="">
+  <technology name="">
+                <attribute name="MOUNTING" value="SMD"/>
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="568-5300-1-ND"/>
@@ -3337,7 +3374,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="S" pad="S"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+                    <attribute name="MOUNTING" value="SMD"/>
+
 <attribute name="CREATOR" value="Michael M. Gonzalez"/>
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value=" SI2301CDS-T1-E3CT-ND"/>
@@ -3356,7 +3395,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <devices>
 <device name="-STENCIL" package="FIDUCIAL_STENCIL">
 <technologies>
-<technology name="">
+  <technology name="">
+                    <attribute name="MOUNTING" value="NONE"/>
+
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="NA"/>
 <attribute name="DISTPN" value="NA"/>
@@ -3394,7 +3435,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="VSS" pad="VSS VSS1"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+                    <attribute name="MOUNTING" value="TH"/>
+
 <attribute name="AUX1DIST" value="DIGIKEY"/>
 <attribute name="AUX1DISTPN" value="609-3268-ND"/>
 <attribute name="AUX2DIST" value="DIGIKEY"/>
@@ -3421,7 +3464,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="Y" pad="BUTB"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+                    <attribute name="MOUNTING" value="TH"/>
+
 <attribute name="DIST" value="Adafruit"/>
 <attribute name="DISTPN" value="377"/>
 </technology>
@@ -3436,7 +3481,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="Y" pad="BUTA"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+                    <attribute name="MOUNTING" value="TH"/>
+
 <attribute name="AUX1DIST" value="DIGIKEY"/>
 <attribute name="AUX1DISTPN" value="1722-1241-ND"/>
 <attribute name="CREATOR" value="Swanson"/>
@@ -3456,7 +3503,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="Y" pad="BUTA"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+                        <attribute name="MOUNTING" value="TH"/>
 <attribute name="AUX1DIST" value="DIGIKEY"/>
 <attribute name="AUX1DISTPN" value="1722-1241-ND"/>
 <attribute name="CREATOR" value="Swanson"/>
@@ -3481,7 +3529,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+                        <attribute name="MOUNTING" value="TH"/>
 <attribute name="CASE" value="" constant="no"/>
 <attribute name="DESC" value="" constant="no"/>
 <attribute name="DIST" value="Digikey"/>
@@ -3502,7 +3551,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+                        <attribute name="MOUNTING" value="TH"/>
 <attribute name="DIST" value="digikey"/>
 <attribute name="DISTPN" value="ED10561-ND"/>
 <attribute name="PIN1" value="1" constant="no"/>
@@ -3516,7 +3566,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+                        <attribute name="MOUNTING" value="TH"/>
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="3M9447-ND"/>
 </technology>
@@ -3534,7 +3585,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="P$1" pad="P$1 P$2 P$3 P$4 P$6 P$7 P$8 P$9"/>
 </connects>
 <technologies>
-<technology name=""/>
+  <technology name="">
+    <attribute name="MOUNTING" value="NONE"/>
+  </technology>
 </technologies>
 </device>
 </devices>
@@ -3557,7 +3610,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+  <technology name="">
+    <attribute name="MOUNTING" value="NONE"/>
+  </technology>
 </technologies>
 </device>
 <device name="_NO-SILK_ROUND" package="SMT-JUMPER_2_NO_NO-SILK_ROUND">
@@ -3566,7 +3621,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+  <technology name="">
+    <attribute name="MOUNTING" value="NONE"/>
+  </technology>
 </technologies>
 </device>
 <device name="_SILK" package="SMT-JUMPER_2_NO_SILK">
@@ -3575,7 +3632,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+  <technology name="">
+    <attribute name="MOUNTING" value="NONE"/>
+  </technology>
 </technologies>
 </device>
 <device name="_SILK_ROUND" package="SMT-JUMPER_2_NO_SILK_ROUND">
@@ -3584,7 +3643,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+  <technology name="">
+    <attribute name="MOUNTING" value="NONE"/>
+  </technology>
 </technologies>
 </device>
 </devices>
@@ -3602,7 +3663,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+  <technology name="">
+    <attribute name="MOUNTING" value="NONE"/>
+  </technology>
 </technologies>
 </device>
 <device name="_SILK" package="SMT-JUMPER_2_NC_PASTE_SILK">
@@ -3611,7 +3674,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+  <technology name="">
+    <attribute name="MOUNTING" value="NONE"/>
+  </technology>
 </technologies>
 </device>
 </devices>
@@ -3630,7 +3695,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+  <technology name="">
+    <attribute name="MOUNTING" value="NONE"/>
+  </technology>
 </technologies>
 </device>
 <device name="_NO-SILK" package="SMT-JUMPER_3_2-NC_PASTE_NO-SILK">
@@ -3640,7 +3707,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+  <technology name="">
+    <attribute name="MOUNTING" value="NONE"/>
+  </technology>
 </technologies>
 </device>
 </devices>
@@ -3659,7 +3728,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+  <technology name="">
+    <attribute name="MOUNTING" value="NONE"/>
+  </technology>
 </technologies>
 </device>
 <device name="_SILK" package="SMT-JUMPER_3_1-NC_PASTE_SILK">
@@ -3669,7 +3740,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+  <technology name="">
+    <attribute name="MOUNTING" value="NONE"/>
+  </technology>
 </technologies>
 </device>
 </devices>
@@ -3685,6 +3758,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </connects>
 <technologies>
 <technology name="">
+    <attribute name="MOUNTING" value="TH"/>
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="36-5001-ND "/>
@@ -3714,7 +3788,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="P$1" pad="FEED"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+        <attribute name="MOUNTING" value="NONE"/>
 <attribute name="VALUE" value="2.4GHz"/>
 </technology>
 </technologies>
@@ -3745,6 +3820,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </connects>
 <technologies>
 <technology name="">
+        <attribute name="MOUNTING" value="TH"/>
 <attribute name="AUX1DIST" value="Digikey"/>
 <attribute name="AUX1DISTPN" value="EG1091-ND"/>
 <attribute name="CREATOR" value="Swanson"/>
@@ -3785,7 +3861,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="C2" pad="C2"/>
 </connects>
 <technologies>
-<technology name="">
+  <technology name="">
+            <attribute name="MOUNTING" value="SMD"/>
 <attribute name="COLOR1" value="RED"/>
 <attribute name="COLOR2" value="GREEN"/>
 <attribute name="CREATOR" value="Swanson"/>
