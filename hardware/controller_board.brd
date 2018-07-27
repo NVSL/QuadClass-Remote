@@ -3,10 +3,10 @@
 <eagle version="9.0.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="yes"/>
+<setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.01" unitdist="mm" unit="mil" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.01" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1637,7 +1637,7 @@ https://hobbyking.com/en_us/frsky-replacement-gimbal-for-taranis-transmitter.htm
 </attributes>
 <variantdefs>
 <variantdef name="Minimal"/>
-<variantdef name="FullAwesome" current="yes"/>
+<variantdef name="FullAwesome"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -1841,6 +1841,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="22.625" y="18.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DISTPN" value="732-2230-6-ND" x="22.625" y="18.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="Wurth Electronics Inc" x="22.625" y="18.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="22.625" y="18.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="748421245" x="22.625" y="18.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="24.8" y="18.475" size="0.7" layer="25" font="vector" rot="R180" align="center"/>
 <attribute name="PRICE" value="2.63" x="22.625" y="18.5" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1851,6 +1852,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="19" y="18.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="490-5534-1-ND" x="19" y="18.5" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Murata Electronics North America" x="19" y="18.5" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="19" y="18.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="GRM21A5C2E220JW01D" x="19" y="18.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="18.6" y="19.5" size="0.7" layer="25" font="vector"/>
 <attribute name="REVIEWER" value="Swanson" x="19" y="18.5" size="1.778" layer="27" display="off"/>
@@ -1861,6 +1863,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="36.125" y="13.05" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="490-5531-1-ND" x="36.125" y="13.05" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Murata Electronics North America" x="36.125" y="13.05" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="36.125" y="13.05" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="GRM21A5C2E120JW01D" x="36.125" y="13.05" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="36.85" y="15.525" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="36.125" y="13.05" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1871,6 +1874,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="36.125" y="7.45" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="490-5531-1-ND" x="36.125" y="7.45" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Murata Electronics North America" x="36.125" y="7.45" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="36.125" y="7.45" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="GRM21A5C2E120JW01D" x="36.125" y="7.45" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="36.85" y="10.025" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="36.125" y="7.45" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1881,6 +1885,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="14" y="12" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="587-1281-1-ND" x="14" y="12" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Taiyo Yuden" x="14" y="12" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="14" y="12" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="TMK212B7105KG-T" x="14" y="12" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="12.2" y="12.2" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="14" y="12" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1891,6 +1896,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="30.25" y="15.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="587-1281-1-ND" x="30.25" y="15.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Taiyo Yuden" x="30.25" y="15.75" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="30.25" y="15.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="TMK212B7105KG-T" x="30.25" y="15.75" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="32.85" y="16.05" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="30.25" y="15.75" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1901,6 +1907,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="21.5" y="21.25" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="490-3585-1-ND" x="21.5" y="21.25" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Murata Electronics North America" x="21.5" y="21.25" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="21.5" y="21.25" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="GQM2195C2AR75CB01D" x="21.5" y="21.25" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="23.3" y="20.95" size="0.7" layer="25" font="vector"/>
 <attribute name="REVIEWER" value="Swanson" x="21.5" y="21.25" size="1.778" layer="27" display="off"/>
@@ -1911,6 +1918,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="14" y="9.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="587-1281-1-ND" x="14" y="9.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Taiyo Yuden" x="14" y="9.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="14" y="9.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="TMK212B7105KG-T" x="14" y="9.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="12.2" y="9.7" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="14" y="9.5" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1921,6 +1929,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="31.5" y="5.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="587-1281-1-ND" x="31.5" y="5.5" size="1.778" layer="27" display="off"/>
 <attribute name="MFR" value="Taiyo Yuden" x="31.5" y="5.5" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="31.5" y="5.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="TMK212B7105KG-T" x="31.5" y="5.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="28.7" y="5.1" size="0.7" layer="25" font="vector"/>
 <attribute name="REVIEWER" value="Swanson" x="31.5" y="5.5" size="1.778" layer="27" display="off"/>
@@ -1931,6 +1940,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="-24.2" y="26.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DISTPN" value="445-1418-1-ND" x="-24.2" y="26.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="TDK" x="-24.2" y="26.05" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-24.2" y="26.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="C2012X7R2A104K125AA" x="-24.2" y="26.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-23.75" y="28.6" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="-24.2" y="26.05" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1942,6 +1952,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="8.35" y="-3.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="609-3234-ND" x="8.35" y="-3.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MFR" value="Amphenol FCI" x="8.35" y="-3.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="TH" x="8.35" y="-3.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="67997-206HLF" x="8.35" y="-3.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="12.76" y="0.025" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="PRICE" value="0.31" x="8.35" y="-3.2" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1950,6 +1961,7 @@ design rules under a new name.</description>
 <element name="R1" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="29.25" y="-18.6125" smashed="yes" rot="R90">
 <attribute name="DIST" value="DIGIKEY" x="29.25" y="-18.6125" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="311-510ARCT-ND" x="29.25" y="-18.6125" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="29.25" y="-18.6125" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="29.6375" y="-16.0125" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="31.075" y="-19.5125" size="0.7" layer="27" font="vector" rot="R90"/>
 </element>
@@ -1958,6 +1970,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="-21.3" y="26.075" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="311-10KARCT-ND" x="-21.3" y="26.075" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Yageo" x="-21.3" y="26.075" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-21.3" y="26.075" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="RC0805JR-0710KL" x="-21.3" y="26.075" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-20.675" y="28.55" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="-21.3" y="26.075" size="1.778" layer="27" rot="R90" display="off"/>
@@ -1967,18 +1980,21 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="-2.65" y="-28.925" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-2.65" y="-28.925" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="EG5350CT-ND" x="-2.65" y="-28.925" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-2.65" y="-28.925" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="-6.9" y="-29.35" size="0.7" layer="25" font="vector"/>
 </element>
 <element name="B1" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="-2.65" y="-19.925" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-2.65" y="-19.925" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-2.65" y="-19.925" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="EG5350CT-ND" x="-2.65" y="-19.925" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-2.65" y="-19.925" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="-6.8" y="-20.175" size="0.7" layer="25" font="vector"/>
 </element>
 <element name="B7" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="-16" y="26.3" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="-16" y="26.3" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-16" y="26.3" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="EG5350CT-ND" x="-16" y="26.3" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-16" y="26.3" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-16.4" y="29.54" size="0.7" layer="25" font="vector"/>
 </element>
 <element name="U1" library="quadparts_prebuilt" package="QFN-64" value="ATMEGA128RFA1" x="22.67" y="10.32" smashed="yes" rot="R270">
@@ -1987,6 +2003,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="22.67" y="10.32" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DISTPN" value="ATMEGA128RFA1-ZU-ND " x="22.67" y="10.32" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="Atmel" x="22.67" y="10.32" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="22.67" y="10.32" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="ATMEGA128RFA1-ZUR00" x="22.67" y="10.32" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="28.514" y="17.1622" size="0.7" layer="25" font="vector" align="center"/>
 <attribute name="PRICE" value="10.21" x="22.67" y="10.32" size="1.778" layer="27" rot="R270" display="off"/>
@@ -1996,41 +2013,49 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="14.5" y="17.5" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="NA" x="14.5" y="17.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="14.5" y="17.5" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="14.5" y="17.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="V11" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="26.625" y="17.5">
 <attribute name="CREATOR" value="Swanson" x="26.625" y="17.5" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="NA" x="26.625" y="17.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="26.625" y="17.5" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="26.625" y="17.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="V12" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="26.625" y="19.5">
 <attribute name="CREATOR" value="Swanson" x="26.625" y="19.5" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="NA" x="26.625" y="19.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="26.625" y="19.5" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="26.625" y="19.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="V13" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="24.625" y="19.5">
 <attribute name="CREATOR" value="Swanson" x="24.625" y="19.5" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="NA" x="24.625" y="19.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="24.625" y="19.5" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="24.625" y="19.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="V14" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="24.625" y="17.5">
 <attribute name="CREATOR" value="Swanson" x="24.625" y="17.5" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="NA" x="24.625" y="17.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="24.625" y="17.5" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="24.625" y="17.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="V15" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="16.5" y="21.5">
 <attribute name="CREATOR" value="Swanson" x="16.5" y="21.5" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="NA" x="16.5" y="21.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="16.5" y="21.5" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="16.5" y="21.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="V16" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="14.5" y="21.5">
 <attribute name="CREATOR" value="Swanson" x="14.5" y="21.5" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="NA" x="14.5" y="21.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="14.5" y="21.5" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="14.5" y="21.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="V9" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="16.5" y="17.5">
 <attribute name="CREATOR" value="Swanson" x="16.5" y="17.5" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="NA" x="16.5" y="17.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="16.5" y="17.5" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="16.5" y="17.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="Y1" library="quadparts_prebuilt" package="CRYSTAL-SMD-5X3" value="CRYSTAL5X3" x="32.42" y="10.37" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="32.42" y="10.37" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2038,6 +2063,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="32.42" y="10.37" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="535-9122-1-ND" x="32.42" y="10.37" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Abracon LLC" x="32.42" y="10.37" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="32.42" y="10.37" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="ABM3B-16.000MHZ-B2-T" x="32.42" y="10.37" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="29.89" y="8.6675" size="0.7" layer="25" font="vector" rot="R90" align="center"/>
 <attribute name="PRICE" value="0.68" x="32.42" y="10.37" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2050,12 +2076,14 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="-49.2" y="10.2" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-49.2" y="10.2" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="401-1999-1-ND" x="-49.2" y="10.2" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-34.2" y="-31.8" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-34.9" y="-28.3" size="0.7" layer="25" font="vector" rot="R180"/>
 </element>
 <element name="U3" library="RemoteParts" package="SSOP28DB" value="FT232RLSSOP" x="5.05" y="6.525" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="-17.95" y="-43.475" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-17.95" y="-43.475" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="768-1007-1-ND " x="-17.95" y="-43.475" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="5.05" y="6.525" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="8.985" y="1.13" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="5.495" y="2.915" size="0.7" layer="27" font="vector" rot="R90"/>
 </element>
@@ -2064,6 +2092,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="12.05" y="35.525" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DISTPN" value="445-1418-1-ND" x="12.05" y="35.525" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="TDK" x="12.05" y="35.525" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-0.95" y="6.525" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="C2012X7R2A104K125AA" x="12.05" y="35.525" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-0.2" y="4.625" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="12.05" y="35.525" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2074,6 +2103,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="-8.95" y="-44.775" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="445-14387-1-ND" x="-8.95" y="-44.775" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="-8.95" y="-44.775" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-0.95" y="10.225" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="C2012X5R1E106K085AC" x="-8.95" y="-44.775" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-0.2" y="12.725" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="-8.95" y="-44.775" size="1.778" layer="27" rot="R90" display="off"/>
@@ -2084,6 +2114,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="14.05" y="39.525" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DISTPN" value="445-1418-1-ND" x="14.05" y="39.525" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="TDK" x="14.05" y="39.525" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="11.05" y="3.525" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="C2012X7R2A104K125AA" x="14.05" y="39.525" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="10.3375" y="5.5875" size="0.7" layer="25" font="vector"/>
 <attribute name="REVIEWER" value="Swanson" x="14.05" y="39.525" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2093,11 +2124,13 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Adafruit" x="-2.65" y="-10.35" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-2.65" y="-10.35" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="MCP73831T-2ACI/OTCT-ND" x="-2.65" y="-10.35" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-23.65" y="8.65" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-24.878" y="9.075" size="0.7" layer="25" font="vector" rot="R180"/>
 </element>
 <element name="R8" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="-39.35" y="26.7" smashed="yes">
 <attribute name="DIST" value="DIGIKEY" x="-60.35" y="6.7" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="311-510ARCT-ND" x="-60.35" y="6.7" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-39.35" y="26.7" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-39.85" y="27.7" size="0.7" layer="25" font="vector"/>
 <attribute name="VALUE" x="-41.925" y="27.55" size="0.7" layer="27" font="vector" rot="R270"/>
 </element>
@@ -2106,6 +2139,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="-65.15" y="57.95" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DISTPN" value="445-14387-1-ND" x="-65.15" y="57.95" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="-65.15" y="57.95" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-27.15" y="8.95" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="C2012X5R1E106K085AC" x="-65.15" y="57.95" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-27.725" y="10.775" size="0.7" layer="25" font="vector"/>
 <attribute name="REVIEWER" value="Swanson" x="-65.15" y="57.95" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2116,6 +2150,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="-72.15" y="51.95" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DISTPN" value="445-14387-1-ND" x="-72.15" y="51.95" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="TDK Corporation" x="-72.15" y="51.95" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-20.15" y="8.95" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="C2012X5R1E106K085AC" x="-72.15" y="51.95" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-20.65" y="10.75" size="0.7" layer="25" font="vector"/>
 <attribute name="REVIEWER" value="Swanson" x="-72.15" y="51.95" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2124,12 +2159,14 @@ design rules under a new name.</description>
 <element name="R10" library="quadparts_prebuilt" package="RESC2012X60_HS" value="2.2K" x="-23.65" y="4.8" smashed="yes" rot="R270">
 <attribute name="DIST" value="DIGIKEY" x="-80.65" y="65.8" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DISTPN" value="YAG3776CT-ND " x="-80.65" y="65.8" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-23.65" y="4.8" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-24.425" y="2.275" size="0.7" layer="25" font="vector"/>
 <attribute name="VALUE" x="-25.375" y="5.925" size="0.7" layer="27" font="vector" rot="R270"/>
 </element>
 <element name="R11" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="-40.575" y="-21.2125" smashed="yes" rot="R90">
 <attribute name="DIST" value="DIGIKEY" x="21.425" y="-88.2125" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="311-510ARCT-ND" x="21.425" y="-88.2125" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-40.575" y="-21.2125" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-39.675" y="-18.6625" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" value="510" x="-41.775" y="-22.1625" size="0.7" layer="27" font="vector" rot="R90"/>
 </element>
@@ -2137,36 +2174,43 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="18.35" y="95.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="18.35" y="95.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="18.35" y="95.65" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-28.65" y="10.65" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V2" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-28.65" y="14.65" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="26.35" y="107.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="26.35" y="107.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="26.35" y="107.65" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-28.65" y="14.65" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V6" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-18.65" y="14.65" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="8.35" y="112.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="8.35" y="112.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="8.35" y="112.65" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-18.65" y="14.65" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V4" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-18.65" y="3.9" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-7.65" y="117.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="-7.65" y="117.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="-7.65" y="117.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-18.65" y="3.9" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V7" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-28.15" y="3.9" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="6.85" y="125.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="6.85" y="125.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="6.85" y="125.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-28.15" y="3.9" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V8" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-28.15" y="5.9" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="14.85" y="135.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="14.85" y="135.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="14.85" y="135.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-28.15" y="5.9" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U2" library="RemoteParts" package="SOP65P640X110-16" package3d_urn="urn:adsk.eagle:package:3027343/1" value="DPDT-X2" x="-2.875" y="-3.775" smashed="yes">
 <attribute name="CREATOR" value="Swanson" x="-24.875" y="-148.775" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-24.875" y="-148.775" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="568-5300-1-ND" x="-24.875" y="-148.775" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-2.875" y="-3.775" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-5.8" y="-0.5076" size="0.7" layer="25" font="vector" align="bottom-center"/>
 <attribute name="VALUE" x="-3.4476" y="-3.4" size="0.7" layer="27" font="vector" rot="R90" align="top-center"/>
 </element>
@@ -2174,12 +2218,14 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="-2.375" y="23.1" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-2.375" y="23.1" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="DISTPN" value="609-3327-ND" x="-2.375" y="23.1" size="1.778" layer="28" rot="MR0" display="off"/>
+<attribute name="MOUNTING" value="TH" x="-2.375" y="23.1" size="1.778" layer="28" rot="MR0" display="off"/>
 <attribute name="NAME" x="-8.3188" y="20.8988" size="0.7" layer="26" font="vector" rot="MR0"/>
 </element>
 <element name="S2" library="RemoteParts" package="JS102011SAQN" value="POWER-SWITCH-MFS201N-9-ZJS102011SAQN" x="-2.525" y="29.45" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="45.475" y="235.45" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="45.475" y="235.45" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="401-1999-1-ND" x="45.475" y="235.45" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-2.525" y="29.45" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="-8.225" y="30.45" size="0.7" layer="25" font="vector"/>
 </element>
 <element name="D9" library="quadparts_prebuilt" package="SOD3716X135_HS" value="360mV" x="-22.1" y="14.05" smashed="yes" rot="R270">
@@ -2187,6 +2233,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="-193.1" y="36.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DISTPN" value="CRS08QMCT-ND" x="-193.1" y="36.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="Toshiba Semiconductor and Storage" x="-193.1" y="36.05" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-22.1" y="14.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="CRS08(TE85L,Q,M)" x="-193.1" y="36.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-19.675" y="14.5" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="-193.1" y="36.05" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2196,6 +2243,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="-200.2" y="46.1" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DISTPN" value="CRS08QMCT-ND" x="-200.2" y="46.1" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="Toshiba Semiconductor and Storage" x="-200.2" y="46.1" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-25.2" y="14.1" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="CRS08(TE85L,Q,M)" x="-200.2" y="46.1" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-26.55" y="14.4" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="-200.2" y="46.1" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2204,121 +2252,145 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="-24.65" y="10.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="-24.65" y="10.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="-24.65" y="10.65" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-24.65" y="10.65" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V24" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-24.65" y="14.65" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-24.65" y="14.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="-24.65" y="14.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="-24.65" y="14.65" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-24.65" y="14.65" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V25" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-26.65" y="10.75" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-26.65" y="10.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="-26.65" y="10.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="-26.65" y="10.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-26.65" y="10.75" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V26" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-26.65" y="12.65" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-26.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="-26.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="-26.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-26.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V27" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-28.65" y="12.65" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-28.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="-28.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="-28.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-28.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V28" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-26.65" y="14.65" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-26.65" y="14.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="-26.65" y="14.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="-26.65" y="14.65" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-26.65" y="14.65" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V30" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-18.65" y="12.65" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-18.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="-18.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="-18.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-18.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V31" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-20.65" y="12.65" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-20.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="-20.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="-20.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-20.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V32" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-16.65" y="12.65" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-16.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="-16.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="-16.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-16.65" y="12.65" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V33" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-22.65" y="14.65" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-22.65" y="14.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="-22.65" y="14.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="-22.65" y="14.65" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-22.65" y="14.65" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V34" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-20.65" y="14.65" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-20.65" y="14.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="-20.65" y="14.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="-20.65" y="14.65" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-20.65" y="14.65" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V36" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-22.65" y="10.65" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-22.65" y="10.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="-22.65" y="10.65" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="-22.65" y="10.65" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-22.65" y="10.65" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V35" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-20.65" y="5.9" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-20.65" y="5.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="-20.65" y="5.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="-20.65" y="5.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-20.65" y="5.9" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V37" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-26.15" y="5.9" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-26.15" y="5.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="-26.15" y="5.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="-26.15" y="5.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-26.15" y="5.9" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V38" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-26.15" y="3.9" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-26.15" y="3.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="NA" x="-26.15" y="3.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="NA" x="-26.15" y="3.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-26.15" y="3.9" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="V17" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="24.625" y="21.5">
 <attribute name="CREATOR" value="Swanson" x="24.625" y="21.5" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="NA" x="24.625" y="21.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="24.625" y="21.5" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="24.625" y="21.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="V18" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="14.5" y="19.5">
 <attribute name="CREATOR" value="Swanson" x="14.5" y="19.5" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="NA" x="14.5" y="19.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="14.5" y="19.5" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="14.5" y="19.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="V39" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="16.5" y="19.5">
 <attribute name="CREATOR" value="Swanson" x="16.5" y="19.5" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="NA" x="16.5" y="19.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="16.5" y="19.5" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="16.5" y="19.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="V40" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="18.5" y="21.5">
 <attribute name="CREATOR" value="Swanson" x="18.5" y="21.5" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="NA" x="18.5" y="21.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="18.5" y="21.5" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="18.5" y="21.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="V22" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="26.625" y="21.5">
 <attribute name="CREATOR" value="Swanson" x="26.625" y="21.5" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="NA" x="26.625" y="21.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="26.625" y="21.5" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="26.625" y="21.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="V19" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-20.65" y="3.9">
 <attribute name="CREATOR" value="Swanson" x="-20.65" y="3.9" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="NA" x="-20.65" y="3.9" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="-20.65" y="3.9" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-20.65" y="3.9" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F2" library="RemoteParts" package="FIDUCIAL_STENCIL" value="1mm" x="-39.975" y="29.025" smashed="yes">
 <attribute name="CREATOR" value="Swanson" x="-39.975" y="29.025" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="NA" x="-39.975" y="29.025" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="-39.975" y="29.025" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-39.975" y="29.025" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F3" library="RemoteParts" package="FIDUCIAL_STENCIL" value="1mm" x="-35.9" y="-21.3" smashed="yes">
 <attribute name="CREATOR" value="Swanson" x="-35.9" y="-21.3" size="1.778" layer="27" font="vector" display="off"/>
 <attribute name="DIST" value="NA" x="-35.9" y="-21.3" size="1.778" layer="27" font="vector" display="off"/>
 <attribute name="DISTPN" value="NA" x="-35.9" y="-21.3" size="1.778" layer="27" font="vector" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-35.9" y="-21.3" size="1.778" layer="27" display="off"/>
 </element>
 <element name="F4" library="RemoteParts" package="FIDUCIAL_STENCIL" value="1mm" x="37" y="-26.25" smashed="yes">
 <attribute name="CREATOR" value="Swanson" x="37" y="-26.25" size="1.778" layer="27" font="vector" display="off"/>
 <attribute name="DIST" value="NA" x="37" y="-26.25" size="1.778" layer="27" font="vector" display="off"/>
 <attribute name="DISTPN" value="NA" x="37" y="-26.25" size="1.778" layer="27" font="vector" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="37" y="-26.25" size="1.778" layer="27" display="off"/>
 </element>
 <element name="L1" library="RemoteParts" package="SPARKFUN_LCD_33_PARALLEL" value="SPARKFUN_LCD_33_SERIAL-RGB" x="0" y="2.625" locked="yes" smashed="yes">
 <attribute name="AUX1DIST" value="DIGIKEY" x="0" y="2.625" size="1.778" layer="27" display="off"/>
@@ -2328,6 +2400,7 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="0" y="2.625" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="SparkFun" x="0" y="2.625" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="LCD-10862" x="0" y="2.625" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="TH" x="0" y="2.625" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-32.413" y="19.797" size="1" layer="21" font="vector"/>
 <attribute name="SPICEPREFIX" value="X" x="0" y="2.625" size="1.778" layer="27" display="off"/>
 </element>
@@ -2337,14 +2410,16 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="36.875" y="-26" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="Adafruit" x="36.875" y="-26" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="356" x="36.875" y="-26" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="TH" x="36.875" y="-26" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="37.13" y="-31.71" size="0.7" layer="25" font="vector" rot="R180" align="center"/>
 <attribute name="SPICEPREFIX" value="J" x="36.875" y="-26" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="36.975" y="-26.905" size="0.7" layer="27" font="vector" rot="R90"/>
 <attribute name="VALUE" value="10K" x="36.875" y="-26" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="36.975" y="-26.905" size="0.7" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="R4" library="quadparts_prebuilt" package="RESC2012X60_HS" value="270" x="6.2" y="-9.05" smashed="yes" rot="R270">
 <attribute name="DIST" value="DIGIKEY" x="6.2" y="-9.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DISTPN" value="311-270ARCT-ND" x="6.2" y="-9.05" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="6.2" y="-9.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="5.675" y="-7.225" size="0.7" layer="25" font="vector"/>
 <attribute name="SPICEPREFIX" value="R" x="6.2" y="-9.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" value="270" x="5.475" y="-11.425" size="0.7" layer="27" font="vector"/>
@@ -2353,6 +2428,7 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="11.45" y="-9.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="11.45" y="-9.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DISTPN" value="311-1.0KARCT-ND" x="11.45" y="-9.05" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="11.45" y="-9.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="11.075" y="-7.275" size="0.7" layer="25" font="vector"/>
 <attribute name="SPICEPREFIX" value="R" x="11.45" y="-9.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" value="1K" x="11.05" y="-11.475" size="0.7" layer="27" font="vector"/>
@@ -2361,6 +2437,7 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="8.825" y="-9.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="8.825" y="-9.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DISTPN" value="311-1.0KARCT-ND" x="8.825" y="-9.05" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="8.825" y="-9.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="8.2" y="-7.275" size="0.7" layer="25" font="vector"/>
 <attribute name="SPICEPREFIX" value="R" x="8.825" y="-9.05" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" value="1K" x="8.35" y="-11.475" size="0.7" layer="27" font="vector"/>
@@ -2369,6 +2446,7 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="-8" y="13.1875" size="1.778" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-8" y="13.1875" size="1.778" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="DISTPN" value="YAG3692CT-ND" x="-8" y="13.1875" size="1.778" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-8" y="13.1875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="-9.95" y="13.6375" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" value="12K" x="-7.2" y="12.1125" size="0.7" layer="27" font="vector" rot="R180"/>
 </element>
@@ -2376,12 +2454,14 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="-7.9625" y="15.3875" size="1.778" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-7.9625" y="15.3875" size="1.778" layer="27" font="vector" rot="R180" display="off"/>
 <attribute name="DISTPN" value="YAG3721CT-ND" x="-7.9625" y="15.3875" size="1.778" layer="27" font="vector" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-7.9625" y="15.3875" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="-9.8625" y="15.6875" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="-7.2625" y="17.0875" size="0.7" layer="27" font="vector" rot="R180"/>
 </element>
 <element name="B3" library="RemoteParts" package="SCREW-TERMINAL-1X2-2.54MM" value="HEADER-0.1IN-2POS-SCREW" x="-14.5" y="9.225" smashed="yes" rot="R270">
 <attribute name="DIST" value="digikey" x="-14.5" y="9.225" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DISTPN" value="ED10561-ND" x="-14.5" y="9.225" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUNTING" value="TH" x="-14.5" y="9.225" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-14.625" y="5.81" size="0.7" layer="25" font="vector" align="center"/>
 <attribute name="PIN1" value="+" x="-10.595" y="10.495" size="1.778" layer="21" font="vector" align="center-left"/>
 <attribute name="PIN2" value="-" x="-10.595" y="7.955" size="1.778" layer="21" font="vector" align="center-left"/>
@@ -2390,25 +2470,37 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="-32.65" y="27.375" size="1" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-32.65" y="27.375" size="1" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="609-4613-1-ND " x="-32.65" y="27.375" size="1" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-32.65" y="27.375" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="-36.15" y="25.675" size="0.7" layer="25" font="vector" rot="R180" align="top-center"/>
 </element>
 <element name="V3" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-16.65" y="5.9">
 <attribute name="CREATOR" value="Swanson" x="-16.65" y="5.9" size="1" layer="27" display="off"/>
 <attribute name="DIST" value="NA" x="-16.65" y="5.9" size="1" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="-16.65" y="5.9" size="1" layer="27" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-16.65" y="5.9" size="1.778" layer="27" display="off"/>
 </element>
 <element name="V5" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-18.65" y="5.9">
 <attribute name="CREATOR" value="Swanson" x="-18.65" y="5.9" size="1" layer="27" display="off"/>
 <attribute name="DIST" value="NA" x="-18.65" y="5.9" size="1" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="-18.65" y="5.9" size="1" layer="27" display="off"/>
+<attribute name="MOUNTING" value="NONE" x="-18.65" y="5.9" size="1.778" layer="27" display="off"/>
 </element>
-<element name="U$1" library="RemoteParts" package="M2.5-MOUNTING-HOLE" value="MOUNTING-HOLE-M2.5-GROUNDED" x="-37.5" y="-12.875"/>
-<element name="U$3" library="RemoteParts" package="M2.5-MOUNTING-HOLE" value="MOUNTING-HOLE-M2.5-GROUNDED" x="-37.5" y="18.125"/>
-<element name="U$6" library="RemoteParts" package="M2.5-MOUNTING-HOLE" value="MOUNTING-HOLE-M2.5-GROUNDED" x="37.5" y="18.125"/>
-<element name="U$7" library="RemoteParts" package="M2.5-MOUNTING-HOLE" value="MOUNTING-HOLE-M2.5-GROUNDED" x="37.5" y="-12.875"/>
+<element name="U$1" library="RemoteParts" package="M2.5-MOUNTING-HOLE" value="MOUNTING-HOLE-M2.5-GROUNDED" x="-37.5" y="-12.875">
+<attribute name="MOUNTING" value="NONE" x="-37.5" y="-12.875" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$3" library="RemoteParts" package="M2.5-MOUNTING-HOLE" value="MOUNTING-HOLE-M2.5-GROUNDED" x="-37.5" y="18.125">
+<attribute name="MOUNTING" value="NONE" x="-37.5" y="18.125" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$6" library="RemoteParts" package="M2.5-MOUNTING-HOLE" value="MOUNTING-HOLE-M2.5-GROUNDED" x="37.5" y="18.125">
+<attribute name="MOUNTING" value="NONE" x="37.5" y="18.125" size="1.778" layer="27" display="off"/>
+</element>
+<element name="U$7" library="RemoteParts" package="M2.5-MOUNTING-HOLE" value="MOUNTING-HOLE-M2.5-GROUNDED" x="37.5" y="-12.875">
+<attribute name="MOUNTING" value="NONE" x="37.5" y="-12.875" size="1.778" layer="27" display="off"/>
+</element>
 <element name="R15" library="quadparts_prebuilt" package="RESC2012X60_HS" value="270" x="3.5625" y="14.9375" smashed="yes" rot="R90">
 <attribute name="DIST" value="DIGIKEY" x="3.5625" y="14.9375" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="311-270ARCT-ND" x="3.5625" y="14.9375" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="3.5625" y="14.9375" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="4.3625" y="13.1375" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="SPICEPREFIX" value="R" x="3.5625" y="14.9375" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" x="5.2875" y="14.0375" size="0.7" layer="27" font="vector" rot="R90"/>
@@ -2416,11 +2508,13 @@ design rules under a new name.</description>
 <element name="J1" library="RemoteParts" package="JST-13-PTH" value="FRSKY-GIMBAL-FRYSKY" x="-40.5" y="11.65" locked="yes" smashed="yes" rot="R270">
 <attribute name="DIST" value="Digikey" x="-40.5" y="11.65" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DISTPN" value="A100106-ND" x="-40.5" y="11.65" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUNTING" value="TH" x="-40.5" y="11.65" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-40.95" y="16.9825" size="0.7" layer="25" font="vector" align="center"/>
 </element>
 <element name="J2" library="RemoteParts" package="JST-13-PTH" value="FRSKY-GIMBAL-FRYSKY" x="40.5" y="-6.35" locked="yes" smashed="yes" rot="R90">
 <attribute name="DIST" value="Digikey" x="40.5" y="-6.35" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="A100106-ND" x="40.5" y="-6.35" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUNTING" value="TH" x="40.5" y="-6.35" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="41.075" y="-11.6825" size="0.7" layer="25" font="vector" rot="R180" align="center"/>
 <attribute name="SPICEPREFIX" value="E" x="40.5" y="-6.35" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -2428,24 +2522,30 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="-15.25" y="4" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-15.25" y="4" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="DISTPN" value="609-3327-ND" x="-15.25" y="4" size="1.778" layer="28" rot="MR270" display="off"/>
+<attribute name="MOUNTING" value="TH" x="-15.25" y="4" size="1.778" layer="28" rot="MR270" display="off"/>
 <attribute name="NAME" x="-17.0788" y="5.3462" size="0.7" layer="26" font="vector" rot="MR270"/>
 </element>
 <element name="J9" library="RemoteParts" package="2X-GIMBAL-SERVO" value="FRSKY-GIMBAL-2X-SERVO" x="15.25" y="-9" locked="yes" smashed="yes" rot="MR90">
 <attribute name="CREATOR" value="Swanson" x="15.25" y="-9" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="15.25" y="-9" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="DISTPN" value="609-3327-ND" x="15.25" y="-9" size="1.778" layer="28" rot="MR90" display="off"/>
+<attribute name="MOUNTING" value="TH" x="15.25" y="-9" size="1.778" layer="28" rot="MR90" display="off"/>
 <attribute name="NAME" x="17.0788" y="-10.3462" size="0.7" layer="26" font="vector" rot="MR90"/>
 </element>
-<element name="JP1" library="RemoteParts" package="SMT-JUMPER_2_NC_PASTE_NO-SILK" value="JUMPER-SMT_2_NC_PASTE_NO-SILK" x="-8.1" y="-2.15" populate="no" smashed="yes" rot="R270">
+<element name="JP1" library="RemoteParts" package="SMT-JUMPER_2_NC_PASTE_NO-SILK" value="JUMPER-SMT_2_NC_PASTE_NO-SILK" x="-8.1" y="-2.15" smashed="yes" rot="R270">
+<attribute name="MOUNTING" value="NONE" x="-8.1" y="-2.15" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-8.15" y="-0.493" size="0.7" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="JP3" library="RemoteParts" package="SMT-JUMPER_2_NC_PASTE_NO-SILK" value="JUMPER-SMT_2_NC_PASTE_NO-SILK" x="2.35" y="-5.3" populate="no" smashed="yes" rot="R90">
+<element name="JP3" library="RemoteParts" package="SMT-JUMPER_2_NC_PASTE_NO-SILK" value="JUMPER-SMT_2_NC_PASTE_NO-SILK" x="2.35" y="-5.3" smashed="yes" rot="R90">
+<attribute name="MOUNTING" value="NONE" x="2.35" y="-5.3" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="2.3" y="-6.957" size="0.7" layer="25" font="vector" align="bottom-center"/>
 </element>
-<element name="JP4" library="RemoteParts" package="SMT-JUMPER_2_NC_PASTE_NO-SILK" value="JUMPER-SMT_2_NC_PASTE_NO-SILK" x="-8.1" y="-4.675" populate="no" smashed="yes" rot="R270">
+<element name="JP4" library="RemoteParts" package="SMT-JUMPER_2_NC_PASTE_NO-SILK" value="JUMPER-SMT_2_NC_PASTE_NO-SILK" x="-8.1" y="-4.675" smashed="yes" rot="R270">
+<attribute name="MOUNTING" value="NONE" x="-8.1" y="-4.675" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="-8.1" y="-5.593" size="0.7" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
-<element name="JP5" library="RemoteParts" package="SMT-JUMPER_2_NC_PASTE_NO-SILK" value="JUMPER-SMT_2_NC_PASTE_NO-SILK" x="2.35" y="-2.675" populate="no" smashed="yes" rot="R90">
+<element name="JP5" library="RemoteParts" package="SMT-JUMPER_2_NC_PASTE_NO-SILK" value="JUMPER-SMT_2_NC_PASTE_NO-SILK" x="2.35" y="-2.675" smashed="yes" rot="R90">
+<attribute name="MOUNTING" value="NONE" x="2.35" y="-2.675" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="2.375" y="-1.757" size="0.7" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="C17" library="quadparts_prebuilt" package="CAPC2012X140_HS" value="1uF" x="-34.7" y="9.7" smashed="yes" rot="R90">
@@ -2453,6 +2553,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="Digikey" x="-38.575" y="4.7" size="1" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="587-1281-1-ND" x="-38.575" y="4.7" size="1" layer="27" rot="R90" display="off"/>
 <attribute name="MFR" value="Taiyo Yuden" x="-38.575" y="4.7" size="1" layer="27" rot="R90" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-34.7" y="9.7" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="TMK212B7105KG-T" x="-38.575" y="4.7" size="1" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-33.9" y="12.175" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="REVIEWER" value="Swanson" x="-38.575" y="4.7" size="1" layer="27" rot="R90" display="off"/>
@@ -2462,68 +2563,80 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="-42.825" y="8.15" size="1" layer="27" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-42.825" y="8.15" size="1" layer="27" display="off"/>
 <attribute name="DISTPN" value="LP3985IM5-3.3/NOPBCT-ND" x="-42.825" y="8.15" size="1" layer="27" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-31.45" y="9.025" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-31.38" y="10.68" size="0.7" layer="25" font="vector" align="center"/>
-<attribute name="VALUE" x="-31.48" y="8.971" size="0.7" layer="27" font="vector" align="center"/>
 <attribute name="VALUE" value="3.3V" x="-31.45" y="9.025" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-31.48" y="8.971" size="0.7" layer="27" font="vector" align="center"/>
 </element>
 <element name="P1" library="RemoteParts" package="TEST-POINT-KEYSTONE-5000" value="TEST-POINT" x="-11.5" y="-0.5" smashed="yes">
 <attribute name="CREATOR" value="Swanson" x="-11.5" y="-0.5" size="1" layer="27" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-11.5" y="-0.5" size="1" layer="27" display="off"/>
-<attribute name="DISTPN" value="36-5001-ND " x="-11.5" y="-0.5" size="1" layer="27" display="off"/>
+<attribute name="DISTPN" value="36-5001-ND" x="-11.5" y="-0.5" size="1" layer="27" display="off"/>
+<attribute name="MOUNTING" value="TH" x="-11.5" y="-0.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-13.5" y="-0.5" size="0.7" layer="25" font="vector" align="center"/>
 </element>
 <element name="P2" library="RemoteParts" package="TEST-POINT-KEYSTONE-5000" value="TEST-POINT" x="-11.5" y="-8.5" smashed="yes">
 <attribute name="CREATOR" value="Swanson" x="-11.5" y="-8.5" size="1" layer="27" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-11.5" y="-8.5" size="1" layer="27" display="off"/>
-<attribute name="DISTPN" value="36-5001-ND " x="-11.5" y="-8.5" size="1" layer="27" display="off"/>
+<attribute name="DISTPN" value="36-5001-ND" x="-11.5" y="-8.5" size="1" layer="27" display="off"/>
+<attribute name="MOUNTING" value="TH" x="-11.5" y="-8.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-13.5" y="-8.5" size="0.7" layer="25" font="vector" align="center"/>
 </element>
 <element name="P3" library="RemoteParts" package="TEST-POINT-KEYSTONE-5000" value="TEST-POINT" x="-11.5" y="-4.5" smashed="yes">
 <attribute name="CREATOR" value="Swanson" x="-11.5" y="-4.5" size="1" layer="27" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-11.5" y="-4.5" size="1" layer="27" display="off"/>
-<attribute name="DISTPN" value="36-5001-ND " x="-11.5" y="-4.5" size="1" layer="27" display="off"/>
+<attribute name="DISTPN" value="36-5001-ND" x="-11.5" y="-4.5" size="1" layer="27" display="off"/>
+<attribute name="MOUNTING" value="TH" x="-11.5" y="-4.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-13.5" y="-4.5" size="0.7" layer="25" font="vector" align="center"/>
 </element>
 <element name="P4" library="RemoteParts" package="TEST-POINT-KEYSTONE-5000" value="TEST-POINT" x="-11.5" y="3.5" smashed="yes">
 <attribute name="CREATOR" value="Swanson" x="-11.5" y="3.5" size="1" layer="27" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-11.5" y="3.5" size="1" layer="27" display="off"/>
-<attribute name="DISTPN" value="36-5001-ND " x="-11.5" y="3.5" size="1" layer="27" display="off"/>
+<attribute name="DISTPN" value="36-5001-ND" x="-11.5" y="3.5" size="1" layer="27" display="off"/>
+<attribute name="MOUNTING" value="TH" x="-11.5" y="3.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-13.5" y="3.5" size="0.7" layer="25" font="vector" align="center"/>
 </element>
 <element name="A1" library="RemoteParts" package="ANT_PCB_2.4GHZ_NRF8001_1.6MM_1OZ" value="2.4GHz" x="20.625" y="22.275" rot="R270">
+<attribute name="MOUNTING" value="NONE" x="20.625" y="22.275" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" value="2.4GHz" x="20.625" y="22.275" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="B4" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="14" y="-24.5" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="14" y="-24.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="14" y="-24.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="EG5350CT-ND" x="14" y="-24.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="14" y="-24.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="10.1" y="-24.8" size="0.7" layer="25" font="vector"/>
 </element>
 <element name="B6" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="21" y="-24.5" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="21" y="-24.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="21" y="-24.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="EG5350CT-ND" x="21" y="-24.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="21" y="-24.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="21.6" y="-27.6" size="0.7" layer="25" font="vector" rot="R180"/>
 </element>
 <element name="B8" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="7" y="-24.5" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="7" y="-24.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="7" y="-24.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="EG5350CT-ND" x="7" y="-24.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="7" y="-24.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="7.5" y="-27.6" size="0.7" layer="25" font="vector" rot="R180"/>
 </element>
 <element name="B9" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="14" y="-30.5" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="14" y="-30.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="14" y="-30.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="EG5350CT-ND" x="14" y="-30.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="14" y="-30.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="17.1" y="-30.8" size="0.7" layer="25" font="vector"/>
 </element>
 <element name="B10" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="14" y="-18.5" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="14" y="-18.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="14" y="-18.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="EG5350CT-ND" x="14" y="-18.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="14" y="-18.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="17" y="-18.9" size="0.7" layer="25" font="vector"/>
 </element>
 <element name="JP7" library="RemoteParts" package="SMT-JUMPER_3_1-NC_PASTE_NO-SILK" value="JUMPER-SMT_3_1-NC_PASTE_NO-SILK" x="-1.9" y="14.5" smashed="yes">
+<attribute name="MOUNTING" value="NONE" x="-1.9" y="14.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-1.9" y="15.443" size="0.7" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="E1" library="RemoteParts" package="BOURNS-PEC12R" value="ROTARY-ENCODER-W/BUTTON-BOURNS-PEC12R-4217F" x="-17.8" y="-24" smashed="yes">
@@ -2534,6 +2647,7 @@ design rules under a new name.</description>
 <attribute name="DIST" value="DIGIKEY" x="-17.8" y="-24" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="PEC12R-4217F-S0024-ND" x="-17.8" y="-24" size="1.778" layer="27" display="off"/>
 <attribute name="HEIGHT" value="17.5" x="-17.8" y="-24" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="TH" x="-17.8" y="-24" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-21.9" y="-31.53" size="0.7" layer="25" font="vector" align="center"/>
 </element>
 <element name="U$10" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-99" y="21.5"/>
@@ -2658,19 +2772,23 @@ design rules under a new name.</description>
 <element name="U$131" library="RemoteParts" package="SUPPORT_DONUT" value="" x="92" y="-20.5"/>
 <element name="U$132" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="-20.5"/>
 <element name="U$133" library="RemoteParts" package="SUPPORT_DONUT" value="" x="104" y="-20.5"/>
-<element name="J5" library="RemoteParts" package="SMT-JUMPER_2_NC_PASTE_NO-SILK" value="JUMPER-SMT_2_NC_PASTE_NO-SILK" x="-32.85" y="-26.25" populate="no" smashed="yes">
+<element name="J5" library="RemoteParts" package="SMT-JUMPER_2_NC_PASTE_NO-SILK" value="JUMPER-SMT_2_NC_PASTE_NO-SILK" x="-32.85" y="-26.25" smashed="yes">
+<attribute name="MOUNTING" value="NONE" x="-32.85" y="-26.25" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-34.35" y="-26.607" size="0.7" layer="25" font="vector" align="bottom-center"/>
 </element>
 <element name="JP6" library="RemoteParts" package="SMT-JUMPER_3_1-NC_PASTE_NO-SILK" value="JUMPER-SMT_3_1-NC_PASTE_NO-SILK" x="31.2" y="21" smashed="yes" rot="R180">
+<attribute name="MOUNTING" value="NONE" x="31.2" y="21" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="31.2" y="20.257" size="0.7" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="JP8" library="RemoteParts" package="SMT-JUMPER_3_1-NC_PASTE_NO-SILK" value="JUMPER-SMT_3_1-NC_PASTE_NO-SILK" x="-28.3" y="-3.2" smashed="yes" rot="R90">
+<attribute name="MOUNTING" value="NONE" x="-28.3" y="-3.2" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-28.5" y="-4.643" size="0.7" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="R16" library="quadparts_prebuilt" package="RESC2012X60_HS" value="1K" x="-23.8" y="-1.8" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="-23.8" y="-1.8" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-23.8" y="-1.8" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="311-1.0KARCT-ND" x="-23.8" y="-1.8" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-23.8" y="-1.8" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-23" y="0.6" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="-22" y="-2.3" size="0.7" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
@@ -2678,10 +2796,12 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="-23.8" y="-5.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-23.8" y="-5.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="DISTPN" value="311-1.0KARCT-ND" x="-23.8" y="-5.5" size="1.778" layer="27" rot="R90" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-23.8" y="-5.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-23" y="-7.3" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="-22" y="-6" size="0.7" layer="27" font="vector" ratio="10" rot="R90"/>
 </element>
 <element name="JP9" library="RemoteParts" package="SMT-JUMPER_2_NO_NO-SILK" value="JUMPER-SMT_2_NO_NO-SILK" x="-26.5" y="-3.6" smashed="yes" rot="R90">
+<attribute name="MOUNTING" value="NONE" x="-26.5" y="-3.6" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="-26.5" y="-4.643" size="0.7" layer="25" font="vector" rot="R180" align="bottom-center"/>
 </element>
 <element name="JP10" library="RemoteParts" package="SMT-JUMPER_3_0-NC_PASTE_NO-SILK" value="JUMPER-SMT_3_0-NC_PASTE" x="19.05" y="0" smashed="yes">
@@ -2714,6 +2834,7 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="27.825" y="-29.15" size="0.7" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="27.825" y="-29.15" size="0.7" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="160-1172-1-ND" x="27.825" y="-29.15" size="0.7" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="27.825" y="-29.15" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="27.805" y="-31.34" size="0.7" layer="25" font="vector" rot="R180" align="center"/>
 </element>
 <element name="D2" library="RemoteParts" package="LED-2X-LTST-C155" value="LED-2X-GREEN/RED" x="27.825" y="-23.55" smashed="yes" rot="R180">
@@ -2722,6 +2843,7 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="27.825" y="-23.55" size="0.7" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="27.825" y="-23.55" size="0.7" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="160-1172-1-ND" x="27.825" y="-23.55" size="0.7" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="27.825" y="-23.55" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="27.835" y="-25.63" size="0.7" layer="25" font="vector" rot="R180" align="center"/>
 </element>
 <element name="D3" library="RemoteParts" package="LED-2X-LTST-C155" value="LED-2X-GREEN/RED" x="-39.4" y="23.3" smashed="yes" rot="R180">
@@ -2730,6 +2852,7 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="-39.4" y="23.3" size="0.7" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-39.4" y="23.3" size="0.7" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="160-1172-1-ND" x="-39.4" y="23.3" size="0.7" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-39.4" y="23.3" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="-39.38" y="25.24" size="0.7" layer="25" font="vector" align="center"/>
 </element>
 <element name="D5" library="RemoteParts" package="LED-2X-LTST-C155" value="LED-2X-GREEN/RED" x="-35.85" y="-21.2" smashed="yes" rot="R180">
@@ -2738,11 +2861,13 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="-35.85" y="-21.2" size="0.7" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-35.85" y="-21.2" size="0.7" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="160-1172-1-ND" x="-35.85" y="-21.2" size="0.7" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-35.85" y="-21.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="-32.62" y="-20.54" size="0.7" layer="25" font="vector" rot="R180" align="center"/>
 </element>
 <element name="R2" library="quadparts_prebuilt" package="RESC2012X60_HS" value="510" x="26.4" y="-18.6" smashed="yes" rot="R90">
 <attribute name="DIST" value="DIGIKEY" x="26.4" y="-18.6" size="0.7" layer="27" font="vector" rot="R90" display="off"/>
 <attribute name="DISTPN" value="311-510ARCT-ND" x="26.4" y="-18.6" size="0.7" layer="27" font="vector" rot="R90" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="26.4" y="-18.6" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="26.9" y="-16.1" size="0.7" layer="25" font="vector" rot="R180"/>
 <attribute name="VALUE" x="25.3" y="-19.5" size="0.7" layer="27" font="vector" ratio="7" rot="R90"/>
 </element>
@@ -3372,6 +3497,18 @@ design rules under a new name.</description>
 <via x="-26.875" y="-2.375" extent="1-16" drill="0.2"/>
 <via x="26.375" y="2.25" extent="1-16" drill="0.2"/>
 <via x="-13.25" y="27" extent="1-16" drill="0.2"/>
+<contactref element="D5" pad="A1"/>
+<wire x1="-28.3" y1="-2.3872" x2="-34.1" y2="-21.9" width="0" layer="19" extent="1-1"/>
+<wire x1="-11.5" y1="-0.5" x2="-23.8" y2="-0.845" width="0" layer="19" extent="1-1"/>
+<wire x1="10.89" y1="-4.47" x2="-0.0033" y2="-1.5" width="0" layer="19" extent="1-1"/>
+<wire x1="19.42" y1="5.439" x2="10.89" y2="-4.47" width="0" layer="19" extent="1-1"/>
+<wire x1="17.789" y1="11.07" x2="19.5" y2="6.625" width="0" layer="19" extent="1-1"/>
+<wire x1="24.375" y1="5.375" x2="19.42" y2="5.439" width="0" layer="19" extent="1-1"/>
+<wire x1="26.375" y1="9.125" x2="24.42" y2="5.439" width="0" layer="19" extent="1-1"/>
+<wire x1="29.625" y1="21" x2="27.551" y2="11.57" width="0" layer="19" extent="1-1"/>
+<wire x1="-32.4" y1="10.325" x2="-28.3" y2="-2.3872" width="0" layer="19" extent="1-1"/>
+<wire x1="-2.75" y1="14.5" x2="-4.75" y2="-0.5" width="0" layer="19" extent="1-1"/>
+<wire x1="-5.025" y1="26.7" x2="-2.75" y2="15.625" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RESET">
 <contactref element="R3" pad="1"/>

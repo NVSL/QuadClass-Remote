@@ -1614,6 +1614,7 @@
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="Adafruit"/>
 <attribute name="DISTPN" value="356"/>
+<attribute name="MOUNTING" value="TH"/>
 <attribute name="VALUE" value="10K"/>
 </technology>
 </technologies>
@@ -1629,6 +1630,7 @@
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="3314R-1-103ETR-ND "/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="VALUE" value="10K"/>
 </technology>
 </technologies>
@@ -1651,6 +1653,7 @@
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="563-1565-ND"/>
+<attribute name="MOUNTING" value="TH"/>
 </technology>
 </technologies>
 </device>
@@ -1665,6 +1668,7 @@
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="401-1999-1-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 </technology>
 </technologies>
 </device>
@@ -1679,6 +1683,7 @@
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="CKN10721CT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 </technology>
 </technologies>
 </device>
@@ -1702,6 +1707,7 @@
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="609-4613-1-ND "/>
+<attribute name="MOUNTING" value="SMD"/>
 </technology>
 </technologies>
 </device>
@@ -1718,6 +1724,7 @@
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="151-1206-1-ND "/>
+<attribute name="MOUNTING" value="SMD"/>
 </technology>
 </technologies>
 </device>
@@ -1764,6 +1771,7 @@ FT232RL 4&lt;sup&gt;th&lt;/sup&gt; Generation USB UART (USB &amp;lt;-&amp;gt; Se
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="768-1007-1-ND "/>
+<attribute name="MOUNTING" value="SMD"/>
 </technology>
 </technologies>
 </device>
@@ -1797,6 +1805,7 @@ FT232RL 4&lt;sup&gt;th&lt;/sup&gt; Generation USB UART (USB &amp;lt;-&amp;gt; Se
 <attribute name="CREATOR" value="Adafruit"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="MCP73831T-2ACI/OTCT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 </technology>
 </technologies>
 </device>
@@ -1871,6 +1880,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="609-3327-ND"/>
+<attribute name="MOUNTING" value="TH"/>
 </technology>
 </technologies>
 </device>
@@ -1908,6 +1918,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="568-5300-1-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 </technology>
 </technologies>
 </device>
@@ -1924,6 +1935,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="NA"/>
 <attribute name="DISTPN" value="NA"/>
+<attribute name="MOUNTING" value="NONE"/>
 <attribute name="VALUE" value="1mm"/>
 </technology>
 </technologies>
@@ -1966,6 +1978,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="SparkFun"/>
 <attribute name="DISTPN" value="LCD-10862"/>
+<attribute name="MOUNTING" value="TH"/>
 </technology>
 </technologies>
 </device>
@@ -1991,6 +2004,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="DIST1PN" value="" constant="no"/>
 <attribute name="DISTPN" value="S7000-ND"/>
 <attribute name="MFR" value="" constant="no"/>
+<attribute name="MOUNTING" value="TH"/>
 <attribute name="MPN" value="" constant="no"/>
 <attribute name="PIN1" value="1" constant="no"/>
 <attribute name="PIN2" value="2" constant="no"/>
@@ -2007,6 +2021,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <technology name="">
 <attribute name="DIST" value="digikey"/>
 <attribute name="DISTPN" value="ED10561-ND"/>
+<attribute name="MOUNTING" value="TH"/>
 <attribute name="PIN1" value="1" constant="no"/>
 <attribute name="PIN2" value="2" constant="no"/>
 </technology>
@@ -2021,6 +2036,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <technology name="">
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="3M9447-ND"/>
+<attribute name="MOUNTING" value="TH"/>
 </technology>
 </technologies>
 </device>
@@ -2036,7 +2052,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="P$1" pad="P$1 P$2 P$3 P$4 P$6 P$7 P$8 P$9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MOUNTING" value="NONE"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2057,6 +2075,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <technology name="">
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="A100106-ND"/>
+<attribute name="MOUNTING" value="TH"/>
 </technology>
 </technologies>
 </device>
@@ -2072,6 +2091,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="CREATOR" value="Swanson" constant="no"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="609-3327-ND"/>
+<attribute name="MOUNTING" value="TH"/>
 </technology>
 </technologies>
 </device>
@@ -2090,7 +2110,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MOUNTING" value="NONE"/>
+</technology>
 </technologies>
 </device>
 <device name="_SILK" package="SMT-JUMPER_2_NC_PASTE_SILK">
@@ -2099,7 +2121,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MOUNTING" value="NONE"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2118,7 +2142,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MOUNTING" value="NONE"/>
+</technology>
 </technologies>
 </device>
 <device name="_SILK" package="SMT-JUMPER_3_1-NC_PASTE_SILK">
@@ -2128,7 +2154,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MOUNTING" value="NONE"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2146,7 +2174,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
-<attribute name="DISTPN" value="36-5001-ND "/>
+<attribute name="DISTPN" value="36-5001-ND"/>
+<attribute name="MOUNTING" value="TH"/>
 </technology>
 </technologies>
 </device>
@@ -2174,6 +2203,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </connects>
 <technologies>
 <technology name="">
+<attribute name="MOUNTING" value="NONE"/>
 <attribute name="VALUE" value="2.4GHz"/>
 </technology>
 </technologies>
@@ -2205,6 +2235,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <technology name="">
 <attribute name="DIST" value="Adafruit"/>
 <attribute name="DISTPN" value="377"/>
+<attribute name="MOUNTING" value="TH"/>
 </technology>
 </technologies>
 </device>
@@ -2225,6 +2256,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="PEC12R-4030F-S0024-ND"/>
 <attribute name="HEIGHT" value="30"/>
+<attribute name="MOUNTING" value="TH"/>
 </technology>
 </technologies>
 </device>
@@ -2245,6 +2277,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="PEC12R-4217F-S0024-ND"/>
 <attribute name="HEIGHT" value="17.5"/>
+<attribute name="MOUNTING" value="TH"/>
 </technology>
 </technologies>
 </device>
@@ -2268,7 +2301,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MOUNTING" value="NONE"/>
+</technology>
 </technologies>
 </device>
 <device name="_NO-SILK_ROUND" package="SMT-JUMPER_2_NO_NO-SILK_ROUND">
@@ -2277,7 +2312,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MOUNTING" value="NONE"/>
+</technology>
 </technologies>
 </device>
 <device name="_SILK" package="SMT-JUMPER_2_NO_SILK">
@@ -2286,7 +2323,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MOUNTING" value="NONE"/>
+</technology>
 </technologies>
 </device>
 <device name="_SILK_ROUND" package="SMT-JUMPER_2_NO_SILK_ROUND">
@@ -2295,7 +2334,9 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MOUNTING" value="NONE"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2336,6 +2377,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="160-1172-1-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 </technology>
 </technologies>
 </device>
@@ -3609,6 +3651,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="ATMEGA128RFA1-ZU-ND "/>
 <attribute name="MFR" value="Atmel"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="ATMEGA128RFA1-ZUR00"/>
 <attribute name="PRICE" value="10.21"/>
 <attribute name="REVIEWER" value="Swanson"/>
@@ -3638,6 +3681,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="732-2230-6-ND"/>
 <attribute name="MFR" value="Wurth Electronics Inc"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="748421245"/>
 <attribute name="PRICE" value="2.63"/>
 <attribute name="REVIEWER" value="Swanson"/>
@@ -3663,6 +3707,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="1608-1458-1-ND "/>
 <attribute name="MFR" value="Knowles Syfer"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="0805J0500104KJT"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="0.01uF"/>
@@ -3680,6 +3725,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="445-1418-1-ND"/>
 <attribute name="MFR" value="TDK"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="C2012X7R2A104K125AA"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="0.1uF"/>
@@ -3697,6 +3743,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="490-1670-1-ND"/>
 <attribute name="MFR" value="Murata Electronics North America"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="GRM21BR71H224KA01L"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="0.22uF"/>
@@ -3714,6 +3761,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="490-3585-1-ND"/>
 <attribute name="MFR" value="Murata Electronics North America"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="GQM2195C2AR75CB01D"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="0.75pF"/>
@@ -3731,6 +3779,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="445-14387-1-ND"/>
 <attribute name="MFR" value="TDK Corporation"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="C2012X5R1E106K085AC"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="10uF"/>
@@ -3748,6 +3797,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="490-5531-1-ND"/>
 <attribute name="MFR" value="Murata Electronics North America"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="GRM21A5C2E120JW01D"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="12pF"/>
@@ -3765,6 +3815,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="587-1281-1-ND"/>
 <attribute name="MFR" value="Taiyo Yuden"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="TMK212B7105KG-T"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="1uF"/>
@@ -3782,6 +3833,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="490-5534-1-ND"/>
 <attribute name="MFR" value="Murata Electronics North America"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="GRM21A5C2E220JW01D"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="22pF"/>
@@ -3799,6 +3851,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="490-3335-1-ND"/>
 <attribute name="MFR" value="Murata Electronics North America"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="GRM21BR61E475KA12L"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="4.7uF"/>
@@ -3825,6 +3878,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="535-9122-1-ND"/>
 <attribute name="MFR" value="Abracon LLC"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="ABM3B-16.000MHZ-B2-T"/>
 <attribute name="PRICE" value="0.68"/>
 <attribute name="PROD_ID" value="XTAL-08218" constant="no"/>
@@ -3868,6 +3922,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="311-100ARCT-ND"/>
 <attribute name="MFR" value="Yageo"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="RC0805JR-07100RL"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="100"/>
@@ -3885,6 +3940,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="311-10KARCT-ND"/>
 <attribute name="MFR" value="Yageo"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="RC0805JR-0710KL"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="10K"/>
@@ -3902,6 +3958,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="311-330ARCT-ND"/>
 <attribute name="MFR" value="Yageo"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="RC0805JR-07330RL"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="330"/>
@@ -3919,6 +3976,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="311-5.1KARCT-ND"/>
 <attribute name="MFR" value="Yageo"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="RC0805JR-075K1L"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="5.1K"/>
@@ -3935,6 +3993,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="311-1.0KARCT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="VALUE" value="1K"/>
 </technology>
 </technologies>
@@ -3949,6 +4008,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="311-2.0KARCT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="VALUE" value="2K"/>
 </technology>
 </technologies>
@@ -3962,6 +4022,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <technology name="">
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="311-510ARCT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="VALUE" value="510"/>
 </technology>
 </technologies>
@@ -3975,6 +4036,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <technology name="">
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="311-270ARCT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="VALUE" value="270"/>
 </technology>
 </technologies>
@@ -3988,6 +4050,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <technology name="">
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="YAG3776CT-ND "/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="VALUE" value="2.2K"/>
 </technology>
 </technologies>
@@ -4002,6 +4065,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="CREATOR" value="SWANSON"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="YAG3726CT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="VALUE" value="33K"/>
 </technology>
 </technologies>
@@ -4016,6 +4080,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="YAG5383CT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="VALUE" value="9.09K"/>
 </technology>
 </technologies>
@@ -4030,6 +4095,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="YAG3692CT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="VALUE" value="12K"/>
 </technology>
 </technologies>
@@ -4044,6 +4110,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="YAG3721CT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="VALUE" value="30K"/>
 </technology>
 </technologies>
@@ -4073,6 +4140,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="609-3234-ND"/>
 <attribute name="MFR" value="Amphenol FCI"/>
+<attribute name="MOUNTING" value="TH"/>
 <attribute name="MPN" value="67997-206HLF"/>
 <attribute name="PRICE" value="0.31"/>
 <attribute name="REVIEWER" value="Swanson"/>
@@ -4098,6 +4166,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="450-1129-ND"/>
 <attribute name="MFR" value="TE Connectivity Alcoswitch Switches"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="FSM4JSMA"/>
 <attribute name="REVIEWER" value="Swanson"/>
 </technology>
@@ -4113,6 +4182,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="EG5350CT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 </technology>
 </technologies>
 </device>
@@ -4150,6 +4220,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="NA"/>
 <attribute name="DISTPN" value="NA"/>
+<attribute name="MOUNTING" value="NONE"/>
 </technology>
 </technologies>
 </device>
@@ -4189,6 +4260,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="CRS08QMCT-ND"/>
 <attribute name="MFR" value="Toshiba Semiconductor and Storage"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="CRS08(TE85L,Q,M)"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="360mV"/>
@@ -4217,6 +4289,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="LP3985IM5X-3.0/NOPBCT-ND"/>
 <attribute name="MFR" value="Texas Instruments"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="LP3985IM5X-3.0/NOPB"/>
 <attribute name="PRICE" value="0.59"/>
 <attribute name="REVIEWER" value="Swanson"/>
@@ -4237,6 +4310,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="LP3985IM5-3.3/NOPBCT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="VALUE" value="3.3V"/>
 </technology>
 </technologies>
@@ -4250,7 +4324,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </attributes>
 <variantdefs>
 <variantdef name="Minimal"/>
-<variantdef name="FullAwesome" current="yes"/>
+<variantdef name="FullAwesome"/>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0" drill="0">
@@ -5225,6 +5299,7 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <segment>
 <label x="127" y="233.68" size="1.27" layer="95" rot="R90" xref="yes"/>
 <wire x1="127" y1="227.33" x2="127" y2="233.68" width="0.1524" layer="91"/>
+<pinref part="D5" gate="G$1" pin="A1"/>
 </segment>
 <segment>
 <wire x1="25.4" y1="261.62" x2="25.4" y2="260.35" width="0.1524" layer="91"/>
