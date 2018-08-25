@@ -14,43 +14,6 @@ uint8_t scale[8] =
       B00000000,
       B00000000};
 
-
-#if(0)
-void update_display() {
-     lcd.clear();
-     lcd.home();
-
-     for(char h = 0; h < TOTAL_CHANNELS; h++) {
-	  char buf[2];
-	  buf[0] = labels[h][0];
-	  buf[1] = 0;
-	  lcd.print(buf);
-	  int n = numbers[h] >> 6;
-	  if (n > 8) {
-	       lcd.printCustomChar(n - 8);
-	  } else {
-	       lcd.print(" ");
-	  }
-     }
-
-
-     for(char h = 0; h < TOTAL_CHANNELS; h++) {
-	  char buf[2];
-	  buf[0] = labels[h][1];
-	  buf[1] = 0;
-	  lcd.print(buf);
-	  int n = numbers[h] >> 6;
-	  if (n >= 8) {
-	       lcd.printCustomChar(8);
-	  } else if (n == 0) {
-	       lcd.print(" ");
-	  } else {
-	       lcd.printCustomChar(n);
-	  }
-     }
-}
-#endif
-
 void knobs_update();
 void knobs_pressed();
 void btn1_pressed(bool);
@@ -132,9 +95,12 @@ void loop() {
 	  numbers[TOTAL_CHANNELS] = magic;
 	  digitalWrite(LED3, 0);
      } else {
-	     //delay(100);
 	  digitalWrite(LED3, 0);
      }
+
+     // This delay (or having one somewhere) is important.  If we send too
+     // fast, the packets will run together on the receive side.
+     delay(100);
      
      lcd.setCursor(12, 1);
      lcd.write(constrain(map(analogRead(PIN_THROTTLE),140,800,0,7), 0, 7));

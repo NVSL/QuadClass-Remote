@@ -53,13 +53,10 @@ extern RotaryEncoder knob1;
 //#define MAX_BATTERY (817.0)
 
 
-#define BUTTONS 11
+#define BUTTONS 10
 #define GIMBAL_AXES 4
 
 #define TOTAL_CHANNELS (BUTTONS + GIMBAL_AXES)
-
-#define BUTTONS 11
-#define GIMBAL_AXES 4
 
 extern int foo;
 

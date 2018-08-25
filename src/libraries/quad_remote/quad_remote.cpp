@@ -96,18 +96,16 @@ BUTTON_INTERRUPT(INT7_vect, btn_right_cb, BUTTON_RIGHT);
 BUTTON_INTERRUPT(INT6_vect, btn_center_cb, BUTTON_CENTER);
 
 
-#define BUTTONS 10
-#define GIMBAL_AXES 4
-
-#define TOTAL_CHANNELS (BUTTONS + GIMBAL_AXES)
 int numbers[TOTAL_CHANNELS+1];
 
 char *labels[TOTAL_CHANNELS] = {"T ", "Y ", "P ", "R ", 
 				"E1A", "E1B",
 				"E1B", 
 				"B1", "B2",
-				"UP", "DOWN",
-				"LEFT", "RIGHT",
+				"UP",
+				"DOWN",
+				"LEFT",
+				"RIGHT",
 				"CENTER"};
 
 char pins[TOTAL_CHANNELS] = {PIN_THROTTLE, PIN_YAW, PIN_PITCH, PIN_ROLL, 
