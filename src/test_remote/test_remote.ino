@@ -14,45 +14,17 @@ uint8_t scale[8] =
       B00000000,
       B00000000};
 
-
-#if(0)
-void update_display() {
-     lcd.clear();
-     lcd.home();
-
-     for(char h = 0; h < TOTAL_CHANNELS; h++) {
-	  char buf[2];
-	  buf[0] = labels[h][0];
-	  buf[1] = 0;
-	  lcd.print(buf);
-	  int n = numbers[h] >> 6;
-	  if (n > 8) {
-	       lcd.printCustomChar(n - 8);
-	  } else {
-	       lcd.print(" ");
-	  }
-     }
-
-
-     for(char h = 0; h < TOTAL_CHANNELS; h++) {
-	  char buf[2];
-	  buf[0] = labels[h][1];
-	  buf[1] = 0;
-	  lcd.print(buf);
-	  int n = numbers[h] >> 6;
-	  if (n >= 8) {
-	       lcd.printCustomChar(8);
-	  } else if (n == 0) {
-	       lcd.print(" ");
-	  } else {
-	       lcd.printCustomChar(n);
-	  }
-     }
-}
-#endif
-
 void knobs_update();
+void knobs_pressed();
 void btn1_pressed(bool);
+void btn2_pressed(bool);
+
+void btn_up_pressed(bool down);
+void btn_down_pressed(bool down);
+void btn_left_pressed(bool down);
+void btn_right_pressed(bool down);
+void btn_center_pressed(bool down);
+
 
 void setup() {
 
@@ -73,7 +45,14 @@ void setup() {
      rfBegin(RADIO_CHANNEL);              // Initialize ATmega128RFA1 radio on given channel
 
      knobs_update_cb = knobs_update;
+     knob1_btn_cb = knob_pressed;
      btn1_cb = btn1_pressed;
+     btn2_cb = btn2_pressed;
+     btn_up_cb =  btn_up_pressed;
+     btn_down_cb = btn_down_pressed;
+     btn_left_cb =  btn_left_pressed;
+     btn_right_cb = btn_right_pressed;
+     btn_center_cb =  btn_center_pressed;
      knobs_update();
 }
 
@@ -100,25 +79,28 @@ void loop() {
 
      //update_display();
 
-     for(char i= 0; i < TOTAL_CHANNELS;i++) {
+     /*for(char i= 0; i < TOTAL_CHANNELS;i++) {
 	  Serial.print(numbers[i]);
 	  Serial.print(" ");
      }
 
-     Serial.println("\n");
+     Serial.println("\n");*/
 
      rfWrite((uint8_t*)numbers, sizeof(numbers));
 
      if (rfAvailable()) {  // If data receievd on radio...
 	  digitalWrite(LED3, 1);
-	  delay(100);
+	  //delay(100);
 	  rfRead(&magic, sizeof(magic));
 	  numbers[TOTAL_CHANNELS] = magic;
 	  digitalWrite(LED3, 0);
      } else {
-	  delay(100);
 	  digitalWrite(LED3, 0);
      }
+
+     // This delay (or having one somewhere) is important.  If we send too
+     // fast, the packets will run together on the receive side.
+     delay(100);
      
      lcd.setCursor(12, 1);
      lcd.write(constrain(map(analogRead(PIN_THROTTLE),140,800,0,7), 0, 7));
@@ -129,10 +111,10 @@ void loop() {
 }
 
 void knobs_update() {
-     unsigned char r = knob3.getCurrentPos() *  16;
-     unsigned char g = knob2.getCurrentPos() *  16;
      unsigned char b = knob1.getCurrentPos() *  16;
-
+     unsigned char r = 0;
+     unsigned char g = 0;
+     
      analogWrite(LCD_LED_RED, (unsigned char)(r));
      analogWrite(LCD_LED_GREEN, (unsigned char)(g));
      analogWrite(LCD_LED_BLUE, (unsigned char)(b));
@@ -160,17 +142,70 @@ void knobs_update() {
      digitalWrite(LED1,!digitalRead(LED1));
      digitalWrite(LED2,!digitalRead(LED2));
      digitalWrite(LED3,!digitalRead(LED3));
+
+     //Serial.println(knob1.getCurrentPos());
 }
 
 
 void btn1_pressed(bool down) {
-     if (down) {
-	  Serial.println("changing modes");
-	  if (mode == INFO_MODE) {
-	       mode = CONTROL_MODE;
-	  } else {
-	       mode = INFO_MODE;
-	  }
-	  knobs_update();
-     }
+
+	if(down) {
+		Serial.println("btn1");
+	}
+	
+	if (down) {
+		Serial.println("changing modes");
+		if (mode == INFO_MODE) {
+			mode = CONTROL_MODE;
+		} else {
+			mode = INFO_MODE;
+		}
+		knobs_update();
+	}
 }
+
+void btn2_pressed(bool down) {
+	if(down) {
+		Serial.println("btn2");
+	}
+}
+
+void knob_pressed(bool down) {
+	if(down) {
+		Serial.println("knob");
+		Serial.println(knob1.getCurrentPos());
+	}
+}
+
+
+void btn_up_pressed(bool down) {
+	if(down) {
+		Serial.println("up");
+	}
+}
+
+void btn_down_pressed(bool down) {
+	if(down) {
+		Serial.println("down");
+	}
+}
+
+void btn_left_pressed(bool down) {
+	if(down) {
+		Serial.println("left");
+	}
+}
+
+void btn_right_pressed(bool down) {
+	if(down) {
+		Serial.println("right");
+	}
+}
+
+	
+void btn_center_pressed(bool down) {
+	if(down) {
+		Serial.println("center");
+	}
+}
+
