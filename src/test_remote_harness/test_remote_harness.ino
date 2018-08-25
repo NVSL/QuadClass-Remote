@@ -73,7 +73,6 @@ void loop()
     
 	       if (r != sizeof(numbers)) {
 		    Serial.print(" Short read ");
-      
 	       } else {
       
 		    rfWrite(sent_magic);

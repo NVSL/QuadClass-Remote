@@ -16,31 +16,28 @@
 extern LiquidCrystal lcd;
 
 #define LCD_LED_RED 3
-#define LCD_LED_GREEN 5  // these should be switch, but... board design error.
-#define LCD_LED_BLUE 19
+#define LCD_LED_GREEN 19
+#define LCD_LED_BLUE 34
 
 #define LED3 18
 
 extern void quad_remote_setup();
 
 extern RotaryEncoder knob1;
-extern RotaryEncoder knob2;
-extern RotaryEncoder knob3;
+
 
 #define ENC1_BUTTON 20
 #define ENC1_A 9
 #define ENC1_B 8
 
-#define ENC2_BUTTON 6
-#define ENC2_A 34
-#define ENC2_B 35
-
-#define ENC3_BUTTON 7
-#define ENC3_A 15
-#define ENC3_B 14
-
 #define BUTTON1 4
 #define BUTTON2 21
+
+#define BUTTON_UP 15
+#define BUTTON_DOWN 14
+#define BUTTON_LEFT 5
+#define BUTTON_RIGHT 7
+#define BUTTON_CENTER 6
 
 #define LCD_RS 10
 #define LCD_EN 2
@@ -68,12 +65,15 @@ extern int foo;
 
 extern void (*knobs_update_cb)();
 extern void (*knob1_btn_cb)(bool);
-extern void (*knob2_btn_cb)(bool);
-extern void (*knob3_btn_cb)(bool);
 
 extern void (*btn1_cb)(bool);
 extern void (*btn2_cb)(bool);
 
+extern void (*btn_up_cb)(bool);
+extern void (*btn_down_cb)(bool);
+extern void (*btn_left_cb)(bool);
+extern void (*btn_right_cb)(bool);
+extern void (*btn_center_cb)(bool);
 
 #ifdef QUAD_REMOTE_TESTING
 

@@ -237,7 +237,7 @@ char rfRead()
 char rfRead(uint8_t * buf, uint8_t len)
 {
      uint8_t count = 0;
-     while (count <= len) {
+     while (count < len) {
 	  if (radioRXBuffer.head == radioRXBuffer.tail) {
 	       break;
 	  } else {
