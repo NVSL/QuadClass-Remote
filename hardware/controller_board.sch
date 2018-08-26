@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="yes" active="yes"/>
@@ -1220,6 +1220,24 @@
 <text x="0" y="0.7" size="0.7" layer="21" font="vector" align="center">&gt;COLOR1</text>
 <text x="0" y="-0.7" size="0.7" layer="21" font="vector" align="center">&gt;COLOR2</text>
 </package>
+<package name="2-56-MOUNTING-HOLE">
+<circle x="0" y="0" radius="1.778" width="1.0287" layer="1"/>
+<pad name="P$1" x="0" y="1.7272" drill="0.2" thermals="no"/>
+<pad name="P$2" x="0" y="-1.7272" drill="0.2" thermals="no"/>
+<pad name="P$3" x="1.7272" y="0" drill="0.2" thermals="no"/>
+<pad name="P$4" x="-1.7272" y="0" drill="0.2" thermals="no"/>
+<pad name="P$6" x="-1.2192" y="1.2192" drill="0.2" rot="R45" thermals="no"/>
+<pad name="P$7" x="1.2192" y="-1.2192" drill="0.2" rot="R45" thermals="no"/>
+<pad name="P$8" x="1.2192" y="1.2192" drill="0.2" rot="R45" thermals="no"/>
+<pad name="P$9" x="-1.2192" y="-1.2192" drill="0.2" rot="R45" thermals="no"/>
+<circle x="0" y="0" radius="1.13" width="0.1" layer="100"/>
+<circle x="0" y="0" radius="2.1209" width="0.127" layer="47"/>
+<circle x="0" y="0" radius="1.0922" width="0.127" layer="47"/>
+<circle x="0" y="0" radius="1.778" width="1.0287" layer="16"/>
+<circle x="0" y="0" radius="1.778" width="1.0287" layer="30"/>
+<circle x="0" y="0" radius="1.778" width="1.0287" layer="29"/>
+<hole x="0" y="0" drill="2.2606"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" locally_modified="yes" type="model">
@@ -2025,6 +2043,16 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </gates>
 <devices>
 <device name="-M2.5-GROUNDED" package="M2.5-MOUNTING-HOLE">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1 P$2 P$3 P$4 P$6 P$7 P$8 P$9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MOUNTING" value="NONE"/>
+</technology>
+</technologies>
+</device>
+<device name="-2-56-GROUNDED" package="2-56-MOUNTING-HOLE">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1 P$2 P$3 P$4 P$6 P$7 P$8 P$9"/>
 </connects>
@@ -4546,10 +4574,10 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </part>
 <part name="V3" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V5" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
-<part name="U$1" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-M2.5-GROUNDED"/>
-<part name="U$3" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-M2.5-GROUNDED"/>
-<part name="U$6" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-M2.5-GROUNDED"/>
-<part name="U$7" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-M2.5-GROUNDED"/>
+<part name="U$1" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-2-56-GROUNDED" value="MOUNTING-HOLE-2-56-GROUNDED"/>
+<part name="U$3" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-2-56-GROUNDED" value="MOUNTING-HOLE-2-56-GROUNDED"/>
+<part name="U$6" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-2-56-GROUNDED" value="MOUNTING-HOLE-2-56-GROUNDED"/>
+<part name="U$7" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-2-56-GROUNDED" value="MOUNTING-HOLE-2-56-GROUNDED"/>
 <part name="R15" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-270" value="270">
 <attribute name="SPICEPREFIX" value="R"/>
 <variant name="Minimal" populate="no"/>
