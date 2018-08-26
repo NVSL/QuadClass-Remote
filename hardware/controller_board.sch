@@ -1198,13 +1198,6 @@
 </polygon>
 <circle x="0" y="0" radius="1.74625" width="0.2032" layer="21"/>
 </package>
-<package name="SMT-JUMPER_3_0-NC_PASTE_NO-SILK">
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<smd name="1" x="-0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-</package>
 <package name="LED-2X-LTST-C155">
 <smd name="A1" x="-1.75" y="0.7" dx="1.5" dy="1" layer="1"/>
 <smd name="A2" x="-1.75" y="-0.7" dx="1.5" dy="1" layer="1"/>
@@ -1546,22 +1539,6 @@
 <text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-</symbol>
-<symbol name="SMT-JUMPER_3_0-NC_PASTE">
-<wire x1="-0.635" y1="-1.397" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="180" cap="flat"/>
-<wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
-<text x="2.54" y="0.381" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<text x="2.54" y="-0.381" size="1.778" layer="96" font="vector" align="top-left">&gt;VALUE</text>
-<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="94"/>
-<pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 </symbol>
 <symbol name="LED-2X">
 <text x="2.032" y="0.508" size="1.778" layer="95">&gt;NAME</text>
@@ -2337,23 +2314,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <technology name="">
 <attribute name="MOUNTING" value="NONE"/>
 </technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="JUMPER-SMT_3_0-NC_PASTE" prefix="JP">
-<gates>
-<gate name="G$1" symbol="SMT-JUMPER_3_0-NC_PASTE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="SMT-JUMPER_3_0-NC_PASTE_NO-SILK">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -3294,6 +3254,48 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <smd name="3" x="-3.6" y="1.5" dx="1.4" dy="1.6" layer="1" rot="R90"/>
 <smd name="4" x="3.6" y="1.5" dx="1.4" dy="1.6" layer="1" rot="R90"/>
 </package>
+<package name="2X3-SMD">
+<rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="51"/>
+<rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="51"/>
+<wire x1="-0.635" y1="-2.54" x2="0.635" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="2.54" x2="0.635" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-1.905" x2="-0.635" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="1.905" x2="-0.635" y2="2.54" width="0.2032" layer="51"/>
+<wire x1="-1.27" y1="1.905" x2="-1.27" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="-1.905" y1="-2.54" x2="-1.27" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-4.575" x2="-3.175" y2="-4.575" width="0.3" layer="21" style="shortdash"/>
+<wire x1="-1.905" y1="2.54" x2="-1.27" y2="1.905" width="0.2032" layer="21"/>
+<rectangle x1="-2.794" y1="-1.524" x2="-2.286" y2="-1.016" layer="51"/>
+<rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="51"/>
+<wire x1="-3.175" y1="-2.54" x2="-1.905" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-3.175" y1="2.54" x2="-1.905" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="-3.81" y1="-1.905" x2="-3.175" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-3.81" y1="-1.905" x2="-3.81" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="-3.81" y1="1.905" x2="-3.175" y2="2.54" width="0.2032" layer="21"/>
+<text x="-2.81" y="4.675" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<wire x1="-4.5" y1="-3" x2="-4.5" y2="3" width="0.127" layer="39"/>
+<wire x1="-4.5" y1="3" x2="4.5" y2="3" width="0.127" layer="39"/>
+<wire x1="0.635" y1="-2.54" x2="1.27" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="2.54" x2="1.27" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-1.905" x2="1.905" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="1.905" x2="1.27" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="1.905" x2="1.905" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-2.54" x2="3.175" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="2.54" x2="3.175" y2="2.54" width="0.2032" layer="21"/>
+<rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
+<rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
+<wire x1="3.175" y1="-2.54" x2="3.81" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="2.54" x2="3.81" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="1.905" x2="3.81" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="-3" x2="-4.5" y2="-3" width="0.127" layer="39"/>
+<wire x1="4.5" y1="3" x2="4.5" y2="-3" width="0.127" layer="39"/>
+<smd name="1" x="-2.54" y="-2.54" dx="1" dy="3.15" layer="1"/>
+<smd name="2" x="-2.54" y="2.54" dx="1" dy="3.15" layer="1"/>
+<smd name="3" x="0" y="-2.54" dx="1" dy="3.15" layer="1"/>
+<smd name="4" x="0" y="2.54" dx="1" dy="3.15" layer="1"/>
+<smd name="5" x="2.54" y="-2.54" dx="1" dy="3.15" layer="1"/>
+<smd name="6" x="2.54" y="2.54" dx="1" dy="3.15" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ATMEGA128RFA1">
@@ -4147,6 +4149,24 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </technology>
 </technologies>
 </device>
+<device name="-SMD" package="2X3-SMD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="952-1922-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="PUSHBUTTON_" prefix="SW">
@@ -4365,7 +4385,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="U1" library="quadparts_prebuilt" deviceset="ATMEGA128RFA1" device=""/>
 <part name="Y1" library="quadparts_prebuilt" deviceset="CRYSTAL" device="5X3"/>
 <part name="GND6" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="J4" library="quadparts_prebuilt" deviceset="AVR_SPI_PRG_6" device="NS"/>
+<part name="J4" library="quadparts_prebuilt" deviceset="AVR_SPI_PRG_6" device="-SMD" value="AVR_SPI_PRG_6-SMD"/>
 <part name="C6" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
 <part name="B2" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5">
 <variant name="Minimal" populate="no"/>
@@ -4560,14 +4580,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <variant name="Minimal" populate="no"/>
 </part>
 <part name="JP9" library="RemoteParts" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK"/>
-<part name="JP10" library="RemoteParts" deviceset="JUMPER-SMT_3_0-NC_PASTE" device=""/>
-<part name="JP11" library="RemoteParts" deviceset="JUMPER-SMT_3_0-NC_PASTE" device=""/>
-<part name="JP12" library="RemoteParts" deviceset="JUMPER-SMT_3_0-NC_PASTE" device=""/>
-<part name="JP13" library="RemoteParts" deviceset="JUMPER-SMT_3_0-NC_PASTE" device=""/>
-<part name="JP14" library="RemoteParts" deviceset="JUMPER-SMT_3_0-NC_PASTE" device=""/>
-<part name="JP15" library="RemoteParts" deviceset="JUMPER-SMT_3_0-NC_PASTE" device=""/>
-<part name="JP16" library="RemoteParts" deviceset="JUMPER-SMT_3_0-NC_PASTE" device=""/>
-<part name="JP17" library="RemoteParts" deviceset="JUMPER-SMT_3_0-NC_PASTE" device=""/>
 <part name="D1" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED"/>
 <part name="D2" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED">
 <variant name="Minimal" populate="no"/>
@@ -4635,10 +4647,9 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <wire x1="72.39" y1="135.89" x2="72.39" y2="96.52" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="96.52" x2="3.81" y2="95.25" width="0.1524" layer="97" style="longdash"/>
 <text x="6.35" y="97.79" size="3.81" layer="97">150mA 3.3V Regulator *</text>
-<text x="87.63" y="269.24" size="1.778" layer="91">show B1 B2 C11 C12 C13 J1 J11 J2 L1 P1 P2 P3 P4 P6 R12 R13 R15 R16 R17 R4 R5 S1 S2 U2 U3 d2 r14 r2</text>
+<text x="87.63" y="269.24" size="1.778" layer="91">show B1 B2 C11 C12 C13 J1 J11 J2 L1 P1 P2 P3 P4 P6 R12 R13 R15 R16 R17 R4 R5 S1 S2 U2 U3 d2 r14 r2 R9</text>
 <text x="7.62" y="132.08" size="1.778" layer="97">C10 is the input cap (shared with lipo charger)</text>
 <text x="248.92" y="251.46" size="1.27" layer="91">Try a 1uF cap, so we don't need 0.1uF caps</text>
-<text x="154.94" y="284.48" size="1.778" layer="91">two leds everywhere</text>
 </plain>
 <instances>
 <instance part="GND10" gate="1" x="339.09" y="226.06"/>
@@ -4795,14 +4806,6 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <instance part="R16" gate="G$1" x="76.2" y="215.9" rot="R90"/>
 <instance part="R17" gate="G$1" x="76.2" y="201.93" rot="R90"/>
 <instance part="JP9" gate="G$1" x="81.28" y="209.55"/>
-<instance part="JP10" gate="G$1" x="29.21" y="86.36"/>
-<instance part="JP11" gate="G$1" x="29.21" y="76.2"/>
-<instance part="JP12" gate="G$1" x="29.21" y="66.04"/>
-<instance part="JP13" gate="G$1" x="29.21" y="55.88"/>
-<instance part="JP14" gate="G$1" x="29.21" y="45.72"/>
-<instance part="JP15" gate="G$1" x="29.21" y="35.56"/>
-<instance part="JP16" gate="G$1" x="29.21" y="25.4"/>
-<instance part="JP17" gate="G$1" x="29.21" y="15.24"/>
 <instance part="D1" gate="G$1" x="132.08" y="177.8" rot="MR0"/>
 <instance part="D2" gate="G$1" x="243.84" y="88.9" rot="MR270"/>
 <instance part="D3" gate="G$1" x="107.95" y="30.48"/>
@@ -6283,48 +6286,6 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <wire x1="76.2" y1="209.55" x2="76.2" y2="207.01" width="0.1524" layer="91"/>
 <junction x="76.2" y="209.55"/>
 <label x="76.2" y="209.55" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$1" class="0">
-<segment>
-<pinref part="JP10" gate="G$1" pin="3"/>
-<pinref part="JP11" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<pinref part="JP11" gate="G$1" pin="3"/>
-<pinref part="JP12" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$25" class="0">
-<segment>
-<pinref part="JP12" gate="G$1" pin="3"/>
-<pinref part="JP13" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="JP13" gate="G$1" pin="3"/>
-<pinref part="JP14" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$27" class="0">
-<segment>
-<pinref part="JP14" gate="G$1" pin="3"/>
-<pinref part="JP15" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$28" class="0">
-<segment>
-<pinref part="JP15" gate="G$1" pin="3"/>
-<pinref part="JP16" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<pinref part="JP16" gate="G$1" pin="3"/>
-<pinref part="JP17" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$4" class="0">
