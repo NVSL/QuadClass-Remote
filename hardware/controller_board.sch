@@ -3913,6 +3913,22 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <gate name="G$1" symbol="RESOLVED-RESISTOR_" x="0" y="0"/>
 </gates>
 <devices>
+<device name="SMD-2012-0805-150" package="RESC2012X60_HS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="YAG3694CT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="REVIEWER" value="Swanson"/>
+<attribute name="VALUE" value="150"/>
+</technology>
+</technologies>
+</device>
 <device name="SMD-2012-0805-100" package="RESC2012X60_HS">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -4114,6 +4130,21 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="DISTPN" value="YAG3721CT-ND"/>
 <attribute name="MOUNTING" value="SMD"/>
 <attribute name="VALUE" value="30K"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-2012-0805-15K" package="RESC2012X60_HS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="SWANSON"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="YAG3695CT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="15K"/>
 </technology>
 </technologies>
 </device>
