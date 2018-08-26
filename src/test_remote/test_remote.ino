@@ -33,8 +33,16 @@ void setup() {
      Serial.begin(SERIAL_BAUD);           // Start up serial
      delay(100);
      quad_remote_setup();
+     
+     ADMUX_struct.refs = 3;
+     ADCSRA_struct.aden = 0;
+     ADCSRA_struct.aden = 1;
+     delay(1000);
 
-     ADMUX_struct.refs = 2;
+     Serial.println(ADCSRA);
+     Serial.println(ADCSRB);
+     Serial.println(ADMUX);
+     
      
      for(char i = 0; i < 8; i++) {
 	  scale[7-i] = B11111111;
@@ -78,13 +86,13 @@ void loop() {
      }
 
      //update_display();
-
+     
      /*for(char i= 0; i < TOTAL_CHANNELS;i++) {
 	  Serial.print(numbers[i]);
 	  Serial.print(" ");
-     }
+	  }
 
-     Serial.println("\n");*/
+	  Serial.println("\n");*/
 
      rfWrite((uint8_t*)numbers, sizeof(numbers));
 

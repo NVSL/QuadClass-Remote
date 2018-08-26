@@ -3869,8 +3869,8 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </connects>
 <technologies>
 <technology name="">
-<attribute name="COLOR1" value="RED"/>
-<attribute name="COLOR2" value="GREEN"/>
+<attribute name="COLOR1" value="GREEN"/>
+<attribute name="COLOR2" value="RED"/>
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="160-1172-1-ND"/>
