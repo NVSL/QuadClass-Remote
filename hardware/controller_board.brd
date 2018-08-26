@@ -253,7 +253,7 @@ Mark IV</text>
 <wire x1="21.3125" y1="17" x2="21.625" y2="16.6875" width="0.127" layer="41"/>
 <wire x1="21.625" y1="16.6875" x2="21.625" y2="16.0625" width="0.127" layer="41"/>
 <wire x1="23.625" y1="17" x2="23.625" y2="16.25" width="0.127" layer="41"/>
-<text x="8.75" y="22.8125" size="0.9" layer="21" font="vector">Rev 3</text>
+<text x="8.75" y="22.8125" size="0.9" layer="21" font="vector">Rev 4</text>
 <text x="-42.75" y="46" size="3" layer="48" font="vector">For 50 boards: $2/board</text>
 <text x="6.025" y="28.375" size="1.4224" layer="21" font="vector" rot="R90" align="center">BLK</text>
 <text x="-10.875" y="28.25" size="1.4224" layer="21" font="vector" rot="R270" align="center">GRN</text>
@@ -291,8 +291,8 @@ Mark IV</text>
 3mm standoff (1x donuts)
 3mm baseplate
 1.6mm nut
-22.8 mm total
-~7/8in</text>
+28.8 mm total
+~1 1/4 in</text>
 <text x="-20" y="60" size="1.778" layer="48">Mounting w/o LCD:
 1.6mm controller board
 9mm standoff (3x donuts)
