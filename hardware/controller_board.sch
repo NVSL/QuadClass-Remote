@@ -4676,7 +4676,7 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <wire x1="77.47" y1="64.77" x2="311.15" y2="64.77" width="0.1524" layer="97" style="longdash"/>
 <wire x1="311.15" y1="64.77" x2="311.15" y2="130.81" width="0.1524" layer="97" style="longdash"/>
 <text x="85.09" y="6.35" size="3.81" layer="97">LiPo Charger *</text>
-<text x="154.94" y="66.04" size="3.81" layer="97">Switchable FTDI (&amp; 70mA 3.3V regulator)*</text>
+<text x="154.94" y="66.04" size="3.81" layer="97">Switchable FTDI</text>
 <wire x1="72.39" y1="275.59" x2="72.39" y2="226.06" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="226.06" x2="3.81" y2="226.06" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="226.06" x2="72.39" y2="181.61" width="0.1524" layer="97" style="longdash"/>
@@ -4711,6 +4711,11 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <text x="248.92" y="251.46" size="1.27" layer="91">Try a 1uF cap, so we don't need 0.1uF caps</text>
 <text x="386.08" y="45.72" size="1.778" layer="97">Toggle JP7 to enable FTDI</text>
 <text x="347.98" y="50.8" size="1.778" layer="97">Disconnect JP1,3,4,5 to enable FTDI</text>
+<text x="86.36" y="256.54" size="1.778" layer="91">Setting ADMUX_struct.refs = 3;
+and then connecting AREF to GREF seeems to work fine on the red board.
+So using same refs value and a voltage divider.
+Need to retune the battery sense resistors.</text>
+<text x="10.16" y="102.87" size="1.778" layer="91">Open JP5 to enable the switch</text>
 </plain>
 <instances>
 <instance part="GND10" gate="1" x="339.09" y="226.06"/>
