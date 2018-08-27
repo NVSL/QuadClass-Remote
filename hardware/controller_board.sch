@@ -4542,8 +4542,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="P+1" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+2" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+3" library="supply1" deviceset="+3V3" device=""/>
-<part name="R1" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
-<part name="R3" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
+<part name="R18" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
+<part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
 <part name="U1" library="quadparts_prebuilt" deviceset="ATMEGA128RFA1" device=""/>
 <part name="Y1" library="quadparts_prebuilt" deviceset="CRYSTAL" device="5X3"/>
 <part name="GND6" library="quadparts_prebuilt" deviceset="GND" device=""/>
@@ -4589,15 +4589,15 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </part>
 <part name="GND35" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="U4" library="RemoteParts" deviceset="MCP73831/2" device="" value="MCP73831T-2ACI/OT"/>
-<part name="R8" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
+<part name="R1" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
 <part name="U$9" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="U$11" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="U$12" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="U$13" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="C10" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
 <part name="C8" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
-<part name="R10" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-2.2K" value="2.2K"/>
-<part name="R11" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
+<part name="R7" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-2.2K" value="2.2K"/>
+<part name="R15" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
 <part name="V1" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V2" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V6" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
@@ -4649,11 +4649,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="SPICEPREFIX" value="J"/>
 <variant name="Minimal" populate="no"/>
 </part>
-<part name="R4" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-270" value="270">
-<attribute name="SPICEPREFIX" value="R"/>
-<variant name="Minimal" populate="no"/>
-</part>
-<part name="R5" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1K" value="1K">
+<part name="R10" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-270" value="270">
 <attribute name="SPICEPREFIX" value="R"/>
 <variant name="Minimal" populate="no"/>
 </part>
@@ -4661,10 +4657,14 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="SPICEPREFIX" value="R"/>
 <variant name="Minimal" populate="no"/>
 </part>
-<part name="R13" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-12K" value="12K">
+<part name="R11" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1K" value="1K">
+<attribute name="SPICEPREFIX" value="R"/>
 <variant name="Minimal" populate="no"/>
 </part>
-<part name="R14" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-30K" value="30K">
+<part name="R5" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-12K" value="12K">
+<variant name="Minimal" populate="no"/>
+</part>
+<part name="R4" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-30K" value="30K">
 <variant name="Minimal" populate="no"/>
 </part>
 <part name="GND2" library="quadparts_prebuilt" deviceset="GND" device=""/>
@@ -4681,7 +4681,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="U$3" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-2-56-GROUNDED" value="MOUNTING-HOLE-2-56-GROUNDED"/>
 <part name="U$6" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-2-56-GROUNDED" value="MOUNTING-HOLE-2-56-GROUNDED"/>
 <part name="U$7" library="RemoteParts" deviceset="MOUNTING-HOLE" device="-2-56-GROUNDED" value="MOUNTING-HOLE-2-56-GROUNDED"/>
-<part name="R15" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-270" value="270">
+<part name="R6" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-270" value="270">
 <attribute name="SPICEPREFIX" value="R"/>
 <variant name="Minimal" populate="no"/>
 </part>
@@ -4735,10 +4735,10 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </part>
 <part name="JP6" library="RemoteParts" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_NO-SILK"/>
 <part name="JP8" library="RemoteParts" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_NO-SILK"/>
-<part name="R16" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1K" value="1K">
+<part name="R8" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1K" value="1K">
 <variant name="Minimal" populate="no"/>
 </part>
-<part name="R17" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1K" value="1K">
+<part name="R9" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1K" value="1K">
 <variant name="Minimal" populate="no"/>
 </part>
 <part name="JP9" library="RemoteParts" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK"/>
@@ -4749,13 +4749,13 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="D3" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED"/>
 <part name="D5" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED"/>
 <part name="GND5" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510">
+<part name="R13" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510">
 <variant name="Minimal" populate="no"/>
 </part>
-<part name="R6" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
-<part name="R7" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
-<part name="R9" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
-<part name="R18" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
+<part name="R16" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
+<part name="R3" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
+<part name="R14" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
+<part name="R17" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
 </parts>
 <sheets>
 <sheet>
@@ -4846,8 +4846,8 @@ Need to retune the battery sense resistors.</text>
 <instance part="P+1" gate="G$1" x="226.06" y="260.35"/>
 <instance part="P+2" gate="G$1" x="238.76" y="176.53"/>
 <instance part="P+3" gate="G$1" x="246.38" y="176.53"/>
-<instance part="R1" gate="G$1" x="123.19" y="173.99"/>
-<instance part="R3" gate="G$1" x="236.22" y="250.19" rot="R90"/>
+<instance part="R18" gate="G$1" x="123.19" y="173.99"/>
+<instance part="R2" gate="G$1" x="236.22" y="250.19" rot="R90"/>
 <instance part="U1" gate="G$1" x="193.04" y="207.01" rot="MR0"/>
 <instance part="Y1" gate="G$1" x="241.3" y="204.47"/>
 <instance part="GND6" gate="1" x="396.24" y="91.44"/>
@@ -4880,15 +4880,15 @@ Need to retune the battery sense resistors.</text>
 <instance part="C13" gate="G$1" x="176.53" y="99.06"/>
 <instance part="GND35" gate="1" x="106.68" y="101.6"/>
 <instance part="U4" gate="G$1" x="140.97" y="36.83"/>
-<instance part="R8" gate="G$1" x="118.11" y="34.29"/>
+<instance part="R1" gate="G$1" x="118.11" y="34.29"/>
 <instance part="U$9" gate="1" x="92.71" y="21.59"/>
 <instance part="U$11" gate="1" x="179.07" y="25.4"/>
 <instance part="U$12" gate="1" x="156.21" y="31.75"/>
 <instance part="U$13" gate="1" x="114.3" y="24.13"/>
 <instance part="C10" gate="G$1" x="92.71" y="34.29"/>
 <instance part="C8" gate="G$1" x="179.07" y="34.29"/>
-<instance part="R10" gate="G$1" x="163.83" y="36.83"/>
-<instance part="R11" gate="G$1" x="127" y="212.09" rot="R90"/>
+<instance part="R7" gate="G$1" x="163.83" y="36.83"/>
+<instance part="R15" gate="G$1" x="127" y="212.09" rot="R90"/>
 <instance part="V1" gate="G$1" x="110.49" y="39.37" rot="R90"/>
 <instance part="V2" gate="G$1" x="113.03" y="39.37" rot="R90"/>
 <instance part="V6" gate="G$1" x="158.75" y="39.37" rot="R90"/>
@@ -4930,11 +4930,11 @@ Need to retune the battery sense resistors.</text>
 <instance part="F4" gate="G$1" x="353.06" y="29.21"/>
 <instance part="L1" gate="G$1" x="392.43" y="149.86"/>
 <instance part="P6" gate="G$1" x="361.95" y="177.8"/>
-<instance part="R4" gate="G$1" x="359.41" y="144.78"/>
-<instance part="R5" gate="G$1" x="359.41" y="137.16"/>
-<instance part="R12" gate="G$1" x="359.41" y="129.54"/>
-<instance part="R13" gate="G$1" x="222.25" y="34.29" rot="R90"/>
-<instance part="R14" gate="G$1" x="222.25" y="22.86" rot="R90"/>
+<instance part="R10" gate="G$1" x="359.41" y="144.78"/>
+<instance part="R12" gate="G$1" x="359.41" y="137.16"/>
+<instance part="R11" gate="G$1" x="359.41" y="129.54"/>
+<instance part="R5" gate="G$1" x="222.25" y="34.29" rot="R90"/>
+<instance part="R4" gate="G$1" x="222.25" y="22.86" rot="R90"/>
 <instance part="GND2" gate="1" x="222.25" y="15.24"/>
 <instance part="B3" gate="G$1" x="242.57" y="34.29" rot="R180"/>
 <instance part="J11" gate="A" x="101.6" y="111.76" rot="MR0"/>
@@ -4944,7 +4944,7 @@ Need to retune the battery sense resistors.</text>
 <instance part="U$3" gate="G$1" x="398.78" y="29.21"/>
 <instance part="U$6" gate="G$1" x="408.94" y="29.21"/>
 <instance part="U$7" gate="G$1" x="419.1" y="29.21"/>
-<instance part="R15" gate="G$1" x="359.41" y="152.4"/>
+<instance part="R6" gate="G$1" x="359.41" y="152.4"/>
 <instance part="J1" gate="G$1" x="15.24" y="207.01"/>
 <instance part="J2" gate="G$1" x="15.24" y="191.77"/>
 <instance part="J8" gate="G$1" x="15.24" y="146.05"/>
@@ -4972,19 +4972,19 @@ Need to retune the battery sense resistors.</text>
 <instance part="J5" gate="G$1" x="21.59" y="107.95"/>
 <instance part="JP6" gate="G$1" x="284.48" y="196.85"/>
 <instance part="JP8" gate="G$1" x="63.5" y="204.47"/>
-<instance part="R16" gate="G$1" x="76.2" y="215.9" rot="R90"/>
-<instance part="R17" gate="G$1" x="76.2" y="201.93" rot="R90"/>
+<instance part="R8" gate="G$1" x="76.2" y="215.9" rot="R90"/>
+<instance part="R9" gate="G$1" x="76.2" y="201.93" rot="R90"/>
 <instance part="JP9" gate="G$1" x="81.28" y="209.55"/>
 <instance part="D1" gate="G$1" x="133.35" y="177.8" rot="MR0"/>
 <instance part="D2" gate="G$1" x="243.84" y="88.9" rot="MR270"/>
 <instance part="D3" gate="G$1" x="106.68" y="30.48" rot="MR180"/>
 <instance part="D5" gate="G$1" x="123.19" y="223.52" rot="MR270"/>
 <instance part="GND5" gate="1" x="123.19" y="204.47"/>
-<instance part="R2" gate="G$1" x="240.03" y="101.6" rot="R90"/>
-<instance part="R6" gate="G$1" x="119.38" y="212.09" rot="R90"/>
-<instance part="R7" gate="G$1" x="118.11" y="29.21"/>
-<instance part="R9" gate="G$1" x="247.65" y="101.6" rot="R90"/>
-<instance part="R18" gate="G$1" x="123.19" y="181.61"/>
+<instance part="R13" gate="G$1" x="240.03" y="101.6" rot="R90"/>
+<instance part="R16" gate="G$1" x="119.38" y="212.09" rot="R90"/>
+<instance part="R3" gate="G$1" x="118.11" y="29.21"/>
+<instance part="R14" gate="G$1" x="247.65" y="101.6" rot="R90"/>
+<instance part="R17" gate="G$1" x="123.19" y="181.61"/>
 </instances>
 <busses>
 </busses>
@@ -5217,7 +5217,7 @@ Need to retune the battery sense resistors.</text>
 <pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="168.91" y1="36.83" x2="170.18" y2="36.83" width="0.1524" layer="91"/>
 <wire x1="170.18" y1="36.83" x2="170.18" y2="33.02" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="1" pin="GND"/>
@@ -5263,7 +5263,7 @@ Need to retune the battery sense resistors.</text>
 <pinref part="E1" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<pinref part="R14" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="1"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -5342,23 +5342,23 @@ Need to retune the battery sense resistors.</text>
 <label x="300.99" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R17" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="196.85" x2="76.2" y2="193.04" width="0.1524" layer="91"/>
 <label x="76.2" y="193.04" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R1" gate="G$1" pin="1"/>
+<pinref part="R18" gate="G$1" pin="1"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 <wire x1="118.11" y1="173.99" x2="115.57" y2="173.99" width="0.1524" layer="91"/>
-<pinref part="R18" gate="G$1" pin="1"/>
+<pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="118.11" y1="181.61" x2="118.11" y2="173.99" width="0.1524" layer="91"/>
 <junction x="118.11" y="173.99"/>
 </segment>
 <segment>
-<pinref part="R11" gate="G$1" pin="1"/>
+<pinref part="R15" gate="G$1" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="127" y1="207.01" x2="123.19" y2="207.01" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="1"/>
+<pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="123.19" y1="207.01" x2="119.38" y2="207.01" width="0.1524" layer="91"/>
 <junction x="123.19" y="207.01"/>
 </segment>
@@ -5471,7 +5471,7 @@ Need to retune the battery sense resistors.</text>
 </segment>
 <segment>
 <pinref part="P+10" gate="G$1" pin="+3V3"/>
-<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="236.22" y1="255.27" x2="236.22" y2="257.81" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -5516,7 +5516,7 @@ Need to retune the battery sense resistors.</text>
 <label x="63.5" y="195.58" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="220.98" x2="76.2" y2="226.06" width="0.1524" layer="91"/>
 <label x="76.2" y="226.06" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
@@ -5534,7 +5534,7 @@ Need to retune the battery sense resistors.</text>
 </segment>
 <segment>
 <pinref part="B7" gate="G$1" pin="1"/>
-<pinref part="R3" gate="G$1" pin="1"/>
+<pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="U1" gate="G$1" pin="RSTN"/>
 <wire x1="220.98" y1="240.03" x2="236.22" y2="240.03" width="0.1524" layer="91"/>
 <junction x="236.22" y="240.03"/>
@@ -5694,10 +5694,10 @@ Need to retune the battery sense resistors.</text>
 </segment>
 <segment>
 <label x="243.84" y="113.03" size="1.27" layer="95" rot="R90" xref="yes"/>
-<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="240.03" y1="106.68" x2="243.84" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="243.84" y1="113.03" x2="243.84" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="2"/>
+<pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="247.65" y1="106.68" x2="243.84" y2="106.68" width="0.1524" layer="91"/>
 <junction x="243.84" y="106.68"/>
 </segment>
@@ -5723,7 +5723,7 @@ Need to retune the battery sense resistors.</text>
 <label x="361.95" y="185.42" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R15" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="354.33" y1="152.4" x2="351.79" y2="152.4" width="0.1524" layer="91"/>
 <label x="351.79" y="152.4" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -5794,7 +5794,7 @@ Need to retune the battery sense resistors.</text>
 <junction x="171.45" y="39.37"/>
 <pinref part="V36" gate="G$1" pin="N"/>
 <junction x="176.53" y="39.37"/>
-<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="222.25" y1="39.37" x2="232.41" y2="39.37" width="0.1524" layer="91"/>
 <junction x="222.25" y="39.37"/>
 <wire x1="232.41" y1="39.37" x2="240.03" y2="39.37" width="0.1524" layer="91"/>
@@ -5871,15 +5871,15 @@ Need to retune the battery sense resistors.</text>
 <segment>
 <pinref part="D2" gate="G$1" pin="A1"/>
 <wire x1="247.65" y1="96.52" x2="247.65" y2="92.71" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="1"/>
+<pinref part="R14" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="R8" gate="G$1" pin="2"/>
+<pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="U4" gate="G$1" pin="STAT"/>
 <wire x1="123.19" y1="34.29" x2="128.27" y2="34.29" width="0.1524" layer="91"/>
-<pinref part="R7" gate="G$1" pin="2"/>
+<pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="123.19" y1="34.29" x2="123.19" y2="29.21" width="0.1524" layer="91"/>
 <junction x="123.19" y="34.29"/>
 </segment>
@@ -5888,7 +5888,7 @@ Need to retune the battery sense resistors.</text>
 <segment>
 <pinref part="U4" gate="G$1" pin="PROG"/>
 <wire x1="153.67" y1="36.83" x2="158.75" y2="36.83" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R7" gate="G$1" pin="1"/>
 </segment>
 </net>
 <net name="PROG_SEL" class="0">
@@ -6140,7 +6140,7 @@ Need to retune the battery sense resistors.</text>
 <net name="LCD-R" class="0">
 <segment>
 <label x="351.79" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R4" gate="G$1" pin="1"/>
+<pinref part="R10" gate="G$1" pin="1"/>
 <wire x1="354.33" y1="144.78" x2="351.79" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -6152,7 +6152,7 @@ Need to retune the battery sense resistors.</text>
 <net name="LCD-G" class="0">
 <segment>
 <label x="351.79" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="354.33" y1="137.16" x2="351.79" y2="137.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -6164,7 +6164,7 @@ Need to retune the battery sense resistors.</text>
 <net name="LCD-B" class="0">
 <segment>
 <label x="351.79" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R12" gate="G$1" pin="1"/>
+<pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="354.33" y1="129.54" x2="351.79" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -6208,7 +6208,7 @@ Need to retune the battery sense resistors.</text>
 <segment>
 <wire x1="369.57" y1="139.7" x2="369.57" y2="137.16" width="0.1524" layer="91"/>
 <wire x1="369.57" y1="137.16" x2="364.49" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="2"/>
+<pinref part="R12" gate="G$1" pin="2"/>
 <pinref part="L1" gate="G$1" pin="GREEN"/>
 <wire x1="382.27" y1="139.7" x2="369.57" y2="139.7" width="0.1524" layer="91"/>
 </segment>
@@ -6217,7 +6217,7 @@ Need to retune the battery sense resistors.</text>
 <segment>
 <wire x1="372.11" y1="137.16" x2="372.11" y2="129.54" width="0.1524" layer="91"/>
 <wire x1="372.11" y1="129.54" x2="364.49" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="R11" gate="G$1" pin="2"/>
 <pinref part="L1" gate="G$1" pin="BLUE"/>
 <wire x1="382.27" y1="137.16" x2="372.11" y2="137.16" width="0.1524" layer="91"/>
 </segment>
@@ -6260,8 +6260,8 @@ Need to retune the battery sense resistors.</text>
 </net>
 <net name="BAT_SENSE" class="0">
 <segment>
-<pinref part="R13" gate="G$1" pin="1"/>
-<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="222.25" y1="29.21" x2="222.25" y2="27.94" width="0.1524" layer="91"/>
 <label x="222.25" y="29.21" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -6273,7 +6273,7 @@ Need to retune the battery sense resistors.</text>
 </net>
 <net name="N$5" class="0">
 <segment>
-<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="R10" gate="G$1" pin="2"/>
 <pinref part="L1" gate="G$1" pin="RED"/>
 <wire x1="364.49" y1="144.78" x2="369.57" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="369.57" y1="144.78" x2="369.57" y2="142.24" width="0.1524" layer="91"/>
@@ -6285,7 +6285,7 @@ Need to retune the battery sense resistors.</text>
 <pinref part="L1" gate="G$1" pin="A"/>
 <wire x1="382.27" y1="144.78" x2="372.11" y2="144.78" width="0.1524" layer="91"/>
 <wire x1="372.11" y1="144.78" x2="372.11" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="R15" gate="G$1" pin="2"/>
+<pinref part="R6" gate="G$1" pin="2"/>
 <wire x1="372.11" y1="152.4" x2="364.49" y2="152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6438,8 +6438,8 @@ Need to retune the battery sense resistors.</text>
 </net>
 <net name="V3V/2" class="0">
 <segment>
-<pinref part="R16" gate="G$1" pin="1"/>
-<pinref part="R17" gate="G$1" pin="2"/>
+<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="76.2" y1="210.82" x2="76.2" y2="209.55" width="0.1524" layer="91"/>
 <pinref part="JP9" gate="G$1" pin="1"/>
 <wire x1="76.2" y1="209.55" x2="76.2" y2="207.01" width="0.1524" layer="91"/>
@@ -6450,7 +6450,7 @@ Need to retune the battery sense resistors.</text>
 <net name="N$4" class="0">
 <segment>
 <pinref part="D1" gate="G$1" pin="C2"/>
-<pinref part="R18" gate="G$1" pin="2"/>
+<pinref part="R17" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="181.61" x2="128.27" y2="181.61" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -6464,7 +6464,7 @@ Need to retune the battery sense resistors.</text>
 </net>
 <net name="N$6" class="0">
 <segment>
-<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="R15" gate="G$1" pin="2"/>
 <pinref part="D5" gate="G$1" pin="C1"/>
 <wire x1="127" y1="217.17" x2="127" y2="219.71" width="0.1524" layer="91"/>
 </segment>
@@ -6473,26 +6473,26 @@ Need to retune the battery sense resistors.</text>
 <segment>
 <pinref part="D5" gate="G$1" pin="C2"/>
 <wire x1="119.38" y1="219.71" x2="119.38" y2="217.17" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
+<pinref part="R16" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="R13" gate="G$1" pin="1"/>
 <pinref part="D2" gate="G$1" pin="A2"/>
 <wire x1="240.03" y1="92.71" x2="240.03" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$30" class="0">
 <segment>
-<pinref part="R1" gate="G$1" pin="2"/>
+<pinref part="R18" gate="G$1" pin="2"/>
 <pinref part="D1" gate="G$1" pin="C1"/>
 <wire x1="129.54" y1="173.99" x2="128.27" y2="173.99" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="R7" gate="G$1" pin="1"/>
+<pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="113.03" y1="29.21" x2="101.6" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="29.21" x2="101.6" y2="26.67" width="0.1524" layer="91"/>
 <pinref part="D3" gate="G$1" pin="A2"/>
@@ -6501,7 +6501,7 @@ Need to retune the battery sense resistors.</text>
 </net>
 <net name="N$2" class="0">
 <segment>
-<pinref part="R8" gate="G$1" pin="1"/>
+<pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="D3" gate="G$1" pin="C1"/>
 <wire x1="113.03" y1="34.29" x2="110.49" y2="34.29" width="0.1524" layer="91"/>
 </segment>
