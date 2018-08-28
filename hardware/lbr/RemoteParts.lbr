@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2276,7 +2276,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pad name="P$16" x="8.89" y="16.27" drill="1.02"/>
 </package>
 <package name="SUPPORT_DONUT">
-<circle x="0" y="0" radius="1.25" width="0.127" layer="100"/>
+<circle x="0" y="0" radius="1.1" width="0.127" layer="100"/>
 <circle x="0" y="0" radius="2.65" width="0.127" layer="100"/>
 </package>
 <package name="SMT-JUMPER_3_0-NC_PASTE_NO-SILK">
@@ -2416,6 +2416,66 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <rectangle x1="0.3048" y1="-0.127" x2="0.7112" y2="0.127" layer="1"/>
 <rectangle x1="-0.7112" y1="-0.127" x2="-0.3048" y2="0.127" layer="1"/>
 </package>
+<package name="SPARKFUN_SERLCD_16X2">
+<text x="-30.558" y="18.517" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<circle x="-37.5" y="15.5" radius="2.65" width="0.127" layer="39"/>
+<wire x1="-40" y1="18" x2="-40" y2="-18" width="0.127" layer="51"/>
+<wire x1="-40" y1="-18" x2="40" y2="-18" width="0.127" layer="51"/>
+<wire x1="40" y1="-18" x2="40" y2="18" width="0.127" layer="51"/>
+<wire x1="40" y1="18" x2="-40" y2="18" width="0.127" layer="51"/>
+<hole x="-37.5" y="15.5" drill="2.2"/>
+<hole x="37.5" y="15.5" drill="2.2"/>
+<hole x="37.5" y="-15.5" drill="2.2"/>
+<hole x="-37.5" y="-15.5" drill="2.2"/>
+<pad name="RST" x="25" y="16" drill="1.02"/>
+<pad name="RX" x="19.5" y="16" drill="1.02"/>
+<pad name="GND" x="17.5" y="16" drill="1.02"/>
+<pad name="PWR" x="15.5" y="16" drill="1.02"/>
+<pad name="GND2" x="8" y="16" drill="1.02"/>
+<pad name="RAW" x="5.46" y="16" drill="1.02"/>
+<pad name="DA" x="2.92" y="16" drill="1.02"/>
+<pad name="CL" x="0.38" y="16" drill="1.02"/>
+<pad name="TX0" x="-2.16" y="16" drill="1.02"/>
+<pad name="RX1" x="-4.7" y="16" drill="1.02"/>
+<pad name="/CS" x="-7.24" y="16" drill="1.02"/>
+<pad name="SDI" x="-9.78" y="16" drill="1.02"/>
+<pad name="SDO" x="-12.32" y="16" drill="1.02"/>
+<pad name="SCK" x="-14.86" y="16" drill="1.02"/>
+<pad name="R" x="-17.4" y="16" drill="1.02"/>
+<pad name="TX2" x="-19.94" y="16" drill="1.02"/>
+<pad name="RX2" x="-22.48" y="16" drill="1.02"/>
+<pad name="+" x="-25.02" y="16" drill="1.02"/>
+<pad name="GND3" x="-27.56" y="16" drill="1.02"/>
+<pad name="GND4" x="-30.1" y="16" drill="1.02"/>
+<circle x="37.5" y="15.5" radius="2.65" width="0.127" layer="39"/>
+<circle x="37.5" y="-15.5" radius="2.65" width="0.127" layer="39"/>
+<circle x="-37.5" y="-15.5" radius="2.65" width="0.127" layer="39"/>
+</package>
+<package name="SPARKFUN_SERLCD_16X2_REDUCED">
+<text x="-30.558" y="18.517" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<circle x="-37.5" y="15.5" radius="2.65" width="0.127" layer="39"/>
+<wire x1="-40" y1="18" x2="-40" y2="-18" width="0.127" layer="51"/>
+<wire x1="-40" y1="-18" x2="40" y2="-18" width="0.127" layer="51"/>
+<wire x1="40" y1="-18" x2="40" y2="18" width="0.127" layer="51"/>
+<wire x1="40" y1="18" x2="-40" y2="18" width="0.127" layer="51"/>
+<hole x="-37.5" y="15.5" drill="2.2"/>
+<hole x="37.5" y="15.5" drill="2.2"/>
+<hole x="37.5" y="-15.5" drill="2.2"/>
+<hole x="-37.5" y="-15.5" drill="2.2"/>
+<pad name="GND2" x="8" y="16" drill="1.02"/>
+<pad name="RAW" x="5.46" y="16" drill="1.02"/>
+<pad name="DA" x="2.92" y="16" drill="1.02"/>
+<pad name="CL" x="0.38" y="16" drill="1.02"/>
+<pad name="TX0" x="-2.16" y="16" drill="1.02"/>
+<pad name="RX1" x="-4.7" y="16" drill="1.02"/>
+<pad name="/CS" x="-7.24" y="16" drill="1.02"/>
+<pad name="SDI" x="-9.78" y="16" drill="1.02"/>
+<pad name="SDO" x="-12.32" y="16" drill="1.02"/>
+<pad name="SCK" x="-14.86" y="16" drill="1.02"/>
+<circle x="37.5" y="15.5" radius="2.65" width="0.127" layer="39"/>
+<circle x="37.5" y="-15.5" radius="2.65" width="0.127" layer="39"/>
+<circle x="-37.5" y="-15.5" radius="2.65" width="0.127" layer="39"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" locally_modified="yes" type="model">
@@ -2437,6 +2497,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="V" x="11.43" y="7.62" length="middle" rot="R180"/>
 <pin name="+" x="11.43" y="10.16" length="middle" rot="R180"/>
 <text x="0" y="-1.905" size="1.27" layer="95">&gt;NAME</text>
+<text x="3.175" y="1.27" size="1.27" layer="96" align="center">&gt;VALUE</text>
 </symbol>
 <symbol name="GIMBAL_3PIN">
 <description>This is the surface mount connector for the 9XR Replacement Gimbal. 
@@ -2967,6 +3028,22 @@ Created: 10/25/2014</description>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <wire x1="0" y1="2.032" x2="0" y2="-1.778" width="0.254" layer="94"/>
 </symbol>
+<symbol name="SPARKFUN_SERLCD_SERIAL_REDUCED">
+<pin name="GND" x="15.24" y="5.08" length="middle" rot="R180"/>
+<pin name="VIN" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="SDA" x="15.24" y="35.56" length="middle" rot="R180"/>
+<pin name="SCL" x="15.24" y="33.02" length="middle" rot="R180"/>
+<pin name="RX" x="15.24" y="27.94" length="middle" rot="R180"/>
+<pin name="TX" x="15.24" y="25.4" length="middle" rot="R180"/>
+<pin name="SCK" x="15.24" y="20.32" length="middle" rot="R180"/>
+<pin name="SDO" x="15.24" y="17.78" length="middle" rot="R180"/>
+<pin name="SDI" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="/CS" x="15.24" y="12.7" length="middle" rot="R180"/>
+<wire x1="10.16" y1="40.64" x2="10.16" y2="0" width="0.254" layer="94"/>
+<wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="40.64" width="0.254" layer="94"/>
+<wire x1="0" y1="40.64" x2="10.16" y2="40.64" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRSKY-GIMBAL" prefix="J">
@@ -2986,6 +3063,7 @@ Created: 10/25/2014</description>
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="A100106-ND"/>
 <attribute name="MOUNTING" value="TH"/>
+<attribute name="VALUE" value="2.4K"/>
 </technology>
 </technologies>
 </device>
@@ -2998,10 +3076,11 @@ Created: 10/25/2014</description>
 </connects>
 <technologies>
 <technology name="">
-<attribute name="CREATOR" value="Swanson" constant="no"/>
+<attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="609-3327-ND"/>
 <attribute name="MOUNTING" value="TH"/>
+<attribute name="VALUE" value="1.2K"/>
 </technology>
 </technologies>
 </device>
@@ -4132,6 +4211,50 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPARKFUN_SERLCD_SERIAL">
+<gates>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SPARKFUN_SERLCD_SERIAL_REDUCED">
+<gates>
+<gate name="G$1" symbol="SPARKFUN_SERLCD_SERIAL_REDUCED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SPARKFUN_SERLCD_16X2_REDUCED">
+<connects>
+<connect gate="G$1" pin="/CS" pad="/CS"/>
+<connect gate="G$1" pin="GND" pad="GND2"/>
+<connect gate="G$1" pin="RX" pad="RX1"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+<connect gate="G$1" pin="SCL" pad="CL"/>
+<connect gate="G$1" pin="SDA" pad="DA"/>
+<connect gate="G$1" pin="SDI" pad="SDI"/>
+<connect gate="G$1" pin="SDO" pad="SDO"/>
+<connect gate="G$1" pin="TX" pad="TX0"/>
+<connect gate="G$1" pin="VIN" pad="RAW"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="AUX1DIST" value="DIGIKEY"/>
+<attribute name="AUX1DISTPN" value="952-1842-ND"/>
+<attribute name="AUX2DIST" value="Digikey"/>
+<attribute name="AUX2DISTPN" value="S7008-ND	
+"/>
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="Sparkfun"/>
+<attribute name="DISTPN" value="LCD-14072"/>
+</technology>
 </technologies>
 </device>
 </devices>

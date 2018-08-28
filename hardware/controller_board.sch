@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="yes" active="yes"/>
@@ -913,29 +913,6 @@
 </polygon>
 <rectangle x1="0.3048" y1="-0.127" x2="0.7112" y2="0.127" layer="1"/>
 </package>
-<package name="SMT-JUMPER_3_1-NC_PASTE_NO-SILK">
-<text x="0" y="1.143" size="1" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
-<rectangle x1="-0.4064" y1="-1.1176" x2="1.651" y2="1.1176" layer="31"/>
-<smd name="1" x="-0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-</package>
-<package name="SMT-JUMPER_3_1-NC_PASTE_SILK">
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<wire x1="1.27" y1="-1.016" x2="-1.27" y2="-1.016" width="0.1524" layer="21"/>
-<wire x1="1.27" y1="1.016" x2="1.524" y2="0.762" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.524" y1="0.762" x2="-1.27" y2="1.016" width="0.1524" layer="21" curve="-90"/>
-<wire x1="-1.524" y1="-0.762" x2="-1.27" y2="-1.016" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.27" y1="-1.016" x2="1.524" y2="-0.762" width="0.1524" layer="21" curve="90"/>
-<wire x1="1.524" y1="-0.762" x2="1.524" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-1.524" y1="-0.762" x2="-1.524" y2="0.762" width="0.1524" layer="21"/>
-<wire x1="-1.27" y1="1.016" x2="1.27" y2="1.016" width="0.1524" layer="21"/>
-<rectangle x1="-0.4064" y1="-1.1176" x2="1.651" y2="1.1176" layer="31"/>
-<smd name="1" x="-0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="3" x="0.8128" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-</package>
 <package name="TEST-POINT-KEYSTONE-5000">
 <pad name="T" x="0" y="0" drill="1"/>
 <circle x="0" y="0" radius="1.27" width="0.127" layer="39"/>
@@ -1143,66 +1120,6 @@
 <wire x1="6.2" y1="-6.7" x2="-6.2" y2="-6.7" width="0.127" layer="39"/>
 <wire x1="-6.2" y1="-6.7" x2="-6.2" y2="6.7" width="0.127" layer="39"/>
 <circle x="0" y="0" radius="6.35" width="0.1" layer="21"/>
-</package>
-<package name="SMT-JUMPER_2_NO_NO-SILK">
-<text x="0" y="1.143" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.143" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-</package>
-<package name="SMT-JUMPER_2_NO_NO-SILK_ROUND">
-<smd name="1" x="-1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R270" stop="no" thermals="no" cream="no"/>
-<smd name="2" x="1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R90" stop="no" thermals="no" cream="no"/>
-<text x="0" y="1.9685" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.9685" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<polygon width="0.00508125" layer="1">
-<vertex x="0.111125" y="-1.42875" curve="85"/>
-<vertex x="1.381125" y="0" curve="85"/>
-<vertex x="0.111125" y="1.42875"/>
-</polygon>
-<polygon width="0.00508125" layer="1">
-<vertex x="-0.111125" y="1.42875"/>
-<vertex x="-0.111125" y="-1.42875" curve="-85"/>
-<vertex x="-1.381125" y="0" curve="-85"/>
-</polygon>
-<polygon width="0.2032" layer="29">
-<vertex x="0" y="1.42875" curve="-90"/>
-<vertex x="1.42875" y="0" curve="-90"/>
-<vertex x="0" y="-1.42875" curve="-90"/>
-<vertex x="-1.42875" y="0" curve="-90"/>
-</polygon>
-</package>
-<package name="SMT-JUMPER_2_NO_SILK">
-<text x="0" y="0.943" size="0.6096" layer="25" font="vector" ratio="7" align="bottom-center">&gt;NAME</text>
-<smd name="1" x="-0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<smd name="2" x="0.4064" y="0" dx="0.635" dy="1.27" layer="1" cream="no"/>
-<wire x1="-0.9" y1="0.8" x2="0.9" y2="0.8" width="0.127" layer="21"/>
-<wire x1="0.9" y1="0.8" x2="0.9" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="0.9" y1="-0.8" x2="-0.9" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="-0.9" y1="-0.8" x2="-0.9" y2="0.8" width="0.127" layer="21"/>
-</package>
-<package name="SMT-JUMPER_2_NO_SILK_ROUND">
-<smd name="1" x="-1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R270" stop="no" thermals="no" cream="no"/>
-<smd name="2" x="1.27" y="0" dx="0.3048" dy="0.1524" layer="1" roundness="20" rot="R90" stop="no" thermals="no" cream="no"/>
-<text x="0" y="1.9685" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.9685" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;VALUE</text>
-<polygon width="0.00508125" layer="1">
-<vertex x="0.111125" y="-1.42875" curve="85"/>
-<vertex x="1.381125" y="0" curve="85"/>
-<vertex x="0.111125" y="1.42875"/>
-</polygon>
-<polygon width="0.00508125" layer="1">
-<vertex x="-0.111125" y="1.42875"/>
-<vertex x="-0.111125" y="-1.42875" curve="-85"/>
-<vertex x="-1.381125" y="0" curve="-85"/>
-</polygon>
-<polygon width="0.2032" layer="29">
-<vertex x="0" y="1.42875" curve="-90"/>
-<vertex x="1.42875" y="0" curve="-90"/>
-<vertex x="0" y="-1.42875" curve="-90"/>
-<vertex x="-1.42875" y="0" curve="-90"/>
-</polygon>
-<circle x="0" y="0" radius="1.74625" width="0.2032" layer="21"/>
 </package>
 <package name="LED-2X-LTST-C155">
 <smd name="A1" x="-1.75" y="0.7" dx="1.5" dy="1" layer="1"/>
@@ -1537,6 +1454,7 @@
 <pin name="V" x="11.43" y="7.62" length="middle" rot="R180"/>
 <pin name="+" x="11.43" y="10.16" length="middle" rot="R180"/>
 <text x="0" y="-1.905" size="1.27" layer="95">&gt;NAME</text>
+<text x="3.175" y="1.27" size="1.27" layer="96" align="center">&gt;VALUE</text>
 </symbol>
 <symbol name="SMT-JUMPER_2_NC_TRACE">
 <wire x1="0.381" y1="0.635" x2="1.016" y2="0" width="1.27" layer="94" curve="-90" cap="flat"/>
@@ -1565,28 +1483,6 @@
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 <wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
 </symbol>
-<symbol name="SMT-JUMPER_3_1-NC_PASTE">
-<wire x1="-0.635" y1="-1.397" x2="0.635" y2="-1.397" width="1.27" layer="94" curve="180" cap="flat"/>
-<wire x1="-0.635" y1="1.397" x2="0.635" y2="1.397" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="1.27" y1="-0.635" x2="-1.27" y2="-0.635" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="-1.27" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="94"/>
-<text x="2.54" y="0.381" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<rectangle x1="-1.27" y1="-0.635" x2="1.27" y2="0.635" layer="94"/>
-<pin name="3" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-<pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-<polygon width="0.254" layer="95">
-<vertex x="-1.524" y="0.762"/>
-<vertex x="-1.524" y="-1.524" curve="90"/>
-<vertex x="0" y="-3.048" curve="90"/>
-<vertex x="1.524" y="-1.524"/>
-<vertex x="1.524" y="0.762"/>
-</polygon>
-</symbol>
 <symbol name="TEST-POINT">
 <pin name="T" x="0" y="0" visible="off" length="middle" function="dot" rot="R90"/>
 <text x="0" y="7.62" size="1.27" layer="95" align="center">&gt;NAME</text>
@@ -1614,15 +1510,6 @@
 <text x="0" y="-6.35" size="1.27" layer="95" align="center">&gt;NAME</text>
 <text x="0" y="3.81" size="0.6096" layer="97" align="center">&gt;DETENT=</text>
 <text x="0" y="2.54" size="0.6096" layer="97" align="center">&gt;HEIGHT=</text>
-</symbol>
-<symbol name="SMT-JUMPER_2_NO">
-<wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="-0.381" y1="-0.635" x2="-0.381" y2="0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
-<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="0" x2="-1.651" y2="0" width="0.1524" layer="94"/>
-<text x="-2.54" y="2.54" size="1.778" layer="95" font="vector">&gt;NAME</text>
-<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
 <symbol name="LED-2X">
 <text x="2.032" y="0.508" size="1.778" layer="95">&gt;NAME</text>
@@ -2147,6 +2034,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="A100106-ND"/>
 <attribute name="MOUNTING" value="TH"/>
+<attribute name="VALUE" value="2.4K"/>
 </technology>
 </technologies>
 </device>
@@ -2159,10 +2047,11 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </connects>
 <technologies>
 <technology name="">
-<attribute name="CREATOR" value="Swanson" constant="no"/>
+<attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="609-3327-ND"/>
 <attribute name="MOUNTING" value="TH"/>
+<attribute name="VALUE" value="1.2K"/>
 </technology>
 </technologies>
 </device>
@@ -2232,39 +2121,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 </connects>
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="JUMPER-SMT_3_1-NC_PASTE" prefix="JP">
-<description>&lt;h3&gt;Normally closed solder jumper (1 of 2 connections)&lt;/h3&gt;
-&lt;p&gt;This jumper has an aperture in the stencil to allow solder paste to bridge one of the two connections. One connection is normally closed (NC), while the other is normally open (NO). Wick off the solder to open the connection. Reapply solder to reclose the connection. Apply solder to the other side instead to change the current path.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="SMT-JUMPER_3_1-NC_PASTE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="_NO-SILK" package="SMT-JUMPER_3_1-NC_PASTE_NO-SILK">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MOUNTING" value="NONE"/>
-</technology>
-</technologies>
-</device>
-<device name="_SILK" package="SMT-JUMPER_3_1-NC_PASTE_SILK">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MOUNTING" value="NONE"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -2386,64 +2242,6 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="DISTPN" value="PEC12R-4217F-S0024-ND"/>
 <attribute name="HEIGHT" value="17.5"/>
 <attribute name="MOUNTING" value="TH"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="JUMPER-SMT_2_NO" prefix="JP">
-<description>&lt;h3&gt;Normally open jumper&lt;/h3&gt;
-&lt;p&gt;This jumper has two pads in close proximity to each other. Apply solder to close the connection.&lt;/p&gt;
-
-&lt;p&gt;Round pads are easier to solder for beginners, but are a lot larger.&lt;/p&gt;
-&lt;p&gt;SparkFun Product that uses the round pads:
-&lt;ul&gt;&lt;li&gt;&lt;a href="https://www.sparkfun.com/products/12781"&gt;SparkFun EL Sequencer&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="SMT-JUMPER_2_NO" x="0" y="0"/>
-</gates>
-<devices>
-<device name="_NO-SILK" package="SMT-JUMPER_2_NO_NO-SILK">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MOUNTING" value="NONE"/>
-</technology>
-</technologies>
-</device>
-<device name="_NO-SILK_ROUND" package="SMT-JUMPER_2_NO_NO-SILK_ROUND">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MOUNTING" value="NONE"/>
-</technology>
-</technologies>
-</device>
-<device name="_SILK" package="SMT-JUMPER_2_NO_SILK">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MOUNTING" value="NONE"/>
-</technology>
-</technologies>
-</device>
-<device name="_SILK_ROUND" package="SMT-JUMPER_2_NO_SILK_ROUND">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MOUNTING" value="NONE"/>
 </technology>
 </technologies>
 </device>
@@ -4279,6 +4077,36 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 </technology>
 </technologies>
 </device>
+<device name="SMD-2012-0805-604" package="RESC2012X60_HS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="311-604CRCT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="604"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-2012-0805-300" package="RESC2012X60_HS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="311-300CRCT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="300"/>
+</technology>
+</technologies>
+</device>
 <device name="SMD-2012-0805-15K" package="RESC2012X60_HS">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -4700,15 +4528,15 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="SPICEPREFIX" value="R"/>
 <variant name="Minimal" populate="no"/>
 </part>
-<part name="J2" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-FRYSKY">
+<part name="J2" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-FRYSKY" value="2.4K">
 <variant name="Minimal" populate="no"/>
 </part>
-<part name="J3" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-FRYSKY">
+<part name="J3" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-FRYSKY" value="2.4K">
 <attribute name="SPICEPREFIX" value="E"/>
 <variant name="Minimal" populate="no"/>
 </part>
-<part name="J7" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-2X-SERVO"/>
-<part name="J8" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-2X-SERVO"/>
+<part name="J7" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-2X-SERVO" value="1.2K"/>
+<part name="J8" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-2X-SERVO" value="1.2K"/>
 <part name="J13" library="RemoteParts" deviceset="JUMPER-SMT_2_NC_TRACE" device="_NO-SILK">
 <variant name="FullAwesome" populate="no"/>
 </part>
@@ -4748,15 +4576,9 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="J9" library="RemoteParts" deviceset="JUMPER-SMT_2_NC_TRACE" device="_NO-SILK">
 <variant name="FullAwesome" populate="no"/>
 </part>
-<part name="JP6" library="RemoteParts" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_NO-SILK"/>
-<part name="JP8" library="RemoteParts" deviceset="JUMPER-SMT_3_1-NC_PASTE" device="_NO-SILK"/>
-<part name="R8" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1K" value="1K">
+<part name="R8" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-300" value="300">
 <variant name="Minimal" populate="no"/>
 </part>
-<part name="R9" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1K" value="1K">
-<variant name="Minimal" populate="no"/>
-</part>
-<part name="JP9" library="RemoteParts" deviceset="JUMPER-SMT_2_NO" device="_NO-SILK"/>
 <part name="D6" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED"/>
 <part name="D5" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED">
 <variant name="Minimal" populate="no"/>
@@ -4798,13 +4620,13 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <text x="154.94" y="66.04" size="3.81" layer="97">Switchable FTDI</text>
 <wire x1="72.39" y1="275.59" x2="72.39" y2="226.06" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="226.06" x2="3.81" y2="226.06" width="0.1524" layer="97" style="longdash"/>
-<wire x1="72.39" y1="226.06" x2="72.39" y2="181.61" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="181.61" x2="3.81" y2="181.61" width="0.1524" layer="97" style="longdash"/>
+<wire x1="72.39" y1="226.06" x2="72.39" y2="181.61" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="181.61" x2="72.39" y2="135.89" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="135.89" x2="3.81" y2="135.89" width="0.1524" layer="97" style="longdash"/>
-<text x="6.35" y="227.33" size="3.81" layer="97">Test Points*</text>
-<text x="7.62" y="184.15" size="3.81" layer="97">Frysky Gimbals *</text>
-<text x="7.62" y="138.43" size="3.81" layer="97">Servo Gimbals *</text>
+<text x="6.35" y="238.76" size="3.81" layer="97">Test Points*</text>
+<text x="8.89" y="173.99" size="3.81" layer="97">Frysky</text>
+<text x="36.83" y="173.99" size="3.81" layer="97">HobbyKing</text>
 <wire x1="328.93" y1="275.59" x2="328.93" y2="196.85" width="0.1524" layer="97" style="longdash"/>
 <wire x1="328.93" y1="196.85" x2="427.99" y2="196.85" width="0.1524" layer="97" style="longdash"/>
 <text x="344.17" y="199.39" size="3.81" layer="97">Rotary Encoder and Buttons *</text>
@@ -4835,6 +4657,11 @@ and then connecting AREF to GREF seeems to work fine on the red board.
 So using same refs value and a voltage divider.
 Need to retune the battery sense resistors.</text>
 <text x="10.16" y="102.87" size="1.778" layer="91">Open JP5 to enable the switch</text>
+<text x="6.35" y="137.16" size="3.81" layer="97">Gimbals</text>
+<text x="8.89" y="187.96" size="1.9304" layer="97">R8 and the four gimbals form a voltage divider.
+R8 should 1/4 the resistance of one gimbal.
+FrySky: R8 = 600 Ohm
+HobbyKing: R8 = 300 Ohm</text>
 </plain>
 <instances>
 <instance part="GND10" gate="1" x="339.09" y="226.06"/>
@@ -4961,10 +4788,10 @@ Need to retune the battery sense resistors.</text>
 <instance part="U$6" gate="G$1" x="408.94" y="29.21"/>
 <instance part="U$7" gate="G$1" x="419.1" y="29.21"/>
 <instance part="R6" gate="G$1" x="359.41" y="152.4"/>
-<instance part="J2" gate="G$1" x="15.24" y="207.01"/>
-<instance part="J3" gate="G$1" x="15.24" y="191.77"/>
-<instance part="J7" gate="G$1" x="15.24" y="146.05"/>
-<instance part="J8" gate="G$1" x="15.24" y="161.29"/>
+<instance part="J2" gate="G$1" x="8.89" y="160.02"/>
+<instance part="J3" gate="G$1" x="8.89" y="144.78"/>
+<instance part="J7" gate="G$1" x="36.83" y="144.78"/>
+<instance part="J8" gate="G$1" x="36.83" y="160.02"/>
 <instance part="J13" gate="G$1" x="365.76" y="71.12"/>
 <instance part="J10" gate="G$1" x="365.76" y="66.04"/>
 <instance part="J11" gate="G$1" x="365.76" y="60.96"/>
@@ -4986,11 +4813,7 @@ Need to retune the battery sense resistors.</text>
 <instance part="J5" gate="G$1" x="396.24" y="62.23" rot="R180"/>
 <instance part="E1" gate="G$1" x="388.62" y="267.97"/>
 <instance part="J9" gate="G$1" x="21.59" y="107.95"/>
-<instance part="JP6" gate="G$1" x="284.48" y="196.85"/>
-<instance part="JP8" gate="G$1" x="63.5" y="204.47"/>
-<instance part="R8" gate="G$1" x="76.2" y="215.9" rot="R90"/>
-<instance part="R9" gate="G$1" x="76.2" y="201.93" rot="R90"/>
-<instance part="JP9" gate="G$1" x="81.28" y="209.55"/>
+<instance part="R8" gate="G$1" x="11.43" y="210.82" rot="R90"/>
 <instance part="D6" gate="G$1" x="133.35" y="177.8" rot="MR0"/>
 <instance part="D5" gate="G$1" x="243.84" y="88.9" rot="MR270"/>
 <instance part="D1" gate="G$1" x="106.68" y="30.48" rot="MR180"/>
@@ -5284,23 +5107,23 @@ Need to retune the battery sense resistors.</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="-"/>
-<wire x1="26.67" y1="209.55" x2="30.48" y2="209.55" width="0.1524" layer="91"/>
-<label x="30.48" y="209.55" size="1.27" layer="95" xref="yes"/>
+<wire x1="20.32" y1="162.56" x2="21.59" y2="162.56" width="0.1524" layer="91"/>
+<label x="21.59" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J7" gate="G$1" pin="-"/>
-<wire x1="26.67" y1="148.59" x2="30.48" y2="148.59" width="0.1524" layer="91"/>
-<label x="30.48" y="148.59" size="1.27" layer="95" xref="yes"/>
+<wire x1="48.26" y1="147.32" x2="49.53" y2="147.32" width="0.1524" layer="91"/>
+<label x="49.53" y="147.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="-"/>
-<wire x1="26.67" y1="194.31" x2="30.48" y2="194.31" width="0.1524" layer="91"/>
-<label x="30.48" y="194.31" size="1.27" layer="95" xref="yes"/>
+<wire x1="20.32" y1="147.32" x2="21.59" y2="147.32" width="0.1524" layer="91"/>
+<label x="21.59" y="147.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J8" gate="G$1" pin="-"/>
-<wire x1="26.67" y1="163.83" x2="30.48" y2="163.83" width="0.1524" layer="91"/>
-<label x="30.48" y="163.83" size="1.27" layer="95" xref="yes"/>
+<wire x1="48.26" y1="162.56" x2="49.53" y2="162.56" width="0.1524" layer="91"/>
+<label x="49.53" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
@@ -5358,11 +5181,6 @@ Need to retune the battery sense resistors.</text>
 <label x="300.99" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R9" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="196.85" x2="76.2" y2="193.04" width="0.1524" layer="91"/>
-<label x="76.2" y="193.04" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R18" gate="G$1" pin="1"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 <wire x1="118.11" y1="173.99" x2="115.57" y2="173.99" width="0.1524" layer="91"/>
@@ -5404,13 +5222,13 @@ Need to retune the battery sense resistors.</text>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="V"/>
-<wire x1="26.67" y1="199.39" x2="30.48" y2="199.39" width="0.1524" layer="91"/>
-<label x="30.48" y="199.39" size="1.27" layer="95" xref="yes"/>
+<wire x1="20.32" y1="152.4" x2="21.59" y2="152.4" width="0.1524" layer="91"/>
+<label x="21.59" y="152.4" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J8" gate="G$1" pin="V"/>
-<wire x1="26.67" y1="168.91" x2="30.48" y2="168.91" width="0.1524" layer="91"/>
-<label x="30.48" y="168.91" size="1.27" layer="95" xref="yes"/>
+<wire x1="48.26" y1="167.64" x2="49.53" y2="167.64" width="0.1524" layer="91"/>
+<label x="49.53" y="167.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ROLL" class="0">
@@ -5421,13 +5239,13 @@ Need to retune the battery sense resistors.</text>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="H"/>
-<wire x1="26.67" y1="196.85" x2="30.48" y2="196.85" width="0.1524" layer="91"/>
-<label x="30.48" y="196.85" size="1.27" layer="95" xref="yes"/>
+<wire x1="20.32" y1="149.86" x2="21.59" y2="149.86" width="0.1524" layer="91"/>
+<label x="21.59" y="149.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J8" gate="G$1" pin="H"/>
-<wire x1="26.67" y1="166.37" x2="30.48" y2="166.37" width="0.1524" layer="91"/>
-<label x="30.48" y="166.37" size="1.27" layer="95" xref="yes"/>
+<wire x1="48.26" y1="165.1" x2="49.53" y2="165.1" width="0.1524" layer="91"/>
+<label x="49.53" y="165.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="THROTTLE" class="0">
@@ -5438,13 +5256,13 @@ Need to retune the battery sense resistors.</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="V"/>
-<wire x1="26.67" y1="214.63" x2="30.48" y2="214.63" width="0.1524" layer="91"/>
-<label x="30.48" y="214.63" size="1.27" layer="95" xref="yes"/>
+<wire x1="20.32" y1="167.64" x2="21.59" y2="167.64" width="0.1524" layer="91"/>
+<label x="21.59" y="167.64" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J7" gate="G$1" pin="V"/>
-<wire x1="26.67" y1="153.67" x2="30.48" y2="153.67" width="0.1524" layer="91"/>
-<label x="30.48" y="153.67" size="1.27" layer="95" xref="yes"/>
+<wire x1="48.26" y1="152.4" x2="49.53" y2="152.4" width="0.1524" layer="91"/>
+<label x="49.53" y="152.4" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="YAW" class="0">
@@ -5455,13 +5273,13 @@ Need to retune the battery sense resistors.</text>
 </segment>
 <segment>
 <pinref part="J7" gate="G$1" pin="H"/>
-<wire x1="26.67" y1="151.13" x2="30.48" y2="151.13" width="0.1524" layer="91"/>
-<label x="30.48" y="151.13" size="1.27" layer="95" xref="yes"/>
+<wire x1="48.26" y1="149.86" x2="49.53" y2="149.86" width="0.1524" layer="91"/>
+<label x="49.53" y="149.86" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="H"/>
-<wire x1="26.67" y1="212.09" x2="30.48" y2="212.09" width="0.1524" layer="91"/>
-<label x="30.48" y="212.09" size="1.27" layer="95" xref="yes"/>
+<wire x1="20.32" y1="165.1" x2="21.59" y2="165.1" width="0.1524" layer="91"/>
+<label x="21.59" y="165.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="3V3" class="1">
@@ -5522,19 +5340,9 @@ Need to retune the battery sense resistors.</text>
 <label x="300.99" y="73.66" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="JP6" gate="G$1" pin="3"/>
-<wire x1="284.48" y1="191.77" x2="284.48" y2="187.96" width="0.1524" layer="91"/>
-<label x="284.48" y="187.96" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
-<pinref part="JP8" gate="G$1" pin="3"/>
-<wire x1="63.5" y1="199.39" x2="63.5" y2="195.58" width="0.1524" layer="91"/>
-<label x="63.5" y="195.58" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-<segment>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="220.98" x2="76.2" y2="226.06" width="0.1524" layer="91"/>
-<label x="76.2" y="226.06" size="1.27" layer="95" rot="R90" xref="yes"/>
+<wire x1="11.43" y1="215.9" x2="11.43" y2="218.44" width="0.1524" layer="91"/>
+<label x="11.43" y="218.44" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
 <pinref part="D4" gate="G$1" pin="A2"/>
@@ -6398,69 +6206,36 @@ Need to retune the battery sense resistors.</text>
 </net>
 <net name="AREF" class="0">
 <segment>
-<pinref part="JP6" gate="G$1" pin="2"/>
-<wire x1="279.4" y1="196.85" x2="278.13" y2="196.85" width="0.1524" layer="91"/>
-<label x="278.13" y="196.85" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U4" gate="G$1" pin="AREF"/>
 <wire x1="223.52" y1="196.85" x2="220.98" y2="196.85" width="0.1524" layer="91"/>
 <label x="223.52" y="196.85" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="JP8" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="209.55" x2="63.5" y2="213.36" width="0.1524" layer="91"/>
-<label x="63.5" y="213.36" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
-</net>
-<net name="AVDD" class="0">
-<segment>
-<pinref part="JP6" gate="G$1" pin="1"/>
-<wire x1="284.48" y1="201.93" x2="284.48" y2="205.74" width="0.1524" layer="91"/>
-<label x="284.48" y="205.74" size="1.27" layer="95" rot="R90" xref="yes"/>
-</segment>
 </net>
 <net name="GREF" class="0">
 <segment>
-<pinref part="JP8" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="204.47" x2="57.15" y2="204.47" width="0.1524" layer="91"/>
-<label x="57.15" y="204.47" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J2" gate="G$1" pin="+"/>
-<wire x1="26.67" y1="217.17" x2="30.48" y2="217.17" width="0.1524" layer="91"/>
-<label x="30.48" y="217.17" size="1.27" layer="95" xref="yes"/>
+<wire x1="20.32" y1="170.18" x2="21.59" y2="170.18" width="0.1524" layer="91"/>
+<label x="21.59" y="170.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="+"/>
-<wire x1="26.67" y1="201.93" x2="30.48" y2="201.93" width="0.1524" layer="91"/>
-<label x="30.48" y="201.93" size="1.27" layer="95" xref="yes"/>
+<wire x1="20.32" y1="154.94" x2="21.59" y2="154.94" width="0.1524" layer="91"/>
+<label x="21.59" y="154.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J8" gate="G$1" pin="+"/>
-<wire x1="26.67" y1="171.45" x2="30.48" y2="171.45" width="0.1524" layer="91"/>
-<label x="30.48" y="171.45" size="1.27" layer="95" xref="yes"/>
+<wire x1="48.26" y1="170.18" x2="49.53" y2="170.18" width="0.1524" layer="91"/>
+<label x="49.53" y="170.18" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J7" gate="G$1" pin="+"/>
-<wire x1="26.67" y1="156.21" x2="30.48" y2="156.21" width="0.1524" layer="91"/>
-<label x="30.48" y="156.21" size="1.27" layer="95" xref="yes"/>
+<wire x1="48.26" y1="154.94" x2="49.53" y2="154.94" width="0.1524" layer="91"/>
+<label x="49.53" y="154.94" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="JP9" gate="G$1" pin="2"/>
-<wire x1="86.36" y1="209.55" x2="90.17" y2="209.55" width="0.1524" layer="91"/>
-<label x="90.17" y="209.55" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="V3V/2" class="0">
 <segment>
 <pinref part="R8" gate="G$1" pin="1"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="76.2" y1="210.82" x2="76.2" y2="209.55" width="0.1524" layer="91"/>
-<pinref part="JP9" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="209.55" x2="76.2" y2="207.01" width="0.1524" layer="91"/>
-<junction x="76.2" y="209.55"/>
-<label x="76.2" y="209.55" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="11.43" y1="205.74" x2="11.43" y2="201.93" width="0.1524" layer="91"/>
+<label x="11.43" y="201.93" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$4" class="0">
