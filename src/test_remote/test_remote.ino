@@ -87,12 +87,12 @@ void loop() {
 
      //update_display();
      
-     /*for(char i= 0; i < TOTAL_CHANNELS;i++) {
+      for(char i= 0; i < TOTAL_CHANNELS;i++) {
 	  Serial.print(numbers[i]);
 	  Serial.print(" ");
 	  }
 
-	  Serial.println("\n");*/
+	  Serial.println("\n");
 
      rfWrite((uint8_t*)numbers, sizeof(numbers));
 

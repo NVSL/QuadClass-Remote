@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="yes" active="yes"/>
@@ -4264,6 +4264,21 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 </technology>
 </technologies>
 </device>
+<device name="SMD-2012-0805-27K" package="RESC2012X60_HS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="311-27.0KCRCT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="27K"/>
+</technology>
+</technologies>
+</device>
 <device name="SMD-2012-0805-15K" package="RESC2012X60_HS">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -4661,10 +4676,10 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="SPICEPREFIX" value="R"/>
 <variant name="Minimal" populate="no"/>
 </part>
-<part name="R5" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-12K" value="12K">
+<part name="R5" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-27K" value="27K">
 <variant name="Minimal" populate="no"/>
 </part>
-<part name="R4" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-30K" value="30K">
+<part name="R4" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-15K" value="15K">
 <variant name="Minimal" populate="no"/>
 </part>
 <part name="GND2" library="quadparts_prebuilt" deviceset="GND" device=""/>
@@ -4763,7 +4778,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <text x="160.02" y="15.24" size="1.778" layer="97">Ireg = 1000V/Rprog
 2.2KOhm -&gt; 450mA</text>
 <text x="181.61" y="120.65" size="1.778" layer="97">The 3.3V regulator works down to VDD of about 3.4V.</text>
-<text x="212.09" y="43.18" size="1.27" layer="97">This should map 4.2V to 3V.</text>
+<text x="209.55" y="40.64" size="1.27" layer="97">This should map 4.2V to 1.5V.
+AREF is configured to 1.6, so there's a little bit of headroom.</text>
 <text x="137.16" y="153.67" size="1.27" layer="97">The pins for encoders 1are on Pin-change capable pins and can be mapped to PCINT0.
 Buttons for encoders 1 is on INT2.
 Buttons 1 and 2 are on INT4 and INT3, respectively.
