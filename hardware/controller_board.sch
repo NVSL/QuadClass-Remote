@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="yes" active="yes"/>
@@ -3812,6 +3812,21 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 </technology>
 </technologies>
 </device>
+<device name="SMD-2012-0805-1.2K" package="RESC2012X60_HS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="311-1.20KARCT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="1.2K"/>
+</technology>
+</technologies>
+</device>
 <device name="SMD-2012-0805-510" package="RESC2012X60_HS">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -4238,12 +4253,12 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="P+2" library="supply1" deviceset="+3V3" device=""/>
 <part name="P+3" library="supply1" deviceset="+3V3" device=""/>
 <part name="R18" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-510" value="510"/>
-<part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
+<part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-2.2K" value="2.2K"/>
 <part name="U4" library="quadparts_prebuilt" deviceset="ATMEGA128RFA1" device=""/>
 <part name="Y1" library="quadparts_prebuilt" deviceset="CRYSTAL" device="5X3"/>
 <part name="GND6" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="J4" library="quadparts_prebuilt" deviceset="AVR_SPI_PRG_6" device="-SMD" value="AVR_SPI_PRG_6-SMD"/>
-<part name="C1" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
+<part name="C1" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
 <part name="B5" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5">
 <variant name="Minimal" populate="no"/>
 </part>
@@ -4404,7 +4419,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="J9" library="RemoteParts" deviceset="JUMPER-SMT_2_NC_TRACE" device="_NO-SILK">
 <variant name="FullAwesome" populate="no"/>
 </part>
-<part name="R8" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-300" value="300">
+<part name="R8" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1.2K" value="1.2K">
 <variant name="Minimal" populate="no"/>
 </part>
 <part name="D6" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED"/>
@@ -4433,9 +4448,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <text x="209.55" y="40.64" size="1.27" layer="97">This should map 4.2V to 1.5V.
 AREF is configured to 1.6, so there's a little bit of headroom.</text>
 <text x="137.16" y="153.67" size="1.27" layer="97">The pins for encoders 1are on Pin-change capable pins and can be mapped to PCINT0.
-Buttons for encoders 1 is on INT2.
-Buttons 1 and 2 are on INT4 and INT3, respectively.
-The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
+All the buttons are mapped to interrupt-capable pins.</text>
 <wire x1="82.55" y1="125.73" x2="82.55" y2="3.81" width="0.1524" layer="97" style="longdash"/>
 <wire x1="82.55" y1="3.81" x2="204.47" y2="3.81" width="0.1524" layer="97" style="longdash"/>
 <wire x1="204.47" y1="3.81" x2="204.47" y2="59.69" width="0.1524" layer="97" style="longdash"/>
@@ -4479,19 +4492,22 @@ The dpad is on INT5, INT6, INT7, INT1, INT0.</text>
 <text x="6.35" y="97.79" size="3.81" layer="97">150mA 3.3V Regulator *</text>
 <text x="87.63" y="269.24" size="1.778" layer="91">show B1 B2 C11 C12 C13 J1 J11 J2 L1 P1 P2 P3 P4 P6 R12 R13 R15 R16 R17 R4 R5 S1 S2 U2 U3 d2 r14 r2 R9</text>
 <text x="7.62" y="132.08" size="1.778" layer="97">C10 is the input cap (shared with lipo charger)</text>
-<text x="248.92" y="251.46" size="1.27" layer="91">Try a 1uF cap, so we don't need 0.1uF caps</text>
+<text x="248.92" y="251.46" size="1.27" layer="97">The 'normal' Arduino design uses 0.1uF cap and a 10k resistor (RC = 1).
+We use 1uF and 2.2K (RC = 2.2) to reduce the number of different parts in the design.
+1uF is ubiquitous; we need 2.2K for the LiPo charger.  
+It seems to work fine.</text>
 <text x="386.08" y="45.72" size="1.778" layer="97">Toggle JP7 to enable FTDI</text>
 <text x="347.98" y="50.8" size="1.778" layer="97">Disconnect JP1,3,4,5 to enable FTDI</text>
-<text x="86.36" y="256.54" size="1.778" layer="91">Setting ADMUX_struct.refs = 3;
-and then connecting AREF to GREF seeems to work fine on the red board.
-So using same refs value and a voltage divider.
-Need to retune the battery sense resistors.</text>
+<text x="22.86" y="200.66" size="1.778" layer="97">Set ADMUX_struct.refs = 3;
+to select correct AREF source.
+
+</text>
 <text x="10.16" y="102.87" size="1.778" layer="91">Open JP5 to enable the switch</text>
 <text x="6.35" y="137.16" size="3.81" layer="97">Gimbals</text>
 <text x="8.89" y="187.96" size="1.9304" layer="97">R8 and the four gimbals form a voltage divider.
 R8 should 1/4 the resistance of one gimbal.
 FrySky: R8 = 600 Ohm
-HobbyKing: R8 = 300 Ohm</text>
+HobbyKing: R8 = 1.2k Ohm</text>
 </plain>
 <instances>
 <instance part="GND10" gate="1" x="339.09" y="226.06"/>
@@ -5841,13 +5857,6 @@ HobbyKing: R8 = 300 Ohm</text>
 <wire x1="26.67" y1="114.3" x2="34.29" y2="114.3" width="0.1524" layer="91"/>
 <junction x="26.67" y="114.3"/>
 <pinref part="U1" gate="G$1" pin="EN"/>
-</segment>
-</net>
-<net name="AREF" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="AREF"/>
-<wire x1="223.52" y1="196.85" x2="220.98" y2="196.85" width="0.1524" layer="91"/>
-<label x="223.52" y="196.85" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GREF" class="0">
