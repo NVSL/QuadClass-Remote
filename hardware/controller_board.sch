@@ -1871,7 +1871,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="609-3327-ND"/>
 <attribute name="MOUNTING" value="TH"/>
-<attribute name="VALUE" value="1.2K"/>
+<attribute name="VALUE" value="5K"/>
 </technology>
 </technologies>
 </device>
@@ -4223,7 +4223,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </class>
 <class number="1" name="HIGH-I" width="0.254" drill="0">
 </class>
-<class number="2" name="RFSIG" width="1.016" drill="0">
+<class number="2" name="RFSIG" width="1.27" drill="0">
 </class>
 </classes>
 <parts>
@@ -4378,8 +4378,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="SPICEPREFIX" value="E"/>
 <variant name="Minimal" populate="no"/>
 </part>
-<part name="J7" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-2X-SERVO" value="1.2K"/>
-<part name="J8" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-2X-SERVO" value="1.2K"/>
+<part name="J7" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-2X-SERVO" value="5K"/>
+<part name="J8" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-2X-SERVO" value="5K"/>
 <part name="J13" library="RemoteParts" deviceset="JUMPER-SMT_2_NC_TRACE" device="_NO-SILK">
 <variant name="FullAwesome" populate="no"/>
 </part>
@@ -5223,7 +5223,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <pinref part="A1" gate="G$1" pin="P$1"/>
 </segment>
 </net>
-<net name="N$15" class="0">
+<net name="CLK_POS" class="0">
 <segment>
 <pinref part="C14" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="XTAL1"/>
@@ -5235,7 +5235,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <junction x="246.38" y="204.47"/>
 </segment>
 </net>
-<net name="N$19" class="0">
+<net name="CLK_NEG" class="0">
 <segment>
 <pinref part="C15" gate="G$1" pin="1"/>
 <pinref part="U4" gate="G$1" pin="XTAL2"/>
@@ -5261,7 +5261,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <wire x1="261.62" y1="201.93" x2="261.62" y2="214.63" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$7" class="0">
+<net name="BCAP" class="1">
 <segment>
 <pinref part="B2" gate="G$1" pin="GND@2"/>
 <pinref part="C3" gate="G$1" pin="2"/>
