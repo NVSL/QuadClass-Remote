@@ -5781,7 +5781,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <junction x="176.53" y="101.6"/>
 </segment>
 </net>
-<net name="N$24" class="0">
+<net name="FTDI_VDD" class="1">
 <segment>
 <pinref part="J6" gate="G$1" pin="3"/>
 <pinref part="J5" gate="G$1" pin="2"/>
