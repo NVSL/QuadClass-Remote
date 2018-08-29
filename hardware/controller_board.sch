@@ -429,12 +429,12 @@
 <rectangle x1="0.9525" y1="-0.1905" x2="1.5875" y2="0.1905" layer="51"/>
 <rectangle x1="3.4925" y1="-0.1905" x2="4.1275" y2="0.1905" layer="51"/>
 <rectangle x1="6.0325" y1="-0.1905" x2="6.6675" y2="0.1905" layer="51"/>
-<pad name="1" x="-6.35" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="-3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="4" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="5" x="3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="6" x="6.35" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="1" x="-6.35" y="0" drill="1.016" rot="R90"/>
+<pad name="2" x="-3.81" y="0" drill="1.016" rot="R90"/>
+<pad name="3" x="-1.27" y="0" drill="1.016" rot="R90"/>
+<pad name="4" x="1.27" y="0" drill="1.016" rot="R90"/>
+<pad name="5" x="3.81" y="0" drill="1.016" rot="R90"/>
+<pad name="6" x="6.35" y="0" drill="1.016" rot="R90"/>
 <text x="1.1938" y="-3.2512" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
 <text x="-7.62" y="-3.175" size="1.27" layer="27" font="vector">&gt;VALUE</text>
 <rectangle x1="-8" y1="3" x2="8" y2="11" layer="39"/>
