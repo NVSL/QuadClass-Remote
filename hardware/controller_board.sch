@@ -1703,6 +1703,7 @@
 <wire x1="10.16" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="40.64" width="0.254" layer="94"/>
 <wire x1="0" y1="40.64" x2="10.16" y2="40.64" width="0.254" layer="94"/>
+<text x="1.27" y="1.27" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="IMU_LSM9DS1TR">
 <wire x1="-15.24" y1="-17.78" x2="-15.24" y2="17.78" width="0.254" layer="94"/>
