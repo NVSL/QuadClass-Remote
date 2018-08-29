@@ -4916,7 +4916,7 @@ All the buttons are mapped to interrupt-capable pins.</text>
 <wire x1="72.39" y1="146.05" x2="72.39" y2="104.14" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="104.14" x2="3.81" y2="104.14" width="0.1524" layer="97" style="longdash"/>
 <text x="6.35" y="107.95" size="3.81" layer="97">150mA 3.3V Regulator *</text>
-<text x="87.63" y="269.24" size="1.778" layer="91">show B1 B2 C11 C12 C13 J1 J11 J2 L1 P1 P2 P3 P4 P6 R12 R13 R15 R16 R17 R4 R5 S1 S2 U2 U3 d2 r14 r2 R9</text>
+<text x="87.63" y="269.24" size="1.778" layer="91">show P1 P2 P3 P4 J2 J3 S1 R6 R9 C17 C20 C10 C18 C19 R5 R4 D2 C8 C7 C9 R13 R14 D5 U5 U3  L1 S2 </text>
 <text x="7.62" y="142.24" size="1.778" layer="97">C10 is the input cap (shared with lipo charger)</text>
 <text x="248.92" y="251.46" size="1.27" layer="97">The 'normal' Arduino design uses 0.1uF cap and a 10k resistor (RC = 1).
 We use 1uF and 2.2K (RC = 2.2) to reduce the number of different parts in the design.

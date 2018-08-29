@@ -8,7 +8,7 @@
 </settings>
 <grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -3019,9 +3019,9 @@ design rules under a new name.</description>
 <attribute name="MFR" value="Yageo" x="-15" y="-8" size="0.7" layer="27" rot="R90" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="-15" y="-8" size="0.7" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="RC0805JR-0710KL" x="-15" y="-8" size="0.7" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-15.5" y="-6.5" size="0.7" layer="25" font="vector"/>
+<attribute name="NAME" x="-15" y="-8" size="0.7" layer="25" font="vector" rot="R90"/>
 <attribute name="REVIEWER" value="Swanson" x="-15" y="-8" size="0.7" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="-16" y="-9" size="0.7" layer="27" font="vector" rot="R90"/>
+<attribute name="VALUE" x="-15" y="-8" size="0.7" layer="27" font="vector" rot="R90"/>
 </element>
 <element name="R9" library="quadparts_prebuilt" package="RESC2012X60_HS" value="10K" x="-15" y="-3" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="-15" y="-3" size="0.7" layer="27" rot="R90" display="off"/>
@@ -5074,10 +5074,6 @@ design rules under a new name.</description>
 <approved hash="3,15,672c2e3864732d67"/>
 <approved hash="3,16,26dbff44b5966c09"/>
 <approved hash="3,2,340640690afd7e92"/>
-<approved hash="2,20,94789979a481a980"/>
-<approved hash="2,20,9370e1e9dc11ae88"/>
-<approved hash="2,20,94789979a481a980"/>
-<approved hash="2,20,9370e1e9dc11ae88"/>
 <approved hash="19,1,8ff22659eda6b9ed"/>
 <approved hash="19,1,6128a30f445f513b"/>
 <approved hash="19,1,f8810f31023b0336"/>
@@ -5157,16 +5153,7 @@ design rules under a new name.</description>
 <approved hash="19,16,cb53d37c8e5ba6ef"/>
 <approved hash="19,16,4c608379945b3abf"/>
 <approved hash="19,16,89bf79134182c382"/>
-<approved hash="7,39,eb98b59c83b4c580"/>
-<approved hash="7,39,0e5e95c288f460f6"/>
-<approved hash="7,39,52200cb8d7dc9269"/>
-<approved hash="7,39,7ac26dff9b2b973b"/>
-<approved hash="7,39,8d0c668a0ee295e2"/>
-<approved hash="7,39,8b6495cc0dca60fc"/>
-<approved hash="7,39,20b409d65aa7ae79"/>
-<approved hash="7,39,0e3666d88ddc95b4"/>
 <approved hash="6,1,85e937709cd52254"/>
-<approved hash="6,1,cf0b2c637d9afd15"/>
 <approved hash="6,1,b710646c8d94dd0e"/>
 <approved hash="6,1,84af4b7ac8da04a8"/>
 <approved hash="6,16,85e9374b3971b4a6"/>
