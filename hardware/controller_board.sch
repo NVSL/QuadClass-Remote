@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="100" name="tFaceplateCover" color="11" fill="1" visible="yes" active="yes"/>
@@ -703,18 +703,18 @@
 <wire x1="22.5" y1="3.5" x2="22.5" y2="-2.5" width="0.127" layer="39"/>
 <wire x1="22.5" y1="-2.5" x2="-4.5" y2="-2.5" width="0.127" layer="39"/>
 <wire x1="-4.5" y1="-2.5" x2="-4.5" y2="3.5" width="0.127" layer="39"/>
-<pad name="1" x="-2" y="0" drill="0.9" diameter="1.6" shape="square"/>
-<pad name="V" x="0" y="0" drill="0.9" diameter="1.6"/>
-<pad name="3" x="2" y="0" drill="0.9" diameter="1.6"/>
-<pad name="4" x="4" y="0" drill="0.9" diameter="1.6"/>
-<pad name="H" x="6" y="0" drill="0.9" diameter="1.6"/>
-<pad name="6" x="8" y="0" drill="0.9" diameter="1.6"/>
-<pad name="7" x="10" y="0" drill="0.9" diameter="1.6"/>
-<pad name="8" x="12" y="0" drill="0.9" diameter="1.6"/>
-<pad name="9" x="14" y="0" drill="0.9" diameter="1.6"/>
-<pad name="10" x="16" y="0" drill="0.9" diameter="1.6"/>
-<pad name="11" x="18" y="0" drill="0.9" diameter="1.6"/>
-<pad name="12" x="20" y="0" drill="0.9" diameter="1.6"/>
+<pad name="1" x="-2" y="0" drill="0.9" shape="square"/>
+<pad name="V" x="0" y="0" drill="0.9"/>
+<pad name="3" x="2" y="0" drill="0.9"/>
+<pad name="4" x="4" y="0" drill="0.9"/>
+<pad name="H" x="6" y="0" drill="0.9"/>
+<pad name="6" x="8" y="0" drill="0.9"/>
+<pad name="7" x="10" y="0" drill="0.9"/>
+<pad name="8" x="12" y="0" drill="0.9"/>
+<pad name="9" x="14" y="0" drill="0.9"/>
+<pad name="10" x="16" y="0" drill="0.9"/>
+<pad name="11" x="18" y="0" drill="0.9"/>
+<pad name="12" x="20" y="0" drill="0.9"/>
 <text x="8.5" y="4.4325" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
 <text x="0" y="-3" size="1.27" layer="21" font="vector" align="center">V</text>
 <text x="6" y="-3" size="1.27" layer="21" font="vector" align="center">H</text>
@@ -766,12 +766,12 @@
 <rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
 <rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="H" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="V" x="10.16" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="6" x="12.7" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="1" x="0" y="0" drill="1.016" rot="R90"/>
+<pad name="H" x="2.54" y="0" drill="1.016" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.016" rot="R90"/>
+<pad name="4" x="7.62" y="0" drill="1.016" rot="R90"/>
+<pad name="V" x="10.16" y="0" drill="1.016" rot="R90"/>
+<pad name="6" x="12.7" y="0" drill="1.016" rot="R90"/>
 <text x="-1.3462" y="1.8288" size="1.27" layer="25" font="vector" ratio="10">&gt;NAME</text>
 <wire x1="0" y1="0" x2="0" y2="11.43" width="0.127" layer="51"/>
 <wire x1="2.54" y1="0" x2="2.54" y2="11.43" width="0.127" layer="51"/>
@@ -4917,7 +4917,7 @@ All the buttons are mapped to interrupt-capable pins.</text>
 <wire x1="72.39" y1="146.05" x2="72.39" y2="104.14" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="104.14" x2="3.81" y2="104.14" width="0.1524" layer="97" style="longdash"/>
 <text x="6.35" y="107.95" size="3.81" layer="97">150mA 3.3V Regulator *</text>
-<text x="87.63" y="269.24" size="1.778" layer="91">show P1 P2 P3 P4 J2 J3 S1 R6 R9 C17 C20 C10 C18 C19 R5 R4 D2 C8 C7 C9 R13 R14 D5 U5 U3  L1 S2 </text>
+<text x="87.63" y="269.24" size="1.778" layer="91">show P1 P2 P3 P4 J2 J3 S1 R6 R9 C17 C20 C10 C18 C19 R5 R4 D2 C8 C7 C9 R13 R14 D5 U5 U3 L1 S2 U6</text>
 <text x="7.62" y="142.24" size="1.778" layer="97">C10 is the input cap (shared with lipo charger)</text>
 <text x="248.92" y="251.46" size="1.27" layer="97">The 'normal' Arduino design uses 0.1uF cap and a 10k resistor (RC = 1).
 We use 1uF and 2.2K (RC = 2.2) to reduce the number of different parts in the design.
