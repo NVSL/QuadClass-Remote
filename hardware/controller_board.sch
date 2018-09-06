@@ -4198,7 +4198,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
-<attribute name="DISTPN" value="311-2.0KARCT-ND"/>
+<attribute name="DISTPN" value="YAG3700CT-ND"/>
 <attribute name="MOUNTING" value="SMD"/>
 <attribute name="VALUE" value="2K"/>
 </technology>
