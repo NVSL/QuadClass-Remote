@@ -69,3 +69,5 @@ Error: ../Quadcopter-Remote/hardware/lbr/RemoteParts.lbr:M2.5-MOUNTING-HOLE -- W
 Warning: ../Quadcopter-Remote/hardware/lbr/RemoteParts.lbr:M2.5-MOUNTING-HOLE -- You should have box in tDocu that matches the size of the package (5A8BC7BB)
 Warning: ../Quadcopter-Remote/hardware/lbr/RemoteParts.lbr:LED-2X-LTST-C155 -- Text '>COLOR1' in layer tPlace is too small (0.7). (275F300F)
 Warning: ../Quadcopter-Remote/hardware/lbr/RemoteParts.lbr:LED-2X-LTST-C155 -- Text '>COLOR2' in layer tPlace is too small (0.7). (6AB73068)
+Warning: ../Quadcopter-Remote/hardware/lbr/RemoteParts.lbr:HDRV2W63P254_2X1_508X254H838_HS -- '>NAME' in text object in layer tDocu instead of tNames or bNames (1B90D3E6)
+Warning: ../Quadcopter-Remote/hardware/lbr/RemoteParts.lbr:HDRV2W63P254_2X1_508X254H838_HS -- '>NAME' in text object has wrong geometry (size=2.0mm, ratio=10%, font=vector).  Should be 0.9mm, 8%, and one of ['vector']. (364ED825)
