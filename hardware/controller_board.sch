@@ -2868,6 +2868,51 @@
 <smd name="5" x="2.54" y="-2.54" dx="1" dy="3.15" layer="1"/>
 <smd name="6" x="2.54" y="2.54" dx="1" dy="3.15" layer="1"/>
 </package>
+<package name="ANTENNA-CHIP">
+<text x="-1.64" y="2.431" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
+<wire x1="-2.413" y1="-1.143" x2="2.413" y2="-1.143" width="0.2032" layer="21"/>
+<wire x1="-2.413" y1="1.143" x2="2.413" y2="1.143" width="0.2032" layer="21"/>
+<wire x1="-4.2" y1="-1.7" x2="-4.2" y2="1.7" width="0.127" layer="39"/>
+<wire x1="-4.2" y1="1.7" x2="4.2" y2="1.7" width="0.127" layer="39"/>
+<text x="0.508" y="0.127" size="0.8128" layer="51" font="vector">AF</text>
+<wire x1="1.27" y1="0" x2="2.159" y2="0" width="0.2032" layer="21"/>
+<wire x1="2.159" y1="0" x2="1.778" y2="-0.381" width="0.2032" layer="21"/>
+<wire x1="2.159" y1="0" x2="1.778" y2="0.381" width="0.2032" layer="21"/>
+<wire x1="4.2" y1="-1.7" x2="-4.2" y2="-1.7" width="0.127" layer="39"/>
+<wire x1="4.2" y1="1.7" x2="4.2" y2="-1.7" width="0.127" layer="39"/>
+<smd name="FEED" x="-3.302" y="0" dx="1.016" dy="2.54" layer="1" rot="R180"/>
+<smd name="NC" x="3.302" y="0" dx="1.016" dy="2.54" layer="1" rot="R180"/>
+<wire x1="-3.9" y1="1.15" x2="3.9" y2="1.15" width="0.127" layer="51"/>
+<wire x1="3.9" y1="1.15" x2="3.9" y2="-1.15" width="0.127" layer="51"/>
+<wire x1="3.9" y1="-1.15" x2="-3.9" y2="-1.15" width="0.127" layer="51"/>
+<wire x1="-3.9" y1="-1.15" x2="-3.9" y2="1.15" width="0.127" layer="51"/>
+</package>
+<package name="ANT_PCB_2.4GHZ_NRF8001_1.6MM_1OZ">
+<description>&lt;p&gt;2.4GHz PCB Antenna for Nordic nRF8001 Modules&lt;/p&gt;
+&lt;p&gt;Source: nRF2470 Production Files (nRF8001-DK Rev 1.0)&lt;/p&gt;</description>
+<wire x1="-8.1686" y1="17.0256" x2="-8.1686" y2="1.5799" width="1.27" layer="1"/>
+<wire x1="-8.1686" y1="1.5799" x2="-6.5888" y2="0" width="1.27" layer="1"/>
+<wire x1="-6.5888" y1="0" x2="0" y2="0" width="1.27" layer="1"/>
+<smd name="FEED" x="0" y="0" dx="1.27" dy="1.27" layer="1" stop="no" cream="no"/>
+<smd name="TESTPOINT" x="-8.1686" y="17.6047" dx="1.27" dy="1.27" layer="1" cream="no"/>
+<text x="0" y="1.27" size="1.27" layer="25" font="vector" rot="R180" align="center">&gt;NAME</text>
+<wire x1="-8.9" y1="18.3" x2="-7.4" y2="18.3" width="0.127" layer="39"/>
+<wire x1="-7.4" y1="18.3" x2="-7.4" y2="16.9" width="0.127" layer="39"/>
+<wire x1="-7.4" y1="16.9" x2="-8.9" y2="16.9" width="0.127" layer="39"/>
+<wire x1="-8.9" y1="16.9" x2="-8.9" y2="18.3" width="0.127" layer="39"/>
+</package>
+<package name="ANT_PCB_2.4GHZ_NRF8001_1.6MM_1OZ_REV">
+<wire x1="8.1686" y1="17.0256" x2="8.1686" y2="1.5799" width="1.27" layer="1"/>
+<wire x1="8.1686" y1="1.5799" x2="6.5888" y2="0" width="1.27" layer="1"/>
+<wire x1="6.5888" y1="0" x2="0" y2="0" width="1.27" layer="1"/>
+<smd name="FEED" x="0" y="0" dx="1.27" dy="1.27" layer="1" stop="no" cream="no"/>
+<smd name="TESTPOINT" x="8.1686" y="17.6047" dx="1.27" dy="1.27" layer="1" cream="no"/>
+<wire x1="8.9" y1="18.3" x2="8.9" y2="16.9" width="0.127" layer="39"/>
+<wire x1="8.9" y1="16.9" x2="7.4" y2="16.9" width="0.127" layer="39"/>
+<wire x1="7.4" y1="16.9" x2="7.4" y2="18.3" width="0.127" layer="39"/>
+<wire x1="7.4" y1="18.3" x2="8.9" y2="18.3" width="0.127" layer="39"/>
+<text x="0" y="1.3" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="ATMEGA128RFA1">
@@ -3156,6 +3201,15 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <text x="0" y="2.54" size="1.778" layer="96" rot="R180" align="center">&gt;VALUE</text>
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <pin name="3V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="ANTENNA2">
+<wire x1="-2.54" y1="5.08" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="2.54" y2="5.08" width="0.254" layer="94"/>
+<text x="1.27" y="0" size="1.778" layer="95">&gt;NAME</text>
+<pin name="SIGNAL" x="0" y="-5.08" visible="off" length="short" rot="R90"/>
+<text x="1.27" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4026,6 +4080,59 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </device>
 </devices>
 </deviceset>
+<deviceset name="ANTENNA" prefix="A">
+<description>&lt;b&gt;Chip antenna&lt;/b&gt;&lt;p&gt;
+Single endded antenna. Common with smaller chip antennas. CHIP4 package is the GPS Chip Antenna &lt;b&gt;SKU:&lt;/b&gt; GPS-08418. CHIP5 package is 2.4GHz chip antenna &lt;b&gt;SKU:&lt;/b&gt; WRL-00144.</description>
+<gates>
+<gate name="G$1" symbol="ANTENNA2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-CHIP" package="ANTENNA-CHIP">
+<connects>
+<connect gate="G$1" pin="SIGNAL" pad="FEED"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DATASHEET" value="http://www.linxtechnologies.com/resources/data-guides/ant-xxx-chp-x.pdf"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="ANT-2.45-CHPCT-ND"/>
+<attribute name="MFR" value="Linx Technologies Inc."/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="ANT-2.45-CHP-T"/>
+<attribute name="PRICE" value="3.16"/>
+<attribute name="REVIEWER" value="Swanson"/>
+</technology>
+</technologies>
+</device>
+<device name="-BOARD" package="ANT_PCB_2.4GHZ_NRF8001_1.6MM_1OZ">
+<connects>
+<connect gate="G$1" pin="SIGNAL" pad="FEED"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="NA"/>
+<attribute name="DISTPN" value="NA"/>
+<attribute name="MOUNTING" value="NONE"/>
+</technology>
+</technologies>
+</device>
+<device name="-BOARD-REV" package="ANT_PCB_2.4GHZ_NRF8001_1.6MM_1OZ_REV">
+<connects>
+<connect gate="G$1" pin="SIGNAL" pad="FEED"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="NA"/>
+<attribute name="DISTPN" value="NA"/>
+<attribute name="MOUNTING" value="NONE"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="IMUs">
@@ -4609,6 +4716,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="P+8" library="quadparts_prebuilt" deviceset="3V3" device=""/>
 <part name="U7" library="IMUs" deviceset="LSM9DS1" device="-MEDIUM"/>
 <part name="GND22" library="quadparts_prebuilt" deviceset="GND" device=""/>
+<part name="A1" library="quadparts_prebuilt" deviceset="ANTENNA" device="-BOARD"/>
 </parts>
 <sheets>
 <sheet>
@@ -5252,6 +5360,10 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <instance part="GND22" gate="1" x="33.02" y="55.88" smashed="yes">
 <attribute name="VALUE" x="33.02" y="53.34" size="1.778" layer="96" align="center"/>
 </instance>
+<instance part="A1" gate="G$1" x="279.4" y="238.76" smashed="yes">
+<attribute name="NAME" x="280.67" y="238.76" size="1.778" layer="95"/>
+<attribute name="VALUE" x="280.67" y="236.22" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5639,11 +5751,6 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <wire x1="60.96" y1="35.56" x2="60.96" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U7" gate="G$1" pin="SDO_M"/>
-<wire x1="66.04" y1="83.82" x2="71.12" y2="83.82" width="0.1524" layer="91"/>
-<label x="71.12" y="83.82" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U7" gate="G$1" pin="GND"/>
 <wire x1="35.56" y1="63.5" x2="33.02" y2="63.5" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="63.5" x2="33.02" y2="58.42" width="0.1524" layer="91"/>
@@ -5846,6 +5953,11 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <wire x1="66.04" y1="88.9" x2="71.12" y2="88.9" width="0.1524" layer="91"/>
 <label x="71.12" y="88.9" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U7" gate="G$1" pin="SDO_M"/>
+<wire x1="66.04" y1="83.82" x2="71.12" y2="83.82" width="0.1524" layer="91"/>
+<label x="71.12" y="83.82" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="RESET" class="0">
 <segment>
@@ -5889,6 +6001,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <wire x1="274.32" y1="233.68" x2="279.4" y2="233.68" width="0.1524" layer="91"/>
 <wire x1="274.32" y1="229.87" x2="274.32" y2="233.68" width="0.1524" layer="91"/>
 <junction x="274.32" y="233.68"/>
+<pinref part="A1" gate="G$1" pin="SIGNAL"/>
 </segment>
 </net>
 <net name="CLK_POS" class="0">
