@@ -30,3 +30,7 @@ Error: ../Quadcopter-Remote/hardware/lbr/RemoteParts.lbr:SMT-JUMPER_2_NO_NO-SILK
 Warning: ../Quadcopter-Remote/hardware/lbr/RemoteParts.lbr:M2.5-MOUNTING-HOLE -- Missing '>NAME' (6BB99682)
 Error: ../Quadcopter-Remote/hardware/lbr/RemoteParts.lbr:M2.5-MOUNTING-HOLE -- Wires found in Top layer.  You probably want an SMD instead. (480979ED)
 Error: ../Quadcopter-Remote/hardware/lbr/RemoteParts.lbr:M2.5-MOUNTING-HOLE -- Wires found in Bottom layer.  You probably want an SMD instead. (440B2143)
+Warning: RemoteParts:LAYER_LABELS -- Missing '>NAME' (61068478)
+Error: RemoteParts:LAYER_LABELS -- Nothing in tKeepout. (2717D357)
+Error: RemoteParts:LAYER_LABELS -- Wires found in Top layer.  You probably want an SMD instead. (77F49E2B)
+Error: RemoteParts:LAYER_LABELS -- Wires found in Bottom layer.  You probably want an SMD instead. (02666CE0)

@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -196,6 +196,7 @@
 <circle x="0" y="0" radius="1.778" width="1.0287" layer="29"/>
 <hole x="0" y="0" drill="2.2606"/>
 <circle x="0" y="0" radius="2.40051875" width="0.127" layer="39"/>
+<text x="0" y="-3" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
 </package>
 <package name="JST-3-PTH-REVERSE">
 <wire x1="-3.95" y1="-1.6" x2="-3.95" y2="2.69" width="0.2032" layer="21"/>
@@ -1173,6 +1174,7 @@
 <circle x="0" y="0" radius="2.05" width="1" layer="29"/>
 <circle x="0" y="0" radius="2.05" width="1" layer="30"/>
 <circle x="0" y="0" radius="1.3" width="0.127" layer="100"/>
+<text x="0" y="-3.5" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
 </package>
 <package name="SMT-JUMPER_2_NO_NO-SILK">
 <text x="0" y="1.143" size="0.9" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
@@ -1619,6 +1621,12 @@
 <circle x="37.5" y="-15.5" radius="2.65" width="0.127" layer="39"/>
 <circle x="-37.5" y="-15.5" radius="2.65" width="0.127" layer="39"/>
 </package>
+<package name="LAYER_LABELS">
+<text x="-43" y="-1" size="1.778" layer="1" font="vector">Top Metal</text>
+<text x="-28" y="-1" size="1.778" layer="2" font="vector">Upper Inner Metal</text>
+<text x="-1" y="-1" size="1.778" layer="15" font="vector">Lower Inner Metal</text>
+<text x="44" y="-1" size="1.778" layer="16" font="vector" rot="MR0">Bottom Metal</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" locally_modified="yes" type="model">
@@ -1993,6 +2001,7 @@
 <wire x1="-3.81" y1="0" x2="3.81" y2="0" width="0.508" layer="94"/>
 <wire x1="0" y1="3.81" x2="0" y2="-3.81" width="0.508" layer="94"/>
 <pin name="P" x="0" y="0" visible="off" length="point"/>
+<text x="0" y="-6.35" size="1.27" layer="95" font="vector" align="center">&gt;NAME</text>
 </symbol>
 <symbol name="SMT-JUMPER_2_NO">
 <wire x1="0.381" y1="0.635" x2="0.381" y2="-0.635" width="1.27" layer="94" curve="-180" cap="flat"/>
@@ -2957,7 +2966,7 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="MOUNTING-HOLE">
+<deviceset name="MOUNTING-HOLE" prefix="H">
 <gates>
 <gate name="G$1" symbol="MOUNTING-HOLE" x="0" y="0"/>
 </gates>

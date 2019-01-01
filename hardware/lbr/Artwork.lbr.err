@@ -1,0 +1,6 @@
+Warning: Artwork:QUADCLASS_LOGO -- Missing '>NAME' (3338FDFC)
+Error: Artwork:QUADCLASS_LOGO -- Nothing in tKeepout. (762CA879)
+Error: Artwork:QUADCLASS_LOGO -- Wires found in Top layer.  You probably want an SMD instead. (32CB008E)
+Warning: lbr/Artwork.lbr:QUADCLASS_LOGO -- Missing '>NAME' (1DAE3755)
+Error: lbr/Artwork.lbr:QUADCLASS_LOGO -- Nothing in tKeepout. (182925E6)
+Error: lbr/Artwork.lbr:QUADCLASS_LOGO -- Wires found in Top layer.  You probably want an SMD instead. (55F963C2)
