@@ -3,7 +3,6 @@
 #define QUAD_REMOTE_TESTING
 #include <quad_remote.h>      // Header file with pin definitions and setup
 
-
 uint8_t scale[8] = 
      {B00000000,
       B00000000,
@@ -24,7 +23,6 @@ void btn_down_pressed(bool down);
 void btn_left_pressed(bool down);
 void btn_right_pressed(bool down);
 void btn_center_pressed(bool down);
-
 
 void setup() {
 
@@ -156,7 +154,6 @@ void knobs_update() {
 
 
 void btn1_pressed(bool down) {
-
 	if(down) {
 		Serial.println("btn1");
 	}
@@ -216,4 +213,3 @@ void btn_center_pressed(bool down) {
 		Serial.println("center");
 	}
 }
-

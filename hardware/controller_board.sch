@@ -2976,9 +2976,10 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <wire x1="-5.08" y1="43.18" x2="-25.4" y2="43.18" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="-43.18" x2="-5.08" y2="43.18" width="0.254" layer="94"/>
 <wire x1="6.35" y1="43.18" x2="6.35" y2="-43.18" width="0.254" layer="94"/>
-<text x="-2.54" y="15.875" size="2.032" layer="94" rot="R90" align="center">Sparkfun ATmega128RFA Breakout  Pins</text>
+<text x="-2.54" y="15.875" size="2.032" layer="94" rot="R90" align="center">CSE176e ATmega128RFA Breakout  Pins</text>
 <text x="3.81" y="-35.56" size="1.27" layer="94" align="center">36</text>
 <text x="3.81" y="-38.1" size="1.27" layer="94" align="center">37</text>
+<text x="11.43" y="-27.94" size="1.27" layer="94" align="center">Default LED</text>
 </symbol>
 <symbol name="BALUN">
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-5.08" width="0.254" layer="94" curve="-180"/>
@@ -3249,7 +3250,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 </devices>
 </deviceset>
 <deviceset name="BALUN" prefix="B">
-<description>0805 footprint balun- Ember 351/357</description>
+<description>A balun to convert differential radio-frequency outputs from the microcontroller into a single-ended driver for the antenna.</description>
 <gates>
 <gate name="G$1" symbol="BALUN" x="0" y="0"/>
 </gates>
@@ -3447,7 +3448,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 </devices>
 </deviceset>
 <deviceset name="CRYSTAL" prefix="Y">
-<description>Various standard crystals. Proven footprints.</description>
+<description>Crystals to provide clock references for microcontrollers, etc.</description>
 <gates>
 <gate name="G$1" symbol="Q" x="0" y="0"/>
 </gates>
@@ -3475,7 +3476,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 </devices>
 </deviceset>
 <deviceset name="GND" prefix="GND">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<description>Regulated ground</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
 </gates>
@@ -3799,7 +3800,8 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 </deviceset>
 <deviceset name="AVR_SPI_PRG_6" prefix="J">
 <description>&lt;b&gt;AVR ISP 6 Pin&lt;/b&gt;
-This is the reduced ISP connector for AVR programming. Common on Arduino. This footprint will take up less PCB space and can be used with a 10-pin to 6-pin adapter such as SKU: BOB-08508</description>
+
+This is the in-system programming (ISP) connector for Atmel Microcontrollers programming.</description>
 <gates>
 <gate name="G$1" symbol="AVR_SPI_PROGRAMMER_6" x="0" y="0"/>
 </gates>
@@ -3848,7 +3850,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </devices>
 </deviceset>
 <deviceset name="PUSHBUTTON_" prefix="SW">
-<description>Pushbutton with 2 pins shorting 1 to 2 and two extra mounting pins 3 &amp; 4</description>
+<description>"Tactile" or "clicky" button.</description>
 <gates>
 <gate name="G$1" symbol="RESOLVED-PUSHBUTTON-2PIN-NO-SHIELD_" x="0" y="0"/>
 </gates>
@@ -3905,6 +3907,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </devices>
 </deviceset>
 <deviceset name="LOCKED-VIA" prefix="V">
+<description>A via that be removed via ripup.</description>
 <gates>
 <gate name="G$1" symbol="VIA" x="0" y="0"/>
 </gates>
@@ -3968,6 +3971,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </devices>
 </deviceset>
 <deviceset name="TPS73633-DBVT">
+<description>LP3985-series voltage regulators.</description>
 <gates>
 <gate name="G$1" symbol="TPS736*" x="0" y="0"/>
 </gates>
@@ -4016,7 +4020,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </devices>
 </deviceset>
 <deviceset name="3V3" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<description>3V3 Power Supply</description>
 <gates>
 <gate name="G$1" symbol="3V3" x="0" y="0"/>
 </gates>
@@ -4033,8 +4037,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </devices>
 </deviceset>
 <deviceset name="ANTENNA" prefix="A">
-<description>&lt;b&gt;Chip antenna&lt;/b&gt;&lt;p&gt;
-Single endded antenna. Common with smaller chip antennas. CHIP4 package is the GPS Chip Antenna &lt;b&gt;SKU:&lt;/b&gt; GPS-08418. CHIP5 package is 2.4GHz chip antenna &lt;b&gt;SKU:&lt;/b&gt; WRL-00144.</description>
+<description>Single endded antenna.</description>
 <gates>
 <gate name="G$1" symbol="ANTENNA2" x="0" y="0"/>
 </gates>
@@ -5196,10 +5199,10 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <attribute name="COLOR1" x="252.73" y="88.9" size="1.27" layer="97" rot="MR270" align="center"/>
 <attribute name="COLOR2" x="267.97" y="88.9" size="1.27" layer="97" rot="MR270" align="center"/>
 </instance>
-<instance part="D1" gate="G$1" x="120.65" y="30.48" smashed="yes" rot="MR180">
-<attribute name="NAME" x="122.682" y="29.972" size="1.778" layer="95" rot="MR180"/>
-<attribute name="COLOR1" x="120.65" y="24.13" size="1.27" layer="97" rot="MR180" align="center"/>
-<attribute name="COLOR2" x="120.65" y="39.37" size="1.27" layer="97" rot="MR180" align="center"/>
+<instance part="D1" gate="G$1" x="119.38" y="30.48" smashed="yes">
+<attribute name="NAME" x="121.412" y="30.988" size="1.778" layer="95"/>
+<attribute name="COLOR1" x="119.38" y="36.83" size="1.27" layer="97" align="center"/>
+<attribute name="COLOR2" x="119.38" y="21.59" size="1.27" layer="97" align="center"/>
 </instance>
 <instance part="D4" gate="G$1" x="123.19" y="223.52" smashed="yes" rot="MR270">
 <attribute name="NAME" x="122.682" y="221.488" size="1.778" layer="95" rot="MR270"/>
@@ -5659,9 +5662,9 @@ HobbyKing: R8 = 1.2k Ohm</text>
 </segment>
 <segment>
 <pinref part="P+21" gate="1" pin="GND"/>
-<pinref part="D1" gate="G$1" pin="C2"/>
-<wire x1="125.73" y1="27.94" x2="129.54" y2="27.94" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="27.94" x2="129.54" y2="26.67" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="C1"/>
+<wire x1="124.46" y1="27.94" x2="129.54" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="L1" gate="G$1" pin="GND"/>
@@ -6442,8 +6445,8 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <junction x="123.19" y="39.37"/>
 <pinref part="V28" gate="G$1" pin="N"/>
 <junction x="120.65" y="39.37"/>
-<pinref part="D1" gate="G$1" pin="A1"/>
-<wire x1="115.57" y1="33.02" x2="118.11" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A2"/>
+<wire x1="115.57" y1="33.02" x2="116.84" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="38.1" y1="261.62" x2="38.1" y2="260.35" width="0.1524" layer="91"/>
@@ -6690,16 +6693,15 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="128.27" y1="29.21" x2="116.84" y2="29.21" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="29.21" x2="116.84" y2="27.94" width="0.1524" layer="91"/>
-<pinref part="D1" gate="G$1" pin="A2"/>
-<wire x1="116.84" y1="27.94" x2="118.11" y2="27.94" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="A1"/>
 </segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
-<pinref part="D1" gate="G$1" pin="C1"/>
 <wire x1="128.27" y1="34.29" x2="128.27" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="128.27" y1="33.02" x2="125.73" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="128.27" y1="33.02" x2="124.46" y2="33.02" width="0.1524" layer="91"/>
+<pinref part="D1" gate="G$1" pin="C2"/>
 </segment>
 </net>
 <net name="TXLED" class="0">
