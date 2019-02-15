@@ -30,11 +30,12 @@ extern RotaryEncoder knob1;
 #define ENC1_A 9
 #define ENC1_B 8
 
-#define BUTTON1 4
-#define BUTTON2 21
+// If you changes these, you need to change the interrupt assigments in .cpp
+#define BUTTON1 15
+#define BUTTON2 14
 
-#define BUTTON_UP 15
-#define BUTTON_DOWN 14
+#define BUTTON_UP 4
+#define BUTTON_DOWN 21 
 #define BUTTON_LEFT 5
 #define BUTTON_RIGHT 7
 #define BUTTON_CENTER 6

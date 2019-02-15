@@ -28,6 +28,15 @@ void quad_remote_setup() {
      lcd.clear();
      lcd.home();
 
+     /*     ADMUX_struct.refs = 3;
+     ADCSRA_struct.aden = 0;
+     ADCSRA_struct.aden = 1;
+     delay(1000);
+
+     Serial.println(ADCSRA);
+     Serial.println(ADCSRB);
+     Serial.println(ADMUX); */
+     
      pinMode(ENC1_BUTTON, INPUT_PULLUP);
 
      pinMode(BUTTON1, INPUT_PULLUP);
@@ -86,11 +95,11 @@ ISR(vector)\
 
 BUTTON_INTERRUPT(INT2_vect, knob1_btn_cb, ENC1_BUTTON);
 
-BUTTON_INTERRUPT(INT3_vect, btn2_cb, BUTTON2);
-BUTTON_INTERRUPT(INT4_vect, btn1_cb, BUTTON1);
+BUTTON_INTERRUPT(INT1_vect, btn2_cb, BUTTON2);
+BUTTON_INTERRUPT(INT0_vect, btn1_cb, BUTTON1);
 
-BUTTON_INTERRUPT(INT0_vect, btn_up_cb, BUTTON_UP);
-BUTTON_INTERRUPT(INT1_vect, btn_down_cb, BUTTON_DOWN);
+BUTTON_INTERRUPT(INT4_vect, btn_up_cb, BUTTON_UP);
+BUTTON_INTERRUPT(INT3_vect, btn_down_cb, BUTTON_DOWN);
 BUTTON_INTERRUPT(INT5_vect, btn_left_cb, BUTTON_LEFT);
 BUTTON_INTERRUPT(INT7_vect, btn_right_cb, BUTTON_RIGHT);
 BUTTON_INTERRUPT(INT6_vect, btn_center_cb, BUTTON_CENTER);

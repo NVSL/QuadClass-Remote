@@ -3,16 +3,6 @@
 #define QUAD_REMOTE_TESTING
 #include <quad_remote.h>      // Header file with pin definitions and setup
 
-uint8_t scale[8] = 
-     {B00000000,
-      B00000000,
-      B00000000,
-      B00000000,
-      B00000000,
-      B00000000,
-      B00000000,
-      B00000000};
-
 void knobs_update();
 void knobs_pressed();
 void btn1_pressed(bool);
@@ -31,26 +21,12 @@ void setup() {
      Serial.begin(SERIAL_BAUD);           // Start up serial
      delay(100);
      quad_remote_setup();
-     
-     ADMUX_struct.refs = 3;
-     ADCSRA_struct.aden = 0;
-     ADCSRA_struct.aden = 1;
-     delay(1000);
-
-     Serial.println(ADCSRA);
-     Serial.println(ADCSRB);
-     Serial.println(ADMUX);
-     
-     
-     for(char i = 0; i < 8; i++) {
-	  scale[7-i] = B11111111;
-	  lcd.createChar(i, scale);
-	  delay(10);
-     }
 
      rfBegin(RADIO_CHANNEL);              // Initialize ATmega128RFA1 radio on given channel
 
-     knobs_update_cb = knobs_update;
+     // The buttons and the knob trigger these call backs.  
+     
+     knobs_update_cb = knobs_update; 
      knob1_btn_cb = knob_pressed;
      btn1_cb = btn1_pressed;
      btn2_cb = btn2_pressed;
@@ -59,7 +35,8 @@ void setup() {
      btn_left_cb =  btn_left_pressed;
      btn_right_cb = btn_right_pressed;
      btn_center_cb =  btn_center_pressed;
-     knobs_update();
+     
+     knobs_update(); // Initialize the knob
 }
 
 
@@ -74,20 +51,19 @@ int mode = INFO_MODE;
 void loop() {
   
      // Read analog values
+     // The pins array holds the arduino pin numbers for all the inputs.
      for(char i = 0; i < GIMBAL_AXES; i++) {
-	  numbers[i] = analogRead(pins[i]); 
+	      numbers[i] = analogRead(pins[i]); 
      }
   
      // Read btns
      for(char i = GIMBAL_AXES; i < TOTAL_CHANNELS; i++) {
-	  numbers[i] = digitalRead(pins[i]) ? 1023 : 0; 
+	      numbers[i] = digitalRead(pins[i]) ? 1023 : 0; 
      }
 
-     //update_display();
-     
-      for(char i= 0; i < TOTAL_CHANNELS;i++) {
-	  Serial.print(numbers[i]);
-	  Serial.print(" ");
+    for(char i= 0; i < TOTAL_CHANNELS;i++) {
+	      Serial.print(numbers[i]);
+	      Serial.print(" ");
 	  }
 
 	  Serial.println("\n");
@@ -95,7 +71,7 @@ void loop() {
      rfWrite((uint8_t*)numbers, sizeof(numbers));
 
      if (rfAvailable()) {  // If data receievd on radio...
-	  digitalWrite(LED3, 1);
+	   digitalWrite(LED3, 1);
 	  //delay(100);
 	  rfRead(&magic, sizeof(magic));
 	  numbers[TOTAL_CHANNELS] = magic;
@@ -197,7 +173,9 @@ void btn_down_pressed(bool down) {
 
 void btn_left_pressed(bool down) {
 	if(down) {
-		Serial.println("left");
+		Serial.println("left down");
+	} else {
+    Serial.println("left up");
 	}
 }
 
