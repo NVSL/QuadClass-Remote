@@ -370,6 +370,11 @@
 <wire x1="-18" y1="-25" x2="18" y2="-25" width="0.0254" layer="100"/>
 <wire x1="25" y1="18" x2="25" y2="-18" width="0.0254" layer="100"/>
 <wire x1="25" y1="-18" x2="18" y2="-25" width="0.0254" layer="100" curve="-90"/>
+<hole x="-27" y="27" drill="2.2"/>
+<circle x="-27" y="27" radius="1.1" width="0.127" layer="100"/>
+<circle x="-27" y="-27" radius="1.1" width="0.127" layer="100"/>
+<circle x="27" y="-27" radius="1.1" width="0.127" layer="100"/>
+<circle x="27" y="27" radius="1.1" width="0.127" layer="100"/>
 </package>
 <package name="JS102011SAQN">
 <smd name="B" x="2.5" y="2.75" dx="1.2" dy="2.5" layer="1"/>
