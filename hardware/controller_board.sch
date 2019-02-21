@@ -2481,7 +2481,7 @@
 <smd name="4" x="2.25" y="-4.55" dx="1.4" dy="2.1" layer="1" stop="no" cream="no"/>
 </package>
 <package name="VIA-0.2MM">
-<wire x1="0" y1="0" x2="0" y2="0" width="1" layer="39"/>
+<wire x1="0" y1="0" x2="0" y2="0" width="0.508" layer="39"/>
 <pad name="P1" x="0" y="0" drill="0.2" diameter="0.3" stop="no" thermals="no"/>
 </package>
 <package name="SOD3716X135_HS">
@@ -4443,7 +4443,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="HIGH-I" width="0.254" drill="0">
+<class number="1" name="HIGH-I" width="0.1778" drill="0">
 </class>
 <class number="2" name="RFSIG" width="1.27" drill="0">
 </class>
@@ -4544,7 +4544,6 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="P+23" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="V23" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V24" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
-<part name="V25" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V26" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V27" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V28" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
@@ -4660,10 +4659,10 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="U6" library="IMUs" deviceset="LSM9DS1" device="-MEDIUM"/>
 <part name="P+14" library="quadparts_prebuilt" deviceset="3V3" device=""/>
 <part name="GND13" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="P+7" library="quadparts_prebuilt" deviceset="3V3" device=""/>
 <part name="P+13" library="quadparts_prebuilt" deviceset="3V3" device=""/>
-<part name="R10" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
 <part name="R11" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
+<part name="R6" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
+<part name="P+7" library="quadparts_prebuilt" deviceset="3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4990,9 +4989,6 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <instance part="V24" gate="G$1" x="135.89" y="39.37" smashed="yes" rot="R90">
 <attribute name="NAME" x="135.89" y="44.704" size="1.27" layer="95" rot="R90" align="center-left"/>
 </instance>
-<instance part="V25" gate="G$1" x="138.43" y="39.37" smashed="yes" rot="R90">
-<attribute name="NAME" x="138.43" y="44.704" size="1.27" layer="95" rot="R90" align="center-left"/>
-</instance>
 <instance part="V26" gate="G$1" x="140.97" y="39.37" smashed="yes" rot="R90">
 <attribute name="NAME" x="140.97" y="44.704" size="1.27" layer="95" rot="R90" align="center-left"/>
 </instance>
@@ -5247,19 +5243,19 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <instance part="GND13" gate="1" x="33.02" y="48.26" smashed="yes">
 <attribute name="VALUE" x="33.02" y="45.72" size="1.778" layer="96" align="center"/>
 </instance>
-<instance part="P+7" gate="G$1" x="81.28" y="45.72" smashed="yes">
-<attribute name="VALUE" x="81.28" y="48.26" size="1.778" layer="96" rot="R180" align="center"/>
-</instance>
 <instance part="P+13" gate="G$1" x="88.9" y="45.72" smashed="yes">
 <attribute name="VALUE" x="88.9" y="48.26" size="1.778" layer="96" rot="R180" align="center"/>
-</instance>
-<instance part="R10" gate="G$1" x="81.28" y="35.56" smashed="yes" rot="R90">
-<attribute name="VALUE" x="84.582" y="31.75" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="79.7814" y="31.75" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="R11" gate="G$1" x="88.9" y="35.56" smashed="yes" rot="R90">
 <attribute name="VALUE" x="92.202" y="31.75" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="87.4014" y="31.75" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="R6" gate="G$1" x="81.28" y="35.56" smashed="yes" rot="R90">
+<attribute name="VALUE" x="84.582" y="31.75" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="79.7814" y="31.75" size="1.778" layer="95" rot="R90"/>
+</instance>
+<instance part="P+7" gate="G$1" x="81.28" y="45.72" smashed="yes">
+<attribute name="VALUE" x="81.28" y="48.26" size="1.778" layer="96" rot="R180" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -5816,14 +5812,14 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <label x="71.12" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="P+7" gate="G$1" pin="3V3"/>
-<wire x1="81.28" y1="40.64" x2="81.28" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="R10" gate="G$1" pin="2"/>
-</segment>
-<segment>
 <pinref part="P+13" gate="G$1" pin="3V3"/>
 <wire x1="88.9" y1="40.64" x2="88.9" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="P+7" gate="G$1" pin="3V3"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="81.28" y1="43.18" x2="81.28" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -6333,8 +6329,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <wire x1="125.73" y1="39.37" x2="128.27" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="128.27" y1="39.37" x2="133.35" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="133.35" y1="39.37" x2="135.89" y2="39.37" width="0.1524" layer="91"/>
-<wire x1="135.89" y1="39.37" x2="138.43" y2="39.37" width="0.1524" layer="91"/>
-<wire x1="138.43" y1="39.37" x2="140.97" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="135.89" y1="39.37" x2="140.97" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="140.97" y1="39.37" x2="143.51" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="107.95" y1="36.83" x2="107.95" y2="39.37" width="0.1524" layer="91"/>
 <wire x1="115.57" y1="33.02" x2="115.57" y2="39.37" width="0.1524" layer="91"/>
@@ -6349,8 +6344,6 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <junction x="133.35" y="39.37"/>
 <pinref part="V24" gate="G$1" pin="N"/>
 <junction x="135.89" y="39.37"/>
-<pinref part="V25" gate="G$1" pin="N"/>
-<junction x="138.43" y="39.37"/>
 <pinref part="V26" gate="G$1" pin="N"/>
 <junction x="140.97" y="39.37"/>
 <pinref part="V27" gate="G$1" pin="N"/>
@@ -6479,9 +6472,9 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <label x="71.12" y="86.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R10" gate="G$1" pin="1"/>
+<pinref part="R6" gate="G$1" pin="1"/>
 <wire x1="81.28" y1="30.48" x2="81.28" y2="27.94" width="0.1524" layer="91"/>
-<label x="81.28" y="27.94" size="1.778" layer="95" rot="MR270" xref="yes"/>
+<label x="81.28" y="27.94" size="1.778" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="BTN_LEFT" class="0">
