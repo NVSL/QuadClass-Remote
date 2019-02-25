@@ -25,8 +25,7 @@ The wooden parts are cut from 3mm plywood (see parts list).
 
 ## The Gimbals
 
-long screws
-8 donuts.
+The gimbals attach to the baseplate with the 8 long machine screws and 8 nuts.  Use 8 donuts to create space between the baseplate and the gimbal mounting points.
 
 ### Turnigy Gimbals
 
@@ -49,8 +48,7 @@ underside of the gimbal.
 
 ## Board
 
-5/8" screws.
-3 donuts
+The control board mounts to the baseplate using the shorter screws and nuts.  Use 3 donuts to put space between the board and the baseplate.
 
 ## Connect Servos (Turnigy)
 
@@ -58,7 +56,6 @@ The headers are under the board and accsible through the windows in
 the base plate.  The silkscreen has orientation information
 ('white'/'red', '+'/'-', and 'h' and 'v' for horizontal and vertical
 axes).  However, if you get this wrong, you can fix it in software.
-
 
 ## Connect Servos (Frsky) 
 
@@ -68,5 +65,4 @@ Plug the wide header into the PCB.  You can trim off the other connectors, if yo
 
 Red is positive.
 
-Attach the battery and tuck it under the board.  You can trim the battery cable, if you want.  Experimen with different lengths.
-
+Attach the battery and tuck it under the board.  You can trim the battery cable, if you want.  Experiment with different lengths.
