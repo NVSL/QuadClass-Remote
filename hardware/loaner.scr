@@ -1,0 +1,4 @@
+delete P1 P2 P3 P4 S1 R6 C20 C18 C19 R5 R4 C8 C7 C9 R13 R14 D5 U5 U3 L1 S2 R11 U6 C23 C26;
+write controller_board_loaner.sch;
+undo list;
+

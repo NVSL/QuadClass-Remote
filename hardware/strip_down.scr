@@ -1,5 +1,5 @@
 # breakout board
-delete B1 A1 C2 B2 C3 C13 C11 C14 C15 C12 C16 Y1 U4 B3 J6 C4
+delete B1 A1 C2 B2 C3 C13 C11 C14 C15 C12 C16 Y1 U4 B3 J6 C4 U1
 write remote+pwr+ftdi+gim+lcd+IMU+tp
 # test points 
 delete P1 P2 P3 P4
@@ -19,6 +19,3 @@ write remote+pwr
 # Power switch 
 delete S1
 write remote;
-
-
-

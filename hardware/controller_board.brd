@@ -2110,7 +2110,7 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="21" y="18" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DATASHEET" value="http://katalog.we-online.de/pbs/datasheet/748421245.pdf" x="21" y="18" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIST" value="Digikey" x="21" y="18" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="732-2230-6-ND" x="21" y="18" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTPN" value="732-2230-1-ND" x="21" y="18" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MFR" value="Wurth Electronics Inc" x="21" y="18" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="21" y="18" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="748421245" x="21" y="18" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2907,7 +2907,7 @@ design rules under a new name.</description>
 <element name="R8" library="quadparts_prebuilt" package="RESC2012X60_HS" value="1.2K" x="0" y="-13" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="0" y="-13" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="0" y="-13" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="311-1.20KARCT-ND" x="0" y="-13" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTPN" value="311-1.20KCRCT-ND" x="0" y="-13" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="0" y="-13" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="NAME" x="0" y="-11" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 <attribute name="VALUE" value="1.2K" x="1.5" y="-13" size="0.9" layer="27" font="vector" rot="R90" align="center"/>
@@ -3064,6 +3064,7 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="PBROWN" x="-21" y="4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="Digikey" x="-21" y="4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="497-14946-1-ND" x="-21" y="4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-27" y="-6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="-23.722" y="-8.778" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 </element>
 <element name="R11" library="quadparts_prebuilt" package="RESC2012X60_HS" value="10K" x="-13.5" y="-6" smashed="yes" rot="R90">

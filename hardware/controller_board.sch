@@ -3269,7 +3269,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DATASHEET" value="http://katalog.we-online.de/pbs/datasheet/748421245.pdf"/>
 <attribute name="DIST" value="Digikey"/>
-<attribute name="DISTPN" value="732-2230-6-ND"/>
+<attribute name="DISTPN" value="732-2230-1-ND"/>
 <attribute name="MFR" value="Wurth Electronics Inc"/>
 <attribute name="MOUNTING" value="SMD"/>
 <attribute name="MPN" value="748421245"/>
@@ -3508,7 +3508,7 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
-<attribute name="DISTPN" value="311-1.20KARCT-ND"/>
+<attribute name="DISTPN" value="311-1.20KCRCT-ND"/>
 <attribute name="MOUNTING" value="SMD"/>
 <attribute name="VALUE" value="1.2K"/>
 </technology>
@@ -4423,9 +4423,10 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </connects>
 <technologies>
 <technology name="">
-<attribute name="CREATOR" value="PBROWN" constant="no"/>
-<attribute name="DIST" value="Digikey" constant="no"/>
-<attribute name="DISTPN" value="497-14946-1-ND" constant="no"/>
+<attribute name="CREATOR" value="PBROWN"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="497-14946-1-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 </technology>
 </technologies>
 </device>
