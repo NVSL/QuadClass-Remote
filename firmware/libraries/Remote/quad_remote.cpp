@@ -1,14 +1,17 @@
 #include "quad_remote.h"
 
 
-LiquidCrystal lcd(LCD_RS, LCD_EN, LCD_D4, LCD_D5, LCD_D6, LCD_D7);
+//#include <SoftwareSerial2.h>
+
+//SoftwareSerial lcdSerial(LCD_TX, LCD_RX);
+
+//SerLCD lcd;
 
 RotaryEncoder knob1(ENC1_A, ENC1_B);
 
 void quad_remote_setup() {
      knob1.setup();
 
-    
      EICRA_struct.isc0 = 0x01; // Any direction interrupts for encoder 3
      EICRA_struct.isc1 = 0x01;
 
@@ -23,10 +26,10 @@ void quad_remote_setup() {
      
      PCICR = 1;  // enable pin-change interrupt 0
      PCMSK0 = 0b00110000;     // catch changes on all the pins for encoders 1 and 2
-
-     lcd.begin(16, 2);
+     /*lcdSerial.begin(9600);
+     lcd.begin(lcdSerial);
      lcd.clear();
-     lcd.home();
+     lcd.home();*/
 
      /*     ADMUX_struct.refs = 3;
      ADCSRA_struct.aden = 0;
@@ -48,18 +51,12 @@ void quad_remote_setup() {
      pinMode(BUTTON_RIGHT, INPUT_PULLUP);
      pinMode(BUTTON_CENTER, INPUT_PULLUP);
 
-     pinMode(LCD_LED_RED, OUTPUT);
-     pinMode(LCD_LED_GREEN, OUTPUT);
-     pinMode(LCD_LED_BLUE, OUTPUT);
-
      pinMode(analogInputToDigitalPin(PIN_YAW),  INPUT);            // Gimbal: Yaw
      pinMode(analogInputToDigitalPin(PIN_THROTTLE), INPUT);        // Gimbal: throttle
      pinMode(analogInputToDigitalPin(PIN_ROLL), INPUT);            // Gimbal: roll
      pinMode(analogInputToDigitalPin(PIN_PITCH), INPUT);           // Gimbal: pitch
      
      pinMode(analogInputToDigitalPin(BATTERY_SENSE), INPUT);
-
-
 }
 
 void nop() {
@@ -86,6 +83,7 @@ ISR(PCINT0_vect)
      knob1.update();
      knobs_update_cb();
 }
+
 
 #define BUTTON_INTERRUPT(vector, cb, pin) \
 ISR(vector)\

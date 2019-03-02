@@ -1,3 +1,4 @@
+
 #include <radio.h>
 
 #define QUAD_REMOTE_TESTING
@@ -37,6 +38,14 @@ void setup() {
      btn_center_cb =  btn_center_pressed;
      
      knobs_update(); // Initialize the knob
+
+    /*
+    lcd.setBacklight(255, 0, 255); //Set backlight to bright white
+    lcd.setContrast(5); //Set contrast. Lower to 0 for higher contrast.
+  
+    lcd.clear(); //Clear the display - this moves the cursor to home position as well
+    lcd.print("Hello, World!");*/
+    
 }
 
 
@@ -66,7 +75,6 @@ void loop() {
 	      Serial.print(" ");
 	  }
 
-	  Serial.println("\n");
 
      rfWrite((uint8_t*)numbers, sizeof(numbers));
 
@@ -84,22 +92,23 @@ void loop() {
      // fast, the packets will run together on the receive side.
      delay(100);
      
-     lcd.setCursor(12, 1);
-     lcd.write(constrain(map(analogRead(PIN_THROTTLE),140,800,0,7), 0, 7));
-     lcd.write(constrain(map(analogRead(PIN_YAW),140,800,0,7), 0 ,7));
-     lcd.write(constrain(map(analogRead(PIN_PITCH),140,800,0,7), 0, 7));
-     lcd.write(constrain(map(analogRead(PIN_ROLL),140,800,0,7), 0, 7));
+     //lcd.setCursor(12, 1);
+     Serial.print(constrain(map(analogRead(PIN_THROTTLE),52,890,7,0), 0, 7));
+     Serial.print(" ");
+     Serial.print(constrain(map(analogRead(PIN_YAW),140,800,0,7), 0 ,7));
+     Serial.print(" ");
+     Serial.print(constrain(map(analogRead(PIN_PITCH),140,800,0,7), 0, 7));
+     Serial.print(" ");
+     Serial.print(constrain(map(analogRead(PIN_ROLL),140,800,0,7), 0, 7));
+     Serial.print("\n");
 
 }
 
 void knobs_update() {
+  /*
      unsigned char b = knob1.getCurrentPos() *  16;
      unsigned char r = 0;
      unsigned char g = 0;
-     
-     analogWrite(LCD_LED_RED, (unsigned char)(r));
-     analogWrite(LCD_LED_GREEN, (unsigned char)(g));
-     analogWrite(LCD_LED_BLUE, (unsigned char)(b));
 
      lcd.home();
      lcd.clear();
@@ -124,8 +133,9 @@ void knobs_update() {
      digitalWrite(LED1,!digitalRead(LED1));
      digitalWrite(LED2,!digitalRead(LED2));
      digitalWrite(LED3,!digitalRead(LED3));
-
-     //Serial.println(knob1.getCurrentPos());
+*/
+      Serial.println(knob1.getCurrentPos());
+    
 }
 
 

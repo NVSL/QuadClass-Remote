@@ -4,8 +4,8 @@
 /* quad_remote.h
  */
 #include <Arduino.h>
-#include <LiquidCrystal.h>
 #include <RotaryEncoder.h>
+#include <SerLCD.h>
 
 // Pin definitions for Gimbals (Analog inputs).  It is not clear why the A1, A2,... etc. don't work, but they don't.
 #define PIN_YAW		        A0
@@ -13,18 +13,12 @@
 #define PIN_ROLL	        A2 
 #define	PIN_PITCH		A3  
 
-extern LiquidCrystal lcd;
-
-#define LCD_LED_RED 3
-#define LCD_LED_GREEN 19
-#define LCD_LED_BLUE 34
-
 #define LED3 18
 
 extern void quad_remote_setup();
 
 extern RotaryEncoder knob1;
-
+extern SerLCD lcd;
 
 #define ENC1_BUTTON 20
 #define ENC1_A 9
@@ -40,12 +34,8 @@ extern RotaryEncoder knob1;
 #define BUTTON_RIGHT 7
 #define BUTTON_CENTER 6
 
-#define LCD_RS 10
-#define LCD_EN 2
-#define LCD_D4 22
-#define LCD_D5 23
-#define LCD_D6 24
-#define LCD_D7 25
+#define LCD_RX 25
+#define LCD_TX 24
 
 #define BATTERY_SENSE A4
 #define MIN_BATTERY (775.0) // calculated
