@@ -7,7 +7,7 @@
 
 //SerLCD lcd;
 
-RotaryEncoder knob1(ENC1_A, ENC1_B);
+RotaryEncoder knob1(ENC1_A_PIN, ENC1_B_PIN);
 
 void quad_remote_setup() {
 	knob1.setup();
@@ -40,23 +40,23 @@ void quad_remote_setup() {
 	       Serial.println(ADCSRB);
 	       Serial.println(ADMUX); */
      
-	pinMode(ENC1_BUTTON, INPUT_PULLUP);
+	pinMode(ENC1_BUTTON_PIN, INPUT_PULLUP);
 
-	pinMode(BUTTON1, INPUT_PULLUP);
-	pinMode(BUTTON2, INPUT_PULLUP);
+	pinMode(BUTTON1_PIN, INPUT_PULLUP);
+	pinMode(BUTTON2_PIN, INPUT_PULLUP);
 
-	pinMode(BUTTON_UP, INPUT_PULLUP);
-	pinMode(BUTTON_DOWN, INPUT_PULLUP);
-	pinMode(BUTTON_LEFT, INPUT_PULLUP);
-	pinMode(BUTTON_RIGHT, INPUT_PULLUP);
-	pinMode(BUTTON_CENTER, INPUT_PULLUP);
+	pinMode(BUTTON_UP_PIN, INPUT_PULLUP);
+	pinMode(BUTTON_DOWN_PIN, INPUT_PULLUP);
+	pinMode(BUTTON_LEFT_PIN, INPUT_PULLUP);
+	pinMode(BUTTON_RIGHT_PIN, INPUT_PULLUP);
+	pinMode(BUTTON_CENTER_PIN, INPUT_PULLUP);
 
 	pinMode(analogInputToDigitalPin(PIN_YAW),  INPUT);            // Gimbal: Yaw
 	pinMode(analogInputToDigitalPin(PIN_THROTTLE), INPUT);        // Gimbal: throttle
 	pinMode(analogInputToDigitalPin(PIN_ROLL), INPUT);            // Gimbal: roll
 	pinMode(analogInputToDigitalPin(PIN_PITCH), INPUT);           // Gimbal: pitch
      
-	pinMode(analogInputToDigitalPin(BATTERY_SENSE), INPUT);
+	pinMode(analogInputToDigitalPin(BATTERY_SENSE_PIN), INPUT);
 }
 
 bool is_pressed(int button)
@@ -96,16 +96,16 @@ ISR(PCINT0_vect)
 		cb(!digitalRead(pin));		\
 	}
 
-BUTTON_INTERRUPT(INT2_vect, knob1_btn_cb, ENC1_BUTTON);
+BUTTON_INTERRUPT(INT2_vect, knob1_btn_cb, ENC1_BUTTON_PIN);
 
-BUTTON_INTERRUPT(INT1_vect, btn2_cb, BUTTON2);
-BUTTON_INTERRUPT(INT0_vect, btn1_cb, BUTTON1);
+BUTTON_INTERRUPT(INT1_vect, btn2_cb, BUTTON2_PIN);
+BUTTON_INTERRUPT(INT0_vect, btn1_cb, BUTTON1_PIN);
 
-BUTTON_INTERRUPT(INT4_vect, btn_up_cb, BUTTON_UP);
-BUTTON_INTERRUPT(INT3_vect, btn_down_cb, BUTTON_DOWN);
-BUTTON_INTERRUPT(INT5_vect, btn_left_cb, BUTTON_LEFT);
-BUTTON_INTERRUPT(INT7_vect, btn_right_cb, BUTTON_RIGHT);
-BUTTON_INTERRUPT(INT6_vect, btn_center_cb, BUTTON_CENTER);
+BUTTON_INTERRUPT(INT4_vect, btn_up_cb, BUTTON_UP_PIN);
+BUTTON_INTERRUPT(INT3_vect, btn_down_cb, BUTTON_DOWN_PIN);
+BUTTON_INTERRUPT(INT5_vect, btn_left_cb, BUTTON_LEFT_PIN);
+BUTTON_INTERRUPT(INT7_vect, btn_right_cb, BUTTON_RIGHT_PIN);
+BUTTON_INTERRUPT(INT6_vect, btn_center_cb, BUTTON_CENTER_PIN);
 
 
 int numbers[TOTAL_CHANNELS+1];
@@ -121,11 +121,11 @@ char *labels[TOTAL_CHANNELS] = {"T ", "Y ", "P ", "R ",
 				"CENTER"};
 
 char pins[TOTAL_CHANNELS] = {PIN_THROTTLE, PIN_YAW, PIN_PITCH, PIN_ROLL, 
-			     ENC1_A, ENC1_B,
-			     ENC1_BUTTON, 
-			     BUTTON1, BUTTON2,
-			     BUTTON_UP,
-			     BUTTON_DOWN,
-			     BUTTON_LEFT,
-			     BUTTON_RIGHT,
-			     BUTTON_CENTER};
+			     ENC1_A_PIN, ENC1_B_PIN,
+			     ENC1_BUTTON_PIN,
+			     BUTTON1_PIN, BUTTON2_PIN,
+			     BUTTON_UP_PIN,
+			     BUTTON_DOWN_PIN,
+			     BUTTON_LEFT_PIN,
+			     BUTTON_RIGHT_PIN,
+			     BUTTON_CENTER_PIN};
