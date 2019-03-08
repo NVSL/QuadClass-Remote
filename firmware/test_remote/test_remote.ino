@@ -5,7 +5,7 @@
 #include <quad_remote.h>      // Header file with pin definitions and setup
 
 void knobs_update();
-void knobs_pressed();
+void knob_pressed(bool);
 void btn1_pressed(bool);
 void btn2_pressed(bool);
 
@@ -39,12 +39,12 @@ void setup() {
      
      knobs_update(); // Initialize the knob
 
-    /*
-    lcd.setBacklight(255, 0, 255); //Set backlight to bright white
+    
+    lcd.setBacklight(255, 255, 0); 
     lcd.setContrast(5); //Set contrast. Lower to 0 for higher contrast.
   
     lcd.clear(); //Clear the display - this moves the cursor to home position as well
-    lcd.print("Hello, World!");*/
+    lcd.print("Hello, World!");
     
 }
 

@@ -5,7 +5,7 @@
  */
 #include <Arduino.h>
 #include <RotaryEncoder.h>
-//#include <SerLCD.h>
+#include <SerLCD.h>
 
 // Pin definitions for Gimbals (Analog inputs).  It is not clear why the A1, A2,... etc. don't work, but they don't.
 #define PIN_YAW		        A0
@@ -18,7 +18,7 @@
 extern void quad_remote_setup();
 
 extern RotaryEncoder knob1;
-//extern SerLCD lcd;
+extern SerLCD lcd;
 
 #define ENC1_BUTTON_PIN 20
 #define ENC1_A_PIN 9

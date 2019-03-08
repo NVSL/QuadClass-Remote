@@ -1,11 +1,11 @@
 #include "quad_remote.h"
 
 
-//#include <SoftwareSerial2.h>
+#include <SoftwareSerial2.h>
 
-//SoftwareSerial lcdSerial(LCD_TX, LCD_RX);
+SoftwareSerial lcdSerial(LCD_TX_PIN, LCD_RX_PIN);
 
-//SerLCD lcd;
+SerLCD lcd;
 
 RotaryEncoder knob1(ENC1_A_PIN, ENC1_B_PIN);
 
@@ -24,12 +24,8 @@ void quad_remote_setup() {
     
 	EIMSK = 0b11111111;
      
-	PCICR = 1;  // enable pin-change interrupt 0
-	PCMSK0 = 0b00110000;     // catch changes on all the pins for encoders 1 and 2
-	/*lcdSerial.begin(9600);
-	  lcd.begin(lcdSerial);
-	  lcd.clear();
-	  lcd.home();*/
+	PCICR = 1;               // enable pin-change interrupt 0
+	PCMSK0 = 0b00110000;     // catch changes on all the pins for the encoder
 
 	/*     ADMUX_struct.refs = 3;
 	       ADCSRA_struct.aden = 0;
@@ -57,6 +53,8 @@ void quad_remote_setup() {
 	pinMode(analogInputToDigitalPin(PIN_PITCH), INPUT);           // Gimbal: pitch
      
 	pinMode(analogInputToDigitalPin(BATTERY_SENSE_PIN), INPUT);
+	lcdSerial.begin(9600);
+	lcd.begin(lcdSerial);
 }
 
 bool is_pressed(int button)
