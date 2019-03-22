@@ -1626,11 +1626,6 @@ R8 or R9.</text>
 <text x="0" y="2" size="1" layer="25" font="vector" align="center">&gt;NAME</text>
 <pad name="T" x="0" y="0" drill="1"/>
 </package>
-<package name="SUPPORT_DONUT">
-<circle x="0" y="0" radius="1.1" width="0.127" layer="100"/>
-<circle x="0" y="0" radius="2.65" width="0.127" layer="100"/>
-<wire x1="0" y1="0" x2="0" y2="0" width="1" layer="39"/>
-</package>
 <package name="BOURNS-PEC12R">
 <hole x="-5.7" y="0" drill="2.2"/>
 <wire x1="-6.2" y1="-6.7" x2="-6.2" y2="6.7" width="0.127" layer="39"/>
@@ -2533,8 +2528,8 @@ design rules under a new name.</description>
 <attribute name="DISTPN" value="NA" x="-26.15" y="3.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUNTING" value="NONE" x="-26.15" y="3.9" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U$4" library="RemoteParts" package="375MAH-BATTERY" value="" x="-100.125" y="1.5" smashed="yes"/>
-<element name="U$5" library="RemoteParts" package="600MAH-BATTERY" value="" x="-74" y="-1" smashed="yes"/>
+<element name="U$4" library="RemoteParts" package="375MAH-BATTERY" value="" x="-46.125" y="19.5" smashed="yes"/>
+<element name="U$5" library="RemoteParts" package="600MAH-BATTERY" value="" x="-43" y="9" smashed="yes"/>
 <element name="R5" library="quadparts_prebuilt" package="RESC2012X60_HS" value="27K" x="-14" y="15" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-14" y="15" size="1.778" layer="27" font="vector" rot="R270" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-14" y="15" size="1.778" layer="27" font="vector" rot="R270" display="off"/>
@@ -2765,128 +2760,6 @@ design rules under a new name.</description>
 <attribute name="MOUNTING" value="TH" x="0" y="-24" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-5.5" y="-31.5" size="0.9" layer="25" font="vector" align="center"/>
 </element>
-<element name="U$10" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-99" y="21.5" smashed="yes"/>
-<element name="U$14" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-93" y="21.5" smashed="yes"/>
-<element name="U$15" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-87" y="21.5" smashed="yes"/>
-<element name="U$16" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-81" y="21.5" smashed="yes"/>
-<element name="U$17" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-75" y="21.5" smashed="yes"/>
-<element name="U$18" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-69" y="21.5" smashed="yes"/>
-<element name="U$20" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-105" y="15.5" smashed="yes"/>
-<element name="U$21" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-99" y="15.5" smashed="yes"/>
-<element name="U$22" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-93" y="15.5" smashed="yes"/>
-<element name="U$23" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-87" y="15.5" smashed="yes"/>
-<element name="U$24" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-81" y="15.5" smashed="yes"/>
-<element name="U$25" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-75" y="15.5" smashed="yes"/>
-<element name="U$26" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-69" y="15.5" smashed="yes"/>
-<element name="U$27" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="15.5" smashed="yes"/>
-<element name="U$28" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-105" y="9.5" smashed="yes"/>
-<element name="U$29" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-99" y="9.5" smashed="yes"/>
-<element name="U$30" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-93" y="9.5" smashed="yes"/>
-<element name="U$31" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-87" y="9.5" smashed="yes"/>
-<element name="U$32" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-81" y="9.5" smashed="yes"/>
-<element name="U$33" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-75" y="9.5" smashed="yes"/>
-<element name="U$34" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-69" y="9.5" smashed="yes"/>
-<element name="U$35" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="9.5" smashed="yes"/>
-<element name="U$36" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-105" y="3.5" smashed="yes"/>
-<element name="U$37" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-99" y="3.5" smashed="yes"/>
-<element name="U$38" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-93" y="3.5" smashed="yes"/>
-<element name="U$39" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-87" y="3.5" smashed="yes"/>
-<element name="U$40" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-81" y="3.5" smashed="yes"/>
-<element name="U$41" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-75" y="3.5" smashed="yes"/>
-<element name="U$42" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-69" y="3.5" smashed="yes"/>
-<element name="U$43" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="3.5" smashed="yes"/>
-<element name="U$44" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-105" y="-2.5" smashed="yes"/>
-<element name="U$45" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-99" y="-2.5" smashed="yes"/>
-<element name="U$46" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-93" y="-2.5" smashed="yes"/>
-<element name="U$47" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-87" y="-2.5" smashed="yes"/>
-<element name="U$48" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-81" y="-2.5" smashed="yes"/>
-<element name="U$49" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-75" y="-2.5" smashed="yes"/>
-<element name="U$50" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-69" y="-2.5" smashed="yes"/>
-<element name="U$51" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="-2.5" smashed="yes"/>
-<element name="U$52" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-105" y="-8.5" smashed="yes"/>
-<element name="U$53" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-99" y="-8.5" smashed="yes"/>
-<element name="U$96" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-93" y="-8.5" smashed="yes"/>
-<element name="U$97" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-87" y="-8.5" smashed="yes"/>
-<element name="U$98" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-81" y="-8.5" smashed="yes"/>
-<element name="U$99" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-75" y="-8.5" smashed="yes"/>
-<element name="U$100" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-69" y="-8.5" smashed="yes"/>
-<element name="U$101" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="-8.5" smashed="yes"/>
-<element name="U$102" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-105" y="-14.5" smashed="yes"/>
-<element name="U$103" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-99" y="-14.5" smashed="yes"/>
-<element name="U$104" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-93" y="-14.5" smashed="yes"/>
-<element name="U$105" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-87" y="-14.5" smashed="yes"/>
-<element name="U$106" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-81" y="-14.5" smashed="yes"/>
-<element name="U$107" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-75" y="-14.5" smashed="yes"/>
-<element name="U$108" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-69" y="-14.5" smashed="yes"/>
-<element name="U$109" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="-14.5" smashed="yes"/>
-<element name="U$111" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-99" y="-20.5" smashed="yes"/>
-<element name="U$112" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-93" y="-20.5" smashed="yes"/>
-<element name="U$113" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-87" y="-20.5" smashed="yes"/>
-<element name="U$114" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-81" y="-20.5" smashed="yes"/>
-<element name="U$115" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-75" y="-20.5" smashed="yes"/>
-<element name="U$116" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-69" y="-20.5" smashed="yes"/>
-<element name="U$117" library="RemoteParts" package="SUPPORT_DONUT" value="" x="-63" y="-20.5" smashed="yes"/>
-<element name="U$8" library="RemoteParts" package="SUPPORT_DONUT" value="" x="68" y="21.5" smashed="yes"/>
-<element name="U$19" library="RemoteParts" package="SUPPORT_DONUT" value="" x="74" y="21.5" smashed="yes"/>
-<element name="U$54" library="RemoteParts" package="SUPPORT_DONUT" value="" x="80" y="21.5" smashed="yes"/>
-<element name="U$55" library="RemoteParts" package="SUPPORT_DONUT" value="" x="86" y="21.5" smashed="yes"/>
-<element name="U$56" library="RemoteParts" package="SUPPORT_DONUT" value="" x="92" y="21.5" smashed="yes"/>
-<element name="U$57" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="21.5" smashed="yes"/>
-<element name="U$58" library="RemoteParts" package="SUPPORT_DONUT" value="" x="62" y="15.5" smashed="yes"/>
-<element name="U$59" library="RemoteParts" package="SUPPORT_DONUT" value="" x="68" y="15.5" smashed="yes"/>
-<element name="U$60" library="RemoteParts" package="SUPPORT_DONUT" value="" x="74" y="15.5" smashed="yes"/>
-<element name="U$61" library="RemoteParts" package="SUPPORT_DONUT" value="" x="80" y="15.5" smashed="yes"/>
-<element name="U$62" library="RemoteParts" package="SUPPORT_DONUT" value="" x="86" y="15.5" smashed="yes"/>
-<element name="U$63" library="RemoteParts" package="SUPPORT_DONUT" value="" x="92" y="15.5" smashed="yes"/>
-<element name="U$64" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="15.5" smashed="yes"/>
-<element name="U$65" library="RemoteParts" package="SUPPORT_DONUT" value="" x="104" y="15.5" smashed="yes"/>
-<element name="U$66" library="RemoteParts" package="SUPPORT_DONUT" value="" x="62" y="9.5" smashed="yes"/>
-<element name="U$67" library="RemoteParts" package="SUPPORT_DONUT" value="" x="68" y="9.5" smashed="yes"/>
-<element name="U$68" library="RemoteParts" package="SUPPORT_DONUT" value="" x="74" y="9.5" smashed="yes"/>
-<element name="U$69" library="RemoteParts" package="SUPPORT_DONUT" value="" x="80" y="9.5" smashed="yes"/>
-<element name="U$70" library="RemoteParts" package="SUPPORT_DONUT" value="" x="86" y="9.5" smashed="yes"/>
-<element name="U$71" library="RemoteParts" package="SUPPORT_DONUT" value="" x="92" y="9.5" smashed="yes"/>
-<element name="U$72" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="9.5" smashed="yes"/>
-<element name="U$73" library="RemoteParts" package="SUPPORT_DONUT" value="" x="104" y="9.5" smashed="yes"/>
-<element name="U$74" library="RemoteParts" package="SUPPORT_DONUT" value="" x="62" y="3.5" smashed="yes"/>
-<element name="U$75" library="RemoteParts" package="SUPPORT_DONUT" value="" x="68" y="3.5" smashed="yes"/>
-<element name="U$76" library="RemoteParts" package="SUPPORT_DONUT" value="" x="74" y="3.5" smashed="yes"/>
-<element name="U$77" library="RemoteParts" package="SUPPORT_DONUT" value="" x="80" y="3.5" smashed="yes"/>
-<element name="U$78" library="RemoteParts" package="SUPPORT_DONUT" value="" x="86" y="3.5" smashed="yes"/>
-<element name="U$79" library="RemoteParts" package="SUPPORT_DONUT" value="" x="92" y="3.5" smashed="yes"/>
-<element name="U$80" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="3.5" smashed="yes"/>
-<element name="U$81" library="RemoteParts" package="SUPPORT_DONUT" value="" x="104" y="3.5" smashed="yes"/>
-<element name="U$82" library="RemoteParts" package="SUPPORT_DONUT" value="" x="62" y="-2.5" smashed="yes"/>
-<element name="U$83" library="RemoteParts" package="SUPPORT_DONUT" value="" x="68" y="-2.5" smashed="yes"/>
-<element name="U$84" library="RemoteParts" package="SUPPORT_DONUT" value="" x="74" y="-2.5" smashed="yes"/>
-<element name="U$85" library="RemoteParts" package="SUPPORT_DONUT" value="" x="80" y="-2.5" smashed="yes"/>
-<element name="U$86" library="RemoteParts" package="SUPPORT_DONUT" value="" x="86" y="-2.5" smashed="yes"/>
-<element name="U$87" library="RemoteParts" package="SUPPORT_DONUT" value="" x="92" y="-2.5" smashed="yes"/>
-<element name="U$88" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="-2.5" smashed="yes"/>
-<element name="U$89" library="RemoteParts" package="SUPPORT_DONUT" value="" x="104" y="-2.5" smashed="yes"/>
-<element name="U$90" library="RemoteParts" package="SUPPORT_DONUT" value="" x="62" y="-8.5" smashed="yes"/>
-<element name="U$91" library="RemoteParts" package="SUPPORT_DONUT" value="" x="68" y="-8.5" smashed="yes"/>
-<element name="U$92" library="RemoteParts" package="SUPPORT_DONUT" value="" x="74" y="-8.5" smashed="yes"/>
-<element name="U$93" library="RemoteParts" package="SUPPORT_DONUT" value="" x="80" y="-8.5" smashed="yes"/>
-<element name="U$94" library="RemoteParts" package="SUPPORT_DONUT" value="" x="86" y="-8.5" smashed="yes"/>
-<element name="U$95" library="RemoteParts" package="SUPPORT_DONUT" value="" x="92" y="-8.5" smashed="yes"/>
-<element name="U$110" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="-8.5" smashed="yes"/>
-<element name="U$118" library="RemoteParts" package="SUPPORT_DONUT" value="" x="104" y="-8.5" smashed="yes"/>
-<element name="U$119" library="RemoteParts" package="SUPPORT_DONUT" value="" x="62" y="-14.5" smashed="yes"/>
-<element name="U$120" library="RemoteParts" package="SUPPORT_DONUT" value="" x="68" y="-14.5" smashed="yes"/>
-<element name="U$121" library="RemoteParts" package="SUPPORT_DONUT" value="" x="74" y="-14.5" smashed="yes"/>
-<element name="U$122" library="RemoteParts" package="SUPPORT_DONUT" value="" x="80" y="-14.5" smashed="yes"/>
-<element name="U$123" library="RemoteParts" package="SUPPORT_DONUT" value="" x="86" y="-14.5" smashed="yes"/>
-<element name="U$124" library="RemoteParts" package="SUPPORT_DONUT" value="" x="92" y="-14.5" smashed="yes"/>
-<element name="U$125" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="-14.5" smashed="yes"/>
-<element name="U$126" library="RemoteParts" package="SUPPORT_DONUT" value="" x="104" y="-14.5" smashed="yes"/>
-<element name="U$127" library="RemoteParts" package="SUPPORT_DONUT" value="" x="68" y="-20.5" smashed="yes"/>
-<element name="U$128" library="RemoteParts" package="SUPPORT_DONUT" value="" x="74" y="-20.5" smashed="yes"/>
-<element name="U$129" library="RemoteParts" package="SUPPORT_DONUT" value="" x="80" y="-20.5" smashed="yes"/>
-<element name="U$130" library="RemoteParts" package="SUPPORT_DONUT" value="" x="86" y="-20.5" smashed="yes"/>
-<element name="U$131" library="RemoteParts" package="SUPPORT_DONUT" value="" x="92" y="-20.5" smashed="yes"/>
-<element name="U$132" library="RemoteParts" package="SUPPORT_DONUT" value="" x="98" y="-20.5" smashed="yes"/>
-<element name="U$133" library="RemoteParts" package="SUPPORT_DONUT" value="" x="104" y="-20.5" smashed="yes"/>
 <element name="R8" library="quadparts_prebuilt" package="RESC2012X60_HS" value="1.2K" x="-2" y="-13" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-2" y="-13" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-2" y="-13" size="1.778" layer="27" rot="R270" display="off"/>
