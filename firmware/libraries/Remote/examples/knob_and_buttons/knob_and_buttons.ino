@@ -65,6 +65,7 @@ void btn2_pressed(bool down) {
 void knob_pressed(bool down) {
     if(down) {
         Serial.println("knob down");
+	knob1.setCurrentPos(0);
     }else {
     Serial.println("knob up");    
  }
