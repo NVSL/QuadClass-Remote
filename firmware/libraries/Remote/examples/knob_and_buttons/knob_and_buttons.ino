@@ -3,7 +3,7 @@
 #include <quad_remote.h>      // Header file with pin definitions and setup
 
 void knobs_update();
-void knobs_pressed();
+void knob_pressed(bool);
 void btn1_pressed(bool);
 void btn2_pressed(bool);
 
@@ -34,6 +34,10 @@ void setup() {
 }
 
 void loop() {
+
+     if (is_pressed(BUTTON_UP_PIN)) {
+	     Serial.println("Up is pressed");
+     }
 }
 
 void knobs_update() {
