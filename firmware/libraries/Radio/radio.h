@@ -48,7 +48,7 @@ bool rfReceive(T & g)
 		if (l == sizeof(T)) {
 			if (t.validate()) {
 				g = t;
-				Serial.println();
+				//Serial.println();
 				return true;
 			} else {
 				Serial.print("Bad packet: ");
