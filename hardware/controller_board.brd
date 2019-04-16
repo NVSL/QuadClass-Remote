@@ -299,6 +299,10 @@ disables the IMU</text>
 1in standoffs.</text>
 <text x="5" y="-13" size="0.8128" layer="21" font="vector" align="center-left">Populate 
 R8 or R9.</text>
+<text x="-59" y="-45" size="1.778" layer="1">move all UI elements to thebottom</text>
+<text x="-59" y="-50" size="1.778" layer="1">Make battery terminals accessable while LCD is installed</text>
+<text x="-59" y="-55" size="1.778" layer="1">Move up LCD to make room</text>
+<text x="-59" y="-61" size="1.778" layer="1">add notch to help with docking to test stand</text>
 </plain>
 <libraries>
 <library name="quadparts_prebuilt">

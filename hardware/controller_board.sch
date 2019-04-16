@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
@@ -4786,6 +4786,12 @@ FrySky: R8 = 600 Ohm
 HobbyKing: R8 = 1.2k Ohm</text>
 <text x="38.1" y="92.71" size="1.778" layer="91">Pressing the BTN1 or BTN2 will disable the IMU.</text>
 <text x="256.54" y="248.92" size="1.778" layer="91">back out this change</text>
+<text x="76.2" y="144.78" size="1.778" layer="91">Add diode to prevent VBAT from coming back over FTDI.</text>
+<text x="76.2" y="139.7" size="1.778" layer="91">Switch battery voltage directly</text>
+<text x="76.2" y="134.62" size="1.778" layer="91">Commit to FTDI</text>
+<text x="76.2" y="129.54" size="1.778" layer="91">remove battery voltage sensor</text>
+<text x="76.2" y="149.86" size="1.778" layer="91">Remove vreg in favor of FTDI</text>
+<text x="76.2" y="154.94" size="1.778" layer="91">Consider attaching LCD to I2C</text>
 </plain>
 <instances>
 <instance part="GND10" gate="1" x="339.09" y="226.06" smashed="yes">
