@@ -39,6 +39,7 @@ void loop() {
 	if (is_pressed(BUTTON_UP_PIN)) {
 		Serial.println("Up is pressed");
 	}
+  update_display();
 }
 
 int row = 0;
@@ -51,9 +52,8 @@ void update_display() {
 }
 
 void knobs_update() {
-	Serial.print("Knob: ");
-	Serial.println(knob1.getCurrentPos());
-	update_display();
+	//Serial.print("Knob: ");
+	//Serial.println(knob1.getCurrentPos());
 }
 
 
@@ -133,4 +133,3 @@ void btn_center_pressed(bool down) {
 		Serial.println("center up");    
 	}
 }
-

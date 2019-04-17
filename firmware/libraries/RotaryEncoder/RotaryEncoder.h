@@ -12,7 +12,7 @@
 class RotaryEncoder {
 	int pinA, pinB, currentPos, maxPos, pinButton;
 	uint8_t old_AB;
-	
+	char tics;
 public:
 
 	/** \brief Constructor 
@@ -21,7 +21,7 @@ public:
 	 *
 	 * If you use the sketch that came with your robot, you won't need call this.
 	 */
-	RotaryEncoder(int pin_a, int pin_b ) : pinA(pin_a), pinB(pin_b), old_AB(0) {}
+	RotaryEncoder(int pin_a, int pin_b) : pinA(pin_a), pinB(pin_b), old_AB(0), tics(0) {}
 
 	/**
 	 * \brief Setup the breakout.
@@ -52,7 +52,14 @@ public:
 		/**/
 		old_AB <<= 2;                   //remember previous state
 		old_AB |= (digitalRead(pinA) << 1)| digitalRead(pinB); //add current state
-		currentPos += enc_states[( old_AB & 0x0f )];
+		tics += enc_states[( old_AB & 0x0f )];
+		if (tics == TRANSITIONS_PER_DETENT) {
+			currentPos++;
+			tics = 0;
+		} else if (tics == -TRANSITIONS_PER_DETENT) {
+			currentPos--;
+			tics =0;
+		}
 	}
 
 	/**
@@ -61,7 +68,7 @@ public:
 	 * Returns the current position of the rotary encoder.  
 	 */
 	int getCurrentPos() {
-		return currentPos/TRANSITIONS_PER_DETENT;
+		return currentPos;
 	}
 
 	/**
@@ -69,7 +76,7 @@ public:
 	 *
 	 */
 	int setCurrentPos(int v) {
-		currentPos = v*TRANSITIONS_PER_DETENT;
+		currentPos = v;
 	}
 
 };
