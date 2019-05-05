@@ -118,7 +118,7 @@ char *labels[TOTAL_CHANNELS] = {"T ", "Y ", "P ", "R ",
 				"RIGHT",
 				"CENTER"};
 
-char pins[TOTAL_CHANNELS] = {PIN_THROTTLE, PIN_YAW, PIN_PITCH, PIN_ROLL, 
+char pins[TOTAL_CHANNELS] = {PIN_PITCH, PIN_YAW, PIN_ROLL, PIN_THROTTLE,
 			     ENC1_A_PIN, ENC1_B_PIN,
 			     ENC1_BUTTON_PIN,
 			     BUTTON1_PIN, BUTTON2_PIN,
