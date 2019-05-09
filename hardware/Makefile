@@ -4,7 +4,7 @@ DESIGN=controller_board
 EAGLINT_HOME=$(QUAD_CLASS_HOME)/Eagle-Lint/
 RESOURCES_ROOT=$(QUAD_CLASS_HOME)/QuadClass-Resources/
 LBRS=$(wildcard $(QUAD_CLASS_HOME)/QuadClass-Quadcopter-Solution/lbr/*.lbr) $(wildcard lbr/*.lbr) $(wildcard $(RESOURCES_ROOT)/Eagle/lbr/*.lbr)
-CHECKS=--check AtmegaChecker IMUChecker 
+CHECKS=--check QuadLint.AtmegaChecker
 VERSION=v4-rev5-rc1
 
 include $(RESOURCES_ROOT)/make/PCB.make
