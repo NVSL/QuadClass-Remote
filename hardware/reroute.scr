@@ -1,11 +1,11 @@
-ripup ! USB_D_*  ANTENNA BCAP CLK_POS CLK_NEG RFN RFP;
-fanout SIGNAL VBAT;
-fanout SIGNAL VBUS;
+ripup ! USB_D_*  ANTENNA BCAP CLK_POS CLK_NEG RF_N RF_P;
+#fanout SIGNAL VBAT;
+#fanout SIGNAL VBUS;
 fanout SIGNAL 3V3;
 fanout SIGNAL GND;
-fanout DEVICE U4;
-fanout DEVICE U3;
-fanout DEVICE U6;
+#fanout DEVICE U4;
+#fanout DEVICE U3;
+#fanout DEVICE U5;
 auto;
 drc;
 
