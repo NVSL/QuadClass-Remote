@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
@@ -4626,9 +4626,9 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <attribute name="NAME" x="280.67" y="238.76" size="1.778" layer="95"/>
 <attribute name="VALUE" x="280.67" y="236.22" size="1.778" layer="96"/>
 </instance>
-<instance part="JP1" gate="G$1" x="422.91" y="64.77" smashed="yes" rot="R180">
-<attribute name="VALUE" x="427.99" y="74.93" size="1.778" layer="96" rot="R180"/>
-<attribute name="NAME" x="427.99" y="53.848" size="1.778" layer="95" rot="R180"/>
+<instance part="JP1" gate="G$1" x="384.81" y="62.23" smashed="yes" rot="R180">
+<attribute name="VALUE" x="389.89" y="72.39" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="389.89" y="51.308" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="V9" gate="G$1" x="166.37" y="16.51" smashed="yes" rot="R90">
 <attribute name="NAME" x="166.37" y="21.844" size="1.27" layer="95" rot="R90" align="center-left"/>
@@ -4830,9 +4830,9 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <junction x="163.83" y="16.51"/>
 </segment>
 <segment>
-<label x="411.48" y="57.15" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="373.38" y="54.61" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="JP1" gate="G$1" pin="6"/>
-<wire x1="417.83" y1="57.15" x2="411.48" y2="57.15" width="0.1524" layer="91"/>
+<wire x1="379.73" y1="54.61" x2="373.38" y2="54.61" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="GND"/>
@@ -5070,9 +5070,9 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <pinref part="P3" gate="G$1" pin="T"/>
 </segment>
 <segment>
-<label x="411.48" y="62.23" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="373.38" y="59.69" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="JP1" gate="G$1" pin="4"/>
-<wire x1="417.83" y1="62.23" x2="411.48" y2="62.23" width="0.1524" layer="91"/>
+<wire x1="379.73" y1="59.69" x2="373.38" y2="59.69" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="S2" gate="G$1" pin="ON"/>
@@ -5473,9 +5473,9 @@ HobbyKing: R8 = 1.2k Ohm</text>
 </net>
 <net name="DTR-1" class="0">
 <segment>
-<label x="411.48" y="69.85" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="373.38" y="67.31" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="417.83" y1="69.85" x2="411.48" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="379.73" y1="67.31" x2="373.38" y2="67.31" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="4Y1"/>
@@ -5485,9 +5485,9 @@ HobbyKing: R8 = 1.2k Ohm</text>
 </net>
 <net name="RXI-1" class="0">
 <segment>
-<label x="411.48" y="67.31" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="373.38" y="64.77" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="417.83" y1="67.31" x2="411.48" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="379.73" y1="64.77" x2="373.38" y2="64.77" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="3Y1"/>
@@ -5497,9 +5497,9 @@ HobbyKing: R8 = 1.2k Ohm</text>
 </net>
 <net name="TXO-1" class="0">
 <segment>
-<label x="411.48" y="64.77" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="373.38" y="62.23" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="JP1" gate="G$1" pin="3"/>
-<wire x1="417.83" y1="64.77" x2="411.48" y2="64.77" width="0.1524" layer="91"/>
+<wire x1="379.73" y1="62.23" x2="373.38" y2="62.23" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="2Y1"/>
@@ -5509,21 +5509,14 @@ HobbyKing: R8 = 1.2k Ohm</text>
 </net>
 <net name="CTS-1" class="0">
 <segment>
-<label x="411.48" y="59.69" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="373.38" y="57.15" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="JP1" gate="G$1" pin="5"/>
-<wire x1="417.83" y1="59.69" x2="411.48" y2="59.69" width="0.1524" layer="91"/>
+<wire x1="379.73" y1="57.15" x2="373.38" y2="57.15" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="1Y1"/>
 <wire x1="309.88" y1="111.76" x2="312.42" y2="111.76" width="0.1524" layer="91"/>
 <label x="312.42" y="111.76" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="CTS-0" class="0">
-<segment>
-<pinref part="U5" gate="G$1" pin="1Y0"/>
-<wire x1="309.88" y1="114.3" x2="312.42" y2="114.3" width="0.1524" layer="91"/>
-<label x="312.42" y="114.3" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TXO-0" class="0">
@@ -5620,14 +5613,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <label x="152.4" y="219.71" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="BAT_SENSE" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="PF4(ADC4/TCK)"/>
-<wire x1="220.98" y1="184.15" x2="223.52" y2="184.15" width="0.1524" layer="91"/>
-<label x="223.52" y="184.15" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="BTN1/SCL" class="0">
+<net name="BTN1" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PD0(SCL/INT0)"/>
 <wire x1="154.94" y1="224.79" x2="152.4" y2="224.79" width="0.1524" layer="91"/>
@@ -5639,7 +5625,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <pinref part="B4" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="BTN2/SDA" class="0">
+<net name="BTN2" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PD1(SDA/INT1)"/>
 <wire x1="154.94" y1="222.25" x2="152.4" y2="222.25" width="0.1524" layer="91"/>
