@@ -4217,7 +4217,7 @@ All the buttons are mapped to interrupt-capable pins.</text>
 to select correct AREF source.
 
 </text>
-<text x="6.35" y="147.32" size="3.81" layer="97">Gimbals</text>
+<text x="11.43" y="147.32" size="3.81" layer="97">Gimbals</text>
 <text x="8.89" y="198.12" size="1.9304" layer="97">R8 should be 1/4 the resistance of one gimbal.
 FrySky: R8 = 600 Ohm
 HobbyKing: R8 = 1.2k Ohm</text>
@@ -5822,7 +5822,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <label x="374.65" y="163.83" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="VREG_IN" class="1">
+<net name="VREG_IN" class="3">
 <segment>
 <wire x1="163.83" y1="106.68" x2="171.45" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="171.45" y1="106.68" x2="205.74" y2="106.68" width="0.1524" layer="91"/>
