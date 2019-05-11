@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
@@ -3994,6 +3994,8 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </class>
 <class number="2" name="RFSIG" width="1.27" drill="0">
 </class>
+<class number="3" name="PWR" width="0.8128" drill="0.6096">
+</class>
 </classes>
 <parts>
 <part name="GND10" library="quadparts_prebuilt" deviceset="GND" device=""/>
@@ -5269,7 +5271,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <label x="152.4" y="245.11" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="VBAT" class="1">
+<net name="VBAT" class="3">
 <segment>
 <pinref part="P+4" gate="VCC" pin="VBAT"/>
 <wire x1="269.24" y1="40.64" x2="269.24" y2="39.37" width="0.1524" layer="91"/>
@@ -5317,7 +5319,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <label x="280.67" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="BPOS" class="1">
+<net name="BPOS" class="3">
 <segment>
 <pinref part="U2" gate="G$1" pin="VBAT"/>
 <wire x1="194.31" y1="39.37" x2="191.77" y2="39.37" width="0.1524" layer="91"/>
@@ -5538,7 +5540,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <label x="152.4" y="201.93" size="1.27" layer="95" font="fixed" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="VBUS" class="1">
+<net name="VBUS" class="3">
 <segment>
 <label x="125.73" y="116.84" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="J1" gate="A" pin="1-VCC"/>

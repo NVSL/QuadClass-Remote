@@ -1,8 +1,13 @@
 ripup ! USB_D_*  ANTENNA BCAP CLK_POS CLK_NEG RF_N RF_P;
 #fanout SIGNAL VBAT;
 #fanout SIGNAL VBUS;
+change width 0;
+change drill 0.001;
 fanout SIGNAL 3V3;
 fanout SIGNAL GND;
+fanout SIGNAL VBAT;
+fanout SIGNAL VBUS;
+fanout SIGNAL BPOS;
 #fanout DEVICE U4;
 #fanout DEVICE U3;
 #fanout DEVICE U5;
