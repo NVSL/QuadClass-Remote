@@ -3994,7 +3994,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </class>
 <class number="2" name="RFSIG" width="1.27" drill="0">
 </class>
-<class number="3" name="PWR" width="0.8128" drill="0.6096">
+<class number="3" name="PWR" width="0.508" drill="0.381">
 </class>
 </classes>
 <parts>

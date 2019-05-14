@@ -8,6 +8,7 @@ fanout SIGNAL GND;
 fanout SIGNAL VBAT;
 fanout SIGNAL VBUS;
 fanout SIGNAL BPOS;
+fanout SIGNAL VREG_IN;
 #fanout DEVICE U4;
 #fanout DEVICE U3;
 #fanout DEVICE U5;
