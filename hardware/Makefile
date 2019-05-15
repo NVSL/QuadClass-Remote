@@ -5,6 +5,6 @@ EAGLINT_HOME=$(QUAD_CLASS_HOME)/QuadClass-QuadCMS/
 RESOURCES_ROOT=$(QUAD_CLASS_HOME)/QuadClass-Resources/
 LBRS=$(wildcard $(QUAD_CLASS_HOME)/QuadClass-Quadcopter-Solution/lbr/*.lbr) $(wildcard lbr/*.lbr) $(wildcard $(RESOURCES_ROOT)/Eagle/lbr/*.lbr)
 CHECKS=--check QuadLint.AtmegaChecker
-VERSION=v4-rev6-rc2
+VERSION=v4-rev6-rc3
 
 include $(RESOURCES_ROOT)/make/PCB.make
