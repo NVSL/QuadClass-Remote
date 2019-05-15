@@ -359,15 +359,11 @@
 <wire x1="-3.95" y1="3" x2="21.95" y2="3" width="0.2032" layer="21"/>
 <wire x1="-4.5" y1="-2.5" x2="-4.5" y2="3.5" width="0.127" layer="39"/>
 <wire x1="-4.5" y1="3.5" x2="22.5" y2="3.5" width="0.127" layer="39"/>
-<text x="0" y="-3" size="1.27" layer="21" font="vector" align="center">V</text>
-<text x="0" y="-5" size="1.27" layer="21" font="vector" align="center">&gt;CH1</text>
 <wire x1="21.3" y1="-2" x2="21.3" y2="0" width="0.2032" layer="21"/>
 <wire x1="21.95" y1="-2" x2="21.3" y2="-2" width="0.2032" layer="21"/>
 <wire x1="21.95" y1="3" x2="21.95" y2="-2" width="0.2032" layer="21"/>
 <wire x1="22.5" y1="-2.5" x2="-4.5" y2="-2.5" width="0.127" layer="39"/>
 <wire x1="22.5" y1="3.5" x2="22.5" y2="-2.5" width="0.127" layer="39"/>
-<text x="6" y="-3" size="1.27" layer="21" font="vector" align="center">H</text>
-<text x="6" y="-5" size="1.27" layer="21" font="vector" align="center">&gt;CH2</text>
 <text x="8.5" y="4.4325" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
 <pad name="1" x="-2" y="0" drill="0.9" shape="square"/>
 <pad name="10" x="16" y="0" drill="0.9"/>
@@ -381,14 +377,6 @@
 <pad name="9" x="14" y="0" drill="0.9"/>
 <pad name="H" x="6" y="0" drill="0.9"/>
 <pad name="V" x="0" y="0" drill="0.9"/>
-<wire x1="-2.5" y1="1.5" x2="20.5" y2="1.5" width="0.127" layer="100"/>
-<wire x1="20.5" y1="1.5" x2="21.5" y2="0.5" width="0.127" layer="100" curve="-90"/>
-<wire x1="21.5" y1="0.5" x2="21.5" y2="-0.5" width="0.127" layer="100"/>
-<wire x1="21.5" y1="-0.5" x2="20.5" y2="-1.5" width="0.127" layer="100" curve="-90"/>
-<wire x1="20.5" y1="-1.5" x2="-2.5" y2="-1.5" width="0.127" layer="100"/>
-<wire x1="-2.5" y1="-1.5" x2="-3.5" y2="-0.5" width="0.127" layer="100" curve="-90"/>
-<wire x1="-3.5" y1="-0.5" x2="-3.5" y2="0.5" width="0.127" layer="100"/>
-<wire x1="-3.5" y1="0.5" x2="-2.5" y2="1.5" width="0.127" layer="100" curve="-90"/>
 </package>
 <package name="2X-GIMBAL-SERVO">
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
