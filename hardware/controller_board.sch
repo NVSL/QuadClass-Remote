@@ -3980,6 +3980,47 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </deviceset>
 </devicesets>
 </library>
+<library name="custom">
+<packages>
+<package name="NET_BRIDGE">
+<wire x1="-0.5" y1="0" x2="0.5" y2="0" width="0.8" layer="1"/>
+<rectangle x1="-1" y1="-1" x2="1" y2="1" layer="39"/>
+<text x="0" y="0" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
+<pad name="P1" x="-0.5" y="0" drill="0.2" stop="no" thermals="no"/>
+<pad name="P2" x="0.5" y="0" drill="0.2" stop="no" thermals="no"/>
+</package>
+</packages>
+<symbols>
+<symbol name="NET_BRIDGE">
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<text x="-5.08" y="0" size="0.9" layer="95">&gt;NAME</text>
+<pin name="P1" x="-2.54" y="0" visible="off" length="point" function="dot" rot="R90"/>
+<pin name="P2" x="0" y="0" visible="off" length="point" function="dot" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="NET_BRIDGE" prefix="B">
+<gates>
+<gate name="G$1" symbol="NET_BRIDGE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NET_BRIDGE">
+<connects>
+<connect gate="G$1" pin="P1" pad="P1"/>
+<connect gate="G$1" pin="P2" pad="P2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Michael Gonzalez"/>
+<attribute name="DIST" value="NA"/>
+<attribute name="DISTPN" value="NA"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -4161,6 +4202,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="V10" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="B3" library="quadparts_prebuilt" deviceset="BATTERY" device="-SPRING-SMD"/>
 <part name="B11" library="quadparts_prebuilt" deviceset="BATTERY" device="-SCREW-TERMINAL"/>
+<part name="B12" library="custom" deviceset="NET_BRIDGE" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4206,7 +4248,7 @@ All the buttons are mapped to interrupt-capable pins.</text>
 <wire x1="328.93" y1="114.3" x2="426.72" y2="114.3" width="0.1524" layer="97" style="longdash"/>
 <text x="370.84" y="116.84" size="3.81" layer="97">LCD *</text>
 <wire x1="328.93" y1="114.3" x2="328.93" y2="78.74" width="0.1524" layer="97" style="longdash"/>
-<wire x1="328.93" y1="78.74" x2="427.99" y2="78.74" width="0.1524" layer="97" style="longdash"/>
+<wire x1="328.93" y1="78.74" x2="425.45" y2="78.74" width="0.1524" layer="97" style="longdash"/>
 <wire x1="328.93" y1="78.74" x2="328.93" y2="35.56" width="0.1524" layer="97" style="longdash"/>
 <text x="373.38" y="82.55" size="3.81" layer="97">ISP</text>
 <text x="361.95" y="39.37" size="3.81" layer="97">FTDI Header</text>
@@ -4628,9 +4670,9 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <attribute name="NAME" x="280.67" y="238.76" size="1.778" layer="95"/>
 <attribute name="VALUE" x="280.67" y="236.22" size="1.778" layer="96"/>
 </instance>
-<instance part="JP1" gate="G$1" x="422.91" y="64.77" smashed="yes" rot="R180">
-<attribute name="VALUE" x="427.99" y="74.93" size="1.778" layer="96" rot="R180"/>
-<attribute name="NAME" x="427.99" y="53.848" size="1.778" layer="95" rot="R180"/>
+<instance part="JP1" gate="G$1" x="387.35" y="64.77" smashed="yes" rot="R180">
+<attribute name="VALUE" x="392.43" y="74.93" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="392.43" y="53.848" size="1.778" layer="95" rot="R180"/>
 </instance>
 <instance part="V9" gate="G$1" x="166.37" y="16.51" smashed="yes" rot="R90">
 <attribute name="NAME" x="166.37" y="21.844" size="1.27" layer="95" rot="R90" align="center-left"/>
@@ -4644,11 +4686,14 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <instance part="B11" gate="G$1" x="233.68" y="29.21" smashed="yes" rot="R270">
 <attribute name="NAME" x="238.76" y="36.83" size="1.778" layer="95" font="vector" rot="R270"/>
 </instance>
+<instance part="B12" gate="G$1" x="281.94" y="220.98" smashed="yes">
+<attribute name="NAME" x="276.86" y="220.98" size="0.9" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="1">
+<net name="GND" class="0">
 <segment>
 <wire x1="339.09" y1="243.84" x2="339.09" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
@@ -4676,7 +4721,11 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="GND14" gate="1" pin="GND"/>
-<wire x1="274.32" y1="218.44" x2="274.32" y2="222.25" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="218.44" x2="274.32" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="B12" gate="G$1" pin="P1"/>
+<wire x1="274.32" y1="220.98" x2="274.32" y2="222.25" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="220.98" x2="274.32" y2="220.98" width="0.1524" layer="91"/>
+<junction x="274.32" y="220.98"/>
 </segment>
 <segment>
 <pinref part="B2" gate="G$1" pin="GND@5"/>
@@ -4832,9 +4881,9 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <junction x="163.83" y="16.51"/>
 </segment>
 <segment>
-<label x="411.48" y="57.15" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="375.92" y="57.15" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="JP1" gate="G$1" pin="6"/>
-<wire x1="417.83" y1="57.15" x2="411.48" y2="57.15" width="0.1524" layer="91"/>
+<wire x1="382.27" y1="57.15" x2="375.92" y2="57.15" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="GND"/>
@@ -5072,9 +5121,9 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <pinref part="P3" gate="G$1" pin="T"/>
 </segment>
 <segment>
-<label x="411.48" y="62.23" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="375.92" y="62.23" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="JP1" gate="G$1" pin="4"/>
-<wire x1="417.83" y1="62.23" x2="411.48" y2="62.23" width="0.1524" layer="91"/>
+<wire x1="382.27" y1="62.23" x2="375.92" y2="62.23" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="S2" gate="G$1" pin="ON"/>
@@ -5475,9 +5524,9 @@ HobbyKing: R8 = 1.2k Ohm</text>
 </net>
 <net name="DTR-1" class="0">
 <segment>
-<label x="411.48" y="69.85" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="375.92" y="69.85" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="JP1" gate="G$1" pin="1"/>
-<wire x1="417.83" y1="69.85" x2="411.48" y2="69.85" width="0.1524" layer="91"/>
+<wire x1="382.27" y1="69.85" x2="375.92" y2="69.85" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="4Y1"/>
@@ -5487,9 +5536,9 @@ HobbyKing: R8 = 1.2k Ohm</text>
 </net>
 <net name="RXI-1" class="0">
 <segment>
-<label x="411.48" y="67.31" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="375.92" y="67.31" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="JP1" gate="G$1" pin="2"/>
-<wire x1="417.83" y1="67.31" x2="411.48" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="382.27" y1="67.31" x2="375.92" y2="67.31" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="3Y1"/>
@@ -5499,9 +5548,9 @@ HobbyKing: R8 = 1.2k Ohm</text>
 </net>
 <net name="TXO-1" class="0">
 <segment>
-<label x="411.48" y="64.77" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="375.92" y="64.77" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="JP1" gate="G$1" pin="3"/>
-<wire x1="417.83" y1="64.77" x2="411.48" y2="64.77" width="0.1524" layer="91"/>
+<wire x1="382.27" y1="64.77" x2="375.92" y2="64.77" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="2Y1"/>
@@ -5511,9 +5560,9 @@ HobbyKing: R8 = 1.2k Ohm</text>
 </net>
 <net name="CTS-1" class="0">
 <segment>
-<label x="411.48" y="59.69" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="375.92" y="59.69" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="JP1" gate="G$1" pin="5"/>
-<wire x1="417.83" y1="59.69" x2="411.48" y2="59.69" width="0.1524" layer="91"/>
+<wire x1="382.27" y1="59.69" x2="375.92" y2="59.69" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U5" gate="G$1" pin="1Y1"/>
@@ -5838,6 +5887,13 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <pinref part="L1" gate="G$1" pin="VIN"/>
 <wire x1="370.84" y1="143.51" x2="373.38" y2="143.51" width="0.1524" layer="91"/>
 <label x="373.38" y="143.51" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="SHIELD" class="0">
+<segment>
+<pinref part="B12" gate="G$1" pin="P2"/>
+<wire x1="281.94" y1="220.98" x2="287.02" y2="220.98" width="0.1524" layer="91"/>
+<label x="287.02" y="220.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>

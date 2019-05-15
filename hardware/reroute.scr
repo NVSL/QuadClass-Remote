@@ -1,6 +1,4 @@
-ripup ! USB_D_*  ANTENNA BCAP CLK_POS CLK_NEG RF_N RF_P;
-#fanout SIGNAL VBAT;
-#fanout SIGNAL VBUS;
+ripup ! USB_D_*  ANTENNA BCAP CLK_POS CLK_NEG RF_N RF_P SHIELD;
 change width 0;
 change drill 0.001;
 fanout SIGNAL 3V3;
