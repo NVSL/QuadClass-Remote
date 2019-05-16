@@ -567,6 +567,10 @@
 <smd name="1" x="-2.5" y="-1.2" dx="1" dy="1.6" layer="1"/>
 <smd name="2" x="0" y="1.2" dx="1" dy="1.6" layer="1"/>
 <smd name="3" x="2.5" y="-1.2" dx="1" dy="1.6" layer="1"/>
+<wire x1="-4.2" y1="1.8" x2="-4.2" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="4.3" y1="1.8" x2="-4.2" y2="1.8" width="0.127" layer="21"/>
+<wire x1="-4.2" y1="-1.8" x2="4.3" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="4.3" y1="-1.8" x2="4.3" y2="1.8" width="0.127" layer="21"/>
 </package>
 <package name="JS102011SAQN">
 <wire x1="-1.5" y1="-4" x2="-1.5" y2="-1.8" width="0.1" layer="21"/>
@@ -1565,6 +1569,7 @@
 <circle x="0" y="0" radius="1.27" width="0.127" layer="39"/>
 <text x="0" y="2" size="1" layer="25" font="vector" align="center">&gt;NAME</text>
 <pad name="T" x="0" y="0" drill="1"/>
+<circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
 </package>
 <package name="TRIM-3386">
 <wire x1="-4.7625" y1="-4.7625" x2="4.7625" y2="-4.7625" width="0.127" layer="21"/>

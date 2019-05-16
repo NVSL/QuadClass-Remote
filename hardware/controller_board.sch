@@ -452,6 +452,7 @@
 <circle x="0" y="0" radius="1.27" width="0.127" layer="39"/>
 <text x="0" y="2" size="1" layer="25" font="vector" align="center">&gt;NAME</text>
 <pad name="T" x="0" y="0" drill="1"/>
+<circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
 </package>
 <package name="BOURNS-PEC12R">
 <hole x="-5.7" y="0" drill="2.2"/>
@@ -538,6 +539,10 @@
 <smd name="1" x="-2.5" y="-1.2" dx="1" dy="1.6" layer="1"/>
 <smd name="2" x="0" y="1.2" dx="1" dy="1.6" layer="1"/>
 <smd name="3" x="2.5" y="-1.2" dx="1" dy="1.6" layer="1"/>
+<wire x1="-4.2" y1="1.8" x2="-4.2" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="4.3" y1="1.8" x2="-4.2" y2="1.8" width="0.127" layer="21"/>
+<wire x1="-4.2" y1="-1.8" x2="4.3" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="4.3" y1="-1.8" x2="4.3" y2="1.8" width="0.127" layer="21"/>
 </package>
 <package name="POWER-SWITCH-MFS201N-9-Z">
 <wire x1="-10.16" y1="-2.54" x2="-10.16" y2="2.54" width="0.127" layer="21"/>
@@ -2646,10 +2651,10 @@
 <text x="5" y="-1.25" size="1.27" layer="21" font="vector" rot="SR0" align="center-left">&gt;PIN1</text>
 <text x="5" y="1.25" size="1.27" layer="21" font="vector" rot="SR0" align="center-left">&gt;PIN2</text>
 <text x="0" y="-3.75" size="0.9" layer="25" font="vector" rot="R180" align="center">&gt;NAME</text>
-<wire x1="-6" y1="4" x2="-6" y2="-4" width="0.127" layer="41"/>
-<wire x1="-6" y1="-4" x2="8" y2="-4" width="0.127" layer="41"/>
-<wire x1="8" y1="-4" x2="8" y2="4" width="0.127" layer="41"/>
-<wire x1="8" y1="4" x2="-6" y2="4" width="0.127" layer="41"/>
+<wire x1="-6" y1="4" x2="-6" y2="-4" width="0.127" layer="39"/>
+<wire x1="-6" y1="-4" x2="8" y2="-4" width="0.127" layer="39"/>
+<wire x1="8" y1="-4" x2="8" y2="4" width="0.127" layer="39"/>
+<wire x1="8" y1="4" x2="-6" y2="4" width="0.127" layer="39"/>
 </package>
 </packages>
 <symbols>
@@ -4019,11 +4024,13 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="HIGH-I" width="0.254" drill="0.2032">
+<class number="1" name="HIGH-I" width="0" drill="0.254">
 </class>
 <class number="2" name="RFSIG" width="1.27" drill="0">
 </class>
-<class number="3" name="PWR" width="0.508" drill="0.381">
+<class number="3" name="PWR" width="0" drill="0.381">
+</class>
+<class number="4" name="LONG_PWR" width="0.508" drill="0.381">
 </class>
 </classes>
 <parts>
@@ -4187,7 +4194,6 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="A1" library="quadparts_prebuilt" deviceset="ANTENNA" device="-BOARD-REV" value="ANTENNA-BOARD-REV"/>
 <part name="JP1" library="quadparts_prebuilt" deviceset="FTDI_BASIC" device="-SMD"/>
 <part name="V9" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
-<part name="V10" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="B3" library="quadparts_prebuilt" deviceset="BATTERY" device="-SPRING-SMD"/>
 <part name="B11" library="quadparts_prebuilt" deviceset="BATTERY" device="-SCREW-TERMINAL"/>
 <part name="B12" library="custom" deviceset="NET_BRIDGE" device=""/>
@@ -4665,9 +4671,6 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <instance part="V9" gate="G$1" x="166.37" y="16.51" smashed="yes" rot="R90">
 <attribute name="NAME" x="166.37" y="21.844" size="1.27" layer="95" rot="R90" align="center-left"/>
 </instance>
-<instance part="V10" gate="G$1" x="265.43" y="39.37" smashed="yes" rot="R90">
-<attribute name="NAME" x="265.43" y="44.704" size="1.27" layer="95" rot="R90" align="center-left"/>
-</instance>
 <instance part="B3" gate="G$1" x="247.65" y="29.21" smashed="yes" rot="R270">
 <attribute name="NAME" x="252.73" y="36.83" size="1.778" layer="95" font="vector" rot="R270"/>
 </instance>
@@ -4681,7 +4684,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="0">
+<net name="GND" class="1">
 <segment>
 <wire x1="339.09" y1="243.84" x2="339.09" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
@@ -5238,7 +5241,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <wire x1="261.62" y1="201.93" x2="261.62" y2="214.63" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="BCAP" class="1">
+<net name="BCAP" class="0">
 <segment>
 <pinref part="B2" gate="G$1" pin="GND@2"/>
 <pinref part="C3" gate="G$1" pin="2"/>
@@ -5313,10 +5316,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <pinref part="P+4" gate="VCC" pin="VBAT"/>
 <wire x1="269.24" y1="40.64" x2="269.24" y2="39.37" width="0.1524" layer="91"/>
 <pinref part="D3" gate="G$1" pin="C"/>
-<wire x1="262.89" y1="39.37" x2="265.43" y2="39.37" width="0.1524" layer="91"/>
-<pinref part="V10" gate="G$1" pin="N"/>
-<wire x1="265.43" y1="39.37" x2="269.24" y2="39.37" width="0.1524" layer="91"/>
-<junction x="265.43" y="39.37"/>
+<wire x1="262.89" y1="39.37" x2="269.24" y2="39.37" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="31.75" y1="260.35" x2="31.75" y2="261.62" width="0.1524" layer="91"/>
@@ -5356,7 +5356,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <label x="280.67" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="BPOS" class="3">
+<net name="BPOS" class="4">
 <segment>
 <pinref part="U2" gate="G$1" pin="VBAT"/>
 <wire x1="194.31" y1="39.37" x2="191.77" y2="39.37" width="0.1524" layer="91"/>
@@ -5657,13 +5657,6 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <pinref part="U4" gate="G$1" pin="PD2(RXD1/INT2)"/>
 <wire x1="154.94" y1="219.71" x2="152.4" y2="219.71" width="0.1524" layer="91"/>
 <label x="152.4" y="219.71" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="BAT_SENSE" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="PF4(ADC4/TCK)"/>
-<wire x1="220.98" y1="184.15" x2="223.52" y2="184.15" width="0.1524" layer="91"/>
-<label x="223.52" y="184.15" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="BTN1/SCL" class="0">
