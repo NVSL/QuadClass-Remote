@@ -2656,6 +2656,35 @@
 <wire x1="8" y1="-4" x2="8" y2="4" width="0.127" layer="39"/>
 <wire x1="8" y1="4" x2="-6" y2="4" width="0.127" layer="39"/>
 </package>
+<package name="SOT23-DBV">
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
+<wire x1="-0.428" y1="-0.81" x2="-0.522" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="-0.522" y1="0.81" x2="0.522" y2="0.81" width="0.1524" layer="21"/>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+<wire x1="-1.328" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="-0.81" x2="-1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.81" x2="-1.328" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="51"/>
+<wire x1="-2" y1="-2.5" x2="-2" y2="2.5" width="0.127" layer="39"/>
+<wire x1="-2" y1="2.5" x2="2" y2="2.5" width="0.127" layer="39"/>
+<text x="0.095" y="-3.429" size="1.27" layer="27" font="vector" align="center">&gt;VALUE</text>
+<text x="0.095" y="2.905" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
+<wire x1="0.522" y1="-0.81" x2="0.428" y2="-0.81" width="0.1524" layer="21"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
+<wire x1="1.328" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="51"/>
+<wire x1="1.422" y1="-0.81" x2="1.328" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="2" y1="-2.5" x2="-2" y2="-2.5" width="0.127" layer="39"/>
+<wire x1="2" y1="2.5" x2="2" y2="-2.5" width="0.127" layer="39"/>
+<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1" thermals="no"/>
+<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ATMEGA128RFA1">
@@ -2970,6 +2999,19 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <text x="3.81" y="1.27" size="1.778" layer="94">-</text>
 <pin name="N" x="5.08" y="0" visible="off" length="middle" rot="R180"/>
 <pin name="P" x="-7.62" y="0" visible="off" length="middle"/>
+</symbol>
+<symbol name="TPS736*">
+<text x="0" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="0" y2="15.24" width="0.254" layer="94"/>
+<wire x1="0" y1="15.24" x2="17.78" y2="15.24" width="0.254" layer="94"/>
+<text x="0" y="16.51" size="1.778" layer="95">&gt;NAME</text>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="17.78" y1="15.24" x2="17.78" y2="0" width="0.254" layer="94"/>
+<pin name="EN" x="-2.54" y="2.54" length="short" direction="in"/>
+<pin name="GND" x="-2.54" y="7.62" length="short" direction="in"/>
+<pin name="IN" x="-2.54" y="12.7" length="short" direction="in"/>
+<pin name="NC/FB" x="20.32" y="2.54" length="short" direction="pas" rot="R180"/>
+<pin name="OUT" x="20.32" y="12.7" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3971,6 +4013,55 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </device>
 </devices>
 </deviceset>
+<deviceset name="TPS73633-DBVT">
+<description>LP3985-series voltage regulators.</description>
+<gates>
+<gate name="G$1" symbol="TPS736*" x="0" y="0"/>
+</gates>
+<devices>
+<device name="3V3" package="SOT23-DBV">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="NC/FB" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="LP3985IM5-3.3/NOPBCT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="3.3V"/>
+</technology>
+</technologies>
+</device>
+<device name="3V" package="SOT23-DBV">
+<connects>
+<connect gate="G$1" pin="EN" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="NC/FB" pad="4"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DATASHEET" value="http://www.ti.com/lit/ds/symlink/lp3985.pdf"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="LP3985IM5X-3.0/NOPBCT-ND"/>
+<attribute name="MFR" value="Texas Instruments"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="LP3985IM5X-3.0/NOPB"/>
+<attribute name="PRICE" value="0.59"/>
+<attribute name="REVIEWER" value="Swanson"/>
+<attribute name="VALUE" value="3V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="custom">
@@ -4197,6 +4288,13 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="B3" library="quadparts_prebuilt" deviceset="BATTERY" device="-SPRING-SMD"/>
 <part name="B11" library="quadparts_prebuilt" deviceset="BATTERY" device="-SCREW-TERMINAL"/>
 <part name="B12" library="custom" deviceset="NET_BRIDGE" device=""/>
+<part name="C10" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
+<part name="C17" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
+<part name="P+9" library="quadparts_prebuilt" deviceset="3V3" device=""/>
+<part name="GND2" library="quadparts_prebuilt" deviceset="GND" device=""/>
+<part name="GND4" library="quadparts_prebuilt" deviceset="GND" device=""/>
+<part name="U1" library="quadparts_prebuilt" deviceset="TPS73633-DBVT" device="3V3" value="3.3V"/>
+<part name="GND7" library="quadparts_prebuilt" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4680,6 +4778,30 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <instance part="B12" gate="G$1" x="281.94" y="220.98" smashed="yes">
 <attribute name="NAME" x="276.86" y="220.98" size="0.9" layer="95"/>
 </instance>
+<instance part="C10" gate="G$1" x="20.32" y="53.34" smashed="yes">
+<attribute name="VALUE" x="16.764" y="51.181" size="1.778" layer="96"/>
+<attribute name="NAME" x="20.828" y="53.721" size="1.778" layer="95"/>
+</instance>
+<instance part="C17" gate="G$1" x="71.12" y="68.58" smashed="yes">
+<attribute name="VALUE" x="67.564" y="66.421" size="1.778" layer="96"/>
+<attribute name="NAME" x="71.628" y="68.961" size="1.778" layer="95"/>
+</instance>
+<instance part="P+9" gate="G$1" x="71.12" y="81.28" smashed="yes">
+<attribute name="VALUE" x="71.12" y="83.82" size="1.778" layer="96" rot="R180" align="center"/>
+</instance>
+<instance part="GND2" gate="1" x="71.12" y="58.42" smashed="yes">
+<attribute name="VALUE" x="71.12" y="55.88" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="GND4" gate="1" x="27.94" y="68.58" smashed="yes">
+<attribute name="VALUE" x="27.94" y="66.04" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="U1" gate="G$1" x="35.56" y="63.5" smashed="yes">
+<attribute name="VALUE" x="35.56" y="60.96" size="1.778" layer="96"/>
+<attribute name="NAME" x="35.56" y="80.01" size="1.778" layer="95"/>
+</instance>
+<instance part="GND7" gate="1" x="20.32" y="43.18" smashed="yes">
+<attribute name="VALUE" x="20.32" y="40.64" size="1.778" layer="96" align="center"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4989,6 +5111,21 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <wire x1="373.38" y1="140.97" x2="373.38" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="C17" gate="G$1" pin="2"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+<wire x1="71.12" y1="63.5" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<wire x1="33.02" y1="71.12" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<pinref part="U1" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="20.32" y1="48.26" x2="20.32" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="BTN_UP" class="0">
 <segment>
@@ -5132,20 +5269,6 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <label x="120.65" y="233.68" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
-<wire x1="205.74" y1="104.14" x2="205.74" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="101.6" x2="199.39" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="199.39" y1="101.6" x2="191.77" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="101.6" x2="191.77" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="3V3OUT"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<label x="187.96" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="VCCIO"/>
-<junction x="205.74" y="101.6"/>
-<junction x="191.77" y="101.6"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<junction x="199.39" y="101.6"/>
-</segment>
-<segment>
 <label x="259.08" y="113.03" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="256.54" y1="101.6" x2="256.54" y2="106.68" width="0.1524" layer="91"/>
@@ -5154,6 +5277,15 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="261.62" y1="106.68" x2="259.08" y2="106.68" width="0.1524" layer="91"/>
 <junction x="259.08" y="106.68"/>
+</segment>
+<segment>
+<pinref part="C17" gate="G$1" pin="1"/>
+<wire x1="71.12" y1="71.12" x2="71.12" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="76.2" x2="55.88" y2="76.2" width="0.1524" layer="91"/>
+<junction x="71.12" y="76.2"/>
+<pinref part="P+9" gate="G$1" pin="3V3"/>
+<wire x1="71.12" y1="76.2" x2="71.12" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="U1" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -5869,12 +6001,41 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <wire x1="370.84" y1="143.51" x2="373.38" y2="143.51" width="0.1524" layer="91"/>
 <label x="373.38" y="143.51" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<wire x1="33.02" y1="76.2" x2="20.32" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="76.2" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="66.04" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="33.02" y1="66.04" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
+<junction x="20.32" y="66.04"/>
+<junction x="20.32" y="76.2"/>
+<pinref part="U1" gate="G$1" pin="EN"/>
+<pinref part="U1" gate="G$1" pin="IN"/>
+<wire x1="17.78" y1="76.2" x2="20.32" y2="76.2" width="0.1524" layer="91"/>
+<label x="20.32" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SHIELD" class="0">
 <segment>
 <pinref part="B12" gate="G$1" pin="P2"/>
 <wire x1="281.94" y1="220.98" x2="287.02" y2="220.98" width="0.1524" layer="91"/>
 <label x="287.02" y="220.98" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="FTDI_OUT" class="1">
+<segment>
+<wire x1="205.74" y1="104.14" x2="205.74" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="101.6" x2="199.39" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="199.39" y1="101.6" x2="191.77" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="101.6" x2="191.77" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="3V3OUT"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<label x="187.96" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="VCCIO"/>
+<junction x="205.74" y="101.6"/>
+<junction x="191.77" y="101.6"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<junction x="199.39" y="101.6"/>
 </segment>
 </net>
 </nets>
