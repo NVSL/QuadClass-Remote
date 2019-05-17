@@ -4286,7 +4286,6 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="JP1" library="quadparts_prebuilt" deviceset="FTDI_BASIC" device="-SMD"/>
 <part name="V9" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="B3" library="quadparts_prebuilt" deviceset="BATTERY" device="-SPRING-SMD"/>
-<part name="B11" library="quadparts_prebuilt" deviceset="BATTERY" device="-SCREW-TERMINAL"/>
 <part name="B12" library="custom" deviceset="NET_BRIDGE" device=""/>
 <part name="C10" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
 <part name="C17" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
@@ -4301,11 +4300,6 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <plain>
 <text x="175.26" y="15.24" size="1.778" layer="97">Ireg = 1000V/Rprog
 2.2KOhm -&gt; 450mA</text>
-<text x="196.85" y="120.65" size="1.778" layer="97">The 3.3V regulator works down to VDD of about 3.4V.</text>
-<text x="224.79" y="40.64" size="1.27" layer="97">This should map 4.2V to 1.5V.
-AREF is configured to 1.6, so there's a little bit of headroom.</text>
-<text x="137.16" y="153.67" size="1.27" layer="97">The pins for encoders 1are on Pin-change capable pins and can be mapped to PCINT0.
-All the buttons are mapped to interrupt-capable pins.</text>
 <wire x1="97.79" y1="125.73" x2="97.79" y2="3.81" width="0.1524" layer="97" style="longdash"/>
 <wire x1="97.79" y1="3.81" x2="219.71" y2="3.81" width="0.1524" layer="97" style="longdash"/>
 <wire x1="219.71" y1="3.81" x2="219.71" y2="59.69" width="0.1524" layer="97" style="longdash"/>
@@ -4316,20 +4310,19 @@ All the buttons are mapped to interrupt-capable pins.</text>
 <wire x1="92.71" y1="130.81" x2="92.71" y2="64.77" width="0.1524" layer="97" style="longdash"/>
 <wire x1="92.71" y1="64.77" x2="326.39" y2="64.77" width="0.1524" layer="97" style="longdash"/>
 <wire x1="326.39" y1="64.77" x2="326.39" y2="130.81" width="0.1524" layer="97" style="longdash"/>
-<text x="100.33" y="6.35" size="3.81" layer="97">LiPo Charger *</text>
-<text x="170.18" y="66.04" size="3.81" layer="97">Switchable FTDI</text>
+<text x="100.33" y="6.35" size="3.81" layer="97">LiPo Charger</text>
 <wire x1="72.39" y1="275.59" x2="72.39" y2="236.22" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="236.22" x2="3.81" y2="236.22" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="191.77" x2="3.81" y2="191.77" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="236.22" x2="72.39" y2="191.77" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="191.77" x2="72.39" y2="146.05" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="146.05" x2="3.81" y2="146.05" width="0.1524" layer="97" style="longdash"/>
-<text x="6.35" y="238.76" size="3.81" layer="97">Test Points*</text>
+<text x="6.35" y="238.76" size="3.81" layer="97">Test Points</text>
 <text x="8.89" y="184.15" size="3.81" layer="97">Frysky</text>
 <text x="36.83" y="184.15" size="3.81" layer="97">HobbyKing</text>
 <wire x1="328.93" y1="275.59" x2="328.93" y2="196.85" width="0.1524" layer="97" style="longdash"/>
 <wire x1="328.93" y1="196.85" x2="427.99" y2="196.85" width="0.1524" layer="97" style="longdash"/>
-<text x="344.17" y="199.39" size="3.81" layer="97">Rotary Encoder and Buttons *</text>
+<text x="344.17" y="199.39" size="3.81" layer="97">Rotary Encoder and Buttons</text>
 <wire x1="223.52" y1="59.69" x2="285.75" y2="59.69" width="0.1524" layer="97" style="longdash"/>
 <wire x1="285.75" y1="59.69" x2="285.75" y2="3.81" width="0.1524" layer="97" style="longdash"/>
 <wire x1="285.75" y1="2.54" x2="285.75" y2="3.81" width="0.1524" layer="97" style="longdash"/>
@@ -4338,15 +4331,12 @@ All the buttons are mapped to interrupt-capable pins.</text>
 <text x="245.11" y="6.35" size="3.81" layer="97">Battery</text>
 <wire x1="328.93" y1="196.85" x2="328.93" y2="114.3" width="0.1524" layer="97" style="longdash"/>
 <wire x1="328.93" y1="114.3" x2="426.72" y2="114.3" width="0.1524" layer="97" style="longdash"/>
-<text x="370.84" y="116.84" size="3.81" layer="97">LCD *</text>
+<text x="370.84" y="116.84" size="3.81" layer="97">LCD</text>
 <wire x1="328.93" y1="114.3" x2="328.93" y2="78.74" width="0.1524" layer="97" style="longdash"/>
 <wire x1="328.93" y1="78.74" x2="425.45" y2="78.74" width="0.1524" layer="97" style="longdash"/>
 <wire x1="328.93" y1="78.74" x2="328.93" y2="35.56" width="0.1524" layer="97" style="longdash"/>
 <text x="373.38" y="82.55" size="3.81" layer="97">ISP</text>
 <text x="361.95" y="39.37" size="3.81" layer="97">FTDI Header</text>
-<wire x1="72.39" y1="146.05" x2="72.39" y2="104.14" width="0.1524" layer="97" style="longdash"/>
-<wire x1="72.39" y1="104.14" x2="3.81" y2="104.14" width="0.1524" layer="97" style="longdash"/>
-<text x="87.63" y="269.24" size="1.778" layer="91">show P1 P2 P3 P4 J2 J3 S1 R6 R9 C17 C20 C10 C18 C19 R5 R4 C8 C7 C9 R13 R14 D5 U5 U3 L1 S2 U6</text>
 <text x="26.67" y="212.09" size="1.778" layer="97">Set ADMUX_struct.refs = 3;
 to select correct AREF source.
 
@@ -4355,7 +4345,6 @@ to select correct AREF source.
 <text x="8.89" y="198.12" size="1.9304" layer="97">R8 should be 1/4 the resistance of one gimbal.
 FrySky: R8 = 600 Ohm
 HobbyKing: R8 = 1.2k Ohm</text>
-<text x="76.2" y="129.54" size="1.778" layer="91">remove battery voltage sensor</text>
 </plain>
 <instances>
 <instance part="GND10" gate="1" x="339.09" y="226.06" smashed="yes">
@@ -4772,9 +4761,6 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <instance part="B3" gate="G$1" x="247.65" y="29.21" smashed="yes" rot="R270">
 <attribute name="NAME" x="252.73" y="36.83" size="1.778" layer="95" font="vector" rot="R270"/>
 </instance>
-<instance part="B11" gate="G$1" x="233.68" y="29.21" smashed="yes" rot="R270">
-<attribute name="NAME" x="238.76" y="36.83" size="1.778" layer="95" font="vector" rot="R270"/>
-</instance>
 <instance part="B12" gate="G$1" x="281.94" y="220.98" smashed="yes">
 <attribute name="NAME" x="276.86" y="220.98" size="0.9" layer="95"/>
 </instance>
@@ -4904,11 +4890,6 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <pinref part="GND24" gate="1" pin="GND"/>
 <wire x1="247.65" y1="22.86" x2="247.65" y2="24.13" width="0.1524" layer="91" style="longdash"/>
 <pinref part="B3" gate="G$1" pin="N"/>
-<junction x="247.65" y="24.13"/>
-<wire x1="247.65" y1="24.13" x2="233.68" y2="24.13" width="0.1524" layer="91"/>
-<pinref part="B11" gate="G$1" pin="N"/>
-<wire x1="233.68" y1="24.13" x2="231.14" y2="24.13" width="0.1524" layer="91"/>
-<junction x="233.68" y="24.13"/>
 </segment>
 <segment>
 <pinref part="GND20" gate="1" pin="GND"/>
@@ -5522,11 +5503,6 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <wire x1="247.65" y1="39.37" x2="247.65" y2="36.83" width="0.1524" layer="91"/>
 <junction x="247.65" y="39.37"/>
 <pinref part="B3" gate="G$1" pin="P"/>
-<junction x="247.65" y="36.83"/>
-<wire x1="247.65" y1="36.83" x2="233.68" y2="36.83" width="0.1524" layer="91"/>
-<pinref part="B11" gate="G$1" pin="P"/>
-<wire x1="233.68" y1="36.83" x2="232.41" y2="36.83" width="0.1524" layer="91"/>
-<junction x="233.68" y="36.83"/>
 </segment>
 </net>
 <net name="USB_D_N" class="0">
@@ -6008,10 +5984,8 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <wire x1="20.32" y1="66.04" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="66.04" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
 <junction x="20.32" y="66.04"/>
-<junction x="20.32" y="76.2"/>
 <pinref part="U1" gate="G$1" pin="EN"/>
 <pinref part="U1" gate="G$1" pin="IN"/>
-<wire x1="17.78" y1="76.2" x2="20.32" y2="76.2" width="0.1524" layer="91"/>
 <label x="20.32" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
