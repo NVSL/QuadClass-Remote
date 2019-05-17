@@ -1767,6 +1767,39 @@
 <text x="-10.795" y="-3.81" size="1.27" layer="21" font="vector" align="center">&gt;NAME</text>
 <circle x="-11.43" y="-1.905" radius="0.127" width="0.508" layer="21"/>
 </package>
+<package name="LIPO-VREG-LTC4063">
+</package>
+<package name="SON50P300X300X80-11T165X238" urn="urn:adsk.eagle:footprint:11111799/1" locally_modified="yes">
+<description>10-SON, 0.50 mm pitch, 3.00 X 3.00 X 0.80 mm body, 2.38 X 1.65 mm thermal pad
+&lt;p&gt;10-pin SON package with 0.50 mm pitch with body size 3.00 X 3.00 X 0.80 mm and thermal pad size 2.38 X 1.65 mm&lt;/p&gt;</description>
+<circle x="-2.054" y="1.639" radius="0.25" width="0" layer="21"/>
+<wire x1="-1.55" y1="1.389" x2="-1.55" y2="1.55" width="0.12" layer="21"/>
+<wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.12" layer="21"/>
+<wire x1="1.55" y1="1.55" x2="1.55" y2="1.389" width="0.12" layer="21"/>
+<wire x1="-1.55" y1="-1.389" x2="-1.55" y2="-1.55" width="0.12" layer="21"/>
+<wire x1="-1.55" y1="-1.55" x2="1.55" y2="-1.55" width="0.12" layer="21"/>
+<wire x1="1.55" y1="-1.55" x2="1.55" y2="-1.389" width="0.12" layer="21"/>
+<wire x1="1.55" y1="-1.55" x2="-1.55" y2="-1.55" width="0.12" layer="51"/>
+<wire x1="-1.55" y1="-1.55" x2="-1.55" y2="1.55" width="0.12" layer="51"/>
+<wire x1="-1.55" y1="1.55" x2="1.55" y2="1.55" width="0.12" layer="51"/>
+<wire x1="1.55" y1="1.55" x2="1.55" y2="-1.55" width="0.12" layer="51"/>
+<smd name="1" x="-1.4346" y="1" dx="0.86" dy="0.27" layer="1"/>
+<smd name="2" x="-1.4346" y="0.5" dx="0.86" dy="0.27" layer="1"/>
+<smd name="3" x="-1.4346" y="0" dx="0.86" dy="0.27" layer="1"/>
+<smd name="4" x="-1.4346" y="-0.5" dx="0.86" dy="0.27" layer="1"/>
+<smd name="5" x="-1.4346" y="-1" dx="0.86" dy="0.27" layer="1"/>
+<smd name="6" x="1.4346" y="-1" dx="0.86" dy="0.27" layer="1"/>
+<smd name="7" x="1.4346" y="-0.5" dx="0.86" dy="0.27" layer="1"/>
+<smd name="8" x="1.4346" y="0" dx="0.86" dy="0.27" layer="1"/>
+<smd name="9" x="1.4346" y="0.5" dx="0.86" dy="0.27" layer="1"/>
+<smd name="10" x="1.4346" y="1" dx="0.86" dy="0.27" layer="1"/>
+<smd name="11" x="0" y="0" dx="1.65" dy="2.38" layer="1" thermals="no"/>
+<text x="0" y="2.524" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
+<wire x1="-3" y1="-2" x2="3" y2="-2" width="0.127" layer="39"/>
+<wire x1="3" y1="-2" x2="3" y2="2" width="0.127" layer="39"/>
+<wire x1="3" y1="2" x2="-3" y2="2" width="0.127" layer="39"/>
+<wire x1="-3" y1="2" x2="-3" y2="-2" width="0.127" layer="39"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" locally_modified="yes" type="model">
@@ -1774,6 +1807,13 @@
 	    &lt;p&gt;16-pin SOP package with 0.65 mm pitch, 6.4 mm span with body size 5 X 4.4 X 1.1 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="SOP65P640X110-16"/>
+</packageinstances>
+</package3d>
+<package3d name="SON50P300X300X80-11T165X238" urn="urn:adsk.eagle:package:11111771/1" type="model">
+<description>10-SON, 0.50 mm pitch, 3.00 X 3.00 X 0.80 mm body, 2.38 X 1.65 mm thermal pad
+&lt;p&gt;10-pin SON package with 0.50 mm pitch with body size 3.00 X 3.00 X 0.80 mm and thermal pad size 2.38 X 1.65 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SON50P300X300X80-11T165X238"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -2403,6 +2443,24 @@
 <pin name="BLACK" x="10.16" y="-2.54" length="middle" rot="R180"/>
 <pin name="BLUE" x="10.16" y="2.54" length="middle" rot="R180"/>
 <pin name="RED" x="10.16" y="0" length="middle" rot="R180"/>
+</symbol>
+<symbol name="LIPO-VREG-LTC4063">
+<pin name="BAT" x="12.7" y="10.16" length="middle" rot="R180"/>
+<pin name="OUT" x="12.7" y="7.62" length="middle" rot="R180"/>
+<pin name="FB" x="12.7" y="-5.08" length="middle" rot="R180"/>
+<pin name="GND" x="-15.24" y="-15.24" length="middle"/>
+<pin name="VCC" x="-15.24" y="10.16" length="middle"/>
+<pin name="/CHRG" x="-15.24" y="7.62" length="middle"/>
+<pin name="TIMER" x="-15.24" y="-5.08" length="middle"/>
+<pin name="PROG" x="-15.24" y="-7.62" length="middle"/>
+<pin name="IDET" x="-15.24" y="-10.16" length="middle"/>
+<wire x1="-10.16" y1="12.7" x2="7.62" y2="12.7" width="0.254" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="7.62" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-17.78" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-17.78" x2="-10.16" y2="12.7" width="0.254" layer="94"/>
+<pin name="/LDOEN" x="-15.24" y="2.54" length="middle"/>
+<pin name="/CHGEN" x="-15.24" y="0" length="middle"/>
+<text x="-10.16" y="13.97" size="1.778" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -3629,6 +3687,39 @@
 <attribute name="DIST" value="Sparkfun"/>
 <attribute name="DISTPN" value="9915"/>
 <attribute name="MOUNTING" value="TH"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LIPO-VREG-LTC4063" prefix="U">
+<gates>
+<gate name="G$1" symbol="LIPO-VREG-LTC4063" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SON50P300X300X80-11T165X238">
+<connects>
+<connect gate="G$1" pin="/CHGEN" pad="5"/>
+<connect gate="G$1" pin="/CHRG" pad="6"/>
+<connect gate="G$1" pin="/LDOEN" pad="4"/>
+<connect gate="G$1" pin="BAT" pad="1"/>
+<connect gate="G$1" pin="FB" pad="3"/>
+<connect gate="G$1" pin="GND" pad="11"/>
+<connect gate="G$1" pin="IDET" pad="8"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
+<connect gate="G$1" pin="PROG" pad="9"/>
+<connect gate="G$1" pin="TIMER" pad="7"/>
+<connect gate="G$1" pin="VCC" pad="10"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11111771/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="LTC4063EDD#PBF-ND "/>
+<attribute name="MOUNTING" value="SMD"/>
 </technology>
 </technologies>
 </device>
