@@ -753,20 +753,12 @@ design rules under a new name.</description>
 <attribute name="MOUNTING" value="SMD" x="0" y="10" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="11" y="10.25" size="0.9" layer="25" font="vector" align="center"/>
 <attribute name="PIN1" value="-" x="8.75" y="16" size="1.27" layer="21" font="vector" rot="SR90" align="center-left"/>
-<attribute name="PIN1" value="-" x="0" y="10" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PIN2" value="+" x="6.25" y="16" size="1.27" layer="21" font="vector" rot="SR90" align="center-left"/>
-<attribute name="PIN2" value="+" x="0" y="10" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PIN3" value="-" x="3.75" y="16" size="1.27" layer="21" font="vector" rot="SR90" align="center-left"/>
-<attribute name="PIN3" value="-" x="0" y="10" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PIN4" value="+" x="0" y="10" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PIN4" value="+" x="1.25" y="16" size="1.27" layer="21" font="vector" rot="SR90" align="center-left"/>
 <attribute name="PIN5" value="-" x="-1.25" y="16" size="1.27" layer="21" font="vector" rot="SR90" align="center-left"/>
-<attribute name="PIN5" value="-" x="0" y="10" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PIN6" value="+" x="0" y="10" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PIN6" value="+" x="-3.75" y="16" size="1.27" layer="21" font="vector" rot="SR90" align="center-left"/>
 <attribute name="PIN7" value="-" x="-6.25" y="16" size="1.27" layer="21" font="vector" rot="SR90" align="center-left"/>
-<attribute name="PIN7" value="-" x="0" y="10" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="PIN8" value="+" x="0" y="10" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="PIN8" value="+" x="-8.75" y="16" size="1.27" layer="21" font="vector" rot="SR90" align="center-left"/>
 </element>
 <element name="U$1" library="quadparts_prebuilt" package="QUADCLASS_LOGO_SMALL" value="" x="9.5" y="-18" smashed="yes"/>
