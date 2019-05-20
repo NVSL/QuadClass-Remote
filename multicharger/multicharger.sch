@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -278,6 +278,28 @@
 <pad name="T" x="0" y="0" drill="1"/>
 <circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
 </package>
+<package name="LED-2X-LITE-ON-1.6MMX1.5MM">
+<wire x1="-1.4" y1="-1.05" x2="1.4" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="-1.05" x2="1.4" y2="-1.05" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="1.05" x2="-1.4" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="1.05" x2="-1.4" y2="-1.05" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-1.7" x2="-2.5" y2="1.7" width="0.127" layer="39"/>
+<wire x1="-2.5" y1="1.7" x2="2.5" y2="1.7" width="0.127" layer="39"/>
+<text x="-1.5" y="-0.5" size="0.7" layer="21" font="vector" align="center-right">&gt;COLOR2</text>
+<text x="-1.5" y="0.5" size="0.7" layer="21" font="vector" align="center-right">&gt;COLOR1</text>
+<text x="0.03" y="2.16" size="1.27" layer="25" font="vector" rot="R180" align="center">&gt;NAME</text>
+<wire x1="1.4" y1="-1.05" x2="1.4" y2="1.05" width="0.127" layer="51"/>
+<wire x1="1.4" y1="1.05" x2="-1.4" y2="1.05" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-1.7" x2="-2.5" y2="-1.7" width="0.127" layer="39"/>
+<wire x1="2.5" y1="1.7" x2="2.5" y2="-1.7" width="0.127" layer="39"/>
+<wire x1="1.4" y1="-1.05" x2="1.4" y2="1.05" width="0.127" layer="21"/>
+<wire x1="1.4" y1="1.05" x2="-1.4" y2="1.05" width="0.127" layer="21"/>
+<circle x="1.8" y="0" radius="0.1" width="0.2" layer="21"/>
+<smd name="A1" x="-0.725" y="0.425" dx="0.85" dy="0.65" layer="1"/>
+<smd name="A2" x="-0.725" y="-0.425" dx="0.85" dy="0.65" layer="1"/>
+<smd name="C1" x="0.725" y="0.425" dx="0.85" dy="0.65" layer="1"/>
+<smd name="C2" x="0.725" y="-0.425" dx="0.85" dy="0.65" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP73831/2">
@@ -410,6 +432,24 @@
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="160-1172-1-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+</technology>
+</technologies>
+</device>
+<device name="-GREEN/RED-1.6X1.5MM" package="LED-2X-LITE-ON-1.6MMX1.5MM">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="A2" pad="A2"/>
+<connect gate="G$1" pin="C1" pad="C1"/>
+<connect gate="G$1" pin="C2" pad="C2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="COLOR1" value="GREEN"/>
+<attribute name="COLOR2" value="RED"/>
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="160-2252-1-ND"/>
 <attribute name="MOUNTING" value="SMD"/>
 </technology>
 </technologies>
@@ -1449,7 +1489,7 @@
 <part name="P+21" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="C6" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-10UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="10uF"/>
 <part name="P+23" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="D1" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED"/>
+<part name="D1" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED-1.6X1.5MM" value="LED-2X-GREEN/RED-1.6X1.5MM"/>
 <part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR-PACK-4X" device="-510" package3d_urn="urn:adsk.eagle:package:10895048/1" value="510"/>
 <part name="U2" library="RemoteParts" deviceset="MCP73831/2" device="" value="MCP73831T-2ACI/OT"/>
 <part name="P+2" library="quadparts_prebuilt" deviceset="GND" device=""/>
@@ -1457,21 +1497,21 @@
 <part name="P+4" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="C2" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-10UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="10uF"/>
 <part name="P+5" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="D2" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED"/>
+<part name="D2" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED-1.6X1.5MM" value="LED-2X-GREEN/RED-1.6X1.5MM"/>
 <part name="U3" library="RemoteParts" deviceset="MCP73831/2" device="" value="MCP73831T-2ACI/OT"/>
 <part name="P+7" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="P+8" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="P+9" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="C4" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-10UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="10uF"/>
 <part name="P+10" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="D3" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED"/>
+<part name="D3" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED-1.6X1.5MM" value="LED-2X-GREEN/RED-1.6X1.5MM"/>
 <part name="U4" library="RemoteParts" deviceset="MCP73831/2" device="" value="MCP73831T-2ACI/OT"/>
 <part name="P+12" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="P+13" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="P+14" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="C8" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-10UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="10uF"/>
 <part name="P+15" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="D4" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED"/>
+<part name="D4" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED-1.6X1.5MM" value="LED-2X-GREEN/RED-1.6X1.5MM"/>
 <part name="R3" library="quadparts_prebuilt" deviceset="RESISTOR-PACK-4X" device="-510" package3d_urn="urn:adsk.eagle:package:10895048/1" value="510"/>
 <part name="R5" library="quadparts_prebuilt" deviceset="RESISTOR-PACK-4X" device="-2K" package3d_urn="urn:adsk.eagle:package:10895048/1" value="2K"/>
 <part name="FRAME1" library="quadparts_prebuilt" deviceset="FRAME_B_L" device=""/>

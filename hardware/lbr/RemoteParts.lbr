@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1800,6 +1800,51 @@
 <wire x1="3" y1="2" x2="-3" y2="2" width="0.127" layer="39"/>
 <wire x1="-3" y1="2" x2="-3" y2="-2" width="0.127" layer="39"/>
 </package>
+<package name="PJ-036AH-SMT-TR">
+<hole x="3" y="0" drill="2.1"/>
+<smd name="2" x="6.8" y="6.45" dx="6.2" dy="3.9" layer="1"/>
+<smd name="3" x="6.8" y="-6.45" dx="6.2" dy="3.9" layer="1"/>
+<smd name="1" x="15.75" y="-0.65" dx="3.3" dy="4.4" layer="1" rot="R90"/>
+<wire x1="0" y1="4.5" x2="14.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="14.5" y1="4.5" x2="14.5" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="14.5" y1="-4.5" x2="0" y2="-4.5" width="0.127" layer="21"/>
+<wire x1="0" y1="-4.5" x2="0" y2="4.5" width="0.127" layer="21"/>
+<wire x1="0" y1="4.5" x2="14.5" y2="4.5" width="0.127" layer="51"/>
+<wire x1="14.5" y1="4.5" x2="14.5" y2="-4.5" width="0.127" layer="51"/>
+<wire x1="14.5" y1="-4.5" x2="0" y2="-4.5" width="0.127" layer="51"/>
+<wire x1="0" y1="-4.5" x2="0" y2="4.5" width="0.127" layer="51"/>
+<text x="13.5" y="6.5" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
+<wire x1="1" y1="10" x2="1" y2="5.5" width="0.127" layer="39"/>
+<wire x1="1" y1="5.5" x2="-11" y2="5.5" width="0.127" layer="39"/>
+<wire x1="-11" y1="5.5" x2="-11" y2="-5.5" width="0.127" layer="39"/>
+<wire x1="-11" y1="-5.5" x2="1" y2="-5.5" width="0.127" layer="39"/>
+<wire x1="1" y1="-5.5" x2="1" y2="-10" width="0.127" layer="39"/>
+<wire x1="1" y1="-10" x2="19.5" y2="-10" width="0.127" layer="39"/>
+<wire x1="19.5" y1="-10" x2="19.5" y2="10" width="0.127" layer="39"/>
+<wire x1="19.5" y1="10" x2="1" y2="10" width="0.127" layer="39"/>
+</package>
+<package name="LED-2X-LITE-ON-1.6MMX1.5MM">
+<wire x1="-1.4" y1="-1.05" x2="1.4" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="-1.05" x2="1.4" y2="-1.05" width="0.127" layer="21"/>
+<wire x1="-1.4" y1="1.05" x2="-1.4" y2="-1.05" width="0.127" layer="51"/>
+<wire x1="-1.4" y1="1.05" x2="-1.4" y2="-1.05" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-1.7" x2="-2.5" y2="1.7" width="0.127" layer="39"/>
+<wire x1="-2.5" y1="1.7" x2="2.5" y2="1.7" width="0.127" layer="39"/>
+<text x="-1.5" y="-0.5" size="0.7" layer="21" font="vector" align="center-right">&gt;COLOR2</text>
+<text x="-1.5" y="0.5" size="0.7" layer="21" font="vector" align="center-right">&gt;COLOR1</text>
+<text x="0.03" y="2.16" size="1.27" layer="25" font="vector" rot="R180" align="center">&gt;NAME</text>
+<wire x1="1.4" y1="-1.05" x2="1.4" y2="1.05" width="0.127" layer="51"/>
+<wire x1="1.4" y1="1.05" x2="-1.4" y2="1.05" width="0.127" layer="51"/>
+<wire x1="2.5" y1="-1.7" x2="-2.5" y2="-1.7" width="0.127" layer="39"/>
+<wire x1="2.5" y1="1.7" x2="2.5" y2="-1.7" width="0.127" layer="39"/>
+<wire x1="1.4" y1="-1.05" x2="1.4" y2="1.05" width="0.127" layer="21"/>
+<wire x1="1.4" y1="1.05" x2="-1.4" y2="1.05" width="0.127" layer="21"/>
+<circle x="1.8" y="0" radius="0.1" width="0.2" layer="21"/>
+<smd name="A1" x="-0.725" y="0.425" dx="0.85" dy="0.65" layer="1"/>
+<smd name="A2" x="-0.725" y="-0.425" dx="0.85" dy="0.65" layer="1"/>
+<smd name="C1" x="0.725" y="0.425" dx="0.85" dy="0.65" layer="1"/>
+<smd name="C2" x="0.725" y="-0.425" dx="0.85" dy="0.65" layer="1"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" locally_modified="yes" type="model">
@@ -2461,6 +2506,20 @@
 <pin name="/LDOEN" x="-15.24" y="2.54" length="middle"/>
 <pin name="/CHGEN" x="-15.24" y="0" length="middle"/>
 <text x="-10.16" y="13.97" size="1.778" layer="95">&gt;NAME</text>
+</symbol>
+<symbol name="POWERJACK">
+<wire x1="-10.16" y1="2.54" x2="-7.62" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-7.62" y1="5.08" x2="-5.08" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<text x="-10.16" y="10.16" size="1.778" layer="96">&gt;Value</text>
+<text x="-10.16" y="0" size="1.778" layer="95">&gt;Name</text>
+<rectangle x1="-10.16" y1="6.858" x2="0" y2="8.382" layer="94"/>
+<pin name="GNDBREAK" x="2.54" y="5.08" visible="off" length="short" rot="R180"/>
+<pin name="GND" x="2.54" y="2.54" visible="off" length="short" rot="R180"/>
+<pin name="PWR" x="2.54" y="7.62" visible="off" length="short" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3183,6 +3242,24 @@
 </technology>
 </technologies>
 </device>
+<device name="-GREEN/RED-1.6X1.5MM" package="LED-2X-LITE-ON-1.6MMX1.5MM">
+<connects>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="A2" pad="A2"/>
+<connect gate="G$1" pin="C1" pad="C1"/>
+<connect gate="G$1" pin="C2" pad="C2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="COLOR1" value="GREEN"/>
+<attribute name="COLOR2" value="RED"/>
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="160-2252-1-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="M06" prefix="J">
@@ -3721,6 +3798,23 @@
 <attribute name="DISTPN" value="LTC4063EDD#PBF-ND "/>
 <attribute name="MOUNTING" value="SMD"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="POWER-JACK" prefix="J">
+<gates>
+<gate name="G$1" symbol="POWERJACK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-TIP-POSITIVE-SMD" package="PJ-036AH-SMT-TR">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="GNDBREAK" pad="3"/>
+<connect gate="G$1" pin="PWR" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
