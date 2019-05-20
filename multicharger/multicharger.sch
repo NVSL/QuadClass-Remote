@@ -792,8 +792,8 @@
 <wire x1="0.9" y1="0.5" x2="0.9" y2="-0.5" width="0.12" layer="51"/>
 <smd name="1" x="-0.7533" y="0" dx="1.0088" dy="1.0153" layer="1"/>
 <smd name="2" x="0.7533" y="0" dx="1.0088" dy="1.0153" layer="1"/>
-<text x="0" y="1.4567" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.4567" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<text x="0" y="1" size="0.9" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-1" size="0.9" layer="27" font="vector" align="top-center">&gt;VALUE</text>
 <wire x1="-2.2" y1="1.4" x2="2.2" y2="1.4" width="0.1" layer="39"/>
 <wire x1="2.2" y1="1.4" x2="2.2" y2="-1.4" width="0.1" layer="39"/>
 <wire x1="2.2" y1="-1.4" x2="-2.2" y2="-1.4" width="0.1" layer="39"/>
@@ -1149,8 +1149,10 @@
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="Y10511CT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="VALUE" value="510"/>
 </technology>
 </technologies>
@@ -1171,8 +1173,10 @@
 </package3dinstances>
 <technologies>
 <technology name="">
+<attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="Y10202CT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 <attribute name="VALUE" value="2K"/>
 </technology>
 </technologies>
