@@ -1,0 +1,8 @@
+DIGIKEY,Y10202CT-ND,5,1,v1-rev0-rc1/multicharger.sch,quadparts_prebuilt:RESISTOR-PACK-4X:-2K,2K
+DIGIKEY,1276-1119-1-ND,30,6,v1-rev0-rc1/multicharger.sch,quadparts_prebuilt:CAPACITOR-NP_:SMD-0603_CERAMIC-10UF,10uF
+DIGIKEY,609-4613-1-ND ,5,1,v1-rev0-rc1/multicharger.sch,RemoteParts:USB:-MICROA-AMPHENOL-10118192-0001LF,
+DIGIKEY,MCP73831T-2ACI/OTCT-ND,20,4,v1-rev0-rc1/multicharger.sch,RemoteParts:MCP73831/2:,MCP73831T-2ACI/OT
+DIGIKEY,36-5001-ND,30,6,v1-rev0-rc1/multicharger.sch,RemoteParts:TEST-POINT:,
+DIGIKEY,Y10511CT-ND,10,2,v1-rev0-rc1/multicharger.sch,quadparts_prebuilt:RESISTOR-PACK-4X:-510,510
+DIGIKEY,478-6173-1-ND,5,1,v1-rev0-rc1/multicharger.sch,quadparts_prebuilt:HEADER-8POS-:,
+DIGIKEY,160-2252-1-ND,20,4,v1-rev0-rc1/multicharger.sch,RemoteParts:LED-2X:-GREEN/RED-1.6X1.5MM,LED-2X-GREEN/RED-1.6X1.5MM
