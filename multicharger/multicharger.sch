@@ -1309,10 +1309,8 @@
 <sheets>
 <sheet>
 <plain>
-<text x="215.9" y="133.35" size="1.778" layer="97">Ireg = 1000V/Rprog
-2.2KOhm -&gt; 450mA</text>
-<text x="215.9" y="102.87" size="1.778" layer="97">Ireg = 1000V/Rprog
-2.2KOhm -&gt; 450mA</text>
+<text x="210.82" y="196.85" size="1.778" layer="97">Ireg = 1000V/Rprog
+2KOhm -&gt; 500mA</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="196.85" y="185.42" smashed="yes">
@@ -1747,7 +1745,6 @@
 <pinref part="U3" gate="G$1" pin="PROG"/>
 <wire x1="209.55" y1="124.46" x2="214.63" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$3" pin="1"/>
-<junction x="214.63" y="124.46"/>
 </segment>
 </net>
 <net name="N$9" class="0">
