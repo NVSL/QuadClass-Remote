@@ -1,0 +1,8 @@
+ripup;
+auto BPOS*;
+set width 0;
+set dril 0.001;
+fanout signal gnd;
+fanout signal VIN;
+auto;
+
