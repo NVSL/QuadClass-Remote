@@ -48,11 +48,24 @@ bool rfReceive(T & g)
 		if (l == sizeof(T)) {
 			if (t.validate()) {
 				g = t;
-				//Serial.println();
+/*				Serial.print("Good packet: ");
+				Serial.print(t.get_name());
+				Serial.println();*/
 				return true;
 			} else {
 				Serial.print("Bad packet: ");
 				Serial.print(t.get_name());
+				Serial.println();
+				Serial.println("Got     Expected");
+				Serial.print("Magic: 0x");
+				Serial.print((int)t.magic, 16);
+				Serial.print("  0x");
+				Serial.print(T::magic_value, 16);
+				Serial.println();
+				Serial.print("Hash: 0x");
+				Serial.print(compute_hash(t), 16);
+				Serial.print("  0x");
+				Serial.print((int)t.hash, 16);
 				Serial.println();
 			}
 		} else {

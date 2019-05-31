@@ -6,6 +6,7 @@
 #include <Arduino.h>
 #include <RotaryEncoder.h>
 #include <SerLCD.h>
+#include <EEPROM.h>
 
 // Pin definitions for Gimbals (Analog inputs).  It is not clear why the A1, A2,... etc. don't work, but they don't.
 #define PIN_YAW		        A0
@@ -43,6 +44,19 @@ extern SerLCD lcd;
 //#define MIN_BATTERY (683.0) // calculated
 //#define MAX_BATTERY (817.0)
 
+template<class T>
+void eeprom_load(int addr, T & v) {
+	for(int i = 0; i < sizeof(T); i++) {
+		((uint8_t*)&v)[i] = EEPROM.read(addr + i);
+	}
+}
+
+template<class T>
+void eeprom_store(int addr, T & v) {
+	for(int i = 0; i < sizeof(T); i++) {
+		EEPROM.write(addr + i, ((uint8_t*)&v)[i]);
+	}
+}
 
 #define BUTTONS 10
 #define GIMBAL_AXES 4
