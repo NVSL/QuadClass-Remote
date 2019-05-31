@@ -1845,6 +1845,31 @@
 <smd name="C1" x="0.725" y="0.425" dx="0.85" dy="0.65" layer="1"/>
 <smd name="C2" x="0.725" y="-0.425" dx="0.85" dy="0.65" layer="1"/>
 </package>
+<package name="TEST-POINT-1MM-VIA">
+<circle x="0" y="0" radius="0.75" width="0.127" layer="39"/>
+<text x="0" y="2" size="1" layer="25" font="vector" align="center">&gt;NAME</text>
+<pad name="T" x="0" y="0" drill="0.5" diameter="1"/>
+<circle x="0" y="0" radius="0.75" width="0.127" layer="21"/>
+</package>
+<package name="USB-A-KEYSTONE-931">
+<smd name="1" x="-3.5" y="-1.25" dx="1.1" dy="1.99" layer="1"/>
+<smd name="2" x="-1" y="-1.25" dx="1.1" dy="1.99" layer="1"/>
+<smd name="3" x="1" y="-1.25" dx="1.1" dy="1.99" layer="1"/>
+<smd name="4" x="3.5" y="-1.25" dx="1.1" dy="1.99" layer="1"/>
+<hole x="5.85" y="1.25" drill="2.5"/>
+<hole x="-2.3" y="1.25" drill="1.1"/>
+<hole x="2.3" y="1.25" drill="1.1"/>
+<wire x1="-10.8" y1="4.15" x2="10.8" y2="4.15" width="0.127" layer="51"/>
+<wire x1="-6" y1="0" x2="-6" y2="18.65" width="0.127" layer="51"/>
+<wire x1="-6" y1="18.65" x2="6" y2="18.65" width="0.127" layer="51"/>
+<wire x1="6" y1="18.65" x2="6" y2="0" width="0.127" layer="51"/>
+<wire x1="6" y1="0" x2="-6" y2="0" width="0.127" layer="51"/>
+<pad name="G1" x="-5.85" y="1.25" drill="2.5"/>
+<pad name="G2" x="5.85" y="1.25" drill="2.5"/>
+<wire x1="-8.5" y1="-4" x2="8.5" y2="-4" width="0.127" layer="39"/>
+<wire x1="8.5" y1="-4" x2="8.5" y2="6" width="0.127" layer="39"/>
+<wire x1="-8.5" y1="-4" x2="-8.5" y2="6" width="0.127" layer="39"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" locally_modified="yes" type="model">
@@ -3701,47 +3726,6 @@
 <attribute name="DISTPN" value="356"/>
 <attribute name="MOUNTING" value="TH"/>
 <attribute name="VALUE" value="10K"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="USB" prefix="J">
-<gates>
-<gate name="A" symbol="USB" x="0" y="0"/>
-</gates>
-<devices>
-<device name="-MICROA-AMPHENOL-10118192-0001LF" package="USB-MICROA-10118192-0001LF">
-<connects>
-<connect gate="A" pin="1-VCC" pad="1"/>
-<connect gate="A" pin="2-D-" pad="2"/>
-<connect gate="A" pin="3-D+" pad="3"/>
-<connect gate="A" pin="4-ID" pad="4"/>
-<connect gate="A" pin="5-GND" pad="5 6 7 8 9 10 11"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="Swanson"/>
-<attribute name="DIST" value="DIGIKEY"/>
-<attribute name="DISTPN" value="609-4613-1-ND "/>
-<attribute name="MOUNTING" value="SMD"/>
-</technology>
-</technologies>
-</device>
-<device name="-MINIB-EDAC-690-005-299-043" package="USB-MINIB-EDAC-690-005-299-043">
-<connects>
-<connect gate="A" pin="1-VCC" pad="1"/>
-<connect gate="A" pin="2-D-" pad="2"/>
-<connect gate="A" pin="3-D+" pad="3"/>
-<connect gate="A" pin="4-ID" pad="4"/>
-<connect gate="A" pin="5-GND" pad="5 P6 P7 P8 P9"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="Swanson"/>
-<attribute name="DIST" value="DIGIKEY"/>
-<attribute name="DISTPN" value="151-1206-1-ND "/>
-<attribute name="MOUNTING" value="SMD"/>
 </technology>
 </technologies>
 </device>

@@ -300,6 +300,69 @@
 <smd name="C1" x="0.725" y="0.425" dx="0.85" dy="0.65" layer="1"/>
 <smd name="C2" x="0.725" y="-0.425" dx="0.85" dy="0.65" layer="1"/>
 </package>
+<package name="TEST-POINT-1MM-VIA">
+<circle x="0" y="0" radius="0.75" width="0.127" layer="39"/>
+<text x="0" y="2" size="1" layer="25" font="vector" align="center">&gt;NAME</text>
+<pad name="T" x="0" y="0" drill="0.5" diameter="1"/>
+<circle x="0" y="0" radius="0.75" width="0.127" layer="21"/>
+</package>
+<package name="BOT-ADJUST-POT-3314R-1-103E">
+<wire x1="-2.5" y1="-2.25" x2="2.5" y2="-2.25" width="0.127" layer="39"/>
+<wire x1="-2.5" y1="-2.25" x2="2.5" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-2.4" x2="-2.5" y2="2.3" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="2.25" x2="-2.5" y2="-2.25" width="0.127" layer="39"/>
+<wire x1="-2.5" y1="2.25" x2="-2.5" y2="-2.25" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="2.3" x2="2.5" y2="2.3" width="0.127" layer="51"/>
+<text x="0" y="-5" size="1.27" layer="26" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="28" font="vector" align="center">&gt;VALUE</text>
+<circle x="0" y="0" radius="1.7" width="0.127" layer="100"/>
+<hole x="0" y="0" drill="3.2"/>
+<wire x1="2.5" y1="-2.25" x2="2.5" y2="2.25" width="0.127" layer="39"/>
+<wire x1="2.5" y1="-2.25" x2="2.5" y2="2.25" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-2.4" x2="-2.5" y2="-2.4" width="0.127" layer="51"/>
+<wire x1="2.5" y1="2.25" x2="-2.5" y2="2.25" width="0.127" layer="39"/>
+<wire x1="2.5" y1="2.25" x2="-2.5" y2="2.25" width="0.127" layer="21"/>
+<wire x1="2.5" y1="2.3" x2="2.5" y2="-2.4" width="0.127" layer="51"/>
+<smd name="1" x="-1.15" y="2.75" dx="1.3" dy="1.3" layer="1"/>
+<smd name="2" x="0" y="-2.75" dx="2" dy="1.3" layer="1"/>
+<smd name="3" x="1.15" y="2.75" dx="1.3" dy="1.3" layer="1"/>
+</package>
+<package name="TRIM-3386">
+<wire x1="-4.7625" y1="-4.7625" x2="4.7625" y2="-4.7625" width="0.127" layer="21"/>
+<wire x1="-4.7625" y1="4.7625" x2="-4.7625" y2="-4.7625" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="-4.9" x2="4.9" y2="-4.9" width="0.127" layer="39"/>
+<wire x1="-4.9" y1="4.9" x2="-4.9" y2="-4.9" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="3.302" width="0.127" layer="21"/>
+<text x="0.405" y="5.84" size="1.27" layer="25" font="vector" rot="R180" align="center">&gt;NAME</text>
+<wire x1="4.7625" y1="-4.7625" x2="4.7625" y2="4.7625" width="0.127" layer="21"/>
+<wire x1="4.7625" y1="4.7625" x2="-4.7625" y2="4.7625" width="0.127" layer="21"/>
+<wire x1="4.9" y1="-4.9" x2="4.9" y2="4.9" width="0.127" layer="39"/>
+<wire x1="4.9" y1="4.9" x2="-4.9" y2="4.9" width="0.127" layer="39"/>
+<wire x1="5" y1="-4.9" x2="4.9" y2="-4.9" width="0.127" layer="39"/>
+<text x="6.35" y="-1.905" size="1.27" layer="27" font="vector" rot="R90">&gt;VALUE</text>
+<pad name="1" x="-2.54" y="-2.8575" drill="0.9" diameter="1.778"/>
+<pad name="2" x="0" y="-2.8575" drill="0.9" diameter="1.778"/>
+<pad name="3" x="2.54" y="-2.8575" drill="0.9" diameter="1.778"/>
+</package>
+<package name="USB-A-KEYSTONE-931">
+<smd name="1" x="-3.5" y="-1.25" dx="1.1" dy="1.99" layer="1"/>
+<smd name="2" x="-1" y="-1.25" dx="1.1" dy="1.99" layer="1"/>
+<smd name="3" x="1" y="-1.25" dx="1.1" dy="1.99" layer="1"/>
+<smd name="4" x="3.5" y="-1.25" dx="1.1" dy="1.99" layer="1"/>
+<hole x="5.85" y="1.25" drill="2.5"/>
+<hole x="-2.3" y="1.25" drill="1.1"/>
+<hole x="2.3" y="1.25" drill="1.1"/>
+<wire x1="-10.8" y1="4.15" x2="10.8" y2="4.15" width="0.127" layer="51"/>
+<wire x1="-6" y1="0" x2="-6" y2="18.65" width="0.127" layer="51"/>
+<wire x1="-6" y1="18.65" x2="6" y2="18.65" width="0.127" layer="51"/>
+<wire x1="6" y1="18.65" x2="6" y2="0" width="0.127" layer="51"/>
+<wire x1="6" y1="0" x2="-6" y2="0" width="0.127" layer="51"/>
+<pad name="G1" x="-5.85" y="1.25" drill="2.5"/>
+<pad name="G2" x="5.85" y="1.25" drill="2.5"/>
+<wire x1="-8.5" y1="-4" x2="8.5" y2="-4" width="0.127" layer="39"/>
+<wire x1="8.5" y1="-4" x2="8.5" y2="6" width="0.127" layer="39"/>
+<wire x1="-8.5" y1="-4" x2="-8.5" y2="6" width="0.127" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MCP73831/2">
@@ -376,6 +439,23 @@
 <symbol name="TEST-POINT">
 <text x="0" y="7.62" size="1.27" layer="95" align="center">&gt;NAME</text>
 <pin name="T" x="0" y="0" visible="off" length="middle" function="dot" rot="R90"/>
+</symbol>
+<symbol name="TRIMPOT">
+<wire x1="-0.762" y1="-2.54" x2="0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="2.54" x2="-0.762" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.1597" y1="1.2939" x2="-1.7018" y2="2.2352" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-0.508" x2="-2.032" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-0.508" x2="-3.048" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-0.508" width="0.1524" layer="94"/>
+<text x="-3.81" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<text x="-5.969" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0.762" y1="2.54" x2="-0.762" y2="2.54" width="0.254" layer="94"/>
+<wire x1="1.651" y1="0" x2="-1.8796" y2="1.7526" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="1.651" y2="0" width="0.1524" layer="94"/>
+<pin name="A" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="E" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="S" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -495,6 +575,18 @@
 </technology>
 </technologies>
 </device>
+<device name="-A-SMD-KEYSTONE-931" package="USB-A-KEYSTONE-931">
+<connects>
+<connect gate="A" pin="1-VCC" pad="1"/>
+<connect gate="A" pin="2-D-" pad="2"/>
+<connect gate="A" pin="3-D+" pad="3"/>
+<connect gate="A" pin="4-ID" pad="4"/>
+<connect gate="A" pin="5-GND" pad="G1 G2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="TEST-POINT" prefix="P">
@@ -512,6 +604,55 @@
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="36-5001-ND"/>
 <attribute name="MOUNTING" value="TH"/>
+</technology>
+</technologies>
+</device>
+<device name="-1MM" package="TEST-POINT-1MM-VIA">
+<connects>
+<connect gate="G$1" pin="T" pad="T"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TRIMPOT" prefix="P" uservalue="yes">
+<description>SMT trimmer potentiometer part number TC33X
+	    &lt;p&gt;http://www.ladyada.net/library/eagle&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TRIMPOT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-BOT-ADJUST" package="BOT-ADJUST-POT-3314R-1-103E">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="3314R-1-103ETR-ND "/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="10K"/>
+</technology>
+</technologies>
+</device>
+<device name="3386" package="TRIM-3386">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="Adafruit"/>
+<attribute name="DISTPN" value="356"/>
+<attribute name="MOUNTING" value="TH"/>
+<attribute name="VALUE" value="10K"/>
 </technology>
 </technologies>
 </device>
@@ -1133,6 +1274,54 @@
 <gate name="G$4" symbol="RESOLVED-RESISTOR_" x="0" y="-22.86"/>
 </gates>
 <devices>
+<device name="-750" package="RESCAXS50P200X100X45-8">
+<connects>
+<connect gate="G$1" pin="1" pad="4"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$2" pin="1" pad="3"/>
+<connect gate="G$2" pin="2" pad="6"/>
+<connect gate="G$3" pin="1" pad="2"/>
+<connect gate="G$3" pin="2" pad="7"/>
+<connect gate="G$4" pin="1" pad="1"/>
+<connect gate="G$4" pin="2" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10895048/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="Y10751CT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="750"/>
+</technology>
+</technologies>
+</device>
+<device name="-1K" package="RESCAXS50P200X100X45-8">
+<connects>
+<connect gate="G$1" pin="1" pad="4"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$2" pin="1" pad="3"/>
+<connect gate="G$2" pin="2" pad="6"/>
+<connect gate="G$3" pin="1" pad="2"/>
+<connect gate="G$3" pin="2" pad="7"/>
+<connect gate="G$4" pin="1" pad="1"/>
+<connect gate="G$4" pin="2" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10895048/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="Y10102CT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="1K"/>
+</technology>
+</technologies>
+</device>
 <device name="-510" package="RESCAXS50P200X100X45-8">
 <connects>
 <connect gate="G$1" pin="1" pad="4"/>
@@ -1261,7 +1450,7 @@
 <part name="C6" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-10UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="10uF"/>
 <part name="P+23" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="D1" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED-1.6X1.5MM" value="LED-2X-GREEN/RED-1.6X1.5MM"/>
-<part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR-PACK-4X" device="-510" package3d_urn="urn:adsk.eagle:package:10895048/1" value="510"/>
+<part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR-PACK-4X" device="-750" package3d_urn="urn:adsk.eagle:package:10895048/1" value="750"/>
 <part name="U2" library="RemoteParts" deviceset="MCP73831/2" device="" value="MCP73831T-2ACI/OT"/>
 <part name="P+2" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="P+3" library="quadparts_prebuilt" deviceset="GND" device=""/>
@@ -1283,10 +1472,10 @@
 <part name="C8" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-10UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="10uF"/>
 <part name="P+15" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="D4" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED-1.6X1.5MM" value="LED-2X-GREEN/RED-1.6X1.5MM"/>
-<part name="R3" library="quadparts_prebuilt" deviceset="RESISTOR-PACK-4X" device="-510" package3d_urn="urn:adsk.eagle:package:10895048/1" value="510"/>
+<part name="R3" library="quadparts_prebuilt" deviceset="RESISTOR-PACK-4X" device="-750" package3d_urn="urn:adsk.eagle:package:10895048/1" value="750"/>
 <part name="R5" library="quadparts_prebuilt" deviceset="RESISTOR-PACK-4X" device="-2K" package3d_urn="urn:adsk.eagle:package:10895048/1" value="2K"/>
 <part name="FRAME1" library="quadparts_prebuilt" deviceset="FRAME_B_L" device=""/>
-<part name="J2" library="RemoteParts" deviceset="USB" device="-MICROA-AMPHENOL-10118192-0001LF"/>
+<part name="J2" library="RemoteParts" deviceset="USB" device="-A-SMD-KEYSTONE-931" value="USB-A-SMD-KEYSTONE-931"/>
 <part name="J3" library="quadparts_prebuilt" deviceset="HEADER-8POS-" device="">
 <attribute name="PIN1" value="-"/>
 <attribute name="PIN2" value="+"/>
@@ -1297,20 +1486,27 @@
 <attribute name="PIN7" value="-"/>
 <attribute name="PIN8" value="+"/>
 </part>
-<part name="P1" library="RemoteParts" deviceset="TEST-POINT" device=""/>
-<part name="P2" library="RemoteParts" deviceset="TEST-POINT" device=""/>
-<part name="P3" library="RemoteParts" deviceset="TEST-POINT" device=""/>
-<part name="P4" library="RemoteParts" deviceset="TEST-POINT" device=""/>
-<part name="P5" library="RemoteParts" deviceset="TEST-POINT" device=""/>
-<part name="P6" library="RemoteParts" deviceset="TEST-POINT" device=""/>
+<part name="P1" library="RemoteParts" deviceset="TEST-POINT" device="-1MM" value="TEST-POINT-1MM"/>
+<part name="P2" library="RemoteParts" deviceset="TEST-POINT" device="-1MM" value="TEST-POINT-1MM"/>
+<part name="P3" library="RemoteParts" deviceset="TEST-POINT" device="-1MM" value="TEST-POINT-1MM"/>
+<part name="P4" library="RemoteParts" deviceset="TEST-POINT" device="-1MM" value="TEST-POINT-1MM"/>
+<part name="P5" library="RemoteParts" deviceset="TEST-POINT" device="-1MM" value="TEST-POINT-1MM"/>
+<part name="P6" library="RemoteParts" deviceset="TEST-POINT" device="-1MM" value="TEST-POINT-1MM"/>
 <part name="C1" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-10UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="10uF"/>
 <part name="C3" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-10UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="10uF"/>
+<part name="P7" library="RemoteParts" deviceset="TRIMPOT" device="-BOT-ADJUST" value="10K"/>
+<part name="P8" library="RemoteParts" deviceset="TEST-POINT" device="-1MM" value="TEST-POINT-1MM"/>
+<part name="P9" library="RemoteParts" deviceset="TEST-POINT" device="-1MM" value="TEST-POINT-1MM"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="210.82" y="196.85" size="1.778" layer="97">Ireg = 1000V/Rprog
-2KOhm -&gt; 500mA</text>
+<text x="215.9" y="133.35" size="1.778" layer="97">Ireg = 1000V/Rprog
+2.2KOhm -&gt; 450mA</text>
+<text x="215.9" y="102.87" size="1.778" layer="97">Ireg = 1000V/Rprog
+2.2KOhm -&gt; 450mA</text>
+<text x="99.06" y="162.56" size="1.778" layer="91">leds are unbalanced. When they are both on green is too bright.</text>
+<text x="96.52" y="152.4" size="1.778" layer="91">test wether we can use the pot</text>
 </plain>
 <instances>
 <instance part="U1" gate="G$1" x="196.85" y="185.42" smashed="yes">
@@ -1494,6 +1690,16 @@
 <instance part="C3" gate="G$1" x="124.46" y="182.88" smashed="yes">
 <attribute name="VALUE" x="120.904" y="180.721" size="1.778" layer="96"/>
 <attribute name="NAME" x="124.968" y="183.261" size="1.778" layer="95"/>
+</instance>
+<instance part="P7" gate="G$1" x="114.3" y="139.7" smashed="yes" rot="R90">
+<attribute name="VALUE" x="118.11" y="135.89" size="1.778" layer="96" rot="R180"/>
+<attribute name="NAME" x="118.11" y="133.731" size="1.778" layer="95" rot="R180"/>
+</instance>
+<instance part="P8" gate="G$1" x="119.38" y="139.7" smashed="yes">
+<attribute name="NAME" x="119.38" y="147.32" size="1.27" layer="95" align="center"/>
+</instance>
+<instance part="P9" gate="G$1" x="109.22" y="139.7" smashed="yes">
+<attribute name="NAME" x="109.22" y="147.32" size="1.27" layer="95" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -1745,6 +1951,7 @@
 <pinref part="U3" gate="G$1" pin="PROG"/>
 <wire x1="209.55" y1="124.46" x2="214.63" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$3" pin="1"/>
+<junction x="214.63" y="124.46"/>
 </segment>
 </net>
 <net name="N$9" class="0">
@@ -1888,6 +2095,18 @@
 <label x="148.59" y="95.25" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="D4" gate="G$1" pin="A2"/>
 <wire x1="156.21" y1="88.9" x2="157.48" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="P7" gate="G$1" pin="A"/>
+<pinref part="P8" gate="G$1" pin="T"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="P7" gate="G$1" pin="E"/>
+<pinref part="P9" gate="G$1" pin="T"/>
 </segment>
 </net>
 </nets>
