@@ -3670,26 +3670,6 @@
 </device>
 </devices>
 </deviceset>
-<deviceset name="TEST-POINT" prefix="P">
-<gates>
-<gate name="G$1" symbol="TEST-POINT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TEST-POINT-KEYSTONE-5000">
-<connects>
-<connect gate="G$1" pin="T" pad="T"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="Swanson"/>
-<attribute name="DIST" value="DIGIKEY"/>
-<attribute name="DISTPN" value="36-5001-ND"/>
-<attribute name="MOUNTING" value="TH"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="TRIMPOT" prefix="P" uservalue="yes">
 <description>SMT trimmer potentiometer part number TC33X
 	    &lt;p&gt;http://www.ladyada.net/library/eagle&lt;/p&gt;</description>
@@ -3697,7 +3677,7 @@
 <gate name="G$1" symbol="TRIMPOT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-BOT-ADJUST" package="BOT-ADJUST-POT-3314R-1-103E">
+<device name="-BOT-ADJUST-10K" package="BOT-ADJUST-POT-3314R-1-103E">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="E" pad="3"/>
@@ -3710,6 +3690,22 @@
 <attribute name="DISTPN" value="3314R-1-103ETR-ND "/>
 <attribute name="MOUNTING" value="SMD"/>
 <attribute name="VALUE" value="10K"/>
+</technology>
+</technologies>
+</device>
+<device name="-BOT-ADJUST-1K" package="BOT-ADJUST-POT-3314R-1-103E">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="3314R-1-102ECT-ND "/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="1K"/>
 </technology>
 </technologies>
 </device>
@@ -3796,6 +3792,87 @@
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="GNDBREAK" pad="3"/>
 <connect gate="G$1" pin="PWR" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="USB" prefix="J">
+<gates>
+<gate name="A" symbol="USB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-MICROA-AMPHENOL-10118192-0001LF" package="USB-MICROA-10118192-0001LF">
+<connects>
+<connect gate="A" pin="1-VCC" pad="1"/>
+<connect gate="A" pin="2-D-" pad="2"/>
+<connect gate="A" pin="3-D+" pad="3"/>
+<connect gate="A" pin="4-ID" pad="4"/>
+<connect gate="A" pin="5-GND" pad="5 6 7 8 9 10 11"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="609-4613-1-ND "/>
+<attribute name="MOUNTING" value="SMD"/>
+</technology>
+</technologies>
+</device>
+<device name="-MINIB-EDAC-690-005-299-043" package="USB-MINIB-EDAC-690-005-299-043">
+<connects>
+<connect gate="A" pin="1-VCC" pad="1"/>
+<connect gate="A" pin="2-D-" pad="2"/>
+<connect gate="A" pin="3-D+" pad="3"/>
+<connect gate="A" pin="4-ID" pad="4"/>
+<connect gate="A" pin="5-GND" pad="5 P6 P7 P8 P9"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="151-1206-1-ND "/>
+<attribute name="MOUNTING" value="SMD"/>
+</technology>
+</technologies>
+</device>
+<device name="-A-SMD-KEYSTONE-931" package="USB-A-KEYSTONE-931">
+<connects>
+<connect gate="A" pin="1-VCC" pad="1"/>
+<connect gate="A" pin="2-D-" pad="2"/>
+<connect gate="A" pin="3-D+" pad="3"/>
+<connect gate="A" pin="4-ID" pad="4"/>
+<connect gate="A" pin="5-GND" pad="G1 G2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TEST-POINT" prefix="P">
+<gates>
+<gate name="G$1" symbol="TEST-POINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TEST-POINT-KEYSTONE-5000">
+<connects>
+<connect gate="G$1" pin="T" pad="T"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="36-5001-ND"/>
+<attribute name="MOUNTING" value="TH"/>
+</technology>
+</technologies>
+</device>
+<device name="-1MM" package="TEST-POINT-1MM-VIA">
+<connects>
+<connect gate="G$1" pin="T" pad="T"/>
 </connects>
 <technologies>
 <technology name=""/>

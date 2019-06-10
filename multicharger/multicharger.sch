@@ -624,7 +624,7 @@
 <gate name="G$1" symbol="TRIMPOT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-BOT-ADJUST" package="BOT-ADJUST-POT-3314R-1-103E">
+<device name="-BOT-ADJUST-10K" package="BOT-ADJUST-POT-3314R-1-103E">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="E" pad="3"/>
@@ -637,6 +637,22 @@
 <attribute name="DISTPN" value="3314R-1-103ETR-ND "/>
 <attribute name="MOUNTING" value="SMD"/>
 <attribute name="VALUE" value="10K"/>
+</technology>
+</technologies>
+</device>
+<device name="-BOT-ADJUST-1K" package="BOT-ADJUST-POT-3314R-1-103E">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="3314R-1-102ECT-ND "/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="1K"/>
 </technology>
 </technologies>
 </device>
@@ -1494,7 +1510,7 @@
 <part name="P6" library="RemoteParts" deviceset="TEST-POINT" device="-1MM" value="TEST-POINT-1MM"/>
 <part name="C1" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-10UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="10uF"/>
 <part name="C3" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-10UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="10uF"/>
-<part name="P7" library="RemoteParts" deviceset="TRIMPOT" device="-BOT-ADJUST" value="10K"/>
+<part name="P7" library="RemoteParts" deviceset="TRIMPOT" device="-BOT-ADJUST-1K" value="1K"/>
 <part name="P8" library="RemoteParts" deviceset="TEST-POINT" device="-1MM" value="TEST-POINT-1MM"/>
 <part name="P9" library="RemoteParts" deviceset="TEST-POINT" device="-1MM" value="TEST-POINT-1MM"/>
 </parts>
