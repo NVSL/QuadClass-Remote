@@ -288,6 +288,15 @@ Swanson</text>
 <wire x1="7" y1="-25" x2="8" y2="-26" width="0.254" layer="21"/>
 <text x="29.8" y="-28.975" size="1" layer="21" font="vector" rot="R270" align="center">FTDI RX</text>
 <rectangle x1="29" y1="55" x2="55" y2="112" layer="1"/>
+<text x="-49" y="-25" size="1.778" layer="1">rotate switch so on is up</text>
+<text x="32" y="-25" size="1.778" layer="1">labels are backwards</text>
+<text x="-58" y="11" size="1.778" layer="1">add oscilator to LCD tdocu and then consider moving connectors in to avoid it.</text>
+<text x="-48" y="-43" size="1.778" layer="1">resistor packs</text>
+<text x="-48" y="-47" size="1.778" layer="1">0603?</text>
+<text x="-48" y="-51" size="1.778" layer="1">remove voltage regulator</text>
+<text x="-55" y="39" size="1.778" layer="1">consider reversing pin assingments on this header so connection to quad is still straight across</text>
+<text x="-28" y="48" size="1.778" layer="1">cutout for battery velcro'd to bottom of PCM</text>
+<text x="-42" y="-68" size="1.778" layer="1">shrink it horizontally a bit and it'll fit very nicely into by plastic box.</text>
 </plain>
 <libraries>
 <library name="quadparts_prebuilt">
@@ -2319,7 +2328,7 @@ design rules under a new name.</description>
 <attribute name="MOUNTING" value="NONE" x="-36" y="12" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="U$4" library="RemoteParts" package="375MAH-BATTERY" value="" x="-72" y="2" smashed="yes"/>
-<element name="U$5" library="RemoteParts" package="600MAH-BATTERY" value="" x="-44" y="8" smashed="yes"/>
+<element name="U$5" library="RemoteParts" package="600MAH-BATTERY" value="" x="-14" y="18" smashed="yes"/>
 <element name="J1" library="RemoteParts" package="USB-MICROA-10118192-0001LF" value="USB-MICROA-AMPHENOL-10118192-0001LF" x="-11" y="29.5" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-11" y="29.5" size="1" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-11" y="29.5" size="1" layer="27" rot="R180" display="off"/>
