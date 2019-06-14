@@ -359,11 +359,15 @@
 <wire x1="-3.95" y1="3" x2="21.95" y2="3" width="0.2032" layer="21"/>
 <wire x1="-4.5" y1="-2.5" x2="-4.5" y2="3.5" width="0.127" layer="39"/>
 <wire x1="-4.5" y1="3.5" x2="22.5" y2="3.5" width="0.127" layer="39"/>
+<text x="0" y="-3" size="1.27" layer="21" font="vector" align="center">V</text>
+<text x="0" y="-5" size="1.27" layer="21" font="vector" align="center">&gt;CH1</text>
 <wire x1="21.3" y1="-2" x2="21.3" y2="0" width="0.2032" layer="21"/>
 <wire x1="21.95" y1="-2" x2="21.3" y2="-2" width="0.2032" layer="21"/>
 <wire x1="21.95" y1="3" x2="21.95" y2="-2" width="0.2032" layer="21"/>
 <wire x1="22.5" y1="-2.5" x2="-4.5" y2="-2.5" width="0.127" layer="39"/>
 <wire x1="22.5" y1="3.5" x2="22.5" y2="-2.5" width="0.127" layer="39"/>
+<text x="6" y="-3" size="1.27" layer="21" font="vector" align="center">H</text>
+<text x="6" y="-5" size="1.27" layer="21" font="vector" align="center">&gt;CH2</text>
 <text x="8.5" y="4.4325" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
 <pad name="1" x="-2" y="0" drill="0.9" shape="square"/>
 <pad name="10" x="16" y="0" drill="0.9"/>
@@ -377,6 +381,14 @@
 <pad name="9" x="14" y="0" drill="0.9"/>
 <pad name="H" x="6" y="0" drill="0.9"/>
 <pad name="V" x="0" y="0" drill="0.9"/>
+<wire x1="-2.5" y1="1.5" x2="20.5" y2="1.5" width="0.127" layer="100"/>
+<wire x1="20.5" y1="1.5" x2="21.5" y2="0.5" width="0.127" layer="100" curve="-90"/>
+<wire x1="21.5" y1="0.5" x2="21.5" y2="-0.5" width="0.127" layer="100"/>
+<wire x1="21.5" y1="-0.5" x2="20.5" y2="-1.5" width="0.127" layer="100" curve="-90"/>
+<wire x1="20.5" y1="-1.5" x2="-2.5" y2="-1.5" width="0.127" layer="100"/>
+<wire x1="-2.5" y1="-1.5" x2="-3.5" y2="-0.5" width="0.127" layer="100" curve="-90"/>
+<wire x1="-3.5" y1="-0.5" x2="-3.5" y2="0.5" width="0.127" layer="100"/>
+<wire x1="-3.5" y1="0.5" x2="-2.5" y2="1.5" width="0.127" layer="100" curve="-90"/>
 </package>
 <package name="2X-GIMBAL-SERVO">
 <rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
@@ -452,7 +464,6 @@
 <circle x="0" y="0" radius="1.27" width="0.127" layer="39"/>
 <text x="0" y="2" size="1" layer="25" font="vector" align="center">&gt;NAME</text>
 <pad name="T" x="0" y="0" drill="1"/>
-<circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
 </package>
 <package name="BOURNS-PEC12R">
 <hole x="-5.7" y="0" drill="2.2"/>
@@ -539,10 +550,6 @@
 <smd name="1" x="-2.5" y="-1.2" dx="1" dy="1.6" layer="1"/>
 <smd name="2" x="0" y="1.2" dx="1" dy="1.6" layer="1"/>
 <smd name="3" x="2.5" y="-1.2" dx="1" dy="1.6" layer="1"/>
-<wire x1="-4.2" y1="1.8" x2="-4.2" y2="-1.8" width="0.127" layer="21"/>
-<wire x1="4.3" y1="1.8" x2="-4.2" y2="1.8" width="0.127" layer="21"/>
-<wire x1="-4.2" y1="-1.8" x2="4.3" y2="-1.8" width="0.127" layer="21"/>
-<wire x1="4.3" y1="-1.8" x2="4.3" y2="1.8" width="0.127" layer="21"/>
 </package>
 <package name="POWER-SWITCH-MFS201N-9-Z">
 <wire x1="-10.16" y1="-2.54" x2="-10.16" y2="2.54" width="0.127" layer="21"/>
@@ -2651,39 +2658,10 @@
 <text x="5" y="-1.25" size="1.27" layer="21" font="vector" rot="SR0" align="center-left">&gt;PIN1</text>
 <text x="5" y="1.25" size="1.27" layer="21" font="vector" rot="SR0" align="center-left">&gt;PIN2</text>
 <text x="0" y="-3.75" size="0.9" layer="25" font="vector" rot="R180" align="center">&gt;NAME</text>
-<wire x1="-6" y1="4" x2="-6" y2="-4" width="0.127" layer="39"/>
-<wire x1="-6" y1="-4" x2="8" y2="-4" width="0.127" layer="39"/>
-<wire x1="8" y1="-4" x2="8" y2="4" width="0.127" layer="39"/>
-<wire x1="8" y1="4" x2="-6" y2="4" width="0.127" layer="39"/>
-</package>
-<package name="SOT23-DBV">
-<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
-<wire x1="-0.428" y1="-0.81" x2="-0.522" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="-0.522" y1="0.81" x2="0.522" y2="0.81" width="0.1524" layer="21"/>
-<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
-<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
-<wire x1="-1.328" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="-1.422" y1="-0.81" x2="-1.422" y2="0.81" width="0.1524" layer="21"/>
-<wire x1="-1.422" y1="0.81" x2="-1.328" y2="0.81" width="0.1524" layer="21"/>
-<wire x1="-1.422" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="51"/>
-<wire x1="-2" y1="-2.5" x2="-2" y2="2.5" width="0.127" layer="39"/>
-<wire x1="-2" y1="2.5" x2="2" y2="2.5" width="0.127" layer="39"/>
-<text x="0.095" y="-3.429" size="1.27" layer="27" font="vector" align="center">&gt;VALUE</text>
-<text x="0.095" y="2.905" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
-<wire x1="0.522" y1="-0.81" x2="0.428" y2="-0.81" width="0.1524" layer="21"/>
-<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
-<wire x1="1.328" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="21"/>
-<wire x1="1.422" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="51"/>
-<wire x1="1.422" y1="-0.81" x2="1.328" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="2" y1="-2.5" x2="-2" y2="-2.5" width="0.127" layer="39"/>
-<wire x1="2" y1="2.5" x2="2" y2="-2.5" width="0.127" layer="39"/>
-<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1" thermals="no"/>
-<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="5" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<wire x1="-6" y1="4" x2="-6" y2="-4" width="0.127" layer="41"/>
+<wire x1="-6" y1="-4" x2="8" y2="-4" width="0.127" layer="41"/>
+<wire x1="8" y1="-4" x2="8" y2="4" width="0.127" layer="41"/>
+<wire x1="8" y1="4" x2="-6" y2="4" width="0.127" layer="41"/>
 </package>
 </packages>
 <symbols>
@@ -2999,19 +2977,6 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <text x="3.81" y="1.27" size="1.778" layer="94">-</text>
 <pin name="N" x="5.08" y="0" visible="off" length="middle" rot="R180"/>
 <pin name="P" x="-7.62" y="0" visible="off" length="middle"/>
-</symbol>
-<symbol name="TPS736*">
-<text x="0" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<wire x1="0" y1="0" x2="0" y2="15.24" width="0.254" layer="94"/>
-<wire x1="0" y1="15.24" x2="17.78" y2="15.24" width="0.254" layer="94"/>
-<text x="0" y="16.51" size="1.778" layer="95">&gt;NAME</text>
-<wire x1="17.78" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="17.78" y1="15.24" x2="17.78" y2="0" width="0.254" layer="94"/>
-<pin name="EN" x="-2.54" y="2.54" length="short" direction="in"/>
-<pin name="GND" x="-2.54" y="7.62" length="short" direction="in"/>
-<pin name="IN" x="-2.54" y="12.7" length="short" direction="in"/>
-<pin name="NC/FB" x="20.32" y="2.54" length="short" direction="pas" rot="R180"/>
-<pin name="OUT" x="20.32" y="12.7" length="short" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4013,55 +3978,6 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </device>
 </devices>
 </deviceset>
-<deviceset name="TPS73633-DBVT">
-<description>LP3985-series voltage regulators.</description>
-<gates>
-<gate name="G$1" symbol="TPS736*" x="0" y="0"/>
-</gates>
-<devices>
-<device name="3V3" package="SOT23-DBV">
-<connects>
-<connect gate="G$1" pin="EN" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="NC/FB" pad="4"/>
-<connect gate="G$1" pin="OUT" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="Swanson"/>
-<attribute name="DIST" value="DIGIKEY"/>
-<attribute name="DISTPN" value="LP3985IM5-3.3/NOPBCT-ND"/>
-<attribute name="MOUNTING" value="SMD"/>
-<attribute name="VALUE" value="3.3V"/>
-</technology>
-</technologies>
-</device>
-<device name="3V" package="SOT23-DBV">
-<connects>
-<connect gate="G$1" pin="EN" pad="3"/>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="NC/FB" pad="4"/>
-<connect gate="G$1" pin="OUT" pad="5"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="CREATOR" value="Swanson"/>
-<attribute name="DATASHEET" value="http://www.ti.com/lit/ds/symlink/lp3985.pdf"/>
-<attribute name="DIST" value="Digikey"/>
-<attribute name="DISTPN" value="LP3985IM5X-3.0/NOPBCT-ND"/>
-<attribute name="MFR" value="Texas Instruments"/>
-<attribute name="MOUNTING" value="SMD"/>
-<attribute name="MPN" value="LP3985IM5X-3.0/NOPB"/>
-<attribute name="PRICE" value="0.59"/>
-<attribute name="REVIEWER" value="Swanson"/>
-<attribute name="VALUE" value="3V"/>
-</technology>
-</technologies>
-</device>
-</devices>
-</deviceset>
 </devicesets>
 </library>
 <library name="custom">
@@ -4115,13 +4031,11 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="HIGH-I" width="0" drill="0.254">
+<class number="1" name="HIGH-I" width="0.254" drill="0.2032">
 </class>
 <class number="2" name="RFSIG" width="1.27" drill="0">
 </class>
-<class number="3" name="PWR" width="0" drill="0.381">
-</class>
-<class number="4" name="LONG_PWR" width="0.508" drill="0.381">
+<class number="3" name="PWR" width="0.508" drill="0.381">
 </class>
 </classes>
 <parts>
@@ -4285,21 +4199,21 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="A1" library="quadparts_prebuilt" deviceset="ANTENNA" device="-BOARD-REV" value="ANTENNA-BOARD-REV"/>
 <part name="JP1" library="quadparts_prebuilt" deviceset="FTDI_BASIC" device="-SMD"/>
 <part name="V9" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
+<part name="V10" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="B3" library="quadparts_prebuilt" deviceset="BATTERY" device="-SPRING-SMD"/>
+<part name="B11" library="quadparts_prebuilt" deviceset="BATTERY" device="-SCREW-TERMINAL"/>
 <part name="B12" library="custom" deviceset="NET_BRIDGE" device=""/>
-<part name="C10" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
-<part name="C17" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
-<part name="P+9" library="quadparts_prebuilt" deviceset="3V3" device=""/>
-<part name="GND2" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="GND4" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="U1" library="quadparts_prebuilt" deviceset="TPS73633-DBVT" device="3V3" value="3.3V"/>
-<part name="GND7" library="quadparts_prebuilt" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="175.26" y="15.24" size="1.778" layer="97">Ireg = 1000V/Rprog
 2.2KOhm -&gt; 450mA</text>
+<text x="196.85" y="120.65" size="1.778" layer="97">The 3.3V regulator works down to VDD of about 3.4V.</text>
+<text x="224.79" y="40.64" size="1.27" layer="97">This should map 4.2V to 1.5V.
+AREF is configured to 1.6, so there's a little bit of headroom.</text>
+<text x="137.16" y="153.67" size="1.27" layer="97">The pins for encoders 1are on Pin-change capable pins and can be mapped to PCINT0.
+All the buttons are mapped to interrupt-capable pins.</text>
 <wire x1="97.79" y1="125.73" x2="97.79" y2="3.81" width="0.1524" layer="97" style="longdash"/>
 <wire x1="97.79" y1="3.81" x2="219.71" y2="3.81" width="0.1524" layer="97" style="longdash"/>
 <wire x1="219.71" y1="3.81" x2="219.71" y2="59.69" width="0.1524" layer="97" style="longdash"/>
@@ -4310,19 +4224,20 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <wire x1="92.71" y1="130.81" x2="92.71" y2="64.77" width="0.1524" layer="97" style="longdash"/>
 <wire x1="92.71" y1="64.77" x2="326.39" y2="64.77" width="0.1524" layer="97" style="longdash"/>
 <wire x1="326.39" y1="64.77" x2="326.39" y2="130.81" width="0.1524" layer="97" style="longdash"/>
-<text x="100.33" y="6.35" size="3.81" layer="97">LiPo Charger</text>
+<text x="100.33" y="6.35" size="3.81" layer="97">LiPo Charger *</text>
+<text x="170.18" y="66.04" size="3.81" layer="97">Switchable FTDI</text>
 <wire x1="72.39" y1="275.59" x2="72.39" y2="236.22" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="236.22" x2="3.81" y2="236.22" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="191.77" x2="3.81" y2="191.77" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="236.22" x2="72.39" y2="191.77" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="191.77" x2="72.39" y2="146.05" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="146.05" x2="3.81" y2="146.05" width="0.1524" layer="97" style="longdash"/>
-<text x="6.35" y="238.76" size="3.81" layer="97">Test Points</text>
+<text x="6.35" y="238.76" size="3.81" layer="97">Test Points*</text>
 <text x="8.89" y="184.15" size="3.81" layer="97">Frysky</text>
 <text x="36.83" y="184.15" size="3.81" layer="97">HobbyKing</text>
 <wire x1="328.93" y1="275.59" x2="328.93" y2="196.85" width="0.1524" layer="97" style="longdash"/>
 <wire x1="328.93" y1="196.85" x2="427.99" y2="196.85" width="0.1524" layer="97" style="longdash"/>
-<text x="344.17" y="199.39" size="3.81" layer="97">Rotary Encoder and Buttons</text>
+<text x="344.17" y="199.39" size="3.81" layer="97">Rotary Encoder and Buttons *</text>
 <wire x1="223.52" y1="59.69" x2="285.75" y2="59.69" width="0.1524" layer="97" style="longdash"/>
 <wire x1="285.75" y1="59.69" x2="285.75" y2="3.81" width="0.1524" layer="97" style="longdash"/>
 <wire x1="285.75" y1="2.54" x2="285.75" y2="3.81" width="0.1524" layer="97" style="longdash"/>
@@ -4331,12 +4246,15 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <text x="245.11" y="6.35" size="3.81" layer="97">Battery</text>
 <wire x1="328.93" y1="196.85" x2="328.93" y2="114.3" width="0.1524" layer="97" style="longdash"/>
 <wire x1="328.93" y1="114.3" x2="426.72" y2="114.3" width="0.1524" layer="97" style="longdash"/>
-<text x="370.84" y="116.84" size="3.81" layer="97">LCD</text>
+<text x="370.84" y="116.84" size="3.81" layer="97">LCD *</text>
 <wire x1="328.93" y1="114.3" x2="328.93" y2="78.74" width="0.1524" layer="97" style="longdash"/>
 <wire x1="328.93" y1="78.74" x2="425.45" y2="78.74" width="0.1524" layer="97" style="longdash"/>
 <wire x1="328.93" y1="78.74" x2="328.93" y2="35.56" width="0.1524" layer="97" style="longdash"/>
 <text x="373.38" y="82.55" size="3.81" layer="97">ISP</text>
 <text x="361.95" y="39.37" size="3.81" layer="97">FTDI Header</text>
+<wire x1="72.39" y1="146.05" x2="72.39" y2="104.14" width="0.1524" layer="97" style="longdash"/>
+<wire x1="72.39" y1="104.14" x2="3.81" y2="104.14" width="0.1524" layer="97" style="longdash"/>
+<text x="87.63" y="269.24" size="1.778" layer="91">show P1 P2 P3 P4 J2 J3 S1 R6 R9 C17 C20 C10 C18 C19 R5 R4 C8 C7 C9 R13 R14 D5 U5 U3 L1 S2 U6</text>
 <text x="26.67" y="212.09" size="1.778" layer="97">Set ADMUX_struct.refs = 3;
 to select correct AREF source.
 
@@ -4345,6 +4263,7 @@ to select correct AREF source.
 <text x="8.89" y="198.12" size="1.9304" layer="97">R8 should be 1/4 the resistance of one gimbal.
 FrySky: R8 = 600 Ohm
 HobbyKing: R8 = 1.2k Ohm</text>
+<text x="76.2" y="129.54" size="1.778" layer="91">remove battery voltage sensor</text>
 </plain>
 <instances>
 <instance part="GND10" gate="1" x="339.09" y="226.06" smashed="yes">
@@ -4758,41 +4677,23 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <instance part="V9" gate="G$1" x="166.37" y="16.51" smashed="yes" rot="R90">
 <attribute name="NAME" x="166.37" y="21.844" size="1.27" layer="95" rot="R90" align="center-left"/>
 </instance>
+<instance part="V10" gate="G$1" x="265.43" y="39.37" smashed="yes" rot="R90">
+<attribute name="NAME" x="265.43" y="44.704" size="1.27" layer="95" rot="R90" align="center-left"/>
+</instance>
 <instance part="B3" gate="G$1" x="247.65" y="29.21" smashed="yes" rot="R270">
 <attribute name="NAME" x="252.73" y="36.83" size="1.778" layer="95" font="vector" rot="R270"/>
 </instance>
+<instance part="B11" gate="G$1" x="233.68" y="29.21" smashed="yes" rot="R270">
+<attribute name="NAME" x="238.76" y="36.83" size="1.778" layer="95" font="vector" rot="R270"/>
+</instance>
 <instance part="B12" gate="G$1" x="281.94" y="220.98" smashed="yes">
 <attribute name="NAME" x="276.86" y="220.98" size="0.9" layer="95"/>
-</instance>
-<instance part="C10" gate="G$1" x="20.32" y="53.34" smashed="yes">
-<attribute name="VALUE" x="16.764" y="51.181" size="1.778" layer="96"/>
-<attribute name="NAME" x="20.828" y="53.721" size="1.778" layer="95"/>
-</instance>
-<instance part="C17" gate="G$1" x="71.12" y="68.58" smashed="yes">
-<attribute name="VALUE" x="67.564" y="66.421" size="1.778" layer="96"/>
-<attribute name="NAME" x="71.628" y="68.961" size="1.778" layer="95"/>
-</instance>
-<instance part="P+9" gate="G$1" x="71.12" y="81.28" smashed="yes">
-<attribute name="VALUE" x="71.12" y="83.82" size="1.778" layer="96" rot="R180" align="center"/>
-</instance>
-<instance part="GND2" gate="1" x="71.12" y="58.42" smashed="yes">
-<attribute name="VALUE" x="71.12" y="55.88" size="1.778" layer="96" align="center"/>
-</instance>
-<instance part="GND4" gate="1" x="27.94" y="68.58" smashed="yes">
-<attribute name="VALUE" x="27.94" y="66.04" size="1.778" layer="96" align="center"/>
-</instance>
-<instance part="U1" gate="G$1" x="35.56" y="63.5" smashed="yes">
-<attribute name="VALUE" x="35.56" y="60.96" size="1.778" layer="96"/>
-<attribute name="NAME" x="35.56" y="80.01" size="1.778" layer="95"/>
-</instance>
-<instance part="GND7" gate="1" x="20.32" y="43.18" smashed="yes">
-<attribute name="VALUE" x="20.32" y="40.64" size="1.778" layer="96" align="center"/>
 </instance>
 </instances>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="1">
+<net name="GND" class="0">
 <segment>
 <wire x1="339.09" y1="243.84" x2="339.09" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
@@ -4890,6 +4791,11 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <pinref part="GND24" gate="1" pin="GND"/>
 <wire x1="247.65" y1="22.86" x2="247.65" y2="24.13" width="0.1524" layer="91" style="longdash"/>
 <pinref part="B3" gate="G$1" pin="N"/>
+<junction x="247.65" y="24.13"/>
+<wire x1="247.65" y1="24.13" x2="233.68" y2="24.13" width="0.1524" layer="91"/>
+<pinref part="B11" gate="G$1" pin="N"/>
+<wire x1="233.68" y1="24.13" x2="231.14" y2="24.13" width="0.1524" layer="91"/>
+<junction x="233.68" y="24.13"/>
 </segment>
 <segment>
 <pinref part="GND20" gate="1" pin="GND"/>
@@ -5092,21 +4998,6 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <wire x1="373.38" y1="140.97" x2="373.38" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 </segment>
-<segment>
-<pinref part="C17" gate="G$1" pin="2"/>
-<pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="71.12" y1="63.5" x2="71.12" y2="60.96" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<wire x1="33.02" y1="71.12" x2="27.94" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="U1" gate="G$1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="20.32" y1="48.26" x2="20.32" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="GND7" gate="1" pin="GND"/>
-</segment>
 </net>
 <net name="BTN_UP" class="0">
 <segment>
@@ -5250,6 +5141,20 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <label x="120.65" y="233.68" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 <segment>
+<wire x1="205.74" y1="104.14" x2="205.74" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="101.6" x2="199.39" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="199.39" y1="101.6" x2="191.77" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="101.6" x2="191.77" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="3V3OUT"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<label x="187.96" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U3" gate="G$1" pin="VCCIO"/>
+<junction x="205.74" y="101.6"/>
+<junction x="191.77" y="101.6"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<junction x="199.39" y="101.6"/>
+</segment>
+<segment>
 <label x="259.08" y="113.03" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="256.54" y1="101.6" x2="256.54" y2="106.68" width="0.1524" layer="91"/>
@@ -5258,15 +5163,6 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <pinref part="R14" gate="G$1" pin="2"/>
 <wire x1="261.62" y1="106.68" x2="259.08" y2="106.68" width="0.1524" layer="91"/>
 <junction x="259.08" y="106.68"/>
-</segment>
-<segment>
-<pinref part="C17" gate="G$1" pin="1"/>
-<wire x1="71.12" y1="71.12" x2="71.12" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="71.12" y1="76.2" x2="55.88" y2="76.2" width="0.1524" layer="91"/>
-<junction x="71.12" y="76.2"/>
-<pinref part="P+9" gate="G$1" pin="3V3"/>
-<wire x1="71.12" y1="76.2" x2="71.12" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="U1" gate="G$1" pin="OUT"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -5354,7 +5250,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <wire x1="261.62" y1="201.93" x2="261.62" y2="214.63" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="BCAP" class="0">
+<net name="BCAP" class="1">
 <segment>
 <pinref part="B2" gate="G$1" pin="GND@2"/>
 <pinref part="C3" gate="G$1" pin="2"/>
@@ -5429,7 +5325,10 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <pinref part="P+4" gate="VCC" pin="VBAT"/>
 <wire x1="269.24" y1="40.64" x2="269.24" y2="39.37" width="0.1524" layer="91"/>
 <pinref part="D3" gate="G$1" pin="C"/>
-<wire x1="262.89" y1="39.37" x2="269.24" y2="39.37" width="0.1524" layer="91"/>
+<wire x1="262.89" y1="39.37" x2="265.43" y2="39.37" width="0.1524" layer="91"/>
+<pinref part="V10" gate="G$1" pin="N"/>
+<wire x1="265.43" y1="39.37" x2="269.24" y2="39.37" width="0.1524" layer="91"/>
+<junction x="265.43" y="39.37"/>
 </segment>
 <segment>
 <wire x1="31.75" y1="260.35" x2="31.75" y2="261.62" width="0.1524" layer="91"/>
@@ -5469,7 +5368,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <label x="280.67" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="BPOS" class="4">
+<net name="BPOS" class="3">
 <segment>
 <pinref part="U2" gate="G$1" pin="VBAT"/>
 <wire x1="194.31" y1="39.37" x2="191.77" y2="39.37" width="0.1524" layer="91"/>
@@ -5503,6 +5402,11 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <wire x1="247.65" y1="39.37" x2="247.65" y2="36.83" width="0.1524" layer="91"/>
 <junction x="247.65" y="39.37"/>
 <pinref part="B3" gate="G$1" pin="P"/>
+<junction x="247.65" y="36.83"/>
+<wire x1="247.65" y1="36.83" x2="233.68" y2="36.83" width="0.1524" layer="91"/>
+<pinref part="B11" gate="G$1" pin="P"/>
+<wire x1="233.68" y1="36.83" x2="232.41" y2="36.83" width="0.1524" layer="91"/>
+<junction x="233.68" y="36.83"/>
 </segment>
 </net>
 <net name="USB_D_N" class="0">
@@ -5767,6 +5671,13 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <label x="152.4" y="219.71" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
+<net name="BAT_SENSE" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="PF4(ADC4/TCK)"/>
+<wire x1="220.98" y1="184.15" x2="223.52" y2="184.15" width="0.1524" layer="91"/>
+<label x="223.52" y="184.15" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
 <net name="BTN1/SCL" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="PD0(SCL/INT0)"/>
@@ -5977,39 +5888,12 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <wire x1="370.84" y1="143.51" x2="373.38" y2="143.51" width="0.1524" layer="91"/>
 <label x="373.38" y="143.51" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<wire x1="33.02" y1="76.2" x2="20.32" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="C10" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="76.2" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="66.04" x2="20.32" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="66.04" x2="20.32" y2="66.04" width="0.1524" layer="91"/>
-<junction x="20.32" y="66.04"/>
-<pinref part="U1" gate="G$1" pin="EN"/>
-<pinref part="U1" gate="G$1" pin="IN"/>
-<label x="20.32" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
 <net name="SHIELD" class="0">
 <segment>
 <pinref part="B12" gate="G$1" pin="P2"/>
 <wire x1="281.94" y1="220.98" x2="287.02" y2="220.98" width="0.1524" layer="91"/>
 <label x="287.02" y="220.98" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="FTDI_OUT" class="1">
-<segment>
-<wire x1="205.74" y1="104.14" x2="205.74" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="205.74" y1="101.6" x2="199.39" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="199.39" y1="101.6" x2="191.77" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="101.6" x2="191.77" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="3V3OUT"/>
-<pinref part="C9" gate="G$1" pin="1"/>
-<label x="187.96" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="U3" gate="G$1" pin="VCCIO"/>
-<junction x="205.74" y="101.6"/>
-<junction x="191.77" y="101.6"/>
-<pinref part="C4" gate="G$1" pin="2"/>
-<junction x="199.39" y="101.6"/>
 </segment>
 </net>
 </nets>
