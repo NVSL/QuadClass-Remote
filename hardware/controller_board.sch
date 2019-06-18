@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
 <layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
@@ -200,14 +200,14 @@
 <wire x1="-3.75" y1="-3.75" x2="-3.75" y2="0" width="0.127" layer="21"/>
 <wire x1="-3.75" y1="-4.15" x2="-3.75" y2="0.7" width="0.127" layer="51"/>
 <wire x1="-3.75" y1="0.7" x2="3.75" y2="0.7" width="0.127" layer="51"/>
-<wire x1="-5.6" y1="-4.1" x2="-5.6" y2="1.4" width="0.127" layer="39"/>
-<wire x1="-5.6" y1="1.4" x2="5.7" y2="1.4" width="0.127" layer="39"/>
+<wire x1="-5.4" y1="-4" x2="-5.4" y2="1.4" width="0.05" layer="39"/>
+<wire x1="-5.4" y1="1.4" x2="5.4" y2="1.4" width="0.05" layer="39"/>
 <wire x1="-8.25" y1="-4.125" x2="8.25" y2="-4.125" width="0.127" layer="51"/>
 <text x="0" y="2.75" size="1.27" layer="25" font="vector" align="top-center">&gt;NAME</text>
 <wire x1="3.75" y1="-3.75" x2="3.75" y2="0" width="0.127" layer="21"/>
 <wire x1="3.75" y1="-4.15" x2="-3.75" y2="-4.15" width="0.127" layer="51"/>
 <wire x1="3.75" y1="0.7" x2="3.75" y2="-4.15" width="0.127" layer="51"/>
-<wire x1="5.7" y1="1.4" x2="5.7" y2="-4.1" width="0.127" layer="39"/>
+<wire x1="5.4" y1="1.4" x2="5.4" y2="-4" width="0.05" layer="39"/>
 <smd name="1" x="-1.3" y="0" dx="0.4" dy="1.35" layer="1"/>
 <smd name="10" x="-1.2" y="-2.675" dx="1.9" dy="1.9" layer="1"/>
 <smd name="11" x="3.8" y="-2.675" dx="1.8" dy="1.9" layer="1"/>
@@ -234,7 +234,7 @@
 <rectangle x1="-3.0875" y1="2.9656" x2="-2.7625" y2="3.9" layer="51"/>
 <rectangle x1="-3.7375" y1="-3.9" x2="-3.4125" y2="-2.9656" layer="51"/>
 <rectangle x1="-3.7375" y1="2.9656" x2="-3.4125" y2="3.9" layer="51"/>
-<text x="-3.81" y="1.27" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-5.31" y="-3.73" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
 <circle x="-4.225" y="-1.95" radius="0.4596" width="0.1524" layer="21"/>
 <rectangle x1="-4.3875" y1="-3.9" x2="-4.0625" y2="-2.9656" layer="51"/>
 <rectangle x1="-4.3875" y1="2.9656" x2="-4.0625" y2="3.9" layer="51"/>
@@ -242,8 +242,8 @@
 <wire x1="-5.038" y1="2.763" x2="5.038" y2="2.763" width="0.0508" layer="27"/>
 <wire x1="-5.2" y1="-2.925" x2="-5.2" y2="2.925" width="0.1524" layer="21"/>
 <wire x1="-5.2" y1="2.925" x2="5.2" y2="2.925" width="0.1524" layer="21"/>
-<wire x1="-6.6" y1="-5.4" x2="-6.6" y2="5.4" width="0.127" layer="39"/>
-<wire x1="-6.6" y1="5.4" x2="6.6" y2="5.4" width="0.127" layer="39"/>
+<wire x1="-5.9" y1="-4.9" x2="-5.9" y2="4.9" width="0.05" layer="39"/>
+<wire x1="-5.9" y1="4.9" x2="5.9" y2="4.9" width="0.05" layer="39"/>
 <text x="0" y="0" size="0.9" layer="27" font="vector" align="center">&gt;VALUE</text>
 <rectangle x1="0.1625" y1="-3.9" x2="0.4875" y2="-2.9656" layer="51"/>
 <rectangle x1="0.1625" y1="2.9656" x2="0.4875" y2="3.9" layer="51"/>
@@ -263,8 +263,8 @@
 <wire x1="5.038" y1="2.763" x2="5.038" y2="-2.763" width="0.0508" layer="27"/>
 <wire x1="5.2" y1="-2.925" x2="-5.2" y2="-2.925" width="0.1524" layer="21"/>
 <wire x1="5.2" y1="2.925" x2="5.2" y2="-2.925" width="0.1524" layer="21"/>
-<wire x1="6.6" y1="-5.4" x2="-6.6" y2="-5.4" width="0.127" layer="39"/>
-<wire x1="6.6" y1="5.4" x2="6.6" y2="-5.4" width="0.127" layer="39"/>
+<wire x1="5.9" y1="-4.9" x2="-5.9" y2="-4.9" width="0.05" layer="39"/>
+<wire x1="5.9" y1="4.9" x2="5.9" y2="-4.9" width="0.05" layer="39"/>
 <smd name="1" x="-4.225" y="-3.656" dx="0.348" dy="1.397" layer="1"/>
 <smd name="10" x="1.625" y="-3.656" dx="0.348" dy="1.397" layer="1"/>
 <smd name="11" x="2.275" y="-3.656" dx="0.348" dy="1.397" layer="1"/>
@@ -303,16 +303,16 @@
 <wire x1="-1.4224" y1="-0.8104" x2="-1.4224" y2="0.8104" width="0.2032" layer="51"/>
 <wire x1="-1.4224" y1="0.8104" x2="1.4224" y2="0.8104" width="0.2032" layer="51"/>
 <wire x1="-1.65" y1="0.8" x2="-1.65" y2="-0.8" width="0.2032" layer="21"/>
-<wire x1="-2.1" y1="-2.7" x2="2.1" y2="-2.7" width="0.127" layer="39"/>
-<wire x1="-2.1" y1="2.5" x2="-2.1" y2="-2.7" width="0.127" layer="39"/>
+<wire x1="-1.9" y1="-2.35" x2="1.9" y2="-2.35" width="0.05" layer="39"/>
+<wire x1="-1.9" y1="2.4" x2="-1.9" y2="-2.35" width="0.05" layer="39"/>
 <rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
 <rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
 <wire x1="1.4224" y1="-0.8104" x2="-1.4224" y2="-0.8104" width="0.2032" layer="51"/>
 <wire x1="1.4224" y1="0.8104" x2="1.4224" y2="-0.8104" width="0.2032" layer="51"/>
 <wire x1="1.65" y1="0.8" x2="1.65" y2="-0.8" width="0.2032" layer="21"/>
 <text x="1.978" y="0" size="0.9" layer="25" font="vector">&gt;NAME</text>
-<wire x1="2.1" y1="-2.7" x2="2.1" y2="2.5" width="0.127" layer="39"/>
-<wire x1="2.1" y1="2.5" x2="-2.1" y2="2.5" width="0.127" layer="39"/>
+<wire x1="1.9" y1="-2.35" x2="1.9" y2="2.4" width="0.05" layer="39"/>
+<wire x1="1.9" y1="2.4" x2="-1.9" y2="2.4" width="0.05" layer="39"/>
 <smd name="1" x="-0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
 <smd name="2" x="0" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
 <smd name="3" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
@@ -327,14 +327,14 @@
 <wire x1="-2.25" y1="2.55" x2="2.25" y2="2.55" width="0.12" layer="51"/>
 <wire x1="-2.25" y1="2.7924" x2="2.25" y2="2.7924" width="0.12" layer="21"/>
 <circle x="-2.9538" y="2.8074" radius="0.075" width="0" layer="21"/>
-<wire x1="-4.4" y1="-3.2" x2="-4.4" y2="3.2" width="0.127" layer="39"/>
-<wire x1="-4.4" y1="3.2" x2="4.3" y2="3.2" width="0.127" layer="39"/>
+<wire x1="-4.4" y1="-3.4" x2="-4.4" y2="3.4" width="0.05" layer="39"/>
+<wire x1="-4.4" y1="3.4" x2="4.4" y2="3.4" width="0.05" layer="39"/>
 <text x="0" y="-3.4274" size="1.27" layer="27" font="vector" align="top-center">&gt;VALUE</text>
 <text x="0" y="3.5174" size="1.27" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <wire x1="2.25" y1="-2.55" x2="-2.25" y2="-2.55" width="0.12" layer="51"/>
 <wire x1="2.25" y1="2.55" x2="2.25" y2="-2.55" width="0.12" layer="51"/>
-<wire x1="4.3" y1="-3.2" x2="-4.4" y2="-3.2" width="0.127" layer="39"/>
-<wire x1="4.3" y1="3.2" x2="4.3" y2="-3.2" width="0.127" layer="39"/>
+<wire x1="4.4" y1="-3.4" x2="-4.4" y2="-3.4" width="0.05" layer="39"/>
+<wire x1="4.4" y1="3.4" x2="4.4" y2="-3.4" width="0.05" layer="39"/>
 <smd name="1" x="-2.8717" y="2.275" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
 <smd name="10" x="2.8717" y="-1.625" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
 <smd name="11" x="2.8717" y="-0.975" dx="1.5719" dy="0.4068" layer="1" thermals="no"/>
@@ -357,13 +357,13 @@
 <wire x1="-3.95" y1="-2" x2="-3.3" y2="-2" width="0.2032" layer="21"/>
 <wire x1="-3.95" y1="-2" x2="-3.95" y2="3" width="0.2032" layer="21"/>
 <wire x1="-3.95" y1="3" x2="21.95" y2="3" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="-2.5" x2="-4.5" y2="3.5" width="0.127" layer="39"/>
-<wire x1="-4.5" y1="3.5" x2="22.5" y2="3.5" width="0.127" layer="39"/>
+<wire x1="-4.4" y1="-2.4" x2="-4.4" y2="3.4" width="0.05" layer="39"/>
+<wire x1="-4.4" y1="3.4" x2="22.4" y2="3.4" width="0.05" layer="39"/>
 <wire x1="21.3" y1="-2" x2="21.3" y2="0" width="0.2032" layer="21"/>
 <wire x1="21.95" y1="-2" x2="21.3" y2="-2" width="0.2032" layer="21"/>
 <wire x1="21.95" y1="3" x2="21.95" y2="-2" width="0.2032" layer="21"/>
-<wire x1="22.5" y1="-2.5" x2="-4.5" y2="-2.5" width="0.127" layer="39"/>
-<wire x1="22.5" y1="3.5" x2="22.5" y2="-2.5" width="0.127" layer="39"/>
+<wire x1="22.4" y1="-2.4" x2="-4.4" y2="-2.4" width="0.05" layer="39"/>
+<wire x1="22.4" y1="3.4" x2="22.4" y2="-2.4" width="0.05" layer="39"/>
 <text x="8.5" y="4.4325" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
 <pad name="1" x="-2" y="0" drill="0.9" shape="square"/>
 <pad name="10" x="16" y="0" drill="0.9"/>
@@ -449,22 +449,21 @@
 <pad name="V" x="10.16" y="0" drill="1.016" rot="R90"/>
 </package>
 <package name="TEST-POINT-KEYSTONE-5000">
-<circle x="0" y="0" radius="1.27" width="0.127" layer="39"/>
+<circle x="0" y="0" radius="1.4" width="0.05" layer="39"/>
 <text x="0" y="2" size="1" layer="25" font="vector" align="center">&gt;NAME</text>
 <pad name="T" x="0" y="0" drill="1"/>
-<circle x="0" y="0" radius="1.27" width="0.127" layer="21"/>
 </package>
 <package name="BOURNS-PEC12R">
 <hole x="-5.7" y="0" drill="2.2"/>
-<wire x1="-6.2" y1="-6.7" x2="-6.2" y2="6.7" width="0.127" layer="39"/>
-<wire x1="-6.2" y1="6.7" x2="6.2" y2="6.7" width="0.127" layer="39"/>
+<wire x1="-7.35" y1="-9.1" x2="-7.35" y2="8.6" width="0.05" layer="39"/>
+<wire x1="-7.35" y1="8.6" x2="7.35" y2="8.6" width="0.05" layer="39"/>
 <text x="0" y="-11.43" size="1.778" layer="25" font="vector" align="center">&gt;NAME</text>
 <circle x="0" y="0" radius="3" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="5.715" width="0.1" layer="21"/>
 <circle x="0" y="0" radius="6.35" width="0.1" layer="21"/>
 <hole x="5.7" y="0" drill="2.2"/>
-<wire x1="6.2" y1="-6.7" x2="-6.2" y2="-6.7" width="0.127" layer="39"/>
-<wire x1="6.2" y1="6.7" x2="6.2" y2="-6.7" width="0.127" layer="39"/>
+<wire x1="7.35" y1="-9.1" x2="-7.35" y2="-9.1" width="0.05" layer="39"/>
+<wire x1="7.35" y1="8.6" x2="7.35" y2="-9.1" width="0.05" layer="39"/>
 <pad name="A" x="-2.5" y="-7.5" drill="1.3"/>
 <pad name="B" x="2.5" y="-7.5" drill="1.3"/>
 <pad name="BUTA" x="-2.5" y="7" drill="1.3" shape="square"/>
@@ -530,10 +529,6 @@
 <text x="-2.5" y="-3.5" size="1.27" layer="25" font="vector">&gt;NAME</text>
 <wire x1="-4.2" y1="-1.8" x2="4.3" y2="-1.8" width="0.127" layer="51"/>
 <wire x1="-4.2" y1="1.8" x2="-4.2" y2="-1.8" width="0.127" layer="51"/>
-<wire x1="-4.25" y1="-1.8" x2="4.25" y2="-1.8" width="0.127" layer="39"/>
-<wire x1="-4.25" y1="1.8" x2="-4.25" y2="-1.8" width="0.127" layer="39"/>
-<wire x1="4.25" y1="-1.8" x2="4.25" y2="1.8" width="0.127" layer="39"/>
-<wire x1="4.25" y1="1.8" x2="-4.25" y2="1.8" width="0.127" layer="39"/>
 <wire x1="4.3" y1="-1.8" x2="4.3" y2="1.8" width="0.127" layer="51"/>
 <wire x1="4.3" y1="1.8" x2="-4.2" y2="1.8" width="0.127" layer="51"/>
 <smd name="1" x="-2.5" y="-1.2" dx="1" dy="1.6" layer="1"/>
@@ -543,10 +538,10 @@
 <wire x1="4.3" y1="1.8" x2="-4.2" y2="1.8" width="0.127" layer="21"/>
 <wire x1="-4.2" y1="-1.8" x2="4.3" y2="-1.8" width="0.127" layer="21"/>
 <wire x1="4.3" y1="-1.8" x2="4.3" y2="1.8" width="0.127" layer="21"/>
-<wire x1="-5" y1="3" x2="-5" y2="-3" width="0.127" layer="39"/>
-<wire x1="-5" y1="-3" x2="5" y2="-3" width="0.127" layer="39"/>
-<wire x1="5" y1="-3" x2="5" y2="3" width="0.127" layer="39"/>
-<wire x1="5" y1="3" x2="-5" y2="3" width="0.127" layer="39"/>
+<wire x1="-4.9" y1="2.4" x2="-4.9" y2="-2.4" width="0.05" layer="39"/>
+<wire x1="-4.9" y1="-2.4" x2="4.9" y2="-2.4" width="0.05" layer="39"/>
+<wire x1="4.9" y1="-2.4" x2="4.9" y2="2.4" width="0.05" layer="39"/>
+<wire x1="4.9" y1="2.4" x2="-4.9" y2="2.4" width="0.05" layer="39"/>
 </package>
 <package name="POWER-SWITCH-MFS201N-9-Z">
 <wire x1="-10.16" y1="-2.54" x2="-10.16" y2="2.54" width="0.127" layer="21"/>
@@ -688,10 +683,10 @@
 <rectangle x1="2.42" y1="15.48625" x2="3.42" y2="16.48625" layer="51"/>
 <rectangle x1="4.96" y1="15.48625" x2="5.96" y2="16.48625" layer="51"/>
 <rectangle x1="7.5" y1="15.48625" x2="8.5" y2="16.48625" layer="51"/>
-<wire x1="-16.765" y1="18.52625" x2="-16.765" y2="13.44625" width="0.127" layer="39"/>
-<wire x1="-16.765" y1="13.44625" x2="9.905" y2="13.44625" width="0.127" layer="39"/>
-<wire x1="9.905" y1="13.44625" x2="9.905" y2="18.52625" width="0.127" layer="39"/>
-<wire x1="9.905" y1="18.52625" x2="-16.765" y2="18.52625" width="0.127" layer="39"/>
+<wire x1="-16.9" y1="18.9" x2="-16.9" y2="13.1" width="0.05" layer="39"/>
+<wire x1="-16.9" y1="13.1" x2="9.9" y2="13.1" width="0.05" layer="39"/>
+<wire x1="9.9" y1="13.1" x2="9.9" y2="18.9" width="0.05" layer="39"/>
+<wire x1="9.9" y1="18.9" x2="-16.9" y2="18.9" width="0.05" layer="39"/>
 <circle x="-14.86" y="14.08125" radius="0.127" width="0.508" layer="21"/>
 <circle x="-37.5" y="15.5" radius="1.1" width="0.127" layer="100"/>
 <circle x="-37.5" y="-15.5" radius="1.1" width="0.127" layer="100"/>
@@ -701,17 +696,13 @@
 <package name="LED-2X-LITE-ON-1.6MMX1.5MM">
 <wire x1="-1.4" y1="-1.05" x2="1.4" y2="-1.05" width="0.127" layer="51"/>
 <wire x1="-1.4" y1="-1.05" x2="1.4" y2="-1.05" width="0.127" layer="21"/>
-<wire x1="-1.4" y1="1.05" x2="-1.4" y2="-1.05" width="0.127" layer="51"/>
-<wire x1="-1.4" y1="1.05" x2="-1.4" y2="-1.05" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="-1.7" x2="-2.5" y2="1.7" width="0.127" layer="39"/>
-<wire x1="-2.5" y1="1.7" x2="2.5" y2="1.7" width="0.127" layer="39"/>
-<text x="-1.5" y="-0.5" size="0.7" layer="21" font="vector" align="center-right">&gt;COLOR2</text>
-<text x="-1.5" y="0.5" size="0.7" layer="21" font="vector" align="center-right">&gt;COLOR1</text>
+<wire x1="-1.9" y1="-1.4" x2="-1.9" y2="1.4" width="0.05" layer="39"/>
+<wire x1="-1.9" y1="1.4" x2="1.9" y2="1.4" width="0.05" layer="39"/>
 <text x="0.03" y="2.16" size="1.27" layer="25" font="vector" rot="R180" align="center">&gt;NAME</text>
 <wire x1="1.4" y1="-1.05" x2="1.4" y2="1.05" width="0.127" layer="51"/>
 <wire x1="1.4" y1="1.05" x2="-1.4" y2="1.05" width="0.127" layer="51"/>
-<wire x1="2.5" y1="-1.7" x2="-2.5" y2="-1.7" width="0.127" layer="39"/>
-<wire x1="2.5" y1="1.7" x2="2.5" y2="-1.7" width="0.127" layer="39"/>
+<wire x1="1.9" y1="-1.4" x2="-1.9" y2="-1.4" width="0.05" layer="39"/>
+<wire x1="1.9" y1="1.4" x2="1.9" y2="-1.4" width="0.05" layer="39"/>
 <wire x1="1.4" y1="-1.05" x2="1.4" y2="1.05" width="0.127" layer="21"/>
 <wire x1="1.4" y1="1.05" x2="-1.4" y2="1.05" width="0.127" layer="21"/>
 <circle x="1.8" y="0" radius="0.1" width="0.2" layer="21"/>
@@ -1490,8 +1481,8 @@
 <wire x1="-4.5" y1="4.2" x2="-4.2" y2="4.5" width="0.2032" layer="21"/>
 <wire x1="-4.5" y1="4.5" x2="-4.5" y2="-4.5" width="0.09" layer="51"/>
 <circle x="-4.8" y="4.8" radius="0.14141875" width="0.3" layer="21"/>
-<wire x1="-6.4" y1="-6.4" x2="-6.4" y2="6.4" width="0.127" layer="39"/>
-<wire x1="-6.4" y1="6.4" x2="6.5" y2="6.4" width="0.127" layer="39"/>
+<wire x1="-6.4" y1="4.75" x2="-4.75" y2="4.75" width="0.05" layer="39"/>
+<wire x1="-4.75" y1="4.75" x2="-4.75" y2="6.4" width="0.05" layer="39"/>
 <text x="-6.666" y="5.2922" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
 <wire x1="0" y1="-4.1" x2="0" y2="-5.7" width="0.2" layer="41"/>
 <wire x1="0" y1="4.1" x2="0" y2="5.7" width="0.2" layer="41"/>
@@ -1518,11 +1509,8 @@
 <wire x1="4.1" y1="-3.5" x2="5.7" y2="-3.5" width="0.2" layer="41"/>
 <wire x1="4.1" y1="0" x2="5.7" y2="0" width="0.2" layer="41"/>
 <wire x1="4.1" y1="0.5" x2="5.7" y2="0.5" width="0.2" layer="41"/>
-<wire x1="4.1" y1="0.5" x2="5.7" y2="0.5" width="0.2" layer="41"/>
-<wire x1="4.1" y1="1" x2="5.7" y2="1" width="0.2" layer="41"/>
 <wire x1="4.1" y1="1" x2="5.7" y2="1" width="0.2" layer="41"/>
 <wire x1="4.1" y1="1.5" x2="5.7" y2="1.5" width="0.2" layer="41"/>
-<wire x1="4.1" y1="2" x2="5.7" y2="2" width="0.2" layer="41"/>
 <wire x1="4.1" y1="2" x2="5.7" y2="2" width="0.2" layer="41"/>
 <wire x1="4.1" y1="2.5" x2="5.7" y2="2.5" width="0.2" layer="41"/>
 <wire x1="4.1" y1="3" x2="5.7" y2="3" width="0.2" layer="41"/>
@@ -1533,8 +1521,12 @@
 <wire x1="4.5" y1="4.5" x2="-4.5" y2="4.5" width="0.09" layer="51"/>
 <wire x1="4.5" y1="4.5" x2="4.2" y2="4.5" width="0.2032" layer="21"/>
 <wire x1="4.5" y1="4.5" x2="4.5" y2="4.2" width="0.2032" layer="21"/>
-<wire x1="6.5" y1="-6.4" x2="-6.4" y2="-6.4" width="0.127" layer="39"/>
-<wire x1="6.5" y1="6.4" x2="6.5" y2="-6.4" width="0.127" layer="39"/>
+<wire x1="6.3" y1="-4.65" x2="4.65" y2="-4.65" width="0.05" layer="39"/>
+<wire x1="4.65" y1="-4.65" x2="4.65" y2="-6.4" width="0.05" layer="39"/>
+<wire x1="4.65" y1="-6.4" x2="-4.65" y2="-6.4" width="0.05" layer="39"/>
+<wire x1="-4.65" y1="-6.4" x2="-4.65" y2="-4.65" width="0.05" layer="39"/>
+<wire x1="-4.65" y1="-4.65" x2="-6.4" y2="-4.65" width="0.05" layer="39"/>
+<wire x1="-6.4" y1="-4.65" x2="-6.4" y2="4.75" width="0.05" layer="39"/>
 <smd name="1" x="-4.881" y="3.75" dx="0.28" dy="1.562" layer="1" rot="R270"/>
 <smd name="10" x="-4.881" y="-0.75" dx="0.28" dy="1.562" layer="1" rot="R270"/>
 <smd name="11" x="-4.881" y="-1.25" dx="0.28" dy="1.562" layer="1" rot="R270"/>
@@ -1599,20 +1591,24 @@
 <smd name="7" x="-4.881" y="0.75" dx="0.28" dy="1.562" layer="1" rot="R270"/>
 <smd name="8" x="-4.881" y="0.25" dx="0.28" dy="1.562" layer="1" rot="R270"/>
 <smd name="9" x="-4.881" y="-0.25" dx="0.28" dy="1.562" layer="1" rot="R270"/>
+<wire x1="-4.75" y1="6.4" x2="4.65" y2="6.4" width="0.05" layer="39"/>
+<wire x1="4.65" y1="6.4" x2="4.65" y2="4.65" width="0.05" layer="39"/>
+<wire x1="4.65" y1="4.65" x2="6.3" y2="4.65" width="0.05" layer="39"/>
+<wire x1="6.3" y1="4.65" x2="6.3" y2="-4.65" width="0.05" layer="39"/>
 </package>
 <package name="BALUN">
 <circle x="-1.4" y="-0.4" radius="0.1" width="0.2" layer="21"/>
 <wire x1="-1" y1="-0.625" x2="1" y2="-0.625" width="0.127" layer="51"/>
 <wire x1="-1" y1="0.625" x2="-1" y2="-0.625" width="0.127" layer="51"/>
 <wire x1="-1" y1="0.625" x2="-1" y2="-0.625" width="0.127" layer="21"/>
-<wire x1="-1.3" y1="-1.5" x2="-1.3" y2="1.5" width="0.127" layer="39"/>
-<wire x1="-1.3" y1="1.5" x2="1.3" y2="1.5" width="0.127" layer="39"/>
+<wire x1="-1.4" y1="-1.9" x2="-1.4" y2="1.9" width="0.05" layer="39"/>
+<wire x1="-1.4" y1="1.9" x2="1.4" y2="1.9" width="0.05" layer="39"/>
 <text x="0" y="2.25" size="1.27" layer="25" font="vector" rot="R180" align="center">&gt;NAME</text>
 <wire x1="1" y1="-0.625" x2="1" y2="0.625" width="0.127" layer="51"/>
 <wire x1="1" y1="0.625" x2="-1" y2="0.625" width="0.127" layer="51"/>
 <wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.127" layer="21"/>
-<wire x1="1.3" y1="-1.5" x2="-1.3" y2="-1.5" width="0.127" layer="39"/>
-<wire x1="1.3" y1="1.5" x2="1.3" y2="-1.5" width="0.127" layer="39"/>
+<wire x1="1.4" y1="-1.9" x2="-1.4" y2="-1.9" width="0.05" layer="39"/>
+<wire x1="1.4" y1="1.9" x2="1.4" y2="-1.9" width="0.05" layer="39"/>
 <smd name="1" x="-0.65" y="-0.8" dx="0.35" dy="1" layer="1"/>
 <smd name="2" x="0" y="-0.8" dx="0.35" dy="1" layer="1"/>
 <smd name="3" x="0.65" y="-0.8" dx="0.35" dy="1" layer="1"/>
@@ -2138,13 +2134,11 @@
 <wire x1="-1.42" y1="0.3" x2="-0.82" y2="0.9" width="0.12" layer="51"/>
 <wire x1="-2.47" y1="-0.9" x2="1.35" y2="-0.9" width="0.12" layer="21"/>
 <wire x1="-2.47" y1="0.9" x2="-2.47" y2="-0.9" width="0.12" layer="21"/>
-<wire x1="-2.54" y1="-1.15" x2="-2.54" y2="1.15" width="0.05" layer="39"/>
-<wire x1="-2.54" y1="1.15" x2="2.54" y2="1.15" width="0.05" layer="39"/>
+<wire x1="-2.65" y1="-1.4" x2="-2.65" y2="1.4" width="0.05" layer="39"/>
+<wire x1="-2.65" y1="1.4" x2="2.75" y2="1.4" width="0.05" layer="39"/>
 <circle x="-2.79" y="0" radius="0.1" width="0.2" layer="21"/>
-<circle x="0" y="0" radius="0.25" width="0.05" layer="39"/>
-<text x="0" y="0" size="0.9" layer="27" font="vector">&gt;VALUE</text>
-<text x="0" y="0" size="1.27" layer="25" font="vector">&gt;NAME</text>
-<wire x1="0" y1="0.35" x2="0" y2="-0.35" width="0.05" layer="39"/>
+<text x="0" y="-1.6" size="0.9" layer="27" font="vector" align="center">&gt;VALUE</text>
+<text x="0" y="1.6" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
 <polygon width="0.01" layer="31">
 <vertex x="-1.665" y="0.4"/>
 <vertex x="-1.24" y="0.4"/>
@@ -2325,12 +2319,11 @@
 <vertex x="2.1213" y="-0.3975"/>
 <vertex x="2.09" y="-0.4"/>
 </polygon>
-<wire x1="0.35" y1="0" x2="-0.35" y2="0" width="0.05" layer="39"/>
 <wire x1="1.35" y1="0.9" x2="-2.47" y2="0.9" width="0.12" layer="21"/>
 <wire x1="1.42" y1="-0.9" x2="-1.42" y2="-0.9" width="0.12" layer="51"/>
 <wire x1="1.42" y1="0.9" x2="1.42" y2="-0.9" width="0.12" layer="51"/>
-<wire x1="2.54" y1="-1.15" x2="-2.54" y2="-1.15" width="0.05" layer="39"/>
-<wire x1="2.54" y1="1.15" x2="2.54" y2="-1.15" width="0.05" layer="39"/>
+<wire x1="2.75" y1="-1.4" x2="-2.65" y2="-1.4" width="0.05" layer="39"/>
+<wire x1="2.75" y1="1.4" x2="2.75" y2="-1.4" width="0.05" layer="39"/>
 <smd name="A" x="1.665" y="0" dx="1.25" dy="0.8" layer="1" roundness="50" stop="no" cream="no"/>
 <smd name="C" x="-1.665" y="0" dx="1.25" dy="0.8" layer="1" roundness="50" rot="R180" stop="no" cream="no"/>
 </package>
@@ -2340,8 +2333,8 @@
 <wire x1="-2.31" y1="2.31" x2="2.31" y2="2.31" width="0.12" layer="21"/>
 <wire x1="-2.5" y1="-1.23" x2="-2.5" y2="2.5" width="0.12" layer="51"/>
 <wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.12" layer="51"/>
-<wire x1="-5" y1="-3" x2="-5" y2="3" width="0.05" layer="39"/>
-<wire x1="-5" y1="3" x2="5" y2="3" width="0.05" layer="39"/>
+<wire x1="-4.9" y1="-2.9" x2="-4.9" y2="2.9" width="0.05" layer="39"/>
+<wire x1="-4.9" y1="2.9" x2="4.9" y2="2.9" width="0.05" layer="39"/>
 <circle x="0" y="0" radius="0.25" width="0.05" layer="39"/>
 <circle x="0" y="0" radius="1.25" width="0.2" layer="21"/>
 <text x="-3" y="0" size="0.9" layer="25" font="vector" rot="R180" align="center-left">&gt;NAME</text>
@@ -2350,8 +2343,8 @@
 <wire x1="2.31" y1="2.31" x2="2.31" y2="-2.31" width="0.12" layer="21"/>
 <wire x1="2.5" y1="-2.5" x2="-1.23" y2="-2.5" width="0.12" layer="51"/>
 <wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.12" layer="51"/>
-<wire x1="5" y1="-3" x2="-5" y2="-3" width="0.05" layer="39"/>
-<wire x1="5" y1="3" x2="5" y2="-3" width="0.05" layer="39"/>
+<wire x1="4.9" y1="-2.9" x2="-4.9" y2="-2.9" width="0.05" layer="39"/>
+<wire x1="4.9" y1="2.9" x2="4.9" y2="-2.9" width="0.05" layer="39"/>
 <smd name="1" x="-3.6" y="-1.5" dx="1.4" dy="1.6" layer="1" rot="R90"/>
 <smd name="2" x="3.6" y="-1.5" dx="1.4" dy="1.6" layer="1" rot="R90"/>
 <smd name="3" x="-3.6" y="1.5" dx="1.4" dy="1.6" layer="1" rot="R90"/>
@@ -2375,8 +2368,8 @@
 <wire x1="-3.81" y1="-1.905" x2="-3.175" y2="-2.54" width="0.2032" layer="21"/>
 <wire x1="-3.81" y1="-1.905" x2="-3.81" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="-3.81" y1="1.905" x2="-3.175" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="-4.5" y1="-5" x2="-4.5" y2="5" width="0.127" layer="39"/>
-<wire x1="-4.5" y1="5" x2="4.5" y2="5" width="0.127" layer="39"/>
+<wire x1="-4.4" y1="-5.4" x2="-4.4" y2="4.9" width="0.05" layer="39"/>
+<wire x1="-4.4" y1="4.9" x2="4.4" y2="4.9" width="0.05" layer="39"/>
 <wire x1="0.635" y1="-2.54" x2="1.27" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="0.635" y1="2.54" x2="1.27" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="1.27" y1="-1.905" x2="1.905" y2="-2.54" width="0.2032" layer="21"/>
@@ -2390,8 +2383,8 @@
 <wire x1="3.175" y1="-4.575" x2="-3.175" y2="-4.575" width="0.3" layer="21" style="shortdash"/>
 <wire x1="3.175" y1="2.54" x2="3.81" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="3.81" y1="1.905" x2="3.81" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="4.5" y1="-5" x2="-4.5" y2="-5" width="0.127" layer="39"/>
-<wire x1="4.5" y1="5" x2="4.5" y2="-5" width="0.127" layer="39"/>
+<wire x1="4.4" y1="-5.4" x2="-4.4" y2="-5.4" width="0.05" layer="39"/>
+<wire x1="4.4" y1="4.9" x2="4.4" y2="-5.4" width="0.05" layer="39"/>
 <smd name="1" x="-2.54" y="-2.54" dx="1" dy="3.15" layer="1"/>
 <smd name="2" x="-2.54" y="2.54" dx="1" dy="3.15" layer="1"/>
 <smd name="3" x="0" y="-2.54" dx="1" dy="3.15" layer="1"/>
@@ -2464,21 +2457,21 @@
 <smd name="TESTPOINT" x="8.1686" y="17.6047" dx="1.27" dy="1.27" layer="1" stop="no" thermals="no" cream="no"/>
 </package>
 <package name="ANTENNA-CHIP">
-<text x="-1.64" y="2.431" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="-1.64" y="2.431" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
 <wire x1="-2.413" y1="-1.143" x2="2.413" y2="-1.143" width="0.2032" layer="21"/>
 <wire x1="-2.413" y1="1.143" x2="2.413" y2="1.143" width="0.2032" layer="21"/>
 <wire x1="-3.9" y1="-1.15" x2="-3.9" y2="1.15" width="0.127" layer="51"/>
 <wire x1="-3.9" y1="1.15" x2="3.9" y2="1.15" width="0.127" layer="51"/>
-<wire x1="-4.2" y1="-1.7" x2="-4.2" y2="1.7" width="0.127" layer="39"/>
-<wire x1="-4.2" y1="1.7" x2="4.2" y2="1.7" width="0.127" layer="39"/>
+<wire x1="-4.4" y1="-1.9" x2="-4.4" y2="1.9" width="0.05" layer="39"/>
+<wire x1="-4.4" y1="1.9" x2="4.4" y2="1.9" width="0.05" layer="39"/>
 <text x="0.508" y="0.127" size="0.8128" layer="51" font="vector">AF</text>
 <wire x1="1.27" y1="0" x2="2.159" y2="0" width="0.2032" layer="21"/>
 <wire x1="2.159" y1="0" x2="1.778" y2="-0.381" width="0.2032" layer="21"/>
 <wire x1="2.159" y1="0" x2="1.778" y2="0.381" width="0.2032" layer="21"/>
 <wire x1="3.9" y1="-1.15" x2="-3.9" y2="-1.15" width="0.127" layer="51"/>
 <wire x1="3.9" y1="1.15" x2="3.9" y2="-1.15" width="0.127" layer="51"/>
-<wire x1="4.2" y1="-1.7" x2="-4.2" y2="-1.7" width="0.127" layer="39"/>
-<wire x1="4.2" y1="1.7" x2="4.2" y2="-1.7" width="0.127" layer="39"/>
+<wire x1="4.4" y1="-1.9" x2="-4.4" y2="-1.9" width="0.05" layer="39"/>
+<wire x1="4.4" y1="1.9" x2="4.4" y2="-1.9" width="0.05" layer="39"/>
 <smd name="FEED" x="-3.302" y="0" dx="1.016" dy="2.54" layer="1" rot="R180"/>
 <smd name="NC" x="3.302" y="0" dx="1.016" dy="2.54" layer="1" rot="R180"/>
 </package>
@@ -2552,10 +2545,10 @@
 <wire x1="-8" y1="5.5" x2="7.873" y2="5.5" width="0.127" layer="21"/>
 <wire x1="7.873" y1="5.5" x2="7.873" y2="3" width="0.127" layer="21"/>
 <wire x1="7.873" y1="3" x2="-8" y2="3" width="0.127" layer="21"/>
-<wire x1="-9" y1="-2" x2="-9" y2="12" width="0.127" layer="39"/>
-<wire x1="-9" y1="12" x2="9" y2="12" width="0.127" layer="39"/>
-<wire x1="9" y1="12" x2="9" y2="-2" width="0.127" layer="39"/>
-<wire x1="9" y1="-2" x2="-9" y2="-2" width="0.127" layer="39"/>
+<wire x1="-8.9" y1="-1.9" x2="-8.9" y2="11.9" width="0.05" layer="39"/>
+<wire x1="-8.9" y1="11.9" x2="8.9" y2="11.9" width="0.05" layer="39"/>
+<wire x1="8.9" y1="11.9" x2="8.9" y2="-1.9" width="0.05" layer="39"/>
+<wire x1="8.9" y1="-1.9" x2="-8.9" y2="-1.9" width="0.05" layer="39"/>
 <text x="0" y="-2" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
 <text x="-8" y="2" size="1.27" layer="21" font="vector" align="center">&gt;LEFT_PIN</text>
 <text x="8" y="2" size="1.27" layer="21" font="vector" align="center">&gt;RIGHT_PIN</text>
@@ -2678,12 +2671,12 @@
 </package>
 <package name="BATTERY-TERMINALS">
 <text x="-1.27" y="2.54" size="1.27" layer="21" font="vector" rot="SR90" align="center">+</text>
-<wire x1="-2.81" y1="-3" x2="-2.81" y2="1.6" width="0.127" layer="39"/>
-<wire x1="-2.81" y1="1.6" x2="2.81" y2="1.6" width="0.127" layer="39"/>
+<wire x1="-2.9" y1="-3.4" x2="-2.9" y2="2.9" width="0.05" layer="39"/>
+<wire x1="-2.9" y1="2.9" x2="2.9" y2="2.9" width="0.05" layer="39"/>
 <text x="0" y="-4" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
 <text x="1.27" y="2.54" size="1.27" layer="21" font="vector" rot="SR90" align="center">-</text>
-<wire x1="2.81" y1="-3" x2="-2.81" y2="-3" width="0.127" layer="39"/>
-<wire x1="2.81" y1="1.6" x2="2.81" y2="-3" width="0.127" layer="39"/>
+<wire x1="2.9" y1="-3.4" x2="-2.9" y2="-3.4" width="0.05" layer="39"/>
+<wire x1="2.9" y1="2.9" x2="2.9" y2="-3.4" width="0.05" layer="39"/>
 <pad name="+" x="-1.27" y="-0.635" drill="1.5" shape="long" rot="R90"/>
 <pad name="-" x="1.27" y="-0.635" drill="1.5" shape="long" rot="R90"/>
 <text x="-1.27" y="2.54" size="1.27" layer="21" font="vector" rot="SR90" align="center">+</text>
@@ -2707,7 +2700,7 @@
 <wire x1="8" y1="-4" x2="8" y2="4" width="0.127" layer="39"/>
 <wire x1="8" y1="4" x2="-6" y2="4" width="0.127" layer="39"/>
 </package>
-<package name="RESC1608X55" urn="urn:adsk.eagle:footprint:11118064/1">
+<package name="RESC1608X55" urn="urn:adsk.eagle:footprint:11118064/1" locally_modified="yes">
 <description>Chip, 1.60 X 0.80 X 0.55 mm body
 &lt;p&gt;Chip package with body size 1.60 X 0.80 X 0.55 mm&lt;/p&gt;</description>
 <wire x1="0.85" y1="0.7786" x2="-0.85" y2="0.7786" width="0.12" layer="21"/>
@@ -2720,6 +2713,10 @@
 <smd name="2" x="0.8204" y="0" dx="0.7884" dy="0.9291" layer="1"/>
 <text x="0" y="1.4136" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1.4136" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<wire x1="-1.9" y1="0.9" x2="1.9" y2="0.9" width="0.05" layer="39"/>
+<wire x1="1.9" y1="0.9" x2="1.9" y2="-0.9" width="0.05" layer="39"/>
+<wire x1="1.9" y1="-0.9" x2="-1.9" y2="-0.9" width="0.05" layer="39"/>
+<wire x1="-1.9" y1="-0.9" x2="-1.9" y2="0.9" width="0.05" layer="39"/>
 </package>
 <package name="RESC1005X40" urn="urn:adsk.eagle:footprint:11118074/1">
 <description>Chip, 1.00 X 0.50 X 0.40 mm body
@@ -2738,7 +2735,6 @@
 <package name="RESCAXS50P200X100X45-8" urn="urn:adsk.eagle:footprint:10895054/1" locally_modified="yes">
 <description>8-Chiparray 2-Side Convex, 0.50 mm pitch, 2.00 X 1.00 X 0.45 mm body
 &lt;p&gt;8-pin Chiparray 2-Side Convex package with 0.50 mm pitch with body size 2.00 X 1.00 X 0.45 mm&lt;/p&gt;</description>
-<circle x="-1.004" y="1.4736" radius="0.25" width="0" layer="21"/>
 <wire x1="-0.5" y1="1.2836" x2="0.5" y2="1.2836" width="0.12" layer="21"/>
 <wire x1="-0.5" y1="-1.2836" x2="0.5" y2="-1.2836" width="0.12" layer="21"/>
 <wire x1="0.55" y1="-1.05" x2="-0.55" y2="-1.05" width="0.12" layer="51"/>
@@ -2755,10 +2751,10 @@
 <smd name="8" x="0.6196" y="0.75" dx="0.79" dy="0.3391" layer="1"/>
 <text x="0" y="2.3586" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
 <text x="0" y="-1.9186" size="0.9" layer="27" font="vector" align="center">&gt;VALUE</text>
-<wire x1="-1.9" y1="1.8" x2="-1.9" y2="-1.7" width="0.1" layer="39"/>
-<wire x1="-1.9" y1="-1.7" x2="1.8" y2="-1.7" width="0.1" layer="39"/>
-<wire x1="1.8" y1="-1.7" x2="1.8" y2="1.8" width="0.1" layer="39"/>
-<wire x1="1.8" y1="1.8" x2="-1.9" y2="1.8" width="0.1" layer="39"/>
+<wire x1="-1.55" y1="1.45" x2="-1.55" y2="-1.35" width="0.05" layer="39"/>
+<wire x1="-1.55" y1="-1.35" x2="1.45" y2="-1.35" width="0.05" layer="39"/>
+<wire x1="1.45" y1="-1.35" x2="1.45" y2="1.45" width="0.05" layer="39"/>
+<wire x1="1.45" y1="1.45" x2="-1.55" y2="1.45" width="0.05" layer="39"/>
 </package>
 <package name="CAPC1608X100" urn="urn:adsk.eagle:footprint:11135720/1" locally_modified="yes">
 <description>Chip, 1.60 X 0.80 X 1.00 mm body
@@ -2773,10 +2769,10 @@
 <smd name="2" x="0.7533" y="0" dx="1.0088" dy="1.0153" layer="1"/>
 <text x="0" y="1" size="0.9" layer="25" font="vector" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-1" size="0.9" layer="27" font="vector" align="top-center">&gt;VALUE</text>
-<wire x1="-2.2" y1="1.4" x2="2.2" y2="1.4" width="0.1" layer="39"/>
-<wire x1="2.2" y1="1.4" x2="2.2" y2="-1.4" width="0.1" layer="39"/>
-<wire x1="2.2" y1="-1.4" x2="-2.2" y2="-1.4" width="0.1" layer="39"/>
-<wire x1="-2.2" y1="-1.4" x2="-2.2" y2="1.4" width="0.1" layer="39"/>
+<wire x1="-1.9" y1="0.9" x2="-1.9" y2="-0.9" width="0.05" layer="39"/>
+<wire x1="-1.9" y1="-0.9" x2="1.9" y2="-0.9" width="0.05" layer="39"/>
+<wire x1="1.9" y1="-0.9" x2="1.9" y2="0.9" width="0.05" layer="39"/>
+<wire x1="1.9" y1="0.9" x2="-1.9" y2="0.9" width="0.05" layer="39"/>
 </package>
 <package name="SCREW-TERMINAL-1X2-2.54MM">
 <description>Header, Vertical, 2.54 mm pitch; 0.635 mm lead width, 4 pins, 1 row, 4 pins per row, 10.16 mm L X 2.54 mm W X 8.38 mm H body&lt;p&gt;&lt;i&gt;PCB Libraries Packages&lt;/i&gt;</description>
@@ -2819,6 +2815,29 @@
 <wire x1="7" y1="9" x2="-7" y2="9" width="0.127" layer="39"/>
 <wire x1="-7" y1="9" x2="-7" y2="-6" width="0.127" layer="39"/>
 </package>
+<package name="OSCCC320X250X85" urn="urn:adsk.eagle:footprint:11739649/1" locally_modified="yes">
+<description>Oscillator Corner Concave, 3.20 X 2.50 X 0.85 mm body
+&lt;p&gt;Oscillator Corner Concave package with body size 3.20 X 2.50 X 0.85 mm&lt;/p&gt;</description>
+<circle x="-2.3099" y="-0.95" radius="0.25" width="0" layer="21"/>
+<wire x1="-1.8659" y1="0.1901" x2="-1.8659" y2="-0.1901" width="0.12" layer="21"/>
+<wire x1="1.8659" y1="0.1901" x2="1.8659" y2="-0.1901" width="0.12" layer="21"/>
+<wire x1="-0.2901" y1="1.5159" x2="0.2901" y2="1.5159" width="0.12" layer="21"/>
+<wire x1="-0.2901" y1="-1.5159" x2="0.2901" y2="-1.5159" width="0.12" layer="21"/>
+<wire x1="1.7" y1="-1.35" x2="-1.7" y2="-1.35" width="0.12" layer="51"/>
+<wire x1="-1.7" y1="-1.35" x2="-1.7" y2="1.35" width="0.12" layer="51"/>
+<wire x1="-1.7" y1="1.35" x2="1.7" y2="1.35" width="0.12" layer="51"/>
+<wire x1="1.7" y1="1.35" x2="1.7" y2="-1.35" width="0.12" layer="51"/>
+<smd name="1" x="-1.175" y="-0.95" dx="1.2618" dy="1.0118" layer="1"/>
+<smd name="2" x="1.175" y="-0.95" dx="1.2618" dy="1.0118" layer="1"/>
+<smd name="3" x="1.175" y="0.95" dx="1.2618" dy="1.0118" layer="1"/>
+<smd name="4" x="-1.175" y="0.95" dx="1.2618" dy="1.0118" layer="1"/>
+<text x="0" y="2.1509" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
+<text x="0" y="-2.1509" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.05" layer="39"/>
+<wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.05" layer="39"/>
+<wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.05" layer="39"/>
+<wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.05" layer="39"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="RESC1608X55" urn="urn:adsk.eagle:package:11118057/1" type="model">
@@ -2847,6 +2866,13 @@
 &lt;p&gt;Chip package with body size 1.60 X 0.80 X 1.00 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="CAPC1608X100"/>
+</packageinstances>
+</package3d>
+<package3d name="OSCCC320X250X85" urn="urn:adsk.eagle:package:11739648/1" type="model">
+<description>Oscillator Corner Concave, 3.20 X 2.50 X 0.85 mm body
+&lt;p&gt;Oscillator Corner Concave package with body size 3.20 X 2.50 X 0.85 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="OSCCC320X250X85"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -3465,6 +3491,96 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 </technology>
 </technologies>
 </device>
+<device name="SMD-0603_CERAMIC-1UF" package="CAPC1608X100">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11135716/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="1276-1182-1-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="1uF"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-0603_CERAMIC-12PF" package="CAPC1608X100">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11135716/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="720-1655-1-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="12pF"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-0603_CERAMIC-22PF" package="CAPC1608X100">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11135716/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="478-11384-1-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="22pF"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-0603_CERAMIC-0.75PF" package="CAPC1608X100">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11135716/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="311-3843-1-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="0.75pF"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-0603_CERAMIC-0.1UF" package="CAPC1608X100">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11135716/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="399-1095-1-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="0.1uF"/>
+</technology>
+</technologies>
+</device>
 <device name="SMD-0603_CERAMIC-0.01UF" package="CAPC1608X100">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -3508,6 +3624,23 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="PRICE" value="0.68"/>
 <attribute name="PROD_ID" value="XTAL-08218" constant="no"/>
 <attribute name="REVIEWER" value="Swanson"/>
+</technology>
+</technologies>
+</device>
+<device name="-SMD-3X2" package="OSCCC320X250X85">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11739648/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="535-9134-1-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 </technology>
 </technologies>
 </device>
@@ -3849,6 +3982,60 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <attribute name="DISTPN" value="YAG3636CT-ND"/>
 <attribute name="MOUNTING" value="SMD"/>
 <attribute name="VALUE" value="100"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-0603-1.2K" package="RESC1608X55">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11118057/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="YAG3644CT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="1.2K"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-0603-2.2K" package="RESC1608X55">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11118057/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="YAG3657CT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="2.2K"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD-0603-10K" package="RESC1608X55">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11118057/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="311-10KLECT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="10K"/>
 </technology>
 </technologies>
 </device>
@@ -4428,24 +4615,24 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </class>
 <class number="1" name="HIGH-I" width="0" drill="0.254">
 </class>
-<class number="2" name="RFSIG" width="1.27" drill="0">
+<class number="2" name="RFSIG" width="1.016" drill="0">
 </class>
-<class number="3" name="PWR" width="0" drill="0.381">
+<class number="3" name="PWR" width="0.254" drill="0.381">
 </class>
-<class number="4" name="LONG_PWR" width="0.508" drill="0.381">
+<class number="4" name="LONG_PWR" width="0.254" drill="0.381">
 </class>
 </classes>
 <parts>
 <part name="GND10" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="B2" library="quadparts_prebuilt" deviceset="BALUN" device="0805"/>
-<part name="C3" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-22PF" value="22pF"/>
-<part name="C14" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-12PF" value="12pF"/>
-<part name="C15" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-12PF" value="12pF"/>
-<part name="C11" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
-<part name="C13" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
-<part name="C2" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.75PF" value="0.75pF"/>
-<part name="C12" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
-<part name="C16" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
+<part name="C3" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-22PF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="22pF"/>
+<part name="C14" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-12PF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="12pF"/>
+<part name="C15" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-12PF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="12pF"/>
+<part name="C11" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-1UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="1uF"/>
+<part name="C13" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-1UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="1uF"/>
+<part name="C2" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-0.75PF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="0.75pF"/>
+<part name="C12" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-1UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="1uF"/>
+<part name="C16" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-1UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="1uF"/>
 <part name="GND8" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND9" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND31" library="quadparts_prebuilt" deviceset="GND" device=""/>
@@ -4461,12 +4648,12 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="P+1" library="quadparts_prebuilt" deviceset="3V3" device=""/>
 <part name="P+2" library="quadparts_prebuilt" deviceset="3V3" device=""/>
 <part name="P+3" library="quadparts_prebuilt" deviceset="3V3" device=""/>
-<part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
+<part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-0603-10K" package3d_urn="urn:adsk.eagle:package:11118057/1" value="10K"/>
 <part name="U4" library="quadparts_prebuilt" deviceset="ATMEGA128RFA1" device=""/>
-<part name="Y1" library="quadparts_prebuilt" deviceset="CRYSTAL" device="5X3"/>
+<part name="Y1" library="quadparts_prebuilt" deviceset="CRYSTAL" device="-SMD-3X2" package3d_urn="urn:adsk.eagle:package:11739648/1" value="CRYSTAL-SMD-3X2"/>
 <part name="GND6" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="J4" library="quadparts_prebuilt" deviceset="AVR_SPI_PRG_6" device="-SMD" value="AVR_SPI_PRG_6-SMD"/>
-<part name="C1" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF"/>
+<part name="C1" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-0.1UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="0.1uF"/>
 <part name="B5" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5">
 <variant name="Minimal" populate="no"/>
 </part>
@@ -4487,13 +4674,13 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </part>
 <part name="GND28" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND30" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="C8" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF">
+<part name="C8" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-0.1UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="0.1uF">
 <variant name="Minimal" populate="no"/>
 </part>
 <part name="C7" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-10UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="10uF">
 <variant name="Minimal" populate="no"/>
 </part>
-<part name="C9" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.1UF" value="0.1uF">
+<part name="C9" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-0.1UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="0.1uF">
 <variant name="Minimal" populate="no"/>
 </part>
 <part name="GND35" library="quadparts_prebuilt" deviceset="GND" device=""/>
@@ -4504,7 +4691,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="P+21" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="C5" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-10UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="10uF"/>
 <part name="C6" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-10UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="10uF"/>
-<part name="R7" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-2.2K" value="2.2K"/>
+<part name="R7" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-0603-2.2K" package3d_urn="urn:adsk.eagle:package:11118057/1" value="2.2K"/>
 <part name="V1" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V2" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V6" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
@@ -4551,7 +4738,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </part>
 <part name="J7" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-2X-SERVO-SMD" value="FRSKY-GIMBAL-2X-SERVO-SMD"/>
 <part name="J8" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-2X-SERVO-SMD" value="FRSKY-GIMBAL-2X-SERVO-SMD"/>
-<part name="C4" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
+<part name="C4" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-1UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="1uF"/>
 <part name="GND11" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="P3" library="RemoteParts" deviceset="TEST-POINT" device="">
 <variant name="Minimal" populate="no"/>
@@ -4571,7 +4758,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="B10" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5"/>
 <part name="B6" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5"/>
 <part name="E1" library="RemoteParts" deviceset="ROTARY-ENCODER-W/BUTTON" device="-BOURNS-PEC12R-4217F"/>
-<part name="R8" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1.2K" value="1.2K">
+<part name="R8" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-0603-2.2K" package3d_urn="urn:adsk.eagle:package:11118057/1" value="2.2K">
 <variant name="Minimal" populate="no"/>
 </part>
 <part name="D6" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED-1.6X1.5MM" value="LED-2X-GREEN/RED-1.6X1.5MM"/>
@@ -4583,7 +4770,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="GND5" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="L1" library="RemoteParts" deviceset="SPARKFUN_SERLCD_SERIAL_REDUCED" device="-SMD" value="SPARKFUN_SERLCD_SERIAL_REDUCED-SMD"/>
 <part name="GND3" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="A1" library="quadparts_prebuilt" deviceset="ANTENNA" device="-BOARD-REV" value="ANTENNA-BOARD-REV"/>
+<part name="A1" library="quadparts_prebuilt" deviceset="ANTENNA" device="-CHIP" value="ANTENNA-CHIP"/>
 <part name="JP1" library="quadparts_prebuilt" deviceset="FTDI_BASIC" device="-SMD-REV" value="FTDI_BASIC-SMD-REV"/>
 <part name="V9" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="B3" library="quadparts_prebuilt" deviceset="BATTERY" device="" value="BATTERY"/>
