@@ -2138,11 +2138,9 @@ design rules under a new name.</description>
 <attribute name="DIST" value="DIGIKEY" x="-25" y="16.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="952-3235-ND" x="-25" y="16.5" size="1.778" layer="27" display="off"/>
 <attribute name="LEFT_PIN" value="G" x="-33" y="18.5" size="1.27" layer="21" font="vector" align="center"/>
-<attribute name="LEFT_PIN" value="G" x="-25" y="16.5" size="1.778" layer="27" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="-25" y="16.5" size="1.778" layer="27" display="off"/>
 <attribute name="NAME" x="-24.5" y="23" size="1.27" layer="25" font="vector" align="center"/>
 <attribute name="RIGHT_PIN" value="B" x="-17" y="18.5" size="1.27" layer="21" font="vector" align="center"/>
-<attribute name="RIGHT_PIN" value="B" x="-25" y="16.5" size="1.778" layer="27" display="off"/>
 </element>
 <element name="V9" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="12" y="19" smashed="yes">
 <attribute name="CREATOR" value="Swanson" x="12" y="19" size="1.778" layer="27" display="off"/>
