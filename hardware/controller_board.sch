@@ -449,8 +449,8 @@
 <pad name="V" x="10.16" y="0" drill="1.016" rot="R90"/>
 </package>
 <package name="TEST-POINT-KEYSTONE-5000">
-<circle x="0" y="0" radius="1.4" width="0.05" layer="39"/>
-<text x="0" y="2" size="1" layer="25" font="vector" align="center">&gt;NAME</text>
+<circle x="0" y="0" radius="0.9" width="0.05" layer="39"/>
+<text x="0" y="1" size="1" layer="25" font="vector" rot="R90" align="center-left">&gt;NAME</text>
 <pad name="T" x="0" y="0" drill="1"/>
 </package>
 <package name="BOURNS-PEC12R">
@@ -698,7 +698,7 @@
 <wire x1="-1.4" y1="-1.05" x2="1.4" y2="-1.05" width="0.127" layer="21"/>
 <wire x1="-1.9" y1="-1.4" x2="-1.9" y2="1.4" width="0.05" layer="39"/>
 <wire x1="-1.9" y1="1.4" x2="1.9" y2="1.4" width="0.05" layer="39"/>
-<text x="0.03" y="2.16" size="1.27" layer="25" font="vector" rot="R180" align="center">&gt;NAME</text>
+<text x="0.03" y="2.16" size="0.9" layer="25" font="vector" rot="R180" align="center">&gt;NAME</text>
 <wire x1="1.4" y1="-1.05" x2="1.4" y2="1.05" width="0.127" layer="51"/>
 <wire x1="1.4" y1="1.05" x2="-1.4" y2="1.05" width="0.127" layer="51"/>
 <wire x1="1.9" y1="-1.4" x2="-1.9" y2="-1.4" width="0.05" layer="39"/>
@@ -710,6 +710,12 @@
 <smd name="A2" x="-0.725" y="-0.425" dx="0.85" dy="0.65" layer="1"/>
 <smd name="C1" x="0.725" y="0.425" dx="0.85" dy="0.65" layer="1"/>
 <smd name="C2" x="0.725" y="-0.425" dx="0.85" dy="0.65" layer="1"/>
+</package>
+<package name="TEST-POINT-1MM-VIA">
+<circle x="0" y="0" radius="0.75" width="0.127" layer="39"/>
+<text x="0" y="2" size="1" layer="25" font="vector" align="center">&gt;NAME</text>
+<pad name="T" x="0" y="0" drill="0.5" diameter="1"/>
+<circle x="0" y="0" radius="0.75" width="0.127" layer="21"/>
 </package>
 <package name="USB-A-KEYSTONE-931">
 <smd name="1" x="-3.5" y="-1.25" dx="1.1" dy="1.99" layer="1"/>
@@ -726,15 +732,9 @@
 <wire x1="6" y1="0" x2="-6" y2="0" width="0.127" layer="51"/>
 <pad name="G1" x="-5.85" y="1.25" drill="2.5"/>
 <pad name="G2" x="5.85" y="1.25" drill="2.5"/>
-<wire x1="-8.5" y1="-4" x2="8.5" y2="-4" width="0.127" layer="39"/>
-<wire x1="8.5" y1="-4" x2="8.5" y2="6" width="0.127" layer="39"/>
-<wire x1="-8.5" y1="-4" x2="-8.5" y2="6" width="0.127" layer="39"/>
-</package>
-<package name="TEST-POINT-1MM-VIA">
-<circle x="0" y="0" radius="0.75" width="0.127" layer="39"/>
-<text x="0" y="2" size="1" layer="25" font="vector" align="center">&gt;NAME</text>
-<pad name="T" x="0" y="0" drill="0.5" diameter="1"/>
-<circle x="0" y="0" radius="0.75" width="0.127" layer="21"/>
+<wire x1="-8.4" y1="-2.9" x2="8.4" y2="-2.9" width="0.05" layer="39"/>
+<wire x1="8.4" y1="-2.9" x2="8.4" y2="6" width="0.05" layer="39"/>
+<wire x1="-8.4" y1="-2.9" x2="-8.4" y2="6" width="0.05" layer="39"/>
 </package>
 </packages>
 <packages3d>
@@ -2134,8 +2134,8 @@
 <wire x1="-1.42" y1="0.3" x2="-0.82" y2="0.9" width="0.12" layer="51"/>
 <wire x1="-2.47" y1="-0.9" x2="1.35" y2="-0.9" width="0.12" layer="21"/>
 <wire x1="-2.47" y1="0.9" x2="-2.47" y2="-0.9" width="0.12" layer="21"/>
-<wire x1="-2.65" y1="-1.4" x2="-2.65" y2="1.4" width="0.05" layer="39"/>
-<wire x1="-2.65" y1="1.4" x2="2.75" y2="1.4" width="0.05" layer="39"/>
+<wire x1="-2.9" y1="-1.4" x2="-2.9" y2="1.4" width="0.05" layer="39"/>
+<wire x1="-2.9" y1="1.4" x2="2.9" y2="1.4" width="0.05" layer="39"/>
 <circle x="-2.79" y="0" radius="0.1" width="0.2" layer="21"/>
 <text x="0" y="-1.6" size="0.9" layer="27" font="vector" align="center">&gt;VALUE</text>
 <text x="0" y="1.6" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
@@ -2322,8 +2322,8 @@
 <wire x1="1.35" y1="0.9" x2="-2.47" y2="0.9" width="0.12" layer="21"/>
 <wire x1="1.42" y1="-0.9" x2="-1.42" y2="-0.9" width="0.12" layer="51"/>
 <wire x1="1.42" y1="0.9" x2="1.42" y2="-0.9" width="0.12" layer="51"/>
-<wire x1="2.75" y1="-1.4" x2="-2.65" y2="-1.4" width="0.05" layer="39"/>
-<wire x1="2.75" y1="1.4" x2="2.75" y2="-1.4" width="0.05" layer="39"/>
+<wire x1="2.9" y1="-1.4" x2="-2.9" y2="-1.4" width="0.05" layer="39"/>
+<wire x1="2.9" y1="1.4" x2="2.9" y2="-1.4" width="0.05" layer="39"/>
 <smd name="A" x="1.665" y="0" dx="1.25" dy="0.8" layer="1" roundness="50" stop="no" cream="no"/>
 <smd name="C" x="-1.665" y="0" dx="1.25" dy="0.8" layer="1" roundness="50" rot="R180" stop="no" cream="no"/>
 </package>
@@ -2751,10 +2751,10 @@
 <smd name="8" x="0.6196" y="0.75" dx="0.79" dy="0.3391" layer="1"/>
 <text x="0" y="2.3586" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
 <text x="0" y="-1.9186" size="0.9" layer="27" font="vector" align="center">&gt;VALUE</text>
-<wire x1="-1.55" y1="1.45" x2="-1.55" y2="-1.35" width="0.05" layer="39"/>
-<wire x1="-1.55" y1="-1.35" x2="1.45" y2="-1.35" width="0.05" layer="39"/>
-<wire x1="1.45" y1="-1.35" x2="1.45" y2="1.45" width="0.05" layer="39"/>
-<wire x1="1.45" y1="1.45" x2="-1.55" y2="1.45" width="0.05" layer="39"/>
+<wire x1="-1.4" y1="1.9" x2="-1.4" y2="-1.9" width="0.05" layer="39"/>
+<wire x1="-1.4" y1="-1.9" x2="1.4" y2="-1.9" width="0.05" layer="39"/>
+<wire x1="1.4" y1="-1.9" x2="1.4" y2="1.9" width="0.05" layer="39"/>
+<wire x1="1.4" y1="1.9" x2="-1.4" y2="1.9" width="0.05" layer="39"/>
 </package>
 <package name="CAPC1608X100" urn="urn:adsk.eagle:footprint:11135720/1" locally_modified="yes">
 <description>Chip, 1.60 X 0.80 X 1.00 mm body
@@ -2838,6 +2838,74 @@
 <wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.05" layer="39"/>
 <wire x1="-2.4" y1="-1.9" x2="-2.4" y2="1.9" width="0.05" layer="39"/>
 </package>
+<package name="MOLEX-BATTERY-CONNECTOR-SMD-51005-2P">
+<smd name="G3" x="3.2" y="-0.45" dx="3.5" dy="1.5" layer="1" rot="R90"/>
+<smd name="G2" x="-3.2" y="-0.45" dx="3.5" dy="1.5" layer="1" rot="R90"/>
+<smd name="P" x="1" y="5.2" dx="3" dy="1.1" layer="1" rot="R90"/>
+<smd name="G" x="-1" y="5.2" dx="3" dy="1.2" layer="1" rot="R90"/>
+<wire x1="4.2" y1="-6.75" x2="2.5" y2="-6.75" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-6.75" x2="-4.2" y2="-6.75" width="0.127" layer="21"/>
+<wire x1="4.2" y1="1.05" x2="2.5" y2="1.05" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="1.05" x2="-4.2" y2="1.05" width="0.127" layer="21"/>
+<wire x1="4.2" y1="-6.75" x2="4.2" y2="1.05" width="0.127" layer="21"/>
+<wire x1="2.5" y1="1.05" x2="2.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-4.2" y1="-6.75" x2="-4.2" y2="1.05" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="1.05" x2="-2.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="4.5" x2="2.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-6.75" x2="-2.5" y2="-5.55" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-5.55" x2="2.5" y2="-5.55" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-5.55" x2="2.5" y2="-6.75" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="-17.4" x2="4.9" y2="-17.4" width="0.05" layer="39"/>
+<wire x1="4.9" y1="-17.4" x2="4.9" y2="1.9" width="0.05" layer="39"/>
+<wire x1="4.9" y1="1.9" x2="3.4" y2="1.9" width="0.05" layer="39"/>
+<wire x1="3.4" y1="1.9" x2="3.4" y2="7.4" width="0.05" layer="39"/>
+<wire x1="3.4" y1="7.4" x2="-3.4" y2="7.4" width="0.05" layer="39"/>
+<wire x1="-3.4" y1="7.4" x2="-3.4" y2="1.9" width="0.05" layer="39"/>
+<wire x1="-3.4" y1="1.9" x2="-4.9" y2="1.9" width="0.05" layer="39"/>
+<wire x1="-4.9" y1="1.9" x2="-4.9" y2="-17.4" width="0.05" layer="39"/>
+<wire x1="2.5" y1="-6.75" x2="2.5" y2="-11.25" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-6.75" x2="-2.5" y2="-11.25" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-11.25" x2="2.5" y2="-11.25" width="0.127" layer="51"/>
+<text x="0" y="8" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
+</package>
+<package name="SODFL3516X96" urn="urn:adsk.eagle:footprint:11793377/1" locally_modified="yes">
+<description>SODFL, 3.50 mm span, 2.70 X 1.65 X 0.96 mm body
+&lt;p&gt;SODFL package with 3.50 mm span with body size 2.70 X 1.65 X 0.96 mm&lt;/p&gt;</description>
+<wire x1="1.35" y1="0.8286" x2="-2.3199" y2="0.8286" width="0.12" layer="21"/>
+<wire x1="-2.3199" y1="0.8286" x2="-2.3199" y2="-0.8286" width="0.12" layer="21"/>
+<wire x1="-2.3199" y1="-0.8286" x2="1.35" y2="-0.8286" width="0.12" layer="21"/>
+<wire x1="1.4" y1="-0.9" x2="-1.4" y2="-0.9" width="0.12" layer="51"/>
+<wire x1="-1.4" y1="-0.9" x2="-1.4" y2="0.9" width="0.12" layer="51"/>
+<wire x1="-1.4" y1="0.9" x2="1.4" y2="0.9" width="0.12" layer="51"/>
+<wire x1="1.4" y1="0.9" x2="1.4" y2="-0.9" width="0.12" layer="51"/>
+<smd name="1" x="-1.525" y="0" dx="0.9618" dy="1.0291" layer="1"/>
+<smd name="2" x="1.525" y="0" dx="0.9618" dy="1.0291" layer="1"/>
+<text x="0" y="1.535" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
+<wire x1="-2.4" y1="1.4" x2="2.4" y2="1.4" width="0.05" layer="39"/>
+<wire x1="2.4" y1="1.4" x2="2.4" y2="-1.4" width="0.05" layer="39"/>
+<wire x1="2.4" y1="-1.4" x2="-2.4" y2="-1.4" width="0.05" layer="39"/>
+<wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.4" width="0.05" layer="39"/>
+</package>
+<package name="FTDI-2X3-SMD">
+<smd name="P$1" x="-2.54" y="-4.496" dx="1.27" dy="3.18" layer="1"/>
+<smd name="P$2" x="0" y="-4.496" dx="1.27" dy="3.18" layer="1"/>
+<smd name="P$3" x="2.54" y="-4.496" dx="1.27" dy="3.18" layer="1"/>
+<smd name="P$4" x="-2.54" y="-8.306" dx="1.27" dy="3.18" layer="1"/>
+<smd name="P$5" x="0" y="-8.306" dx="1.27" dy="3.18" layer="1"/>
+<smd name="P$6" x="2.54" y="-8.306" dx="1.27" dy="3.18" layer="1"/>
+<wire x1="-3.81" y1="0" x2="3.81" y2="0" width="0.127" layer="21"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-2.54" x2="-3.81" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="0" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="5.08" width="0.127" layer="51"/>
+<wire x1="0" y1="0" x2="0" y2="5.08" width="0.127" layer="51"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="5.08" width="0.127" layer="51"/>
+<wire x1="-4.4" y1="-10.9" x2="-4.4" y2="5.9" width="0.05" layer="39"/>
+<wire x1="-4.4" y1="5.9" x2="4.4" y2="5.9" width="0.05" layer="39"/>
+<wire x1="4.4" y1="5.9" x2="4.4" y2="-10.9" width="0.05" layer="39"/>
+<wire x1="4.4" y1="-10.9" x2="-4.4" y2="-10.9" width="0.05" layer="39"/>
+<text x="0" y="-11" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
+</package>
 </packages>
 <packages3d>
 <package3d name="RESC1608X55" urn="urn:adsk.eagle:package:11118057/1" type="model">
@@ -2873,6 +2941,13 @@
 &lt;p&gt;Oscillator Corner Concave package with body size 3.20 X 2.50 X 0.85 mm&lt;/p&gt;</description>
 <packageinstances>
 <packageinstance name="OSCCC320X250X85"/>
+</packageinstances>
+</package3d>
+<package3d name="SODFL3516X96" urn="urn:adsk.eagle:package:11793366/1" type="model">
+<description>SODFL, 3.50 mm span, 2.70 X 1.65 X 0.96 mm body
+&lt;p&gt;SODFL package with 3.50 mm span with body size 2.70 X 1.65 X 0.96 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="SODFL3516X96"/>
 </packageinstances>
 </package3d>
 </packages3d>
@@ -3967,6 +4042,24 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 </technology>
 </technologies>
 </device>
+<device name="SMD-0603-510" package="RESC1608X55">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11118057/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="YAG3678CT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="510"/>
+</technology>
+</technologies>
+</device>
 <device name="SMD-0603-100" package="RESC1608X55">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
@@ -4229,6 +4322,18 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </technology>
 </technologies>
 </device>
+<device name="-SMD-SOD123-NEW" package="SODFL3516X96">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:11793366/1"/>
+</package3dinstances>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="3V3" prefix="P+">
@@ -4367,6 +4472,19 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </technology>
 </technologies>
 </device>
+<device name="-2X3-SMD" package="FTDI-2X3-SMD">
+<connects>
+<connect gate="G$1" pin="1" pad="P$1"/>
+<connect gate="G$1" pin="2" pad="P$2"/>
+<connect gate="G$1" pin="3" pad="P$3"/>
+<connect gate="G$1" pin="4" pad="P$4"/>
+<connect gate="G$1" pin="5" pad="P$5"/>
+<connect gate="G$1" pin="6" pad="P$6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="BATTERY" prefix="B">
@@ -4452,6 +4570,15 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </technology>
 </technologies>
 </device>
+<device name="-SMD" package="MOLEX-BATTERY-CONNECTOR-SMD-51005-2P">
+<connects>
+<connect gate="G$1" pin="N" pad="G G2 G3"/>
+<connect gate="G$1" pin="P" pad="P"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="RESISTOR-PACK-4X" prefix="R" uservalue="yes">
@@ -4462,6 +4589,30 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <gate name="G$4" symbol="RESOLVED-RESISTOR_" x="0" y="-22.86"/>
 </gates>
 <devices>
+<device name="-10K" package="RESCAXS50P200X100X45-8">
+<connects>
+<connect gate="G$1" pin="1" pad="4"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$2" pin="1" pad="3"/>
+<connect gate="G$2" pin="2" pad="6"/>
+<connect gate="G$3" pin="1" pad="2"/>
+<connect gate="G$3" pin="2" pad="7"/>
+<connect gate="G$4" pin="1" pad="1"/>
+<connect gate="G$4" pin="2" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10895048/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="Y10103CT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="10K"/>
+</technology>
+</technologies>
+</device>
 <device name="-750" package="RESCAXS50P200X100X45-8">
 <connects>
 <connect gate="G$1" pin="1" pad="4"/>
@@ -4565,11 +4716,10 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <library name="custom">
 <packages>
 <package name="NET_BRIDGE">
-<wire x1="-0.5" y1="0" x2="0.5" y2="0" width="0.8" layer="1"/>
-<rectangle x1="-1" y1="-1" x2="1" y2="1" layer="39"/>
 <text x="0" y="0" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
-<pad name="P1" x="-0.5" y="0" drill="0.2" stop="no" thermals="no"/>
-<pad name="P2" x="0.5" y="0" drill="0.2" stop="no" thermals="no"/>
+<pad name="P1" x="-0.5" y="0" drill="0.2" diameter="0.8128" stop="no" thermals="no"/>
+<pad name="P2" x="0.5" y="0" drill="0.2" diameter="0.8128" stop="no" thermals="no"/>
+<wire x1="-0.5" y1="0" x2="0.5" y2="0" width="0.8128" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -4613,13 +4763,11 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
-<class number="1" name="HIGH-I" width="0" drill="0.254">
+<class number="1" name="HIGH-I" width="0.508" drill="0.381">
 </class>
 <class number="2" name="RFSIG" width="1.016" drill="0">
 </class>
-<class number="3" name="PWR" width="0.254" drill="0.381">
-</class>
-<class number="4" name="LONG_PWR" width="0.254" drill="0.381">
+<class number="3" name="PWR" width="0" drill="0">
 </class>
 </classes>
 <parts>
@@ -4771,9 +4919,9 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="L1" library="RemoteParts" deviceset="SPARKFUN_SERLCD_SERIAL_REDUCED" device="-SMD" value="SPARKFUN_SERLCD_SERIAL_REDUCED-SMD"/>
 <part name="GND3" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="A1" library="quadparts_prebuilt" deviceset="ANTENNA" device="-CHIP" value="ANTENNA-CHIP"/>
-<part name="JP1" library="quadparts_prebuilt" deviceset="FTDI_BASIC" device="-SMD-REV" value="FTDI_BASIC-SMD-REV"/>
+<part name="JP1" library="quadparts_prebuilt" deviceset="FTDI_BASIC" device="-2X3-SMD" value="FTDI_BASIC-2X3-SMD"/>
 <part name="V9" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
-<part name="B3" library="quadparts_prebuilt" deviceset="BATTERY" device="" value="BATTERY"/>
+<part name="B3" library="quadparts_prebuilt" deviceset="BATTERY" device="-SMD" value="BATTERY-SMD"/>
 <part name="B12" library="custom" deviceset="NET_BRIDGE" device=""/>
 <part name="R4" library="quadparts_prebuilt" deviceset="RESISTOR-PACK-4X" device="-750" package3d_urn="urn:adsk.eagle:package:10895048/1" value="750"/>
 <part name="R5" library="quadparts_prebuilt" deviceset="RESISTOR-PACK-4X" device="-750" package3d_urn="urn:adsk.eagle:package:10895048/1" value="750"/>
@@ -5251,7 +5399,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <busses>
 </busses>
 <nets>
-<net name="GND" class="1">
+<net name="GND" class="3">
 <segment>
 <wire x1="339.09" y1="243.84" x2="339.09" y2="228.6" width="0.1524" layer="91"/>
 <pinref part="GND10" gate="1" pin="GND"/>
@@ -5632,7 +5780,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <label x="21.59" y="175.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="3V3" class="1">
+<net name="3V3" class="3">
 <segment>
 <pinref part="P+1" gate="G$1" pin="3V3"/>
 <pinref part="U4" gate="G$1" pin="DEVDD"/>
@@ -5873,7 +6021,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <label x="152.4" y="245.11" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="VBAT" class="3">
+<net name="VBAT" class="1">
 <segment>
 <pinref part="P+4" gate="VCC" pin="VBAT"/>
 <wire x1="269.24" y1="40.64" x2="269.24" y2="39.37" width="0.1524" layer="91"/>
@@ -5918,7 +6066,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <label x="280.67" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="BPOS" class="4">
+<net name="BPOS" class="1">
 <segment>
 <pinref part="U2" gate="G$1" pin="VBAT"/>
 <wire x1="194.31" y1="39.37" x2="191.77" y2="39.37" width="0.1524" layer="91"/>
@@ -6134,7 +6282,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <label x="152.4" y="201.93" size="1.27" layer="95" font="fixed" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="VBUS" class="3">
+<net name="VBUS" class="1">
 <segment>
 <label x="125.73" y="116.84" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="J1" gate="A" pin="1-VCC"/>
@@ -6397,7 +6545,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <label x="374.65" y="163.83" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="VREG_IN" class="3">
+<net name="VREG_IN" class="1">
 <segment>
 <wire x1="163.83" y1="106.68" x2="171.45" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="171.45" y1="106.68" x2="205.74" y2="106.68" width="0.1524" layer="91"/>
