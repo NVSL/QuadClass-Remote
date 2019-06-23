@@ -4920,7 +4920,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="L1" library="RemoteParts" deviceset="SPARKFUN_SERLCD_SERIAL_REDUCED" device="-SMD" value="SPARKFUN_SERLCD_SERIAL_REDUCED-SMD"/>
 <part name="GND3" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="A1" library="quadparts_prebuilt" deviceset="ANTENNA" device="-CHIP" value="ANTENNA-CHIP"/>
-<part name="JP1" library="quadparts_prebuilt" deviceset="FTDI_BASIC" device="-2X3-SMD" value="FTDI_BASIC-2X3-SMD"/>
+<part name="J5" library="quadparts_prebuilt" deviceset="FTDI_BASIC" device="-2X3-SMD" value="FTDI_BASIC-2X3-SMD"/>
 <part name="V9" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="B3" library="quadparts_prebuilt" deviceset="BATTERY" device="-SMD" value="BATTERY-SMD"/>
 <part name="B12" library="custom" deviceset="NET_BRIDGE" device=""/>
@@ -5351,7 +5351,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <attribute name="NAME" x="280.67" y="238.76" size="1.778" layer="95"/>
 <attribute name="VALUE" x="280.67" y="236.22" size="1.778" layer="96"/>
 </instance>
-<instance part="JP1" gate="G$1" x="387.35" y="64.77" smashed="yes" rot="R180">
+<instance part="J5" gate="G$1" x="387.35" y="64.77" smashed="yes" rot="R180">
 <attribute name="VALUE" x="392.43" y="74.93" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="392.43" y="53.848" size="1.778" layer="95" rot="R180"/>
 </instance>
@@ -5584,7 +5584,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 </segment>
 <segment>
 <label x="375.92" y="57.15" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP1" gate="G$1" pin="6"/>
+<pinref part="J5" gate="G$1" pin="6"/>
 <wire x1="382.27" y1="57.15" x2="375.92" y2="57.15" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -5824,7 +5824,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 </segment>
 <segment>
 <label x="375.92" y="62.23" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP1" gate="G$1" pin="4"/>
+<pinref part="J5" gate="G$1" pin="4"/>
 <wire x1="382.27" y1="62.23" x2="375.92" y2="62.23" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -6219,7 +6219,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <net name="DTR-1" class="0">
 <segment>
 <label x="375.92" y="69.85" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP1" gate="G$1" pin="1"/>
+<pinref part="J5" gate="G$1" pin="1"/>
 <wire x1="382.27" y1="69.85" x2="375.92" y2="69.85" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -6231,7 +6231,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <net name="RXI-1" class="0">
 <segment>
 <label x="375.92" y="67.31" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP1" gate="G$1" pin="2"/>
+<pinref part="J5" gate="G$1" pin="2"/>
 <wire x1="382.27" y1="67.31" x2="375.92" y2="67.31" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -6243,7 +6243,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <net name="TXO-1" class="0">
 <segment>
 <label x="375.92" y="64.77" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP1" gate="G$1" pin="3"/>
+<pinref part="J5" gate="G$1" pin="3"/>
 <wire x1="382.27" y1="64.77" x2="375.92" y2="64.77" width="0.1524" layer="91"/>
 </segment>
 <segment>
@@ -6255,7 +6255,7 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <net name="CTS-1" class="0">
 <segment>
 <label x="375.92" y="59.69" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="JP1" gate="G$1" pin="5"/>
+<pinref part="J5" gate="G$1" pin="5"/>
 <wire x1="382.27" y1="59.69" x2="375.92" y2="59.69" width="0.1524" layer="91"/>
 </segment>
 <segment>
