@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -298,12 +298,12 @@
 <wire x1="10" y1="20" x2="10" y2="-20" width="1" layer="51"/>
 </package>
 <package name="600MAH-BATTERY">
-<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="20.32" width="0.127" layer="51"/>
-<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.127" layer="51"/>
+<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="20.32" width="1" layer="51"/>
+<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="1" layer="51"/>
 <text x="0" y="0" size="3.81" layer="51" font="vector" align="center">600MAH</text>
 <wire x1="0" y1="0" x2="0" y2="0" width="1" layer="39"/>
-<wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="0.127" layer="51"/>
-<wire x1="12.7" y1="20.32" x2="12.7" y2="-20.32" width="0.127" layer="51"/>
+<wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="1" layer="51"/>
+<wire x1="12.7" y1="20.32" x2="12.7" y2="-20.32" width="1" layer="51"/>
 </package>
 <package name="ADAFRUIT-377">
 <rectangle x1="-5" y1="-13" x2="5" y2="-8" layer="39"/>
@@ -3920,7 +3920,12 @@
 <connect gate="G$1" pin="T" pad="T"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="NA"/>
+<attribute name="DISTPN" value="NA"/>
+<attribute name="MOUNTING" value="NA"/>
+</technology>
 </technologies>
 </device>
 </devices>

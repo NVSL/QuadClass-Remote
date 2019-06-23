@@ -2711,8 +2711,8 @@
 <wire x1="0.85" y1="0.45" x2="0.85" y2="-0.45" width="0.12" layer="51"/>
 <smd name="1" x="-0.8204" y="0" dx="0.7884" dy="0.9291" layer="1"/>
 <smd name="2" x="0.8204" y="0" dx="0.7884" dy="0.9291" layer="1"/>
-<text x="0" y="1.4136" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-1.4136" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<text x="0" y="1.4136" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-1.4136" size="0.9" layer="27" font="vector" align="center">&gt;VALUE</text>
 <wire x1="-1.9" y1="0.9" x2="1.9" y2="0.9" width="0.05" layer="39"/>
 <wire x1="1.9" y1="0.9" x2="1.9" y2="-0.9" width="0.05" layer="39"/>
 <wire x1="1.9" y1="-0.9" x2="-1.9" y2="-0.9" width="0.05" layer="39"/>
@@ -2831,8 +2831,8 @@
 <smd name="2" x="1.175" y="-0.95" dx="1.2618" dy="1.0118" layer="1"/>
 <smd name="3" x="1.175" y="0.95" dx="1.2618" dy="1.0118" layer="1"/>
 <smd name="4" x="-1.175" y="0.95" dx="1.2618" dy="1.0118" layer="1"/>
-<text x="0" y="2.1509" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
-<text x="0" y="-2.1509" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
+<text x="0" y="2.1509" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-2.1509" size="0.9" layer="27" font="vector" align="center">&gt;VALUE</text>
 <wire x1="-2.4" y1="1.9" x2="2.4" y2="1.9" width="0.05" layer="39"/>
 <wire x1="2.4" y1="1.9" x2="2.4" y2="-1.9" width="0.05" layer="39"/>
 <wire x1="2.4" y1="-1.9" x2="-2.4" y2="-1.9" width="0.05" layer="39"/>
@@ -2887,12 +2887,12 @@
 <wire x1="-2.4" y1="-1.4" x2="-2.4" y2="1.4" width="0.05" layer="39"/>
 </package>
 <package name="FTDI-2X3-SMD">
-<smd name="P$1" x="-2.54" y="-4.496" dx="1.27" dy="3.18" layer="1"/>
-<smd name="P$2" x="0" y="-4.496" dx="1.27" dy="3.18" layer="1"/>
-<smd name="P$3" x="2.54" y="-4.496" dx="1.27" dy="3.18" layer="1"/>
-<smd name="P$4" x="-2.54" y="-8.306" dx="1.27" dy="3.18" layer="1"/>
-<smd name="P$5" x="0" y="-8.306" dx="1.27" dy="3.18" layer="1"/>
-<smd name="P$6" x="2.54" y="-8.306" dx="1.27" dy="3.18" layer="1"/>
+<smd name="1" x="-2.54" y="-4.496" dx="1.27" dy="3.18" layer="1"/>
+<smd name="2" x="0" y="-4.496" dx="1.27" dy="3.18" layer="1"/>
+<smd name="3" x="2.54" y="-4.496" dx="1.27" dy="3.18" layer="1"/>
+<smd name="4" x="-2.54" y="-8.306" dx="1.27" dy="3.18" layer="1"/>
+<smd name="5" x="0" y="-8.306" dx="1.27" dy="3.18" layer="1"/>
+<smd name="6" x="2.54" y="-8.306" dx="1.27" dy="3.18" layer="1"/>
 <wire x1="-3.81" y1="0" x2="3.81" y2="0" width="0.127" layer="21"/>
 <wire x1="3.81" y1="0" x2="3.81" y2="-2.54" width="0.127" layer="21"/>
 <wire x1="3.81" y1="-2.54" x2="-3.81" y2="-2.54" width="0.127" layer="21"/>
@@ -2904,7 +2904,7 @@
 <wire x1="-4.4" y1="5.9" x2="4.4" y2="5.9" width="0.05" layer="39"/>
 <wire x1="4.4" y1="5.9" x2="4.4" y2="-10.9" width="0.05" layer="39"/>
 <wire x1="4.4" y1="-10.9" x2="-4.4" y2="-10.9" width="0.05" layer="39"/>
-<text x="0" y="-11" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-11" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
 </package>
 </packages>
 <packages3d>
@@ -4474,15 +4474,20 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </device>
 <device name="-2X3-SMD" package="FTDI-2X3-SMD">
 <connects>
-<connect gate="G$1" pin="1" pad="P$1"/>
-<connect gate="G$1" pin="2" pad="P$2"/>
-<connect gate="G$1" pin="3" pad="P$3"/>
-<connect gate="G$1" pin="4" pad="P$4"/>
-<connect gate="G$1" pin="5" pad="P$5"/>
-<connect gate="G$1" pin="6" pad="P$6"/>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="SAM9026-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+</technology>
 </technologies>
 </device>
 </devices>
