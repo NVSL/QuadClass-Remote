@@ -2457,8 +2457,8 @@
 <wire x1="0.85" y1="0.45" x2="0.85" y2="-0.45" width="0.12" layer="51"/>
 <smd name="1" x="-0.8204" y="0" dx="0.7884" dy="0.9291" layer="1"/>
 <smd name="2" x="0.8204" y="0" dx="0.7884" dy="0.9291" layer="1"/>
-<text x="0" y="1.4136" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-1.4136" size="0.9" layer="27" font="vector" align="center">&gt;VALUE</text>
+<text x="0" y="1.5" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-1.5" size="0.9" layer="27" font="vector" align="center">&gt;VALUE</text>
 <wire x1="-1.9" y1="0.9" x2="1.9" y2="0.9" width="0.05" layer="39"/>
 <wire x1="1.9" y1="0.9" x2="1.9" y2="-0.9" width="0.05" layer="39"/>
 <wire x1="1.9" y1="-0.9" x2="-1.9" y2="-0.9" width="0.05" layer="39"/>
@@ -2636,24 +2636,6 @@
 <wire x1="4.4" y1="5.9" x2="4.4" y2="-10.9" width="0.05" layer="39"/>
 <wire x1="4.4" y1="-10.9" x2="-4.4" y2="-10.9" width="0.05" layer="39"/>
 <text x="0" y="-11" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
-</package>
-<package name="RESC1005X40" urn="urn:adsk.eagle:footprint:11118074/1" locally_modified="yes">
-<description>Chip, 1.00 X 0.50 X 0.40 mm body
-&lt;p&gt;Chip package with body size 1.00 X 0.50 X 0.40 mm&lt;/p&gt;</description>
-<wire x1="0.525" y1="0.614" x2="-0.525" y2="0.614" width="0.12" layer="21"/>
-<wire x1="0.525" y1="-0.614" x2="-0.525" y2="-0.614" width="0.12" layer="21"/>
-<wire x1="0.525" y1="-0.275" x2="-0.525" y2="-0.275" width="0.12" layer="51"/>
-<wire x1="-0.525" y1="-0.275" x2="-0.525" y2="0.275" width="0.12" layer="51"/>
-<wire x1="-0.525" y1="0.275" x2="0.525" y2="0.275" width="0.12" layer="51"/>
-<wire x1="0.525" y1="0.275" x2="0.525" y2="-0.275" width="0.12" layer="51"/>
-<smd name="1" x="-0.4624" y="0" dx="0.5752" dy="0.6" layer="1"/>
-<smd name="2" x="0.4624" y="0" dx="0.5752" dy="0.6" layer="1"/>
-<text x="0" y="1.249" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
-<text x="0" y="-1.249" size="0.9" layer="27" font="vector" align="center">&gt;VALUE</text>
-<wire x1="-1.4" y1="0.9" x2="1.4" y2="0.9" width="0.05" layer="39"/>
-<wire x1="1.4" y1="0.9" x2="1.4" y2="-0.9" width="0.05" layer="39"/>
-<wire x1="1.4" y1="-0.9" x2="-1.4" y2="-0.9" width="0.05" layer="39"/>
-<wire x1="-1.4" y1="-0.9" x2="-1.4" y2="0.9" width="0.05" layer="39"/>
 </package>
 <package name="SOD3716X135_HS">
 <description>Small Outline Diode (SOD); 2.69 mm L X 1.60 mm W X 1.35 mm H body&lt;p&gt;&lt;i&gt;PCB Libraries Packages&lt;/i&gt;</description>
@@ -2885,6 +2867,41 @@
 <pad name="RXI" x="-3.81" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="TXO" x="-1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
 <pad name="VCC" x="1.27" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+</package>
+<package name="HEADER-2X2-0.1IN-MALE-RIGHT-ANGLE-SMD">
+<smd name="TXO" x="-1.27" y="-4.496" dx="1.27" dy="3.18" layer="1"/>
+<smd name="GND" x="-1.27" y="-8.306" dx="1.27" dy="3.18" layer="1"/>
+<smd name="DTR" x="1.27" y="-8.306" dx="1.27" dy="3.18" layer="1"/>
+<smd name="RXI" x="1.27" y="-4.496" dx="1.27" dy="3.18" layer="1"/>
+<wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.127" layer="21"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="0" width="0.127" layer="21"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="5.08" width="0.127" layer="51"/>
+<wire x1="1.27" y1="0" x2="1.27" y2="5.08" width="0.127" layer="51"/>
+<wire x1="-3.4" y1="-10.9" x2="-3.4" y2="5.9" width="0.05" layer="39"/>
+<wire x1="-3.4" y1="5.9" x2="3.4" y2="5.9" width="0.05" layer="39"/>
+<wire x1="3.4" y1="5.9" x2="3.4" y2="-10.9" width="0.05" layer="39"/>
+<wire x1="3.4" y1="-10.9" x2="-3.4" y2="-10.9" width="0.05" layer="39"/>
+<text x="0" y="-11" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
+</package>
+<package name="RESC1005X40" urn="urn:adsk.eagle:footprint:11118074/1" locally_modified="yes">
+<description>Chip, 1.00 X 0.50 X 0.40 mm body
+&lt;p&gt;Chip package with body size 1.00 X 0.50 X 0.40 mm&lt;/p&gt;</description>
+<wire x1="0.525" y1="0.614" x2="-0.525" y2="0.614" width="0.12" layer="21"/>
+<wire x1="0.525" y1="-0.614" x2="-0.525" y2="-0.614" width="0.12" layer="21"/>
+<wire x1="0.525" y1="-0.275" x2="-0.525" y2="-0.275" width="0.12" layer="51"/>
+<wire x1="-0.525" y1="-0.275" x2="-0.525" y2="0.275" width="0.12" layer="51"/>
+<wire x1="-0.525" y1="0.275" x2="0.525" y2="0.275" width="0.12" layer="51"/>
+<wire x1="0.525" y1="0.275" x2="0.525" y2="-0.275" width="0.12" layer="51"/>
+<smd name="1" x="-0.4624" y="0" dx="0.5752" dy="0.6" layer="1"/>
+<smd name="2" x="0.4624" y="0" dx="0.5752" dy="0.6" layer="1"/>
+<text x="0" y="1.5" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-1.5" size="0.9" layer="27" font="vector" align="center">&gt;VALUE</text>
+<wire x1="-1.4" y1="0.9" x2="1.4" y2="0.9" width="0.05" layer="39"/>
+<wire x1="1.4" y1="0.9" x2="1.4" y2="-0.9" width="0.05" layer="39"/>
+<wire x1="1.4" y1="-0.9" x2="-1.4" y2="-0.9" width="0.05" layer="39"/>
+<wire x1="-1.4" y1="-0.9" x2="-1.4" y2="0.9" width="0.05" layer="39"/>
 </package>
 </packages>
 <packages3d>
@@ -3248,6 +3265,21 @@ This symbol includes Arduino pin assignments for the Sparkfun ATmega128RFA break
 <wire x1="0.635" y1="0" x2="0.635" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="-3.81" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
 <wire x1="0.635" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="HEADER-4POS">
+<wire x1="-5.08" y1="-5.08" x2="-5.08" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="7.62" x2="1.27" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="-1.27" y1="2.54" x2="0" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="-5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="7.62" x2="1.27" y2="-5.08" width="0.4064" layer="94"/>
+<text x="-5.842" y="-7.62" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="5.08" y="-2.54" visible="pad" length="middle" swaplevel="1" rot="R180"/>
+<pin name="2" x="5.08" y="0" visible="pad" length="middle" swaplevel="1" rot="R180"/>
+<pin name="3" x="5.08" y="2.54" visible="pad" length="middle" rot="R180"/>
+<wire x1="-1.27" y1="-2.54" x2="0" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="-1.27" y1="5.08" x2="0" y2="5.08" width="0.6096" layer="94"/>
+<pin name="4" x="5.08" y="5.08" visible="pad" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4712,6 +4744,29 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </device>
 </devices>
 </deviceset>
+<deviceset name="FTDI-4PIN" prefix="J">
+<gates>
+<gate name="A" symbol="HEADER-4POS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-RIGHT-ANGLE-SMD" package="HEADER-2X2-0.1IN-MALE-RIGHT-ANGLE-SMD">
+<connects>
+<connect gate="A" pin="1" pad="RXI"/>
+<connect gate="A" pin="2" pad="TXO"/>
+<connect gate="A" pin="3" pad="DTR"/>
+<connect gate="A" pin="4" pad="GND"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="SAM15344-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="custom">
@@ -4926,6 +4981,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="B12" library="custom" deviceset="NET_BRIDGE" device=""/>
 <part name="R4" library="quadparts_prebuilt" deviceset="RESISTOR-PACK-4X" device="-750" package3d_urn="urn:adsk.eagle:package:10895048/1" value="750"/>
 <part name="R5" library="quadparts_prebuilt" deviceset="RESISTOR-PACK-4X" device="-750" package3d_urn="urn:adsk.eagle:package:10895048/1" value="750"/>
+<part name="J6" library="quadparts_prebuilt" deviceset="FTDI-4PIN" device="-RIGHT-ANGLE-SMD"/>
 </parts>
 <sheets>
 <sheet>
@@ -5396,6 +5452,9 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <attribute name="VALUE" x="113.03" y="177.038" size="1.778" layer="96"/>
 <attribute name="NAME" x="113.03" y="181.8386" size="1.778" layer="95"/>
 </instance>
+<instance part="J6" gate="A" x="345.44" y="66.04" smashed="yes">
+<attribute name="NAME" x="339.598" y="58.42" size="1.778" layer="95"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5699,6 +5758,11 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <wire x1="370.84" y1="140.97" x2="373.38" y2="140.97" width="0.1524" layer="91"/>
 <wire x1="373.38" y1="140.97" x2="373.38" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="GND3" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="J6" gate="A" pin="4"/>
+<wire x1="350.52" y1="71.12" x2="355.6" y2="71.12" width="0.1524" layer="91"/>
+<label x="355.6" y="71.12" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="BTN_UP" class="0">
@@ -6239,6 +6303,11 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <wire x1="309.88" y1="96.52" x2="312.42" y2="96.52" width="0.1524" layer="91"/>
 <label x="312.42" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J6" gate="A" pin="1"/>
+<wire x1="350.52" y1="63.5" x2="355.6" y2="63.5" width="0.1524" layer="91"/>
+<label x="355.6" y="63.5" size="1.27" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="TXO-1" class="0">
 <segment>
@@ -6250,6 +6319,11 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <pinref part="U5" gate="G$1" pin="2Y1"/>
 <wire x1="309.88" y1="104.14" x2="312.42" y2="104.14" width="0.1524" layer="91"/>
 <label x="312.42" y="104.14" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J6" gate="A" pin="2"/>
+<wire x1="350.52" y1="66.04" x2="355.6" y2="66.04" width="0.1524" layer="91"/>
+<label x="355.6" y="66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CTS-1" class="0">
@@ -6581,6 +6655,13 @@ HobbyKing: R8 = 1.2k Ohm</text>
 <segment>
 <pinref part="D5" gate="G$1" pin="A2"/>
 <pinref part="R5" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="DTR1" class="0">
+<segment>
+<pinref part="J6" gate="A" pin="3"/>
+<wire x1="350.52" y1="68.58" x2="355.6" y2="68.58" width="0.1524" layer="91"/>
+<label x="355.6" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
