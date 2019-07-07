@@ -1912,6 +1912,32 @@
 <wire x1="-2.5" y1="-11.25" x2="2.5" y2="-11.25" width="0.127" layer="51"/>
 <text x="0" y="8" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
 </package>
+<package name="8MM-MOTOR-50MM-PROP">
+<circle x="0" y="0" radius="4" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="25.019990625" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="7.14375" width="0.127" layer="51"/>
+</package>
+<package name="JS202011JCQN">
+<text x="0" y="-3" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
+<wire x1="-4.2" y1="-1.8" x2="4.3" y2="-1.8" width="0.127" layer="51"/>
+<wire x1="-4.2" y1="1.8" x2="-4.2" y2="-1.8" width="0.127" layer="51"/>
+<wire x1="4.3" y1="-1.8" x2="4.3" y2="1.8" width="0.127" layer="51"/>
+<wire x1="4.3" y1="1.8" x2="-4.2" y2="1.8" width="0.127" layer="51"/>
+<smd name="1" x="-2.5" y="1.2" dx="1" dy="1.6" layer="1"/>
+<smd name="2" x="0" y="1.2" dx="1" dy="1.6" layer="1"/>
+<smd name="3" x="2.5" y="1.2" dx="1" dy="1.6" layer="1"/>
+<wire x1="-4.2" y1="1.8" x2="-4.2" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="4.3" y1="1.8" x2="-4.2" y2="1.8" width="0.127" layer="21"/>
+<wire x1="-4.2" y1="-1.8" x2="4.3" y2="-1.8" width="0.127" layer="21"/>
+<wire x1="4.3" y1="-1.8" x2="4.3" y2="1.8" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="2.4" x2="-4.9" y2="-2.4" width="0.05" layer="39"/>
+<wire x1="-4.9" y1="-2.4" x2="4.9" y2="-2.4" width="0.05" layer="39"/>
+<wire x1="4.9" y1="-2.4" x2="4.9" y2="2.4" width="0.05" layer="39"/>
+<wire x1="4.9" y1="2.4" x2="-4.9" y2="2.4" width="0.05" layer="39"/>
+<smd name="7" x="2.5" y="-1.2" dx="1" dy="1.6" layer="1" rot="R180"/>
+<smd name="5" x="-2.5" y="-1.2" dx="1" dy="1.6" layer="1" rot="R180"/>
+<smd name="6" x="0" y="-1.2" dx="1" dy="1.6" layer="1" rot="R180"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="SOP65P640X110-16" urn="urn:adsk.eagle:package:3027343/1" locally_modified="yes" type="model">
@@ -2587,6 +2613,20 @@
 <pin name="GNDBREAK" x="2.54" y="5.08" visible="off" length="short" rot="R180"/>
 <pin name="GND" x="2.54" y="2.54" visible="off" length="short" rot="R180"/>
 <pin name="PWR" x="2.54" y="7.62" visible="off" length="short" rot="R180"/>
+</symbol>
+<symbol name="SWITCH-DPDT">
+<text x="0" y="-7.62" size="1.27" layer="95">&gt;NAME</text>
+<wire x1="0" y1="5.08" x2="3.81" y2="7.3025" width="0.254" layer="94"/>
+<circle x="0" y="5.08" radius="0.4490125" width="0.254" layer="94"/>
+<pin name="C" x="-2.54" y="5.08" length="short"/>
+<pin name="OFF" x="5.08" y="2.54" length="short" rot="R180"/>
+<pin name="ON" x="5.08" y="7.62" length="short" rot="R180"/>
+<wire x1="0" y1="-2.54" x2="3.81" y2="-0.3175" width="0.254" layer="94"/>
+<circle x="0" y="-2.54" radius="0.4490125" width="0.254" layer="94"/>
+<pin name="C1" x="-2.54" y="-2.54" length="short"/>
+<pin name="OFF1" x="5.08" y="-5.08" length="short" rot="R180"/>
+<pin name="ON1" x="5.08" y="0" length="short" rot="R180"/>
+<wire x1="1.524" y1="-1.524" x2="1.524" y2="6.0325" width="0.127" layer="94" style="shortdash"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -3932,6 +3972,31 @@
 <attribute name="DIST" value="NA"/>
 <attribute name="DISTPN" value="NA"/>
 <attribute name="MOUNTING" value="NA"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SWITCH-DPDT" prefix="S">
+<gates>
+<gate name="G$1" symbol="SWITCH-DPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="-300MA-6V-SMD" package="JS202011JCQN">
+<connects>
+<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="C1" pad="6"/>
+<connect gate="G$1" pin="OFF" pad="1"/>
+<connect gate="G$1" pin="OFF1" pad="5"/>
+<connect gate="G$1" pin="ON" pad="3"/>
+<connect gate="G$1" pin="ON1" pad="7"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="CKN10723CT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
 </technology>
 </technologies>
 </device>
