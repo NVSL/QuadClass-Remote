@@ -1623,12 +1623,12 @@ design rules under a new name.</description>
 <attribute name="DISTPN" value="NA" x="17" y="135" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUNTING" value="NONE" x="-26" y="5" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="U5" library="RemoteParts" package="SOP65P640X110-16" package3d_urn="urn:adsk.eagle:package:3027343/1" value="DPDT-X2" x="27.5" y="1" smashed="yes">
-<attribute name="CREATOR" value="Swanson" x="5.5" y="-144" size="1.778" layer="27" display="off"/>
-<attribute name="DIST" value="DIGIKEY" x="5.5" y="-144" size="1.778" layer="27" display="off"/>
-<attribute name="DISTPN" value="568-5300-1-ND" x="5.5" y="-144" size="1.778" layer="27" display="off"/>
-<attribute name="MOUNTING" value="SMD" x="27.5" y="1" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="23" y="4.5" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
+<element name="U5" library="RemoteParts" package="SOP65P640X110-16" package3d_urn="urn:adsk.eagle:package:3027343/1" value="DPDT-X2" x="27.5" y="5.5" smashed="yes">
+<attribute name="CREATOR" value="Swanson" x="5.5" y="-139.5" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="DIGIKEY" x="5.5" y="-139.5" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="568-5300-1-ND" x="5.5" y="-139.5" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="27.5" y="5.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="23" y="9" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 </element>
 <element name="D3" library="quadparts_prebuilt" package="SODFL3516X96" package3d_urn="urn:adsk.eagle:package:11793366/1" value="360mV" x="-33" y="-5.5" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-204" y="16.5" size="1.778" layer="27" rot="R270" display="off"/>
@@ -2205,8 +2205,8 @@ design rules under a new name.</description>
 <wire x1="31.156" y1="12.725" x2="33.5" y2="12.7467" width="0" layer="19" extent="1-1"/>
 <wire x1="23.844" y1="17.925" x2="31.156" y2="12.725" width="0" layer="19" extent="1-1"/>
 <wire x1="21.5" y1="18.2467" x2="23.844" y2="17.925" width="0" layer="19" extent="1-1"/>
-<wire x1="30.3717" y1="3.275" x2="31.156" y2="12.725" width="0" layer="19" extent="1-1"/>
-<wire x1="31.6196" y1="-6.25" x2="30.3717" y2="3.275" width="0" layer="19" extent="1-1"/>
+<wire x1="30.3717" y1="7.775" x2="31.156" y2="12.725" width="0" layer="19" extent="1-1"/>
+<wire x1="31.6196" y1="-6.25" x2="30.3717" y2="7.775" width="0" layer="19" extent="1-1"/>
 <wire x1="31.6196" y1="-6.75" x2="31.6196" y2="-6.25" width="0" layer="19" extent="1-1"/>
 <wire x1="35.3" y1="-16.5" x2="31.6196" y2="-6.75" width="0" layer="19" extent="1-1"/>
 <wire x1="0.75" y1="17.381" x2="21.5" y2="18.2467" width="0" layer="19" extent="1-1"/>
@@ -2328,12 +2328,12 @@ design rules under a new name.</description>
 <signal name="TXO">
 <contactref element="U5" pad="6"/>
 <contactref element="U3" pad="1"/>
-<wire x1="24.6283" y1="0.025" x2="31.156" y2="10.775" width="0" layer="19" extent="1-1"/>
+<wire x1="24.6283" y1="4.525" x2="31.156" y2="10.775" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RXI">
 <contactref element="U5" pad="10"/>
 <contactref element="U3" pad="5"/>
-<wire x1="30.3717" y1="-0.625" x2="31.156" y2="13.375" width="0" layer="19" extent="1-1"/>
+<wire x1="30.3717" y1="3.875" x2="31.156" y2="13.375" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BPOS" class="1">
 <polygon width="0.127" layer="1">
@@ -2376,12 +2376,12 @@ design rules under a new name.</description>
 <signal name="CTS">
 <contactref element="U5" pad="2"/>
 <contactref element="U3" pad="11"/>
-<wire x1="24.6283" y1="2.625" x2="31.156" y2="17.275" width="0" layer="19" extent="1-1"/>
+<wire x1="24.6283" y1="7.125" x2="31.156" y2="17.275" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DTR">
 <contactref element="U5" pad="14"/>
 <contactref element="U3" pad="2"/>
-<wire x1="30.3717" y1="1.975" x2="31.156" y2="11.425" width="0" layer="19" extent="1-1"/>
+<wire x1="30.3717" y1="6.475" x2="31.156" y2="11.425" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RXLED">
 <contactref element="D5" pad="C2"/>
@@ -2409,42 +2409,42 @@ design rules under a new name.</description>
 <contactref element="U5" pad="12"/>
 <contactref element="U5" pad="4"/>
 <contactref element="S2" pad="2"/>
-<wire x1="24.6283" y1="1.325" x2="30.3717" y2="0.675" width="0" layer="19" extent="1-1"/>
-<wire x1="35.3" y1="-19" x2="30.3717" y2="0.675" width="0" layer="19" extent="1-1"/>
+<wire x1="24.6283" y1="5.825" x2="30.3717" y2="5.175" width="0" layer="19" extent="1-1"/>
+<wire x1="35.3" y1="-19" x2="30.3717" y2="5.175" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="RXI-0">
 <contactref element="U5" pad="11"/>
 <contactref element="U4" pad="47"/>
-<wire x1="-4.881" y1="9.25" x2="30.3717" y2="0.025" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.881" y1="9.25" x2="30.3717" y2="4.525" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DTR-0">
 <contactref element="C1" pad="2"/>
 <contactref element="U5" pad="15"/>
-<wire x1="-21.5" y1="-2.7533" x2="30.3717" y2="2.625" width="0" layer="19" extent="1-1"/>
+<wire x1="-21.5" y1="-2.7533" x2="30.3717" y2="7.125" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DTR-1">
 <contactref element="J5" pad="DTR"/>
 <contactref element="U5" pad="13"/>
-<wire x1="-30.35" y1="20.635" x2="30.3717" y2="1.325" width="0" layer="19" extent="1-16"/>
+<wire x1="-30.35" y1="20.635" x2="30.3717" y2="5.825" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="RXI-1">
 <contactref element="J5" pad="RXI"/>
 <contactref element="U5" pad="9"/>
 <contactref element="J6" pad="RXI"/>
-<wire x1="-27.81" y1="20.635" x2="30.3717" y2="-1.275" width="0" layer="19" extent="1-16"/>
+<wire x1="-27.81" y1="20.635" x2="30.3717" y2="3.225" width="0" layer="19" extent="1-16"/>
 <wire x1="-29.73" y1="21.004" x2="-27.81" y2="20.635" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="TXO-1">
 <contactref element="J5" pad="TXO"/>
 <contactref element="U5" pad="5"/>
 <contactref element="J6" pad="TXO"/>
-<wire x1="-25.27" y1="20.635" x2="24.6283" y2="0.675" width="0" layer="19" extent="1-16"/>
+<wire x1="-25.27" y1="20.635" x2="24.6283" y2="5.175" width="0" layer="19" extent="1-16"/>
 <wire x1="-32.27" y1="21.004" x2="-25.27" y2="20.635" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CTS-1">
 <contactref element="J5" pad="CTS"/>
 <contactref element="U5" pad="1"/>
-<wire x1="-20.19" y1="20.635" x2="24.6283" y2="3.275" width="0" layer="19" extent="1-16"/>
+<wire x1="-20.19" y1="20.635" x2="24.6283" y2="7.775" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="CTS-0">
 <contactref element="U5" pad="3"/>
@@ -2452,7 +2452,7 @@ design rules under a new name.</description>
 <signal name="TXO-0">
 <contactref element="U5" pad="7"/>
 <contactref element="U4" pad="46"/>
-<wire x1="-4.881" y1="9.75" x2="24.6283" y2="-0.625" width="0" layer="19" extent="1-1"/>
+<wire x1="-4.881" y1="9.75" x2="24.6283" y2="3.875" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VBUS" class="1">
 <contactref element="V1" pad="P1"/>
