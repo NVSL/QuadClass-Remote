@@ -26,7 +26,7 @@
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
@@ -211,7 +211,7 @@ Swanson</text>
 <text x="-8.996178125" y="-10.5375" size="0.8" layer="21" font="vector" rot="R180" align="center">VBAT</text>
 <text x="-13.5009125" y="-10.5375" size="0.8" layer="21" font="vector" rot="R180" align="center">3V3</text>
 <text x="-22.5" y="-10.5375" size="0.8" layer="21" font="vector" rot="R180" align="center">VBUS</text>
-<text x="35" y="-29" size="0.9" layer="21" font="vector" rot="R180" align="top-right">Rev 7</text>
+<text x="35" y="-29" size="0.9" layer="21" font="vector" rot="R180" align="top-right">Rev 8</text>
 <text x="-34" y="27.3" size="2" layer="21" font="vector" rot="R180" align="center">B</text>
 <text x="-28" y="27.3" size="2" layer="21" font="vector" align="center">G</text>
 <text x="-28" y="-17" size="1" layer="21" font="vector" rot="R90" align="center">PWR</text>
@@ -294,7 +294,6 @@ Swanson</text>
 <wire x1="32" y1="-8" x2="-32" y2="-8" width="0.1524" layer="102"/>
 <wire x1="-32" y1="-8" x2="-34" y2="-6" width="0.1524" layer="102" curve="-90"/>
 <wire x1="-34" y1="-6" x2="-34" y2="8" width="0.1524" layer="102"/>
-<text x="-55" y="-43" size="1.778" layer="1">switch which LED is pwr, so pwr led is green.</text>
 <text x="0" y="-0.5" size="1" layer="21" font="vector" rot="R90" align="center">BLK</text>
 <text x="-35.56" y="38.1" size="1" layer="51" font="fixed">Pinout looking into the connector
 Top:    Orange Yellow Green
