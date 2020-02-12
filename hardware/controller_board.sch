@@ -969,9 +969,12 @@
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="CONN RCPT USB2.0 MICRO B SMD R/A"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="609-4613-1-ND "/>
+<attribute name="MFR" value="Amphenol ICC (FCI)"/>
 <attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="10118192-0001LF"/>
 </technology>
 </technologies>
 </device>
@@ -1033,9 +1036,12 @@
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="IC USB FS SERIAL UART 28-SSOP"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="768-1007-1-ND "/>
+<attribute name="MFR" value="FTDI"/>
 <attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="FT232RL-REEL"/>
 </technology>
 </technologies>
 </device>
@@ -1355,13 +1361,15 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="AUX1DIST" value="DIGIKEY"/>
-<attribute name="AUX1DISTPN" value="952-1842-ND"/>
-<attribute name="AUX2DIST" value="Digikey"/>
-<attribute name="AUX2DISTPN" value="S5641-ND"/>
+<attribute name="AUX1DIST" value="Sparkfun"/>
+<attribute name="AUX1DISTPN" value="LCD-14072"/>
 <attribute name="CREATOR" value="Swanson"/>
-<attribute name="DIST" value="Sparkfun"/>
-<attribute name="DISTPN" value="LCD-14072"/>
+<attribute name="DESC" value="CONN HEADER VERT 10POS 2.54MM"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="S5641-ND"/>
+<attribute name="MFR" value="Harwin Inc."/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="M20-9991045"/>
 </technology>
 </technologies>
 </device>
@@ -1409,9 +1417,12 @@
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="SWITCH SLIDE DPDT 300MA 6V"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="CKN10723CT-ND"/>
+<attribute name="MFR" value="C&amp;K"/>
 <attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="JS202011JCQN"/>
 </technology>
 </technologies>
 </device>
@@ -3980,9 +3991,12 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="RES ARRAY 4 RES 1.5K OHM 0804"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="Y10152CT-ND"/>
+<attribute name="MFR" value="Panasonic Electronic Components"/>
 <attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="EXB-N8V152JX"/>
 <attribute name="VALUE" value="1.5K"/>
 </technology>
 </technologies>
@@ -4056,9 +4070,12 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="RES ARRAY 4 RES 220 OHM 0804"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="Y10222CT-ND"/>
+<attribute name="MFR" value="Panasonic Electronic Components"/>
 <attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="EXB-N8V221JX"/>
 <attribute name="VALUE" value="2.2K"/>
 </technology>
 </technologies>
@@ -4152,9 +4169,12 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="CONN HEADER SMD R/A 4POS 2.54MM"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="SAM15344-ND"/>
+<attribute name="MFR" value="Samtec Inc."/>
 <attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="TSM-102-01-L-DH"/>
 </technology>
 </technologies>
 </device>
@@ -4317,9 +4337,11 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="V3" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="V5" library="quadparts_prebuilt" deviceset="LOCKED-VIA" device="-0.2"/>
 <part name="J2" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-FRYSKY" value="2.4K">
+<attribute name="POPULATE" value="NO"/>
 <variant name="Minimal" populate="no"/>
 </part>
 <part name="J3" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-FRYSKY" value="2.4K">
+<attribute name="POPULATE" value="NO"/>
 <attribute name="SPICEPREFIX" value="E"/>
 <variant name="Minimal" populate="no"/>
 </part>
@@ -4328,15 +4350,15 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="C4" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-0603_CERAMIC-1UF" package3d_urn="urn:adsk.eagle:package:11135716/1" value="1uF"/>
 <part name="GND11" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="P3" library="RemoteParts" deviceset="TEST-POINT" device="">
+<attribute name="POPULATE" value="NO"/>
 <variant name="Minimal" populate="no"/>
 </part>
 <part name="P1" library="RemoteParts" deviceset="TEST-POINT" device="">
+<attribute name="POPULATE" value="no"/>
 <variant name="Minimal" populate="no"/>
 </part>
 <part name="P2" library="RemoteParts" deviceset="TEST-POINT" device="">
-<variant name="Minimal" populate="no"/>
-</part>
-<part name="P4" library="RemoteParts" deviceset="TEST-POINT" device="">
+<attribute name="POPULATE" value="NO"/>
 <variant name="Minimal" populate="no"/>
 </part>
 <part name="B8" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5"/>
@@ -4344,7 +4366,9 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="B7" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5"/>
 <part name="B10" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5"/>
 <part name="B6" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="-4.5X4.5" value="PUSHBUTTON_-4.5X4.5"/>
-<part name="E1" library="RemoteParts" deviceset="ROTARY-ENCODER-W/BUTTON" device="-BOURNS-PEC12R-4217F"/>
+<part name="E1" library="RemoteParts" deviceset="ROTARY-ENCODER-W/BUTTON" device="-BOURNS-PEC12R-4217F">
+<attribute name="POPULATE" value="NO"/>
+</part>
 <part name="D6" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED-1.6X1.5MM" value="LED-2X-GREEN/RED-1.6X1.5MM"/>
 <part name="D5" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED-1.6X1.5MM" value="LED-2X-GREEN/RED-1.6X1.5MM">
 <variant name="Minimal" populate="no"/>
@@ -4692,10 +4716,12 @@ Otherwise we'll deeply dischange the battery.</text>
 <instance part="J2" gate="G$1" x="8.89" y="170.18" smashed="yes">
 <attribute name="NAME" x="8.89" y="168.275" size="1.27" layer="95"/>
 <attribute name="VALUE" x="12.065" y="171.45" size="1.27" layer="96" align="center"/>
+<attribute name="POPULATE" x="8.89" y="170.18" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="J3" gate="G$1" x="8.89" y="154.94" smashed="yes">
 <attribute name="NAME" x="8.89" y="153.035" size="1.27" layer="95"/>
 <attribute name="VALUE" x="12.065" y="156.21" size="1.27" layer="96" align="center"/>
+<attribute name="POPULATE" x="8.89" y="154.94" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="J7" gate="G$1" x="36.83" y="154.94" smashed="yes">
 <attribute name="NAME" x="36.83" y="153.035" size="1.27" layer="95"/>
@@ -4712,15 +4738,15 @@ Otherwise we'll deeply dischange the battery.</text>
 </instance>
 <instance part="P3" gate="G$1" x="25.4" y="260.35" smashed="yes" rot="R180">
 <attribute name="NAME" x="25.4" y="252.73" size="1.27" layer="95" rot="R180" align="center"/>
+<attribute name="POPULATE" x="25.4" y="260.35" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="P1" gate="G$1" x="38.1" y="260.35" smashed="yes" rot="R180">
 <attribute name="NAME" x="38.1" y="252.73" size="1.27" layer="95" rot="R180" align="center"/>
+<attribute name="POPULATE" x="38.1" y="260.35" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="P2" gate="G$1" x="31.75" y="260.35" smashed="yes" rot="R180">
 <attribute name="NAME" x="31.75" y="252.73" size="1.27" layer="95" rot="R180" align="center"/>
-</instance>
-<instance part="P4" gate="G$1" x="17.78" y="252.73" smashed="yes">
-<attribute name="NAME" x="17.78" y="260.35" size="1.27" layer="95" align="center"/>
+<attribute name="POPULATE" x="31.75" y="260.35" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
 <instance part="B8" gate="G$1" x="411.48" y="229.87" smashed="yes">
 <attribute name="NAME" x="407.035" y="235.585" size="1.778" layer="95"/>
@@ -4741,6 +4767,7 @@ Otherwise we'll deeply dischange the battery.</text>
 <attribute name="NAME" x="388.62" y="261.62" size="1.27" layer="95" align="center"/>
 <attribute name="DETENT" x="388.62" y="271.78" size="0.6096" layer="97" align="center" display="both"/>
 <attribute name="HEIGHT" x="388.62" y="270.51" size="0.6096" layer="97" align="center" display="both"/>
+<attribute name="POPULATE" x="388.62" y="267.97" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="D6" gate="G$1" x="133.35" y="177.8" smashed="yes" rot="MR0">
 <attribute name="NAME" x="131.318" y="178.308" size="1.778" layer="95" rot="MR0"/>
@@ -5068,7 +5095,6 @@ Otherwise we'll deeply dischange the battery.</text>
 <segment>
 <wire x1="17.78" y1="252.73" x2="17.78" y2="251.46" width="0.1524" layer="91"/>
 <label x="17.78" y="251.46" size="1.27" layer="95" rot="R270" xref="yes"/>
-<pinref part="P4" gate="G$1" pin="T"/>
 </segment>
 <segment>
 <wire x1="401.32" y1="270.51" x2="403.86" y2="270.51" width="0.1524" layer="91"/>

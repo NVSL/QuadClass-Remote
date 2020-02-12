@@ -2909,9 +2909,12 @@
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="IC USB FS SERIAL UART 28-SSOP"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="768-1007-1-ND "/>
+<attribute name="MFR" value="FTDI"/>
 <attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="FT232RL-REEL"/>
 </technology>
 </technologies>
 </device>
@@ -3793,13 +3796,15 @@
 </connects>
 <technologies>
 <technology name="">
-<attribute name="AUX1DIST" value="DIGIKEY"/>
-<attribute name="AUX1DISTPN" value="952-1842-ND"/>
-<attribute name="AUX2DIST" value="Digikey"/>
-<attribute name="AUX2DISTPN" value="S5641-ND"/>
+<attribute name="AUX1DIST" value="Sparkfun"/>
+<attribute name="AUX1DISTPN" value="LCD-14072"/>
 <attribute name="CREATOR" value="Swanson"/>
-<attribute name="DIST" value="Sparkfun"/>
-<attribute name="DISTPN" value="LCD-14072"/>
+<attribute name="DESC" value="CONN HEADER VERT 10POS 2.54MM"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="S5641-ND"/>
+<attribute name="MFR" value="Harwin Inc."/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="M20-9991045"/>
 </technology>
 </technologies>
 </device>
@@ -3847,9 +3852,12 @@
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="SWITCH SLIDE DPDT 300MA 6V"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="CKN10723CT-ND"/>
+<attribute name="MFR" value="C&amp;K"/>
 <attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="JS202011JCQN"/>
 </technology>
 </technologies>
 </device>
@@ -3981,9 +3989,12 @@
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="CONN RCPT USB2.0 MICRO B SMD R/A"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="609-4613-1-ND "/>
+<attribute name="MFR" value="Amphenol ICC (FCI)"/>
 <attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="10118192-0001LF"/>
 </technology>
 </technologies>
 </device>
