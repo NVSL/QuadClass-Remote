@@ -8,7 +8,6 @@ fanout SIGNAL GND out;
 fanout SIGNAL VBAT;
 fanout SIGNAL VBUS;
 fanout SIGNAL BPOS;
-fanout SIGNAL VREG_IN;
 auto;
 drc;
 

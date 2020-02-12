@@ -21,3 +21,5 @@ Error: controller_board.sch -- Can't find your FTDI header.  Pin 3 should be con
       (SwoopChecker.py:348:3FAAE5D6)
 Error: controller_board.sch -- The segment of USB_D_N from (205.74, 114.3) to (121.92, 114.3) intersects with the segment of VREG_IN from (163.83, 118.11) to (163.83, 106.68). (SwoopChecker.py:408:0B3AFE0B)
 Error: controller_board.sch -- The segment of USB_D_P from (205.74, 111.76) to (121.92, 111.76) intersects with the segment of VREG_IN from (163.83, 118.11) to (163.83, 106.68). (SwoopChecker.py:408:6529A237)
+Error: controller_board.sch -- Traces RF_P and RF_N in your attena driver are 12.5252445841mm (should be less than 5mm) (ATMegaChecker.py:193:1ACD59E0)
+Error: controller_board.sch -- These RF traces are too thin.  They should be at least 1.01599945136mm (40.0mil): (ANTENNA) (ATMegaChecker.py:457:35C00AED)
