@@ -3798,6 +3798,8 @@
 <technology name="">
 <attribute name="AUX1DIST" value="Sparkfun"/>
 <attribute name="AUX1DISTPN" value="LCD-14072"/>
+<attribute name="AUX1MFR" value="Sparkfun"/>
+<attribute name="AUX1MPN" value="LCD-14072"/>
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DESC" value="CONN HEADER VERT 10POS 2.54MM"/>
 <attribute name="DIST" value="Digikey"/>

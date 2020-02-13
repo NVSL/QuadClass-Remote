@@ -1204,6 +1204,7 @@
 <attribute name="DIST" value="NA"/>
 <attribute name="DISTPN" value="NA"/>
 <attribute name="MOUNTING" value="NA"/>
+<attribute name="POPULATE" value="NO"/>
 </technology>
 </technologies>
 </device>
@@ -1363,6 +1364,8 @@
 <technology name="">
 <attribute name="AUX1DIST" value="Sparkfun"/>
 <attribute name="AUX1DISTPN" value="LCD-14072"/>
+<attribute name="AUX1MFR" value="Sparkfun"/>
+<attribute name="AUX1MPN" value="LCD-14072"/>
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DESC" value="CONN HEADER VERT 10POS 2.54MM"/>
 <attribute name="DIST" value="Digikey"/>
@@ -3642,7 +3645,10 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="NA"/>
 <attribute name="DISTPN" value="NA"/>
+<attribute name="MFR" value="NA"/>
+<attribute name="MFRPN" value="NA"/>
 <attribute name="MOUNTING" value="NONE"/>
+<attribute name="POPULATE" value="NO"/>
 </technology>
 </technologies>
 </device>
@@ -3923,6 +3929,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="Surface mount  battery connector"/>
 <attribute name="DIST" value="ALIBABA"/>
 <attribute name="DISTPN" value="https://www.alibaba.com/product-detail/Molex-51005-51006-2-pin-female_60863668004.html?spm=a2700.7724857.normalList.97.20ef28e64nZnNK"/>
 <attribute name="MFR" value="UNKNOWN"/>
@@ -4213,8 +4220,12 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Michael Gonzalez"/>
+<attribute name="DESC" value="NA"/>
 <attribute name="DIST" value="NA"/>
 <attribute name="DISTPN" value="NA"/>
+<attribute name="MFR" value="None"/>
+<attribute name="MFRPN" value="None"/>
+<attribute name="POPULATE" value="No" constant="no"/>
 </technology>
 </technologies>
 </device>
