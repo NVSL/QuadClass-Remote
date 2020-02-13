@@ -3878,6 +3878,7 @@
 <attribute name="DIST" value="NA"/>
 <attribute name="DISTPN" value="NA"/>
 <attribute name="MOUNTING" value="NA"/>
+<attribute name="POPULATE" value="NO"/>
 </technology>
 </technologies>
 </device>
