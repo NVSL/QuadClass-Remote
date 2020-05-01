@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -4452,6 +4452,9 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="R1" library="quadparts_prebuilt" deviceset="RESISTOR-PACK-4X" device="-2.2K" package3d_urn="urn:adsk.eagle:package:10895048/1" value="2.2K">
 <attribute name="SUBSTITUTE_OK" value="yes"/>
 </part>
+<part name="P4" library="RemoteParts" deviceset="TEST-POINT" device="">
+<attribute name="POPULATE" value="NO"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -4973,6 +4976,10 @@ Otherwise we'll deeply dischange the battery.</text>
 <attribute name="VALUE" x="182.88" y="40.132" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="182.88" y="35.3314" size="1.778" layer="95" rot="R180"/>
 </instance>
+<instance part="P4" gate="G$1" x="17.78" y="255.27" smashed="yes">
+<attribute name="NAME" x="17.78" y="262.89" size="1.27" layer="95" align="center"/>
+<attribute name="POPULATE" x="17.78" y="255.27" size="1.778" layer="96" display="off"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -5182,6 +5189,8 @@ Otherwise we'll deeply dischange the battery.</text>
 <segment>
 <wire x1="17.78" y1="252.73" x2="17.78" y2="251.46" width="0.1524" layer="91"/>
 <label x="17.78" y="251.46" size="1.27" layer="95" rot="R270" xref="yes"/>
+<pinref part="P4" gate="G$1" pin="T"/>
+<wire x1="17.78" y1="252.73" x2="17.78" y2="255.27" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="401.32" y1="270.51" x2="403.86" y2="270.51" width="0.1524" layer="91"/>
