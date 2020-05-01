@@ -1,21 +1,22 @@
+# We cut the switch early because it doesn't currently work.  We cut the FTDI late because it's on by default now.
 # breakout board
 delete B1 A1 C2 B2 C3 C13 C11 C14 C15 C12 C16 Y1 U4 B3 J6 C4 U1
 write remote+pwr+ftdi+gim+lcd+IMU+tp
+# Power switch 
+delete S1
+write remote+ftdi+gim+lcd+IMU+tp
 # test points 
 delete P1 P2 P3 P4
 # IMU 
-write remote+pwr+ftdi+gim+lcd+IMU
+write remote+ftdi+gim+lcd+IMU
 delete C18 C19 U6 C23 C20 C26 R6 R11
 # LCD 
-write remote+pwr+ftdi+gim+lcd
+write remote+ftdi+gim+lcd
 delete L1
 # Nice Gimbals 
-write remote+pwr+ftdi+gim
+write remote+ftdi+gim
 delete J2 J3
 # FTDI 
-write remote+pwr+ftdi
+write remote+ftdi
 delete C8 C7 C9 R14 R13 D5 U5 S2 R5 R4 U3 
-write remote+pwr
-# Power switch 
-delete S1
-write remote;
+write remote

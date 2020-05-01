@@ -5,7 +5,8 @@
  */
 #include <Arduino.h>
 #include <RotaryEncoder.h>
-//#include <SerLCD.h>
+#include <SerLCD.h>
+#include <EEPROM.h>
 
 // Pin definitions for Gimbals (Analog inputs).  It is not clear why the A1, A2,... etc. don't work, but they don't.
 #define PIN_YAW		        A0
@@ -18,31 +19,44 @@
 extern void quad_remote_setup();
 
 extern RotaryEncoder knob1;
-//extern SerLCD lcd;
+extern SerLCD lcd;
 
-#define ENC1_BUTTON 20
-#define ENC1_A 9
-#define ENC1_B 8
+#define ENC1_BUTTON_PIN 20
+#define ENC1_A_PIN 9
+#define ENC1_B_PIN 8
 
 // If you changes these, you need to change the interrupt assigments in .cpp
-#define BUTTON1 15
-#define BUTTON2 14
+#define BUTTON1_PIN 15
+#define BUTTON2_PIN 14
 
-#define BUTTON_UP 4
-#define BUTTON_DOWN 21 
-#define BUTTON_LEFT 5
-#define BUTTON_RIGHT 7
-#define BUTTON_CENTER 6
+#define BUTTON_UP_PIN 4
+#define BUTTON_DOWN_PIN 21 
+#define BUTTON_LEFT_PIN 5
+#define BUTTON_RIGHT_PIN 7
+#define BUTTON_CENTER_PIN 6
 
-#define LCD_RX 25
-#define LCD_TX 24
+#define LCD_RX_PIN 25
+#define LCD_TX_PIN 24
 
-#define BATTERY_SENSE A4
+#define BATTERY_SENSE_PIN A4
 #define MIN_BATTERY (775.0) // calculated
 #define MAX_BATTERY (928.0)
 //#define MIN_BATTERY (683.0) // calculated
 //#define MAX_BATTERY (817.0)
 
+template<class T>
+void eeprom_load(int addr, T & v) {
+	for(int i = 0; i < sizeof(T); i++) {
+		((uint8_t*)&v)[i] = EEPROM.read(addr + i);
+	}
+}
+
+template<class T>
+void eeprom_store(int addr, T & v) {
+	for(int i = 0; i < sizeof(T); i++) {
+		EEPROM.write(addr + i, ((uint8_t*)&v)[i]);
+	}
+}
 
 #define BUTTONS 10
 #define GIMBAL_AXES 4

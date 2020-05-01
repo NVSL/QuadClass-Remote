@@ -1,0 +1,3 @@
+Warning: quadparts_prebuilt:QUADCLASS_LOGO_SMALL -- Package is missing '>NAME'.  Every package needs to a '>NAME' so the part's name will be visible on the board. (LibraryStyle.py:143:02209086)
+Error: quadparts_prebuilt:QUADCLASS_LOGO_SMALL -- Nothing in tKeepout.  All packages should include a keepout area to prevent parts from overlapping. (LibraryStyle.py:192:4536D431)
+Error: quadparts_prebuilt:QUADCLASS_LOGO_SMALL -- Wires found in Top layer.  You probably want an SMD instead. (LibraryStyle.py:199:5D19FAC0)
