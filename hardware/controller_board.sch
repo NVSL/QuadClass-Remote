@@ -4426,7 +4426,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="GND5" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="L1" library="RemoteParts" deviceset="SPARKFUN_SERLCD_SERIAL_REDUCED" device="-SMD" value="SPARKFUN_SERLCD_SERIAL_REDUCED-SMD"/>
 <part name="GND3" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="A1" library="quadparts_prebuilt" deviceset="ANTENNA" device="-CHIP" value="ANTENNA-CHIP"/>
+<part name="A1" library="quadparts_prebuilt" deviceset="ANTENNA" device="-BOARD-REV" value="ANTENNA-BOARD-REV"/>
 <part name="J5" library="quadparts_prebuilt" deviceset="FTDI_BASIC" device="-SMD" value="FTDI_BASIC-SMD">
 <attribute name="SUBSTITUTE_OK" value="yes"/>
 </part>
