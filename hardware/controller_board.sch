@@ -3772,9 +3772,10 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="trace antenna"/>
 <attribute name="DIST" value="NA"/>
 <attribute name="DISTPN" value="NA"/>
-<attribute name="MFR" value="NA" constant="no"/>
+<attribute name="MFR" value="NA"/>
 <attribute name="MOUNTING" value="NONE"/>
 <attribute name="MPN" value="NA"/>
 </technology>
@@ -3787,6 +3788,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="trace antenna"/>
 <attribute name="DIST" value="NA"/>
 <attribute name="DISTPN" value="NA"/>
 <attribute name="MFR" value="NA"/>
