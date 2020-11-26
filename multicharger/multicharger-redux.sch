@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.4.0">
+<eagle version="9.6.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -506,9 +506,12 @@
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="CONN PLUG USB2.0 TYPEA 4P SMD RA"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="36-931-ND"/>
+<attribute name="MFR" value="Keystone Electronics"/>
 <attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="931"/>
 </technology>
 </technologies>
 </device>
@@ -1610,9 +1613,12 @@
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="CAP CER 10UF 25V X5R 0805"/>
 <attribute name="DIST" value="Digikey"/>
 <attribute name="DISTPN" value="445-5984-1-ND"/>
+<attribute name="MFR" value="TDK"/>
 <attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="C2012X5R1E106K125AB"/>
 <attribute name="REVIEWER" value="Swanson"/>
 <attribute name="VALUE" value="10uF"/>
 </technology>
@@ -2129,9 +2135,13 @@
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="RES SMD 1.2K OHM 1% 1/8W 0805"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="YAG3700CT-ND"/>
+<attribute name="MFR" value="YAGEO"/>
 <attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="AC0805FR-071K2L"/>
+<attribute name="PACKAGE" value="0805"/>
 <attribute name="VALUE" value="2K"/>
 </technology>
 </technologies>
@@ -2290,14 +2300,18 @@
 <part name="P+24" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="P+22" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="P+21" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="C6" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
+<part name="C6" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF">
+<attribute name="SUBSTITUTE_OK" value="yes"/>
+</part>
 <part name="P+23" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="D1" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED-1.6X1.5MM" value="LED-2X-GREEN/RED-1.6X1.5MM"/>
 <part name="U4" library="RemoteParts" deviceset="MCP73831/2" device="" value="MCP73831T-2ACI/OT"/>
 <part name="P+12" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="P+13" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="P+14" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="C8" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
+<part name="C8" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF">
+<attribute name="SUBSTITUTE_OK" value="yes"/>
+</part>
 <part name="P+15" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="D4" library="RemoteParts" deviceset="LED-2X" device="-GREEN/RED-1.6X1.5MM" value="LED-2X-GREEN/RED-1.6X1.5MM"/>
 <part name="FRAME1" library="quadparts_prebuilt" deviceset="FRAME_B_L" device=""/>
@@ -2306,16 +2320,30 @@
 <part name="P4" library="RemoteParts" deviceset="TEST-POINT" device="-1MM" value="TEST-POINT-1MM"/>
 <part name="P5" library="RemoteParts" deviceset="TEST-POINT" device="-1MM" value="TEST-POINT-1MM"/>
 <part name="P6" library="RemoteParts" deviceset="TEST-POINT" device="-1MM" value="TEST-POINT-1MM"/>
-<part name="C1" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
-<part name="C3" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF"/>
+<part name="C1" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF">
+<attribute name="SUBSTITUTE_OK" value="yes"/>
+</part>
+<part name="C3" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-10UF" value="10uF">
+<attribute name="SUBSTITUTE_OK" value="yes"/>
+</part>
 <part name="B1" library="quadparts_prebuilt" deviceset="BATTERY" device="-SMD"/>
 <part name="B4" library="quadparts_prebuilt" deviceset="BATTERY" device="-SMD"/>
-<part name="R1" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1.2K" value="1.2K"/>
-<part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1.2K" value="1.2K"/>
-<part name="R3" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1.2K" value="1.2K"/>
+<part name="R1" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1.2K" value="1.2K">
+<attribute name="SUBSTITUTE_OK" value="yes"/>
+</part>
+<part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1.2K" value="1.2K">
+<attribute name="SUBSTITUTE_OK" value="yes"/>
+</part>
+<part name="R3" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1.2K" value="1.2K">
+<attribute name="SUBSTITUTE_OK" value="yes"/>
+</part>
 <part name="R4" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-1.2K" value="1.2K"/>
-<part name="R5" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-2K" value="2K"/>
-<part name="R7" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-2K" value="2K"/>
+<part name="R5" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-2K" value="2K">
+<attribute name="SUBSTITUTE_OK" value="yes"/>
+</part>
+<part name="R7" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-2K" value="2K">
+<attribute name="SUBSTITUTE_OK" value="yes"/>
+</part>
 </parts>
 <sheets>
 <sheet>
@@ -2341,6 +2369,7 @@
 <instance part="C6" gate="G$1" x="234.95" y="182.88" smashed="yes">
 <attribute name="VALUE" x="231.394" y="180.721" size="1.778" layer="96"/>
 <attribute name="NAME" x="235.458" y="183.261" size="1.778" layer="95"/>
+<attribute name="SUBSTITUTE_OK" x="234.95" y="182.88" size="1.778" layer="96"/>
 </instance>
 <instance part="P+23" gate="1" x="226.06" y="179.07" smashed="yes">
 <attribute name="VALUE" x="226.06" y="176.53" size="1.778" layer="96" align="center"/>
@@ -2365,6 +2394,7 @@
 <instance part="C8" gate="G$1" x="234.95" y="90.17" smashed="yes">
 <attribute name="VALUE" x="231.394" y="88.011" size="1.778" layer="96"/>
 <attribute name="NAME" x="235.458" y="90.551" size="1.778" layer="95"/>
+<attribute name="SUBSTITUTE_OK" x="234.95" y="90.17" size="1.778" layer="96"/>
 </instance>
 <instance part="P+15" gate="1" x="226.06" y="86.36" smashed="yes">
 <attribute name="VALUE" x="226.06" y="83.82" size="1.778" layer="96" align="center"/>
@@ -2398,10 +2428,12 @@
 <instance part="C1" gate="G$1" x="116.84" y="182.88" smashed="yes">
 <attribute name="VALUE" x="113.284" y="180.721" size="1.778" layer="96"/>
 <attribute name="NAME" x="117.348" y="183.261" size="1.778" layer="95"/>
+<attribute name="SUBSTITUTE_OK" x="116.84" y="182.88" size="1.778" layer="96"/>
 </instance>
 <instance part="C3" gate="G$1" x="124.46" y="182.88" smashed="yes">
 <attribute name="VALUE" x="120.904" y="180.721" size="1.778" layer="96"/>
 <attribute name="NAME" x="124.968" y="183.261" size="1.778" layer="95"/>
+<attribute name="SUBSTITUTE_OK" x="124.46" y="182.88" size="1.778" layer="96"/>
 </instance>
 <instance part="B1" gate="G$1" x="246.38" y="248.92" smashed="yes">
 <attribute name="NAME" x="245.11" y="254" size="1.778" layer="95" font="vector" align="center"/>
@@ -2412,14 +2444,17 @@
 <instance part="R1" gate="G$1" x="173.99" y="182.88" smashed="yes">
 <attribute name="VALUE" x="170.18" y="179.578" size="1.778" layer="96"/>
 <attribute name="NAME" x="170.18" y="184.3786" size="1.778" layer="95"/>
+<attribute name="SUBSTITUTE_OK" x="173.99" y="182.88" size="1.778" layer="96"/>
 </instance>
 <instance part="R2" gate="G$1" x="173.99" y="177.8" smashed="yes">
 <attribute name="VALUE" x="170.18" y="174.498" size="1.778" layer="96"/>
 <attribute name="NAME" x="170.18" y="179.2986" size="1.778" layer="95"/>
+<attribute name="SUBSTITUTE_OK" x="173.99" y="177.8" size="1.778" layer="96"/>
 </instance>
 <instance part="R3" gate="G$1" x="173.99" y="90.17" smashed="yes">
 <attribute name="VALUE" x="170.18" y="86.868" size="1.778" layer="96"/>
 <attribute name="NAME" x="170.18" y="91.6686" size="1.778" layer="95"/>
+<attribute name="SUBSTITUTE_OK" x="173.99" y="90.17" size="1.778" layer="96"/>
 </instance>
 <instance part="R4" gate="G$1" x="173.99" y="85.09" smashed="yes">
 <attribute name="VALUE" x="170.18" y="81.788" size="1.778" layer="96"/>
@@ -2428,10 +2463,12 @@
 <instance part="R5" gate="G$1" x="219.71" y="185.42" smashed="yes">
 <attribute name="VALUE" x="215.9" y="182.118" size="1.778" layer="96"/>
 <attribute name="NAME" x="215.9" y="186.9186" size="1.778" layer="95"/>
+<attribute name="SUBSTITUTE_OK" x="219.71" y="185.42" size="1.778" layer="96"/>
 </instance>
 <instance part="R7" gate="G$1" x="219.71" y="92.71" smashed="yes">
 <attribute name="VALUE" x="215.9" y="89.408" size="1.778" layer="96"/>
 <attribute name="NAME" x="215.9" y="94.2086" size="1.778" layer="95"/>
+<attribute name="SUBSTITUTE_OK" x="219.71" y="92.71" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
