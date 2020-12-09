@@ -31,10 +31,12 @@ void quad_remote_setup() {
 	ADCSRA_struct.aden = 0;
 	ADCSRA_struct.aden = 1;
 	delay(1000);
-
-	Serial.println(ADCSRA);
-	Serial.println(ADCSRB);
-	Serial.println(ADMUX); 
+	
+	/*
+	  Serial.println(ADCSRA);
+	  Serial.println(ADCSRB);
+	  Serial.println(ADMUX); 
+	*/
 	
 	pinMode(ENC1_BUTTON_PIN, INPUT_PULLUP);
 
