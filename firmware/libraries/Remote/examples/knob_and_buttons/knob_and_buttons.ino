@@ -52,8 +52,8 @@ void update_display() {
 }
 
 void knobs_update() {
-	//Serial.print("Knob: ");
-	//Serial.println(knob1.getCurrentPos());
+	Serial.print("Knob: ");
+	Serial.println(knob1.getCurrentPos());
 }
 
 
