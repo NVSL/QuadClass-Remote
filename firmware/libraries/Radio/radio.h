@@ -39,11 +39,19 @@ unsigned int rfAvailable();
 char rfRead();
 char rfRead(uint8_t * buf, uint8_t len);
 
+extern uint8_t rssiRaw;
+
 template<class T>
 bool rfReceive(T & g)
 {
 	T t;
-	if (rfAvailable()) {
+	//I've tried a lot of things here to try to reduce lag between remote
+	//stick movement and quad response.  checking that there are enough
+	//bytes available seems to help.  But it's a not clear.  Sometimes I
+	//just lose connectivity for minutes or seconds.  Moving the remote
+	//closer to the quad will sometimes fix this (even if I then move the
+	//quad farther away).
+	if (rfAvailable()>=sizeof(T)) {
 		int l = rfRead((uint8_t *)&t, sizeof(T));
 		if (l == sizeof(T)) {
 			if (t.validate()) {
@@ -65,6 +73,7 @@ bool rfReceive(T & g)
 				Serial.print((int)t.hash, 16);
 				Serial.println();
 			}
+		} else if (l == 0) {
 		} else {
 			Serial.print("Short packet: ");
 			Serial.print(t.get_name());

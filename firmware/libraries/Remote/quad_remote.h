@@ -38,7 +38,7 @@ extern SerLCD lcd;
 #define LCD_RX_PIN 25
 #define LCD_TX_PIN 24
 
-#define BATTERY_SENSE_PIN A4
+#define BATTERY_SENSE_PIN A7
 #define MIN_BATTERY (775.0) // calculated
 #define MAX_BATTERY (928.0)
 //#define MIN_BATTERY (683.0) // calculated

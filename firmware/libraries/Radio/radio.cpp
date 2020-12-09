@@ -34,7 +34,7 @@
 const int RX_LED = LED1;  // B6 - RF RX LED
 const int TX_LED = LED2;  // B7 - RF TX LED
 
-static uint8_t rssiRaw; // Global variable shared between RX ISRs
+uint8_t rssiRaw; // Global variable shared between RX ISRs
 
 // A buffer to maintain data being received by radio.
 static const int RF_BUFFER_SIZE = 127;
