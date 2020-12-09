@@ -4014,9 +4014,12 @@
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="CONN PLUG USB2.0 TYPEA 4P SMD RA"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="36-931-ND"/>
+<attribute name="MFR" value="Keystone Electronics"/>
 <attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="931"/>
 </technology>
 </technologies>
 </device>

@@ -27,15 +27,15 @@ void quad_remote_setup() {
 	PCICR = 1;               // enable pin-change interrupt 0
 	PCMSK0 = 0b00110000;     // catch changes on all the pins for the encoder
 
-	/*     ADMUX_struct.refs = 3;
-	       ADCSRA_struct.aden = 0;
-	       ADCSRA_struct.aden = 1;
-	       delay(1000);
+	ADMUX_struct.refs = 3;
+	ADCSRA_struct.aden = 0;
+	ADCSRA_struct.aden = 1;
+	delay(1000);
 
-	       Serial.println(ADCSRA);
-	       Serial.println(ADCSRB);
-	       Serial.println(ADMUX); */
-     
+	Serial.println(ADCSRA);
+	Serial.println(ADCSRB);
+	Serial.println(ADMUX); 
+	
 	pinMode(ENC1_BUTTON_PIN, INPUT_PULLUP);
 
 	pinMode(BUTTON1_PIN, INPUT_PULLUP);
