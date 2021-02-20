@@ -24,3 +24,6 @@ Error: controller_board.sch -- The segment of USB_D_P from (205.74, 111.76) to (
 Error: controller_board.sch -- Traces RF_P and RF_N in your attena driver are 12.5252445841mm (should be less than 5mm) (ATMegaChecker.py:193:1ACD59E0)
 Error: controller_board.sch -- These RF traces are too thin.  They should be at least 1.01599945136mm (40.0mil): (ANTENNA) (ATMegaChecker.py:457:35C00AED)
 Error: controller_board.sch -- ANTENNA is too long (6.87049114525mm).  Should be less than 6mm (ATMegaChecker.py:209:43874259)
+Warning: controller_board.sch:RemoteParts:SHORT -- Package is missing '>NAME'.  Every package needs to a '>NAME' so the part's name will be visible on the board. (LibraryStyle.py:143:0D391329)
+Error: controller_board.sch:RemoteParts:SHORT -- Nothing in tKeepout.  All packages should include a keepout area to prevent parts from overlapping. (LibraryStyle.py:192:26C27BF4)
+Error: controller_board.sch:RemoteParts:SHORT -- Nothing in tPlace.  Packages should include lines or shapes showing how the part should be placed on the board.  For ICs this should precisely show the location of four courners of the part.  For polarized parts, it should illustrate the polarity.  For other parts a full or partial outline of the part is sufficient. (LibraryStyle.py:195:3228B762)

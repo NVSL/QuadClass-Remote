@@ -873,8 +873,8 @@
 <pad name="G2" x="5.7" y="0" drill="2.2"/>
 </package>
 <package name="SHORT">
-<pad name="P$1" x="0" y="0" drill="0.5" diameter="1"/>
-<pad name="P$2" x="0.9" y="0" drill="0.5" diameter="1"/>
+<pad name="1" x="0" y="0" drill="0.5" diameter="1"/>
+<pad name="2" x="0.9" y="0" drill="0.5" diameter="1"/>
 </package>
 </packages>
 <packages3d>
@@ -1703,8 +1703,8 @@
 <devices>
 <device name="" package="SHORT">
 <connects>
-<connect gate="G$1" pin="A" pad="P$1"/>
-<connect gate="G$1" pin="B" pad="P$2"/>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="B" pad="2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -4261,9 +4261,12 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="RES ARRAY 4 RES 1K OHM 0804"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="Y10102CT-ND"/>
+<attribute name="MFR" value="Panasonic Electronic Components"/>
 <attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="EXB-N8V102JX"/>
 <attribute name="VALUE" value="1K"/>
 </technology>
 </technologies>
@@ -4652,10 +4655,10 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <wire x1="219.71" y1="54.61" x2="149.86" y2="54.61" width="0.1524" layer="97" style="longdash"/>
 <wire x1="149.86" y1="54.61" x2="149.86" y2="125.73" width="0.1524" layer="97" style="longdash"/>
 <wire x1="149.86" y1="125.73" x2="87.63" y2="125.73" width="0.1524" layer="97" style="longdash"/>
-<wire x1="326.39" y1="130.81" x2="92.71" y2="130.81" width="0.1524" layer="97" style="longdash"/>
+<wire x1="323.85" y1="130.81" x2="92.71" y2="130.81" width="0.1524" layer="97" style="longdash"/>
 <wire x1="92.71" y1="130.81" x2="92.71" y2="57.15" width="0.1524" layer="97" style="longdash"/>
-<wire x1="92.71" y1="57.15" x2="326.39" y2="57.15" width="0.1524" layer="97" style="longdash"/>
-<wire x1="326.39" y1="57.15" x2="326.39" y2="130.81" width="0.1524" layer="97" style="longdash"/>
+<wire x1="92.71" y1="57.15" x2="323.85" y2="57.15" width="0.1524" layer="97" style="longdash"/>
+<wire x1="323.85" y1="57.15" x2="323.85" y2="130.81" width="0.1524" layer="97" style="longdash"/>
 <text x="100.33" y="6.35" size="3.81" layer="97">LiPo Charger</text>
 <wire x1="72.39" y1="275.59" x2="72.39" y2="236.22" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="236.22" x2="3.81" y2="236.22" width="0.1524" layer="97" style="longdash"/>
@@ -5527,6 +5530,11 @@ so we need a divider to drop it into a range we can handle.</text>
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="241.3" y1="12.7" x2="241.3" y2="17.78" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<wire x1="375.92" y1="267.97" x2="373.38" y2="267.97" width="0.1524" layer="91"/>
+<label x="373.38" y="267.97" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="E1" gate="G$1" pin="C"/>
+</segment>
 </net>
 <net name="BTN_UP" class="0">
 <segment>
@@ -5969,18 +5977,6 @@ so we need a divider to drop it into a range we can handle.</text>
 <pinref part="J1" gate="A" pin="3-D+"/>
 </segment>
 </net>
-<net name="CTS" class="0">
-<segment>
-<wire x1="236.22" y1="106.68" x2="241.3" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="CTS"/>
-<label x="241.3" y="106.68" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U5" gate="G$1" pin="1Z"/>
-<wire x1="284.48" y1="114.3" x2="280.67" y2="114.3" width="0.1524" layer="91"/>
-<label x="280.67" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="DTR" class="0">
 <segment>
 <wire x1="236.22" y1="101.6" x2="241.3" y2="101.6" width="0.1524" layer="91"/>
@@ -6101,20 +6097,6 @@ so we need a divider to drop it into a range we can handle.</text>
 <pinref part="J6" gate="A" pin="2"/>
 <wire x1="350.52" y1="66.04" x2="355.6" y2="66.04" width="0.1524" layer="91"/>
 <label x="355.6" y="66.04" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="CTS-1" class="0">
-<segment>
-<pinref part="U5" gate="G$1" pin="1Y1"/>
-<wire x1="309.88" y1="111.76" x2="312.42" y2="111.76" width="0.1524" layer="91"/>
-<label x="312.42" y="111.76" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="CTS-0" class="0">
-<segment>
-<pinref part="U5" gate="G$1" pin="1Y0"/>
-<wire x1="309.88" y1="114.3" x2="312.42" y2="114.3" width="0.1524" layer="91"/>
-<label x="312.42" y="114.3" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="TXO-0" class="0">
@@ -6530,13 +6512,6 @@ so we need a divider to drop it into a range we can handle.</text>
 <pinref part="U4" gate="G$1" pin="PF5(ADC5/TMS)"/>
 <wire x1="220.98" y1="181.61" x2="223.52" y2="181.61" width="0.1524" layer="91"/>
 <label x="223.52" y="181.61" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$18" class="0">
-<segment>
-<wire x1="375.92" y1="267.97" x2="373.38" y2="267.97" width="0.1524" layer="91"/>
-<label x="373.38" y="267.97" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="E1" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="HIGH-I-GND" class="1">

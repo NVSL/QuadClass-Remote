@@ -1265,8 +1265,8 @@ Battery</text>
 <pad name="G2" x="5.7" y="0" drill="2.2"/>
 </package>
 <package name="SHORT">
-<pad name="P$1" x="0" y="0" drill="0.5" diameter="1"/>
-<pad name="P$2" x="0.9" y="0" drill="0.5" diameter="1"/>
+<pad name="1" x="0" y="0" drill="0.5" diameter="1"/>
+<pad name="2" x="0.9" y="0" drill="0.5" diameter="1"/>
 </package>
 </packages>
 <packages3d>
@@ -1821,16 +1821,16 @@ design rules under a new name.</description>
 <attribute name="NAME" x="-31" y="2.5" size="0.9" layer="25" font="vector" align="center"/>
 <attribute name="REVIEWER" value="Swanson" x="-202" y="21.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="D2" library="quadparts_prebuilt" package="SODFL3516X96" package3d_urn="urn:adsk.eagle:package:11793366/1" value="360mV" x="-26.06" y="-0.5" smashed="yes" rot="R270">
-<attribute name="CREATOR" value="Swanson" x="-201.06" y="31.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DESC" value="DIODE SCHOTTKY 30V 1.5A SFLAT" x="-26.06" y="-0.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DIST" value="Digikey" x="-201.06" y="31.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="DISTPN" value="CRS08QMCT-ND" x="-201.06" y="31.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MFR" value="Toshiba Semiconductor and Storage" x="-201.06" y="31.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MOUNTING" value="SMD" x="-26.06" y="-0.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="MPN" value="CRS08(TE85L,Q,M)" x="-201.06" y="31.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-26.06" y="2.5" size="0.9" layer="25" font="vector" align="center"/>
-<attribute name="REVIEWER" value="Swanson" x="-201.06" y="31.5" size="1.778" layer="27" rot="R270" display="off"/>
+<element name="D2" library="quadparts_prebuilt" package="SODFL3516X96" package3d_urn="urn:adsk.eagle:package:11793366/1" value="360mV" x="-26" y="-0.5" smashed="yes" rot="R270">
+<attribute name="CREATOR" value="Swanson" x="-201" y="31.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DESC" value="DIODE SCHOTTKY 30V 1.5A SFLAT" x="-26" y="-0.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DIST" value="Digikey" x="-201" y="31.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="DISTPN" value="CRS08QMCT-ND" x="-201" y="31.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MFR" value="Toshiba Semiconductor and Storage" x="-201" y="31.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MOUNTING" value="SMD" x="-26" y="-0.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="MPN" value="CRS08(TE85L,Q,M)" x="-201" y="31.5" size="1.778" layer="27" rot="R270" display="off"/>
+<attribute name="NAME" x="-26" y="2.5" size="0.9" layer="25" font="vector" align="center"/>
+<attribute name="REVIEWER" value="Swanson" x="-201" y="31.5" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
 <element name="V23" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-29" y="8.5" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-29" y="8.5" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2272,17 +2272,23 @@ design rules under a new name.</description>
 </element>
 <element name="R2" library="quadparts_prebuilt" package="RESCAXS50P200X100X45-8" package3d_urn="urn:adsk.eagle:package:10895048/1" value="1K" x="-6" y="0" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-6" y="0" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESC" value="RES ARRAY 4 RES 1K OHM 0804" x="-6" y="0" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="-6" y="0" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="Y10102CT-ND" x="-6" y="0" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="Panasonic Electronic Components" x="-6" y="0" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="-6" y="0" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="EXB-N8V102JX" x="-6" y="0" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="-6" y="2" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 <attribute name="VALUE" x="-8" y="0" size="0.9" layer="27" font="vector" rot="R270" align="center"/>
 </element>
 <element name="R6" library="quadparts_prebuilt" package="RESCAXS50P200X100X45-8" package3d_urn="urn:adsk.eagle:package:10895048/1" value="1K" x="6" y="0" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="6" y="0" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESC" value="RES ARRAY 4 RES 1K OHM 0804" x="6" y="0" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DIST" value="DIGIKEY" x="6" y="0" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="DISTPN" value="Y10102CT-ND" x="6" y="0" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MFR" value="Panasonic Electronic Components" x="6" y="0" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="6" y="0" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="EXB-N8V102JX" x="6" y="0" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="6" y="2" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 <attribute name="VALUE" x="8" y="0" size="0.9" layer="27" font="vector" rot="R90" align="center"/>
 </element>
@@ -2598,7 +2604,7 @@ design rules under a new name.</description>
 <contactref element="C5" pad="2"/>
 <contactref element="C6" pad="2"/>
 <contactref element="U2" pad="2"/>
-<contactref element="F1" pad="P$2"/>
+<contactref element="F1" pad="2"/>
 <polygon width="0.127" layer="2">
 <vertex x="-47.5" y="28.5"/>
 <vertex x="47.5" y="28.5"/>
@@ -2620,6 +2626,7 @@ design rules under a new name.</description>
 <wire x1="9.8365" y1="19.2945" x2="9.8365" y2="18.532275" width="0.127" layer="1"/>
 <wire x1="9.8365" y1="18.532275" x2="10.068775" y2="18.3" width="0.127" layer="1"/>
 <wire x1="10.068775" y1="18.3" x2="10.3" y2="18.3" width="0.127" layer="1"/>
+<contactref element="E1" pad="C"/>
 </signal>
 <signal name="BTN_UP">
 <contactref element="U4" pad="50"/>
@@ -3165,11 +3172,11 @@ design rules under a new name.</description>
 <contactref element="D3" pad="1"/>
 <wire x1="-26.125" y1="1" x2="-31" y2="1" width="0.508" layer="1"/>
 <wire x1="-31" y1="1" x2="-31" y2="1.025" width="0.508" layer="1"/>
-<wire x1="-26.125" y1="1" x2="-26.06" y2="1.025" width="0.508" layer="1"/>
+<wire x1="-26.125" y1="1" x2="-26" y2="1.025" width="0.508" layer="1"/>
 <wire x1="-24.5" y1="1" x2="-25.875" y2="1" width="0.508" layer="1"/>
 <wire x1="-17.25" y1="-6.25" x2="-24.5" y2="1" width="0.508" layer="1"/>
 <wire x1="-17.25" y1="-10" x2="-17.25" y2="-6.25" width="0.508" layer="1"/>
-<wire x1="-25.875" y1="1" x2="-26.06" y2="1.025" width="0.508" layer="1"/>
+<wire x1="-25.875" y1="1" x2="-26" y2="1.025" width="0.508" layer="1"/>
 <wire x1="-17.25" y1="-10" x2="-17.16" y2="-10" width="0.508" layer="1"/>
 <wire x1="23.375" y1="13.25" x2="22.5" y2="13.25" width="0.508" layer="1"/>
 <wire x1="23.375" y1="14" x2="23.375" y2="13.25" width="0.508" layer="1"/>
@@ -3317,18 +3324,6 @@ design rules under a new name.</description>
 <wire x1="26.125" y1="22.225" x2="24.844" y2="22.225" width="0.127" layer="1"/>
 <contactref element="U3" pad="15"/>
 <contactref element="J1" pad="3"/>
-</signal>
-<signal name="CTS">
-<contactref element="U3" pad="11"/>
-<contactref element="U5" pad="2"/>
-<wire x1="30.625" y1="20.25" x2="32.125" y2="20.25" width="0.127" layer="1"/>
-<wire x1="27.75" y1="17.375" x2="30.625" y2="20.25" width="0.127" layer="1"/>
-<wire x1="27.75" y1="13.75" x2="27.75" y2="17.375" width="0.127" layer="1"/>
-<wire x1="26.375" y1="12.375" x2="27.75" y2="13.75" width="0.127" layer="1"/>
-<wire x1="26.375" y1="10.25" x2="26.375" y2="12.375" width="0.127" layer="1"/>
-<wire x1="26.25" y1="10.125" x2="26.375" y2="10.25" width="0.127" layer="1"/>
-<wire x1="25.1283" y1="10.125" x2="26.25" y2="10.125" width="0.127" layer="1"/>
-<wire x1="32.125" y1="20.25" x2="32.156" y2="20.275" width="0.127" layer="1"/>
 </signal>
 <signal name="DTR">
 <contactref element="U3" pad="2"/>
@@ -3610,12 +3605,6 @@ design rules under a new name.</description>
 <wire x1="17" y1="19" x2="23.25" y2="12.75" width="0.127" layer="2"/>
 <wire x1="23.25" y1="12.75" x2="23.25" y2="11.5" width="0.127" layer="2"/>
 <wire x1="-19.3325" y1="30.8325" x2="-7.6675" y2="19.1675" width="0.127" layer="2"/>
-</signal>
-<signal name="CTS-1">
-<contactref element="U5" pad="1"/>
-</signal>
-<signal name="CTS-0">
-<contactref element="U5" pad="3"/>
 </signal>
 <signal name="TXO-0">
 <contactref element="U4" pad="46"/>
@@ -4346,7 +4335,7 @@ design rules under a new name.</description>
 <wire x1="-35.5" y1="-15.625" x2="-33.625" y2="-13.75" width="0.508" layer="1"/>
 <wire x1="-35.5" y1="-16.5" x2="-35.5" y2="-15.625" width="0.508" layer="1"/>
 <wire x1="-34.8" y1="-16.5" x2="-35.5" y2="-16.5" width="0.508" layer="1"/>
-<wire x1="-26.125" y1="-2" x2="-26.06" y2="-2.025" width="0.508" layer="1"/>
+<wire x1="-26.125" y1="-2" x2="-26" y2="-2.025" width="0.508" layer="1"/>
 <via x="-35.875" y="-8.75" extent="1-16" drill="0.381"/>
 <via x="-33.625" y="-13.75" extent="1-16" drill="0.381"/>
 </signal>
@@ -4535,14 +4524,11 @@ design rules under a new name.</description>
 <via x="-7.75" y="6.875" extent="1-16" drill="0.2"/>
 <via x="-12.625" y="-2.375" extent="1-16" drill="0.2"/>
 </signal>
-<signal name="N$18">
-<contactref element="E1" pad="C"/>
-</signal>
 <signal name="HIGH-I-GND" class="1">
 <contactref element="B3" pad="G"/>
 <contactref element="B3" pad="G2"/>
 <contactref element="B3" pad="G3"/>
-<contactref element="F1" pad="P$1"/>
+<contactref element="F1" pad="1"/>
 <wire x1="-21.125" y1="12.625" x2="-21" y2="12.5" width="0.508" layer="1"/>
 <wire x1="-21.125" y1="14.125" x2="-21.125" y2="12.625" width="0.508" layer="1"/>
 <wire x1="-21" y1="14.25" x2="-21.125" y2="14.125" width="0.508" layer="1"/>
@@ -4596,7 +4582,6 @@ design rules under a new name.</description>
 <approved hash="3,1,c57f31473088c4b0"/>
 <approved hash="3,1,90716f23f50cf5c8"/>
 <approved hash="3,1,cffe37c63787cfbf"/>
-<approved hash="23,1,d59a359f8567ac25"/>
 <approved hash="19,1,ca2771f93ea47cab"/>
 <approved hash="19,16,ca2771f93ea47cab"/>
 </errors>
