@@ -1709,6 +1709,7 @@
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="NA"/>
 <attribute name="DIST" value="NA"/>
 <attribute name="DISTPN" value="NA"/>
 <attribute name="MFR" value="NA"/>
