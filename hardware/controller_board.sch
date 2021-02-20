@@ -873,8 +873,8 @@
 <pad name="G2" x="5.7" y="0" drill="2.2"/>
 </package>
 <package name="SHORT">
-<pad name="P$1" x="0" y="0" drill="0.5"/>
-<pad name="P$2" x="0.9" y="0" drill="0.5"/>
+<pad name="P$1" x="0" y="0" drill="0.5" diameter="1"/>
+<pad name="P$2" x="0.9" y="0" drill="0.5" diameter="1"/>
 </package>
 </packages>
 <packages3d>
