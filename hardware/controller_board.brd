@@ -2319,7 +2319,9 @@ design rules under a new name.</description>
 <attribute name="CREATOR" value="Swanson" x="-21" y="12.5" size="1.778" layer="27" display="off"/>
 <attribute name="DIST" value="NA" x="-21" y="12.5" size="1.778" layer="27" display="off"/>
 <attribute name="DISTPN" value="NA" x="-21" y="12.5" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="NA" x="-21" y="12.5" size="1.778" layer="27" display="off"/>
 <attribute name="MOUNTING" value="NONE" x="-21" y="12.5" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="NA" x="-21" y="12.5" size="1.778" layer="27" display="off"/>
 </element>
 </elements>
 <signals>

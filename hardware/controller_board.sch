@@ -1711,7 +1711,9 @@
 <attribute name="CREATOR" value="Swanson"/>
 <attribute name="DIST" value="NA"/>
 <attribute name="DISTPN" value="NA"/>
+<attribute name="MFR" value="NA"/>
 <attribute name="MOUNTING" value="NONE"/>
+<attribute name="MPN" value="NA"/>
 </technology>
 </technologies>
 </device>
