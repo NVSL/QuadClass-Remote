@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1619,9 +1619,12 @@
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="TERM BLK 2P SIDE ENT 2.54MM PCB"/>
 <attribute name="DIST" value="digikey"/>
 <attribute name="DISTPN" value="ED10561-ND"/>
+<attribute name="MFR" value="On Shore Technology Inc."/>
 <attribute name="MOUNTING" value="TH"/>
+<attribute name="MPN" value="OSTVN02A150"/>
 <attribute name="PIN1" value="1" constant="no"/>
 <attribute name="PIN2" value="2" constant="no"/>
 </technology>
@@ -1685,12 +1688,18 @@
 <technology name="">
 <attribute name="AUX1DIST" value="DIGIKEY"/>
 <attribute name="AUX1DISTPN" value="1722-1241-ND"/>
+<attribute name="AUX1MFR" value="Davies Molding, LLC"/>
+<attribute name="AUX1MPN" value="1221-J"/>
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="ROTARY ENCODER MECHANICAL 24PPR"/>
 <attribute name="DETENT" value="Y"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="PEC12R-4217F-S0024-ND"/>
 <attribute name="HEIGHT" value="17.5"/>
+<attribute name="MFR" value="Bourns Inc."/>
 <attribute name="MOUNTING" value="TH"/>
+<attribute name="MPN" value="PEC12R-4217F-S0024"/>
+<attribute name="SUBSTITUTE_OK" value="NO"/>
 </technology>
 </technologies>
 </device>
@@ -1715,6 +1724,7 @@
 <attribute name="MFR" value="NA"/>
 <attribute name="MOUNTING" value="NONE"/>
 <attribute name="MPN" value="NA"/>
+<attribute name="POPULATE" value="NO"/>
 </technology>
 </technologies>
 </device>
@@ -4036,6 +4046,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <attribute name="MFR" value="NA"/>
 <attribute name="MOUNTING" value="NONE"/>
 <attribute name="MPN" value="NA"/>
+<attribute name="POPULATE" value="NO"/>
 </technology>
 </technologies>
 </device>
@@ -4052,6 +4063,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <attribute name="MFR" value="NA"/>
 <attribute name="MOUNTING" value="NONE"/>
 <attribute name="MPN" value="NA"/>
+<attribute name="POPULATE" value="NO"/>
 </technology>
 </technologies>
 </device>
@@ -4288,12 +4300,12 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
-<attribute name="DESC" value="RES ARRAY 4 RES 220 OHM 0804"/>
+<attribute name="DESC" value="RES ARRAY 4 RES 2.2K OHM 0804"/>
 <attribute name="DIST" value="DIGIKEY"/>
 <attribute name="DISTPN" value="Y10222CT-ND"/>
 <attribute name="MFR" value="Panasonic Electronic Components"/>
 <attribute name="MOUNTING" value="SMD"/>
-<attribute name="MPN" value="EXB-N8V221JX"/>
+<attribute name="MPN" value="EXB-N8V222JX"/>
 <attribute name="VALUE" value="2.2K"/>
 </technology>
 </technologies>
@@ -4426,11 +4438,12 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="CONN HDR 12POS 0.1 TIN PCB"/>
 <attribute name="DIST" value="DIGIKEY"/>
-<attribute name="DISTPN" value="S7012-ND"/>
+<attribute name="DISTPN" value="S6100-ND"/>
 <attribute name="MFR" value="Sullins Connector Solutions"/>
 <attribute name="MOUNTING" value="TH"/>
-<attribute name="MPN" value="PPTC141LFBN-RC"/>
+<attribute name="MPN" value="PPTC121LFBN-RC"/>
 </technology>
 </technologies>
 </device>
@@ -4632,14 +4645,12 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </part>
 <part name="J5" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-FRYSKY-HALL-EFFECT"/>
 <part name="J7" library="RemoteParts" deviceset="FRSKY-GIMBAL" device="-FRYSKY-HALL-EFFECT"/>
-<part name="GND4" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="GND7" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="GND12" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="GND13" library="quadparts_prebuilt" deviceset="GND" device=""/>
-<part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR-PACK-4X" device="-1K" package3d_urn="urn:adsk.eagle:package:10895048/1" value="1K"/>
-<part name="R6" library="quadparts_prebuilt" deviceset="RESISTOR-PACK-4X" device="-1K" package3d_urn="urn:adsk.eagle:package:10895048/1" value="1K"/>
-<part name="J8" library="RemoteParts" deviceset="HEADER-0.1IN-2POS" device="-SCREW"/>
-<part name="J9" library="quadparts_prebuilt" deviceset="HEADER-12POS" device="-0.1IN-FEMALE-TH" package3d_urn="urn:adsk.eagle:package:26991870/1"/>
+<part name="J8" library="RemoteParts" deviceset="HEADER-0.1IN-2POS" device="-SCREW">
+<attribute name="POPULATE" value="NO"/>
+</part>
+<part name="J9" library="quadparts_prebuilt" deviceset="HEADER-12POS" device="-0.1IN-FEMALE-TH" package3d_urn="urn:adsk.eagle:package:26991870/1">
+<attribute name="POPULATE" value="NO"/>
+</part>
 <part name="E1" library="RemoteParts" deviceset="ROTARY-ENCODER-W/BUTTON" device="-BOURNS-PEC12R-4217F"/>
 <part name="F1" library="RemoteParts" deviceset="SHORT" device=""/>
 <part name="GND19" library="quadparts_prebuilt" deviceset="GND" device=""/>
@@ -4668,7 +4679,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <wire x1="72.39" y1="57.15" x2="3.81" y2="57.15" width="0.1524" layer="97" style="longdash"/>
 <text x="6.35" y="238.76" size="3.81" layer="97">Breakout</text>
 <text x="8.89" y="184.15" size="3.81" layer="97">Frysky</text>
-<text x="36.83" y="184.15" size="3.81" layer="97">Hall Effect</text>
+<text x="6.35" y="142.24" size="3.81" layer="97">Hall Effect</text>
 <wire x1="328.93" y1="275.59" x2="328.93" y2="196.85" width="0.1524" layer="97" style="longdash"/>
 <wire x1="328.93" y1="196.85" x2="427.99" y2="196.85" width="0.1524" layer="97" style="longdash"/>
 <text x="344.17" y="199.39" size="3.81" layer="97">Rotary Encoder and Buttons</text>
@@ -4700,9 +4711,6 @@ the battery leaks, so pull it down.</text>
 1) 'off' means off even when on USB and 
 2) there's no leakage through the voltage divider when when we are "off"  
 Otherwise we'll deeply dischange the battery.</text>
-<text x="69.85" y="86.36" size="1.27" layer="97" rot="R90">These take 3.3V power and produce voltage between .8 and 2.8v (measured) or 0.1 and 3.4V (Spec).  
-I haven't gotten Aref = 3.3V to work for the analog inputs, 
-so we need a divider to drop it into a range we can handle.</text>
 </plain>
 <instances>
 <instance part="GND10" gate="1" x="339.09" y="226.06" smashed="yes">
@@ -5068,18 +5076,18 @@ so we need a divider to drop it into a range we can handle.</text>
 <attribute name="VALUE" x="113.03" y="160.528" size="1.778" layer="96"/>
 <attribute name="NAME" x="113.03" y="165.3286" size="1.778" layer="95"/>
 </instance>
-<instance part="R5" gate="G$1" x="256.54" y="96.52" smashed="yes" rot="R90">
-<attribute name="VALUE" x="259.842" y="92.71" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="255.0414" y="92.71" size="1.778" layer="95" rot="R90"/>
-<attribute name="SUBSTITUTE_OK" x="256.54" y="96.52" size="1.778" layer="96"/>
+<instance part="R5" gate="G$1" x="256.54" y="99.06" smashed="yes" rot="R90">
+<attribute name="VALUE" x="259.842" y="95.25" size="1.778" layer="96" rot="R90"/>
+<attribute name="NAME" x="255.0414" y="95.25" size="1.778" layer="95" rot="R90"/>
+<attribute name="SUBSTITUTE_OK" x="251.46" y="99.06" size="1.778" layer="96"/>
 </instance>
 <instance part="R5" gate="G$2" x="261.62" y="101.6" smashed="yes" rot="R90">
 <attribute name="VALUE" x="264.922" y="97.79" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="260.1214" y="97.79" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="R5" gate="G$3" x="123.19" y="175.26" smashed="yes">
-<attribute name="VALUE" x="119.38" y="171.958" size="1.778" layer="96"/>
-<attribute name="NAME" x="119.38" y="176.7586" size="1.778" layer="95"/>
+<instance part="R5" gate="G$3" x="120.65" y="175.26" smashed="yes">
+<attribute name="VALUE" x="116.84" y="171.958" size="1.778" layer="96"/>
+<attribute name="NAME" x="116.84" y="176.7586" size="1.778" layer="95"/>
 </instance>
 <instance part="R5" gate="G$4" x="116.84" y="180.34" smashed="yes">
 <attribute name="VALUE" x="113.03" y="177.038" size="1.778" layer="96"/>
@@ -5114,11 +5122,6 @@ so we need a divider to drop it into a range we can handle.</text>
 <attribute name="VALUE" x="270.002" y="26.67" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="265.2014" y="26.67" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="R1" gate="G$1" x="11.43" y="220.98" smashed="yes" rot="R90">
-<attribute name="VALUE" x="14.732" y="217.17" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="9.9314" y="217.17" size="1.778" layer="95" rot="R90"/>
-<attribute name="SUBSTITUTE_OK" x="11.43" y="220.98" size="1.778" layer="96" rot="R90" display="off"/>
-</instance>
 <instance part="R1" gate="G$2" x="179.07" y="36.83" smashed="yes" rot="R180">
 <attribute name="VALUE" x="182.88" y="40.132" size="1.778" layer="96" rot="R180"/>
 <attribute name="NAME" x="182.88" y="35.3314" size="1.778" layer="95" rot="R180"/>
@@ -5127,63 +5130,21 @@ so we need a divider to drop it into a range we can handle.</text>
 <attribute name="VALUE" x="270.002" y="13.97" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="265.2014" y="13.97" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="J5" gate="G$1" x="8.89" y="135.89" smashed="yes">
-<attribute name="NAME" x="8.89" y="133.985" size="1.27" layer="95"/>
-<attribute name="VALUE" x="10.795" y="137.16" size="1.27" layer="96" align="center"/>
+<instance part="J5" gate="G$1" x="8.89" y="127" smashed="yes">
+<attribute name="NAME" x="8.89" y="125.095" size="1.27" layer="95"/>
+<attribute name="VALUE" x="10.795" y="128.27" size="1.27" layer="96" align="center"/>
 </instance>
-<instance part="J7" gate="G$1" x="10.16" y="95.25" smashed="yes">
-<attribute name="NAME" x="8.89" y="93.345" size="1.27" layer="95"/>
-<attribute name="VALUE" x="12.065" y="96.52" size="1.27" layer="96" align="center"/>
-</instance>
-<instance part="GND4" gate="1" x="52.07" y="113.03" smashed="yes">
-<attribute name="VALUE" x="52.07" y="110.49" size="1.778" layer="96" align="center"/>
-</instance>
-<instance part="GND7" gate="1" x="43.18" y="113.03" smashed="yes">
-<attribute name="VALUE" x="43.18" y="110.49" size="1.778" layer="96" align="center"/>
-</instance>
-<instance part="GND12" gate="1" x="44.45" y="72.39" smashed="yes">
-<attribute name="VALUE" x="44.45" y="69.85" size="1.778" layer="96" align="center"/>
-</instance>
-<instance part="GND13" gate="1" x="53.34" y="72.39" smashed="yes">
-<attribute name="VALUE" x="53.34" y="69.85" size="1.778" layer="96" align="center"/>
-</instance>
-<instance part="R2" gate="G$1" x="43.18" y="120.65" smashed="yes" rot="R270">
-<attribute name="VALUE" x="39.878" y="124.46" size="1.778" layer="96" rot="R270"/>
-<attribute name="NAME" x="44.6786" y="124.46" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="R2" gate="G$2" x="43.18" y="133.35" smashed="yes" rot="R90">
-<attribute name="VALUE" x="46.482" y="129.54" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="41.6814" y="129.54" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="R2" gate="G$3" x="52.07" y="133.35" smashed="yes" rot="R90">
-<attribute name="VALUE" x="55.372" y="129.54" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="50.5714" y="129.54" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="R2" gate="G$4" x="52.07" y="120.65" smashed="yes" rot="R270">
-<attribute name="VALUE" x="48.768" y="124.46" size="1.778" layer="96" rot="R270"/>
-<attribute name="NAME" x="53.5686" y="124.46" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="R6" gate="G$1" x="53.34" y="80.01" smashed="yes" rot="R90">
-<attribute name="VALUE" x="56.642" y="76.2" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="51.8414" y="76.2" size="1.778" layer="95" rot="R90"/>
-</instance>
-<instance part="R6" gate="G$2" x="53.34" y="93.98" smashed="yes" rot="R270">
-<attribute name="VALUE" x="50.038" y="97.79" size="1.778" layer="96" rot="R270"/>
-<attribute name="NAME" x="54.8386" y="97.79" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="R6" gate="G$3" x="44.45" y="93.98" smashed="yes" rot="R270">
-<attribute name="VALUE" x="41.148" y="97.79" size="1.778" layer="96" rot="R270"/>
-<attribute name="NAME" x="45.9486" y="97.79" size="1.778" layer="95" rot="R270"/>
-</instance>
-<instance part="R6" gate="G$4" x="44.45" y="80.01" smashed="yes" rot="R90">
-<attribute name="VALUE" x="47.752" y="76.2" size="1.778" layer="96" rot="R90"/>
-<attribute name="NAME" x="42.9514" y="76.2" size="1.778" layer="95" rot="R90"/>
+<instance part="J7" gate="G$1" x="8.89" y="111.76" smashed="yes">
+<attribute name="NAME" x="7.62" y="109.855" size="1.27" layer="95"/>
+<attribute name="VALUE" x="10.795" y="113.03" size="1.27" layer="96" align="center"/>
 </instance>
 <instance part="J8" gate="G$1" x="219.71" y="43.18" smashed="yes">
 <attribute name="NAME" x="226.568" y="43.18" size="1.778" layer="95"/>
+<attribute name="POPULATE" x="219.71" y="40.64" size="1.27" layer="96" display="both"/>
 </instance>
 <instance part="J9" gate="G$1" x="50.8" y="252.73" smashed="yes" rot="R90">
 <attribute name="NAME" x="57.658" y="247.65" size="1.778" layer="95"/>
+<attribute name="POPULATE" x="54.61" y="246.38" size="1.27" layer="96" rot="R180" display="both"/>
 </instance>
 <instance part="E1" gate="G$1" x="388.62" y="267.97" smashed="yes">
 <attribute name="NAME" x="388.62" y="261.62" size="1.27" layer="95" align="center"/>
@@ -5438,7 +5399,7 @@ so we need a divider to drop it into a range we can handle.</text>
 </segment>
 <segment>
 <pinref part="GND18" gate="1" pin="GND"/>
-<wire x1="118.11" y1="175.26" x2="111.76" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="115.57" y1="175.26" x2="111.76" y2="175.26" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="175.26" x2="111.76" y2="173.99" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="180.34" x2="111.76" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$4" pin="1"/>
@@ -5480,35 +5441,19 @@ so we need a divider to drop it into a range we can handle.</text>
 <pinref part="R1" gate="G$3" pin="1"/>
 </segment>
 <segment>
-<wire x1="19.05" y1="138.43" x2="21.59" y2="138.43" width="0.1524" layer="91"/>
-<label x="21.59" y="138.43" size="1.27" layer="95" xref="yes"/>
+<wire x1="19.05" y1="129.54" x2="21.59" y2="129.54" width="0.1524" layer="91"/>
+<label x="21.59" y="129.54" size="1.27" layer="95" xref="yes"/>
 <pinref part="J5" gate="G$1" pin="-"/>
 </segment>
 <segment>
-<wire x1="20.32" y1="97.79" x2="22.86" y2="97.79" width="0.1524" layer="91"/>
-<label x="22.86" y="97.79" size="1.27" layer="95" xref="yes"/>
+<wire x1="19.05" y1="114.3" x2="21.59" y2="114.3" width="0.1524" layer="91"/>
+<label x="21.59" y="114.3" size="1.27" layer="95" xref="yes"/>
 <pinref part="J7" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <wire x1="30.48" y1="257.81" x2="30.48" y2="261.62" width="0.1524" layer="91"/>
 <label x="30.48" y="261.62" size="1.27" layer="95" rot="R90" xref="yes"/>
 <pinref part="J9" gate="G$1" pin="10"/>
-</segment>
-<segment>
-<pinref part="GND4" gate="1" pin="GND"/>
-<pinref part="R2" gate="G$4" pin="2"/>
-</segment>
-<segment>
-<pinref part="GND7" gate="1" pin="GND"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="GND12" gate="1" pin="GND"/>
-<pinref part="R6" gate="G$4" pin="1"/>
-</segment>
-<segment>
-<pinref part="GND13" gate="1" pin="GND"/>
-<pinref part="R6" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="J9" gate="G$1" pin="11"/>
@@ -5560,10 +5505,9 @@ so we need a divider to drop it into a range we can handle.</text>
 <label x="21.59" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="53.34" y="85.09" size="1.27" layer="95" xref="yes"/>
-<wire x1="53.34" y1="85.09" x2="53.34" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<pinref part="R6" gate="G$2" pin="2"/>
+<label x="21.59" y="119.38" size="1.27" layer="95" xref="yes"/>
+<pinref part="J7" gate="G$1" pin="V"/>
+<wire x1="19.05" y1="119.38" x2="21.59" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="ROLL" class="0">
@@ -5578,10 +5522,9 @@ so we need a divider to drop it into a range we can handle.</text>
 <label x="21.59" y="160.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="44.45" y1="85.09" x2="44.45" y2="88.9" width="0.1524" layer="91"/>
-<label x="44.45" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R6" gate="G$3" pin="2"/>
-<pinref part="R6" gate="G$4" pin="2"/>
+<label x="21.59" y="116.84" size="1.27" layer="95" xref="yes"/>
+<pinref part="J7" gate="G$1" pin="H"/>
+<wire x1="19.05" y1="116.84" x2="21.59" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="THROTTLE" class="0">
@@ -5596,10 +5539,9 @@ so we need a divider to drop it into a range we can handle.</text>
 <label x="21.59" y="177.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="52.07" y="125.73" size="1.27" layer="95" xref="yes"/>
-<wire x1="52.07" y1="125.73" x2="52.07" y2="128.27" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$4" pin="1"/>
-<pinref part="R2" gate="G$3" pin="1"/>
+<label x="21.59" y="134.62" size="1.27" layer="95" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="V"/>
+<wire x1="19.05" y1="134.62" x2="21.59" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="YAW" class="0">
@@ -5614,10 +5556,9 @@ so we need a divider to drop it into a range we can handle.</text>
 <label x="21.59" y="175.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<wire x1="43.18" y1="125.73" x2="43.18" y2="128.27" width="0.1524" layer="91"/>
-<label x="43.18" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R2" gate="G$1" pin="1"/>
-<pinref part="R2" gate="G$2" pin="1"/>
+<label x="21.59" y="132.08" size="1.27" layer="95" xref="yes"/>
+<pinref part="J5" gate="G$1" pin="H"/>
+<wire x1="19.05" y1="132.08" x2="21.59" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -5658,13 +5599,12 @@ so we need a divider to drop it into a range we can handle.</text>
 </segment>
 <segment>
 <label x="11.43" y="228.6" size="1.27" layer="95" rot="R90" xref="yes"/>
-<pinref part="R1" gate="G$1" pin="2"/>
-<wire x1="11.43" y1="226.06" x2="11.43" y2="228.6" width="0.1524" layer="91"/>
-<junction x="11.43" y="226.06"/>
+<label x="11.43" y="212.09" size="1.27" layer="95" xref="yes"/>
+<wire x1="11.43" y1="228.6" x2="11.43" y2="212.09" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="259.08" y="113.03" size="1.27" layer="95" rot="R90" xref="yes"/>
-<wire x1="256.54" y1="101.6" x2="256.54" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="256.54" y1="104.14" x2="256.54" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="256.54" y1="106.68" x2="259.08" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="259.08" y1="113.03" x2="259.08" y2="106.68" width="0.1524" layer="91"/>
 <wire x1="261.62" y1="106.68" x2="259.08" y2="106.68" width="0.1524" layer="91"/>
@@ -5698,13 +5638,28 @@ so we need a divider to drop it into a range we can handle.</text>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="+"/>
-<wire x1="19.05" y1="146.05" x2="21.59" y2="146.05" width="0.1524" layer="91"/>
-<label x="21.59" y="146.05" size="1.27" layer="95" xref="yes"/>
+<wire x1="19.05" y1="137.16" x2="21.59" y2="137.16" width="0.1524" layer="91"/>
+<label x="21.59" y="137.16" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J7" gate="G$1" pin="+"/>
-<wire x1="20.32" y1="105.41" x2="22.86" y2="105.41" width="0.1524" layer="91"/>
-<label x="22.86" y="105.41" size="1.27" layer="95" xref="yes"/>
+<wire x1="19.05" y1="121.92" x2="21.59" y2="121.92" width="0.1524" layer="91"/>
+<label x="21.59" y="121.92" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="AREF"/>
+<wire x1="220.98" y1="196.85" x2="223.52" y2="196.85" width="0.1524" layer="91"/>
+<label x="223.52" y="196.85" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="+"/>
+<wire x1="19.05" y1="180.34" x2="21.59" y2="180.34" width="0.1524" layer="91"/>
+<label x="21.59" y="180.34" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="+"/>
+<wire x1="19.05" y1="165.1" x2="21.59" y2="165.1" width="0.1524" layer="91"/>
+<label x="21.59" y="165.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="RESET" class="0">
@@ -6256,23 +6211,6 @@ so we need a divider to drop it into a range we can handle.</text>
 <label x="382.27" y="227.33" size="1.27" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="GREF" class="0">
-<segment>
-<pinref part="J2" gate="G$1" pin="+"/>
-<wire x1="19.05" y1="180.34" x2="21.59" y2="180.34" width="0.1524" layer="91"/>
-<label x="21.59" y="180.34" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="J3" gate="G$1" pin="+"/>
-<wire x1="19.05" y1="165.1" x2="21.59" y2="165.1" width="0.1524" layer="91"/>
-<label x="21.59" y="165.1" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<wire x1="11.43" y1="215.9" x2="11.43" y2="212.09" width="0.1524" layer="91"/>
-<label x="11.43" y="212.09" size="1.27" layer="95" xref="yes"/>
-<pinref part="R1" gate="G$1" pin="1"/>
-</segment>
-</net>
 <net name="N$4" class="0">
 <segment>
 <pinref part="D6" gate="G$1" pin="C2"/>
@@ -6371,12 +6309,14 @@ so we need a divider to drop it into a range we can handle.</text>
 <segment>
 <pinref part="D6" gate="G$1" pin="C1"/>
 <pinref part="R5" gate="G$3" pin="2"/>
+<wire x1="125.73" y1="175.26" x2="128.27" y2="175.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
 <segment>
 <pinref part="D5" gate="G$1" pin="A2"/>
 <pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="256.54" y1="93.98" x2="256.54" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BAT_SENSE" class="0">
@@ -6420,38 +6360,6 @@ so we need a divider to drop it into a range we can handle.</text>
 <pinref part="U4" gate="G$1" pin="PG5(OC0B)"/>
 <wire x1="154.94" y1="166.37" x2="152.4" y2="166.37" width="0.1524" layer="91"/>
 <label x="152.4" y="166.37" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="J7" gate="G$1" pin="V"/>
-<wire x1="20.32" y1="102.87" x2="53.34" y2="102.87" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="102.87" x2="53.34" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$2" pin="1"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="J7" gate="G$1" pin="H"/>
-<wire x1="20.32" y1="100.33" x2="44.45" y2="100.33" width="0.1524" layer="91"/>
-<wire x1="44.45" y1="100.33" x2="44.45" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$3" pin="1"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="J5" gate="G$1" pin="V"/>
-<wire x1="19.05" y1="143.51" x2="52.07" y2="143.51" width="0.1524" layer="91"/>
-<wire x1="52.07" y1="143.51" x2="52.07" y2="138.43" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$3" pin="2"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="J5" gate="G$1" pin="H"/>
-<wire x1="19.05" y1="140.97" x2="43.18" y2="140.97" width="0.1524" layer="91"/>
-<wire x1="43.18" y1="140.97" x2="43.18" y2="138.43" width="0.1524" layer="91"/>
-<pinref part="R2" gate="G$2" pin="2"/>
 </segment>
 </net>
 <net name="HIGH-V" class="1">
