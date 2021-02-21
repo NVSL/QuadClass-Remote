@@ -1,0 +1,32 @@
+DIGIKEY,CKN10723CT-ND,10,2,v4-rev10-rc2/controller_board.sch,RemoteParts:SWITCH-DPDT:-300MA-6V-SMD,
+DIGIKEY,ATMEGA128RFA1-ZU-ND ,5,1,v4-rev10-rc2/controller_board.sch,quadparts_prebuilt:ATMEGA128RFA1:,
+DIGIKEY,1276-1182-1-ND,25,5,v4-rev10-rc2/controller_board.sch,quadparts_prebuilt:CAPACITOR-NP_:SMD-0603_CERAMIC-1UF,1uF
+DIGIKEY,535-9134-1-ND,5,1,v4-rev10-rc2/controller_board.sch,quadparts_prebuilt:CRYSTAL:-SMD-3X2,CRYSTAL-SMD-3X2
+ALIBABA,https://www.alibaba.com/product-detail/Molex-51005-51006-2-pin-female_60863668004.html?spm=a2700.7724857.normalList.97.20ef28e64nZnNK,5,1,v4-rev10-rc2/controller_board.sch,quadparts_prebuilt:BATTERY:-SMD,BATTERY-SMD
+DIGIKEY,S5641-ND,5,1,v4-rev10-rc2/controller_board.sch,RemoteParts:SPARKFUN_SERLCD_SERIAL_REDUCED:-SMD,SPARKFUN_SERLCD_SERIAL_REDUCED-SMD
+DIGIKEY,CRS08QMCT-ND,10,2,v4-rev10-rc2/controller_board.sch,quadparts_prebuilt:DIODE-SCHOTTKY_:-SMD-SOD123,360mV
+DIGIKEY,311-3843-1-ND,5,1,v4-rev10-rc2/controller_board.sch,quadparts_prebuilt:CAPACITOR-NP_:SMD-0603_CERAMIC-0.75PF,0.75pF
+DIGIKEY,609-3487-2-ND,5,1,v4-rev10-rc2/controller_board.sch,quadparts_prebuilt:AVR_SPI_PRG_6:-SMD,AVR_SPI_PRG_6-SMD
+DIGIKEY,PEC12R-4220F-S0024-ND,5,1,v4-rev10-rc2/controller_board.sch,RemoteParts:ROTARY-ENCODER-W/BUTTON:-BOURNS-PEC12R-4217F,
+DIGIKEY,MCP73831T-2ACI/OTCT-ND,5,1,v4-rev10-rc2/controller_board.sch,RemoteParts:MCP73831/2:,MCP73831T-2ACI/OT
+DIGIKEY,478-11384-1-ND,5,1,v4-rev10-rc2/controller_board.sch,quadparts_prebuilt:CAPACITOR-NP_:SMD-0603_CERAMIC-22PF,22pF
+DIGIKEY,Y10103CT-ND,5,1,v4-rev10-rc2/controller_board.sch,quadparts_prebuilt:RESISTOR-PACK-4X:-10K,10K
+SPARKFUN,LCD-14072,5,1,v4-rev10-rc2/controller_board.sch,RemoteParts:SPARKFUN_SERLCD_SERIAL_REDUCED:-SMD,SPARKFUN_SERLCD_SERIAL_REDUCED-SMD
+DIGIKEY,160-2252-1-ND,20,4,v4-rev10-rc2/controller_board.sch,RemoteParts:LED-2X:-GREEN/RED-1.6X1.5MM,LED-2X-GREEN/RED-1.6X1.5MM
+DIGIKEY,399-1095-1-ND,15,3,v4-rev10-rc2/controller_board.sch,quadparts_prebuilt:CAPACITOR-NP_:SMD-0603_CERAMIC-0.1UF,0.1uF
+DIGIKEY,609-4613-1-ND ,5,1,v4-rev10-rc2/controller_board.sch,RemoteParts:USB:-MICROA-AMPHENOL-10118192-0001LF,
+DIGIKEY,EG5350CT-ND,40,8,v4-rev10-rc2/controller_board.sch,quadparts_prebuilt:PUSHBUTTON_:-4.5X4.5,PUSHBUTTON_-4.5X4.5
+DIGIKEY,ED10561-ND,5,1,v4-rev10-rc2/controller_board.sch,RemoteParts:HEADER-0.1IN-2POS:-SCREW,
+DIGIKEY,SAM15344-ND,5,1,v4-rev10-rc2/controller_board.sch,quadparts_prebuilt:FTDI-4PIN:-RIGHT-ANGLE-SMD,
+DIGIKEY,768-1007-1-ND ,5,1,v4-rev10-rc2/controller_board.sch,RemoteParts:FT232RL:SSOP,
+DIGIKEY,Y10222CT-ND,5,1,v4-rev10-rc2/controller_board.sch,quadparts_prebuilt:RESISTOR-PACK-4X:-2.2K,2.2K
+DIGIKEY,1722-1241-ND,5,1,v4-rev10-rc2/controller_board.sch,RemoteParts:ROTARY-ENCODER-W/BUTTON:-BOURNS-PEC12R-4217F,
+DIGIKEY,Y10152CT-ND,10,2,v4-rev10-rc2/controller_board.sch,quadparts_prebuilt:RESISTOR-PACK-4X:-1.5K,1.5K
+DIGIKEY,1276-1119-1-ND,15,3,v4-rev10-rc2/controller_board.sch,quadparts_prebuilt:CAPACITOR-NP_:SMD-0603_CERAMIC-10UF,10uF
+DIGIKEY,568-5300-1-ND,5,1,v4-rev10-rc2/controller_board.sch,RemoteParts:DPDT-X2:,
+NA,NA,120,24,v4-rev10-rc2/controller_board.sch,RemoteParts:SHORT:,
+DIGIKEY,WM7624CT-ND,10,2,v4-rev10-rc2/controller_board.sch,RemoteParts:FRSKY-GIMBAL:-FRYSKY-HALL-EFFECT,
+DIGIKEY,720-1655-1-ND,10,2,v4-rev10-rc2/controller_board.sch,quadparts_prebuilt:CAPACITOR-NP_:SMD-0603_CERAMIC-12PF,12pF
+DIGIKEY,732-2230-1-ND,5,1,v4-rev10-rc2/controller_board.sch,quadparts_prebuilt:BALUN:0805,
+DIGIKEY,A100106-ND,10,2,v4-rev10-rc2/controller_board.sch,RemoteParts:FRSKY-GIMBAL:-FRYSKY,2.4K
+DIGIKEY,S6100-ND,5,1,v4-rev10-rc2/controller_board.sch,quadparts_prebuilt:HEADER-12POS:-0.1IN-FEMALE-TH,
