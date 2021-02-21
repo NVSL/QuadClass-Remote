@@ -8,6 +8,7 @@ fanout SIGNAL GND out;
 fanout SIGNAL VBAT;
 fanout SIGNAL VBUS;
 fanout SIGNAL BPOS;
+auto BPOS HIGH-I-GND HIGH-V N$14 VBAT VBUS VIN;
 auto;
 drc;
 
