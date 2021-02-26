@@ -41,8 +41,12 @@ char rfRead(uint8_t * buf, uint8_t len);
 
 extern uint8_t rssiRaw;
 
+#define GOOD_PACKET 0
+#define BAD_PACKET 1
+#define NO_PACKET 2
+
 template<class T>
-bool rfReceive(T & g)
+byte rfReceive(T & g)
 {
 	T t;
 	//I've tried a lot of things here to try to reduce lag between remote
@@ -56,8 +60,11 @@ bool rfReceive(T & g)
 		if (l == sizeof(T)) {
 			if (t.validate()) {
 				g = t;
-				return true;
+				return GOOD_PACKET;
 			} else {
+				rfFlush();
+				return BAD_PACKET;
+#if(0)
 				Serial.print("Bad packet: ");
 				Serial.print(t.get_name());
 				Serial.println();
@@ -72,12 +79,12 @@ bool rfReceive(T & g)
 				Serial.print("  0x");
 				Serial.print((int)t.hash, 16);
 				Serial.println();
+#endif
 			}
 		} else if (l == 0) {
+			return NO_PACKET;
 		} else {
-			Serial.print("Short packet: ");
-			Serial.print(t.get_name());
-			Serial.println();
+			return NO_PACKET;
 		}
 	}  
 	return false;
