@@ -27,7 +27,7 @@ void quad_remote_setup() {
 	PCICR = 1;               // enable pin-change interrupt 0
 	PCMSK0 = 0b00110000;     // catch changes on all the pins for the encoder
 
-	ADMUX_struct.refs = 3; // set reference voltage
+	ADMUX_struct.refs = 0; // set reference voltage
 	ADCSRA_struct.aden = 0; // restart adc
 	delay(10);
 	ADCSRA_struct.aden = 1; 

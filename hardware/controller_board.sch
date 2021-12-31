@@ -2963,6 +2963,61 @@
 <wire x1="30.4" y1="-1.9" x2="30.4" y2="1.9" width="0.05" layer="39"/>
 <wire x1="30.4" y1="1.9" x2="-2.4" y2="1.9" width="0.05" layer="39"/>
 </package>
+<package name="BATTERY-COMBO">
+<wire x1="-2.5" y1="-11.25" x2="2.5" y2="-11.25" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-5.55" x2="2.5" y2="-5.55" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-6.75" x2="-2.5" y2="-11.25" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="-6.75" x2="-2.5" y2="-5.55" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="-6.75" x2="-4.2" y2="-6.75" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="1.05" x2="-2.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="1.05" x2="-4.2" y2="1.05" width="0.127" layer="21"/>
+<wire x1="-2.5" y1="4.5" x2="2.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="-3.4" y1="1.9" x2="-4.9" y2="1.9" width="0.05" layer="39"/>
+<wire x1="-2.4" y1="7.4" x2="-2.4" y2="5.4" width="0.05" layer="39"/>
+<wire x1="-2.4" y1="5.4" x2="-3.4" y2="5.4" width="0.05" layer="39"/>
+<wire x1="-3.4" y1="5.4" x2="-3.4" y2="1.9" width="0.05" layer="39"/>
+<wire x1="-4.2" y1="-6.75" x2="-4.2" y2="1.05" width="0.127" layer="21"/>
+<wire x1="-4.9" y1="-35.1" x2="4.9" y2="-35.1" width="0.05" layer="39"/>
+<wire x1="-4.9" y1="1.9" x2="-4.9" y2="-13.4" width="0.05" layer="39"/>
+<text x="0" y="8" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
+<wire x1="-4.9" y1="-13.4" x2="-4.9" y2="-35.1" width="0.05" layer="39"/>
+<wire x1="2.5" y1="-5.55" x2="2.5" y2="-6.75" width="0.127" layer="21"/>
+<wire x1="2.5" y1="-6.75" x2="2.5" y2="-11.25" width="0.127" layer="51"/>
+<wire x1="2.5" y1="1.05" x2="2.5" y2="4.5" width="0.127" layer="21"/>
+<wire x1="3.4" y1="1.9" x2="3.4" y2="5.4" width="0.05" layer="39"/>
+<wire x1="3.4" y1="5.4" x2="2.4" y2="5.4" width="0.05" layer="39"/>
+<wire x1="2.4" y1="5.4" x2="2.4" y2="7.4" width="0.05" layer="39"/>
+<wire x1="2.4" y1="7.4" x2="-2.4" y2="7.4" width="0.05" layer="39"/>
+<wire x1="4.2" y1="-6.75" x2="2.5" y2="-6.75" width="0.127" layer="21"/>
+<wire x1="4.2" y1="-6.75" x2="4.2" y2="1.05" width="0.127" layer="21"/>
+<wire x1="4.2" y1="1.05" x2="2.5" y2="1.05" width="0.127" layer="21"/>
+<wire x1="4.9" y1="-35.1" x2="4.9" y2="-13.4" width="0.05" layer="39"/>
+<wire x1="4.9" y1="-13.4" x2="4.9" y2="1.9" width="0.05" layer="39"/>
+<wire x1="4.9" y1="1.9" x2="3.4" y2="1.9" width="0.05" layer="39"/>
+<smd name="G" x="-1" y="5.2" dx="3" dy="1.2" layer="1" rot="R90"/>
+<smd name="G2" x="-3.2" y="-0.45" dx="3.5" dy="1.5" layer="1" rot="R90"/>
+<smd name="G3" x="3.2" y="-0.45" dx="3.5" dy="1.5" layer="1" rot="R90"/>
+<smd name="P" x="1" y="5.2" dx="3" dy="1.1" layer="1" rot="R90"/>
+<wire x1="-4.9" y1="-13.4" x2="4.9" y2="-13.4" width="0.05" layer="39"/>
+<text x="0" y="-12.8" size="0.3" layer="39" font="vector" align="center">Nothing in here</text>
+<text x="0" y="-13.9" size="0.3" layer="39" font="vector" align="center">Nothing taller than a capacitor out here</text>
+<pad name="1" x="1.27" y="2.54" drill="1.1" shape="square" rot="R180" thermals="no"/>
+<pad name="2" x="-1.27" y="2.54" drill="1.1" rot="R180" thermals="no"/>
+<text x="1.27" y="-2.54" size="2.5" layer="21" font="vector" rot="R180" align="center">+</text>
+<text x="-1.27" y="-2.54" size="2.5" layer="21" font="vector" rot="R180" align="center">-</text>
+<circle x="-1.27" y="2.54" radius="0.915809375" width="0.127" layer="21"/>
+<wire x1="0.254" y1="3.556" x2="0.254" y2="1.524" width="0.127" layer="21" style="dashdot"/>
+<wire x1="0.254" y1="1.524" x2="1.27" y2="1.524" width="0.127" layer="21" style="dashdot"/>
+<wire x1="1.27" y1="1.524" x2="2.286" y2="1.524" width="0.127" layer="21" style="dashdot"/>
+<wire x1="2.286" y1="1.524" x2="2.286" y2="3.556" width="0.127" layer="21" style="dashdot"/>
+<wire x1="2.286" y1="3.556" x2="0.254" y2="3.556" width="0.127" layer="21" style="dashdot"/>
+<wire x1="1.27" y1="1.524" x2="1.27" y2="-0.762" width="0.127" layer="21" style="dashdot"/>
+<wire x1="-1.27" y1="1.524" x2="-1.27" y2="-0.762" width="0.127" layer="21" style="dashdot"/>
+<wire x1="-1.27" y1="-0.762" x2="-0.762" y2="-0.254" width="0.127" layer="21" style="dashdot"/>
+<wire x1="-1.27" y1="-0.762" x2="-1.778" y2="-0.254" width="0.127" layer="21" style="dashdot"/>
+<wire x1="1.27" y1="-0.762" x2="1.778" y2="-0.254" width="0.127" layer="21" style="dashdot"/>
+<wire x1="0.762" y1="-0.254" x2="1.27" y2="-0.762" width="0.127" layer="21" style="dashdot"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="RESCAXS50P200X100X45-8" urn="urn:adsk.eagle:package:10895048/1" type="model">
@@ -4223,6 +4278,15 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </technology>
 </technologies>
 </device>
+<device name="-SMD-TH" package="BATTERY-COMBO">
+<connects>
+<connect gate="G$1" pin="N" pad="2 G G2 G3"/>
+<connect gate="G$1" pin="P" pad="1 P"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="RESISTOR-PACK-4X" prefix="R" uservalue="yes">
@@ -4233,6 +4297,60 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <gate name="G$4" symbol="RESOLVED-RESISTOR_" x="0" y="-22.86"/>
 </gates>
 <devices>
+<device name="-1" package="RESCAXS50P200X100X45-8">
+<connects>
+<connect gate="G$1" pin="1" pad="4"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$2" pin="1" pad="3"/>
+<connect gate="G$2" pin="2" pad="6"/>
+<connect gate="G$3" pin="1" pad="2"/>
+<connect gate="G$3" pin="2" pad="7"/>
+<connect gate="G$4" pin="1" pad="1"/>
+<connect gate="G$4" pin="2" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10895048/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="RES ARRAY 4 RES 1 OHM 0804"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="Y101R0CT-ND"/>
+<attribute name="MFR" value="Panasonic Electronic Components"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="EXB-N8V1R0JX"/>
+<attribute name="VALUE" value="1"/>
+</technology>
+</technologies>
+</device>
+<device name="-100" package="RESCAXS50P200X100X45-8">
+<connects>
+<connect gate="G$1" pin="1" pad="4"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$2" pin="1" pad="3"/>
+<connect gate="G$2" pin="2" pad="6"/>
+<connect gate="G$3" pin="1" pad="2"/>
+<connect gate="G$3" pin="2" pad="7"/>
+<connect gate="G$4" pin="1" pad="1"/>
+<connect gate="G$4" pin="2" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10895048/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="RES ARRAY 4 RES 100 OHM 0804"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="Y10101CT-ND"/>
+<attribute name="MFR" value="Panasonic Electronic Components"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="EXB-N8V101JX"/>
+<attribute name="VALUE" value="100"/>
+</technology>
+</technologies>
+</device>
 <device name="-1.5K" package="RESCAXS50P200X100X45-8">
 <connects>
 <connect gate="G$1" pin="1" pad="4"/>
