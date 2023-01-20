@@ -34,7 +34,7 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
@@ -207,8 +207,8 @@
 <text x="-23" y="-25" size="1.778" layer="21" font="vector" rot="R180" align="center">RST</text>
 <text x="5" y="32.5" size="2.3" layer="21" font="vector" align="center">CSE176e
 Remote</text>
-<text x="25.25" y="2.175" size="1.778" layer="21" font="vector" align="center">Steven 
-Swanson</text>
+<text x="25.25" y="2.175" size="1.778" layer="21" font="vector" align="center">Steven Swanson
+J. Garza</text>
 <text x="-105.5" y="23.75" size="1.778" layer="21" font="vector">Ignore eight drills outside of board area</text>
 <text x="62" y="23.75" size="1.778" layer="21" font="vector">Ignore four drills outside of board area</text>
 <wire x1="26" y1="32" x2="24" y2="30" width="0.1524" layer="103" curve="90"/>
@@ -219,7 +219,7 @@ Swanson</text>
 <wire x1="-24" y1="4.5" x2="-24" y2="30" width="0.1524" layer="103"/>
 <wire x1="-24" y1="30" x2="-26" y2="32" width="0.1524" layer="103" curve="90"/>
 <wire x1="-26" y1="32" x2="-107" y2="32" width="0.1524" layer="100"/>
-<text x="35" y="-29" size="0.9" layer="21" font="vector" rot="R180" align="top-right">Rev 10</text>
+<text x="35" y="-29" size="0.9" layer="21" font="vector" rot="R180" align="top-right">Rev 11</text>
 <text x="-34" y="30.3" size="2" layer="21" font="vector" rot="R180" align="center">B</text>
 <text x="-28" y="30.3" size="2" layer="21" font="vector" align="center">G</text>
 <text x="-28" y="-17" size="1" layer="21" font="vector" rot="R90" align="center">PWR</text>
@@ -1269,6 +1269,12 @@ Battery</text>
 <wire x1="3.4" y1="3.9" x2="-3.4" y2="3.9" width="0.05" layer="39"/>
 <pad name="1" x="-1.27" y="0" drill="1.1" shape="square"/>
 <pad name="2" x="1.27" y="0" drill="1.1"/>
+<wire x1="0.53" y1="-3.22" x2="0.53" y2="-1.47" width="0.1524" layer="21"/>
+<wire x1="0.53" y1="-1.47" x2="2.13" y2="-1.47" width="0.1524" layer="21"/>
+<wire x1="2.13" y1="-1.47" x2="2.13" y2="-3.22" width="0.1524" layer="21"/>
+<wire x1="-2.07" y1="-3.22" x2="-2.07" y2="-1.47" width="0.1524" layer="21"/>
+<wire x1="-2.07" y1="-1.47" x2="-0.47" y2="-1.47" width="0.1524" layer="21"/>
+<wire x1="-0.47" y1="-1.47" x2="-0.47" y2="-3.22" width="0.1524" layer="21"/>
 </package>
 <package name="BOURNS-PEC12R">
 <wire x1="-7.4" y1="-7.4" x2="-7.4" y2="7.4" width="0.05" layer="39"/>
@@ -18973,7 +18979,9 @@ Battery</text>
 <text x="-1.27" y="3.905" size="0.9" layer="21" font="vector" rot="R90" align="center-left">&gt;PIN1</text>
 <wire x1="-2.75" y1="-3.25" x2="2.75" y2="-3.25" width="0.127" layer="51"/>
 <wire x1="-2.75" y1="-3.25" x2="2.75" y2="-3.25" width="0.127" layer="39"/>
-<wire x1="-2.75" y1="-3.25" x2="2.75" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="-3.25" x2="-2.05" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-2.05" y1="-3.25" x2="-0.45" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-0.45" y1="-3.25" x2="2.75" y2="-3.25" width="0.127" layer="21"/>
 <wire x1="-2.75" y1="3.25" x2="-2.75" y2="-3.25" width="0.127" layer="51"/>
 <wire x1="-2.75" y1="3.25" x2="-2.75" y2="-3.25" width="0.127" layer="39"/>
 <wire x1="-2.75" y1="3.25" x2="-2.75" y2="-3.25" width="0.127" layer="21"/>
@@ -18991,6 +18999,12 @@ Battery</text>
 <wire x1="3.9" y1="4.9" x2="3.9" y2="-4.9" width="0.05" layer="39"/>
 <pad name="1" x="-1.27" y="0" drill="1.1" shape="square"/>
 <pad name="2" x="1.27" y="0" drill="1.1"/>
+<wire x1="0.5" y1="-3.2" x2="0.5" y2="-1.45" width="0.1524" layer="21"/>
+<wire x1="0.5" y1="-1.45" x2="2.1" y2="-1.45" width="0.1524" layer="21"/>
+<wire x1="2.1" y1="-1.45" x2="2.1" y2="-3.2" width="0.1524" layer="21"/>
+<wire x1="-2.1" y1="-3.2" x2="-2.1" y2="-1.45" width="0.1524" layer="21"/>
+<wire x1="-2.1" y1="-1.45" x2="-0.5" y2="-1.45" width="0.1524" layer="21"/>
+<wire x1="-0.5" y1="-1.45" x2="-0.5" y2="-3.2" width="0.1524" layer="21"/>
 </package>
 </packages>
 </library>
@@ -19188,7 +19202,7 @@ design rules under a new name.</description>
 <attribute name="MFR" value="Wurth Electronics Inc." x="13" y="22.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="13" y="22.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="748421245" x="13" y="22.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="15" y="23.5" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
+<attribute name="NAME" x="15.8" y="22.5" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 <attribute name="PACKAGE" value="0805" x="13" y="22.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PRICE" value="2.63" x="13" y="22.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="REVIEWER" value="Swanson" x="13" y="22.5" size="1.778" layer="27" rot="R270" display="off"/>
@@ -19201,9 +19215,9 @@ design rules under a new name.</description>
 <attribute name="MFR" value="AVX Corporation" x="9" y="22" size="1.778" layer="27" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="9" y="22" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="06036A220KAT2A" x="9" y="22" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="11" y="22" size="0.9" layer="25" font="vector" rot="R90" align="center"/>
+<attribute name="NAME" x="9.4" y="23.4" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 <attribute name="PACKAGE" value="0603" x="9" y="22" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="9" y="20.5" size="0.9" layer="27" font="vector" rot="R180" align="center"/>
+<attribute name="VALUE" x="5.9" y="21.9" size="0.9" layer="27" font="vector" rot="R180" align="center"/>
 </element>
 <element name="C14" library="quadparts_prebuilt" package="CAPC1608X100" package3d_urn="urn:adsk.eagle:package:11135716/1" value="12pF" x="19.5" y="17.5" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="19.5" y="17.5" size="1.778" layer="27" rot="R180" display="off"/>
@@ -19213,9 +19227,9 @@ design rules under a new name.</description>
 <attribute name="MFR" value="Vishay Vitramon" x="19.5" y="17.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="19.5" y="17.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="VJ0603A120FXQCW1BC" x="19.5" y="17.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="17.5" y="17.5" size="0.9" layer="25" font="vector" rot="R270" align="center"/>
+<attribute name="NAME" x="17.5" y="17.3" size="0.9" layer="25" font="vector" rot="R270" align="center"/>
 <attribute name="PACKAGE" value="0603" x="19.5" y="17.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="21.5" y="17.5" size="0.9" layer="27" font="vector" rot="R90" align="center"/>
+<attribute name="VALUE" x="21.2" y="17.5" size="0.6096" layer="27" font="vector" rot="R270" align="center"/>
 </element>
 <element name="C15" library="quadparts_prebuilt" package="CAPC1608X100" package3d_urn="urn:adsk.eagle:package:11135716/1" value="12pF" x="19.5" y="10.5" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="19.5" y="10.5" size="1.778" layer="27" rot="R180" display="off"/>
@@ -19227,7 +19241,7 @@ design rules under a new name.</description>
 <attribute name="MPN" value="VJ0603A120FXQCW1BC" x="19.5" y="10.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="NAME" x="17.5" y="10.5" size="0.9" layer="25" font="vector" rot="R90" align="center"/>
 <attribute name="PACKAGE" value="0603" x="19.5" y="10.5" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="VALUE" x="21.5" y="10.5" size="0.9" layer="27" font="vector" rot="R90" align="center"/>
+<attribute name="VALUE" x="21.9" y="10.6" size="0.6096" layer="27" font="vector" rot="R90" align="center"/>
 </element>
 <element name="C11" library="quadparts_prebuilt" package="CAPC1608X100" package3d_urn="urn:adsk.eagle:package:11135716/1" value="1uF" x="2.5" y="17" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="2.5" y="17" size="1.778" layer="27" rot="R180" display="off"/>
@@ -19250,10 +19264,10 @@ design rules under a new name.</description>
 <attribute name="MFR" value="Samsung Electro-Mechanics" x="19.5" y="19.5" size="1.778" layer="27" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="19.5" y="19.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="CL10A105KP8NNNC" x="19.5" y="19.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="17.5" y="20" size="0.9" layer="25" font="vector" rot="R90" align="center"/>
+<attribute name="NAME" x="17.5" y="19.6" size="0.9" layer="25" font="vector" rot="R90" align="center"/>
 <attribute name="PACKAGE" value="0603" x="19.5" y="19.5" size="1.778" layer="27" display="off"/>
 <attribute name="SUBSTITUTE_OK" value="yes" x="19.5" y="19.5" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="19.5" y="21" size="0.9" layer="27" font="vector" rot="R180" align="center"/>
+<attribute name="VALUE" x="21.2" y="19.6" size="0.6096" layer="27" font="vector" rot="R270" align="center"/>
 </element>
 <element name="C2" library="quadparts_prebuilt" package="CAPC1608X100" package3d_urn="urn:adsk.eagle:package:11135716/1" value="0.75pF" x="14" y="25" smashed="yes">
 <attribute name="CREATOR" value="Swanson" x="14" y="25" size="1.778" layer="27" display="off"/>
@@ -19263,9 +19277,9 @@ design rules under a new name.</description>
 <attribute name="MFR" value="Yageo" x="14" y="25" size="1.778" layer="27" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="14" y="25" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="CC0603BRNPO9BNR75" x="14" y="25" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="16" y="25" size="0.9" layer="25" font="vector" align="center"/>
+<attribute name="NAME" x="11.3" y="25" size="0.9" layer="25" font="vector" align="center"/>
 <attribute name="PACKAGE" value="0603" x="14" y="25" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="10.5" y="25" size="0.9" layer="27" font="vector" align="center"/>
+<attribute name="VALUE" x="18.2" y="25" size="0.9" layer="27" font="vector" align="center"/>
 </element>
 <element name="C12" library="quadparts_prebuilt" package="CAPC1608X100" package3d_urn="urn:adsk.eagle:package:11135716/1" value="1uF" x="2.5" y="11" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="2.5" y="11" size="1.778" layer="27" rot="R180" display="off"/>
@@ -19288,10 +19302,10 @@ design rules under a new name.</description>
 <attribute name="MFR" value="Samsung Electro-Mechanics" x="19.5" y="8.5" size="1.778" layer="27" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="19.5" y="8.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="CL10A105KP8NNNC" x="19.5" y="8.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="17.5" y="8" size="0.9" layer="25" font="vector" rot="R90" align="center"/>
+<attribute name="NAME" x="17.5" y="8.3" size="0.9" layer="25" font="vector" rot="R90" align="center"/>
 <attribute name="PACKAGE" value="0603" x="19.5" y="8.5" size="1.778" layer="27" display="off"/>
 <attribute name="SUBSTITUTE_OK" value="yes" x="19.5" y="8.5" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="19.5" y="7" size="0.9" layer="27" font="vector" align="center"/>
+<attribute name="VALUE" x="22" y="8.5" size="0.6096" layer="27" font="vector" rot="R90" align="center"/>
 </element>
 <element name="C1" library="quadparts_prebuilt" package="CAPC1608X100" package3d_urn="urn:adsk.eagle:package:11135716/1" value="0.1uF" x="-2" y="9" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-2" y="9" size="1.778" layer="27" rot="R270" display="off"/>
@@ -19358,7 +19372,7 @@ design rules under a new name.</description>
 <attribute name="MFR" value="Microchip Technology" x="11" y="14.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="11" y="14.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="ATMEGA128RFA1-ZU" x="11" y="14.5" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="16" y="20.5" size="0.9" layer="25" font="vector" rot="R90" align="center"/>
+<attribute name="NAME" x="5.5" y="19.8" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 <attribute name="PACKAGE" value="QFN" x="11" y="14.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="PRICE" value="10.21" x="11" y="14.5" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="REVIEWER" value="Swanson" x="11" y="14.5" size="1.778" layer="27" rot="R270" display="off"/>
@@ -19371,7 +19385,7 @@ design rules under a new name.</description>
 <attribute name="MFR" value="Abracon LLC" x="19.5" y="14" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="19.5" y="14" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="ABM8-16.000MHZ-B2-T" x="19.5" y="14" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="22" y="17" size="0.9" layer="25" font="vector" rot="R90" align="center"/>
+<attribute name="NAME" x="17.4" y="14.4" size="0.9" layer="25" font="vector" rot="R270" align="center"/>
 </element>
 <element name="E$1" library="RemoteParts" package="FRSKY-TARANIS-GIMBAL" value="" x="-80" y="0" locked="yes" smashed="yes"/>
 <element name="E$2" library="RemoteParts" package="FRSKY-TARANIS-GIMBAL" value="" x="80" y="0" locked="yes" smashed="yes" rot="R180"/>
@@ -19383,7 +19397,7 @@ design rules under a new name.</description>
 <attribute name="MFR" value="FTDI" x="28.5" y="18" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="28.5" y="18" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="FT232RL-REEL" x="28.5" y="18" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="32.5" y="12.5" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
+<attribute name="NAME" x="28.4" y="24" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 </element>
 <element name="C8" library="quadparts_prebuilt" package="CAPC1608X100" package3d_urn="urn:adsk.eagle:package:11135716/1" value="0.1uF" x="22.5" y="14" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="9.5" y="-15" size="1.778" layer="27" rot="R90" display="off"/>
@@ -19396,7 +19410,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="22.5" y="16" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 <attribute name="PACKAGE" value="0603" x="22.5" y="14" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SUBSTITUTE_OK" value="yes" x="22.5" y="14" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="21" y="14" size="0.9" layer="27" font="vector" rot="R90" align="center"/>
+<attribute name="VALUE" x="23.8" y="14" size="0.6096" layer="27" font="vector" rot="R270" align="center"/>
 </element>
 <element name="C7" library="quadparts_prebuilt" package="CAPC1608X100" package3d_urn="urn:adsk.eagle:package:11135716/1" value="10uF" x="22.5" y="18" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="14.5" y="-37" size="1.778" layer="27" rot="R90" display="off"/>
@@ -19406,10 +19420,10 @@ design rules under a new name.</description>
 <attribute name="MFR" value="Samsung Electro-Mechanics" x="22.5" y="18" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="22.5" y="18" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="CL10A106MQ8NNNC" x="22.5" y="18" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="22.5" y="20" size="0.9" layer="25" font="vector" align="center"/>
+<attribute name="NAME" x="22.5" y="19.9" size="0.9" layer="25" font="vector" align="center"/>
 <attribute name="PACKAGE" value="0603" x="22.5" y="18" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SUBSTITUTE_OK" value="yes" x="22.5" y="18" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="21" y="18" size="0.9" layer="27" font="vector" rot="R270" align="center"/>
+<attribute name="VALUE" x="23.8" y="18.2" size="0.6096" layer="27" font="vector" rot="R90" align="center"/>
 </element>
 <element name="C9" library="quadparts_prebuilt" package="CAPC1608X100" package3d_urn="urn:adsk.eagle:package:11135716/1" value="0.1uF" x="33.5" y="10" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="30.5" y="-26" size="1.778" layer="27" rot="R90" display="off"/>
@@ -19419,10 +19433,10 @@ design rules under a new name.</description>
 <attribute name="MFR" value="KEMET" x="33.5" y="10" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="33.5" y="10" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="C0603C104K8RACTU" x="33.5" y="10" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="33.5" y="7.5" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
+<attribute name="NAME" x="33.4" y="12.5" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 <attribute name="PACKAGE" value="0603" x="33.5" y="10" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SUBSTITUTE_OK" value="yes" x="33.5" y="10" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="VALUE" x="35" y="10" size="0.9" layer="27" font="vector" rot="R90" align="center"/>
+<attribute name="VALUE" x="33.5" y="6.2" size="0.9" layer="27" font="vector" rot="R90" align="center"/>
 </element>
 <element name="U2" library="RemoteParts" package="SOT23-5" value="MCP73831T-2ACI/OT" x="-28" y="6.5" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Adafruit" x="-7" y="-12.5" size="1.778" layer="27" rot="R90" display="off"/>
@@ -19523,7 +19537,7 @@ design rules under a new name.</description>
 <attribute name="MFR" value="NXP USA Inc." x="28" y="8.5" size="1.778" layer="27" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="28" y="8.5" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="NX3L2467PW,118" x="28" y="8.5" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="24" y="12" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
+<attribute name="NAME" x="28" y="12" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 </element>
 <element name="D3" library="quadparts_prebuilt" package="SODFL3516X96" package3d_urn="urn:adsk.eagle:package:11793366/1" value="360mV" x="-31" y="-0.5" smashed="yes" rot="R270">
 <attribute name="CREATOR" value="Swanson" x="-202" y="21.5" size="1.778" layer="27" rot="R270" display="off"/>
@@ -19683,7 +19697,7 @@ design rules under a new name.</description>
 <attribute name="MFR" value="Amphenol ICC (FCI)" x="27.5" y="26" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="27.5" y="26" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="10118192-0001LF" x="27.5" y="26" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="31.2" y="23.9" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
+<attribute name="NAME" x="32.7" y="25.9" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 </element>
 <element name="V3" library="quadparts_prebuilt" package="VIA-0.2MM" value="LOCKED-VIA-0.2" x="-30" y="4.5" smashed="yes">
 <attribute name="CREATOR" value="Swanson" x="-30" y="4.5" size="1" layer="27" display="off"/>
@@ -19711,7 +19725,7 @@ design rules under a new name.</description>
 <attribute name="MFR" value="TE Connectivity AMP Connectors" x="-38" y="19" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MOUNTING" value="TH" x="-38" y="19" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="MPN" value="1-1735446-2" x="-38" y="19" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="NAME" x="-34" y="25.5" size="0.9" layer="25" font="vector" align="center"/>
+<attribute name="NAME" x="-39.2" y="23.9" size="0.9" layer="25" font="vector" align="center"/>
 <attribute name="POPULATE" value="NO" x="-38" y="19" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" value="2.4K" x="-38" y="19" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -19723,7 +19737,7 @@ design rules under a new name.</description>
 <attribute name="MFR" value="TE Connectivity AMP Connectors" x="38" y="1" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUNTING" value="TH" x="38" y="1" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="1-1735446-2" x="38" y="1" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="34" y="-2.5" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
+<attribute name="NAME" x="35.5" y="23.9" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 <attribute name="POPULATE" value="NO" x="38" y="1" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="SPICEPREFIX" value="E" x="38" y="1" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="VALUE" value="2.4K" x="38" y="1" size="1.778" layer="27" rot="R90" display="off"/>
@@ -19739,7 +19753,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="22.5" y="24" size="0.9" layer="25" font="vector" align="center"/>
 <attribute name="PACKAGE" value="0603" x="22.5" y="22" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="SUBSTITUTE_OK" value="yes" x="22.5" y="22" size="1.778" layer="27" rot="R270" display="off"/>
-<attribute name="VALUE" x="21" y="22" size="0.9" layer="27" font="vector" rot="R270" align="center"/>
+<attribute name="VALUE" x="23.8" y="22.1" size="0.6096" layer="27" font="vector" rot="R270" align="center"/>
 </element>
 <element name="B8" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="18" y="-19" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="18" y="-19" size="1.778" layer="27" rot="R180" display="off"/>
@@ -19749,7 +19763,7 @@ design rules under a new name.</description>
 <attribute name="MFR" value="E-Switch" x="18" y="-19" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="18" y="-19" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MPN" value="TL3305AF160QG" x="18" y="-19" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="15" y="-22" size="0.9" layer="25" font="vector" align="center"/>
+<attribute name="NAME" x="16.4" y="-22" size="0.9" layer="25" font="vector" align="center"/>
 <attribute name="SUBSTITUTE_OK" value="yes" x="18" y="-19" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="B9" library="quadparts_prebuilt" package="4.5MM_TACTILE_SWITCH_TL3305AF160QG" value="PUSHBUTTON_-4.5X4.5" x="25" y="-19" smashed="yes" rot="R270">
@@ -19860,7 +19874,7 @@ design rules under a new name.</description>
 <attribute name="MFR" value="Sullins Connector Solutions" x="0" y="10" size="1.778" layer="27" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="0" y="10" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="NPPC101KFXC-RC" x="0" y="10" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="9.5" y="24" size="0.9" layer="25" font="vector" align="center"/>
+<attribute name="NAME" x="-15.1" y="29.5" size="0.9" layer="25" font="vector" align="center"/>
 </element>
 <element name="A1" library="quadparts_prebuilt" package="ANT_PCB_2.4GHZ_NRF8001_1.6MM_1OZ_REV" value="ANTENNA-BOARD-REV" x="13.5" y="27" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="13.5" y="27" size="1.778" layer="27" rot="R90" display="off"/>
@@ -19870,7 +19884,7 @@ design rules under a new name.</description>
 <attribute name="MFR" value="NA" x="13.5" y="27" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUNTING" value="NONE" x="13.5" y="27" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="NA" x="13.5" y="27" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="11.4" y="25.6" size="0.9" layer="25" font="vector" align="center"/>
+<attribute name="NAME" x="11.6" y="27.3" size="0.9" layer="25" font="vector" align="center"/>
 <attribute name="POPULATE" value="NO" x="13.5" y="27" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
 <element name="B3" library="quadparts_prebuilt_2022" package="SCREW-TERMINAL-1X2-2.54MM" value="BATTERY-SCREW-TERMINAL" x="-22" y="28" smashed="yes" rot="R180">
@@ -19919,7 +19933,7 @@ design rules under a new name.</description>
 <attribute name="MFR" value="Samtec Inc." x="-31" y="29" size="1.778" layer="27" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="-31" y="29" size="1.778" layer="27" display="off"/>
 <attribute name="MPN" value="TSM-102-01-L-DH" x="-31" y="29" size="1.778" layer="27" display="off"/>
-<attribute name="NAME" x="-31" y="18" size="0.9" layer="25" font="vector" align="center"/>
+<attribute name="NAME" x="-31" y="16.8" size="0.9" layer="25" font="vector" align="center"/>
 <attribute name="SUBSTITUTE_OK" value="yes" x="-31" y="29" size="1.778" layer="27" display="off"/>
 </element>
 <element name="R3" library="quadparts_prebuilt" package="RESCAXS50P200X100X45-8" package3d_urn="urn:adsk.eagle:package:10895048/1" value="10K" x="-2" y="0" smashed="yes">
@@ -19943,7 +19957,7 @@ design rules under a new name.</description>
 <attribute name="MFR" value="C&amp;K" x="-36" y="-19" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MOUNTING" value="SMD" x="-36" y="-19" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="MPN" value="JS202011JCQN" x="-36" y="-19" size="1.778" layer="27" rot="R90" display="off"/>
-<attribute name="NAME" x="-39" y="-23.5" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
+<attribute name="NAME" x="-39" y="-15.1" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 </element>
 <element name="S2" library="RemoteParts" package="JS202011JCQN" value="SWITCH-DPDT-300MA-6V-SMD" x="36.5" y="-19" smashed="yes" rot="R90">
 <attribute name="CREATOR" value="Swanson" x="36.5" y="-19" size="1.778" layer="27" rot="R90" display="off"/>
@@ -19987,18 +20001,18 @@ design rules under a new name.</description>
 <attribute name="MPN" value="0532610671" x="12.5" y="0.5" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="NAME" x="9.5" y="6.1" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
 </element>
-<element name="J8" library="RemoteParts" package="SCREW-TERMINAL-1X2-2.54MM" value="HEADER-0.1IN-2POS-SCREW" x="-13.5" y="19" smashed="yes" rot="R180">
-<attribute name="CREATOR" value="Swanson" x="-13.5" y="19" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DESC" value="TERM BLK 2P SIDE ENT 2.54MM PCB" x="-13.5" y="19" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DIST" value="digikey" x="-13.5" y="19" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="DISTPN" value="ED10561-ND" x="-13.5" y="19" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MFR" value="On Shore Technology Inc." x="-13.5" y="19" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MOUNTING" value="TH" x="-13.5" y="19" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="MPN" value="OSTVN02A150" x="-13.5" y="19" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="NAME" x="-9.5" y="19.04" size="0.9" layer="25" font="vector" rot="R180" align="center"/>
-<attribute name="PIN1" value="1" x="-13.5" y="19" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="PIN2" value="2" x="-13.5" y="19" size="1.778" layer="27" rot="R180" display="off"/>
-<attribute name="POPULATE" value="NO" x="-13.5" y="19" size="1.778" layer="27" rot="R180" display="off"/>
+<element name="J8" library="RemoteParts" package="SCREW-TERMINAL-1X2-2.54MM" value="HEADER-0.1IN-2POS-SCREW" x="-13.5" y="19" smashed="yes">
+<attribute name="CREATOR" value="Swanson" x="-13.5" y="19" size="1.778" layer="27" display="off"/>
+<attribute name="DESC" value="TERM BLK 2P SIDE ENT 2.54MM PCB" x="-13.5" y="19" size="1.778" layer="27" display="off"/>
+<attribute name="DIST" value="digikey" x="-13.5" y="19" size="1.778" layer="27" display="off"/>
+<attribute name="DISTPN" value="ED10561-ND" x="-13.5" y="19" size="1.778" layer="27" display="off"/>
+<attribute name="MFR" value="On Shore Technology Inc." x="-13.5" y="19" size="1.778" layer="27" display="off"/>
+<attribute name="MOUNTING" value="TH" x="-13.5" y="19" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="OSTVN02A150" x="-13.5" y="19" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-17.5" y="18.96" size="0.9" layer="25" font="vector" align="center"/>
+<attribute name="PIN1" value="1" x="-13.5" y="19" size="1.778" layer="27" display="off"/>
+<attribute name="PIN2" value="2" x="-13.5" y="19" size="1.778" layer="27" display="off"/>
+<attribute name="POPULATE" value="NO" x="-13.5" y="19" size="1.778" layer="27" display="off"/>
 </element>
 <element name="J9" library="quadparts_prebuilt" package="HDRVR12W75P254_1X12_3098X254X850B" package3d_urn="urn:adsk.eagle:package:26991870/1" value="HEADER-12POS-0.1IN-FEMALE-TH" x="-7" y="-10" smashed="yes" rot="R180">
 <attribute name="CREATOR" value="Swanson" x="-7" y="-10" size="1.778" layer="27" rot="R180" display="off"/>
@@ -20975,15 +20989,16 @@ design rules under a new name.</description>
 <wire x1="-25.75" y1="4.25" x2="-32" y2="-2" width="0.508" layer="16"/>
 <wire x1="-25.75" y1="6.5" x2="-25.75" y2="4.25" width="0.508" layer="16"/>
 <wire x1="-38.25" y1="-19" x2="-38.4445" y2="-19" width="0.508" layer="16"/>
-<wire x1="-14.75" y1="16" x2="-14.75" y2="19" width="0.508" layer="1"/>
-<wire x1="-15.75" y1="15" x2="-14.75" y2="16" width="0.508" layer="1"/>
-<wire x1="-15.75" y1="14" x2="-15.75" y2="15" width="0.508" layer="1"/>
-<wire x1="-19.75" y1="10" x2="-15.75" y2="14" width="0.508" layer="1"/>
 <wire x1="-22.5" y1="10" x2="-19.75" y2="10" width="0.508" layer="1"/>
-<wire x1="-14.75" y1="19" x2="-14.77" y2="19" width="0.508" layer="1"/>
 <via x="-23.25" y="13.75" extent="1-16" drill="0.5"/>
 <wire x1="-23.25" y1="13.75" x2="-23.25" y2="27.98" width="0.508" layer="16"/>
 <wire x1="-23.25" y1="27.98" x2="-23.27" y2="28" width="0.508" layer="16"/>
+<wire x1="-23.25" y1="13.75" x2="-23.25" y2="11.8445" width="0.508" layer="16"/>
+<wire x1="-23.25" y1="11.8445" x2="-22.6" y2="11.1945" width="0.508" layer="16"/>
+<wire x1="-22.6" y1="11.1945" x2="-14.7055" y2="11.1945" width="0.508" layer="16"/>
+<wire x1="-14.7055" y1="11.1945" x2="-12.2" y2="13.7" width="0.508" layer="16"/>
+<wire x1="-12.2" y1="13.7" x2="-12.2" y2="18.97" width="0.508" layer="16"/>
+<wire x1="-12.2" y1="18.97" x2="-12.23" y2="19" width="0.508" layer="16"/>
 </signal>
 <signal name="USB_D_N">
 <wire x1="28.15" y1="26" x2="28.15" y2="23.8548625" width="0.127" layer="1"/>
@@ -21828,15 +21843,13 @@ design rules under a new name.</description>
 <signal name="HIGH-V" class="1">
 <contactref element="J9" pad="2"/>
 <contactref element="J8" pad="1"/>
-<wire x1="-12.25" y1="17.5" x2="-12.25" y2="19" width="0.508" layer="1"/>
-<wire x1="-15" y1="14.75" x2="-12.25" y2="17.5" width="0.508" layer="1"/>
-<wire x1="-15" y1="-2.25" x2="-15" y2="14.75" width="0.508" layer="1"/>
 <wire x1="-15" y1="-4" x2="-15" y2="-2.25" width="0.508" layer="16"/>
 <wire x1="-9.75" y1="-9.25" x2="-15" y2="-4" width="0.508" layer="16"/>
 <wire x1="-9.75" y1="-10" x2="-9.75" y2="-9.25" width="0.508" layer="16"/>
-<wire x1="-12.25" y1="19" x2="-12.23" y2="19" width="0.508" layer="1"/>
 <wire x1="-9.75" y1="-10" x2="-9.54" y2="-10" width="0.508" layer="16"/>
 <via x="-15" y="-2.25" extent="1-16" drill="0.381"/>
+<wire x1="-15" y1="18.77" x2="-14.77" y2="19" width="0.508" layer="1"/>
+<wire x1="-15" y1="-2.25" x2="-15" y2="18.77" width="0.508" layer="1"/>
 </signal>
 <signal name="34">
 <contactref element="U4" pad="42"/>

@@ -852,6 +852,12 @@
 <wire x1="3.4" y1="3.9" x2="-3.4" y2="3.9" width="0.05" layer="39"/>
 <pad name="1" x="-1.27" y="0" drill="1.1" shape="square"/>
 <pad name="2" x="1.27" y="0" drill="1.1"/>
+<wire x1="0.53" y1="-3.22" x2="0.53" y2="-1.47" width="0.1524" layer="21"/>
+<wire x1="0.53" y1="-1.47" x2="2.13" y2="-1.47" width="0.1524" layer="21"/>
+<wire x1="2.13" y1="-1.47" x2="2.13" y2="-3.22" width="0.1524" layer="21"/>
+<wire x1="-2.07" y1="-3.22" x2="-2.07" y2="-1.47" width="0.1524" layer="21"/>
+<wire x1="-2.07" y1="-1.47" x2="-0.47" y2="-1.47" width="0.1524" layer="21"/>
+<wire x1="-0.47" y1="-1.47" x2="-0.47" y2="-3.22" width="0.1524" layer="21"/>
 </package>
 <package name="ADAFRUIT-377">
 <rectangle x1="-5" y1="-13" x2="5" y2="-8" layer="39"/>
@@ -4374,7 +4380,9 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <text x="-1.27" y="3.905" size="0.9" layer="21" font="vector" rot="R90" align="center-left">&gt;PIN1</text>
 <wire x1="-2.75" y1="-3.25" x2="2.75" y2="-3.25" width="0.127" layer="51"/>
 <wire x1="-2.75" y1="-3.25" x2="2.75" y2="-3.25" width="0.127" layer="39"/>
-<wire x1="-2.75" y1="-3.25" x2="2.75" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-2.75" y1="-3.25" x2="-2.05" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-2.05" y1="-3.25" x2="-0.45" y2="-3.25" width="0.127" layer="21"/>
+<wire x1="-0.45" y1="-3.25" x2="2.75" y2="-3.25" width="0.127" layer="21"/>
 <wire x1="-2.75" y1="3.25" x2="-2.75" y2="-3.25" width="0.127" layer="51"/>
 <wire x1="-2.75" y1="3.25" x2="-2.75" y2="-3.25" width="0.127" layer="39"/>
 <wire x1="-2.75" y1="3.25" x2="-2.75" y2="-3.25" width="0.127" layer="21"/>
@@ -4392,6 +4400,12 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <wire x1="3.9" y1="4.9" x2="3.9" y2="-4.9" width="0.05" layer="39"/>
 <pad name="1" x="-1.27" y="0" drill="1.1" shape="square"/>
 <pad name="2" x="1.27" y="0" drill="1.1"/>
+<wire x1="0.5" y1="-3.2" x2="0.5" y2="-1.45" width="0.1524" layer="21"/>
+<wire x1="0.5" y1="-1.45" x2="2.1" y2="-1.45" width="0.1524" layer="21"/>
+<wire x1="2.1" y1="-1.45" x2="2.1" y2="-3.2" width="0.1524" layer="21"/>
+<wire x1="-2.1" y1="-3.2" x2="-2.1" y2="-1.45" width="0.1524" layer="21"/>
+<wire x1="-2.1" y1="-1.45" x2="-0.5" y2="-1.45" width="0.1524" layer="21"/>
+<wire x1="-0.5" y1="-1.45" x2="-0.5" y2="-3.2" width="0.1524" layer="21"/>
 </package>
 <package name="BATTERY-W/HOLDER-380MAH-HUBSAN">
 <wire x1="-12" y1="11" x2="-9" y2="2.5" width="0.127" layer="21"/>
