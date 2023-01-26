@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4686,7 +4686,40 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <text x="2" y="-6.5" size="1.27" layer="21" font="vector" rot="SR270" align="center-left">&gt;PIN1</text>
 <text x="-2" y="-6.5" size="1.27" layer="21" font="vector" rot="SR270" align="center-left">&gt;PIN2</text>
 </package>
+<package name="RESCAXS50P200X100X45-8" urn="urn:adsk.eagle:footprint:10895054/1" locally_modified="yes">
+<description>8-Chiparray 2-Side Convex, 0.50 mm pitch, 2.00 X 1.00 X 0.45 mm body
+&lt;p&gt;8-pin Chiparray 2-Side Convex package with 0.50 mm pitch with body size 2.00 X 1.00 X 0.45 mm&lt;/p&gt;</description>
+<wire x1="-0.5" y1="-1.2836" x2="0.5" y2="-1.2836" width="0.12" layer="21"/>
+<wire x1="-0.5" y1="1.2836" x2="0.5" y2="1.2836" width="0.12" layer="21"/>
+<wire x1="-0.55" y1="-1.05" x2="-0.55" y2="1.05" width="0.12" layer="51"/>
+<wire x1="-0.55" y1="1.05" x2="0.55" y2="1.05" width="0.12" layer="51"/>
+<wire x1="-1.4" y1="-1.9" x2="1.4" y2="-1.9" width="0.05" layer="39"/>
+<wire x1="-1.4" y1="1.9" x2="-1.4" y2="-1.9" width="0.05" layer="39"/>
+<text x="0" y="-2" size="0.9" layer="27" font="vector" align="center">&gt;VALUE</text>
+<text x="0" y="2" size="0.9" layer="25" font="vector" align="center">&gt;NAME</text>
+<wire x1="0.55" y1="-1.05" x2="-0.55" y2="-1.05" width="0.12" layer="51"/>
+<wire x1="0.55" y1="1.05" x2="0.55" y2="-1.05" width="0.12" layer="51"/>
+<wire x1="1.4" y1="-1.9" x2="1.4" y2="1.9" width="0.05" layer="39"/>
+<wire x1="1.4" y1="1.9" x2="-1.4" y2="1.9" width="0.05" layer="39"/>
+<smd name="1" x="-0.6196" y="0.75" dx="0.79" dy="0.3391" layer="1"/>
+<smd name="2" x="-0.6196" y="0.25" dx="0.79" dy="0.3391" layer="1"/>
+<smd name="3" x="-0.6196" y="-0.25" dx="0.79" dy="0.3391" layer="1"/>
+<smd name="4" x="-0.6196" y="-0.75" dx="0.79" dy="0.3391" layer="1"/>
+<smd name="5" x="0.6196" y="-0.75" dx="0.79" dy="0.3391" layer="1"/>
+<smd name="6" x="0.6196" y="-0.25" dx="0.79" dy="0.3391" layer="1"/>
+<smd name="7" x="0.6196" y="0.25" dx="0.79" dy="0.3391" layer="1"/>
+<smd name="8" x="0.6196" y="0.75" dx="0.79" dy="0.3391" layer="1"/>
+</package>
 </packages>
+<packages3d>
+<package3d name="RESCAXS50P200X100X45-8" urn="urn:adsk.eagle:package:10895048/1" type="model">
+<description>8-Chiparray 2-Side Convex, 0.50 mm pitch, 2.00 X 1.00 X 0.45 mm body
+&lt;p&gt;8-pin Chiparray 2-Side Convex package with 0.50 mm pitch with body size 2.00 X 1.00 X 0.45 mm&lt;/p&gt;</description>
+<packageinstances>
+<packageinstance name="RESCAXS50P200X100X45-8"/>
+</packageinstances>
+</package3d>
+</packages3d>
 <symbols>
 <symbol name="BATTERY">
 <wire x1="-0.635" y1="0" x2="-0.635" y2="-2.54" width="0.254" layer="94"/>
@@ -4700,6 +4733,22 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <text x="5.08" y="1.27" size="1.778" layer="94" align="center">-</text>
 <pin name="N" x="5.08" y="0" visible="off" length="short" rot="R180"/>
 <pin name="P" x="-5.08" y="0" visible="off" length="short"/>
+</symbol>
+<symbol name="RESOLVED-RESISTOR_">
+<description>Resistor</description>
+<wire x1="-0.254" y1="-1.016" x2="0.381" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-0.889" y1="1.016" x2="-0.254" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-1.524" y1="-1.016" x2="-0.889" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="-2.159" y1="1.016" x2="-1.524" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.2032" layer="94"/>
+<text x="-3.81" y="-3.302" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-3.81" y="1.4986" size="1.778" layer="95">&gt;NAME</text>
+<wire x1="0.381" y1="1.016" x2="1.016" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="1.016" y1="-1.016" x2="1.651" y2="1.016" width="0.2032" layer="94"/>
+<wire x1="1.651" y1="1.016" x2="2.286" y2="-1.016" width="0.2032" layer="94"/>
+<wire x1="2.286" y1="-1.016" x2="2.54" y2="0" width="0.2032" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4822,6 +4871,305 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RESISTOR-PACK-4X" prefix="R" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="RESOLVED-RESISTOR_" x="-0.16455" y="-0.164796875"/>
+<gate name="G$2" symbol="RESOLVED-RESISTOR_" x="0" y="-7.62"/>
+<gate name="G$3" symbol="RESOLVED-RESISTOR_" x="0" y="-15.24"/>
+<gate name="G$4" symbol="RESOLVED-RESISTOR_" x="0" y="-22.86"/>
+</gates>
+<devices>
+<device name="-1" package="RESCAXS50P200X100X45-8">
+<connects>
+<connect gate="G$1" pin="1" pad="4"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$2" pin="1" pad="3"/>
+<connect gate="G$2" pin="2" pad="6"/>
+<connect gate="G$3" pin="1" pad="2"/>
+<connect gate="G$3" pin="2" pad="7"/>
+<connect gate="G$4" pin="1" pad="1"/>
+<connect gate="G$4" pin="2" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10895048/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="RES ARRAY 4 RES 1 OHM 0804"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="Y101R0CT-ND"/>
+<attribute name="MFR" value="Panasonic Electronic Components"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="EXB-N8V1R0JX"/>
+<attribute name="VALUE" value="1"/>
+</technology>
+</technologies>
+</device>
+<device name="-100" package="RESCAXS50P200X100X45-8">
+<connects>
+<connect gate="G$1" pin="1" pad="4"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$2" pin="1" pad="3"/>
+<connect gate="G$2" pin="2" pad="6"/>
+<connect gate="G$3" pin="1" pad="2"/>
+<connect gate="G$3" pin="2" pad="7"/>
+<connect gate="G$4" pin="1" pad="1"/>
+<connect gate="G$4" pin="2" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10895048/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="RES ARRAY 4 RES 100 OHM 0804"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="Y10101CT-ND"/>
+<attribute name="MFR" value="Panasonic Electronic Components"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="EXB-N8V101JX"/>
+<attribute name="VALUE" value="100"/>
+</technology>
+</technologies>
+</device>
+<device name="-1.5K" package="RESCAXS50P200X100X45-8">
+<connects>
+<connect gate="G$1" pin="1" pad="4"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$2" pin="1" pad="3"/>
+<connect gate="G$2" pin="2" pad="6"/>
+<connect gate="G$3" pin="1" pad="2"/>
+<connect gate="G$3" pin="2" pad="7"/>
+<connect gate="G$4" pin="1" pad="1"/>
+<connect gate="G$4" pin="2" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10895048/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="RES ARRAY 4 RES 1.5K OHM 0804"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="Y10152CT-ND"/>
+<attribute name="MFR" value="Panasonic Electronic Components"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="EXB-N8V152JX"/>
+<attribute name="VALUE" value="1.5K"/>
+</technology>
+</technologies>
+</device>
+<device name="-10K" package="RESCAXS50P200X100X45-8">
+<connects>
+<connect gate="G$1" pin="1" pad="4"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$2" pin="1" pad="3"/>
+<connect gate="G$2" pin="2" pad="6"/>
+<connect gate="G$3" pin="1" pad="2"/>
+<connect gate="G$3" pin="2" pad="7"/>
+<connect gate="G$4" pin="1" pad="1"/>
+<connect gate="G$4" pin="2" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10895048/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="RES ARRAY 4 RES 10K OHM 0804"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="Y10103CT-ND"/>
+<attribute name="MFR" value="Panasonic Electronic Components"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="EXB-N8V103JX"/>
+<attribute name="PACKAGE" value="0804"/>
+<attribute name="VALUE" value="10K"/>
+</technology>
+</technologies>
+</device>
+<device name="-1K" package="RESCAXS50P200X100X45-8">
+<connects>
+<connect gate="G$1" pin="1" pad="4"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$2" pin="1" pad="3"/>
+<connect gate="G$2" pin="2" pad="6"/>
+<connect gate="G$3" pin="1" pad="2"/>
+<connect gate="G$3" pin="2" pad="7"/>
+<connect gate="G$4" pin="1" pad="1"/>
+<connect gate="G$4" pin="2" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10895048/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="RES ARRAY 4 RES 1K OHM 0804"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="Y10102CT-ND"/>
+<attribute name="MFR" value="Panasonic Electronic Components"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="EXB-N8V102JX"/>
+<attribute name="VALUE" value="1K"/>
+</technology>
+</technologies>
+</device>
+<device name="-2.2K" package="RESCAXS50P200X100X45-8">
+<connects>
+<connect gate="G$1" pin="1" pad="4"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$2" pin="1" pad="3"/>
+<connect gate="G$2" pin="2" pad="6"/>
+<connect gate="G$3" pin="1" pad="2"/>
+<connect gate="G$3" pin="2" pad="7"/>
+<connect gate="G$4" pin="1" pad="1"/>
+<connect gate="G$4" pin="2" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10895048/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="RES ARRAY 4 RES 2.2K OHM 0804"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="Y10222CT-ND"/>
+<attribute name="MFR" value="Panasonic Electronic Components"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="EXB-N8V222JX"/>
+<attribute name="VALUE" value="2.2K"/>
+</technology>
+</technologies>
+</device>
+<device name="-2K" package="RESCAXS50P200X100X45-8">
+<connects>
+<connect gate="G$1" pin="1" pad="4"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$2" pin="1" pad="3"/>
+<connect gate="G$2" pin="2" pad="6"/>
+<connect gate="G$3" pin="1" pad="2"/>
+<connect gate="G$3" pin="2" pad="7"/>
+<connect gate="G$4" pin="1" pad="1"/>
+<connect gate="G$4" pin="2" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10895048/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="Y10202CT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="2K"/>
+</technology>
+</technologies>
+</device>
+<device name="-510" package="RESCAXS50P200X100X45-8">
+<connects>
+<connect gate="G$1" pin="1" pad="4"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$2" pin="1" pad="3"/>
+<connect gate="G$2" pin="2" pad="6"/>
+<connect gate="G$3" pin="1" pad="2"/>
+<connect gate="G$3" pin="2" pad="7"/>
+<connect gate="G$4" pin="1" pad="1"/>
+<connect gate="G$4" pin="2" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10895048/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="Y10511CT-ND"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="510"/>
+</technology>
+</technologies>
+</device>
+<device name="-750" package="RESCAXS50P200X100X45-8">
+<connects>
+<connect gate="G$1" pin="1" pad="4"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$2" pin="1" pad="3"/>
+<connect gate="G$2" pin="2" pad="6"/>
+<connect gate="G$3" pin="1" pad="2"/>
+<connect gate="G$3" pin="2" pad="7"/>
+<connect gate="G$4" pin="1" pad="1"/>
+<connect gate="G$4" pin="2" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10895048/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="DIGIKEY"/>
+<attribute name="DISTPN" value="Y10751CT-ND"/>
+<attribute name="MFR" value="Panasonic Electronic Components"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="EXB-N8V751JX"/>
+<attribute name="VALUE" value="750"/>
+</technology>
+</technologies>
+</device>
+<device name="-1.6K" package="RESCAXS50P200X100X45-8">
+<connects>
+<connect gate="G$1" pin="1" pad="4"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$2" pin="1" pad="3"/>
+<connect gate="G$2" pin="2" pad="6"/>
+<connect gate="G$3" pin="1" pad="2"/>
+<connect gate="G$3" pin="2" pad="7"/>
+<connect gate="G$4" pin="1" pad="1"/>
+<connect gate="G$4" pin="2" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10895048/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DESC" value="RES ARRAY 4 RES 1.6K OHM 0804"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="Y10162CT-ND"/>
+<attribute name="MFR" value="Panasonic Electronic Components"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="VALUE" value="1.6K"/>
+</technology>
+</technologies>
+</device>
+<device name="-1.8K" package="RESCAXS50P200X100X45-8">
+<connects>
+<connect gate="G$1" pin="1" pad="4"/>
+<connect gate="G$1" pin="2" pad="5"/>
+<connect gate="G$2" pin="1" pad="3"/>
+<connect gate="G$2" pin="2" pad="6"/>
+<connect gate="G$3" pin="1" pad="2"/>
+<connect gate="G$3" pin="2" pad="7"/>
+<connect gate="G$4" pin="1" pad="1"/>
+<connect gate="G$4" pin="2" pad="8"/>
+</connects>
+<package3dinstances>
+<package3dinstance package3d_urn="urn:adsk.eagle:package:10895048/1"/>
+</package3dinstances>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="Swanson"/>
+<attribute name="DIST" value="Digikey"/>
+<attribute name="DISTPN" value="Y10182CT-ND"/>
+<attribute name="MFR" value="Panasonic Electronic Components"/>
+<attribute name="MOUNTING" value="SMD"/>
+<attribute name="MPN" value="EXB-N8V182JX"/>
+<attribute name="VALUE" value="1.8K"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -5032,6 +5380,12 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <part name="F1" library="RemoteParts" deviceset="SHORT" device=""/>
 <part name="GND19" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="JP1" library="quadparts_prebuilt" deviceset="FTDI_BASIC" device="-SMD" value="FTDI_BASIC-SMD"/>
+<part name="R2" library="quadparts_prebuilt_2022" deviceset="RESISTOR-PACK-4X" device="-10K" package3d_urn="urn:adsk.eagle:package:10895048/1" value="10K"/>
+<part name="R6" library="quadparts_prebuilt_2022" deviceset="RESISTOR-PACK-4X" device="-10K" package3d_urn="urn:adsk.eagle:package:10895048/1" value="10K"/>
+<part name="GND4" library="quadparts_prebuilt" deviceset="GND" device=""/>
+<part name="GND7" library="quadparts_prebuilt" deviceset="GND" device=""/>
+<part name="GND12" library="quadparts_prebuilt" deviceset="GND" device=""/>
+<part name="GND13" library="quadparts_prebuilt" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5053,11 +5407,11 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 <wire x1="72.39" y1="236.22" x2="3.81" y2="236.22" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="191.77" x2="3.81" y2="191.77" width="0.1524" layer="97" style="longdash"/>
 <wire x1="72.39" y1="236.22" x2="72.39" y2="191.77" width="0.1524" layer="97" style="longdash"/>
-<wire x1="72.39" y1="191.77" x2="72.39" y2="57.15" width="0.1524" layer="97" style="longdash"/>
-<wire x1="72.39" y1="57.15" x2="3.81" y2="57.15" width="0.1524" layer="97" style="longdash"/>
+<wire x1="72.39" y1="191.77" x2="72.39" y2="0" width="0.1524" layer="97" style="longdash"/>
+<wire x1="72.39" y1="0" x2="3.81" y2="0" width="0.1524" layer="97" style="longdash"/>
 <text x="6.35" y="238.76" size="3.81" layer="97">Breakout</text>
-<text x="8.89" y="184.15" size="3.81" layer="97">Frysky</text>
-<text x="6.35" y="142.24" size="3.81" layer="97">Hall Effect</text>
+<text x="21.59" y="184.15" size="3.81" layer="97">Frysky</text>
+<text x="19.05" y="142.24" size="3.81" layer="97">Hall Effect</text>
 <wire x1="328.93" y1="275.59" x2="328.93" y2="196.85" width="0.1524" layer="97" style="longdash"/>
 <wire x1="328.93" y1="196.85" x2="427.99" y2="196.85" width="0.1524" layer="97" style="longdash"/>
 <text x="344.17" y="199.39" size="3.81" layer="97">Rotary Encoder and Buttons</text>
@@ -5078,7 +5432,7 @@ This is the in-system programming (ISP) connector for Atmel Microcontrollers pro
 to select correct AREF source.
 
 </text>
-<text x="26.67" y="60.96" size="3.81" layer="97">Gimbals</text>
+<text x="21.59" y="101.6" size="3.81" layer="97">Gimbals</text>
 <text x="8.89" y="198.12" size="1.9304" layer="97">R8 should be 1/4 the resistance of one gimbal.
 FrySky: R8 = 600 Ohm
 HobbyKing: R8 = 1.2k Ohm</text>
@@ -5089,6 +5443,10 @@ the battery leaks, so pull it down.</text>
 1) 'off' means off even when on USB and 
 2) there's no leakage through the voltage divider when when we are "off"  
 Otherwise we'll deeply dischange the battery.</text>
+<text x="16.51" y="12.7" size="3.81" layer="97">Voltage Divider</text>
+<text x="5.08" y="2.54" size="1.778" layer="97">Solves AREF pin bug which causes remote not recieve 
+telemetry if conected to 3.3V EXTERNAL source. With the 
+divider we can use use the INTERNAL 1.6 voltage reference.</text>
 </plain>
 <instances>
 <instance part="GND10" gate="1" x="339.09" y="226.06" smashed="yes">
@@ -5363,15 +5721,15 @@ Otherwise we'll deeply dischange the battery.</text>
 <instance part="V5" gate="G$1" x="156.21" y="16.51" smashed="yes" rot="R90">
 <attribute name="NAME" x="156.21" y="21.844" size="1.27" layer="95" rot="R90" align="center-left"/>
 </instance>
-<instance part="J2" gate="G$1" x="8.89" y="170.18" smashed="yes">
-<attribute name="NAME" x="8.89" y="168.275" size="1.27" layer="95"/>
-<attribute name="VALUE" x="12.065" y="171.45" size="1.27" layer="96" align="center"/>
-<attribute name="POPULATE" x="8.89" y="170.18" size="1.778" layer="96" display="off"/>
+<instance part="J2" gate="G$1" x="21.59" y="170.18" smashed="yes">
+<attribute name="NAME" x="21.59" y="168.275" size="1.27" layer="95"/>
+<attribute name="VALUE" x="24.765" y="171.45" size="1.27" layer="96" align="center"/>
+<attribute name="POPULATE" x="21.59" y="170.18" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="J3" gate="G$1" x="8.89" y="154.94" smashed="yes">
-<attribute name="NAME" x="8.89" y="153.035" size="1.27" layer="95"/>
-<attribute name="VALUE" x="12.065" y="156.21" size="1.27" layer="96" align="center"/>
-<attribute name="POPULATE" x="8.89" y="154.94" size="1.778" layer="96" display="off"/>
+<instance part="J3" gate="G$1" x="21.59" y="154.94" smashed="yes">
+<attribute name="NAME" x="21.59" y="153.035" size="1.27" layer="95"/>
+<attribute name="VALUE" x="24.765" y="156.21" size="1.27" layer="96" align="center"/>
+<attribute name="POPULATE" x="21.59" y="154.94" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C4" gate="G$1" x="199.39" y="96.52" smashed="yes" rot="R180">
 <attribute name="VALUE" x="202.946" y="98.679" size="1.778" layer="96" rot="R180"/>
@@ -5508,13 +5866,13 @@ Otherwise we'll deeply dischange the battery.</text>
 <attribute name="VALUE" x="270.002" y="13.97" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="265.2014" y="13.97" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="J5" gate="G$1" x="8.89" y="127" smashed="yes">
-<attribute name="NAME" x="8.89" y="125.095" size="1.27" layer="95"/>
-<attribute name="VALUE" x="10.795" y="128.27" size="1.27" layer="96" align="center"/>
+<instance part="J5" gate="G$1" x="21.59" y="127" smashed="yes">
+<attribute name="NAME" x="21.59" y="125.095" size="1.27" layer="95"/>
+<attribute name="VALUE" x="23.495" y="128.27" size="1.27" layer="96" align="center"/>
 </instance>
-<instance part="J7" gate="G$1" x="8.89" y="111.76" smashed="yes">
-<attribute name="NAME" x="7.62" y="109.855" size="1.27" layer="95"/>
-<attribute name="VALUE" x="10.795" y="113.03" size="1.27" layer="96" align="center"/>
+<instance part="J7" gate="G$1" x="21.59" y="111.76" smashed="yes">
+<attribute name="NAME" x="20.32" y="109.855" size="1.27" layer="95"/>
+<attribute name="VALUE" x="23.495" y="113.03" size="1.27" layer="96" align="center"/>
 </instance>
 <instance part="J8" gate="G$1" x="219.71" y="43.18" smashed="yes">
 <attribute name="NAME" x="226.568" y="43.18" size="1.778" layer="95"/>
@@ -5538,6 +5896,50 @@ Otherwise we'll deeply dischange the battery.</text>
 <instance part="JP1" gate="G$1" x="386.08" y="60.96" smashed="yes">
 <attribute name="VALUE" x="381" y="50.8" size="1.778" layer="96"/>
 <attribute name="NAME" x="381" y="71.882" size="1.778" layer="95"/>
+</instance>
+<instance part="R2" gate="G$1" x="17.78" y="86.36" smashed="yes" rot="R270">
+<attribute name="VALUE" x="14.478" y="90.17" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="19.2786" y="90.17" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="R2" gate="G$2" x="17.78" y="71.12" smashed="yes" rot="R270">
+<attribute name="VALUE" x="14.478" y="74.93" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="19.2786" y="74.93" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="R2" gate="G$3" x="48.26" y="86.36" smashed="yes" rot="R270">
+<attribute name="VALUE" x="44.958" y="90.17" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="49.7586" y="90.17" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="R2" gate="G$4" x="48.26" y="71.12" smashed="yes" rot="R270">
+<attribute name="VALUE" x="44.958" y="74.93" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="49.7586" y="74.93" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="R6" gate="G$1" x="17.78" y="45.72" smashed="yes" rot="R270">
+<attribute name="VALUE" x="14.478" y="49.53" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="19.2786" y="49.53" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="R6" gate="G$2" x="17.78" y="30.48" smashed="yes" rot="R270">
+<attribute name="VALUE" x="14.478" y="34.29" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="19.2786" y="34.29" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="R6" gate="G$3" x="48.26" y="45.72" smashed="yes" rot="R270">
+<attribute name="VALUE" x="44.958" y="49.53" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="49.7586" y="49.53" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="R6" gate="G$4" x="48.26" y="30.48" smashed="yes" rot="R270">
+<attribute name="VALUE" x="44.958" y="34.29" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="49.7586" y="34.29" size="1.778" layer="95" rot="R270"/>
+</instance>
+<instance part="GND4" gate="1" x="17.78" y="62.23" smashed="yes">
+<attribute name="VALUE" x="17.78" y="59.69" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="GND7" gate="1" x="48.26" y="62.23" smashed="yes">
+<attribute name="VALUE" x="48.26" y="59.69" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="GND12" gate="1" x="17.78" y="21.59" smashed="yes">
+<attribute name="VALUE" x="17.78" y="19.05" size="1.778" layer="96" align="center"/>
+</instance>
+<instance part="GND13" gate="1" x="48.26" y="21.59" smashed="yes">
+<attribute name="VALUE" x="48.26" y="19.05" size="1.778" layer="96" align="center"/>
 </instance>
 </instances>
 <busses>
@@ -5737,13 +6139,13 @@ Otherwise we'll deeply dischange the battery.</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="-"/>
-<wire x1="19.05" y1="172.72" x2="21.59" y2="172.72" width="0.1524" layer="91"/>
-<label x="21.59" y="172.72" size="1.27" layer="95" xref="yes"/>
+<wire x1="31.75" y1="172.72" x2="34.29" y2="172.72" width="0.1524" layer="91"/>
+<label x="34.29" y="172.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="-"/>
-<wire x1="19.05" y1="157.48" x2="21.59" y2="157.48" width="0.1524" layer="91"/>
-<label x="21.59" y="157.48" size="1.27" layer="95" xref="yes"/>
+<wire x1="31.75" y1="157.48" x2="34.29" y2="157.48" width="0.1524" layer="91"/>
+<label x="34.29" y="157.48" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="C4" gate="G$1" pin="1"/>
@@ -5823,13 +6225,13 @@ Otherwise we'll deeply dischange the battery.</text>
 <pinref part="R1" gate="G$3" pin="1"/>
 </segment>
 <segment>
-<wire x1="19.05" y1="129.54" x2="21.59" y2="129.54" width="0.1524" layer="91"/>
-<label x="21.59" y="129.54" size="1.27" layer="95" xref="yes"/>
+<wire x1="31.75" y1="129.54" x2="34.29" y2="129.54" width="0.1524" layer="91"/>
+<label x="34.29" y="129.54" size="1.27" layer="95" xref="yes"/>
 <pinref part="J5" gate="G$1" pin="-"/>
 </segment>
 <segment>
-<wire x1="19.05" y1="114.3" x2="21.59" y2="114.3" width="0.1524" layer="91"/>
-<label x="21.59" y="114.3" size="1.27" layer="95" xref="yes"/>
+<wire x1="31.75" y1="114.3" x2="34.29" y2="114.3" width="0.1524" layer="91"/>
+<label x="34.29" y="114.3" size="1.27" layer="95" xref="yes"/>
 <pinref part="J7" gate="G$1" pin="-"/>
 </segment>
 <segment>
@@ -5867,6 +6269,26 @@ Otherwise we'll deeply dischange the battery.</text>
 <wire x1="391.16" y1="68.58" x2="398.78" y2="68.58" width="0.1524" layer="91"/>
 <label x="398.78" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R2" gate="G$2" pin="2"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+<wire x1="17.78" y1="66.04" x2="17.78" y2="64.77" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$4" pin="2"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+<wire x1="48.26" y1="66.04" x2="48.26" y2="64.77" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$2" pin="2"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="17.78" y1="25.4" x2="17.78" y2="24.13" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$4" pin="2"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="48.26" y1="25.4" x2="48.26" y2="24.13" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="BTN_UP" class="0">
 <segment>
@@ -5882,70 +6304,70 @@ Otherwise we'll deeply dischange the battery.</text>
 </net>
 <net name="PITCH" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="PF3(ADC3/DIG4)"/>
-<wire x1="220.98" y1="186.69" x2="223.52" y2="186.69" width="0.1524" layer="91"/>
-<label x="223.52" y="186.69" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J3" gate="G$1" pin="V"/>
-<wire x1="19.05" y1="162.56" x2="21.59" y2="162.56" width="0.1524" layer="91"/>
-<label x="21.59" y="162.56" size="1.27" layer="95" xref="yes"/>
+<wire x1="31.75" y1="162.56" x2="34.29" y2="162.56" width="0.1524" layer="91"/>
+<label x="34.29" y="162.56" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="21.59" y="119.38" size="1.27" layer="95" xref="yes"/>
+<label x="34.29" y="119.38" size="1.27" layer="95" xref="yes"/>
 <pinref part="J7" gate="G$1" pin="V"/>
-<wire x1="19.05" y1="119.38" x2="21.59" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="119.38" x2="34.29" y2="119.38" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$3" pin="1"/>
+<wire x1="48.26" y1="50.8" x2="48.26" y2="53.34" width="0.1524" layer="91"/>
+<label x="48.26" y="53.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="ROLL" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="PF2(ADC2/DIG2)"/>
-<wire x1="220.98" y1="189.23" x2="223.52" y2="189.23" width="0.1524" layer="91"/>
-<label x="223.52" y="189.23" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J3" gate="G$1" pin="H"/>
-<wire x1="19.05" y1="160.02" x2="21.59" y2="160.02" width="0.1524" layer="91"/>
-<label x="21.59" y="160.02" size="1.27" layer="95" xref="yes"/>
+<wire x1="31.75" y1="160.02" x2="34.29" y2="160.02" width="0.1524" layer="91"/>
+<label x="34.29" y="160.02" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="21.59" y="116.84" size="1.27" layer="95" xref="yes"/>
+<label x="34.29" y="116.84" size="1.27" layer="95" xref="yes"/>
 <pinref part="J7" gate="G$1" pin="H"/>
-<wire x1="19.05" y1="116.84" x2="21.59" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="116.84" x2="34.29" y2="116.84" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="50.8" x2="17.78" y2="53.34" width="0.1524" layer="91"/>
+<label x="17.78" y="53.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="THROTTLE" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="PF1(ADC1)"/>
-<wire x1="220.98" y1="191.77" x2="223.52" y2="191.77" width="0.1524" layer="91"/>
-<label x="223.52" y="191.77" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J2" gate="G$1" pin="V"/>
-<wire x1="19.05" y1="177.8" x2="21.59" y2="177.8" width="0.1524" layer="91"/>
-<label x="21.59" y="177.8" size="1.27" layer="95" xref="yes"/>
+<wire x1="31.75" y1="177.8" x2="34.29" y2="177.8" width="0.1524" layer="91"/>
+<label x="34.29" y="177.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="21.59" y="134.62" size="1.27" layer="95" xref="yes"/>
+<label x="34.29" y="134.62" size="1.27" layer="95" xref="yes"/>
 <pinref part="J5" gate="G$1" pin="V"/>
-<wire x1="19.05" y1="134.62" x2="21.59" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="134.62" x2="34.29" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="91.44" x2="17.78" y2="93.98" width="0.1524" layer="91"/>
+<label x="17.78" y="93.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="YAW" class="0">
 <segment>
-<pinref part="U4" gate="G$1" pin="PF0(ADC0)"/>
-<wire x1="220.98" y1="194.31" x2="223.52" y2="194.31" width="0.1524" layer="91"/>
-<label x="223.52" y="194.31" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="J2" gate="G$1" pin="H"/>
-<wire x1="19.05" y1="175.26" x2="21.59" y2="175.26" width="0.1524" layer="91"/>
-<label x="21.59" y="175.26" size="1.27" layer="95" xref="yes"/>
+<wire x1="31.75" y1="175.26" x2="34.29" y2="175.26" width="0.1524" layer="91"/>
+<label x="34.29" y="175.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="21.59" y="132.08" size="1.27" layer="95" xref="yes"/>
+<label x="34.29" y="132.08" size="1.27" layer="95" xref="yes"/>
 <pinref part="J5" gate="G$1" pin="H"/>
-<wire x1="19.05" y1="132.08" x2="21.59" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="31.75" y1="132.08" x2="34.29" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$3" pin="1"/>
+<wire x1="48.26" y1="91.44" x2="48.26" y2="93.98" width="0.1524" layer="91"/>
+<label x="48.26" y="93.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="3V3" class="0">
@@ -6025,28 +6447,23 @@ Otherwise we'll deeply dischange the battery.</text>
 </segment>
 <segment>
 <pinref part="J5" gate="G$1" pin="+"/>
-<wire x1="19.05" y1="137.16" x2="21.59" y2="137.16" width="0.1524" layer="91"/>
-<label x="21.59" y="137.16" size="1.27" layer="95" xref="yes"/>
+<wire x1="31.75" y1="137.16" x2="34.29" y2="137.16" width="0.1524" layer="91"/>
+<label x="34.29" y="137.16" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J7" gate="G$1" pin="+"/>
-<wire x1="19.05" y1="121.92" x2="21.59" y2="121.92" width="0.1524" layer="91"/>
-<label x="21.59" y="121.92" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U4" gate="G$1" pin="AREF"/>
-<wire x1="220.98" y1="196.85" x2="223.52" y2="196.85" width="0.1524" layer="91"/>
-<label x="223.52" y="196.85" size="1.27" layer="95" xref="yes"/>
+<wire x1="31.75" y1="121.92" x2="34.29" y2="121.92" width="0.1524" layer="91"/>
+<label x="34.29" y="121.92" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="+"/>
-<wire x1="19.05" y1="180.34" x2="21.59" y2="180.34" width="0.1524" layer="91"/>
-<label x="21.59" y="180.34" size="1.27" layer="95" xref="yes"/>
+<wire x1="31.75" y1="180.34" x2="34.29" y2="180.34" width="0.1524" layer="91"/>
+<label x="34.29" y="180.34" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="+"/>
-<wire x1="19.05" y1="165.1" x2="21.59" y2="165.1" width="0.1524" layer="91"/>
-<label x="21.59" y="165.1" size="1.27" layer="95" xref="yes"/>
+<wire x1="31.75" y1="165.1" x2="34.29" y2="165.1" width="0.1524" layer="91"/>
+<label x="34.29" y="165.1" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="4"/>
@@ -6837,6 +7254,70 @@ Otherwise we'll deeply dischange the battery.</text>
 <wire x1="241.3" y1="27.94" x2="248.92" y2="27.94" width="0.1524" layer="91"/>
 <junction x="241.3" y="27.94"/>
 <label x="248.92" y="27.94" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="D_THROTTLE" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<pinref part="R2" gate="G$2" pin="1"/>
+<wire x1="17.78" y1="81.28" x2="17.78" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="78.74" x2="17.78" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="78.74" x2="20.32" y2="78.74" width="0.1524" layer="91"/>
+<junction x="17.78" y="78.74"/>
+<label x="20.32" y="78.74" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="PF1(ADC1)"/>
+<wire x1="220.98" y1="191.77" x2="223.52" y2="191.77" width="0.1524" layer="91"/>
+<label x="223.52" y="191.77" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="D_YAW" class="0">
+<segment>
+<pinref part="R2" gate="G$3" pin="2"/>
+<pinref part="R2" gate="G$4" pin="1"/>
+<wire x1="48.26" y1="81.28" x2="48.26" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="78.74" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="78.74" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
+<junction x="48.26" y="78.74"/>
+<label x="50.8" y="78.74" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="PF0(ADC0)"/>
+<wire x1="220.98" y1="194.31" x2="223.52" y2="194.31" width="0.1524" layer="91"/>
+<label x="223.52" y="194.31" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="D_ROLL" class="0">
+<segment>
+<pinref part="R6" gate="G$2" pin="1"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="17.78" y1="35.56" x2="17.78" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="38.1" x2="17.78" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="38.1" x2="20.32" y2="38.1" width="0.1524" layer="91"/>
+<junction x="17.78" y="38.1"/>
+<label x="20.32" y="38.1" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="PF2(ADC2/DIG2)"/>
+<wire x1="220.98" y1="189.23" x2="223.52" y2="189.23" width="0.1524" layer="91"/>
+<label x="223.52" y="189.23" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="D_PITCH" class="0">
+<segment>
+<pinref part="R6" gate="G$3" pin="2"/>
+<pinref part="R6" gate="G$4" pin="1"/>
+<wire x1="48.26" y1="40.64" x2="48.26" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="38.1" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="38.1" x2="50.8" y2="38.1" width="0.1524" layer="91"/>
+<junction x="48.26" y="38.1"/>
+<label x="50.8" y="38.1" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="PF3(ADC3/DIG4)"/>
+<wire x1="220.98" y1="186.69" x2="223.52" y2="186.69" width="0.1524" layer="91"/>
+<label x="223.52" y="186.69" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 </nets>
