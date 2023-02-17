@@ -57,7 +57,14 @@ void quad_remote_setup() {
 
 bool is_pressed(int button)
 {
-	return ! digitalRead(button);
+	// Fast debouncer
+	if(digitalRead(button) == false) {
+		while(digitalRead(button) == true);
+		return true;
+	} else {
+		return false;
+	}
+	// return !digitalRead(button);
 }
 
 void nop() {
